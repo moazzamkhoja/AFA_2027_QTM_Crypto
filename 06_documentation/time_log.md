@@ -8,6 +8,7 @@
 | 2026-06-10 | 10 | Direct | Created GitHub repository; reviewed AI-generated README and folder structure |
 | 2026-06-10 | 60 | Decision + Review | Theoretical framework discussion: convenience yield, coins vs. tokens, TVL disambiguation, rejected θ coefficient, finalized λ framing and paper outline |
 | 2026-06-10 | 15 | Review | Reviewed and approved full LaTeX introduction draft (Section 1) |
+| 2026-06-12 | 45 | Review + Decision | Read introduction draft, identified 8 issues, reviewed revised draft, empirical design brainstorm (λ measures, NVT/G, asset universe, portfolio construction) |
 
 ---
 
