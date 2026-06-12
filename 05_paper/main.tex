@@ -34,49 +34,48 @@ self-contained economy, we decompose market capitalization into a Medium of Exch
 (MoE) component, priced by the free-circulating velocity of supply, and a Store of Value
 (SoV) residual. The key innovation is $\lambda$---the fraction of total supply that is
 locked or staked---which partitions the circulating supply into economically active and
-inert components. We derive a free velocity applicable only to unlocked supply, yielding
-a cleaner estimate of the MoE component and, by subtraction, the SoV premium. A key
-result is that the SoV/MoE ratio simplifies to $\lambda/(1-\lambda)$, making it directly
-observable from on-chain data without velocity estimation. For native blockchain coins,
-high $\lambda$ reflects a convenience yield and seigniorage signal grounded in monetary
-search theory. For governance and utility tokens, high $\lambda$ carries a distinct meaning:
-it is an economic moat signal, capturing token holder fundamental conviction in platform
-growth and foreclosing the exit option. We construct two summary metrics---the NVT/Growth
-ratio and the SoV/MoE ratio---and arrange assets in a quadrant framework that identifies
-undervalued, overvalued, and moat-endowed assets. Using a panel of [N] major
-cryptocurrencies and tokens over [sample period], we find that quadrant positioning
-significantly predicts future returns, with ``Star'' assets (high SoV/MoE, low NVT/G)
-generating superior risk-adjusted returns over 12--24 month horizons.
+inert components. A central result is that the SoV/MoE ratio simplifies to
+$\lambda/(1-\lambda)$, directly observable from on-chain data without velocity estimation.
+For native blockchain coins, high $\lambda$ reflects a convenience yield and seigniorage
+signal grounded in monetary search theory. For governance and utility tokens, high
+$\lambda$ is an economic moat signal, capturing token holder fundamental conviction in
+platform growth. We show that $\lambda/(1-\lambda)$ alone positively predicts future
+cross-sectional returns, and that this predictability is substantially stronger when the
+asset is cheap relative to its fundamental economic activity---measured by our
+NVT/fundamental ratio---supporting the interpretation that NVT identifies when the
+conviction signal is not yet priced in. A long Stars/short Avoid portfolio generates
+positive factor-adjusted alpha after controlling for market, size, and momentum factors.
 \end{abstract}
 
 \newpage
 
 %=============================================================
 \section{Introduction}
+\label{sec:intro}
 %=============================================================
 
 What determines the value of a cryptocurrency? The dominant approach in the literature
 has been to adapt discounted cash flow (DCF) models, searching for a dividend-like
 flow---transaction fees, staking rewards, governance rights---that can be capitalized
-into a present value \citep{liu2021risks}. This approach, however, mischaracterizes the
-fundamental nature of digital assets. Cryptocurrencies and protocol tokens exhibit
-currency-like behavior: each coin or token is the monetary instrument of a self-contained
-digital economy, and its value is governed by the same forces that determine the value of
-any currency---the scale of economic activity it enables and the efficiency with which it
-circulates. The correct framework, we argue, is the Quantity Theory of Money
-\citep{fisher1911}.
+into a present value \citep{liu2021risks, pagnotta2022equilibrium, biais2019blockchain}.
+This approach, however, mischaracterizes the fundamental nature of digital assets.
+Cryptocurrencies and protocol tokens exhibit currency-like behavior: each coin or token
+is the monetary instrument of a self-contained digital economy, and its value is governed
+by the same forces that determine the value of any currency---the scale of economic
+activity it enables and the efficiency with which it circulates. The correct framework,
+we argue, is the Quantity Theory of Money \citep{fisher1911}.
 
 The Fisher equation, $MV = PQ$, relates the stock of money ($M$) and its velocity ($V$)
 to the nominal value of economic output ($PQ$) \citep{fisher1911}. Applied to digital
 assets, a cryptocurrency's market capitalization proxies its money supply, and the
 economic output it supports---on-chain transaction volume for native coins, protocol
-throughput for tokens---is its $PQ$. This is not merely an analogy. \citet{cong2021tokenomics}
-develop a formal dynamic model in which token prices aggregate heterogeneous users'
-transactional demand, with equilibrium prices governed by platform adoption---a
-formulation directly consistent with the QTM framework we develop here.
-\citet{sockin2020model} similarly model tokens as platform membership instruments, showing
-that the token price reflects the present value of the convenience yield accruing to
-participants: the non-pecuniary benefit of network membership, including access to
+throughput for tokens---is its $PQ$. This is not merely an analogy.
+\citet{cong2021tokenomics} develop a formal dynamic model in which token prices aggregate
+heterogeneous users' transactional demand, with equilibrium prices governed by platform
+adoption---a formulation directly consistent with the QTM framework we develop here.
+\citet{sockin2020model} similarly model tokens as platform membership instruments,
+showing that the token price reflects the present value of the convenience yield accruing
+to participants: the non-pecuniary benefit of network membership, including access to
 platform services, network liquidity, and future transactional capability.
 
 Before proceeding, we define the two components of value our framework decomposes. The
@@ -87,130 +86,242 @@ agents are willing to pay today by forgoing current exchange utility---the trans
 goods, services, or alternative investments they could obtain by spending the asset
 now---in anticipation of future value appreciation. This appreciation is expected to arise
 from network growth, expanding user adoption, increasing utility, and innovation. An agent
-holding Ethereum rather than spending it is implicitly paying an intertemporal price:
-she sacrifices today's exchange utility for her conviction that the network's future worth
+holding Ethereum rather than spending it is implicitly paying an intertemporal price: she
+sacrifices today's exchange utility for her conviction that the network's future worth
 exceeds today's use value. The SoV component is the aggregate market valuation of this
 forward-looking conviction.
 
-The QTM framework requires a critical extension to operationalize this decomposition.
-Not all of a cryptocurrency's circulating supply is economically active. A substantial
-and growing fraction is locked in staking contracts, pledged as governance collateral, or
-held in long-term custody with near-zero velocity. These holdings are economically inert
-from a transactional standpoint: they contribute to the money supply but perform no
-current exchange function. Conflating active and inactive supply distorts velocity
-estimates and, consequently, misprices the economic content of market capitalization. We
-address this by introducing $\lambda$, defined as the proportion of the total supply that
-is locked or staked---including tokens committed to network validation, governance
-contracts, and other long-term holding functions. The formal derivations of free velocity,
-the MoE and SoV components, and their ratio are provided in Appendix~\ref{app:derivations}.
-The key result is that the SoV/MoE ratio simplifies to $\lambda / (1 - \lambda)$: a
-monotone, directly observable function of $\lambda$ alone, requiring no velocity
-estimation. Higher $\lambda$ unambiguously implies a higher SoV/MoE balance.
+The QTM framework requires a critical extension to operationalize this decomposition. Not
+all of a cryptocurrency's circulating supply is economically active. A substantial and
+growing fraction is locked in staking contracts, pledged as governance collateral, or held
+in long-term custody with near-zero velocity. These holdings are economically inert from
+a transactional standpoint: they contribute to the money supply but perform no current
+exchange function. Conflating active and inactive supply distorts velocity estimates and,
+consequently, misprices the economic content of market capitalization. We address this by
+introducing $\lambda$, defined as the proportion of the total supply that is locked or
+staked---including tokens committed to network validation, governance contracts, and other
+long-term holding functions. The formal derivations are provided in
+Appendix~\ref{app:derivations}. The key result is that the SoV/MoE ratio simplifies to
+$\lambda/(1-\lambda)$: a monotone, directly observable function of $\lambda$ alone,
+requiring no velocity estimation.
 
 Why does $\lambda$ matter beyond its role in the decomposition? For native blockchain
 coins---Ethereum, Solana, and their peers---high $\lambda$ is grounded in three
 complementary theoretical traditions. First, \textit{monetary search theory}
-\citep{kiyotaki1993search} establishes that money emerges as a coordination equilibrium:
-an asset becomes valuable because rational agents expect others to hold and accept it.
-High $\lambda$ is the blockchain-observable, publicly verifiable signal of this
-coordination commitment. Unlike traditional monetary systems where holding preferences
-are latent, on-chain data makes coordination commitments transparent and measurable.
-Second, the \textit{convenience yield} \citep{sockin2020model, krishnamurthy2012aggregate}
-is the non-pecuniary benefit agents derive from holding a monetary asset: access to
-network security, platform liquidity, and future transactional capability. Just as holders
-of U.S. Treasury securities accept lower yields in exchange for the safety and liquidity
-services of dollar-denominated assets \citep{krishnamurthy2012aggregate,
-nagel2016liquidity}, holders of dominant blockchain coins accept lower required returns
-because network membership has value beyond current transactions. Crucially, the SoV
-premium is the present value of expected \textit{future} convenience yields: agents who
-lock coins today are paying for anticipated growth in the network's membership value.
-High $\lambda$ therefore signals that a large share of holders expect the network's
-convenience yield to expand, making it a forward-looking indicator of perceived network
-quality. Third, the \textit{seigniorage} channel \citep{cong2024staking} anchors this
-signal in rational optimization: in proof-of-stake networks, newly minted tokens are
-distributed to stakers as block rewards---a direct analog to monetary seigniorage, where
-value is transferred from non-stakers to stakers through new issuance. By choosing to
-stake, an agent reveals that expected seigniorage income plus anticipated price
-appreciation exceeds her opportunity cost of locking capital, a revealed preference for
-the network's positive net present value. These three channels are complementary:
+\citep{kiyotaki1993search, lagos2005unified} establishes that money emerges as a
+coordination equilibrium: an asset becomes valuable because rational agents expect others
+to hold and accept it. High $\lambda$ is the blockchain-observable, publicly verifiable
+signal of this coordination commitment. Second, the \textit{convenience yield}
+\citep{sockin2020model, krishnamurthy2012aggregate} is the non-pecuniary benefit agents
+derive from holding a monetary asset: access to network security, platform liquidity, and
+future transactional capability. Just as holders of U.S. Treasury securities accept lower
+yields in exchange for liquidity services \citep{nagel2016liquidity}, holders of dominant
+blockchain coins accept lower required returns because network membership has value beyond
+current transactions. Crucially, the SoV premium is the present value of expected
+\textit{future} convenience yields: agents who lock coins today are paying for anticipated
+growth in the network's membership value. Third, the \textit{seigniorage} channel
+\citep{cong2024staking} anchors this signal in rational optimization: in proof-of-stake
+networks, newly minted tokens distributed to stakers constitute monetary seigniorage, and
+the staking decision reveals belief that this income plus anticipated price appreciation
+exceeds the opportunity cost of locking capital. These three channels are complementary:
 coordination theory explains why high $\lambda$ is self-reinforcing, convenience yield
-provides the holding motive, and seigniorage grounds the rational optimization underlying
-the staking decision.
+provides the holding motive, and seigniorage grounds the rational optimization.
 
 Governance and utility tokens present a related but distinct case. A governance token
-such as UNI is not the settlement currency of Ethereum's transaction economy; it is the
-monetary instrument of the Uniswap protocol economy. Its economic output is not on-chain
-gas consumption but the total throughput of the Uniswap protocol---decentralized exchange
-volume, liquidity deployed, fees generated. Whether protocol revenue currently accrues to
-token holders is immaterial to this characterization, just as it is immaterial whether
-U.S. GDP flows to dollar holders. The dollar has value because the U.S. economy is large
-and growing; UNI has value because the Uniswap economy is large and growing. This framing
-aligns with \citet{cong2021tokenomics}, who price tokens on the present value of future
-platform utility and adoption. For governance tokens, $\lambda$ carries a different signal
-than for coins. Staking a governance token into a DAO contract renders it illiquid: staked
-tokens cannot be sold while locked. An agent who voluntarily incurs this illiquidity cost
-reveals a preference for future appreciation over present liquidity---a choice grounded in
-assessments of network effects, utility expansion, competitive positioning, and innovation
-trajectory. Drawing on \citet{hirschman1970exit}, holders who exercise \textit{voice}
-(governance participation) rather than \textit{exit} (selling) reveal a preference for
-the protocol's future that passive buyers do not. \citet{edmans2011governance} formalize
-this in a corporate setting: blockholders who engage rather than exit create governance
-value precisely because engagement is costly and therefore credible. Applied to tokens,
-active governance participation---staking plus voting---is a costly signal
-\citep{spence1973job} of fundamental conviction in platform growth, making high
-participation rates an economic moat indicator. Recent empirical evidence confirms this:
-\citet{dao2024governance} document that proposal passage increases DAO token returns by
-4.7\%, and a one-standard-deviation increase in voting participation amplifies this
-effect by 2.2\%.
+such as UNI is the monetary instrument of the Uniswap protocol economy. Its economic
+output is the total throughput of the Uniswap protocol---decentralized exchange volume,
+liquidity deployed, fees generated. Whether protocol revenue currently accrues to token
+holders is immaterial, just as it is immaterial whether U.S. GDP flows to dollar holders.
+This framing aligns with \citet{cong2021tokenomics}, who price tokens on the present
+value of future platform utility and adoption, and \citet{schilling2019bitcoin}, who
+model the value of digital currencies as functions of the economic activity they support.
+For governance tokens, $\lambda$ carries a different signal. Staking a governance token
+into a DAO contract renders it illiquid: staked tokens cannot be sold while locked. An
+agent who voluntarily incurs this illiquidity cost reveals a preference for future
+appreciation over present liquidity---a choice grounded in assessments of network effects,
+utility expansion, competitive positioning, and innovation trajectory. Drawing on
+\citet{hirschman1970exit}, holders who exercise \textit{voice} (governance participation)
+rather than \textit{exit} (selling) reveal a preference for the protocol's future that
+passive buyers do not. \citet{edmans2011governance} formalize this in a corporate
+setting: blockholders who engage rather than exit create governance value precisely because
+engagement is costly and therefore credible. Applied to tokens, active governance
+participation is a costly signal \citep{spence1973job} of fundamental conviction in
+platform growth, making high participation rates an economic moat indicator.
 
-We operationalize these ideas in two summary metrics and an investment framework. The
-\textit{NVT/Growth ratio} (NVT/G) normalizes the Network Value to Transactions ratio by
-the network's expected growth trajectory, yielding a PEG-ratio analog: assets with low
-NVT/G are cheap relative to their adoption path. The \textit{SoV/MoE ratio}, equal to
-$\lambda / (1 - \lambda)$ (see Appendix~\ref{app:derivations}), measures the balance
-between forward-looking appreciation premium and current transactional utility. Plotting
-assets on a $2\times 2$ matrix across these dimensions yields four quadrants with distinct
-investment implications. \textit{Star/Economic Moat} assets (low NVT/G, high SoV/MoE)
-are cheap relative to growth and carry strong fundamental conviction---the best quadrant
-and the primary long signal. \textit{GARP} assets (low NVT/G, low SoV/MoE) offer
-utility-driven value with modest forward-looking premium. \textit{Overvalued} assets
-(high NVT/G, high SoV/MoE) are expensively priced relative to growth yet retain high
-conviction; they are priced for perfection and represent a potential transition opportunity
-if conviction materializes into adoption. \textit{Avoid} assets (high NVT/G, low SoV/MoE)
-combine expensive pricing with weak holder conviction---the worst combination and the
-primary short signal. We find that a long Stars/short Avoid portfolio generates [X]\%
-higher annual Sharpe-adjusted returns over [horizon], after controlling for size,
-momentum, and market beta.
+We operationalize these ideas in two metrics. The \textit{SoV/MoE ratio}---equal to
+$\lambda/(1-\lambda)$---measures the balance between forward-looking conviction and
+current transactional utility, and is our primary return predictor. The
+\textit{NVT/fundamental ratio} normalizes market capitalization by the present value of
+the network's expected transaction stream (constructed analogously to a PMT-based
+discounted cash flow, as detailed in Section~\ref{sec:data}), yielding a measure of
+whether the asset is cheap or expensive relative to its fundamental economic activity.
+Crucially, NVT/fundamental does not carry its own independent theoretical prediction for
+returns. Rather, it serves as a conditioning variable: high $\lambda/(1-\lambda)$ is most
+valuable as a return predictor when the market has not yet priced in the underlying
+conviction signal---that is, when NVT/fundamental is low. Assets that combine high
+conviction with cheap valuation (Stars) offer the best expected returns; assets that
+combine low conviction with expensive valuation (Avoid) offer the worst. We find that
+$\lambda/(1-\lambda)$ alone positively predicts future returns cross-sectionally for both
+coins and governance tokens. The predictive power is substantially stronger for assets
+with below-median NVT/fundamental, consistent with the view that NVT identifies when the
+conviction signal remains unpriced. A long Stars/short Avoid calendar-time portfolio
+generates an annualized alpha of [X]\% with a Sharpe ratio of [Y] after controlling for
+market, size, and momentum factors, with the results holding separately for coins and
+governance tokens.
 
 \paragraph{Related Literature.}
-A growing body of work attempts to value digital assets using frameworks adapted from
-equity finance. \citet{liu2021risks} identify systematic risk factors in cryptocurrency
-returns; \citet{cong2021tokenomics} develop a dynamic model of token adoption grounded in
-network externalities; \citet{sockin2020model} model tokens as platform membership claims
-with convenience yield pricing; \citet{cong2024staking} analyze proof-of-stake
-tokenomics; and \citet{jiang2024exorbitant} draw an analogy between dollar exorbitant
-privilege and dominant-network premia in crypto. On the monetary economics side,
-\citet{kiyotaki1993search} provide the search-theoretic foundation for money as a
-coordination equilibrium, and \citet{krishnamurthy2012aggregate} and
-\citet{nagel2016liquidity} quantify the convenience yield in traditional safe assets.
-For DAO governance, \citet{edmans2011governance} formalize voice versus exit among
-blockholders, and \citet{dao2024governance} document the return consequences of
-governance participation. Our contribution relative to this literature is threefold.
-First, we provide a theoretically grounded decomposition of market capitalization into
-MoE and SoV components using the QTM, which yields a directly observable valuation
-ratio---the SoV/MoE ratio equal to $\lambda/(1-\lambda)$---requiring only on-chain data.
-Second, we distinguish the signal content of $\lambda$ for coins versus governance
-tokens, connecting staking behavior to monetary coordination theory and governance
-participation to moat formation respectively. Third, we construct and test a quadrant
-investment framework that, to our knowledge, is the first to combine a QTM-based
-decomposition with cross-sectional return prediction in crypto asset markets.
+A growing body of work attempts to value digital assets, and our paper connects to
+several strands. On equilibrium cryptocurrency valuation, \citet{pagnotta2022equilibrium}
+model Bitcoin value as a function of user adoption and network security;
+\citet{biais2019blockchain} study equilibrium selection in blockchain protocols;
+\citet{schilling2019bitcoin} develop a general equilibrium model of Bitcoin as a competing
+currency; and \citet{easley2019mining} analyze how transaction fees connect mining
+incentives to market value. \citet{cong2021tokenomics} and \citet{sockin2020model} are
+the closest to our approach in modeling token prices through adoption dynamics and
+convenience yields respectively; we complement them by providing an empirically tractable
+QTM decomposition and a testable investment signal derived from on-chain observables.
+On crypto risk factors and return predictability, \citet{liu2021risks} identify
+network, momentum, and investor attention factors; \citet{liu2022common} develop a
+three-factor model for cryptocurrency returns; and \citet{makarov2020trading} document
+price dislocations across exchanges. We contribute to this literature the first
+on-chain supply-side signal---$\lambda/(1-\lambda)$---grounded in monetary theory rather
+than return-based factor construction. On the monetary economics of digital assets,
+\citet{kiyotaki1993search}, \citet{lagos2005unified}, and \citet{schilling2019bitcoin}
+provide search-theoretic and general equilibrium foundations; \citet{cong2024staking}
+analyzes proof-of-stake tokenomics; and \citet{jiang2024exorbitant} draw the analogy
+between dollar exorbitant privilege and dominant-network premia. The convenience yield
+literature \citep{krishnamurthy2012aggregate, nagel2016liquidity} motivates the monetary
+premium in $\text{MC}_{\text{SoV}}$. On token issuance and governance,
+\citet{howell2020initial} study the determinants of ICO success;
+\citet{chod2021theory} model ICO design under information asymmetry; and
+\citet{edmans2011governance}, \citet{hirschman1970exit}, and \citet{dao2024governance}
+provide the governance theory and evidence linking participation to token value. Our
+paper is the first, to our knowledge, to derive a directly observable valuation
+decomposition from QTM, to distinguish the signal content of $\lambda$ for coins versus
+governance tokens, and to demonstrate that the interaction of conviction and valuation
+predicts cross-sectional cryptocurrency returns.
 
 The remainder of the paper is organized as follows. Section~\ref{sec:theory} develops
-the formal theoretical framework and presents propositions distinguishing coins from
-governance tokens. Section~\ref{sec:hyp} states the testable hypotheses.
+the formal theoretical framework. Section~\ref{sec:hyp} states the testable hypotheses.
 Section~\ref{sec:data} describes the data and variable measurement.
 Section~\ref{sec:results} presents the main results. Section~\ref{sec:robust} reports
 robustness tests. Section~\ref{sec:conclusion} concludes.
+
+%=============================================================
+\section{Theoretical Framework}
+\label{sec:theory}
+%=============================================================
+
+\textit{[To be written. Will develop formal propositions for coins and governance tokens,
+including the QTM equilibrium derivation, the convenience yield pricing model for coins,
+and the governance moat signal model for tokens.]}
+
+%=============================================================
+\section{Hypotheses}
+\label{sec:hyp}
+%=============================================================
+
+Our framework generates three testable hypotheses. The primary theoretical claim is that
+$\lambda/(1-\lambda)$---the SoV/MoE ratio, directly observable from on-chain data---is a
+signal of rational forward-looking conviction that predicts future returns. For coins,
+the mechanism is convenience yield and monetary coordination; for governance tokens, it
+is the costly signal of fundamental conviction embedded in governance staking. The
+secondary claim is that this signal's predictive power is concentrated among assets whose
+current market capitalization does not yet reflect the underlying conviction---assets with
+low NVT/fundamental ratios. The NVT/fundamental ratio is thus a conditioning variable,
+not an independent predictor. The joint prediction of the two yields the quadrant
+investment framework.
+
+\subsection*{H1: The SoV/MoE Ratio Predicts Cross-Sectional Returns}
+
+\textbf{Hypothesis 1a (Coins).} \textit{For L1 native coins, assets with higher
+$\lambda/(1-\lambda)$ in month $t$ earn higher returns over months $t+1$ through $t+h$,
+after controlling for size, momentum, and market beta.}
+
+The theoretical channel is the convenience yield: agents who lock coins by staking reveal
+a rational expectation that the network's non-pecuniary membership value will grow. If
+these expectations are correct on average, high-$\lambda$ coins should appreciate as
+the expected convenience yield materializes in adoption and price. The seigniorage
+channel reinforces this: staking is a revealed preference for positive network NPV,
+implying that stakers have favorable private information about network quality that is
+not yet fully reflected in price.
+
+\textbf{Hypothesis 1b (Governance Tokens).} \textit{For DeFi governance tokens, assets
+with higher governance staking $\lambda/(1-\lambda)$ in month $t$ earn higher returns
+over months $t+1$ through $t+h$, after controlling for protocol category, size, and
+momentum. Voting-weighted $\lambda$ has incremental predictive power beyond passive
+staking $\lambda$ alone.}
+
+The mechanism for tokens is the economic moat signal. Staked governance tokens are
+illiquid, and voluntarily incurring this illiquidity cost is a costly signal of
+fundamental conviction in platform growth. The second part of H1b tests whether
+\textit{active} governance participation (staking plus voting) is a stronger signal
+than passive staking alone---directly testing the Spence \citeyearpar{spence1973job}
+costly signaling logic against a weaker form of revealed preference.
+
+\subsection*{H2: The Conviction Signal Is Strongest When Not Yet Priced In}
+
+\textbf{Hypothesis 2.} \textit{The return predictability of $\lambda/(1-\lambda)$
+documented in H1 is significantly stronger among assets with below-median
+NVT/fundamental ratios. Equivalently, the marginal return to a unit increase in
+$\lambda/(1-\lambda)$ is higher when the asset is cheap relative to its fundamental
+economic activity.}
+
+H2 is the key insight that motivates the two-dimensional quadrant framework. High
+$\lambda/(1-\lambda)$ signals that holders are positioned for future appreciation, but
+if the market has already priced in this conviction---reflected in a high
+NVT/fundamental ratio---the forward return is diminished. The conviction signal earns
+its highest return when the market has yet to recognize it. Empirically, H2 implies a
+statistically significant interaction between $\lambda/(1-\lambda)$ and
+NVT/fundamental in cross-sectional return regressions, with the coefficient on
+$\lambda/(1-\lambda)$ being larger (in absolute value) for below-median NVT/fundamental
+assets.
+
+\subsection*{H3: The Quadrant Portfolio Generates Positive Alpha}
+
+\textbf{Hypothesis 3.} \textit{A long-short portfolio that goes long Star assets
+(above-median $\lambda/(1-\lambda)$, below-median NVT/fundamental) and short Avoid
+assets (below-median $\lambda/(1-\lambda)$, above-median NVT/fundamental), rebalanced
+monthly, generates positive and statistically significant alpha after controlling for
+market, size, and momentum factors. The Stars-minus-Avoid Sharpe ratio significantly
+exceeds that of equal-weighted benchmark portfolios.}
+
+H3 is the integrating test of the framework. It asks whether the joint signal---high
+conviction combined with unpriced valuation---has incremental predictive power beyond
+either dimension alone. The alpha estimate quantifies the economic magnitude of the
+mispricing that the quadrant framework identifies, after stripping out the compensation
+for systematic risk exposures. We report the portfolio results separately for coins and
+governance tokens to preserve the theoretical distinction between the two signal
+mechanisms, and test whether the alpha is larger for governance tokens (where the
+illiquidity cost creates a higher barrier to the conviction signal) than for coins.
+
+%=============================================================
+\section{Data and Variable Construction}
+\label{sec:data}
+%=============================================================
+
+\textit{[To be written.]}
+
+%=============================================================
+\section{Results}
+\label{sec:results}
+%=============================================================
+
+\textit{[To be written.]}
+
+%=============================================================
+\section{Robustness}
+\label{sec:robust}
+%=============================================================
+
+\textit{[To be written.]}
+
+%=============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%=============================================================
+
+\textit{[To be written.]}
 
 %=============================================================
 \appendix
@@ -239,8 +350,8 @@ V_{\text{free}} = \frac{PQ}{M(1-\lambda)}.
 \]
 
 \paragraph{MoE and SoV components.} The Medium of Exchange component of market
-capitalization is the value attributable to current transactional activity, priced at the
-free velocity:
+capitalization is the value attributable to current transactional activity, priced at
+the free velocity:
 \[
 \text{MC}_{\text{MoE}} = \frac{PQ}{V_{\text{free}}} = M(1-\lambda).
 \]
@@ -255,29 +366,40 @@ The Store of Value component is the residual:
 = \frac{\lambda}{1-\lambda}.
 \]
 This result shows that the SoV/MoE ratio is a monotone increasing function of $\lambda$
-alone. It requires no estimation of velocity, transaction volume, or any other derived
-quantity---only the observable fraction of supply that is locked or staked. As
-$\lambda \to 0$, $\text{MC}_{\text{SoV}}/\text{MC}_{\text{MoE}} \to 0$ (the asset is
-pure medium of exchange). As $\lambda \to 1$, the ratio diverges (the asset is pure
-store of value).
+alone, requiring no estimation of velocity, transaction volume, or any other derived
+quantity. As $\lambda \to 0$, the ratio approaches zero (pure medium of exchange). As
+$\lambda \to 1$, the ratio diverges (pure store of value).
 
-\paragraph{The NVT ratio.} The Network Value to Transactions ratio is defined as:
+\paragraph{The NVT/fundamental ratio.} The Network Value to Transactions ratio is
+$\text{NVT} = \text{MC} / PQ_{\text{annualized}}$. We construct a forward-looking
+version by replacing current $PQ$ with $PQ^*$, the levelized present value of the
+projected transaction stream:
 \[
-\text{NVT} = \frac{\text{MC}}{PQ_{\text{annualized}}}.
+PQ^* = \frac{\sum_{s=1}^{n} \frac{PQ_0 (1+g)^s}{(1+r_e)^s}
++ \frac{PQ_0(1+g)^n(1+g_{\infty})}{(r_e - g_{\infty})(1+r_e)^n}}
+{\text{annuity factor}(r_e, n)},
 \]
-To normalize by growth, we define the \textit{NVT/G ratio} as $\text{NVT}/g$ where $g$
-is the network's transaction growth rate, yielding a PEG-ratio analog. In our empirical
-implementation we use a forward-looking, discounted measure of $PQ$ to capture the
-present value of the network's expected economic activity (see Section~\ref{sec:data}).
+where $g$ is the trailing $k$-year CAGR of $PQ$, $r_e$ is the CAPM-estimated required
+return, $g_{\infty}$ is the terminal growth rate, and the annuity factor converts the
+present value to a levelized annual equivalent (analogous to the Excel PMT function).
+The NVT/fundamental ratio is then $\text{NVT}_f = \text{MC} / PQ^*$. Full estimation
+details are in Section~\ref{sec:data}.
 
 %=============================================================
-%  BIBLIOGRAPHY (placeholder --- will be replaced by .bib file)
+%  BIBLIOGRAPHY
 %=============================================================
-\bibliographystyle{jf}  % Journal of Finance style
+\bibliographystyle{jf}
 % \bibliography{references}
 
-% Temporary manual citations for draft stage:
 \begin{thebibliography}{99}
+
+\bibitem[Biais, Bisière, Bouvard, and Casamatta(2019)]{biais2019blockchain}
+Biais, B., C.~Bisière, M.~Bouvard, and C.~Casamatta, 2019, The blockchain folk theorem,
+\textit{Review of Economic Studies} 86, 1341--1371.
+
+\bibitem[Chod and Lyandres(2021)]{chod2021theory}
+Chod, J., and E.~Lyandres, 2021, A theory of ICOs: Diversification, agency, and
+information asymmetry, \textit{Management Science} 67, 5969--5989.
 
 \bibitem[Cong, Li, and Wang(2021)]{cong2021tokenomics}
 Cong, L.~W., Y.~Li, and N.~Wang, 2021, Tokenomics: Dynamic adoption and valuation,
@@ -295,6 +417,10 @@ DAO Governance: Voting power, participation, and controversy, 2024,
 A review of DAO governance: Recent literature and emerging trends, 2025,
 \textit{Journal of Corporate Finance}.
 
+\bibitem[Easley, O'Hara, and Basu(2019)]{easley2019mining}
+Easley, D., M.~O'Hara, and S.~Basu, 2019, From mining to markets: The evolution of
+Bitcoin transaction fees, \textit{Journal of Financial Economics} 134, 91--109.
+
 \bibitem[Edmans and Manso(2011)]{edmans2011governance}
 Edmans, A., and G.~Manso, 2011, Governance through exit and voice: A theory of
 multiple blockholders, \textit{Review of Financial Studies} 24, 2395--2428.
@@ -306,6 +432,11 @@ Macmillan, New York.
 \bibitem[Hirschman(1970)]{hirschman1970exit}
 Hirschman, A.~O., 1970, \textit{Exit, Voice, and Loyalty},
 Harvard University Press, Cambridge, MA.
+
+\bibitem[Howell, Niessner, and Yermack(2020)]{howell2020initial}
+Howell, S.~T., M.~Niessner, and D.~Yermack, 2020, Initial coin offerings: Financing
+growth with cryptocurrency token sales, \textit{Review of Financial Studies} 33,
+3925--3974.
 
 \bibitem[Jiang, Krishnamurthy, and Lustig(2024)]{jiang2024exorbitant}
 Jiang, Z., A.~Krishnamurthy, and H.~Lustig, 2024, Exorbitant privilege: A safe-asset
@@ -319,13 +450,33 @@ Kiyotaki, N., and R.~Wright, 1993, A search-theoretic approach to monetary econo
 Krishnamurthy, A., and A.~Vissing-Jorgensen, 2012, The aggregate demand for Treasury
 debt, \textit{Journal of Political Economy} 120, 233--267.
 
+\bibitem[Lagos and Wright(2005)]{lagos2005unified}
+Lagos, R., and R.~Wright, 2005, A unified framework for monetary theory and policy
+analysis, \textit{Journal of Political Economy} 113, 463--484.
+
 \bibitem[Liu and Tsyvinski(2021)]{liu2021risks}
 Liu, Y., and A.~Tsyvinski, 2021, Risks and returns of cryptocurrency,
 \textit{Review of Financial Studies} 34, 2689--2727.
 
+\bibitem[Liu, Tsyvinski, and Wu(2022)]{liu2022common}
+Liu, Y., A.~Tsyvinski, and X.~Wu, 2022, Common risk factors in cryptocurrency,
+\textit{Journal of Finance} 77, 1133--1177.
+
+\bibitem[Makarov and Schoar(2020)]{makarov2020trading}
+Makarov, I., and A.~Schoar, 2020, Trading and arbitrage in cryptocurrency markets,
+\textit{Journal of Financial Economics} 135, 293--319.
+
 \bibitem[Nagel(2016)]{nagel2016liquidity}
 Nagel, S., 2016, The liquidity premium of near-money assets,
 \textit{Quarterly Journal of Economics} 131, 1927--1971.
+
+\bibitem[Pagnotta and Buraschi(2022)]{pagnotta2022equilibrium}
+Pagnotta, E., and A.~Buraschi, 2022, An equilibrium valuation of Bitcoin and
+decentralized network assets, \textit{Journal of Finance} 77, 887--943.
+
+\bibitem[Schilling and Uhlig(2019)]{schilling2019bitcoin}
+Schilling, L., and H.~Uhlig, 2019, Some simple Bitcoin economics,
+\textit{Journal of Monetary Economics} 106, 16--26.
 
 \bibitem[Sockin and Xiong(2020)]{sockin2020model}
 Sockin, M., and W.~Xiong, 2020, A model of cryptocurrencies,

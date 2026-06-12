@@ -10,6 +10,7 @@
 | 2026-06-10 | 15 | Review | Reviewed and approved full LaTeX introduction draft (Section 1) |
 | 2026-06-12 | 45 | Review + Decision | Read introduction draft, identified 8 issues, reviewed revised draft, empirical design brainstorm (λ measures, NVT/G, asset universe, portfolio construction) |
 | 2026-06-12 | 30 | Decision | Finalized NVT/PMT levelized approach, asset category structure (coins/L1, L2, token groups), blockchain-agnostic design, HYPE coin vs. token classification |
+| 2026-06-12 | 30 | Decision + Review | Hypothesis structure finalized: λ as primary signal, NVT/f as conditioning variable, H1a/H1b/H2/H3 approved; reviewed Hypotheses section draft |
 
 ---
 
