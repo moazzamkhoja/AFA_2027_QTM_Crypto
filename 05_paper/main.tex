@@ -202,49 +202,121 @@ governance tokens, and to demonstrate that the interaction of conviction and val
 predicts cross-sectional cryptocurrency returns.
 
 The remainder of the paper is organized as follows. Section~\ref{sec:theory} develops
-the formal theoretical framework. Section~\ref{sec:hyp} states the testable hypotheses.
+the theoretical framework and states the paper's testable hypotheses.
 Section~\ref{sec:data} describes the data and variable measurement.
 Section~\ref{sec:results} presents the main results. Section~\ref{sec:robust} reports
 robustness tests. Section~\ref{sec:conclusion} concludes.
 
 %=============================================================
-\section{Theoretical Framework}
+\section{Theoretical Framework and Hypothesis Development}
 \label{sec:theory}
 %=============================================================
 
-\textit{[To be written. Will develop formal propositions for coins and governance tokens,
-including the QTM equilibrium derivation, the convenience yield pricing model for coins,
-and the governance moat signal model for tokens.]}
+The QTM decomposition in Appendix~\ref{app:derivations} is an accounting identity: given
+$\lambda$, the SoV/MoE ratio follows mechanically. It is not, by itself, a behavioral
+prediction. This section asks why $\lambda$, and its interaction with valuation, should
+predict future returns. We develop three stylized one-period models---one for the coin
+staking decision, one for governance-token signaling, and one for the price-discovery
+role of NVT/fundamental---each built directly on the theoretical traditions introduced in
+Section~\ref{sec:intro}. Each model yields a proposition, stated formally as a hypothesis,
+that we take to the data in Section~\ref{sec:results}.
 
-%=============================================================
-\section{Hypotheses}
-\label{sec:hyp}
-%=============================================================
+\subsection{The Staking Decision for Coins}
+\label{sec:theory_coins}
 
-Our framework generates three testable hypotheses. The primary theoretical claim is that
-$\lambda/(1-\lambda)$---the SoV/MoE ratio, directly observable from on-chain data---is a
-signal of rational forward-looking conviction that predicts future returns. For coins,
-the mechanism is convenience yield and monetary coordination; for governance tokens, it
-is the costly signal of fundamental conviction embedded in governance staking. The
-secondary claim is that this signal's predictive power is concentrated among assets whose
-current market capitalization does not yet reflect the underlying conviction---assets with
-low NVT/fundamental ratios. The NVT/fundamental ratio is thus a conditioning variable,
-not an independent predictor. The joint prediction of the two yields the quadrant
-investment framework.
+Consider a continuum of agents, indexed by $i \in [0,1]$, who hold the native coin of an
+L1 network at date $t$ and choose whether to lock it for one period (stake) or hold it
+unstaked. Staking pays a seigniorage return $s_t \geq 0$---newly issued tokens distributed
+to validators---and a convenience yield realized at $t+1$, the non-pecuniary benefit of
+network membership emphasized by \citet{sockin2020model}: validation rights, governance
+access, and anticipated future transactional capability. We decompose agent $i$'s
+convenience yield into a common component $\theta_{t+1}$---the network's true future
+growth trajectory, unobserved at $t$---and an idiosyncratic, mean-zero noise term
+$\varepsilon_i$ reflecting agent $i$'s imperfect private read on that trajectory:
+$c_{i,t+1} = \theta_{t+1} + \varepsilon_i$, with $\varepsilon_i$ i.i.d.\ across agents and
+independent of $\theta_{t+1}$. Staking also imposes a private liquidity cost $\varphi_i$,
+i.i.d.\ across agents and independent of $(\theta_{t+1}, \varepsilon_i)$, reflecting each
+agent's individual demand for transactional flexibility. Agent $i$ stakes if and only if
+\[
+s_t + \theta_{t+1} + \varepsilon_i \geq \varphi_i \quad\Longleftrightarrow\quad
+\eta_i \leq s_t + \theta_{t+1}, \qquad \eta_i \equiv \varphi_i - \varepsilon_i.
+\]
+Because $\eta_i$ is i.i.d.\ across the continuum of agents with fixed CDF $H$ (the
+convolution of the liquidity-cost distribution and the private-signal noise
+distribution), the strong law of large numbers implies that the realized cross-sectional
+locking ratio converges almost surely to
+\[
+\lambda_t = H(s_t + \theta_{t+1}),
+\]
+a deterministic, strictly increasing function of the network's true future growth
+trajectory $\theta_{t+1}$, given the publicly observed seigniorage rate $s_t$.
+Idiosyncratic noise in individual costs and private signals washes out in the aggregate;
+what survives is exactly the cross-sectional average of private information about
+$\theta_{t+1}$. This is the precise sense in which $\lambda_t$ is a publicly verifiable
+signal of the holder base's aggregate conviction about the network's future, consistent
+with the monetary search-theoretic view of $\lambda$ as a coordination signal
+\citep{kiyotaki1993search, lagos2005unified}---and it is a derived property of the
+model above, not an assumption asserted on $\lambda_t$ directly.
 
-\subsection*{H1: The SoV/MoE Ratio Predicts Cross-Sectional Returns}
+That $\lambda_t$ aggregates private information about $\theta_{t+1}$ does not imply that
+$\theta_{t+1}$ is already priced at $t$. Recovering $\theta_{t+1}$ from $\lambda_t$
+requires netting out the observed seigniorage rate $s_t$ and inverting $H$, which in turn
+requires knowing the population distribution of liquidity costs and signal noise---itself
+not common knowledge. Only a fraction of market participants perform this extraction, so,
+as in \citet{grossman1980impossibility}, costly information acquisition prevents
+$\lambda_t$ from being fully impounded into price at $t$. As $\theta_{t+1}$ materializes
+and becomes public over $t+1$, price converges toward the fundamental value already
+anticipated by the high-$\lambda$ holder base, so realized returns are higher for assets
+with higher $\lambda_t$. This partial-revelation step is the one substantive assumption
+in the model---a standard and narrowly scoped one, not the broad assertion the earlier
+draft of this section placed directly on $\lambda_t$---and we test its return implication
+directly as Proposition 1.
+
+\textbf{Proposition 1.} \textit{$\text{Cov}(r_{t+1}, \lambda_t) > 0$: the locking ratio,
+and hence the SoV/MoE ratio $\lambda_t/(1-\lambda_t)$, positively predicts the
+cross-section of subsequent coin returns.}
+
+This is Hypothesis 1a, restated formally as an empirical proposition:
 
 \textbf{Hypothesis 1a (Coins).} \textit{For L1 native coins, assets with higher
 $\lambda/(1-\lambda)$ in month $t$ earn higher returns over months $t+1$ through $t+h$,
 after controlling for size, momentum, and market beta.}
 
-The theoretical channel is the convenience yield: agents who lock coins by staking reveal
-a rational expectation that the network's non-pecuniary membership value will grow. If
-these expectations are correct on average, high-$\lambda$ coins should appreciate as
-the expected convenience yield materializes in adoption and price. The seigniorage
-channel reinforces this: staking is a revealed preference for positive network NPV,
-implying that stakers have favorable private information about network quality that is
-not yet fully reflected in price.
+The seigniorage channel \citep{cong2024staking} reinforces Proposition 1: because $s_t$
+enters the staking threshold directly, staking is a revealed preference that seigniorage
+income plus anticipated price appreciation exceeds the opportunity cost of locking
+capital---a rational decision rule rather than a behavioral artifact.
+
+\subsection{Costly Signaling for Governance Tokens}
+\label{sec:theory_tokens}
+
+For governance tokens, agents hold private, binary beliefs about future protocol quality,
+$q_i \in \{q_H, q_L\}$ with $q_H > q_L$, informed by usage, technical engagement, or other
+unobservable signals. Staking for governance renders the token illiquid and requires an
+engagement cost $\kappa > 0$---the time and attention cost of participating in
+governance, i.e., exercising \textit{voice} rather than \textit{exit}
+\citep{hirschman1970exit, edmans2011governance}. Let $\Delta$ denote the expected price
+appreciation conditional on protocol success and $\ell$ the option value of liquidity
+foregone by staking. Agent $i$ stakes if and only if
+\[
+q_i \Delta - \ell - \kappa \geq 0 \quad\Longleftrightarrow\quad
+q_i \geq \bar q \equiv \frac{\ell + \kappa}{\Delta}.
+\]
+Because the payoff to staking is increasing in $q_i$ while the cost $\ell+\kappa$ is
+common across types, this is a single-crossing condition: for $\bar q$ strictly between
+$q_L$ and $q_H$, only high-quality-belief agents find staking worthwhile, and a separating
+equilibrium in the spirit of \citet{spence1973job} obtains. The observed governance
+staking ratio $\lambda_t$ is therefore informative of the fraction of the holder base with
+favorable private beliefs about protocol quality.
+
+Because $q_i$ is unobservable and revealed only through the costly action of staking---not
+through costless disclosure---and because governance and voting data diffuse into prices
+more slowly than raw volume and price data, the market only partially impounds this
+information at $t$. Subsequent returns are therefore increasing in $\lambda_t$.
+
+\textbf{Proposition 2.} \textit{For governance tokens, $\lambda_t/(1-\lambda_t)$
+positively predicts subsequent returns, because it reveals the share of the holder base
+with favorable private information about protocol quality not yet reflected in price.}
 
 \textbf{Hypothesis 1b (Governance Tokens).} \textit{For DeFi governance tokens, assets
 with higher governance staking $\lambda/(1-\lambda)$ in month $t$ earn higher returns
@@ -252,14 +324,53 @@ over months $t+1$ through $t+h$, after controlling for protocol category, size, 
 momentum. Voting-weighted $\lambda$ has incremental predictive power beyond passive
 staking $\lambda$ alone.}
 
-The mechanism for tokens is the economic moat signal. Staked governance tokens are
-illiquid, and voluntarily incurring this illiquidity cost is a costly signal of
-fundamental conviction in platform growth. The second part of H1b tests whether
-\textit{active} governance participation (staking plus voting) is a stronger signal
-than passive staking alone---directly testing the Spence \citeyearpar{spence1973job}
-costly signaling logic against a weaker form of revealed preference.
+The voting-weighted extension follows directly from the same model. Suppose active
+voting requires an additional monitoring cost $\psi_i > 0$ beyond the cost of staking
+alone (passive staking, or auto-compounding, requires no ongoing engagement). The
+threshold for voting, $\bar q' = (\ell+\kappa+\psi)/\Delta$, exceeds $\bar q$, so voters
+are a more selected, higher-quality-belief subset of stakers. Voting-weighted $\lambda$
+therefore carries incremental information about the holder base's average private quality
+belief beyond passive staking $\lambda$ alone---the empirical test of the Spence
+costly-signaling logic embedded in the second sentence of H1b.
 
-\subsection*{H2: The Conviction Signal Is Strongest When Not Yet Priced In}
+The cost structure $\bar q = (\ell+\kappa)/\Delta$ nests both institutional forms this
+takes in practice. For vote-escrow protocols that require an explicit lock (e.g., Curve's
+veCRV, Balancer's veBAL), $\ell>0$ is a real, continuously variable illiquidity cost that
+scales with chosen lock duration, and locked supply is the natural empirical proxy for
+$\lambda_t$. For protocols whose governance is decided by simple token-balance voting with
+no lock (e.g., Uniswap, Compound), $\ell=0$: liquidity is never forfeited, and $\kappa$,
+the cost of monitoring the protocol and casting an informed vote, is the only force
+sustaining the separating equilibrium. The threshold logic is identical in both cases, but
+the observable action revealing $q_i \geq \bar q$ differs: locked supply where a lock
+mechanism exists, and otherwise the joint behavior of holding without selling---forgoing
+the option to exit, in the spirit of \citet{hirschman1970exit}---and active voting
+participation. We therefore treat $\lambda_t$ as an empirical index over whichever
+conviction-revealing channels are observable for a given protocol---staking/locking,
+holding duration, and voting engagement---with the specific construction and channel
+weighting determined by data availability and detailed in Section~\ref{sec:data}.
+
+\subsection{Price Discovery and the Conditioning Role of NVT/Fundamental}
+\label{sec:theory_nvt}
+
+Sections~\ref{sec:theory_coins} and~\ref{sec:theory_tokens} establish that $\lambda_t$
+carries private information not yet fully reflected in price. The remaining question is
+what determines \textit{how much} of that information remains unpriced at a given date.
+Let $\delta_t \in [0,1]$ denote the fraction of the conviction signal embedded in
+$\lambda_t$ that has already been absorbed into the current price $p_t$, so that
+$p_t = p_t^{\text{fund}}(1+\delta_t)$ for some notion of fundamental value
+$p_t^{\text{fund}}$ consistent with current economic activity. Holding fundamentals
+fixed, a higher current price relative to current transaction-based fundamental value
+corresponds to a higher $\delta_t$; this is exactly what our NVT/fundamental ratio
+measures, since $\text{NVT}_{f,t} = \text{MC}_t / PQ_t^*$ is increasing in price for fixed
+$PQ_t^*$. The expected return earned from $t$ to $t+1$ as the conviction signal is
+gradually validated and absorbed into price is proportional to the \textit{unabsorbed}
+portion of the signal, $\lambda_t(1-\delta_t)$, rather than to $\lambda_t$ alone. It
+follows that the marginal predictive power of $\lambda_t$ on returns is decreasing in
+$\delta_t$, and therefore decreasing in $\text{NVT}_{f,t}$.
+
+\textbf{Proposition 3.} \textit{The cross-partial effect of $\lambda_t$ and
+$\text{NVT}_{f,t}$ on expected returns is negative: the return predictability of
+$\lambda_t/(1-\lambda_t)$ is concentrated among assets with low $\text{NVT}_{f,t}$.}
 
 \textbf{Hypothesis 2.} \textit{The return predictability of $\lambda/(1-\lambda)$
 documented in H1 is significantly stronger among assets with below-median
@@ -267,17 +378,27 @@ NVT/fundamental ratios. Equivalently, the marginal return to a unit increase in
 $\lambda/(1-\lambda)$ is higher when the asset is cheap relative to its fundamental
 economic activity.}
 
-H2 is the key insight that motivates the two-dimensional quadrant framework. High
-$\lambda/(1-\lambda)$ signals that holders are positioned for future appreciation, but
-if the market has already priced in this conviction---reflected in a high
-NVT/fundamental ratio---the forward return is diminished. The conviction signal earns
-its highest return when the market has yet to recognize it. Empirically, H2 implies a
-statistically significant interaction between $\lambda/(1-\lambda)$ and
-NVT/fundamental in cross-sectional return regressions, with the coefficient on
-$\lambda/(1-\lambda)$ being larger (in absolute value) for below-median NVT/fundamental
-assets.
+This is the central insight motivating the two-dimensional quadrant framework:
+$\lambda/(1-\lambda)$ supplies the conviction signal, while NVT/fundamental indicates how
+much of that signal the market has already absorbed. Unlike $\lambda/(1-\lambda)$,
+NVT/fundamental carries no independent theoretical prediction for returns in our
+framework---a low NVT/fundamental ratio alone, without a high conviction signal, simply
+describes an asset with limited current economic activity, not necessarily one that is
+mispriced. Empirically, H2 implies a statistically significant interaction between
+$\lambda/(1-\lambda)$ and NVT/fundamental in cross-sectional return regressions, with the
+coefficient on $\lambda/(1-\lambda)$ larger in absolute value for below-median
+NVT/fundamental assets.
 
-\subsection*{H3: The Quadrant Portfolio Generates Positive Alpha}
+\subsection{The Quadrant Portfolio}
+\label{sec:theory_portfolio}
+
+Propositions 1 through 3 jointly imply that the assets with the highest expected
+unrealized returns are those combining a strong, on-chain-verified conviction signal with
+valuation that has not yet absorbed it: high $\lambda/(1-\lambda)$ and low
+NVT/fundamental. We label this combination \textit{Star}. The mirror-image
+combination---low $\lambda/(1-\lambda)$ and high NVT/fundamental, signaling both weak
+conviction and a valuation already stretched beyond current fundamentals---we label
+\textit{Avoid}.
 
 \textbf{Hypothesis 3.} \textit{A long-short portfolio that goes long Star assets
 (above-median $\lambda/(1-\lambda)$, below-median NVT/fundamental) and short Avoid
@@ -286,14 +407,15 @@ monthly, generates positive and statistically significant alpha after controllin
 market, size, and momentum factors. The Stars-minus-Avoid Sharpe ratio significantly
 exceeds that of equal-weighted benchmark portfolios.}
 
-H3 is the integrating test of the framework. It asks whether the joint signal---high
-conviction combined with unpriced valuation---has incremental predictive power beyond
-either dimension alone. The alpha estimate quantifies the economic magnitude of the
-mispricing that the quadrant framework identifies, after stripping out the compensation
-for systematic risk exposures. We report the portfolio results separately for coins and
-governance tokens to preserve the theoretical distinction between the two signal
-mechanisms, and test whether the alpha is larger for governance tokens (where the
-illiquidity cost creates a higher barrier to the conviction signal) than for coins.
+H3 is the integrating test of the framework: it asks whether the joint signal has
+incremental predictive power beyond either dimension of Propositions 1--3 alone. The
+alpha estimate quantifies the economic magnitude of the mispricing the quadrant framework
+identifies, net of compensation for systematic risk exposures. We report portfolio
+results separately for coins and governance tokens to preserve the distinction between
+Proposition 1's monetary-coordination mechanism and Proposition 2's costly-signaling
+mechanism, and test whether the alpha is larger for governance tokens, where the
+illiquidity cost $\kappa$ creates a higher signaling barrier than the seigniorage-driven
+staking decision for coins.
 
 %=============================================================
 \section{Data and Variable Construction}
@@ -428,6 +550,10 @@ multiple blockholders, \textit{Review of Financial Studies} 24, 2395--2428.
 \bibitem[Fisher(1911)]{fisher1911}
 Fisher, I., 1911, \textit{The Purchasing Power of Money},
 Macmillan, New York.
+
+\bibitem[Grossman and Stiglitz(1980)]{grossman1980impossibility}
+Grossman, S.~J., and J.~E.~Stiglitz, 1980, On the impossibility of informationally
+efficient markets, \textit{American Economic Review} 70, 393--408.
 
 \bibitem[Hirschman(1970)]{hirschman1970exit}
 Hirschman, A.~O., 1970, \textit{Exit, Voice, and Loyalty},
