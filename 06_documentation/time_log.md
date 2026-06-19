@@ -12,4 +12,13 @@
 | 2026-06-12 | 30 | Decision | Finalized NVT/PMT levelized approach, asset category structure (coins/L1, L2, token groups), blockchain-agnostic design, HYPE coin vs. token classification |
 | 2026-06-12 | 30 | Decision + Review | Hypothesis structure finalized: λ as primary signal, NVT/f as conditioning variable, H1a/H1b/H2/H3 approved; reviewed Hypotheses section draft |
 | 2026-06-19 | 20 | Decision + Review | Chose "applied theory" (light formalization) over full structural model for Section 2; decided to merge Theory and Hypotheses into one combined section; reviewed drafted propositions and theory section |
-| 2026-06-19 | 25 | Decision + Review | Identified flawed $F(s_t+\bar c_{t+1})$ aggregation step in Section 2.1; requested rigorous continuum-of-agents fix instead of a bare assumption; explored governance-token staking mechanics (vote-escro
+| 2026-06-19 | 25 | Decision + Review | Identified flawed $F(s_t+\bar c_{t+1})$ aggregation step in Section 2.1; requested rigorous continuum-of-agents fix instead of a bare assumption; explored governance-token staking mechanics (vote-escrow vs. snapshot vs. fee-sharing); decided $\lambda$ should be a multi-channel measurement index (staking/holding/voting), construction deferred to data stage |
+| 2026-06-19 | 35 | Decision + Review | Challenged the artificial coin/governance-token model split and the $\theta_{t+1}$ vs. random-walk simplification (accepted correction on the latter); approved unifying Sections 2.1/2.2 into one "Locking Decision" model; identified unjustified "L1-only" restriction in Hypothesis 1a and the implicit asset-index ambiguity in Proposition 1; reviewed and approved the revised, unified Section 2.1 and renumbered Propositions/Section 2 subsections |
+
+---
+
+**Activity Types:**
+- `Prompt` — writing/refining a prompt to the AI
+- `Direct` — human-authored code, writing, or edits
+- `Review` — reading and evaluating AI output
+- `Decision` — making a judgment call on research direction
