@@ -42,7 +42,7 @@ $\lambda$ is an economic moat signal, capturing token holder fundamental convict
 platform growth. We show that $\lambda/(1-\lambda)$ alone positively predicts future
 cross-sectional returns, and that this predictability is substantially stronger when the
 asset is cheap relative to its fundamental economic activity---measured by our
-NVT/fundamental ratio---supporting the interpretation that NVT identifies when the
+Growth-Levelized NVT ratio---supporting the interpretation that NVT identifies when the
 conviction signal is not yet priced in. A long Stars/short Avoid portfolio generates
 positive factor-adjusted alpha after controlling for market, size, and momentum factors.
 \end{abstract}
@@ -151,19 +151,19 @@ platform growth, making high participation rates an economic moat indicator.
 We operationalize these ideas in two metrics. The \textit{SoV/MoE ratio}---equal to
 $\lambda/(1-\lambda)$---measures the balance between forward-looking conviction and
 current transactional utility, and is our primary return predictor. The
-\textit{NVT/fundamental ratio} normalizes market capitalization by the present value of
+\textit{Growth-Levelized NVT ratio} normalizes market capitalization by the present value of
 the network's expected transaction stream (constructed analogously to a PMT-based
 discounted cash flow, as detailed in Section~\ref{sec:data}), yielding a measure of
 whether the asset is cheap or expensive relative to its fundamental economic activity.
-Crucially, NVT/fundamental does not carry its own independent theoretical prediction for
+Crucially, Growth-Levelized NVT does not carry its own independent theoretical prediction for
 returns. Rather, it serves as a conditioning variable: high $\lambda/(1-\lambda)$ is most
 valuable as a return predictor when the market has not yet priced in the underlying
-conviction signal---that is, when NVT/fundamental is low. Assets that combine high
+conviction signal---that is, when Growth-Levelized NVT is low. Assets that combine high
 conviction with cheap valuation (Stars) offer the best expected returns; assets that
 combine low conviction with expensive valuation (Avoid) offer the worst. We find that
 $\lambda/(1-\lambda)$ alone positively predicts future returns cross-sectionally for both
 coins and governance tokens. The predictive power is substantially stronger for assets
-with below-median NVT/fundamental, consistent with the view that NVT identifies when the
+with below-median Growth-Levelized NVT, consistent with the view that NVT identifies when the
 conviction signal remains unpriced. A long Stars/short Avoid calendar-time portfolio
 generates an annualized alpha of [X]\% with a Sharpe ratio of [Y] after controlling for
 market, size, and momentum factors, with the results holding separately for coins and
@@ -217,7 +217,7 @@ $\lambda$, the SoV/MoE ratio follows mechanically. It is not, by itself, a behav
 prediction. This section asks why $\lambda$, and its interaction with valuation, should
 predict future returns. We develop two stylized one-period models---one for the locking
 decision common to coins and governance tokens, and one for the price-discovery role of
-NVT/fundamental---each built directly on the theoretical traditions introduced in
+Growth-Levelized NVT---each built directly on the theoretical traditions introduced in
 Section~\ref{sec:intro}. Each model yields a proposition, stated formally as a hypothesis,
 that we take to the data in Section~\ref{sec:results}.
 
@@ -353,7 +353,7 @@ whichever conviction-revealing channels are observable for a given asset---staki
 holding duration, and voting engagement---with the specific construction and channel
 weighting determined by data availability and detailed in Section~\ref{sec:data}.
 
-\subsection{Price Discovery and the Conditioning Role of NVT/Fundamental}
+\subsection{Price Discovery and the Conditioning Role of Growth-Levelized NVT}
 \label{sec:theory_nvt}
 
 Section~\ref{sec:theory_locking} establishes that $\lambda_t$
@@ -364,34 +364,34 @@ $\lambda_t$ that has already been absorbed into the current price $p_t$, so that
 $p_t = p_t^{\text{fund}}(1+\delta_t)$ for some notion of fundamental value
 $p_t^{\text{fund}}$ consistent with current economic activity. Holding fundamentals
 fixed, a higher current price relative to current transaction-based fundamental value
-corresponds to a higher $\delta_t$; this is exactly what our NVT/fundamental ratio
-measures, since $\text{NVT}_{f,t} = \text{MC}_t / PQ_t^*$ is increasing in price for fixed
+corresponds to a higher $\delta_t$; this is exactly what our Growth-Levelized NVT ratio
+measures, since $\text{NVT}_{GL,t} = \text{MC}_t / PQ_t^*$ is increasing in price for fixed
 $PQ_t^*$. The expected return earned from $t$ to $t+1$ as the conviction signal is
 gradually validated and absorbed into price is proportional to the \textit{unabsorbed}
 portion of the signal, $\lambda_t(1-\delta_t)$, rather than to $\lambda_t$ alone. It
 follows that the marginal predictive power of $\lambda_t$ on returns is decreasing in
-$\delta_t$, and therefore decreasing in $\text{NVT}_{f,t}$.
+$\delta_t$, and therefore decreasing in $\text{NVT}_{GL,t}$.
 
 \textbf{Proposition 2.} \textit{The cross-partial effect of $\lambda_t$ and
-$\text{NVT}_{f,t}$ on expected returns is negative: the return predictability of
-$\lambda_t/(1-\lambda_t)$ is concentrated among assets with low $\text{NVT}_{f,t}$.}
+$\text{NVT}_{GL,t}$ on expected returns is negative: the return predictability of
+$\lambda_t/(1-\lambda_t)$ is concentrated among assets with low $\text{NVT}_{GL,t}$.}
 
 \textbf{Hypothesis 2.} \textit{The return predictability of $\lambda/(1-\lambda)$
 documented in H1 is significantly stronger among assets with below-median
-NVT/fundamental ratios. Equivalently, the marginal return to a unit increase in
+Growth-Levelized NVT ratios. Equivalently, the marginal return to a unit increase in
 $\lambda/(1-\lambda)$ is higher when the asset is cheap relative to its fundamental
 economic activity.}
 
 This is the central insight motivating the two-dimensional quadrant framework:
-$\lambda/(1-\lambda)$ supplies the conviction signal, while NVT/fundamental indicates how
+$\lambda/(1-\lambda)$ supplies the conviction signal, while Growth-Levelized NVT indicates how
 much of that signal the market has already absorbed. Unlike $\lambda/(1-\lambda)$,
-NVT/fundamental carries no independent theoretical prediction for returns in our
-framework---a low NVT/fundamental ratio alone, without a high conviction signal, simply
+Growth-Levelized NVT carries no independent theoretical prediction for returns in our
+framework---a low Growth-Levelized NVT ratio alone, without a high conviction signal, simply
 describes an asset with limited current economic activity, not necessarily one that is
 mispriced. Empirically, H2 implies a statistically significant interaction between
-$\lambda/(1-\lambda)$ and NVT/fundamental in cross-sectional return regressions, with the
+$\lambda/(1-\lambda)$ and Growth-Levelized NVT in cross-sectional return regressions, with the
 coefficient on $\lambda/(1-\lambda)$ larger in absolute value for below-median
-NVT/fundamental assets.
+Growth-Levelized NVT assets.
 
 \subsection{The Quadrant Portfolio}
 \label{sec:theory_portfolio}
@@ -399,14 +399,14 @@ NVT/fundamental assets.
 Propositions 1 and 2 jointly imply that the assets with the highest expected
 unrealized returns are those combining a strong, on-chain-verified conviction signal with
 valuation that has not yet absorbed it: high $\lambda/(1-\lambda)$ and low
-NVT/fundamental. We label this combination \textit{Star}. The mirror-image
-combination---low $\lambda/(1-\lambda)$ and high NVT/fundamental, signaling both weak
+Growth-Levelized NVT. We label this combination \textit{Star}. The mirror-image
+combination---low $\lambda/(1-\lambda)$ and high Growth-Levelized NVT, signaling both weak
 conviction and a valuation already stretched beyond current fundamentals---we label
 \textit{Avoid}.
 
 \textbf{Hypothesis 3.} \textit{A long-short portfolio that goes long Star assets
-(above-median $\lambda/(1-\lambda)$, below-median NVT/fundamental) and short Avoid
-assets (below-median $\lambda/(1-\lambda)$, above-median NVT/fundamental), rebalanced
+(above-median $\lambda/(1-\lambda)$, below-median Growth-Levelized NVT) and short Avoid
+assets (below-median $\lambda/(1-\lambda)$, above-median Growth-Levelized NVT), rebalanced
 monthly, generates positive and statistically significant alpha after controlling for
 market, size, and momentum factors. The Stars-minus-Avoid Sharpe ratio significantly
 exceeds that of equal-weighted benchmark portfolios.}
@@ -497,7 +497,7 @@ alone, requiring no estimation of velocity, transaction volume, or any other der
 quantity. As $\lambda \to 0$, the ratio approaches zero (pure medium of exchange). As
 $\lambda \to 1$, the ratio diverges (pure store of value).
 
-\paragraph{The NVT/fundamental ratio.} The Network Value to Transactions ratio is
+\paragraph{The Growth-Levelized NVT ratio.} The Network Value to Transactions ratio is
 $\text{NVT} = \text{MC} / PQ_{\text{annualized}}$. We construct a forward-looking
 version by replacing current $PQ$ with $PQ^*$, the levelized present value of the
 projected transaction stream:
@@ -509,7 +509,7 @@ PQ^* = \frac{\sum_{s=1}^{n} \frac{PQ_0 (1+g)^s}{(1+r_e)^s}
 where $g$ is the trailing $k$-year CAGR of $PQ$, $r_e$ is the CAPM-estimated required
 return, $g_{\infty}$ is the terminal growth rate, and the annuity factor converts the
 present value to a levelized annual equivalent (analogous to the Excel PMT function).
-The NVT/fundamental ratio is then $\text{NVT}_f = \text{MC} / PQ^*$. Full estimation
+The Growth-Levelized NVT ratio is then $\text{NVT}_{GL} = \text{MC} / PQ^*$. Full estimation
 details are in Section~\ref{sec:data}.
 
 %=============================================================
