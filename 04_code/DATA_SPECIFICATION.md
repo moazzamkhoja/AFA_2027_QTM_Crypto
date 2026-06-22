@@ -163,6 +163,36 @@ block-explorer read will miss the actual vote. Check **Snapshot's API**, **Tally
 on-chain governance contracts (e.g., Governor Bravo-style contracts, readable via
 Etherscan/RPC) for protocols that vote fully on-chain.
 
+### 2.6 Sector / economic-function classification (orthogonal to coin/token)
+
+The coin-vs-token cut in 2.3 is **binary and functional** (does locking earn a
+security/seigniorage benefit or not) — it is the variable H1a/H1b/H2/H3 are tested on
+and should not be complicated by this section. Separately, capture a **finer-grained
+sector/category tag** per asset describing what kind of economy it actually is (e.g.
+L1 vs. L2, DEX vs. Perpetuals/Derivatives, Lending vs. CDP vs. Liquid Staking, Bridge,
+Oracle, RWA, Gaming, etc.). This is a second, independent classification dimension —
+not a replacement for or refinement of the coin/token cut — kept for possible later
+within-class comparisons (e.g., "do DEX tokens behave differently from lending-protocol
+tokens within the token bucket?", "do L1 coins behave differently from L2 coins within
+the coin bucket?").
+
+**Do not decide now which sector-level comparisons will actually be tested in the
+paper** — that is a later judgment call once Phase 1-4 data exists. The task here is
+only to **capture the field** so it is available without redoing classification work:
+- Use **DeFiLlama protocol categories** (Dexs, Lending, Derivatives, Liquid Staking,
+  CDP, Yield, Yield Aggregator, Bridge, RWA, Gaming, NFT Marketplace, Synthetics,
+  Options, Restaking, Staking Pool, etc. — already pulled as classification evidence
+  per 2.3) as the primary source for DeFi-protocol-style tokens.
+- Use **CMC tags** (`layer-1`, `layer-2`, `oracle`, `privacy`, `depin`, `meme`, etc.) to
+  fill gaps DeFiLlama doesn't cover — chiefly base-layer coins, which usually have no
+  DeFiLlama protocol entry at all.
+- Where an asset has multiple sector signals (e.g., both a DeFiLlama category and a
+  conflicting tag), keep all of them rather than forcing a single pick, and flag it.
+- Report **coverage**: what fraction of in-universe assets get *any* sector tag from
+  either source, broken out by `asset_class` (coin/token/other) — expect coin coverage
+  to lean on tags (L1/L2/oracle/etc.) and token coverage to lean on DeFiLlama
+  categories, with a residual with no usable signal from either source.
+
 ---
 
 ## 3. Variable 1: λ — The Locking/Conviction Index

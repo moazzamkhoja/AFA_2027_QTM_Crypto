@@ -179,3 +179,145 @@ than trusting `cmcRank`; drop rows with null/≤0 market cap.
 **Rationale:** matches the spec wording exactly and is robust to any stored-rank quirks.
 **Downstream impact:** ranks are internally consistent with the market-cap values used
 for entry decisions.
+
+### Entry 10 — Carry-forward death-return treatment: split before deciding
+**Date:** 2026-06-22
+**Spec section affected:** 2.1 (retention rule); Phase 3 (returns)
+**Asset(s)/period affected:** all `status='carried_forward'` asset-months
+**What the spec wanted:** Phase 0 flagged this as open (PHASE0_COVERAGE_REPORT.md §9.1)
+rather than resolving it — Phase 3 needs a final death-return policy.
+**What was actually available:** no breakdown yet of how many carried-forward
+asset-months are presumed-failed (asset never reappears in the top-1000 through the end
+of the sample) versus temporarily-out (asset reappears later — a visibility gap, not a
+failure).
+**Decision made:** before any return-treatment formula is chosen, produce the
+presumed-failed vs. temporarily-out split with counts (and the longest temporarily-out
+gap observed). Decide the formula only after seeing those counts. This is a precursor
+task, run before Phase 1 channel work, not deferred all the way to Phase 3.
+**Rationale:** choosing a death-return convention blind, before knowing whether
+carried-forward months are mostly real failures or mostly short visibility gaps, risks
+picking a treatment that's wrong for the dominant case.
+**Downstream impact:** Phase 1 (λ channels) and later phases should not compute
+return-dependent statistics over carried-forward months until this split is reviewed.
+
+### Entry 11 — Manual classification review scoped by persistence, not market cap
+**Date:** 2026-06-22
+**Spec section affected:** 2.3 (classification)
+**Asset(s)/period affected:** `other`/`ambiguous_flag=True` assets only
+**What the spec wanted:** a manual confirmation pass for classifications that will
+actually enter the tests.
+**What was actually available:** 874 names are `other`; reviewing all of them by hand is
+not tractable, and most are one-or-two-month pump-and-dump blips that already passed the
+top-250 market-cap gate but contribute negligible weight to any regression.
+**Decision made:** scope the manual review to `other`/ambiguous names with **≥12 observed
+asset-months** (a persistence filter, separate from and applied after the existing
+market-cap-based top-250 entry rule). Names below this persistence threshold are left
+unreviewed.
+**Rationale:** concentrates review effort on the names that could actually move a
+result; the unreviewed short-lived tail is, by construction, too thin to matter
+statistically.
+**Downstream impact:** any `other`/ambiguous name below the 12-month threshold that later
+turns out to matter (e.g., because of a methodology change) should be reviewed at that
+point, not assumed correctly classified.
+
+### Entry 12 — Meme coins: no change, current 'other' handling confirmed
+**Date:** 2026-06-22
+**Spec section affected:** 2.3 (classification), 2.1 (ranking)
+**Asset(s)/period affected:** meme coins (DOGE, SHIB, PEPE, etc.) and similar
+non-economic-output assets
+**What the spec wanted:** a coin/token functional cut; meme coins/NFTs were raised as a
+potential third category not addressed directly by that cut.
+**What was actually available:** meme coins already land in `other` (no staking
+mechanism, no governance mechanism) and are already excluded from H1a/H1b/H3 by that
+classification; they still count toward the top-250 ranking, the same treatment already
+applied to stablecoins. NFTs are presumed absent from the CMC fungible-token listings
+source entirely (not the same product as CMC's NFT tracking) — to be explicitly
+confirmed in Phase 1, not assumed.
+**Decision made:** keep current handling — no Phase 0 changes. Confirm NFT absence as a
+Phase 1 verification step.
+**Rationale:** meme coins are already functionally excluded from the hypothesis tests by
+the existing classification; stripping them from the panel entirely (vs. leaving them
+visible as `other`) would have no effect on results and would reduce audit transparency.
+**Downstream impact:** none expected. If NFT-like entries are found in Phase 1, log and
+exclude them explicitly rather than assuming this entry covers it.
+
+### Entry 13 — Quadrant median splits computed within asset class, not pooled
+**Date:** 2026-06-22
+**Spec section affected:** 4 (Growth-Levelized NVT), main.tex Section "The Quadrant
+Portfolio" (H3); affects Phase 4 design, not Phase 1 build work directly
+**Asset(s)/period affected:** all coin and token observations entering H3
+**What the spec wanted:** H3 reports coins and governance tokens separately; the spec did
+not specify whether the λ/(1-λ) and Growth-Levelized NVT median splits defining the
+Star/Avoid quadrants should be computed pooled or within each class.
+**What was actually available:** coins (security-staking norms) and governance tokens
+(DeFi vote-escrow/governance-staking norms) plausibly have structurally different
+λ/(1-λ) distributions for reasons unrelated to conviction, which could let one class
+mechanically dominate "high λ" under a pooled median.
+**Decision made:** compute the high/low median splits for both λ/(1-λ) and
+Growth-Levelized NVT separately within coins and within tokens each month, not pooled.
+**Rationale:** keeps the Star/Avoid sort meaningful as a within-class signal rather than
+an artifact of cross-class composition differences.
+**Downstream impact:** this is a Phase 4 (portfolio assembly) specification, recorded now
+so it isn't decided ad hoc later; revisit if Phase 1's actual λ distributions show the
+two classes don't differ enough to matter.
+
+### Entry 14 — Artemis Analytics / paid CoinGecko access deferred
+**Date:** 2026-06-22
+**Spec section affected:** 2.4, 4 (PQ for tokens, Phase 2)
+**Asset(s)/period affected:** n/a (source access)
+**What the spec wanted:** a decision on whether to pursue paid access now.
+**What was actually available:** no free API for either source (see Entry 2); not needed
+until Phase 2 (PQ construction) or for the Section 2.4 two-source market-cap cross-check.
+**Decision made:** defer; revisit only when Phase 2 actually needs it.
+**Rationale:** no Phase 0/1 work depends on it; premature procurement.
+**Downstream impact:** Phase 2 kickoff should re-raise this explicitly rather than
+assuming it's been resolved.
+
+### Entry 15 — Universe size N=250 confirmed, no change
+**Date:** 2026-06-22
+**Spec section affected:** 2.1
+**Asset(s)/period affected:** all
+**What the spec wanted:** confirmation of the default top-N threshold.
+**What was actually available:** rank-sensitivity table (200/250/300) showing the live
+cross-section is not drastically different across these thresholds.
+**Decision made:** keep N=250.
+**Rationale:** no evidence yet that a different threshold is needed; can revisit once
+Phase 1 λ-channel coverage is known.
+**Downstream impact:** none; flagged for revisit only if Phase 1 coverage suggests
+otherwise.
+
+### Entry 16 — Sector/economic-function classification added as a second, independent dimension
+**Date:** 2026-06-22
+**Spec section affected:** new 2.6 (added); clarifies that Entry 13's "class" (coin vs.
+token) is a separate dimension from this one
+**Asset(s)/period affected:** all assets
+**What the spec wanted:** prior to this entry, the spec only defined one classification
+axis — the binary, functional coin/token cut (2.3), which Entry 13 then used as "the"
+class for the H3 quadrant median splits.
+**What was actually available:** the user clarified that "class" should also mean
+something narrower than coin/token — e.g., L1 vs. L2, DEX vs. Perpetuals/Derivatives,
+Lending vs. CDP vs. Liquid Staking — a sector/economic-function tag, not a refinement
+or replacement of the coin/token cut. A quick check of the existing Phase 0 output shows
+the raw ingredients for this already exist as classification evidence: 574/2010 assets
+in `classification_table.csv` carry a `defillama_categories` value (154 Dexs, 78 Yield,
+59 Derivatives, 53 Lending, 34 Canonical Bridge, 20 Liquid Staking, 17 CDP, etc.), and
+134/2010 carry a `layer-1` CMC tag with 43 carrying `layer-2` — i.e., DeFiLlama
+categories give DEX/Lending/Derivatives/Staking-type resolution for protocol tokens,
+and CMC tags give L1/L2 resolution mostly for base-layer coins that DeFiLlama doesn't
+track. Neither source alone covers the whole universe; coverage is partial either way.
+**Decision made:** add a second, independent classification field (`sector`/`category`)
+populated from DeFiLlama categories + CMC tags, captured now as a coverage/data task
+(new spec section 2.6). Explicitly defer deciding which sector-level comparisons (DEX
+vs. Perp, Lending vs. Staking, L1 vs. L2, or others) will actually be tested in the
+paper — that choice is a later judgment call once Phase 1-4 data exists, not a Phase 0/1
+data-capture decision. Entry 13's coin/token median splits are unaffected by this entry;
+"class" in Entry 13 refers only to the coin/token cut.
+**Rationale:** the marginal cost of capturing this field now (it's mostly already
+present in classification evidence pulled in Phase 0) is far lower than the cost of
+re-deriving it later if a sector-level comparison turns out to matter; deferring the
+analytical decision (which comparisons to run) avoids designing an analysis around a
+taxonomy that hasn't been validated against real coverage yet.
+**Downstream impact:** the Phase 0 follow-up session should add a sector/category field
+and report coverage by `asset_class` (coin/token/other) per new spec section 2.6, before
+Phase 1 (lambda channels) begins. Section 3 prose, once written, should describe both
+classification dimensions as independent.
