@@ -1,0 +1,47 @@
+SECTOR / ECONOMIC-FUNCTION COVERAGE (deliverable 3, Entry 16, spec 2.6)
+==================================================================
+In-universe assets: 1939
+With a non-null sector: 1113 (57.4%)   residual (no tag from either source): 826 (42.6%)
+
+Coverage by asset_class (post-confirmation):
+  class      n  w/sector   cov%  DLonly  CMConly   both   none
+  coin     633       345  54.5%      67      184     94    288
+  token    448       402  89.7%     146       81    175     46
+  other    858       366  42.7%      42      282     42    492
+
+Source mix overall (in-universe):
+  DeFiLlama category present: 566
+  CMC sector tag present    : 858
+  both                      : 311
+
+Top sector labels (in-universe, multi-count):
+    171  Payments
+    153  Dexs
+    134  Layer-1
+    129  Smart Contract Platform
+    125  AI/Big Data
+    111  Gaming
+    109  Yield
+    104  NFT
+     91  Privacy
+     84  Meme
+     81  DePIN
+     76  Derivatives
+     65  Metaverse
+     61  DEX
+     58  RWA
+     53  Chain
+     52  Lending
+     45  Liquid Staking
+     43  Interoperability
+     43  Layer-2
+     41  Exchange Token
+     35  IoT
+     34  Storage
+     34  Zero Knowledge
+     34  Canonical Bridge
+     30  Farm
+     30  Launchpad
+     28  Services
+     28  Bridge
+     25  Modular Blockchain

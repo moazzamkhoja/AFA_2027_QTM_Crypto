@@ -7,22 +7,31 @@ review the output, then come back for a Phase 2 kickoff prompt.
 ---
 
 ```
-You're working in the AFA 2027 QTM Crypto research repo. Phase 0 (asset universe) is
-complete. Before doing anything else, read in full:
+You're working in the AFA 2027 QTM Crypto research repo. Phase 0 (asset universe) AND the
+Phase 0B follow-up (carry-forward split, classification confirmation, sector field) are
+both complete. Before doing anything else, read in full:
 
 1. 04_code/DATA_SPECIFICATION.md — Sections 1, 3 (the λ index), and 7 (phasing).
-2. 04_code/DATA_DECISIONS_LOG.md — the append-only log (9 entries so far); you'll add to it.
+2. 04_code/DATA_DECISIONS_LOG.md — the append-only log (20 entries so far); you'll add to
+   it starting at Entry 21.
 3. 06_documentation/PHASE0_TO_PHASE1_TRANSITION.md — the handoff brief: repo state, stable
-   keys, what Phase 1 must produce, and verified source pointers.
-4. 06_documentation/PHASE0_SESSION_STATUS.md — what Phase 0 built and the open questions.
-5. 05_paper/main.tex Section 2 (the Locking Decision model) for the theory behind λ.
+   keys, what Phase 1 must produce, and verified source pointers. READ ITS §0 ADDENDUM
+   FIRST (Phase 0B changes).
+4. 03_data/PHASE0B_FOLLOWUP_REPORT.md — the carry-forward split, the 16 reclassifications,
+   the meme/NFT confirmation, and the sector-field coverage.
+5. 06_documentation/PHASE0_SESSION_STATUS.md — what Phase 0 built and the open questions.
+6. 05_paper/main.tex Section 2 (the Locking Decision model) for the theory behind λ.
 
 Your task is PHASE 1 ONLY, per Section 7 of the spec: construct the λ locking/conviction
 index per asset-month. Do not start Phase 2 (NVT_GL) or later in this session.
 
 Build on the frozen Phase 0 universe — do not rebuild it. Join everything on `cmc_id`
 (never `symbol`). Compute λ only for `status='observed'` asset-months in
-03_data/universe_panel.csv; leave `carried_forward` tails alone.
+03_data/universe_panel.csv; leave `carried_forward` tails alone (the new
+`carry_forward_subtype` column splits those tails into presumed_failed/temporarily_out —
+that is for the Phase 3 death-return policy, not for λ). Use the post-confirmation
+`asset_class` in 03_data/classification_table.csv (coin 633 / token 448 / other 858); the
+pre-confirmation label is preserved in `asset_class_original` if you need to audit a flip.
 
 Deliverables for Phase 1:
 
@@ -49,8 +58,9 @@ Deliverables for Phase 1:
 4. A Phase 1 coverage report: per-asset-month channel-availability breakdown (how many of
    the three channels are populated, by year and by asset class), where each channel is
    thin or absent, and which hypotheses that gates. Update DATA_DECISIONS_LOG.md as you
-   go, not at the end. Log this session as 06_documentation/ai_conversations/
-   session_007_*.md and update 06_documentation/time_log.md.
+   go (next entry is 21), not at the end. Log this session as 06_documentation/
+   ai_conversations/session_009_*.md (007 = Phase 0 review, 008 = Phase 0B follow-up) and
+   update 06_documentation/time_log.md.
 
 When Phase 1 is done, stop. Summarize what you built, what the channel-availability report
 shows, and any open questions before Phase 2. Commit and push to

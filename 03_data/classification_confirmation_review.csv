@@ -1,0 +1,631 @@
+cmc_id,symbol,name,obs_months,current_class,proposed_class,rationale,changed
+1230,STEEM,Steem,122,other,coin,"Steem (STEEM): native coin of the Steem DPoS chain; staked as Steem Power, witnesses/producers earn issuance.",True
+1320,ARDR,Ardor,116,other,coin,Ardor (ARDR): native coin of the Ardor PoS chain (Nxt successor); forging rewards.,True
+2405,IOST,IOST,101,other,coin,IOST: native coin of the IOST L1 (Proof-of-Believability); staked for block-production rewards.,True
+2840,QKC,QuarkChain,96,other,coin,QuarkChain (QKC): native coin of the QuarkChain sharded L1; staked/mined block rewards.,True
+2585,CENNZ,CENNZnet,76,other,coin,CENNZnet (CENNZ): native coin of the CENNZnet L1; staking for security.,True
+1925,WTC,Waltonchain,75,other,coin,Waltonchain (WTC): native coin of the Waltonchain L1 (Proof-of-Stake-and-Trust).,True
+5034,KSM,Kusama,70,other,coin,"Kusama: Polkadot canary-net L1, NPoS; validators/nominators stake KSM for chain security+rewards (DeFiLlama 'Liquid Staking' is a mislabel).",True
+1955,NEBL,Neblio,66,other,coin,Neblio (NEBL): native coin of the Neblio PoS chain; staking rewards.,True
+4747,VLX,Velas,61,other,coin,Velas (VLX): native coin of the Velas L1 (AIDPoS); staked for chain security.,True
+2346,WICC,WaykiChain,61,other,coin,WaykiChain (WICC): native coin of the WaykiChain DPoS L1.,True
+8677,XYM,Symbol,61,other,coin,Symbol (XYM): native coin of the Symbol chain; PoS+ ('posplus') harvesting rewards (consensus tag the first-pass exact-set missed).,True
+4189,UOS,Ultra,60,other,coin,Ultra (UOS): native coin of the Ultra L1 (EOSIO/DPoS).,True
+28932,DYM,Dymension,26,other,coin,Dymension (DYM): Cosmos-SDK L1 RollApp settlement chain; DYM bonded by validators for PoS security.,True
+15185,KUJI,Kujira,23,other,coin,"Kujira (KUJI): sovereign Cosmos L1; KUJI staked by validators for chain security (DeFiLlama 'Liquidations' tags its apps, not the chain).",True
+28321,POL,Polygon (prev. MATIC),21,other,coin,Polygon (POL): native gas+staking token of Polygon PoS; validators stake POL to secure the chain (DeFiLlama 'Chain').,True
+18934,STG,Stargate Finance,40,other,token,Stargate Finance (STG): LayerZero bridge protocol; veSTG vote-escrow with protocol fee-share + governance (bridge category the first pass didn't promote).,True
+1455,GLM,Golem,115,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1759,SNT,Status,108,other,other,keep other -- privacy utility token (no security-staking benefit and no governance/fee-share lock).,False
+1816,CVC,Civic,107,other,other,keep other -- identity utility token (no security-staking benefit and no governance/fee-share lock).,False
+1788,MTL,Metal DAO,107,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+1772,STORJ,Storj,107,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+1975,LINK,Chainlink,105,other,other,keep other -- wrapped/tokenized asset (no security-staking benefit and no governance/fee-share lock).,False
+1966,MANA,Decentraland,105,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1974,PRO,Propy,105,other,other,keep other -- wrapped/tokenized asset (no security-staking benefit and no governance/fee-share lock).,False
+1886,DENT,Dent,104,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+2087,KCS,KuCoin Token,103,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2132,POWR,Powerledger,103,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+2303,MED,MediBloc,101,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1856,DNT,district0x,100,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+2682,HOT,Holo,97,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+2694,NEXO,Nexo,97,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+2143,DATA,Streamr,94,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2289,GFT,Gifto,91,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+291,MAID,MaidSafeCoin,90,other,other,keep other -- DePIN/compute token (no security-staking benefit and no governance/fee-share lock).,False
+2297,STMX,StormX,90,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2915,MOC,Moss Coin,88,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3773,FET,Artificial Superintelligence Alliance,86,other,other,keep other -- AI/agent utility token (no security-staking benefit and no governance/fee-share lock).,False
+2588,LOOM,Loom Network,86,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+3783,ANKR,Ankr,85,other,other,"GRAY ZONE -- Ankr (ANKR): DePIN/RPC + liquid-staking utility/governance token; ambiguous, left other.",False
+3701,RIF,Rootstock Infrastructure Framework,85,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+1087,FCT,Factom,84,other,other,"GRAY ZONE -- Factom (FCT): data-anchoring credit/entry-credit model, no clean staking-for-security reward. Ambiguous; left other.",False
+1817,VGX,VGX Token,84,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1492,GBYTE,Obyte,83,other,other,GRAY ZONE -- Obyte (GBYTE): native DAG coin but historically no staking rewards (b_t ~ 0). Ambiguous; left other.,False
+3957,LEO,UNUS SED LEO,83,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2502,HT,Huobi Token,82,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+1853,OAX,OAX,81,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+3897,OKB,OKB,81,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+4269,GT,GateToken,80,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+4041,MX,MX Token,79,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2398,KEY,SelfKey,77,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+4705,PAXG,PAX Gold,77,other,other,keep other -- wrapped/tokenized asset (no security-staking benefit and no governance/fee-share lock).,False
+2090,LA,LATOKEN,76,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+1710,VERI,Veritaseum,76,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+1037,AGRS,Agoras: Tau Net,75,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2243,DRGN,Dragonchain,75,other,other,keep other -- enterprise/platform token (no security-staking benefit and no governance/fee-share lock).,False
+3801,BORA,BORA,74,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+2019,VIB,Viberate,74,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3260,AMO,AMO Coin,73,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2943,RPL,Rocket Pool,72,other,other,GRAY ZONE -- Rocket Pool (RPL): liquid-staking protocol governance/collateral token; left other per Entry 8 (LST sector kept out of the coin/token cut).,False
+3673,ASD,ASD,71,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2776,AVA,AVA (Travala),71,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+2245,PRE,Presearch,71,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1948,AVT,Aventus,70,other,other,keep other -- enterprise/platform token (no security-staking benefit and no governance/fee-share lock).,False
+3600,HPO,Hippocrat,70,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3640,LPT,Livepeer,70,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+5268,EWT,Energy Web Token,69,other,other,GRAY ZONE -- Energy Web (EWT): own chain but Proof-of-Authority; weak/empty seigniorage benefit. Ambiguous; left other.,False
+3884,FX,Pundi AI,69,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2316,DBC,DeepBrain Chain,68,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1392,PLU,Pluton,68,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+2213,QASH,QASH,67,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+5026,OXT,Orchid,66,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+4275,COMBO,COMBO,65,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1807,SAN,Santiment Network Token,65,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+5964,TWT,Trust Wallet Token,65,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+7431,AKT,Akash Network,64,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+6210,SAND,The Sandbox,64,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+8119,SFP,SafePal,64,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1172,SFT,Safex Token,64,other,other,keep other -- privacy utility token (no security-staking benefit and no governance/fee-share lock).,False
+5908,DKA,dKargo,63,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+45,CSC,CasinoCoin,62,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1789,PPT,Populous,62,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4120,PROM,Prom,62,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+9040,PUNDIX,Pundi X (New),62,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2267,WABI,Wabi,62,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+2276,IGNIS,Ignis,61,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+2553,RFR,Refereum,61,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+3724,SOLVE,SOLVE,61,other,other,keep other -- enterprise/platform token (no security-staking benefit and no governance/fee-share lock).,False
+3581,PNK,Kleros,60,other,other,GRAY ZONE -- Kleros (PNK): jurors stake PNK for case selection + fees (a work/fee-share token) -- borderline token; left other pending review.,False
+2866,BOUNTY,Chainbounty,59,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2934,KAN,BitKan,59,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+3175,MARO,Maro,59,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+5161,WRX,WazirX,59,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+6958,ACH,Alchemy Pay,58,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2572,BAX,BABB,58,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+6724,KLV,Klever Coin,58,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+9020,TKO,Toko Token,58,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+3946,CRE,Carry,57,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+8536,MASK,Mask Network,57,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1908,NAS,Nebulas,57,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+2161,RDN,Raiden Network Token,57,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+2992,APL,Apollo Currency,56,other,other,keep other -- privacy utility token (no security-staking benefit and no governance/fee-share lock).,False
+2306,BRD,Bread,56,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+11584,BTRST,Braintrust,56,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2134,GRID,Grid+,56,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+8425,JASMY,JasmyCoin,56,other,other,keep other -- IoT utility token (no security-staking benefit and no governance/fee-share lock).,False
+7878,MOB,MobileCoin,56,other,other,keep other -- privacy utility token (no security-staking benefit and no governance/fee-share lock).,False
+3795,ZEON,ZEON,56,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3718,BTTOLD,BitTorrent,55,other,other,keep other -- DePIN/compute token (no security-staking benefit and no governance/fee-share lock).,False
+10603,IMX,Immutable,55,other,other,GRAY ZONE -- Immutable (IMX): zkEVM L2 token; staking exists but security leans on Ethereum. Ambiguous; left other.,False
+5616,MATH,MATH,55,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+9816,NFT,AINFT,55,other,other,keep other -- NFT-ecosystem fungible token (no security-staking benefit and no governance/fee-share lock).,False
+5060,XNC,XeniosCoin,55,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+6216,AXEL,AXEL,54,other,other,keep other -- storage/DePIN token (no security-staking benefit and no governance/fee-share lock).,False
+2043,CND,Cindicator,54,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+10442,DESO,Decentralized Social,54,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+2548,POA,POA Network,54,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+1409,SNGLS,SingularDTV,54,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+7192,WBNB,Wrapped BNB,54,other,other,keep other -- wrapped/tokenized asset (no security-staking benefit and no governance/fee-share lock).,False
+14822,VR,Victoria VR,53,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+8384,CLV,CLV,52,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1776,MCO,MCO,52,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+3628,MXC,Moonchain,52,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+3666,ULT,Ultiledger,52,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+5176,XAUt,Tether Gold,52,other,other,keep other -- wrapped/tokenized asset (no security-staking benefit and no governance/fee-share lock).,False
+18069,GMT,GMT,51,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+9720,LAT,PlatON,51,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1721,MYST,Mysterium,51,other,other,keep other -- DePIN/compute token (no security-staking benefit and no governance/fee-share lock).,False
+3126,XPX,ProximaX,51,other,other,keep other -- DePIN/compute token (no security-staking benefit and no governance/fee-share lock).,False
+4283,BF,BitForex Token,50,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2605,BFT,BnkToTheFuture,50,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+1876,DCN,Dentacoin,50,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1954,MDA,Moeda Loyalty Points,50,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+2321,QLC,Kepple,50,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2758,UBT,Unibright,50,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+8085,stETH,Lido Staked ETH,50,other,other,keep other -- liquid-staking derivative (Entry 8: other) (no security-staking benefit and no governance/fee-share lock).,False
+11346,RACA,RACA,49,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+14556,BOBA,Boba Network,48,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1949,DLT,Agrello,48,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2643,DVPN,Sentinel,48,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+823,GEO,GeoCoin,48,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1723,SNM,SONM,48,other,other,keep other -- DePIN/compute token (no security-staking benefit and no governance/fee-share lock).,False
+7281,XPRT,Persistence One,48,other,other,keep other -- liquid-staking derivative (Entry 8: other) (no security-staking benefit and no governance/fee-share lock).,False
+2344,APPC,AppCoins,47,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+11212,ATLAS,Star Atlas,47,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+3974,BTC2,Bitcoin 2,47,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+11374,D,DAR Open Network,47,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+2181,GVT,Genesis Vision,47,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5221,HNS,Handshake,47,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+2544,NCASH,Nitro Network,47,other,other,keep other -- IoT utility token (no security-staking benefit and no governance/fee-share lock).,False
+11840,OP,Optimism,47,other,other,"GRAY ZONE -- Optimism (OP): L2 governance token -- no security-staking (not coin), governance-only without a vote-escrow fee-share lock (not a clean token). Ambiguous; left other.",False
+2364,TCT,TokenClub,47,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1403,1ST,FirstBlood,46,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+2444,C20,CRYPTO20,46,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+606,FLDC,FoldingCoin,46,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3662,HEDG,HedgeTrade,46,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2473,SOC,All Sports,46,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+12999,SSV,ssv.network,46,other,other,"GRAY ZONE -- ssv.network (SSV): distributed-validator staking infrastructure; fee/governance token, not chain security itself. Ambiguous; left other.",False
+1899,YOYOW,YOYOW,46,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+2246,CMT,CyberMiles,45,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+4490,EMRX,Emirex Token,45,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3631,FOAM,FOAM,45,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+3756,MHC,#MetaHash,44,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+699,NSR,NuShares,44,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+1405,PEPECASH,Pepe Cash,44,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+5777,RENBTC,renBTC,44,other,other,keep other -- wrapped/tokenized asset (no security-staking benefit and no governance/fee-share lock).,False
+1002,SPRTS,Sprouts,44,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5079,APM,apM Coin,43,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1475,INCNT,Incent,43,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+2274,MDS,MediShares,43,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4268,NYE,NewYork Exchange,43,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+1983,VIBE,VIBE,43,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+11092,BGB,Bitget Token,42,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+7461,PDA,PlayDapp,42,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1784,PLBT,Polybius,42,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1208,RVR,RevolutionVR,42,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1726,ZRC,ZrCoin,42,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+3020,BHP,BHPCoin,41,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2307,BIX,Bibox Token,41,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2856,CEEK,CEEK VR,41,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+2642,CVT,CyberVein,41,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+18895,MBX,MARBLEX,41,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+4890,NWC,Numerico,41,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1123,OBITS,OBITS,41,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+5072,RKN,Rakon,41,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+9721,SAMO,Samoyedcoin,41,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2511,WPR,WePower,41,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+23121,BLUR,Blur,40,other,other,"GRAY ZONE -- Blur (BLUR): NFT-marketplace governance/incentive token; NFT-sector gray zone, left other.",False
+2556,CS,Credits,40,other,other,keep other -- IoT utility token (no security-staking benefit and no governance/fee-share lock).,False
+2446,DTA,DATA,40,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1596,EDG,Edgeless,40,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+23635,FORM,Four,40,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1950,HVN,Hiveterminal Token,40,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1719,PPY,Peerplays,40,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2313,SRN,SIRIN LABS Token,40,other,other,keep other -- DePIN/compute token (no security-staking benefit and no governance/fee-share lock).,False
+5524,TNC,TNC Coin,40,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1923,TNT,Tierion,40,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+2061,BCPT,Blockmason Credit Protocol,39,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+2044,ENG,Enigma,39,other,other,keep other -- privacy utility token (no security-staking benefit and no governance/fee-share lock).,False
+224,FAIR,FairCoin,39,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1669,HMQ,Humaniq,39,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+525,HYP,HyperStake,39,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+21846,ID,SPACE ID,39,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2017,KICK,KickToken [old],39,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+17081,LOOKS,LooksRare,39,other,other,"GRAY ZONE -- LooksRare (LOOKS): NFT-marketplace token; NFT-sector gray zone, left other.",False
+1658,LUN,Lunyr,39,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+1937,POE,Po.et,39,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2476,RUFF,Ruff,39,other,other,keep other -- IoT utility token (no security-staking benefit and no governance/fee-share lock).,False
+4078,SERO,Super Zero Protocol,39,other,other,keep other -- privacy utility token (no security-staking benefit and no governance/fee-share lock).,False
+3875,VALOR,Valor Token,39,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3737,BTU,BTU Protocol,38,other,other,keep other -- enterprise/platform token (no security-staking benefit and no governance/fee-share lock).,False
+24613,EDU,Open Campus,38,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+939,GAM,Gambit,38,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1715,MGO,MobileGo,38,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+2441,MOF,Molecular Future,38,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1930,PST,Primas,38,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+1905,TFL,TrueFlip,38,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+450,TRUST,TrustPlus,38,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+11222,WNCG,Nine Chronicles,38,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2349,XIN,Mixin,38,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+3866,CON,CONUN,37,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2399,INT,INT,37,other,other,keep other -- IoT utility token (no security-staking benefit and no governance/fee-share lock).,False
+400,KORE,Kore,37,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2554,LYM,Lympo,37,other,other,keep other -- NFT-ecosystem fungible token (no security-staking benefit and no governance/fee-share lock).,False
+25028,ORDI,ORDI,37,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+24478,PEPE,Pepe,37,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+11206,BLOK,Bloktopia,36,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+3742,BNANA,Chimpion,36,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4257,BTRS,Bitball Treasure,36,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2342,COV,Covesting,36,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4512,FNSA,FINSCHIA,36,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+3936,GNY,GNY,36,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+3721,HPT,Huobi Pool Token,36,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+16946,MCT,Metacraft,36,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5326,ORC,Orbit Chain,36,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2830,SEELE,Seele-N,36,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+4197,SHR,ShareToken,36,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2578,TONE,TE-FOOD,36,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2298,DTR,Dynamic Trading Rights,35,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+2835,EDR,Endor Protocol,35,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3968,EUM,Elitium,35,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2336,GTC,Game.com,35,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2498,JNT,Jibrel Network,35,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+27075,MNT,Mantle,35,other,other,GRAY ZONE -- Mantle (MNT): L2 gas+governance token; same coin/token ambiguity as OP. Left other.,False
+15271,RLB,Rollbit Coin,35,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2507,TKY,THEKEY,35,other,other,keep other -- identity utility token (no security-staking benefit and no governance/fee-share lock).,False
+2369,XNS,Insolar,35,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3351,ZB,ZB Token,35,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+1775,ADT,adToken,34,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+25220,BITCOIN,HarryPotterObamaSonic10Inu (ERC-20),34,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+1976,BMC,Blackmoon,34,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+22764,HOOK,Hooked Protocol,34,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2711,MTC,DOC.COM,34,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2458,OCN,Odyssey,34,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+2900,PAI,Project Pai,34,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2191,PAYX,Paypex,34,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3772,SCC,STEM CELL COIN,34,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5514,TTT,The Transfer Token,34,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+10729,UFO,UFO Gaming,34,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+7960,vXVS,Venus XVS,34,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+729,BLITZ,Blitzcash,33,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+2095,BOS,BOScoin,33,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2454,BTCU,Bitcoin Unlimited,33,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+2060,CAG,Change,33,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+2482,CPC,CPChain,33,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1153,CRB,Creditbit,33,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1677,DICE,Etheroll,33,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+7590,DVI,Dvision Network,33,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+10778,HERO,Metahero,33,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+3695,HYN,Hyperion,33,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+2209,INK,Ink,33,other,other,keep other -- identity utility token (no security-staking benefit and no governance/fee-share lock).,False
+2305,NGC,NAGA,33,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2603,NPXS,Pundi X,33,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+4200,PCX,ChainX,33,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1226,QWARK,Qwark,33,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2524,UTNP,Universa,33,other,other,keep other -- enterprise/platform token (no security-staking benefit and no governance/fee-share lock).,False
+9892,YOOSHI,YooShi,33,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+3089,AVINOC,AVINOC,32,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5280,BLCT,Bloomzed Loyalty Club Ticket,32,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2248,CAPP,Cappasity,32,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2503,DMT,DMarket,32,other,other,keep other -- NFT-ecosystem fungible token (no security-staking benefit and no governance/fee-share lock).,False
+1408,ICN,Iconomi,32,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3085,INO,INO COIN,32,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+1590,MER,Mercury,32,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+17520,ORBR,Orbler,32,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3364,PLC,PLATINCOIN,32,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+493,SDC,ShadowCash,32,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+468,TRK,Truckcoin,32,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1527,WCT,Waves Community Token,32,other,other,keep other -- enterprise/platform token (no security-staking benefit and no governance/fee-share lock).,False
+920,XSD,SounDAC,32,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+23095,BONK,Bonk,31,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2392,BTO,Bottos,31,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+818,CON,PayCon,31,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2641,CPX,Apex,31,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+11877,GAL,Galxe,31,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4761,NU,NuCypher,31,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+11823,POKT,Pocket Network,31,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+1708,PTOY,Patientory,31,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+10821,STARL,Starlink,31,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+1861,STX,Stox,31,other,other,keep other -- prediction-market token (no security-staking benefit and no governance/fee-share lock).,False
+1562,SWT,Swarm City,31,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+2149,UKG,Unikoin Gold,31,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+643,UNITY,SuperNET,31,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1636,XBY,XTRABYTES,31,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+890,8BIT,8Bit,30,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1771,BET,DAOBet,30,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1303,BRX,Breakout Stake,30,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2529,CAS,Cashaa,30,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+3154,DAC,Davinci Coin,30,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2283,DAT,Datum,30,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+3657,LAMB,Lambda,30,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+5625,LYXe,LUKSO (Old),30,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1998,ORMEUS,Ormeus Coin,30,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+3164,PMA,PumaPay,30,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2455,PRS,PressOne,30,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+4644,QQQ,Poseidon Network,30,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1592,TAAS,TaaS,30,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2627,TPAY,TokenPay,30,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1737,XEL,XEL,30,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1100,CUBE,DigiCube,29,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5618,DAWN,Dawn Protocol,29,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+3914,GTN,GlitzKoin,29,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2760,LBA,Cred,29,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+4950,LCX,LCX,29,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+1454,LKK,Lykke,29,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2287,LOC,LockTrip,29,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+13631,MANTA,Manta Network,29,other,other,"GRAY ZONE -- Manta (MANTA): hybrid L1(Atlantic)/L2(Pacific); staking on one side, rollup gas on the other. Ambiguous; left other.",False
+12140,RMRK,RMRK,29,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+2400,RNT,OneRoot Network,29,other,other,keep other -- enterprise/platform token (no security-staking benefit and no governance/fee-share lock).,False
+3733,S4F,S4FE,29,other,other,keep other -- enterprise/platform token (no security-staking benefit and no governance/fee-share lock).,False
+3826,TOP,TOP,29,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28752,WIF,dogwifhat,29,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+28933,XAI,Xai,29,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1109,1337,Elite,28,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1706,ADK,Aidos Kuneen,28,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2407,AIT,AICHAIN,28,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1249,EL,Elcoin,28,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1480,GOLOS,Golos,28,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1616,GUP,Matchpool,28,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+24600,MOBILE,Helium Mobile,28,other,other,keep other -- DePIN/infrastructure token (no security-staking benefit and no governance/fee-share lock).,False
+2493,STK,STK,28,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+5802,XOR,SORA,28,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2047,ZSC,Zeusshield,28,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+29870,BOME,BOOK OF MEME,27,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+3873,BOTX,botXcoin,27,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+29743,BRETT,Brett (Based),27,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2918,BZ,BitZ Token,27,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+854,CV2,Colossuscoin V2,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2696,DAX,DAEX,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2162,DPY,Delphy,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+8438,HOGE,Hoge Finance,27,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2552,IHT,IHT Real Estate Protocol,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2497,MTN,Medicalchain,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+321,NAUT,NautilusCoin,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+76,PHS,Philosopher Stones,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2219,SPANK,SpankChain,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2309,SPHTX,SophiaTX,27,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1073,STEPS,Steps,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3144,THR,ThoreCoin,27,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+735,VASH,VPNCoin,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1465,VRS,Veros,27,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2064,ART,Maecenas,26,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+2592,BANCA,Banca,26,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3415,BCZERO,Buggyra Coin Zero,26,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2727,BZNT,Bezant,26,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+30096,DEGEN,Degen,26,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+3116,INB,Insight Chain,26,other,other,keep other -- DePIN/compute token (no security-staking benefit and no governance/fee-share lock).,False
+1481,NXC,Nexium,26,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+27178,PAAL,PAAL AI,26,other,other,keep other -- AI/agent utility token (no security-staking benefit and no governance/fee-share lock).,False
+28782,POPCAT,Popcat (SOL),26,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2471,SLT,Smartlands Network,26,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2506,SWM,Swarm,26,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1588,TKS,Tokes,26,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+6957,ALBT,AllianceBlock,25,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+3966,BHD,BitcoinHD,25,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+3715,CAJ,Cajutel,25,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+1510,CCRB,CryptoCarbon,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2427,CHAT,ChatCoin,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1989,COS,COS,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2766,CPT,Cryptaur,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1963,CREDO,Credo,25,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+30933,DOG,Dog (Bitcoin),25,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2885,EGT,Egretia,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1380,LMC,LoMoCoin,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+27659,MOG,Mog Coin,25,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2595,NANJ,NANJCOIN,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28850,NOT,Notcoin,25,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+3224,QBIT,Qubitica,25,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1423,TRIG,Triggers,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+24911,TURBO,Turbo,25,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+694,XTC,TileCoin,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+95,YBC,YbCoin,25,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2006,COB,Cobinhood,24,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+2175,DBET,DecentBet,24,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2591,DROP,Dropil,24,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2644,EOSDAC,eosDAC,24,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+29835,IO,io.net,24,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1845,IXT,IXT,24,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+12749,NAKA,Nakamoto Games,24,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+3307,SPND,Spendcoin,24,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+335,XC,XCurrency,24,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1751,ATCC,ATC Coin,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3519,BRZE,Breezecoin,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2673,CHX,WeOwn,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2955,COSM,Cosmo Coin,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2746,GRN,GreenPower,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2459,IDH,indaHash,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2600,LGO,LGO Token,23,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+21178,MRS,Metars Genesis,23,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+3788,NET,NEXT,23,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+549,SJCX,Storjcoin X,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1873,TIX,Blocktix,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3356,TMTG,The Midas Touch Gold,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+24760,WBETH,Wrapped Beacon ETH,23,other,other,keep other -- liquid-staking derivative (Entry 8: other) (no security-staking benefit and no governance/fee-share lock).,False
+5070,XTP,Tap,23,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2685,ZEBI,Zebi Token,23,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+11498,CBG,Chainbing,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5622,DMCH,Darma Cash,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+32698,DOGS,DOGS,22,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+29884,DSYNC,Destra Network,22,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+1161,FLVR,FlavorCoin,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2723,FXT,FuzeX,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+30063,GIGA,Gigachad,22,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+1308,HEAT,HEAT,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+645,JINN,Jinn,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5185,KOK,KOK,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1051,MI,Xiaomicoin,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+27533,OSAK,Osaka Protocol,22,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+1841,PBT,Primalbase Token,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+7206,TITAN,TitanSwap,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2215,TSL,Energo,22,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5614,ZLW,Zelwin,22,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+2033,BCO,BridgeCoin,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3066,BCV,BitCapitalVendor,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28675,COQ,Coq Inu,21,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+5313,CTCN,CONTRACOIN,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1603,DTB,Databits,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+466,HZ,Horizon,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1673,MNE,Minereum,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1902,MYB,MyBit,21,other,other,keep other -- IoT utility token (no security-staking benefit and no governance/fee-share lock).,False
+32521,NEIRO,Neiro,21,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+27960,NPC,Non-Playable Coin,21,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+529,QBK,Qibuck,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+344,QORA,Qora,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2829,REPO,REPO,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1113,SCRT,SecretCoin,21,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+16463,SOS,OpenDAO,21,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+2443,TNC,Trinity Network Credit,21,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+115,APC,Applecoin,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28066,BANANA,Banana Gun,20,other,other,keep other -- trading-bot token (no security-staking benefit and no governance/fee-share lock).,False
+28230,BIGTIME,Big Time,20,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+1201,BTSR,BTSR,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2070,DRT,DomRaider,20,other,other,keep other -- NFT-ecosystem fungible token (no security-staking benefit and no governance/fee-share lock).,False
+2573,ELEC,Electrify.Asia,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2066,EVR,Everus,20,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+20787,FLZ,Fellaz,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+779,GEMZ,GetGems,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+33440,GOAT,Goatseus Maximus,20,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+1276,ICOO,ICO OpenLedger,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+550,LTBC,LTBcoin,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+33093,MOODENG,Moo Deng (moodengsol.com),20,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+28382,MYRO,Myro,20,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+24835,PEPECOIN,PepeCoin,20,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2742,SKB,Sakura Bloom,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28081,SPX,SPX6900,20,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+29420,VIRTUAL,Virtuals Protocol,20,other,other,keep other -- AI/agent utility token (no security-staking benefit and no governance/fee-share lock).,False
+1483,VSL,vSlice,20,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2859,XMX,XMax,20,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+4361,BEST,Bitpanda Ecosystem Token,19,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+562,BILS,BilShares,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3686,CVNT,Content Value Network,19,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+3858,FNB,FNB Protocol,19,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+3618,GATE,GATE,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5200,GLEEC,Gleec Coin,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+32956,GRASS,Grass,19,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2599,NOAH,Noah Coin,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+751,PANGEA,Pangea Poker,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1277,PDC,Project Decorum,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+33788,PNUT,Peanut the Squirrel,19,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2094,PRG,Paragon,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1991,RVT,Rivetz,19,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+346,SCOT,Scotcoin,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+29920,SLERF,SLERF,19,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+21781,STRD,Stride,19,other,other,GRAY ZONE -- Stride (STRD): Cosmos liquid-staking appchain; native-staking-coin vs LST-protocol-token identity unresolved (Entry 8). Left other.,False
+3863,UGAS,UGAS,19,other,other,keep other -- DePIN/compute token (no security-staking benefit and no governance/fee-share lock).,False
+28293,ULTIMA,Ultima,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2892,WWB,Wowbit,19,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+23355,0x0,0x0.ai,18,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+3664,AGVC,AgaveCoin,18,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+34103,AIXBT,aixbt,18,other,other,keep other -- AI/agent utility token (no security-staking benefit and no governance/fee-share lock).,False
+2040,ALIS,ALIS,18,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2767,APIS,APIS,18,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3620,ATP,Atlas Protocol,18,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3261,EVN,EvenCoin,18,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+33597,FARTCOIN,Fartcoin,18,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+444,FIMK,FIMKrypto,18,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5548,MASS,Massnet,18,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+32197,ME,Magic Eden,18,other,other,"GRAY ZONE -- Magic Eden (ME): NFT-marketplace token; NFT-sector gray zone, left other.",False
+31526,MOCA,Moca Network,18,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+17704,MV,GensoKishi Metaverse,18,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+532,NXTTY,Nxttycoin,18,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+34466,PENGU,Pudgy Penguins,18,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+28194,SATS,SATS (Ordinals),18,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2541,STQ,Storiqa,18,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+1624,ATMOS,Atmos,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2211,BOT,Bodhi,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4049,BXK,Bitbook Gambling,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1729,CFI,Cofound.it,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4067,CIX100,Cryptoindex.com 100,17,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+2659,DIG,Dignity,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1714,ETT,EncryptoTel [WAVES],17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+34330,FAI,Freysa,17,other,other,keep other -- AI/agent utility token (no security-staking benefit and no governance/fee-share lock).,False
+1225,GBT,GameBet Coin,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+402,GRE,Greencoin,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+32195,HMSTR,Hamster Kombat,17,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+2845,MEDX,MediBloc [ERC20],17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+35347,MELANIA,Official Melania Meme,17,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+686,MMNXT,MMNXT,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2080,MOD,Modum,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3598,OSA,Optimal Shelf Availability Token,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+15060,RETH,Rocket Pool ETH,17,other,other,keep other -- liquid-staking derivative (Entry 8: other) (no security-staking benefit and no governance/fee-share lock).,False
+17917,RSS3,RSS3,17,other,other,keep other -- AI/data utility token (no security-staking benefit and no governance/fee-share lock).,False
+27750,TOSHI,Toshi,17,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+35336,TRUMP,OFFICIAL TRUMP,17,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+2512,UCASH,UNIVERSAL CASH,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+923,VIRAL,Viral,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3404,WIX,Wixlar,17,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+7321,YOUC,yOUcash,17,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+21535,cbETH,Coinbase Wrapped Staked ETH,17,other,other,keep other -- liquid-staking derivative (Entry 8: other) (no security-staking benefit and no governance/fee-share lock).,False
+32968,AIC,AI Companions,16,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+20886,ASTRAFER,Astrafer,16,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+4281,BHT,BHEX Token,16,other,other,keep other -- exchange/discount token (no security-staking benefit and no governance/fee-share lock).,False
+1374,BLOCKPAY,BlockPay,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2650,CBT,CommerceBlock,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3812,FXC,Flexacoin,16,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+4694,GAP,GAPS,16,other,other,keep other -- prediction-market token (no security-staking benefit and no governance/fee-share lock).,False
+35268,GPS,GoPlus Security,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5336,HMR,Homeros,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1379,JWL,Jewels,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1309,LIR,LetItRide,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1811,NET,Nimiq Exchange Token,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1495,POSW,PoSW Coin,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+8757,SAFEMOON,SafeMoon,16,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+1595,SOAR,Soarcoin,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+23951,STIK,Staika,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+23246,TOMI,tomi,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28654,UPC,UPCX,16,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+3134,XET,ETERNAL TOKEN,16,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+1812,XRL,Rialto,16,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+34083,ZEREBRO,Zerebro,16,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+4057,ADN,Aladdin,15,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+30008,APU,Apu Apustaja,15,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+1688,APX,APX,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5600,ATT,Attila,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1494,BPC,Bitpark Coin,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+904,BTX,BitcoinTX,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+34125,CHILLGUY,Just a chill guy,15,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+1990,CSNO,BitDice,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2450,CV,carVertical,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2304,DEW,DEW,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+20279,DHN,Dohrnii,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3734,ELAMA,Elamachain,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+34792,GRIFFAIN,GRIFFAIN,15,other,other,keep other -- AI/agent utility token (no security-staking benefit and no governance/fee-share lock).,False
+1888,IFT,InvestFeed,15,other,other,keep other -- media/social token (no security-staking benefit and no governance/fee-share lock).,False
+7184,KOGE,48 Club Token,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3070,LXT,Litex,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1690,MCAP,MCAP,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1709,QAU,Quantum,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1683,RLT,RouletteToken,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3366,SINS,SafeInsure,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+32717,SUNDOG,SUNDOG,15,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+3458,ZT,ZBG Token,15,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+30605,ALE,Ailey,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+18736,BFIC,Blockchain Foundation for Innovation & Collaboration,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+579,CNMT,Coinomat,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4748,EON,Dimension Chain,14,other,other,keep other -- platform utility token (no security-staking benefit and no governance/fee-share lock).,False
+12131,FRTS,Fruits,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1075,FUND,Cryptofund,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3791,JWL,Jewel,14,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+989,MMBTCD,MMBTCD,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+11461,MSOL,Marinade Staked SOL,14,other,other,keep other -- liquid-staking derivative (Entry 8: other) (no security-staking benefit and no governance/fee-share lock).,False
+1872,NDC,NEVERDIE,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2946,PTT,Proton Token,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1559,RNS,Renos,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1482,SHORTY,Shorty,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+24165,WKAVA,Wrapped Kava,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4220,XAC,General Attention Currency,14,other,other,keep other -- payments utility token (no security-staking benefit and no governance/fee-share lock).,False
+2939,XD,Data Transaction Token,14,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1300,CADASTRAL,Bitland,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2897,CCC,Clipper Coin,13,other,other,keep other -- services utility token (no security-staking benefit and no governance/fee-share lock).,False
+1520,DRS,Digital Rupees,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+570,FIBRE,Fibre,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+651,MARYJ,MaryJane,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1550,MSCN,Master Swiscoin,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28412,MUBI,Multibit,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+29447,NMT,NetMind Token,13,other,other,keep other -- AI/agent utility token (no security-staking benefit and no governance/fee-share lock).,False
+2069,OTN,Open Trading Network,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1404,PSB,Pesobit,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+62,PTS,BitShares PTS,13,other,other,"GRAY ZONE -- BitShares PTS (PTS): likely the mineable ProtoShares predecessor (=> coin), but symbol-collision + obscurity make it low-confidence. Left other.",False
+1969,SCL,Sociall,13,other,other,keep other -- marketplace utility token (no security-staking benefit and no governance/fee-share lock).,False
+757,SKYNET,SkyNET,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1566,VISIO,Visio,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+509,XCR,Crypti,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1499,YASH,YashCoin,13,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28683,1000SATS,SATS,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+7157,BASID,Basid Coin,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+7503,BHAO,Bithao,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3648,CNUS,CoinUs,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+3847,CPT,Contents Protocol,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+869,CRAVE,Crave,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5796,DRS,Doctors Coin,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+9466,EDGT,Edgecoin,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1625,EMV,Ethereum Movie Venture,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+29520,EZETH,Renzo Restaked ETH,12,other,other,keep other -- liquid-staking derivative (Entry 8: other) (no security-staking benefit and no governance/fee-share lock).,False
+10180,GOMINING,GoМining,12,other,other,keep other -- gaming/metaverse token (no security-staking benefit and no governance/fee-share lock).,False
+19091,H2O,H2O DAO,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+481,JLH,jl777hodl,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1516,JNS,Janus,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+1224,KR,Krypton,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+2378,KRM,Karma,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+7059,MBN,Mobilian Coin,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+155,MRC,microCoin,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+17050,MULTI,Multichain,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+622,NXTV,NXTventure,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+5084,PLF,PlayFuel,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+607,SWARM,Swarm,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+4280,TSHP,12Ships,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+36828,USELESS,Useless Coin,12,other,other,keep other -- meme token (no security-staking benefit and no governance/fee-share lock).,False
+20701,WEVER,Wrapped Everscale,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+6726,YUSRA,YUSRA,12,other,other,keep other -- no coin (security-staking) or token (governance/fee-share) mechanism evident from tags/DeFiLlama.,False
+28695,weETH,Wrapped eETH,12,other,other,keep other -- wrapped/tokenized asset (no security-staking benefit and no governance/fee-share lock).,False

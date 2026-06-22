@@ -1,0 +1,24 @@
+CLASSIFICATION CONFIRMATION PASS (deliverable 2, Entry 11)
+============================================================
+Candidates reviewed (other & ambiguous & >=12 obs months): 630
+Reclassified: 16  (coin: 15, token: 1)
+Gray-zone, left 'other' with note: 16
+Kept 'other' (utility/sector tokens): 598
+
+Reclassifications (from -> to):
+  STEEM    Steem                      other -> coin   | Steem (STEEM): native coin of the Steem DPoS chain; staked as Steem Power, witnesses/producers earn issuance.
+  ARDR     Ardor                      other -> coin   | Ardor (ARDR): native coin of the Ardor PoS chain (Nxt successor); forging rewards.
+  IOST     IOST                       other -> coin   | IOST: native coin of the IOST L1 (Proof-of-Believability); staked for block-production rewards.
+  QKC      QuarkChain                 other -> coin   | QuarkChain (QKC): native coin of the QuarkChain sharded L1; staked/mined block rewards.
+  CENNZ    CENNZnet                   other -> coin   | CENNZnet (CENNZ): native coin of the CENNZnet L1; staking for security.
+  WTC      Waltonchain                other -> coin   | Waltonchain (WTC): native coin of the Waltonchain L1 (Proof-of-Stake-and-Trust).
+  KSM      Kusama                     other -> coin   | Kusama: Polkadot canary-net L1, NPoS; validators/nominators stake KSM for chain security+rewards (DeFiLlama 'Liquid Staking' is a mislabel).
+  NEBL     Neblio                     other -> coin   | Neblio (NEBL): native coin of the Neblio PoS chain; staking rewards.
+  VLX      Velas                      other -> coin   | Velas (VLX): native coin of the Velas L1 (AIDPoS); staked for chain security.
+  WICC     WaykiChain                 other -> coin   | WaykiChain (WICC): native coin of the WaykiChain DPoS L1.
+  XYM      Symbol                     other -> coin   | Symbol (XYM): native coin of the Symbol chain; PoS+ ('posplus') harvesting rewards (consensus tag the first-pass exact-set missed).
+  UOS      Ultra                      other -> coin   | Ultra (UOS): native coin of the Ultra L1 (EOSIO/DPoS).
+  DYM      Dymension                  other -> coin   | Dymension (DYM): Cosmos-SDK L1 RollApp settlement chain; DYM bonded by validators for PoS security.
+  KUJI     Kujira                     other -> coin   | Kujira (KUJI): sovereign Cosmos L1; KUJI staked by validators for chain security (DeFiLlama 'Liquidations' tags its apps, not the chain).
+  POL      Polygon (prev. MATIC)      other -> coin   | Polygon (POL): native gas+staking token of Polygon PoS; validators stake POL to secure the chain (DeFiLlama 'Chain').
+  STG      Stargate Finance           other -> token  | Stargate Finance (STG): LayerZero bridge protocol; veSTG vote-escrow with protocol fee-share + governance (bridge category the first pass didn't promote).

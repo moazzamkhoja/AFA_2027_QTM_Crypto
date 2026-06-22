@@ -1,0 +1,67 @@
+CARRY-FORWARD SPLIT DIAGNOSTICS (deliverable 1, Entry 10)
+============================================================
+Total carried_forward asset-months: 89535
+  presumed_failed :   81167 asset-months ( 90.7%)
+  temporarily_out :    8368 asset-months (  9.3%)
+
+Distinct assets:
+  with >=1 presumed_failed month : 1399
+  with >=1 temporarily_out month : 1010
+  with BOTH (closed gap then later failed tail): 880
+
+temporarily_out closed gaps: 2107 distinct gap episodes
+  gap length (months out)  min=1  median=1  mean=4.0  max=47
+  gap-length distribution (months out -> #episodes):
+      1 mo : 1140
+      2 mo : 274
+      3 mo : 133
+      4 mo : 84
+      5 mo : 97
+      6 mo : 47
+      7 mo : 74
+      8 mo : 33
+      9 mo : 19
+     10 mo : 8
+     11 mo : 16
+     12 mo : 14
+     13 mo : 13
+     14 mo : 4
+     15 mo : 12
+     16 mo : 14
+     17 mo : 10
+     18 mo : 8
+     19 mo : 6
+     20 mo : 11
+     21 mo : 5
+     22 mo : 4
+     23 mo : 5
+     24 mo : 4
+     25 mo : 8
+     26 mo : 9
+     27 mo : 8
+     28 mo : 8
+     29 mo : 8
+     30 mo : 8
+     31 mo : 8
+     32 mo : 6
+     33 mo : 4
+     34 mo : 1
+     35 mo : 1
+     40 mo : 1
+     46 mo : 1
+     47 mo : 1
+
+presumed_failed terminal gaps: 1399 assets
+  terminal gap (months to sample end)  min=1  median=64  mean=58.0  max=129
+
+RIGHT-CENSORING RISK (presumed_failed that could still be mid-gap):
+  terminal gap <= max temporarily_out gap (47 mo): 510 assets (36.5% of presumed_failed)
+  terminal gap <= median temporarily_out gap (1 mo): 28 assets ( 2.0% of presumed_failed)
+  terminal gap <= 3 months (3 mo): 56 assets ( 4.0% of presumed_failed)
+  terminal gap <= 6 months (6 mo): 98 assets ( 7.0% of presumed_failed)
+  terminal gap <= 12 months (12 mo): 166 assets (11.9% of presumed_failed)
+  trailing gap STARTED within last  6 months (after 2025-11-30): 98 assets
+  trailing gap STARTED within last 12 months (after 2025-05-31): 166 assets
+  trailing gap STARTED within last 24 months (after 2024-05-31): 297 assets
+
+NOTE: death-return formula intentionally NOT chosen here (Entry 10). The right-censoring counts above are exactly the input that decision needs.

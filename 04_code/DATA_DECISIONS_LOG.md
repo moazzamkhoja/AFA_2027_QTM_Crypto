@@ -321,3 +321,133 @@ taxonomy that hasn't been validated against real coverage yet.
 and report coverage by `asset_class` (coin/token/other) per new spec section 2.6, before
 Phase 1 (lambda channels) begins. Section 3 prose, once written, should describe both
 classification dimensions as independent.
+
+### Entry 17 — Carry-forward split rule: subtype by last-observation, right-censoring flagged
+**Date:** 2026-06-22
+**Spec section affected:** 2.1 (retention); implements Entry 10
+**Asset(s)/period affected:** all `status='carried_forward'` asset-months (89,535)
+**What the spec wanted:** Entry 10 asked for a presumed_failed vs temporarily_out split
+with counts, before any death-return formula is chosen.
+**What was actually available:** the panel records each asset-month's status; whether a
+carried_forward month is a closed visibility gap vs a terminal failure is recoverable
+from the asset's own observed-month timeline.
+**Decision made:** for asset *j* with last observed month L_j, a carried_forward month
+at *t* is `temporarily_out` iff *t* < L_j (a later observation exists, so the gap
+closes) and `presumed_failed` iff *t* >= L_j (trailing tail with no later observation).
+Stored in a new column `carry_forward_subtype` (the `status` column is untouched). The
+right-censoring risk is flagged explicitly: a presumed_failed asset whose *terminal* gap
+(months from L_j+1 to the 2026-05-31 sample end) is no longer than the longest observed
+temporarily_out gap could, in principle, still be a case that would have reappeared had
+the sample run longer — so "never seen again so far" is NOT silently equated with
+"permanently dead." Reported at several thresholds (terminal gap <= max/median
+temporarily_out gap; <=3/6/12 months; and gaps that only started in the last 6/12/24
+months). Script: `04_code/carry_forward_split.py`.
+**Rationale:** the rule is exactly equivalent to a gap analysis but vectorisable and
+unambiguous at the sample boundary, which is precisely where the death-vs-gap call is
+hardest. Producing the right-censoring counts (rather than a single death/alive label)
+keeps Entry 10's deferral honest.
+**Downstream impact:** the death-return formula (Phase 3) should be chosen with these
+counts in hand. Key numbers: 81,167 presumed_failed vs 8,368 temporarily_out
+asset-months; 2,107 closed gaps (median 1 mo, max 47 mo); 1,399 presumed_failed assets
+of which 98 have a trailing gap <=6 months (started after 2025-11-30) and 166 <=12
+months — these are the right-censoring-exposed names a naive "dead = never seen again"
+rule would misclassify.
+
+### Entry 18 — Classification confirmation pass: 16 conservative reclassifications
+**Date:** 2026-06-22
+**Spec section affected:** 2.3; implements Entry 11
+**Asset(s)/period affected:** `other`/ambiguous assets with >=12 observed asset-months
+(630 candidates)
+**What the spec wanted:** a manual confirmation pass proposing keep-other / coin / token
+with a one-line rationale, not inventing classifications that can't be supported.
+**What was actually available:** the 630 candidates are overwhelmingly genuine
+utility/sector tokens (AI, gaming, payments, DePIN, storage, identity, exchange, meme).
+A small set were mis-left as `other` by the first-pass tag rules: (a) native PoS/DPoS
+chains whose CMC tags carried 'platform'/ecosystem labels or a non-standard consensus
+tag (e.g. Symbol's 'posplus'), or whose DeFiLlama category mislabelled the base chain
+(Kusama->"Liquid Staking", Kujira->"Liquidations", Polygon/Dymension->"Chain"); and
+(b) one DeFi bridge governance token (STG, veSTG fee-share) in a bridge category the
+first pass didn't promote.
+**Decision made:** flip 16 names with individually verifiable mechanisms — 15 other->coin
+(KSM, POL, DYM, KUJI, XYM, IOST, STEEM, ARDR, QKC, VLX, WICC, NEBL, UOS, CENNZ, WTC) and
+1 other->token (STG) — applied to `classification_table.csv` (original label preserved in
+new column `asset_class_original`; reason in `confirmation_basis`; `ambiguous_flag`
+cleared on flips). A further 16 genuinely ambiguous names are left `other` WITH a note
+(`confirmation_basis` "gray-zone"): L2 gas/governance tokens with no security-staking and
+no vote-escrow lock (OP, MNT, MANTA, IMX), LST-protocol tokens kept out per Entry 8 (RPL,
+ANKR, SSV, STRD), weak/edge native chains (EWT PoA, GBYTE DAG no-reward, FCT), NFT-market
+governance tokens (BLUR, LOOKS, ME), a juror-staking work token (PNK), and a
+symbol-collision case (PTS). The remaining 598 stay `other` with an auto-generated
+sector rationale. Full per-asset proposals: `03_data/classification_confirmation_review.csv`.
+Script: `04_code/classify_confirmation_pass.py`.
+**Rationale:** the spec explicitly forbids inventing unsupportable labels and asks
+ambiguous names to be left `other` with a note; flipping only mechanism-verifiable native
+chains + one clear veToken, and documenting the gray zone, maximises correctness without
+contaminating H1a/H1b with forced labels.
+**Downstream impact:** in-universe class counts move coin 618->633, token 447->448,
+other 874->858. Re-running `classify_assets.py` regenerates the table from scratch and
+must be followed by `classify_confirmation_pass.py` to re-apply this layer. The gray-zone
+16 (esp. OP/MNT/IMX/MANTA L2 tokens and the LST tokens) should be revisited in Phase 1
+once staking/lock data is actually pulled.
+
+### Entry 19 — Meme/NFT handling confirmed; meme over-promotions flagged (not changed)
+**Date:** 2026-06-22
+**Spec section affected:** 2.3; confirms Entry 12
+**Asset(s)/period affected:** meme-tagged assets (84 in-universe) and NFT-tagged assets
+**What the spec wanted:** confirm meme coins land in `other` and aren't mis-flagged as
+coin/token, and confirm no actual NFT collection exists in the panel.
+**What was actually available:** of 84 meme-tagged in-universe names, 58 are `other`, 21
+`token`, 5 `coin`. The 5 coins (DOGE, MONA, MEME[1191], TRUMP[1185], M=MemeCore) are
+genuinely mineable/PoS coins — `coin` is functionally CORRECT (they earn mining/staking
+seigniorage), not a mis-flag. Of the 21 tokens, some are real DeFi protocols with
+meme-style names (SUSHI) where `token` is correct, but others (SHIB, FLOKI, BabyDoge,
+ELON, MEW, SNEK, …) are memes promoted to `token` via an *attached* DEX/farm DeFiLlama
+category — arguably over-promoted under a strict Entry-12 reading. For NFTs: 112 names
+carry 'collectibles-nfts'/NFT tags, but all are FUNGIBLE tokens of NFT-ecosystem projects
+(MANA, SAND, APE, BLUR, IMX, …); none is a non-fungible collection. The CMC fungible
+listings source does not list NFT collections (that is CMC's separate NFT product).
+**Decision made:** per Entry 12, make NO meme reclassifications in this pass (memes among
+the 630 `other`/ambiguous candidates correctly stay `other`; the mineable meme-coins
+correctly stay `coin`). The meme tokens over-promoted via attached DEX/farm categories
+are FLAGGED for human review but left as-is (demoting existing coin/token is out of this
+deliverable's scope, which only reviews `other` candidates). Confirm explicitly: no
+NFT collection (non-fungible) is present in the panel.
+**Rationale:** the mineable meme-coins legitimately differ from pure ERC-20 memes; a
+blanket "meme -> other" would wrongly strip DOGE/MONA of a real seigniorage mechanism.
+The DEX-attached meme-token promotions are a genuine edge worth a human decision but not
+a clear error to auto-correct here.
+**Downstream impact:** if a strict "all memes -> other regardless of attached protocol"
+rule is later preferred, the flagged token-promoted memes (SHIB, FLOKI, BabyDoge, ELON,
+MEW, SNEK, PONKE, VOLT, …) are the names to revisit. NFT absence is now confirmed, closing
+the Entry 12 Phase-1 verification item.
+
+### Entry 20 — Sector field: DeFiLlama categories + curated CMC sector-tag whitelist
+**Date:** 2026-06-22
+**Spec section affected:** new 2.6; implements Entry 16
+**Asset(s)/period affected:** all assets in `classification_table.csv`
+**What the spec wanted:** a second, independent `sector` field from DeFiLlama categories
+(primary) + CMC tags (fallback), both kept where both fire, blank where neither, with
+coverage reported by asset_class.
+**What was actually available:** `defillama_categories` already populated for 566/1939
+in-universe assets; CMC tags carry sector-like signals (layer-1 134, layer-2 43, privacy
+91, depin 62, meme 83, …) mixed with non-sector noise (ecosystem/portfolio/listing/
+governance tags).
+**Decision made:** `sector` = DeFiLlama categories carried in as-is (multi-value,
+semicolon-separated) UNION a curated CMC-tag->label whitelist (`SECTOR_TAG_MAP` in
+`04_code/build_sector_classification.py`), deduped. The whitelist deliberately EXCLUDES
+governance-axis tags ('governance','dao','defi') and all ecosystem/portfolio/listing
+tags — those are not sectors. Blank where neither source fires (no name-based guessing).
+Coverage: 1113/1939 (57.4%) get a sector; by class coin 54.5% (leans on CMC L1/L2/
+smart-contract tags — 184 CMC-only), token 89.7% (leans on DeFiLlama — 146 DL-only +
+175 both), other 42.7% (282 CMC-only); residual 826 (42.6%) with no signal — exactly the
+lean the spec anticipated.
+**Rationale:** matches 2.6's intent (capture the field now, defer which comparisons get
+tested); keeping both sources and excluding the governance axis preserves orthogonality
+to the coin/token cut.
+**Downstream impact / CAVEAT:** the DeFiLlama join is by ticker SYMBOL (inherited from
+`classify_assets.py`), not a unique protocol id, so short/common tickers over-attribute
+categories — e.g. BTC inherits "SoFi;Reserve Currency;Canonical Bridge" from unrelated
+protocols sharing the symbol. This adds noise to a few coins' DeFiLlama-sourced sector
+tags (the CMC-tag-sourced parts, e.g. BTC's Layer-1/Privacy, are clean). If sector tags
+are used analytically in a later phase, de-noise the symbol-matched DeFiLlama categories
+for base coins (or re-join DeFiLlama by protocol id/chain) before relying on them.

@@ -21,6 +21,8 @@
 | 2026-06-22 | 15 | Decision | Resolved meme-coin/NFT question (meme coins already correctly excluded from H1a/H1b/H3 via the 'other' classification; keep current handling, confirm NFT absence as a verification step) and the Quadrant Portfolio 2x2 construction method (lambda/(1-lambda) and Growth-Levelized NVT median splits computed within coin and token subsamples separately, not pooled); approved a Phase 0 follow-up kickoff prompt (carry-forward split + classification confirmation pass) before Phase 1 begins |
 | 2026-06-22 | 15 | Decision | Before committing, clarified that "class" should also mean a narrower economic-function/sector tag (L1/L2, DEX/Perpetuals, Lending/Staking) independent of the coin/token cut used in Entry 13; decided to capture this now as a `sector` field sourced from existing DeFiLlama categories + CMC layer-1/layer-2 tags (spec section 2.6, Decisions Log Entry 16), deferring which sector-level comparisons to test until later; revised the Phase 0 follow-up kickoff prompt to add this as a third deliverable |
 
+| 2026-06-22 | ~10 (est., confirm) | Prompt + Review | Launched the Phase 0B follow-up session (Claude Code / Opus 4.8) with the prepared follow-up kickoff prompt; reviewed the three completed deliverables (carry-forward presumed_failed/temporarily_out split with right-censoring counts; 16-name classification confirmation flips + meme/NFT confirmation; sector-field coverage); authorized updating project memory, revising the Phase 1 kickoff prompt, and committing+pushing logs and prompt history per the project cadence |
+
 ---
 
 **Activity Types:**
