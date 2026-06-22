@@ -1,3 +1,7 @@
+# Raw API cache (76MB, deterministically regenerable via 04_code/fetch_cmc_snapshots.py;
+# point-in-time historical data is stable, so re-running reproduces it byte-for-byte)
+03_data/raw/
+
 # LaTeX build artifacts
 *.aux
 *.log
