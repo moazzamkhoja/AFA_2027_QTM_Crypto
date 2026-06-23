@@ -451,3 +451,218 @@ protocols sharing the symbol. This adds noise to a few coins' DeFiLlama-sourced 
 tags (the CMC-tag-sourced parts, e.g. BTC's Layer-1/Privacy, are clean). If sector tags
 are used analytically in a later phase, de-noise the symbol-matched DeFiLlama categories
 for base coins (or re-join DeFiLlama by protocol id/chain) before relying on them.
+
+### Entry 21 — Phase 1 source verification: live free-access audit of all λ-channel sources
+**Date:** 2026-06-23
+**Spec section affected:** 3 (λ channels), 2.5 (per-asset data sources); spec Section 3
+step 3 explicitly requires verifying current free access of every source *before*
+building on it.
+**Asset(s)/period affected:** n/a (source-availability audit gating the whole of Phase 1)
+**What the spec wanted:** per-chain explorers (Etherscan/beaconcha.in, Solscan, …),
+staking dashboards, DeFiLlama locked supply, and Snapshot/Tally/Boardroom for voting —
+each verified live, not assumed.
+**What was actually available (probed live 2026-06-23):**
+- **CoinMarketCap historical listings** (Phase 0 backbone) — still serves month-end
+  circulating/total supply per asset; this is the denominator source for the λ ratios.
+- **DeFiLlama `/protocols` + `/protocol/{slug}`** — free, keyless, WORKS. Per-protocol
+  payload carries token-denominated `*-staking` chainTvl buckets (e.g. `Ethereum-staking`
+  → `{"CRV": 855M}`), a numeric `cmcId`, and a `governanceID` (Snapshot space). USED ONLY
+  AS A REGISTRY/ADDRESS-BOOK (see Entry 22), not as the λ measurement.
+- **Snapshot GraphQL** (`hub.snapshot.org/graphql`) — free, keyless, WORKS. Returns
+  proposals with `created/start/end/state/votes/scores_total` per space. This IS the
+  canonical source for off-chain DAO voting (gasless signed messages stored by Snapshot),
+  not an aggregator — adopted for Channel 3.
+- **Etherscan V2** (`api.etherscan.io/v2/api`) — V1 is fully DEPRECATED/dead ("switch to
+  V2"). V2 REQUIRES AN API KEY. A free key (one key spans ~60 EVM chains via `chainid`)
+  was obtained from the user ("AFA Paper" key) and stored gitignored at
+  `04_code/.api_keys.json`. Verified working: `account/balance`, `block/getblocknobytime`,
+  `proxy/eth_call`, `logs/getLogs` all return 200/OK.
+- **beaconcha.in** (ETH staking dashboard) — now returns 401 "valid API key required";
+  free no-key access GONE. **Boardroom** (`api.boardroom.info`) — 401 Unauthorized; needs
+  a key. Both logged as paywalled; not used.
+- **Free public RPCs** (cloudflare / publicnode / ankr / llamarpc / 1rpc) — serve only
+  *latest* state; EVERY ONE blocks archive/historical queries ("Archive requests require a
+  paid plan" / "must authenticate"). Confirms no keyless historical state path.
+- **CRITICAL — Etherscan V2 free `eth_call` is silently latest-only:** historical
+  `eth_call` at a past `tag` (block) returns the *current* value with no error (beacon
+  deposit `get_deposit_count()` and a UNI `balanceOf` were byte-identical at the merge
+  block, an early-2021 block, and latest). So historical *state reads* are unavailable on
+  the free tier; only `getLogs` (immutable event history) gives genuine point-in-time data.
+**Decision made:** (1) Channel 1 historical staked/locked supply must be reconstructed
+from **event logs** (`getLogs`), never from historical `eth_call`/`balanceOf` state reads.
+(2) Channel 3 voting from Snapshot GraphQL (canonical). (3) beaconcha.in/Boardroom/Tally
+treated as paywalled — ETH staking comes from the deposit contract's on-chain Deposit
+event logs instead of beaconcha.in. (4) DeFiLlama is a metadata registry only.
+**Rationale:** satisfies the spec's "verify before building" rule and the user's
+directive to source the λ numbers from the canonical chain/Snapshot data rather than an
+aggregator, while honestly recording which originally-named sources are now paywalled.
+**Downstream impact:** the no-archive constraint caps Channel 1 to assets reachable by
+**event-log reconstruction on an EVM chain** (ETH native staking via the deposit contract;
+EVM vote-escrow tokens via Transfer logs into a known escrow contract). Non-EVM native PoS
+coins (Solana, Cosmos, Cardano, Tron, XRPL, …) are NOT reachable with this key and become a
+documented coverage gap (Entry 24). If a paid archive-RPC/Etherscan-Pro tier is later
+obtained, historical `eth_call`/`balancehistory` would allow direct point-in-time
+balanceOf reads and broaden Channel 1 substantially.
+
+### Entry 22 — Asset→on-chain-identity map: DeFiLlama used as a registry, not a data source
+**Date:** 2026-06-23
+**Spec section affected:** 2.5 (per-asset source identification); precursor to all λ channels
+**Asset(s)/period affected:** all in-universe assets (1,939)
+**What the spec wanted:** identify, per asset, the canonical chain explorer / token
+contract / governance venue from which to pull the λ series.
+**What was actually available:** to reconstruct on-chain numbers we first need each
+`cmc_id`'s token contract address + chain (for Channel 1 log reconstruction) and its
+Snapshot space (Channel 3). Two keyless registries provide this metadata: (a) DeFiLlama
+`/protocols` carries a numeric `cmcId`, a token `address`+`chain`, and a `governanceID`
+(snapshot space); (b) CMC's own `data-api/v3/cryptocurrency/detail?id=` returns
+`platforms[]` with `contractAddress`+chain per asset.
+**Decision made:** build `03_data/phase1/asset_onchain_identity.csv` joining the universe
+to DeFiLlama `/protocols` on `cmcId` (script `phase1_build_identity_map.py`). DeFiLlama is
+used STRICTLY as an address-book/registry — the λ NUMBERS come from the chain (Etherscan
+logs) and Snapshot, never from DeFiLlama TVL. Raw registry cached at
+`03_data/raw/defillama/protocols.json`.
+**Rationale:** satisfies the user's directive to source λ from canonical chain data while
+still using a keyless directory to discover *which* contracts/spaces to read.
+**Downstream impact / coverage:** DeFiLlama's `cmcId` is sparse — only 241/1,939 in-universe
+assets matched, of which 206 carry a token address and just 35 a Snapshot space (token-class
+123/448 addressed, 29/448 with a space; coins lean to native chains DeFiLlama doesn't list as
+protocols). The thin auto-mapping is WHY the Channel-3 space map is hand-extended (Entry 25)
+and Channel-1 locks are a curated set (Entry 26). A future improvement is to enrich the map
+from CMC `detail.platforms[]` (cleaner per-asset contract coverage) to widen Channel 1 to
+more EVM tokens without per-protocol curation.
+
+### Entry 23 — Channel 1 (ETH native staking): beacon deposit-contract event-log reconstruction
+**Date:** 2026-06-23
+**Spec section affected:** 3.1 (staking/locking ratio); 2.3/2.5 (ETH transition, explorers)
+**Asset(s)/period affected:** ETH (cmc_id 1027), 2020-12 onward
+**What the spec wanted:** ETH staked supply per month from a staking dashboard
+(beaconcha.in-style), respecting `staking_start=2020-12-01`.
+**What was actually available:** beaconcha.in now requires a paid key (Entry 21); free-tier
+historical `eth_call` is latest-only. The canonical, free, historical-correct source is the
+Beacon Chain deposit contract's on-chain `DepositEvent` logs.
+**Decision made:** reconstruct month-end cumulative staked ETH from the deposit contract
+(`0x0000…705Fa`) `DepositEvent` logs via Etherscan V2 `getLogs`, parsing the 8-byte
+little-endian gwei `amount` from each event and cumulative-summing to each month-end block
+(`block/getblocknobytime`). Pre-`staking_start` months are emitted as NaN (PoW, no channel),
+NOT 0. Script `phase1_channel1_eth_staking.py` (resumable monthly checkpoints under
+`03_data/raw/phase1_onchain/`). Validated against known levels: ~2.17M ETH staked at
+2020-12-31 (67,906 deposits), ~5.2M at 2021-05-31 — both match public record.
+**Rationale:** uses the chain itself; respects the dated transition; immutable logs sidestep
+the no-archive constraint.
+**Downstream impact / CAVEAT:** the deposit contract only RECEIVES ether — post-Shapella
+(2023-04) validator exits/withdrawals are consensus-layer and do NOT debit it, so
+cumulative-deposited OVERSTATES net active stake after 2023-04 (it is an upper envelope, a
+monotone on-chain conviction proxy). For an exact net-staked series, a consensus-layer
+(beacon) data source or a paid execution archive would be needed. Flagged in the coverage
+report and in the output `note` column.
+
+### Entry 24 — Channel 2 (holding duration / coin-age): NOT BUILT this phase (documented gap)
+**Date:** 2026-06-23
+**Spec section affected:** 3.2 (holding-duration channel)
+**Asset(s)/period affected:** all assets, all months
+**What the spec wanted:** an on-chain HODL-wave / coin-age proxy (share of supply unmoved
+over a window, or average coin-age of moved supply) per asset-month.
+**What was actually available:** computing coin-age requires the FULL transfer/UTXO history
+of each chain (every address's last-active balance, or UTXO ages for BTC) reconstructed to
+each month-end. For account chains that is the entire Transfer-log set of every token (orders
+of magnitude beyond the targeted escrow-only logs used in Channel 1); for BTC it is the full
+UTXO set age distribution. No free API serves ready HODL-wave series across the panel's chains
+(Glassnode/CoinMetrics/Artemis are paid; the keyless explorers cap getLogs/archive as in
+Entry 21).
+**Decision made:** do NOT build Channel 2 this phase. Keep the `ch2_holding` column in the
+λ schema (always NaN) so the structure is explicit, and flag it as the single largest λ-channel
+gap. λ is therefore assembled from Channels 1 and 3 only in Phase 1.
+**Rationale:** the spec (Operating Principle, §0) forbids silently substituting a weak proxy;
+a credible coin-age series needs either a paid fundamentals API or a per-chain full-history
+indexer, both out of scope for this pass. Better to flag the gap than ship an unsupportable
+number — especially as §3.2 notes this would be the *only* channel for pre-2020 coins, so its
+absence is exactly what gates early-sample coin λ.
+**Downstream impact:** pre-2020 coins get NO λ at all in Phase 1 (no staking pre-PoS, no
+voting, no coin-age). If a paid source (Glassnode/CoinMetrics) or a BTC/ETH full-node indexer
+is later obtained, Channel 2 is the highest-value addition for early-sample coin coverage.
+
+### Entry 25 — Channel 3 (voting): Snapshot GraphQL + curated space map + token-weight guard
+**Date:** 2026-06-23
+**Spec section affected:** 3.3 (voting engagement), 2.5 (governance venues)
+**Asset(s)/period affected:** governance tokens with a Snapshot space (55 mapped)
+**What the spec wanted:** monthly participation = voters / eligible supply, from
+Snapshot/Tally/Boardroom for off-chain DAOs.
+**What was actually available:** Snapshot GraphQL is free/keyless and IS the canonical store
+of off-chain votes (Entry 21); Tally/Boardroom now need keys. DeFiLlama `governanceID` mapped
+only 35 in-universe assets to spaces.
+**Decision made:** (1) space map = DeFiLlama `governanceID` spaces (35) ∪ a curated,
+name-verified set of 27 major DAOs keyed by EXPLICIT cmc_id (avoiding the symbol-collision
+trap — e.g. Uniswap is 7083, not the symbol-matched 4113), written to
+`03_data/phase1/snapshot_space_map.csv` (56 spaces). (2) Per space, page ALL closed proposals
+(created-asc cursor) and aggregate by the month a proposal's voting ENDS. (3) Channel-3 value
+= token-weighted turnout = mean(`scores_total`)/circulating supply (eligible base from the
+Phase 0 panel). (4) **Token-weight validity guard:** spaces whose median voting-power-per-voter
+(`scores_total/votes`) < 10 are 1-person-1-vote/ticket spaces where `scores_total` is NOT
+token-denominated; their `vw_turnout` is nulled (flagged `token_weighted=False`). This caught
+snxgov.eth, enzymefinance.eth, ilvgov.eth. Script `phase1_channel3_voting.py`; raw proposals
+cached per space. Result: 55 distinct assets, 51 with a valid token-weighted turnout,
+1,598 asset-months, 2020-07→2026-06.
+**Rationale:** Snapshot is the real source, not an aggregator; explicit-cmc_id curation keeps
+the join correct; the token-weight guard prevents a strategy artifact from contaminating the
+z-scored channel.
+**Downstream impact:** on-chain-only DAOs (Compound Governor beyond comp-vote, MakerDAO, and
+tokens that vote purely on-chain: MKR, LQTY, PENDLE, RUNE, PERP, WLD, ONDO, ENA, …) are NOT on
+Snapshot and are a documented gap — adding them needs on-chain Governor event reconstruction
+(VoteCast logs), a later extension. Voting is absent pre-2020 and for pure coins, as the spec
+anticipated.
+
+### Entry 26 — Channel 1 (EVM vote-escrow/staking locks): curated escrow set, log-reconstructed
+**Date:** 2026-06-23
+**Spec section affected:** 3.1 (locking ratio for vote-escrow tokens)
+**Asset(s)/period affected:** CRV, CVX, FXS, SUSHI, AAVE, YFI (6 EVM governance tokens)
+**What the spec wanted:** locked supply for vote-escrow tokens (veCRV/veBAL-style) ÷ supply.
+**What was actually available:** no free per-protocol "locked supply" time series (DeFiLlama
+gives a `*-staking` USD bucket but that is the aggregator, not the chain; and historical
+balanceOf is latest-only). Canonical method: locked supply at month-end = cumulative
+(Transfer INTO the escrow) − (Transfer OUT of the escrow), from the base token's on-chain
+Transfer logs (verified the Etherscan multi-topic filter `topic2`+`topic0_2_opr=and` isolates
+escrow-directed transfers).
+**Decision made:** reconstruct locked supply for a CURATED, high-confidence set of 6 escrows
+where the contract holds the BASE token directly (so balanceOf(escrow)=locked): veCRV, vlCVX,
+veFXS, xSUSHI, stkAAVE, veYFI (script `phase1_channel1_evm_locks.py`, addresses + mechanism in
+the script header). EXCLUDED by design and documented (not silently proxied): **veBAL** (locks
+an 80/20 BPT, not BAL) and **SNX** (collateral C-ratio system, not a simple lock). xSUSHI and
+stkAAVE are reward-staking rather than pure vote-escrow but are a genuine locked/committed-supply
+signal and are kept in Channel 1 flagged via `mechanism`.
+**Rationale:** restricts the on-chain reconstruction to cases where the escrow-balance =
+locked-supply identity holds cleanly, maximizing correctness over coverage; gives the
+vote-escrow tokens BOTH a Channel-1 (locked) and a Channel-3 (voting) value, the only way any
+asset gets a multi-channel λ in Phase 1.
+**Downstream impact:** Channel 1 token coverage is intentionally small (6) this pass; widening
+it requires per-protocol escrow curation (each lock contract verified individually) or a paid
+archive tier for direct historical balanceOf. The veBAL/SNX exclusions should be revisited if
+those assets matter to a result.
+
+### Entry 27 — λ assembly: monthly z-score, equal-weight, ≥2-asset standardizability rule
+**Date:** 2026-06-23
+**Spec section affected:** 3 (λ construction), 3.4 (output)
+**Asset(s)/period affected:** all observed asset-months with ≥1 standardizable channel
+**What the spec wanted:** λ_t = equal-weighted average of the standardized (z-scored within
+each monthly cross-section) values of whichever channels are observable; no imputation;
+record how many/which channels contributed.
+**What was actually available:** the three channel series built this phase — ch1_staking
+(ETH + 6 EVM locks), ch2_holding (none — Entry 24), ch3_voting (51 tokens).
+**Decision made:** `phase1_assemble_lambda.py` (1) z-scores each channel within each
+(month, channel) cross-section, (2) averages the available z-scores per asset-month with
+equal weight, (3) records `n_channels` + `channels`. **Standardizability rule:** a channel
+enters a given month's λ only if **≥2 observed assets** have a finite value that month AND
+the cross-sectional std > 0 — a single-asset channel cannot be z-scored (z would be 0/NaN)
+and is dropped for that month, with the fact counted in
+`_lambda_channel_diagnostics.csv`. Raw per-channel values are carried alongside `lambda_z`
+for audit. λ is computed on `status='observed'` rows only.
+**Rationale:** the spec's "standardize within the monthly cross-section" is only defined for
+a cross-section of ≥2; making the rule explicit prevents a degenerate single-asset channel
+(e.g. ETH alone on Channel 1 before the ve-tokens enter) from contributing a spurious z=0.
+Equal-weighting and no-imputation follow the spec verbatim.
+**Downstream impact:** result = 1,308 asset-months, 51 assets, 2020-08→2026-05; 253
+asset-months are 2-channel (the 6 vote-escrow tokens), the rest 1-channel. λ is currently a
+**standardized score (`lambda_z`), not a [0,1] locking fraction** — the SoV/MoE map
+λ/(1−λ) in the theory needs a level, not a z-score, so Phase 4 must decide how to convert
+(e.g. use the raw staking/locking ratio as the level where Channel 1 exists, and treat the
+z-scored multi-channel index as the cross-sectional conviction *ranking* the hypotheses
+actually test). Flagged for the Phase 2/4 kickoff.

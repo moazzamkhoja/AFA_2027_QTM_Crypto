@@ -1,0 +1,57 @@
+cmc_id,symbol,name,asset_class,snapshot_space,map_source
+1552,MLN,Enzyme,token,enzymefinance.eth,defillama_governanceID
+1638,TRST,WeTrust,coin,bentokenfinance.eth,defillama_governanceID
+1659,GNO,Gnosis,coin,gnosis.eth,defillama_governanceID
+1727,BNT,Bancor,token,bancornetwork.eth,curated
+1896,ZRX,0x Protocol,token,0xgov.eth,defillama_governanceID
+1934,LRC,Loopring,token,loopringdao.eth,defillama_governanceID
+2539,REN,Ren,token,ren-project.eth,defillama_governanceID
+2586,SNX,Synthetix,token,snxgov.eth,curated
+2943,RPL,Rocket Pool,other,rocketpool-dao.eth,both
+3783,ANKR,Ankr,other,ankr-dao.eth,defillama_governanceID
+5692,COMP,Compound,token,comp-vote.eth,curated
+5728,BAL,Balancer,token,balancer.eth,curated
+5794,PNT,pNetwork,token,pnetwork-dao.eth,defillama_governanceID
+5810,BZRX,bZx Protocol,token,ooki.eth,defillama_governanceID
+5864,YFI,Yearn,token,veyfi.eth,curated
+6536,OM,MANTRA,token,mantra-dao.eth,defillama_governanceID
+6538,CRV,Curve DAO Token,token,curve.eth,curated
+6622,HAKKA,Hakka.Finance,token,hakka.eth,defillama_governanceID
+6719,GRT,The Graph,token,graphprotocol.eth,curated
+6758,SUSHI,SushiSwap,token,sushigov.eth,curated
+6859,FARM,Harvest Finance,token,harvestfi.eth,defillama_governanceID
+6953,FRAX,Frax (prev. FXS),token,frax.eth,curated
+7083,UNI,Uniswap,token,uniswapgovernance.eth,curated
+7102,LINA,Linear Finance,token,lineardao.eth,defillama_governanceID
+7230,OPIUM,Opium,token,opiumprotocol.eth,defillama_governanceID
+7278,AAVE,Aave,token,aavedao.eth,curated
+7486,RGT,Rari Governance Token,token,fuse.eth,defillama_governanceID
+7535,KP3R,Keep3rV1,token,vkp3r.eth,defillama_governanceID
+7725,TRU,TrueFi,token,truefigov.eth,defillama_governanceID
+7726,ICHI,ICHI,token,ichi.eth,defillama_governanceID
+7859,BADGER,Badger DAO,token,badgerdao.eth,defillama_governanceID
+8000,LDO,Lido DAO,token,lido-snapshot.eth,both
+8104,1INCH,1inch,token,1inch.eth,both
+8191,NFTX,NFTX,token,nftx.eth,defillama_governanceID
+8613,ALCX,Alchemix,token,alchemixstakers.eth,curated
+8719,ILV,Illuvium,token,ilvgov.eth,defillama_governanceID
+8911,STRK,Strike,token,strikeorg.eth,defillama_governanceID
+9067,OHM,Olympus v2,token,olympusdao.eth,curated
+9903,CVX,Convex Finance,token,cvx.eth,curated
+10052,GTC,Gitcoin,token,gitcoindao.eth,both
+11396,JOE,JOE,coin,joegovernance.eth,curated
+11840,OP,Optimism,other,opcollective.eth,curated
+11841,ARB,Arbitrum,token,arbitrumfoundation.eth,curated
+11857,GMX,GMX,token,gmx.eth,curated
+12147,SYN,Synapse,token,synapseprotocol.eth,defillama_governanceID
+12999,SSV,ssv.network,other,mainnet.ssvnetwork.eth,curated
+13523,MC,Merit Circle,token,meritcircle.eth,defillama_governanceID
+13663,GNS,Gains Network,token,gains-network.eth,defillama_governanceID
+13855,ENS,Ethereum Name Service,token,ens.eth,both
+18876,APE,ApeCoin,token,apecoin.eth,both
+18934,STG,Stargate Finance,token,stgdao.eth,curated
+19269,COW,CoW Protocol,token,cow.eth,defillama_governanceID
+21585,SAFE,Safe,coin,safe.eth,defillama_governanceID
+22461,HFT,Hashflow,token,hashflowdao.eth,defillama_governanceID
+27075,MNT,Mantle,other,bitdao.eth,defillama_governanceID
+28324,DYDX,dYdX,coin,dydxgov.eth,curated

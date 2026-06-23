@@ -13,3 +13,7 @@
 *.blg
 *.tmp
 *.bak*
+
+# API keys / secrets (never commit)
+04_code/.api_keys.json
+.api_keys.json

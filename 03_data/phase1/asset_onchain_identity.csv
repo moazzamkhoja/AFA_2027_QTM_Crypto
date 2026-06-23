@@ -1,0 +1,1940 @@
+cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_address,token_chain,token_chains,snapshot_space,gecko_id,dl_matched,n_dl_entries,has_address,has_snapshot
+38337,0G,0G,coin,DePIN;Layer-1,,,,,,,,,False,0,False,False
+1197,1CR,1CRedit,coin,,,,,,,,,,False,0,False,False
+1252,2GIVE,2GIVE,coin,,,,,,,,,,False,0,False,False
+93,42,42-coin,coin,,,,,,,,,,False,0,False,False
+221,888,OctoCoin,coin,,,,,,,,,,False,0,False,False
+3871,AB,AB,coin,,,,,,,,,,False,0,False,False
+3437,ABBC,ABBC Coin,coin,Payments,,,,,,,,,False,0,False,False
+374,ABY,ArtByte,coin,,,,,,,,,,False,0,False,False
+269,AC,AsiaCoin,coin,Yield,,,,,,,,,False,0,False,False
+1918,ACT,Achain,coin,Farm;Smart Contract Platform,,,,,,,,,False,0,False,False
+2010,ADA,Cardano,coin,Chain;Layer-1;Smart Contract Platform,,cardano,Chain,,,,,cardano,True,1,False,False
+948,ADC,AudioCoin,coin,,,,,,,,,,False,0,False,False
+1176,ADCN,Asiadigicoin,coin,,,,,,,,,,False,0,False,False
+261,ADN,Aiden,coin,,,,,,,,,,False,0,False,False
+1136,ADZ,Adzcoin,coin,,,,,,,,,,False,0,False,False
+1700,AE,Æternity,coin,Payments;Privacy;Smart Contract Platform,,,,,,,,,False,0,False,False
+1026,AEON,Aeon,coin,Privacy,,,,,,,,,False,0,False,False
+911,AIB,Advanced Internet Blocks,coin,,,,,,,,,,False,0,False,False
+2062,AION,Aion,coin,AI/Big Data;Payments,,,,,,,,,False,0,False,False
+9104,AIOZ,AIOZ Network,coin,AI/Big Data;DePIN;Layer-1;Smart Contract Platform;Storage,,,,,,,,,False,0,False,False
+32193,ALEO,Aleo,coin,Layer-1;Privacy;Smart Contract Platform;Zero Knowledge,,,,,,,,,False,0,False,False
+4030,ALGO,Algorand,coin,Layer-1;RWA;Smart Contract Platform,,,,,,,,,False,0,False,False
+1505,ALIAS,Alias,coin,,,,,,,,,,False,0,False,False
+14878,ALPH,Alephium,coin,NFT;Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+29073,ALT,Altlayer,coin,Derivatives;Developer Tools;Dexs;Launchpad;Interoperability;Layer-2;Privacy;Restaking;Zero Knowledge,,altlayer,Developer Tools,ethereum:0x8457ca5040ad67fdebbcc8edce889a335bc0fbfb,,,,altlayer,True,1,True,False
+804,AMBER,AmberCoin,coin,,,,,,,,,,False,0,False,False
+1035,AMS,AmsterdamCoin,coin,,,,,,,,,,False,0,False,False
+43,ANC,Anoncoin,coin,Lending,,,,,,,,,False,0,False,False
+2874,AOA,Aurora,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+21794,APT,Aptos,coin,Canonical Bridge;Lending;Layer-1,,aptos,Canonical Bridge,aptos:0x1::aptos_coin::AptosCoin,,,,aptos,True,1,True,False
+5632,AR,Arweave,coin,DePIN;Storage;Layer-1,,,,,,,,,False,0,False,False
+1434,ARC,Advanced Technology Coin,coin,DEX Aggregator;Dexs;Services,,,,,,,,,False,0,False,False
+1558,ARGUS,Argus,coin,,,,,,,,,,False,0,False,False
+142,ARI,Aricoin,coin,Gaming,,,,,,,,,False,0,False,False
+1586,ARK,Ark,coin,Payments,,,,,,,,,False,0,False,False
+3951,ARRR,Pirate Chain,coin,Payments;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+12885,ASTR,Astar,coin,Chain;Layer-1;Layer-2;Modular Blockchain;Smart Contract Platform,,astar-dapps-staking,Chain,,Astar,Astar,,astar,True,1,False,False
+1970,ATB,ATBCoin,coin,,,,,,,,,,False,0,False,False
+3794,ATOM,Cosmos,coin,Interoperability;Layer-1,,,,,,,,,False,0,False,False
+1361,ATX,Artex Coin,coin,,,,,,,,,,False,0,False,False
+666,AU,Aurum Coin,coin,,,,,,,,,,False,0,False,False
+148,AUR,Auroracoin,coin,Gamified Mining;Lending,,,,,,,,,False,0,False,False
+5805,AVAX,Avalanche,coin,Canonical Bridge;Layer-1;RWA;Smart Contract Platform,,avalanche,Canonical Bridge,FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z,,,,avalanche-2,True,1,True,False
+11976,AZERO,Aleph Zero,coin,Layer-1;Privacy;Smart Contract Platform;Zero Knowledge,,,,,,,,,False,0,False,False
+2204,B2B,B2BX,coin,Algo-Stables;Smart Contract Platform,,,,,,,,,False,0,False,False
+3684,B2G,Bitcoiin,coin,,,,,,,,,,False,0,False,False
+32198,BABY,Babylon,coin,Dexs;Restaking,,babylon-protocol,Restaking,,Bitcoin,Bitcoin,,babylon,True,1,False,False
+1463,BASH,LuckChain,coin,,,,,,,,,,False,0,False,False
+1697,BAT,Basic Attention Token,coin,Services;AI/Big Data;Interoperability;Payments;Privacy;Smart Contract Platform,,basic-attention,Services,0x0d8775f648430679a709e98d2b0cb6250d2887ef,,,,basic-attention-token,True,1,True,False
+723,BAY,BitBay,coin,Yield Aggregator;Exchange Token;Payments,,,,,,,,,False,0,False,False
+30746,BB,BounceBit,coin,Yield;Layer-1;Restaking,,bouncebit,Yield,,,,,bouncebit,True,1,False,False
+406,BBR,Boolberry,coin,,,,,,,,,,False,0,False,False
+1513,BCC,BitConnect,coin,,,,,,,,,,False,0,False,False
+2222,BCD,Bitcoin Diamond,coin,Payments,,,,,,,,,False,0,False,False
+1831,BCH,Bitcoin Cash,coin,Layer-1;Payments,,,,,,,,,False,0,False,False
+2702,BCI,Bitcoin Interest,coin,,,,,,,,,,False,0,False,False
+372,BCN,Bytecoin,coin,Payments;Privacy,,,,,,,,,False,0,False,False
+872,BCR,Bitcredits,coin,,,,,,,,,,False,0,False,False
+106,BCX,BattleCoin,coin,,,,,,,,,,False,0,False,False
+1063,BCY,BitCrystals,coin,Gaming,,,,,,,,,False,0,False,False
+1793,BDL,Bitdeal,coin,,,,,,,,,,False,0,False,False
+3987,BDX,Beldex,coin,Algo-Stables;AI/Big Data;Exchange Token;DePIN;Privacy,,,,,,,,,False,0,False,False
+3702,BEAM,Beam,coin,Chain;Payments;Privacy,,,,,,,,,False,0,False,False
+217,BELA,Bela,coin,Dexs,,,,,,,,,False,0,False,False
+24647,BERA,Berachain,coin,Chain;Chain Bribes;Layer-1;Modular Blockchain,,berachain,Chain Bribes,,,,,berachain-bera,True,1,False,False
+1198,BIGUP,BigUp,coin,,,,,,,,,,False,0,False,False
+819,BITB,Bean Cash,coin,,,,,,,,,,False,0,False,False
+276,BITS,Bitstar,coin,Yield,,,,,,,,,False,0,False,False
+170,BLK,BlackCoin,coin,,,,,,,,,,False,0,False,False
+707,BLOCK,Blocknet,coin,,,,,,,,,,False,0,False,False
+1263,BLRY,BillaryCoin,coin,,,,,,,,,,False,0,False,False
+290,BLU,BlueCoin,coin,Derivatives,,,,,,,,,False,0,False,False
+1839,BNB,BNB,coin,CEX;Chain;Launchpad;Exchange Token;Layer-1;Payments;Smart Contract Platform,,ringfi,Yield,bsc:0x021988d2c89b1A9Ff56641b2F247942358FF05c9,Binance,Binance,,ring,True,2,True,False
+2842,BNK,Bankera,coin,Exchange Token;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+2499,BORG,SwissBorg,coin,CEX;Yield,,swissborg,CEX,0x64d0f55cd8c7133a9d7102b13987235f486f2224,Multi-Chain,Bitcoin;Ethereum;Solana;Ripple;Binance;Hedera;Cardano;Doge;Avalanche;Polygon;Near;Tron;Optimism;Cosmos;Injective;Stellar;TON;Arbitrum;Algorand;Sei;Celestia;Moonbeam;Sonic;Berachain;Osmosis;xDai;Chiliz;Polkadot,,swissborg,True,1,True,False
+350,BOST,BoostCoin,coin,,,,,,,,,,False,0,False,False
+12,BQC,BBQCoin,coin,,,,,,,,,,False,0,False,False
+7096,BRG,Bridge Oracle,coin,AI/Big Data;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+426,BRIT,BritCoin,coin,,,,,,,,,,False,0,False,False
+1286,BRK,Breakout,coin,,,,,,,,,,False,0,False,False
+366,BSD,BitSend,coin,,,,,,,,,,False,0,False,False
+3997,BST,BlockStamp,coin,Farm;Yield,,,,,,,,,False,0,False,False
+644,BSTY,GlobalBoost-Y,coin,,,,,,,,,,False,0,False,False
+3602,BSV,Bitcoin SV,coin,Payments,,,,,,,,,False,0,False,False
+10746,BSW,Biswap,coin,Dexs;NFT;DEX;Gaming;Metaverse;Yield,,,,,,,,,False,0,False,False
+945,BTA,Bata,coin,,,,,,,,,,False,0,False,False
+14,BTB,BitBar,coin,,,,,,,,,,False,0,False,False
+1,BTC,Bitcoin,coin,Canonical Bridge;Reserve Currency;SoFi;Layer-1;Privacy,,bitcoin,Canonical Bridge,,,,,bitcoin,True,1,False,False
+467,BTCD,BitcoinDark,coin,,,,,,,,,,False,0,False,False
+2575,BTCP,Bitcoin Private,coin,Privacy,,,,,,,,,False,0,False,False
+5455,BTCXT,Bitcoin XT,coin,,,,,,,,,,False,0,False,False
+1381,BTDX,Bitcloud,coin,,,,,,,,,,False,0,False,False
+2083,BTG,Bitcoin Gold,coin,Payments,,,,,,,,,False,0,False,False
+543,BTM,Bitmark,coin,,,,,,,,,,False,0,False,False
+1866,BTM,BytomDAO,coin,Payments;RWA;Smart Contract Platform,,,,,,,,,False,0,False,False
+463,BTS,BitShares,coin,Dexs;DEX,,,,,,,,,False,0,False,False
+16086,BTT,BitTorrent [New],coin,DePIN;Storage;Interoperability,,,,,,,,,False,0,False,False
+1654,BTX,BitCore,coin,,,,,,,,,,False,0,False,False
+1142,BUCKS,SwagBucks,coin,,,,,,,,,,False,0,False,False
+658,BUK,CryptoBuck,coin,,,,,,,,,,False,0,False,False
+573,BURST,Burst,coin,,,,,,,,,,False,0,False,False
+734,BYC,Bytecent,coin,,,,,,,,,,False,0,False,False
+367,C2,Coin2.1,coin,,,ddex,Dexs,,Ethereum,Ethereum,,,True,1,False,False
+157,CAGE,CageCoin,coin,,,,,,,,,,False,0,False,False
+38195,CAMP,Camp Network,coin,Layer-1,,,,,,,,,False,0,False,False
+506,CANN,CannabisCoin,coin,,,,,,,,,,False,0,False,False
+29,CAP,Bottlecaps,coin,Derivatives,,,,,,,,,False,0,False,False
+502,CARBON,Carboncoin,coin,Farm,,,,,,,,,False,0,False,False
+49,CBX,Bullion,coin,,,,,,,,,,False,0,False,False
+37263,CC,Canton,coin,Chain;Interoperability;Layer-1;Privacy;Smart Contract Platform,,canton,Chain,,,,,canton-network,True,1,False,False
+4122,CCA,Counos Coin,coin,,,,,,,,,,False,0,False,False
+279,CCN,CannaCoin,coin,,,,,,,,,,False,0,False,False
+5482,CCXX,Counos X,coin,,,,,,,,,,False,0,False,False
+304,CDN,Canada eCoin,coin,,,,,,,,,,False,0,False,False
+1864,CDT,Blox,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+5567,CELO,Celo,coin,Chain;Layer-2;Payments;Privacy;Smart Contract Platform;Zero Knowledge,,celo,Chain,celo:0x471ece3750da237f93b8e339c536989b8978a438,,,,celo,True,1,True,False
+249,CESC,CryptoEscudo,coin,,,,,,,,,,False,0,False,False
+2941,CET,CoinEx Token,coin,CEX;DEX;Layer-1,,coinex,CEX,0x081f67afa0ccf8c7b17540767bbe95df2ba8d97f,Multi-Chain,Bitcoin;Ethereum;Tron;Starknet,,coinex-token,True,1,True,False
+7334,CFX,Conflux,coin,NFT;Layer-1;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+146,CGA,Cryptographic Anomaly,coin,,,,,,,,,,False,0,False,False
+999,CHC,ChainCoin,coin,,,,,,,,,,False,0,False,False
+3978,CHR,Chromia,coin,Dexs;AI/Big Data;NFT;Gaming;Layer-1;Metaverse;Modular Blockchain;RWA,,,,,,,,,False,0,False,False
+4066,CHZ,Chiliz,coin,NFT;Layer-1;Payments,,,,,,,,,False,0,False,False
+1306,CJ,Cryptojacks,coin,,,,,,,,,,False,0,False,False
+4948,CKB,Nervos Network,coin,NFT;Interoperability;Layer-2;Modular Blockchain;Smart Contract Platform,,,,,,,,,False,0,False,False
+460,CLAM,Clams,coin,Yield;Payments,,,,,,,,,False,0,False,False
+362,CLOAK,CloakCoin,coin,Privacy,,,,,,,,,False,0,False,False
+1855,CMP,Compcoin,coin,Dexs,,,,,,,,,False,0,False,False
+206,CNO,Coin(O),coin,,,,,,,,,,False,0,False,False
+1546,CNT,Centurion,coin,Dexs,,,,,,,,,False,0,False,False
+2027,CNX,Cryptonex,coin,Exchange Token;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+65,COL,Colossuscoin,coin,,,,,,,,,,False,0,False,False
+2001,COLX,ColossusXT,coin,Privacy,,,,,,,,,False,0,False,False
+23254,CORE,Core,coin,Canonical Bridge;Derivatives;Yield;Layer-1,,,,,,,,,False,0,False,False
+1008,CPS,Capricoin+,coin,,,,,,,,,,False,0,False,False
+1676,CREA,CREA,coin,,,,,,,,,,False,0,False,False
+986,CREVA,CrevaCoin,coin,,,,,,,,,,False,0,False,False
+3635,CRO,Cronos,coin,Dexs;Exchange Token;Layer-1;Payments,,,,,,,,,False,0,False,False
+2447,CRPT,Crypterium,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+720,CRW,Crown,coin,,,,,,,,,,False,0,False,False
+337,CRYPT,CryptCoin,coin,,,,,,,,,,False,0,False,False
+5899,CSPR,Casper,coin,AI/Big Data;Layer-1,,,,,,,,,False,0,False,False
+5198,CTC,Creditcoin,coin,Layer-1;RWA,,,,,,,,,False,0,False,False
+169,CTM,ContinuumCoin,coin,,,,,,,,,,False,0,False,False
+5444,CTSI,Cartesi,coin,Layer-2;Modular Blockchain;Smart Contract Platform,,,,,,,,,False,0,False,False
+2638,CTXC,Cortex,coin,AI/Big Data;IoT;Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+333,CURE,Curecoin,coin,DePIN,,,,,,,,,False,0,False,False
+3609,CWV,CWV Chain,coin,Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+677,CZC,CzechCrownCoin,coin,,,,,,,,,,False,0,False,False
+2868,DAG,Constellation,coin,DAG;Layer-1;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+3345,DAPS,DAPS Coin,coin,Privacy,,,,,,,,,False,0,False,False
+745,DARK,DarkCoin,coin,Algo-Stables,,,,,,,,,False,0,False,False
+131,DASH,Dash,coin,Payments;Privacy,,,,,,,,,False,0,False,False
+1797,DAXX,DaxxCoin,coin,,,,,,,,,,False,0,False,False
+1186,DBIC,DubaiCoin,coin,,,,,,,,,,False,0,False,False
+1611,DBIX,DubaiCoin,coin,,,puddingswap,Dexs,hoo:0xbe8d16084841875a1f398e6c3ec00bbfcbfa571b,Hoo,Hoo,,puddingswap,True,1,True,False
+28,DBL,Doubloons,coin,,,,,,,,,,False,0,False,False
+1168,DCR,Decred,coin,Layer-1;Payments;Privacy,,,,,,,,,False,0,False,False
+1478,DCT,DECENT,coin,,,,,,,,,,False,0,False,False
+1745,DCY,Dinastycoin,coin,,,,,,,,,,False,0,False,False
+2428,DDD,Scry.info,coin,Dexs;Yield;AI/Big Data;Smart Contract Platform,,,,,,,,,False,0,False,False
+4180,DDK,DDKoin,coin,,,,,,,,,,False,0,False,False
+12400,DEL,Decimal,coin,,,,,,,,,,False,0,False,False
+72,DEM,Deutsche eMark,coin,,,,,,,,,,False,0,False,False
+2665,DERO,Dero,coin,Privacy;Smart Contract Platform,,,,,,,,,False,0,False,False
+2649,DEV,DeviantCoin,coin,Yield,,,,,,,,,False,0,False,False
+5804,DFI,DeFiChain,coin,Dexs;Synthetics,,defichain-dex,Dexs,,DefiChain,DefiChain,,defichain,True,1,False,False
+109,DGB,DigiByte,coin,NFT;IoT;Layer-1;Payments;Privacy,,,,,,,,,False,0,False,False
+18,DGC,Digitalcoin,coin,,,,,,,,,,False,0,False,False
+284,DIEM,Diem,coin,Yield,,,,,,,,,False,0,False,False
+90,DIME,Dimecoin,coin,,,,,,,,,,False,0,False,False
+3441,DIVI,Divi,coin,,,,,,,,,,False,0,False,False
+77,DMD,Diamond,coin,Farm;Yield,,,,,,,,,False,0,False,False
+74,DOGE,Dogecoin,coin,Chain;Payments;Meme,,dogecoin,Chain,,,,,dogecoin,True,1,False,False
+551,DONU,Donu,coin,,,,,,,,,,False,0,False,False
+145,DOPE,DopeCoin,coin,Dexs,,,,,,,,,False,0,False,False
+6636,DOT,Polkadot,coin,Foundation;Liquid Staking;Yield;Layer-1,,polkadot-treasury,Foundation,,,,,polkadot,True,1,False,False
+660,DSH,Dashcoin,coin,,,,,,,,,,False,0,False,False
+69,DTC,Datacoin,coin,,,,,,,,,,False,0,False,False
+4092,DUSK,Dusk,coin,Layer-1;Privacy;RWA;Smart Contract Platform;Zero Knowledge,,,,,,,,,False,0,False,False
+7,DVC,Devcoin,coin,,,,,,,,,,False,0,False,False
+1476,DWC,DeepWebCash,coin,,,,,,,,,,False,0,False,False
+28324,DYDX,dYdX,coin,Derivatives;Layer-1;Perpetuals,,,,,,,,,False,0,False,False
+1587,DYN,Dynamic,coin,,,,,,,,,,False,0,False,False
+85,EAC,EarthCoin,coin,,,,,,,,,,False,0,False,False
+1615,EB3,EB3 Coin,coin,,,,,,,,,,False,0,False,False
+1711,ECA,Electra,coin,Payments,,,,,,,,,False,0,False,False
+212,ECC,ECC,coin,,,,,,,,,,False,0,False,False
+1618,ECN,E-coin,coin,,,,,,,,,,False,0,False,False
+3344,ECOREAL,Ecoreal Estate,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+1358,EDC,EDC Blockchain v1 [old],coin,,,,,,,,,,False,0,False,False
+234,EFL,e-Gulden,coin,,,,,,,,,,False,0,False,False
+1148,EGC,EverGreenCoin,coin,,,,,,,,,,False,0,False,False
+6892,EGLD,MultiversX,coin,AI/Big Data;DePIN;Gaming;Identity;Layer-1;Metaverse;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+2453,EKT,EDUCare,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+2492,ELA,Elastos,coin,DePIN;Storage,,,,,,,,,False,0,False,False
+2299,ELF,aelf,coin,Algo-Stables;Interoperability;Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+558,EMC,Emercoin,coin,,,,,,,,,,False,0,False,False
+201,EMC2,Einsteinium,coin,,,,,,,,,,False,0,False,False
+2130,ENJ,Enjin Coin,coin,NFT;Gaming;Layer-1;Metaverse,,,,,,,,,False,0,False,False
+322,ENRG,Energycoin,coin,,,,,,,,,,False,0,False,False
+1765,EOS,EOS,coin,Lending;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+964,ERC,EuropeCoin,coin,,,,,,,,,,False,0,False,False
+1762,ERG,Ergo,coin,Layer-1;Privacy;Smart Contract Platform,,,,,,,,,False,0,False,False
+1238,ESP,Espers,coin,Payments,,,,,,,,,False,0,False,False
+1321,ETC,Ethereum Classic,coin,Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+1027,ETH,Ethereum,coin,Foundation;Layer-1;Payments;Smart Contract Platform,2020-12-01,ethereum-foundation,Foundation,,,,,ethereum,True,1,False,False
+29814,ETHFI,ether.fi,coin,Crypto Card Issuer;Lending;Liquid Restaking;Onchain Capital Allocator,,,,,,,,,False,0,False,False
+21296,ETHW,EthereumPoW,coin,,,,,,,,,,False,0,False,False
+2137,ETN,Electroneum,coin,Layer-1;Payments,,,,,,,,,False,0,False,False
+1703,ETP,Metaverse ETP,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+2843,ETZ,Ether Zero,coin,,,,,,,,,,False,0,False,False
+7505,EVER,Everscale,coin,Layer-1,,,,,,,,,False,0,False,False
+2526,EVN,Envion,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+2034,EVX,Everex,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+96,EXC,Extremecoin,coin,Dexs,,,,,,,,,False,0,False,False
+633,EXCL,ExclusiveCoin,coin,,,,,,,,,,False,0,False,False
+185,EXE,Execoin,coin,,,,,,,,,,False,0,False,False
+1070,EXP,Expanse,coin,,,,,,,,,,False,0,False,False
+381,FC2,FuelCoin,coin,,,,,,,,,,False,0,False,False
+370,FCN,Fantomcoin,coin,,,,,,,,,,False,0,False,False
+2870,FGC,FantasyGold,coin,,,,,,,,,,False,0,False,False
+2280,FIL,Filecoin,coin,Chain;AI/Big Data;DePIN;Storage;Layer-1,,filecoin,Chain,,,,,filecoin,True,1,False,False
+1414,FIRO,Firo,coin,Payments;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+152,FLAP,FlappyCoin,coin,,,,,,,,,,False,0,False,False
+4842,FLG,Folgory Coin,coin,,,,,,,,,,False,0,False,False
+4558,FLOW,Flow,coin,Chain;Dexs;NFT;Layer-1,,flow,Chain,,,,,flow,True,1,False,False
+7950,FLR,Flare,coin,Chain;Layer-1,,flare,Chain,,,,,flare-networks,True,1,False,False
+218,FLT,FlutterCoin,coin,Derivatives,,,,,,,,,False,0,False,False
+3029,FLUX,Flux,coin,Lending;AI/Big Data;DePIN;Storage;Interoperability;Privacy;Smart Contract Platform,,,,,,,,,False,0,False,False
+4058,FO,FIBOS,coin,,,,,,,,,,False,0,False,False
+10,FRC,Freicoin,coin,,,,,,,,,,False,0,False,False
+3388,FREE,FREEdom Coin,coin,Dexs;Payments,,,,,,,,,False,0,False,False
+32,FST,Fastcoin,coin,Derivatives,,,,,,,,,False,0,False,False
+8,FTC,Feathercoin,coin,NFT;Payments,,,,,,,,,False,0,False,False
+3513,FTM,Fantom,coin,Chain;Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+22615,FTN,Fasttoken,coin,Chain;Layer-1,,fast-token,Chain,0xaeDf386B755465871fF874E3E37Af5976E247064,,,,fasttoken,True,1,True,False
+965,FUNK,The Cypherfunks,coin,,,,,,,,,,False,0,False,False
+32120,G,Gravity,coin,Canonical Bridge;Layer-1,,gravity-by-galxe,Canonical Bridge,0x9c7beba8f6ef6643abd725e45a4e8387ef260649,Ethereum,Ethereum,,g-token,True,1,True,False
+7080,GALA,Gala,coin,NFT;Gaming;Layer-1,,,,,,,,,False,0,False,False
+576,GAME,GameCredits,coin,Algo-Stables;NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+1285,GB,GoldBlocks,coin,Lending,,,,,,,,,False,0,False,False
+1531,GCC,Global Cryptocurrency,coin,,,,,,,,,,False,0,False,False
+730,GCN,GCN Coin,coin,,,,,,,,,,False,0,False,False
+25,GLC,Goldcoin,coin,,,,,,,,,,False,0,False,False
+51,GLC,GlobalCoin,coin,,,,,,,,,,False,0,False,False
+6836,GLMR,Moonbeam,coin,Canonical Bridge;Layer-1;Smart Contract Platform,,moonbeam,Canonical Bridge,,,,,moonbeam,True,1,False,False
+1659,GNO,Gnosis,coin,Chain;DEX;Layer-1;Prediction Market,,gnosis-dao,Chain,0x6810e776880c02933d47db1b9fc05908e5386b96,,,gnosis.eth,gnosis,True,1,True,True
+2291,GNX,Genaro Network,coin,DePIN,,,,,,,,,False,0,False,False
+2861,GO,GoChain,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+833,GRC,Gridcoin,coin,,,,,,,,,,False,0,False,False
+3709,GRIN,Grin,coin,Payments;Privacy,,,,,,,,,False,0,False,False
+258,GRS,Groestlcoin,coin,Payments;Privacy,,,,,,,,,False,0,False,False
+977,GXX,GravityCoin,coin,,,,,,,,,,False,0,False,False
+1329,GYC,Gycoin,coin,,,,,,,,,,False,0,False,False
+701,HAM,HamRadioCoin,coin,,,,,,,,,,False,0,False,False
+4642,HBAR,Hedera,coin,Chain;DAG;Layer-1;Payments;RWA,,hedera,Chain,,,,,hedera-hashgraph,True,1,False,False
+78,HBN,HoboNickels,coin,,,,,,,,,,False,0,False,False
+1903,HC,HyperCash,coin,Payments,,,,,,,,,False,0,False,False
+202,HEX,Heisenberg,coin,Yield,,,,,,,,,False,0,False,False
+5370,HIVE,Hive,coin,Layer-1,,,,,,,,,False,0,False,False
+1173,HMP,HempCoin,coin,,,,,,,,,,False,0,False,False
+1004,HNC,Hellenic Coin,coin,,,,,,,,,,False,0,False,False
+5665,HNT,Helium,coin,Chain;DePIN;IoT,,helium-network,DePIN,solana:hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux,,,,helium,True,1,True,False
+1195,HODL,HOdlcoin,coin,,,,,,,,,,False,0,False,False
+1628,HPAY,HappyPay,coin,,,,,,,,,,False,0,False,False
+2345,HPB,High Performance Blockchain,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+1220,HTC,HitCoin,coin,,,,,,,,,,False,0,False,False
+2315,HTML,HTMLCOIN,coin,,,,,,,,,,False,0,False,False
+616,HTML5,HTML5COIN,coin,,,,,,,,,,False,0,False,False
+5552,HTR,Hathor,coin,RWA;Smart Contract Platform,,,,,,,,,False,0,False,False
+130,HUC,HunterCoin,coin,,,,,,,,,,False,0,False,False
+1466,HUSH,Hush,coin,,,,,,,,,,False,0,False,False
+3147,HYC,HYCON,coin,DAG,,,,,,,,,False,0,False,False
+32196,HYPE,Hyperliquid,coin,Bridge;Derivatives;Dexs;Layer-1;Perpetuals,,,,,,,,,False,0,False,False
+353,HYPER,Hyper,coin,Cross Chain Bridge;Prediction Market,,,,,,,,,False,0,False,False
+63,I0C,I0Coin,coin,,,,,,,,,,False,0,False,False
+8916,ICP,Internet Computer,coin,Chain;AI/Big Data;NFT;DePIN;Gaming;Interoperability;Layer-1;Metaverse;Privacy;RWA;Smart Contract Platform;Storage,,internet-computer,Chain,icp:ryjl3-tyaaa-aaaaa-aaaba-cai,,,,internet-computer,True,1,True,False
+41,IFC,Infinitecoin,coin,,,,,,,,,,False,0,False,False
+3617,ILC,ILCOIN,coin,Storage;Payments,,,,,,,,,False,0,False,False
+1069,INFX,Influxcoin,coin,,,,,,,,,,False,0,False,False
+7226,INJ,Injective,coin,Bridge;Chain;Derivatives;Dexs;AI/Big Data;DEX;Layer-1;RWA;Smart Contract Platform,,injective-bridge,Bridge,0xe28b3b32b6c345a34ff64674606124dd5aceca30,Ethereum,Ethereum,,,True,1,True,False
+1445,INSANE,InsaneCoin,coin,,,,,,,,,,False,0,False,False
+495,IOC,I/O Coin,coin,Storage,,,,,,,,,False,0,False,False
+1281,ION,ION,coin,Lending;Synthetics,,,,,,,,,False,0,False,False
+1464,IOP,Internet of People,coin,,,,,,,,,,False,0,False,False
+1720,IOTA,IOTA,coin,DAG;DePIN;IoT;Layer-1;Payments;RWA,,,,,,,,,False,0,False,False
+2777,IOTX,IoTeX,coin,Chain;AI/Big Data;DePIN;IoT;Layer-1,,iotex,Chain,0x6fb3e0a217407efff7ca062d46c26e5d60a14d69,,,,iotex,True,1,True,False
+35626,IP,Story,coin,Chain;AI/Big Data;Layer-1;Smart Contract Platform,,story,Chain,,,,,story-2,True,1,False,False
+2251,ITC,IoT Chain,coin,IoT;Smart Contract Platform,,,,,,,,,False,0,False,False
+13,IXC,Ixcoin,coin,,,,,,,,,,False,0,False,False
+536,J,Joincoin,coin,,,,,,,,,,False,0,False,False
+11396,JOE,JOE,coin,DEX Aggregator;Dexs;Farm;Lending;DEX;Yield,,,,,,,,,False,0,False,False
+28541,JTO,Jito,coin,DAO Service Provider;Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+38192,JUPSOL,Jupiter Staked SOL,coin,,,,,,,,,,False,0,False,False
+5453,KAI,KardiaChain,coin,Derivatives;Dexs;Interoperability;Smart Contract Platform,,,,,,,,,False,0,False,False
+32880,KAIA,Kaia,coin,Layer-1,,,,,,,,,False,0,False,False
+116,KARMA,Karmacoin,coin,Reserve Currency,,,,,,,,,False,0,False,False
+20396,KAS,Kaspa,coin,DAG;Layer-1,,,,,,,,,False,0,False,False
+4846,KAVA,Kava,coin,Layer-1,,,,,,,,,False,0,False,False
+1371,KB3,B3Coin,coin,,,,,,,,,,False,0,False,False
+5647,KDA,Kadena,coin,AI/Big Data;NFT;Gaming;Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+1993,KIN,Kin,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+38828,KITE,Kite,coin,CDP;AI Agents;AI/Big Data;Layer-1,,,,,,,,,False,0,False,False
+4256,KLAY,Klaytn,coin,Layer-1,,,,,,,,,False,0,False,False
+1182,KLC,KiloCoin,coin,,,,,,,,,,False,0,False,False
+1521,KMD,Komodo,coin,,,mojitoswap,Dexs,kcc:0x2ca48b4eea5a731c2b54e7c3944dbdb87c0cfb6f,Kucoin,Kucoin,,mojitoswap,True,1,True,False
+815,KOBO,Kobocoin,coin,,,,,,,,,,False,0,False,False
+36066,KTA,Keeta,coin,Canonical Bridge;Layer-1,,,,,,,,,False,0,False,False
+1529,KUSH,KushCoin,coin,,,,,,,,,,False,0,False,False
+1044,KWD,KWD,coin,,,,,,,,,,False,0,False,False
+1298,LBC,LBRY Credits,coin,AI/Big Data,,,,,,,,,False,0,False,False
+2335,LBTC,Lightning Bitcoin,coin,,,,,,,,,,False,0,False,False
+1022,LC4,Leading Coin 4 Entrepreneurs,coin,,,,,,,,,,False,0,False,False
+2540,LCC,Litecoin Cash,coin,Payments,,,,,,,,,False,0,False,False
+853,LDOGE,LiteDoge,coin,,,,,,,,,,False,0,False,False
+107,LEAF,LeafCoin,coin,Yield,,,,,,,,,False,0,False,False
+1429,LEVO,Levocoin,coin,,,,,,,,,,False,0,False,False
+859,LOG,Woodcoin,coin,Gamified Mining,,,,,,,,,False,0,False,False
+82,LOT,LottoCoin,coin,,,,,,,,,,False,0,False,False
+1214,LSK,Lisk,coin,DePIN;Layer-2;RWA;Smart Contract Platform,,lisk-bridge,Canonical Bridge,0x6033f7f88332b8db6ad452b7c6d5bb643990ae3f,Ethereum,Ethereum,,lisk,True,1,True,False
+2,LTC,Litecoin,coin,Chain;Layer-1;Payments;Privacy,,litecoin,Chain,,,,,litecoin,True,1,False,False
+592,LTCD,LitecoinDark,coin,,,,,,,,,,False,0,False,False
+3714,LTO,LTO Network,coin,NFT;Layer-1;RWA,,,,,,,,,False,0,False,False
+510,LXC,Librexcoin,coin,,,,,,,,,,False,0,False,False
+27622,LYX,LUKSO,coin,NFT;Gaming;Identity;Layer-1;Metaverse;Smart Contract Platform,,,,,,,,,False,0,False,False
+35491,M,MemeCore,coin,Dexs;Foundation;Layer-1;Meme,,memecore,Foundation,bsc:0x22b1458e780f8fa71e2f84502cee8b5a3cc731fa,,,,memecore,True,1,True,False
+2474,MAN,Matrix AI Network,coin,AI/Big Data;NFT;DePIN;Gaming;Identity;IoT;Layer-1;Metaverse;Smart Contract Platform,,,,,,,,,False,0,False,False
+1548,MAR,Marijuanacoin,coin,,,,,,,,,,False,0,False,False
+154,MARS,Marscoin,coin,Derivatives;Lending;Yield,,,,,,,,,False,0,False,False
+3890,MATIC,Polygon,coin,Layer-2;Modular Blockchain;Zero Knowledge,,,,,,,,,False,0,False,False
+128,MAX,Maxcoin,coin,Algo-Stables;Dexs,,,,,,,,,False,0,False,False
+164,MAZA,MAZA,coin,,,,,,,,,,False,0,False,False
+3507,MBC,MicroBitcoin,coin,Payments,,,,,,,,,False,0,False,False
+867,MCZ,MangoCoinz,coin,,,,,,,,,,False,0,False,False
+37,MEC,Megacoin,coin,,,,,,,,,,False,0,False,False
+688,MED,MediterraneanCoin,coin,,,,,,,,,,False,0,False,False
+1191,MEME,Memetic / PepeCoin,coin,Dexs;Farm;Meme,,,,,,,,,False,0,False,False
+2896,MFT,Mainframe,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+8646,MINA,Mina,coin,Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+141,MINT,MintCoin,coin,Farm;Launchpad,,,,,,,,,False,0,False,False
+2608,MITH,Mithril,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+81,MMC,Memorycoin,coin,,,,,,,,,,False,0,False,False
+1283,MNM,Mineum,coin,,,,,,,,,,False,0,False,False
+2763,MNW,Morpheus.Network,coin,Payments,,,,,,,,,False,0,False,False
+2139,MNX,MinexCoin,coin,,,,,,,,,,False,0,False,False
+2403,MOAC,MOAC,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+1141,MOIN,Moin,coin,,,,,,,,,,False,0,False,False
+1212,MOJO,MojoCoin,coin,,,,,,,,,,False,0,False,False
+30495,MON,Monad,coin,Gaming;Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+213,MONA,MonaCoin,coin,Payments;Meme,,,,,,,,,False,0,False,False
+89,MOON,Mooncoin,coin,Dexs,,,,,,,,,False,0,False,False
+32452,MOVE,Movement,coin,Bridge;Chain;NFT Marketplace;Yield;Layer-1;Layer-2,,movement,Chain,ethereum:0x3073f7aaa4db83f95e9fff17424f71d4751a3073,,,,movement,True,1,True,False
+9285,MOVR,Moonriver,coin,Interoperability;Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+1814,MRX,Metrix Coin,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+1947,MTH,Monetha,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+706,MUE,MonetaryUnit,coin,,,,,,,,,,False,0,False,False
+1577,MUSIC,Musicoin,coin,,,,,,,,,,False,0,False,False
+5031,MWC,MimbleWimbleCoin,coin,Privacy,,,,,,,,,False,0,False,False
+3115,MXM,Maximine Coin,coin,DePIN,,,,,,,,,False,0,False,False
+1266,MXT,MarteXcoin,coin,,,,,,,,,,False,0,False,False
+377,NAV,Navcoin,coin,Payments;Privacy,,,,,,,,,False,0,False,False
+6535,NEAR,NEAR Protocol,coin,Canonical Bridge;AI/Big Data;Layer-1;Modular Blockchain,,near,Canonical Bridge,,,,,near,True,1,False,False
+1376,NEO,Neo,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+75,NET,NetCoin,coin,,,,,,,,,,False,0,False,False
+3829,NEX,Nash,coin,DEX;Interoperability;Layer-2;Yield,,,,,,,,,False,0,False,False
+39965,NEX,Nexus,coin,Layer-1;Zero Knowledge,,,,,,,,,False,0,False,False
+28778,NFP,NFPrompt,coin,NFT Marketplace;AI/Big Data;Payments,,nfprompt,NFT Marketplace,bsc:0x551897f8203bd131b350601D3aC0679Ba0Fc0136,,,,nfprompt-token,True,1,True,False
+2916,NIM,Nimiq,coin,,,,,,,,,,False,0,False,False
+2991,NIX,NIX,coin,CeDeFi;Privacy,,,,,,,,,False,0,False,False
+797,NKA,IncaKoin,coin,,,,,,,,,,False,0,False,False
+2780,NKN,NKN,coin,DePIN;IoT,,,,,,,,,False,0,False,False
+1382,NLC2,NoLimitCoin,coin,,,,,,,,,,False,0,False,False
+254,NLG,Gulden,coin,,,,,,,,,,False,0,False,False
+3,NMC,Namecoin,coin,,,,,,,,,,False,0,False,False
+117,NOBL,NobleCoin,coin,,,,,,,,,,False,0,False,False
+4191,NOIA,Synternet,coin,IoT,,,,,,,,,False,0,False,False
+184,NOTE,DNotes,coin,Lending;Leveraged Farming;RWA,,,,,,,,,False,0,False,False
+3218,NRG,Energi,coin,Dexs;Staking Pool,,energiswap,Dexs,0x1416946162b1c2c871a73b07e932d2fb6c932069,Energi,Energi,,energi,True,1,True,False
+272,NRS,NoirShares,coin,,,,,,,,,,False,0,False,False
+3200,NSD,Nasdacoin,coin,,,,,,,,,,False,0,False,False
+2714,NTY,Nexty,coin,,,,,,,,,,False,0,False,False
+2092,NULS,NULS,coin,Chain,,nuls,Chain,,Nuls,Nuls,,nuls,True,1,False,False
+6,NVC,Novacoin,coin,,,,,,,,,,False,0,False,False
+789,NXS,Nexus,coin,,,,,,,,,,False,0,False,False
+66,NXT,Nxt,coin,,,,,,,,,,False,0,False,False
+120,NYAN,Nyancoin,coin,Farm;Yield,,,,,,,,,False,0,False,False
+298,NYC,NewYorkCoin,coin,Payments,,,,,,,,,False,0,False,False
+22265,OAS,Oasys,coin,Dexs;Gaming;NFT;Layer-1,,oasys,Gaming,,,,,oasys,True,1,False,False
+1838,OCT,OracleChain,coin,Restaking,,,,,,,,,False,0,False,False
+2631,ODE,ODEM,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+760,OK,OKCash,coin,,,,,,,,,,False,0,False,False
+83,OMNI,Omni,coin,Chain;Dexs,,,,,,,,,False,0,False,False
+3945,ONE,Harmony,coin,Dexs;Layer-1;Smart Contract Platform,,,,,,,,,False,0,False,False
+3217,ONG,Ontology Gas,coin,Layer-1,,,,,,,,,False,0,False,False
+1881,ONION,DeepOnion,coin,Privacy,,,,,,,,,False,0,False,False
+2566,ONT,Ontology,coin,Gaming;Identity;Layer-1;Metaverse,,,,,,,,,False,0,False,False
+597,OPAL,Opal,coin,,,,,,,,,,False,0,False,False
+80,ORB,Orbitcoin,coin,CDP;Dexs;Lending,,,,,,,,,False,0,False,False
+3850,OTO,OTOCASH,coin,Payments,,,,,,,,,False,0,False,False
+2748,OXEN,Oxen,coin,Privacy,,,,,,,,,False,0,False,False
+1107,PAC,PAC Protocol,coin,DEX;Storage,,,,,,,,,False,0,False,False
+1066,PAK,Pakcoin,coin,,,,,,,,,,False,0,False,False
+1826,PART,Particl,coin,Privacy,,,,,,,,,False,0,False,False
+1473,PASC,Pascal,coin,,,,,,,,,,False,0,False,False
+14588,PEAQ,peaq,coin,Chain;DePIN;Layer-1,,peaq,Chain,peaq:PEAQ,,,,peaq-2,True,1,True,False
+6841,PHA,Phala Network,coin,AI Agents;AI/Big Data;DePIN;Gaming;Interoperability;Layer-2;Metaverse;Modular Blockchain;Privacy;Smart Contract Platform;Zero Knowledge,,,,,,,,,False,0,False,False
+2838,PI,Plian,coin,Interoperability;Smart Contract Platform,,,,,,,,,False,0,False,False
+35697,PI,Pi,coin,Layer-1,,,,,,,,,False,0,False,False
+386,PIGGY,Piggycoin,coin,CDP;Yield,,,,,,,,,False,0,False,False
+64,PIN,Public Index Network,coin,,,,,,,,,,False,0,False,False
+313,PINK,Pinkcoin,coin,,,,,,,,,,False,0,False,False
+1169,PIVX,PIVX,coin,Payments;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+934,PKB,ParkByte,coin,,,,,,,,,,False,0,False,False
+35364,PLUME,Plume,coin,Chain;Layer-1;RWA,,plume-mainnet,Chain,0x4c1746a800d224393fe2470c70a35717ed4ea5f1,,,,plume,True,1,True,False
+161,PND,Pandacoin,coin,,,,,,,,,,False,0,False,False
+2359,POLIS,Polis,coin,,,,,,,,,,False,0,False,False
+20362,POLYX,Polymesh,coin,Layer-1;RWA,,,,,,,,,False,0,False,False
+275,POP,PopularCoin,coin,,,,,,,,,,False,0,False,False
+1218,POST,PostCoin,coin,,,,,,,,,,False,0,False,False
+122,POT,PotCoin,coin,,,,,,,,,,False,0,False,False
+5,PPC,Peercoin,coin,Payments,,,,,,,,,False,0,False,False
+2036,PPP,PayPie,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+1555,PRC,PRCoin,coin,,,,,,,,,,False,0,False,False
+100,PRT,Particle,coin,CDP,,,,,,,,,False,0,False,False
+151,PTC,Pesetacoin,coin,CDP;Derivatives,,,,,,,,,False,0,False,False
+870,PURA,Pura,coin,,,,,,,,,,False,0,False,False
+1299,PUT,PutinCoin,coin,,,,,,,,,,False,0,False,False
+656,PXI,Prime-XI,coin,,,,,,,,,,False,0,False,False
+1681,PZM,PRIZM,coin,IoT,,,,,,,,,False,0,False,False
+53,QRK,Quark,coin,,,,,,,,,,False,0,False,False
+1712,QRL,Quantum Resistant Ledger,coin,DePIN,,,,,,,,,False,0,False,False
+2212,QSP,Quantstamp,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+461,QTL,Quatloo,coin,,,,,,,,,,False,0,False,False
+29169,QUBIC,Qubic,coin,AI/Big Data;Layer-1,,,,,,,,,False,0,False,False
+572,RBBT,RabbitCoin,coin,,,,,,,,,,False,0,False,False
+1175,RBIES,Rubies,coin,,,sashimiswap,Dexs,0xC28E27870558cF22ADD83540d2126da2e4b464c2,Multi-Chain,Binance;Ethereum;Heco,,sashimi,True,1,True,False
+215,RBY,Rubycoin,coin,,,,,,,,,,False,0,False,False
+1147,RC,RussiaCoin,coin,,,,,,,,,,False,0,False,False
+118,RDD,ReddCoin,coin,,,,,,,,,,False,0,False,False
+103,RED,RedCoin,coin,Chain;Oracle,,,,,,,,,False,0,False,False
+1307,REE,ReeCoin,coin,,,,,,,,,,False,0,False,False
+2135,REV,Revain,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+2021,REV,RChain,coin,DePIN;Smart Contract Platform,,,,,,,,,False,0,False,False
+1140,RHC,RhinoCoin,coin,,,,,,,,,,False,0,False,False
+160,RIC,Riecoin,coin,,,,,,,,,,False,0,False,False
+496,RIN,Ringo,coin,Dexs,,,,,,,,,False,0,False,False
+1294,RISE,Rise,coin,Cross Chain Bridge,,,,,,,,,False,0,False,False
+14101,RON,Ronin,coin,Canonical Bridge;Gaming;Layer-1,,ronin-bridge,Canonical Bridge,ronin:0xe514d9deb7966c8be0ca922de8a064264ea6bcd4,Ethereum,Ethereum,,ronin,True,1,True,False
+7653,ROSE,Oasis,coin,Dexs;AI/Big Data;NFT;DePIN;Layer-1;Privacy;Smart Contract Platform,,,,,,,,,False,0,False,False
+2577,RVN,Ravencoin,coin,NFT;RWA,,,,,,,,,False,0,False,False
+32684,S,Sonic,coin,Chain;Layer-1,,sonic,Chain,,,,,sonic-3,True,1,False,False
+1417,SAC,SACoin,coin,Yield,,,,,,,,,False,0,False,False
+3918,SAFE,Safe,coin,Services;Yield;Payments,,,,,,,,,False,0,False,False
+21585,SAFE,Safe,coin,Services;Yield,,safe,Services,0x5afe3855358e112b5647b952709e6165e1c1eeee,Ethereum,Ethereum,safe.eth,safe,True,1,True,True
+30372,SAGA,Saga,coin,Chain;AI Agents;AI/Big Data;Gaming;Layer-1,,saga,Chain,,,,,saga-2,True,1,False,False
+1996,SALT,SALT,coin,Dexs;Smart Contract Platform,,,,,,,,,False,0,False,False
+4121,SAPP,Sapphire,coin,,,,,,,,,,False,0,False,False
+1042,SC,Siacoin,coin,DePIN;Storage,,,,,,,,,False,0,False,False
+1302,SCN,Swiscoin,coin,,,,,,,,,,False,0,False,False
+5604,SCRT,Secret,coin,Layer-1;Privacy,,,,,,,,,False,0,False,False
+11451,SDN,Shiden Network,coin,Interoperability;Smart Contract Platform,,,,,,,,,False,0,False,False
+23149,SEI,Sei,coin,Chain;Layer-1,,sei,Chain,,,,,sei-network,True,1,False,False
+1399,SEQ,Sequence,coin,,,,,,,,,,False,0,False,False
+1050,SHIFT,Shift,coin,Algo-Stables;DePIN;Storage,,,,,,,,,False,0,False,False
+1082,SIB,SIBCoin,coin,,,,,,,,,,False,0,False,False
+306,SILK,Silkcoin,coin,,,,,,,,,,False,0,False,False
+5691,SKL,SKALE,coin,DePIN;Gaming;Layer-1;Layer-2;Modular Blockchain;Smart Contract Platform;Storage,,,,,,,,,False,0,False,False
+627,SLG,Sterlingcoin,coin,,,,,,,,,,False,0,False,False
+233,SLR,SolarCoin,coin,,,,,,,,,,False,0,False,False
+1159,SLS,SaluS,coin,,,,,,,,,,False,0,False,False
+1828,SMART,SmartCash,coin,,,,,,,,,,False,0,False,False
+113,SMC,SmartCoin,coin,,,,,,,,,,False,0,False,False
+799,SMLY,SmileyCoin,coin,,,,,,,,,,False,0,False,False
+951,SNRG,Synergy,coin,,,,,,,,,,False,0,False,False
+1111,SOIL,SOILcoin,coin,,,,,,,,,,False,0,False,False
+5426,SOL,Solana,coin,Canonical Bridge;Dexs;Layer-1;Modular Blockchain,,solana,Canonical Bridge,,,,,solana,True,1,False,False
+2827,SOUL,Phantasma,coin,Dexs;AI/Big Data;NFT;DePIN;Storage;Gaming;Layer-1;Metaverse;Smart Contract Platform,,,,,,,,,False,0,False,False
+914,SPHR,Sphere,coin,,,,,,,,,,False,0,False,False
+702,SPR,SpreadCoin,coin,Yield;Yield Aggregator,,newdex,Dexs,bsc:0x996f56299a5b7c4f825a44886e07dafc4660b794,EOS,EOS,,newdex-token,True,1,True,False
+47,SPT,Spots,coin,Farm,,,,,,,,,False,0,False,False
+57,SRC,SecureCoin,coin,,,,,,,,,,False,0,False,False
+6187,SRM,Serum,coin,Dexs;Launchpad;DEX;Derivatives;Smart Contract Platform,,serum,Dexs,0x476c5e26a75bd202a9683ffd34359c0cc15be0ff,Solana,Solana,,serum,True,1,True,False
+38892,STABLE,Stable,coin,Lending;Layer-1;Payments,,,,,,,,,False,0,False,False
+389,START,Startcoin,coin,,,,,,,,,,False,0,False,False
+1343,STRAX,Stratis,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+22691,STRK,Starknet,coin,Canonical Bridge;Lending;Layer-2;Modular Blockchain;Privacy;Smart Contract Platform;Zero Knowledge,,starknet-bridge,Canonical Bridge,0xCa14007Eff0dB1f8135f4C25B34De49AB0d42766,Ethereum,Ethereum,,starknet,True,1,True,False
+1183,STS,Stress,coin,,,,,,,,,,False,0,False,False
+4847,STX,Stacks,coin,Chain;NFT;Gaming;Layer-2;Metaverse;Smart Contract Platform,,stacks-staking,Chain,,,,,blockstack,True,1,False,False
+20947,SUI,Sui,coin,Canonical Bridge;Layer-1,,sui-foundation,Canonical Bridge,sui:0x2::sui::SUI,,,,sui,True,1,True,False
+341,SUPER,SuperCoin,coin,Services,,,,,,,,,False,0,False,False
+1085,SWING,Swing,coin,,,,,,,,,,False,0,False,False
+58,SXC,Sexcoin,coin,,,,,,,,,,False,0,False,False
+2381,SXDT,Spectre.ai Dividend Token,coin,Exchange Token;Smart Contract Platform,,,,,,,,,False,0,False,False
+1304,SYNX,Syndicate,coin,,,,,,,,,,False,0,False,False
+541,SYS,Syscoin,coin,NFT;Layer-1;Modular Blockchain;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+61,TAG,TagCoin,coin,,,,,,,,,,False,0,False,False
+295,TALK,BTCtalkcoin,coin,,,,,,,,,,False,0,False,False
+1894,TCC,The ChampCoin,coin,,,,,,,,,,False,0,False,False
+1674,TECX,TrumpElon CannationX,coin,,,,,,,,,,False,0,False,False
+325,TEK,TEKcoin,coin,,,,,,,,,,False,0,False,False
+2394,TEL,Telcoin,coin,Payments;Identity;Layer-1,,telcoin,Payments,polygon:0xdf7837de1f2fa4631d716cf2502f8b230f1dcc32,Polygon,Polygon,,telcoin,True,1,True,False
+114,TES,TeslaCoin,coin,,,,,,,,,,False,0,False,False
+79,TGC,Tigercoin,coin,Luck Games,,,,,,,,,False,0,False,False
+416,THC,HempCoin,coin,,,,,,,,,,False,0,False,False
+2416,THETA,Theta Network,coin,AI/Big Data;NFT;DePIN;Layer-1;Metaverse;Smart Contract Platform,,,,,,,,,False,0,False,False
+22861,TIA,Celestia,coin,Canonical Bridge;Layer-1;Modular Blockchain,,celestia,Canonical Bridge,osmosis:ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877,,,,celestia,True,1,True,False
+87,TIPS,FedoraCoin,coin,,,,,,,,,,False,0,False,False
+513,TIT,Titcoin,coin,,,,,,,,,,False,0,False,False
+59,TIX,Tickets,coin,,,,,,,,,,False,0,False,False
+4660,TLOS,Telos,coin,NFT;Layer-1;Payments;Privacy;Smart Contract Platform;Zero Knowledge,,,,,,,,,False,0,False,False
+2235,TNB,Time New Bank,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+1833,TOA,ToaCoin,coin,,,,,,,,,,False,0,False,False
+11419,TON,Toncoin,coin,Layer-1,,ton,Chain,ton:EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c,,,,the-open-network,True,1,True,False
+2467,TRAC,OriginTrail,coin,AI Agents;AI/Big Data;DePIN;Interoperability;Layer-1;Privacy;RWA;Smart Contract Platform,,,,,,,,,False,0,False,False
+4944,TRB,Tellor,coin,,,,,,,,,,False,0,False,False
+4,TRC,Terracoin,coin,,,,,,,,,,False,0,False,False
+638,TROLL,Trollcoin,coin,,,,,,,,,,False,0,False,False
+1638,TRST,WeTrust,coin,Smart Contract Platform,,benswap,Dexs,smartbch:0x77CB87b57F54667978Eb1B199b28a0db8C8E1c0B,Multi-Chain,smartBCH;Binance,bentokenfinance.eth,green-ben,True,1,True,True
+2457,TRUE,TrueChain,coin,Prediction Market;Smart Contract Platform,,,,,,,,,False,0,False,False
+1185,TRUMP,TrumpCoin,coin,Meme,,,,,,,,,False,0,False,False
+1958,TRX,TRON,coin,Chain;Storage;Layer-1;Payments,,tron,Chain,,,,,tron,True,1,False,False
+1032,TX,TransferCoin,coin,,,,,,,,,,False,0,False,False
+588,UBQ,Ubiq,coin,Services,,,,,,,,,False,0,False,False
+168,UFO,Uniform Fiscal Object,coin,,,,,,,,,,False,0,False,False
+334,UNB,UnbreakableCoin,coin,Derivatives,,,,,,,,,False,0,False,False
+176,UNC,UnionCoin,coin,,,,,,,,,,False,0,False,False
+67,UNO,Unobtanium,coin,Insurance;Payments,,,,,,,,,False,0,False,False
+380,URO,Uro,coin,Bridge,,,,,,,,,False,0,False,False
+1617,USC,Ultimate Secure Cash,coin,,,,,,,,,,False,0,False,False
+111,USDE,USDe,coin,Derivatives,,,,,,,,,False,0,False,False
+33979,USUAL,Usual,coin,RWA;Synthetics,,usual-usd0,RWA,0xC4441c2BE5d8fA8126822B9929CA0b81Ea0DE38E,Ethereum,Ethereum,,usual,True,1,True,False
+121,UTC,UltraCoin,coin,,,,,,,,,,False,0,False,False
+2371,UTT,United Traders Token,coin,Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+2645,UUU,U Network,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+1154,VAL,Validity,coin,Reserve Currency;Yield,,,,,,,,,False,0,False,False
+34619,VANA,Vana,coin,Chain;AI/Big Data;Layer-1,,vana,Chain,,,,,vana,True,1,False,False
+8037,VANRY,Vanar Chain,coin,NFT;Layer-1;Metaverse,,,,,,,,,False,0,False,False
+3846,VBK,VeriBlock,coin,,,,,,,,,,False,0,False,False
+519,VC,VirtualCoin,coin,Dexs;Lending;NFT Marketplace,,,,,,,,,False,0,False,False
+3607,VEST,VestChain,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+3077,VET,VeChain,coin,IoT;Layer-1;RWA;Smart Contract Platform,,,,,,,,,False,0,False,False
+470,VIA,Viacoin,coin,,,,,,,,,,False,0,False,False
+2570,VIC,Viction,coin,,,,,,,,,,False,0,False,False
+3845,VIDT,VIDT Datalink,coin,AI/Big Data;NFT;Gaming;Interoperability;IoT;Smart Contract Platform,,,,,,,,,False,0,False,False
+1511,VIDZ,PureVidz,coin,,,,,,,,,,False,0,False,False
+3063,VITAE,Vitae,coin,Payments,,,,,,,,,False,0,False,False
+1368,VLT,Veltor,coin,,,,,,,,,,False,0,False,False
+1486,VLTC,Vault Coin,coin,,,,,,,,,,False,0,False,False
+375,VOOT,VootCoin,coin,,,,,,,,,,False,0,False,False
+3816,VRA,Verasity,coin,AI/Big Data;NFT;Gaming;Metaverse;Payments,,,,,,,,,False,0,False,False
+323,VRC,VeriCoin,coin,,,,,,,,,,False,0,False,False
+1387,VRM,VeriumReserve,coin,,,,,,,,,,False,0,False,False
+5049,VRSC,VerusCoin,coin,Identity;Interoperability;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+3704,VSYS,v.systems,coin,Smart Contract Platform,,,,,,,,,False,0,False,False
+520,VTA,Virtacoin,coin,,,,,,,,,,False,0,False,False
+99,VTC,Vertcoin,coin,Payments;Privacy,,,,,,,,,False,0,False,False
+3012,VTHO,VeThor Token,coin,Layer-1,,,,,,,,,False,0,False,False
+766,VTR,vTorrent,coin,,,,,,,,,,False,0,False,False
+2606,WAN,Wanchain,coin,Interoperability;Layer-1;Privacy,,,,,,,,,False,0,False,False
+2300,WAXP,WAX,coin,NFT;Gaming;Layer-1;Metaverse;Payments,,,,,,,,,False,0,False,False
+831,WBB,Wild Beast Block,coin,,,,,,,,,,False,0,False,False
+16,WDC,WorldCoin,coin,,,,,,,,,,False,0,False,False
+7548,WEMIX,WEMIX,coin,NFT;Gaming;Layer-1;Metaverse,,,,,,,,,False,0,False,False
+1779,WGR,Wagerr,coin,,,,,,,,,,False,0,False,False
+1609,XAS,Asch,coin,,,,,,,,,,False,0,False,False
+293,XBC,Bitcoin Plus,coin,Payments,,,,,,,,,False,0,False,False
+9258,XCH,Chia,coin,Layer-1;RWA,,,,,,,,,False,0,False,False
+501,XCN,Cryptonite,coin,Lending,,,,,,,,,False,0,False,False
+18679,XCN,Onyxcoin,coin,Lending;Layer-1,,,,,,,,,False,0,False,False
+132,XCP,Counterparty,coin,,,,,,,,,,False,0,False,False
+2634,XDC,XDC Network,coin,Layer-1;RWA;Smart Contract Platform,,,,,,,,,False,0,False,False
+405,XDN,DigitalNote,coin,Interoperability;Payments;Privacy,,,,,,,,,False,0,False,False
+10791,XEC,eCash,coin,Layer-1,,,,,,,,,False,0,False,False
+1244,XHI,HiCoin,coin,,,,,,,,,,False,0,False,False
+512,XLM,Stellar,coin,DEX;Payments;RWA;Smart Contract Platform,,,,,,,,,False,0,False,False
+629,XMG,Magi,coin,,,,,,,,,,False,0,False,False
+328,XMR,Monero,coin,Layer-1;Payments;Privacy,,,,,,,,,False,0,False,False
+182,XMY,Myriad,coin,,,,,,,,,,False,0,False,False
+1567,XNO,Nano,coin,DAG;Layer-1;Payments,,,,,,,,,False,0,False,False
+1367,XP,Experience Points,coin,,,,,,,,,,False,0,False,False
+874,XPB,Pebblecoin,coin,,,,,,,,,,False,0,False,False
+36645,XPL,Plasma,coin,Chain;Layer-1;Payments,,,,,,,,,False,0,False,False
+42,XPM,Primecoin,coin,,,,,,,,,,False,0,False,False
+764,XPY,PayCoin,coin,,,,,,,,,,False,0,False,False
+978,XRA,Ratecoin,coin,,,,,,,,,,False,0,False,False
+3839,XRC,Bitcoin Rhodium,coin,Payments,,,,,,,,,False,0,False,False
+11948,XRD,Radix,coin,Layer-1,,,,,,,,,False,0,False,False
+52,XRP,XRP,coin,Payments,,,,,,,,,False,0,False,False
+2144,XSH,SHIELD,coin,,,,,,,,,,False,0,False,False
+277,XSI,StabilityShares,coin,,,,,,,,,,False,0,False,False
+2633,XSN,Stakenet,coin,,,,,,,,,,False,0,False,False
+448,XST,Stealth,coin,Payments;Privacy,,,,,,,,,False,0,False,False
+1391,XTO,Tao,coin,,,,,,,,,,False,0,False,False
+2011,XTZ,Tezos,coin,Chain;NFT;Layer-1;Privacy;Smart Contract Platform,,tezos,Chain,,,,,tezos,True,1,False,False
+836,XVC,Vcash,coin,,,,,,,,,,False,0,False,False
+693,XVG,Verge,coin,Payments;Privacy,,,,,,,,,False,0,False,False
+268,XWC,WhiteCoin,coin,Interoperability,,,,,,,,,False,0,False,False
+17,YAC,Yacoin,coin,,,,,,,,,,False,0,False,False
+1156,YOC,Yocoin,coin,,,,,,,,,,False,0,False,False
+4691,ZANO,Zano,coin,Layer-1;Payments;Privacy,,,,,,,,,False,0,False,False
+516,ZCC,ZcCoin,coin,,,,,,,,,,False,0,False,False
+1447,ZCL,ZClassic,coin,Zero Knowledge,,,,,,,,,False,0,False,False
+1437,ZEC,Zcash,coin,Layer-1;Payments;Privacy;Zero Knowledge,,fegex,Services,0x389999216860ab8e0175387a0c90e5c52522c945,Multi-Chain,Binance;Ethereum,,feg-token,True,1,True,False
+181,ZEIT,Zeitcoin,coin,,,,,,,,,,False,0,False,False
+1698,ZEN,Horizen,coin,Dexs;Services;Payments;Privacy;Smart Contract Platform;Zero Knowledge,,,,,,,,,False,0,False,False
+1629,ZENI,Zennies,coin,,,,,,,,,,False,0,False,False
+56,ZET,Zetacoin,coin,,,,,,,,,,False,0,False,False
+21259,ZETA,ZetaChain,coin,Chain;AI/Big Data;Interoperability;Layer-1;Smart Contract Platform,,zetachain,Chain,ethereum:0xf091867ec603a6628ed83d274e835539d82e9cc8,,,,zetachain,True,1,True,False
+9260,ZIG,ZIGChain,coin,AI/Big Data;Layer-1,,,,,,,,,False,0,False,False
+2469,ZIL,Zilliqa,coin,Gaming;Metaverse;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+4003,ZNN,Zenon,coin,Layer-1,,,,,,,,,False,0,False,False
+835,ZRC,ZiftrCOIN,coin,Canonical Bridge,,,,,,,,,False,0,False,False
+4762,ZVC,ZVCHAIN,coin,,,,,,,,,,False,0,False,False
+4951,ZYN,Zynecoin,coin,,,,,,,,,,False,0,False,False
+3626,rBTC,Bitcoin on Rootstock,coin,,,,,,,,,,False,0,False,False
+32591,sSOL,Solayer SOL,coin,,,,,,,,,,False,0,False,False
+27568,slisBNB,Lista Staked BNB,coin,,,,,,,,,,False,0,False,False
+30943,$MICHI,michi (SOL),other,Meme,,,,,,,,,False,0,False,False
+900,007,007Coin,other,,,,,,,,,,False,0,False,False
+23355,0x0,0x0.ai,other,Privacy;AI/Big Data,,0x0.ai,Privacy,0x5a3e6A77ba2f983eC0d371ea3B475F8Bc0811AD5,Ethereum,Ethereum,,0x0-ai-ai-smart-contract,True,1,True,False
+28683,1000SATS,SATS,other,,,,,,,,,,False,0,False,False
+1109,1337,Elite,other,,,,,,,,,,False,0,False,False
+930,16BIT,16bit,other,,,,,,,,,,False,0,False,False
+16604,1ECO,1eco,other,,,,,,,,,,False,0,False,False
+33031,1MBABYDOGE,Baby Doge Coin,other,NFT;Gaming;Meme;Payments,,,,,,,,,False,0,False,False
+1403,1ST,FirstBlood,other,Gaming,,,,,,,,,False,0,False,False
+38515,2Z,DoubleZero,other,Developer Tools;Liquid Staking,,,,,,,,,False,0,False,False
+890,8BIT,8Bit,other,,,,,,,,,,False,0,False,False
+2438,AAC,Acute Angle Cloud,other,,,,,,,,,,False,0,False,False
+36994,AAPLX,Apple tokenized stock (xStock),other,Tokenized Asset,,,,,,,,,False,0,False,False
+6958,ACH,Alchemy Pay,other,,,,,,,,,,False,0,False,False
+38185,ADI,ADI,other,,,,,,,,,,False,0,False,False
+1706,ADK,Aidos Kuneen,other,,,,,,,,,,False,0,False,False
+4057,ADN,Aladdin,other,,,,,,,,,,False,0,False,False
+1775,ADT,adToken,other,,,,,,,,,,False,0,False,False
+1037,AGRS,Agoras: Tau Net,other,AI/Big Data,,,,,,,,,False,0,False,False
+3664,AGVC,AgaveCoin,other,,,,,,,,,,False,0,False,False
+34026,AI16Z,ai16z,other,AI Agents;AI/Big Data;Meme,,,,,,,,,False,0,False,False
+38430,AIA,DeAgentAI,other,AI Agents;AI/Big Data,,,,,,,,,False,0,False,False
+32968,AIC,AI Companions,other,AI/Big Data;Meme,,,,,,,,,False,0,False,False
+2407,AIT,AICHAIN,other,,,,,,,,,,False,0,False,False
+34103,AIXBT,aixbt,other,AI Agents;AI/Big Data,,,,,,,,,False,0,False,False
+7431,AKT,Akash Network,other,AI/Big Data;DePIN;Storage,,,,,,,,,False,0,False,False
+6957,ALBT,AllianceBlock,other,AI/Big Data,,,,,,,,,False,0,False,False
+30605,ALE,Ailey,other,,,,,,,,,,False,0,False,False
+2040,ALIS,ALIS,other,,,,,,,,,,False,0,False,False
+9935,AMA,Mrweb Finance,other,,,,,,,,,,False,0,False,False
+3260,AMO,AMO Coin,other,,,,,,,,,,False,0,False,False
+3783,ANKR,Ankr,other,Liquid Staking;DePIN;Storage;Layer-1,,ankr,Liquid Staking,0x8290333cef9e6d528dd5618fb97a76f268f3edd4,Multi-Chain,Ethereum;Flow;Binance;Avalanche;Polkadot;Fantom;xDai;Kusama,ankr-dao.eth,ankr,True,1,True,True
+115,APC,Applecoin,other,,,,,,,,,,False,0,False,False
+27048,APEPE,Ape and Pepe,other,Meme,,,,,,,,,False,0,False,False
+27599,APFC,APF coin,other,,,,,,,,,,False,0,False,False
+2767,APIS,APIS,other,,,,,,,,,,False,0,False,False
+5258,APIX,APIX,other,,,,,,,,,,False,0,False,False
+2992,APL,Apollo Currency,other,Payments;Privacy,,,,,,,,,False,0,False,False
+5079,APM,apM Coin,other,,,,,,,,,,False,0,False,False
+2344,APPC,AppCoins,other,,,,,,,,,,False,0,False,False
+30008,APU,Apu Apustaja,other,Meme,,,,,,,,,False,0,False,False
+1688,APX,APX,other,,,,,,,,,,False,0,False,False
+2985,ARB,ARBITRAGE,other,Canonical Bridge,,,,,,,,,False,0,False,False
+1320,ARDR,Ardor,coin,,,,,,,,,,False,0,False,False
+2064,ART,Maecenas,other,NFT Marketplace;RWA,,,,,,,,,False,0,False,False
+3673,ASD,ASD,other,Exchange Token,,,,,,,,,False,0,False,False
+20886,ASTRAFER,Astrafer,other,Gaming,,,,,,,,,False,0,False,False
+1751,ATCC,ATC Coin,other,,,,,,,,,,False,0,False,False
+11212,ATLAS,Star Atlas,other,NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+1624,ATMOS,Atmos,other,,,,,,,,,,False,0,False,False
+620,ATOMIC,ATOMIC,other,,,,,,,,,,False,0,False,False
+23757,ATOR,ATOR Protocol,other,DePIN,,,,,,,,,False,0,False,False
+3620,ATP,Atlas Protocol,other,,,,,,,,,,False,0,False,False
+5600,ATT,Attila,other,RWA,,,,,,,,,False,0,False,False
+2732,ATX,Aston,other,,,,,,,,,,False,0,False,False
+2776,AVA,AVA (Travala),other,Payments,,,,,,,,,False,0,False,False
+3089,AVINOC,AVINOC,other,,,,,,,,,,False,0,False,False
+1948,AVT,Aventus,other,Layer-2,,,,,,,,,False,0,False,False
+6216,AXEL,AXEL,other,Storage,,,,,,,,,False,0,False,False
+1597,B@,Bankcoin,other,,,,,,,,,,False,0,False,False
+28066,BANANA,Banana Gun,other,Telegram Bot,,banana-gun,Telegram Bot,0x38e68a37e401f7271568cecaac63c6b1e19130b4,,,,banana-gun,True,1,True,False
+2592,BANCA,Banca,other,,,,,,,,,,False,0,False,False
+642,BANX,Banx,other,NFT Lending,,,,,,,,,False,0,False,False
+7157,BASID,Basid Coin,other,,,,,,,,,,False,0,False,False
+2572,BAX,BABB,other,Payments,,,,,,,,,False,0,False,False
+31369,BBTC,BounceBit BTC,other,Liquid Staking,,,,,,,,,False,0,False,False
+1668,BCAP,BCAP,other,RWA,,,,,,,,,False,0,False,False
+7686,BCHA,Bitcoin Cash ABC,other,,,,,,,,,,False,0,False,False
+2033,BCO,BridgeCoin,other,,,,,,,,,,False,0,False,False
+2061,BCPT,Blockmason Credit Protocol,other,,,,,,,,,,False,0,False,False
+3066,BCV,BitCapitalVendor,other,,,,,,,,,,False,0,False,False
+3415,BCZERO,Buggyra Coin Zero,other,,,,,,,,,,False,0,False,False
+38837,BEAT,Audiera,other,,,,,,,,,,False,0,False,False
+4361,BEST,Bitpanda Ecosystem Token,other,Exchange Token,,,,,,,,,False,0,False,False
+1771,BET,DAOBet,other,,,,,,,,,,False,0,False,False
+4283,BF,BitForex Token,other,Exchange Token;Payments,,,,,,,,,False,0,False,False
+18736,BFIC,Blockchain Foundation for Innovation & Collaboration,other,,,,,,,,,,False,0,False,False
+2605,BFT,BnkToTheFuture,other,,,,,,,,,,False,0,False,False
+11092,BGB,Bitget Token,other,Exchange Token,,,,,,,,,False,0,False,False
+926,BGCAFFE,Buongiorno Caffe,other,,,,,,,,,,False,0,False,False
+7503,BHAO,Bithao,other,,,,,,,,,,False,0,False,False
+3966,BHD,BitcoinHD,other,Payments,,,,,,,,,False,0,False,False
+3020,BHP,BHPCoin,other,,,,,,,,,,False,0,False,False
+4281,BHT,BHEX Token,other,Exchange Token,,,,,,,,,False,0,False,False
+28230,BIGTIME,Big Time,other,Gaming;NFT,,big-time,Gaming,ethereum:0x64bc2ca1be492be7185faa2c8835d9b824c8a194,,,,big-time,True,1,True,False
+39545,BILL,Billions Network,other,Privacy,,,,,,,,,False,0,False,False
+562,BILS,BilShares,other,,,,,,,,,,False,0,False,False
+25220,BITCOIN,HarryPotterObamaSonic10Inu (ERC-20),other,Meme,,,,,,,,,False,0,False,False
+2307,BIX,Bibox Token,other,Exchange Token,,,,,,,,,False,0,False,False
+1057,BKS,BlockShares,other,,,,,,,,,,False,0,False,False
+5280,BLCT,Bloomzed Loyalty Club Ticket,other,,,,,,,,,,False,0,False,False
+729,BLITZ,Blitzcash,other,Services,,,,,,,,,False,0,False,False
+36711,BLOCK,Block (bl0ck.gg),other,,,,,,,,,,False,0,False,False
+1374,BLOCKPAY,BlockPay,other,,,,,,,,,,False,0,False,False
+11206,BLOK,Bloktopia,other,Metaverse,,,,,,,,,False,0,False,False
+23121,BLUR,Blur,other,NFT Lending;NFT Marketplace;NFT,,,,,,,,,False,0,False,False
+1976,BMC,Blackmoon,other,,,,,,,,,,False,0,False,False
+3742,BNANA,Chimpion,other,,,,,,,,,,False,0,False,False
+9891,BNX,BinaryX (old),other,,,,,,,,,,False,0,False,False
+14556,BOBA,Boba Network,other,Layer-2;Modular Blockchain,,,,,,,,,False,0,False,False
+29870,BOME,BOOK OF MEME,other,Meme,,,,,,,,,False,0,False,False
+23095,BONK,Bonk,other,Meme,,,,,,,,,False,0,False,False
+3801,BORA,BORA,other,Gaming,,,,,,,,,False,0,False,False
+2095,BOS,BOScoin,other,,,,,,,,,,False,0,False,False
+2211,BOT,Bodhi,other,,,,,,,,,,False,0,False,False
+3873,BOTX,botXcoin,other,,,,,,,,,,False,0,False,False
+2866,BOUNTY,Chainbounty,other,AI/Big Data,,,,,,,,,False,0,False,False
+1494,BPC,Bitpark Coin,other,,,,,,,,,,False,0,False,False
+5815,BPS,BitcoinPoS,other,,,,,,,,,,False,0,False,False
+1917,BQ,bitqy,other,,,,,,,,,,False,0,False,False
+3929,BQTX,BQT,other,Payments,,,,,,,,,False,0,False,False
+2306,BRD,Bread,other,,,,,,,,,,False,0,False,False
+29743,BRETT,Brett (Based),other,Meme,,,,,,,,,False,0,False,False
+1303,BRX,Breakout Stake,other,,,,,,,,,,False,0,False,False
+3519,BRZE,Breezecoin,other,,,,,,,,,,False,0,False,False
+28862,BSOL,BlazeStake Staked SOL,other,Liquid Staking,,,,,,,,,False,0,False,False
+3974,BTC2,Bitcoin 2,other,Payments,,,,,,,,,False,0,False,False
+2454,BTCU,Bitcoin Unlimited,other,,,,,,,,,,False,0,False,False
+2392,BTO,Bottos,other,AI/Big Data;DePIN,,,,,,,,,False,0,False,False
+4257,BTRS,Bitball Treasure,other,,,,,,,,,,False,0,False,False
+11584,BTRST,Braintrust,other,,,,,,,,,,False,0,False,False
+1201,BTSR,BTSR,other,,,,,,,,,,False,0,False,False
+3718,BTTOLD,BitTorrent,other,DePIN;Storage,,,,,,,,,False,0,False,False
+3737,BTU,BTU Protocol,other,,,,,,,,,,False,0,False,False
+904,BTX,BitcoinTX,other,,,,,,,,,,False,0,False,False
+5168,BXC,Bitcoin Classic,other,,,,,,,,,,False,0,False,False
+4049,BXK,Bitbook Gambling,other,,,,,,,,,,False,0,False,False
+2918,BZ,BitZ Token,other,Payments,,,,,,,,,False,0,False,False
+2727,BZNT,Bezant,other,,,,,,,,,,False,0,False,False
+2444,C20,CRYPTO20,other,,,,,,,,,,False,0,False,False
+1300,CADASTRAL,Bitland,other,,,,,,,,,,False,0,False,False
+2060,CAG,Change,other,Payments,,,,,,,,,False,0,False,False
+28670,CAIR,Crypto-AI-Robo.com,other,AI/Big Data,,,,,,,,,False,0,False,False
+3715,CAJ,Cajutel,other,,,,,,,,,,False,0,False,False
+2248,CAPP,Cappasity,other,,,,,,,,,,False,0,False,False
+35445,CAR,Car,other,,,,,,,,,,False,0,False,False
+2529,CAS,Cashaa,other,,,,,,,,,,False,0,False,False
+32994,CBBTC,Coinbase Wrapped BTC,other,Wrapped Asset,,,,,,,,,False,0,False,False
+11498,CBG,Chainbing,other,,,,,,,,,,False,0,False,False
+2650,CBT,CommerceBlock,other,,,,,,,,,,False,0,False,False
+5087,CBUCKS,CRYPTOBUCKS,other,,,,,,,,,,False,0,False,False
+2897,CCC,Clipper Coin,other,,,,,,,,,,False,0,False,False
+1510,CCRB,CryptoCarbon,other,,,,,,,,,,False,0,False,False
+2856,CEEK,CEEK VR,other,NFT;Metaverse,,,,,,,,,False,0,False,False
+2585,CENNZ,CENNZnet,coin,,,,,,,,,,False,0,False,False
+1729,CFI,Cofound.it,other,,,,,,,,,,False,0,False,False
+2427,CHAT,ChatCoin,other,SoFi,,,,,,,,,False,0,False,False
+34125,CHILLGUY,Just a chill guy,other,Meme,,,,,,,,,False,0,False,False
+2673,CHX,WeOwn,other,,,,,,,,,,False,0,False,False
+274,CINNI,Cinni,other,,,,,,,,,,False,0,False,False
+5844,CIPHC,Cipher Core Token,other,,,,,,,,,,False,0,False,False
+961,CIRC,CryptoCircuits,other,,,,,,,,,,False,0,False,False
+4067,CIX100,Cryptoindex.com 100,other,AI/Big Data,,,,,,,,,False,0,False,False
+8384,CLV,CLV,other,Layer-2,,,,,,,,,False,0,False,False
+33978,CMETH,Mantle Restaked Ether,other,Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+2246,CMT,CyberMiles,other,,,,,,,,,,False,0,False,False
+2043,CND,Cindicator,other,AI/Big Data,,,,,,,,,False,0,False,False
+579,CNMT,Coinomat,other,,,,,,,,,,False,0,False,False
+3648,CNUS,CoinUs,other,,,,,,,,,,False,0,False,False
+38489,COAI,ChainOpera AI,other,AI/Big Data,,,,,,,,,False,0,False,False
+2006,COB,Cobinhood,other,Exchange Token,,,,,,,,,False,0,False,False
+1823,COE,CoEval,other,,,,,,,,,,False,0,False,False
+4275,COMBO,COMBO,other,Services;NFT;Gaming,,,,,,,,,False,0,False,False
+265,COMM,CommunityCoin,other,,,,,,,,,,False,0,False,False
+818,CON,PayCon,other,,,,,,,,,,False,0,False,False
+3866,CON,CONUN,other,,,,,,,,,,False,0,False,False
+28675,COQ,Coq Inu,other,Meme,,,,,,,,,False,0,False,False
+1989,COS,COS,other,,,,,,,,,,False,0,False,False
+2955,COSM,Cosmo Coin,other,,,,,,,,,,False,0,False,False
+2342,COV,Covesting,other,,,,,,,,,,False,0,False,False
+2482,CPC,CPChain,other,AI/Big Data;IoT,,,,,,,,,False,0,False,False
+2766,CPT,Cryptaur,other,,,,,,,,,,False,0,False,False
+3847,CPT,Contents Protocol,other,,,,,,,,,,False,0,False,False
+2641,CPX,Apex,other,,,,,,,,,,False,0,False,False
+869,CRAVE,Crave,other,,,,,,,,,,False,0,False,False
+1153,CRB,Creditbit,other,,,,,,,,,,False,0,False,False
+37005,CRCLX,Circle tokenized stock (xStock),other,Tokenized Asset,,,,,,,,,False,0,False,False
+38056,CRCLon,Circle Internet Group Tokenized Stock (Ondo),other,Tokenized Asset,,,,,,,,,False,0,False,False
+3946,CRE,Carry,other,,,,,,,,,,False,0,False,False
+1963,CREDO,Credo,other,Exchange Token,,,,,,,,,False,0,False,False
+2556,CS,Credits,other,IoT,,,,,,,,,False,0,False,False
+45,CSC,CasinoCoin,other,Gaming,,,,,,,,,False,0,False,False
+1990,CSNO,BitDice,other,,,,,,,,,,False,0,False,False
+5313,CTCN,CONTRACOIN,other,,,,,,,,,,False,0,False,False
+37745,CTM,c8ntinuum,other,,,,,,,,,,False,0,False,False
+5397,CTT,Castweet,other,,,,,,,,,,False,0,False,False
+1100,CUBE,DigiCube,other,,,,,,,,,,False,0,False,False
+2450,CV,carVertical,other,,,,,,,,,,False,0,False,False
+854,CV2,Colossuscoin V2,other,,,,,,,,,,False,0,False,False
+1816,CVC,Civic,other,Identity,,,,,,,,,False,0,False,False
+4152,CVCC,CryptoVerificationCoin,other,Privacy,,,,,,,,,False,0,False,False
+3686,CVNT,Content Value Network,other,,,,,,,,,,False,0,False,False
+2642,CVT,CyberVein,other,,,,,,,,,,False,0,False,False
+1077,CYT,Cryptokenz,other,,,,,,,,,,False,0,False,False
+11374,D,DAR Open Network,other,NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+3154,DAC,Davinci Coin,other,AI/Big Data;IoT,,,,,,,,,False,0,False,False
+2283,DAT,Datum,other,AI/Big Data;IoT,,,,,,,,,False,0,False,False
+2143,DATA,Streamr,other,AI/Big Data;DePIN;Storage;IoT;Payments,,,,,,,,,False,0,False,False
+5618,DAWN,Dawn Protocol,other,Gaming,,,,,,,,,False,0,False,False
+2696,DAX,DAEX,other,,,,,,,,,,False,0,False,False
+2316,DBC,DeepBrain Chain,other,AI/Big Data;DePIN;Metaverse,,,,,,,,,False,0,False,False
+2175,DBET,DecentBet,other,,,,,,,,,,False,0,False,False
+2881,DCC,Distributed Credit Chain,other,,,,,,,,,,False,0,False,False
+1876,DCN,Dentacoin,other,,,,,,,,,,False,0,False,False
+811,DEBUNE,DeBuNe,other,,,,,,,,,,False,0,False,False
+30096,DEGEN,Degen,other,Meme,,,,,,,,,False,0,False,False
+1886,DENT,Dent,other,,,,,,,,,,False,0,False,False
+10442,DESO,Decentralized Social,other,,,,,,,,,,False,0,False,False
+2304,DEW,DEW,other,,,,,,,,,,False,0,False,False
+20279,DHN,Dohrnii,other,,,,,,,,,,False,0,False,False
+1612,DIBC,DIBCOIN,other,,,,,,,,,,False,0,False,False
+717,DICE,NeoDICE,other,,,,,,,,,,False,0,False,False
+1677,DICE,Etheroll,other,,,,,,,,,,False,0,False,False
+2659,DIG,Dignity,other,,,,,,,,,,False,0,False,False
+5908,DKA,dKargo,other,AI/Big Data,,,,,,,,,False,0,False,False
+1949,DLT,Agrello,other,AI/Big Data;Payments,,,,,,,,,False,0,False,False
+5622,DMCH,Darma Cash,other,,,,,,,,,,False,0,False,False
+2503,DMT,DMarket,other,Canonical Bridge;NFT;Payments,,,,,,,,,False,0,False,False
+1856,DNT,district0x,other,Payments,,,,,,,,,False,0,False,False
+30933,DOG,Dog (Bitcoin),other,Meme,,,,,,,,,False,0,False,False
+32698,DOGS,DOGS,other,Meme,,,,,,,,,False,0,False,False
+37482,DORA,DORA,other,Meme,,,,,,,,,False,0,False,False
+2162,DPY,Delphy,other,,,,,,,,,,False,0,False,False
+3924,DREP,DREP,other,,,,,,,,,,False,0,False,False
+2243,DRGN,Dragonchain,other,,,,,,,,,,False,0,False,False
+2591,DROP,Dropil,other,Prediction Market,,,,,,,,,False,0,False,False
+1520,DRS,Digital Rupees,other,,,,,,,,,,False,0,False,False
+5796,DRS,Doctors Coin,other,,,,,,,,,,False,0,False,False
+2070,DRT,DomRaider,other,NFT,,,,,,,,,False,0,False,False
+908,DRZ,Droidz,other,,,,,,,,,,False,0,False,False
+29884,DSYNC,Destra Network,other,AI/Big Data;DePIN,,,,,,,,,False,0,False,False
+2446,DTA,DATA,other,AI/Big Data,,,,,,,,,False,0,False,False
+1603,DTB,Databits,other,,,,,,,,,,False,0,False,False
+2298,DTR,Dynamic Trading Rights,other,Trading App,,,,,,,,,False,0,False,False
+33852,DUCKY,Ducky,other,Meme,,,,,,,,,False,0,False,False
+7590,DVI,Dvision Network,other,NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+2643,DVPN,Sentinel,other,DePIN,,,,,,,,,False,0,False,False
+28932,DYM,Dymension,coin,Chain;Modular Blockchain,,dymension,Chain,osmosis:ibc/9A76CDF0CBCEF37923F32518FA15E5DC92B9F56128292BC4D63C4AEA76CBB110,,,,dymension,True,1,True,False
+7758,EAURIC,Eauric,other,,,,,,,,,,False,0,False,False
+1782,ECOB,Ecobit,other,,,,,,,,,,False,0,False,False
+1596,EDG,Edgeless,other,,,,,,,,,,False,0,False,False
+9466,EDGT,Edgecoin,other,,,,,,,,,,False,0,False,False
+2835,EDR,Endor Protocol,other,,,,,,,,,,False,0,False,False
+24613,EDU,Open Campus,other,,,,,,,,,,False,0,False,False
+28568,EETH,ether.fi Staked ETH,other,Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+2666,EFX,Effect.AI,other,,,,,,,,,,False,0,False,False
+5075,EGR,Egoras,other,,,,,,,,,,False,0,False,False
+2885,EGT,Egretia,other,,,,,,,,,,False,0,False,False
+1249,EL,Elcoin,other,,,,,,,,,,False,0,False,False
+3734,ELAMA,Elamachain,other,,,,,,,,,,False,0,False,False
+2573,ELEC,Electrify.Asia,other,,,,,,,,,,False,0,False,False
+4490,EMRX,Emirex Token,other,,,,,,,,,,False,0,False,False
+1625,EMV,Ethereum Movie Venture,other,,,,,,,,,,False,0,False,False
+2044,ENG,Enigma,other,Privacy,,,,,,,,,False,0,False,False
+4748,EON,Dimension Chain,other,,,,,,,,,,False,0,False,False
+2644,EOSDAC,eosDAC,other,,,,,,,,,,False,0,False,False
+4086,ERD,Elrond,other,,,,,,,,,,False,0,False,False
+3489,ESCE,Escroco Emerald,other,,,,,,,,,,False,0,False,False
+37414,ESPORTS,Yooldo,other,Gaming,,,,,,,,,False,0,False,False
+3409,ETA,Etheera,other,,,,,,,,,,False,0,False,False
+3589,ETHM,Ethereum Meta,other,,,,,,,,,,False,0,False,False
+27566,ETHX,Stader ETHx,other,Liquid Staking,,,,,,,,,False,0,False,False
+1714,ETT,EncryptoTel [WAVES],other,,,,,,,,,,False,0,False,False
+3968,EUM,Elitium,other,,,,,,,,,,False,0,False,False
+3261,EVN,EvenCoin,other,,,,,,,,,,False,0,False,False
+2066,EVR,Everus,other,,,,,,,,,,False,0,False,False
+5268,EWT,Energy Web Token,other,Identity,,,,,,,,,False,0,False,False
+5620,EXE,8X8 PROTOCOL,other,,,,,,,,,,False,0,False,False
+29520,EZETH,Renzo Restaked ETH,other,Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+34330,FAI,Freysa,other,AI Agents;AI/Big Data,,,,,,,,,False,0,False,False
+224,FAIR,FairCoin,other,,,,,,,,,,False,0,False,False
+33597,FARTCOIN,Fartcoin,other,AI/Big Data;Meme,,,,,,,,,False,0,False,False
+1087,FCT,Factom,other,,,,,,,,,,False,0,False,False
+3773,FET,Artificial Superintelligence Alliance,other,AI Agents;AI/Big Data;NFT;IoT,,,,,,,,,False,0,False,False
+38482,FF,Falcon Finance,other,Basis Trading,,,,,,,,,False,0,False,False
+570,FIBRE,Fibre,other,,,,,,,,,,False,0,False,False
+444,FIMK,FIMKrypto,other,,,,,,,,,,False,0,False,False
+606,FLDC,FoldingCoin,other,,,,,,,,,,False,0,False,False
+1133,FLOZ,Floz,other,,,,,,,,,,False,0,False,False
+1161,FLVR,FlavorCoin,other,,,,,,,,,,False,0,False,False
+20787,FLZ,Fellaz,other,,,,,,,,,,False,0,False,False
+3858,FNB,FNB Protocol,other,,,,,,,,,,False,0,False,False
+4512,FNSA,FINSCHIA,other,Exchange Token,,,,,,,,,False,0,False,False
+3631,FOAM,FOAM,other,AI/Big Data,,,,,,,,,False,0,False,False
+23635,FORM,Four,other,Chain;Gaming,,,,,,,,,False,0,False,False
+12131,FRTS,Fruits,other,,,,,,,,,,False,0,False,False
+1670,FUNC,FUNCoin,other,,,,,,,,,,False,0,False,False
+1075,FUND,Cryptofund,other,,,,,,,,,,False,0,False,False
+3884,FX,Pundi AI,other,,,,,,,,,,False,0,False,False
+3812,FXC,Flexacoin,other,Payments,,,,,,,,,False,0,False,False
+2723,FXT,FuzeX,other,,,,,,,,,,False,0,False,False
+11877,GAL,Galxe,other,,,,,,,,,,False,0,False,False
+939,GAM,Gambit,other,,,,,,,,,,False,0,False,False
+4694,GAP,GAPS,other,Prediction Market,,,,,,,,,False,0,False,False
+3618,GATE,GATE,other,,,,,,,,,,False,0,False,False
+2952,GBC,Gold Bits Coin,other,,,,,,,,,,False,0,False,False
+1225,GBT,GameBet Coin,other,,,,,,,,,,False,0,False,False
+1492,GBYTE,Obyte,other,DAG;IoT,,oswap-amm,Dexs,,Obyte,Obyte,,,True,1,False,False
+779,GEMZ,GetGems,other,,,,,,,,,,False,0,False,False
+823,GEO,GeoCoin,other,,,,,,,,,,False,0,False,False
+2589,GETX,Guaranteed Ethurance Token Extra,other,,,,,,,,,,False,0,False,False
+15585,GF,GuildFi,other,Gaming,,,,,,,,,False,0,False,False
+2289,GFT,Gifto,other,Gaming,,,,,,,,,False,0,False,False
+30063,GIGA,Gigachad,other,Meme,,,,,,,,,False,0,False,False
+5200,GLEEC,Gleec Coin,other,,,,,,,,,,False,0,False,False
+1455,GLM,Golem,other,Services;AI/Big Data;DePIN;Payments,,golem-network,Services,0x7dd9c5cba05e151c895fde1cf355c9a1d5da6429,,,,golem,True,1,True,False
+4182,GMAT,GoWithMi,other,,,,,,,,,,False,0,False,False
+18069,GMT,GMT,other,Chain;NFT;Gaming,,stepn,Chain,solana:7i5KKsX2weiTkry7jA4ZwSuXGhs5eJBEjY8vVxR4pfRx,,,,stepn,True,1,True,False
+3936,GNY,GNY,other,AI/Big Data,,,,,,,,,False,0,False,False
+33440,GOAT,Goatseus Maximus,other,AI/Big Data;Meme,,,,,,,,,False,0,False,False
+1480,GOLOS,Golos,other,,,,,,,,,,False,0,False,False
+10180,GOMINING,GoМining,other,NFT;Gaming,,,,,,,,,False,0,False,False
+35268,GPS,GoPlus Security,other,Developer Tools;Token Locker,,,,,,,,,False,0,False,False
+32956,GRASS,Grass,other,DePIN;AI/Big Data,,,,,,,,,False,0,False,False
+20289,GRD,Gradium,other,,,,,,,,,,False,0,False,False
+402,GRE,Greencoin,other,,,,,,,,,,False,0,False,False
+2134,GRID,Grid+,other,,,,,,,,,,False,0,False,False
+34792,GRIFFAIN,GRIFFAIN,other,AI Agents;AI/Big Data,,,,,,,,,False,0,False,False
+976,GRM,Gridmaster,other,,,,,,,,,,False,0,False,False
+2746,GRN,GreenPower,other,,,,,,,,,,False,0,False,False
+1071,GSY,GenesysCoin,other,,,,,,,,,,False,0,False,False
+4269,GT,GateToken,other,CEX;Interface;Exchange Token,,gate,CEX,0xe66747a101bff2dba3697199dcce5b743b454759,Multi-Chain,Ethereum;Bitcoin;Binance;Solana;Doge;Tron;Ripple;Base;Sui;Litecoin;Optimism;Arbitrum;Celo;EthereumClassic;Manta;Avalanche;Klaytn;Linea;Cardano;zkSync Era;XDC;Aptos;Cronos;Polygon;Terra;Algorand;WEMIX;Flare;VeChain;Mantle;Ergo;Metis;Alephium;Celestia;dYdX;CORE;Stacks;EOS;X Layer;Scroll;Cosmos;Injective;LUKSO;Starknet;RSK;Vana;Moonriver;Theta;Ronin;Harmony;Chiliz;Shibarium;Tezos;Moonbeam;Agoric;Osmosis;Radix;Dymension;Elrond;Acala;IoTeX;Astar;Op_Bnb;ApeChain;Oasys;REI;ThunderCore;XPLA;Fuse;Aura Network;Bitkub;Merlin;ZetaChain;BandChain;Neon;Bitlayer;Mode;Boba;Neutron;Bifrost;Blast;Etherlink;Matchain;Zircuit;Meter;zkLink;Aurora;Taiko;Arbitrum Nova;EnergyWeb;Polygon zkEVM;Fantom;BSquared;Bittorrent;AirDAO;EOS EVM;Kardia;Kroma;Fuel;Polkadot;Sei;Umee;OKExChain;Bahamut;HAQQ;TomoChain;Songbird,,gatechain-token,True,1,True,False
+39090,GTBTC,GTBTC,other,Wrapped Asset,,,,,,,,,False,0,False,False
+2336,GTC,Game.com,other,Charity Fundraising,,,,,,,,,False,0,False,False
+3914,GTN,GlitzKoin,other,,,,,,,,,,False,0,False,False
+1616,GUP,Matchpool,other,,,,,,,,,,False,0,False,False
+2181,GVT,Genesis Vision,other,,,,,,,,,,False,0,False,False
+1122,GYC,GongYiCoin,other,,,,,,,,,,False,0,False,False
+36922,H,Humanity,other,Identity & Reputation;Identity;Privacy,,humanity,Identity & Reputation,0xcf5104d094e3864cfcbda43b82e1cefd26a016eb,,,,humanity,True,1,True,False
+19091,H2O,H2O DAO,other,,,,,,,,,,False,0,False,False
+1308,HEAT,HEAT,other,,,,,,,,,,False,0,False,False
+3662,HEDG,HedgeTrade,other,,,,,,,,,,False,0,False,False
+10778,HERO,Metahero,other,Gaming;Metaverse,,,,,,,,,False,0,False,False
+11240,HI,HI,other,,,,,,,,,,False,0,False,False
+1477,HKG,Hacker Gold,other,,,,,,,,,,False,0,False,False
+1669,HMQ,Humaniq,other,,,,,,,,,,False,0,False,False
+5336,HMR,Homeros,other,,,,,,,,,,False,0,False,False
+32195,HMSTR,Hamster Kombat,other,Gaming,,,,,,,,,False,0,False,False
+5221,HNS,Handshake,other,NFT;DePIN;Storage,,,,,,,,,False,0,False,False
+8438,HOGE,Hoge Finance,other,Gaming;Meme,,,,,,,,,False,0,False,False
+22764,HOOK,Hooked Protocol,other,AI/Big Data;Gaming;Metaverse,,,,,,,,,False,0,False,False
+2682,HOT,Holo,other,DePIN;Storage,,,,,,,,,False,0,False,False
+3600,HPO,Hippocrat,other,,,,,,,,,,False,0,False,False
+3721,HPT,Huobi Pool Token,other,,,,,,,,,,False,0,False,False
+3358,HSN,Helper Search Token,other,,,,,,,,,,False,0,False,False
+2502,HT,Huobi Token,other,Exchange Token;Payments,,,,,,,,,False,0,False,False
+5127,HTDF,Orient Walt,other,,,,,,,,,,False,0,False,False
+29160,HTX,HTX,other,Exchange Token,,,,,,,,,False,0,False,False
+1950,HVN,Hiveterminal Token,other,,,,,,,,,,False,0,False,False
+3695,HYN,Hyperion,other,,,,,,,,,,False,0,False,False
+525,HYP,HyperStake,other,,,,,,,,,,False,0,False,False
+466,HZ,Horizon,other,,,,,,,,,,False,0,False,False
+5560,ICH,Idea Chain Coin,other,,,,,,,,,,False,0,False,False
+1408,ICN,Iconomi,other,,,,,,,,,,False,0,False,False
+1791,ICO,ICO,other,,,,,,,,,,False,0,False,False
+1276,ICOO,ICO OpenLedger,other,,,,,,,,,,False,0,False,False
+2082,ICOS,ICOS,other,,,,,,,,,,False,0,False,False
+21846,ID,SPACE ID,other,,,,,,,,,,False,0,False,False
+2459,IDH,indaHash,other,,,,,,,,,,False,0,False,False
+1888,IFT,InvestFeed,other,Liquid Staking,,,,,,,,,False,0,False,False
+2276,IGNIS,Ignis,other,Payments,,,,,,,,,False,0,False,False
+2552,IHT,IHT Real Estate Protocol,other,,,,,,,,,,False,0,False,False
+10603,IMX,Immutable,other,Chain;NFT Marketplace;NFT;Gaming;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,,immutablex,NFT Marketplace,0xf57e7e7c23978c3caec3c3548e3d615c346e79ff,Ethereum,Ethereum,,immutable-x,True,1,True,False
+3116,INB,Insight Chain,other,DePIN,,,,,,,,,False,0,False,False
+1475,INCNT,Incent,other,,,partyswap,Dexs,avax:0x25afd99fcb474d7c336a2971f26966da652a92bc,Avalanche,Avalanche,,party-v2,True,1,True,False
+970,INDEX,CoinoIndex,other,Indexes,,,,,,,,,False,0,False,False
+2209,INK,Ink,other,Identity,,,,,,,,,False,0,False,False
+3787,INNBCL,Innovative Bioresearch Classic,other,,,,,,,,,,False,0,False,False
+3085,INO,INO COIN,other,Payments,,,,,,,,,False,0,False,False
+1626,INPAY,InPay,other,,,mistswap,Dexs,smartbch:0x5fA664f69c2A4A3ec94FaC3cBf7049BD9CA73129,smartBCH,smartBCH,,mistswap,True,1,True,False
+2558,INSTAR,Insights Network,other,AI/Big Data,,,,,,,,,False,0,False,False
+33553,INSURANCE,insurance,other,,,,,,,,,,False,0,False,False
+2399,INT,INT,other,IoT,,,,,,,,,False,0,False,False
+37028,INTCX,Intel tokenized stock (xStock),other,Tokenized Asset,,,,,,,,,False,0,False,False
+29835,IO,io.net,other,AI/Big Data;DePIN,,,,,,,,,False,0,False,False
+2405,IOST,IOST,coin,IoT,,,,,,,,,False,0,False,False
+2433,IPC,IPChain,other,,,,,,,,,,False,0,False,False
+28367,IPV,IPVERSE,other,,,,,,,,,,False,0,False,False
+1845,IXT,IXT,other,,,,,,,,,,False,0,False,False
+5677,IZE,IZE,other,,,,,,,,,,False,0,False,False
+8425,JASMY,JasmyCoin,other,IoT,,,,,,,,,False,0,False,False
+3828,JCT,Japan Content Token,other,,,,,,,,,,False,0,False,False
+645,JINN,Jinn,other,,,,,,,,,,False,0,False,False
+22533,JITOSOL,Jito Staked SOL,other,Liquid Staking,,,,,,,,,False,0,False,False
+481,JLH,jl777hodl,other,,,,,,,,,,False,0,False,False
+1516,JNS,Janus,other,,,,,,,,,,False,0,False,False
+2498,JNT,Jibrel Network,other,,,,,,,,,,False,0,False,False
+4967,JUL,Joule,other,,,,,,,,,,False,0,False,False
+1379,JWL,Jewels,other,,,,,,,,,,False,0,False,False
+3791,JWL,Jewel,other,Payments,,,,,,,,,False,0,False,False
+2934,KAN,BitKan,other,CEX,,bitkan,CEX,0x1410434b0346f5be678d0fb554e5c7ab620f8f4a,Multi-Chain,Ethereum;Bitcoin;Solana;Tron;Polygon;Binance,,kan,True,1,True,False
+24382,KAU,Kinesis Gold,other,Tokenized Asset,,,,,,,,,False,0,False,False
+2379,KCASH,Kcash,other,,,,,,,,,,False,0,False,False
+2087,KCS,KuCoin Token,other,Exchange Token,,,,,,,,,False,0,False,False
+2398,KEY,SelfKey,other,AI/Big Data;Identity,,,,,,,,,False,0,False,False
+6170,KFX,KnoxFS,other,,,,,,,,,,False,0,False,False
+39072,KHYPE,Kinetiq Staked HYPE,other,Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+2017,KICK,KickToken [old],other,,,,,,,,,,False,0,False,False
+6724,KLV,Klever Coin,other,,,,,,,,,,False,0,False,False
+7184,KOGE,48 Club Token,other,,,,,,,,,,False,0,False,False
+5185,KOK,KOK,other,,,,,,,,,,False,0,False,False
+400,KORE,Kore,other,,,,,,,,,,False,0,False,False
+1224,KR,Krypton,other,,,,,,,,,,False,0,False,False
+2378,KRM,Karma,other,,,,,,,,,,False,0,False,False
+5034,KSM,Kusama,coin,Liquid Staking,,,,,,,,,False,0,False,False
+15185,KUJI,Kujira,coin,Liquidations,,,,,,,,,False,0,False,False
+2090,LA,LATOKEN,other,Exchange Token;Payments,,,,,,,,,False,0,False,False
+3657,LAMB,Lambda,other,AI/Big Data;DePIN;Storage,,,,,,,,,False,0,False,False
+9720,LAT,PlatON,other,AI/Big Data,,,,,,,,,False,0,False,False
+2760,LBA,Cred,other,Payments,,,,,,,,,False,0,False,False
+4950,LCX,LCX,other,Exchange Token,,,,,,,,,False,0,False,False
+3957,LEO,UNUS SED LEO,other,Exchange Token;Payments,,,,,,,,,False,0,False,False
+2468,LET,LinkEye,other,,,,,,,,,,False,0,False,False
+2600,LGO,LGO Token,other,Exchange Token,,,,,,,,,False,0,False,False
+27657,LINEA,Linea,other,Layer-2;Zero Knowledge,,,,,,,,,False,0,False,False
+1975,LINK,Chainlink,other,Oracle;Services;Interoperability;IoT;Privacy;RWA;Smart Contract Platform;Tokenized Asset,,,,,,,,,False,0,False,False
+1309,LIR,LetItRide,other,,,,,,,,,,False,0,False,False
+1454,LKK,Lykke,other,Exchange Token;Payments,,,,,,,,,False,0,False,False
+3178,LKY,Linkey,other,,,,,,,,,,False,0,False,False
+1380,LMC,LoMoCoin,other,,,,,,,,,,False,0,False,False
+3636,LML,Lisk Machine Learning,other,,,,,,,,,,False,0,False,False
+2287,LOC,LockTrip,other,,,,,,,,,,False,0,False,False
+17081,LOOKS,LooksRare,other,NFT Marketplace;NFT,,looksrare,NFT Marketplace,0xf4d2888d29D722226FafA5d9B24F9164c092421E,Ethereum,Ethereum,,looksrare,True,1,True,False
+2588,LOOM,Loom Network,other,Gaming,,,,,,,,,False,0,False,False
+3640,LPT,Livepeer,other,Video Infrastructure;AI/Big Data;DePIN,,,,,,,,,False,0,False,False
+5329,LRG,Largo Coin,other,,,,,,,,,,False,0,False,False
+23782,LSETH,Liquid Staked ETH,other,Liquid Staking,,,,,,,,,False,0,False,False
+5009,LST,LuckySevenToken,other,,,,,,,,,,False,0,False,False
+550,LTBC,LTBcoin,other,,,,,,,,,,False,0,False,False
+1068,LTD,LimitedCoin,other,,,,,,,,,,False,0,False,False
+1658,LUN,Lunyr,other,,,,,,,,,,False,0,False,False
+5094,LVX,Level01,other,,,,,,,,,,False,0,False,False
+3070,LXT,Litex,other,,,,,,,,,,False,0,False,False
+2554,LYM,Lympo,other,NFT,,,,,,,,,False,0,False,False
+5625,LYXe,LUKSO (Old),other,NFT;Metaverse,,,,,,,,,False,0,False,False
+291,MAID,MaidSafeCoin,other,DePIN;Storage,,,,,,,,,False,0,False,False
+1966,MANA,Decentraland,other,NFT;Gaming;Metaverse;Payments,,,,,,,,,False,0,False,False
+13631,MANTA,Manta Network,other,Canonical Bridge;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,,manta-pacific,Canonical Bridge,manta:0x95cef13441be50d20ca4558cc0a27b601ac544e5,Ethereum,Ethereum,,manta-network,True,1,True,False
+1056,MAPC,MapCoin,other,,,,,,,,,,False,0,False,False
+3175,MARO,Maro,other,,,,,,,,,,False,0,False,False
+651,MARYJ,MaryJane,other,,,,,,,,,,False,0,False,False
+8536,MASK,Mask Network,other,NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+5548,MASS,Massnet,other,,,,,,,,,,False,0,False,False
+5616,MATH,MATH,other,,,,,,,,,,False,0,False,False
+4469,MB,MineBee,other,AI/Big Data,,,,,,,,,False,0,False,False
+4209,MB8,MB8 Coin,other,,,,,,,,,,False,0,False,False
+7059,MBN,Mobilian Coin,other,,,,,,,,,,False,0,False,False
+1815,MBRS,Embers,other,,,,,,,,,,False,0,False,False
+18895,MBX,MARBLEX,other,Gaming,,,,,,,,,False,0,False,False
+1690,MCAP,MCAP,other,,,,,,,,,,False,0,False,False
+1776,MCO,MCO,other,Payments,,defi-swap,Dexs,0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b,Ethereum,Ethereum,,crypto-com-chain,True,1,True,False
+16946,MCT,Metacraft,other,,,,,,,,,,False,0,False,False
+1954,MDA,Moeda Loyalty Points,other,,,,,,,,,,False,0,False,False
+2274,MDS,MediShares,other,,,,,,,,,,False,0,False,False
+32197,ME,Magic Eden,other,NFT Marketplace;NFT,,magic-eden,NFT Marketplace,solana:MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u,Multi-Chain,Bitcoin;Solana;Arbitrum;Base;Ethereum,,magic-eden,True,1,True,False
+2303,MED,MediBloc,other,,,,,,,,,,False,0,False,False
+2845,MEDX,MediBloc [ERC20],other,,,,,,,,,,False,0,False,False
+35347,MELANIA,Official Melania Meme,other,Meme,,melania-meme,Meme,solana:FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P,,,,melania-meme,True,1,True,False
+1590,MER,Mercury,other,,,,,,,,,,False,0,False,False
+29035,METH,Mantle Staked Ether,other,Liquid Staking,,,,,,,,,False,0,False,False
+4676,MEXC,MEXC Token,other,,,,,,,,,,False,0,False,False
+1649,MGC,MergeCoin,other,,,,,,,,,,False,0,False,False
+29839,MGC,Meta Games Coin,other,,,,,,,,,,False,0,False,False
+1715,MGO,MobileGo,other,Gaming,,,,,,,,,False,0,False,False
+556,MGW,MGW,other,,,,,,,,,,False,0,False,False
+3756,MHC,#MetaHash,other,,,,,,,,,,False,0,False,False
+1051,MI,Xiaomicoin,other,,,,,,,,,,False,0,False,False
+989,MMBTCD,MMBTCD,other,,,,,,,,,,False,0,False,False
+686,MMNXT,MMNXT,other,,,,,,,,,,False,0,False,False
+1673,MNE,Minereum,other,,,,,,,,,,False,0,False,False
+27075,MNT,Mantle,other,Canonical Bridge;Foundation;Layer-2,,mantle-treasury,Foundation,0x3c3a81e81dc49a522a592e7622a7e711c06bf354,,,bitdao.eth,,True,1,True,True
+32856,MNT,Mr Mint,other,Canonical Bridge;Foundation,,,,,,,,,False,0,False,False
+575,MNTA,Moneta,other,Services,,,,,,,,,False,0,False,False
+7878,MOB,MobileCoin,other,Payments;Privacy,,,,,,,,,False,0,False,False
+24600,MOBILE,Helium Mobile,other,DePIN,,,,,,,,,False,0,False,False
+2915,MOC,Moss Coin,other,Dual-Token Stablecoin,,,,,,,,,False,0,False,False
+31526,MOCA,Moca Network,other,Chain;NFT;Gaming;Identity;Metaverse,,moca-network,Chain,0xf944e35f95e819e752f3ccb5faf40957d311e8c5,,,,mocaverse,True,1,True,False
+2080,MOD,Modum,other,,,,,,,,,,False,0,False,False
+2441,MOF,Molecular Future,other,,,,,,,,,,False,0,False,False
+27659,MOG,Mog Coin,other,Meme,,,,,,,,,False,0,False,False
+33093,MOODENG,Moo Deng (moodengsol.com),other,Meme,,,,,,,,,False,0,False,False
+155,MRC,microCoin,other,,,,,,,,,,False,0,False,False
+621,MRKT,FreeMarket,other,,,,,,,,,,False,0,False,False
+21178,MRS,Metars Genesis,other,NFT Marketplace,,metars-go,NFT Marketplace,bcs:0x238d02ee3f80fbf5e381f049616025c186889b68,,,,metars-genesis,True,1,True,False
+1550,MSCN,Master Swiscoin,other,,,,,,,,,,False,0,False,False
+11461,MSOL,Marinade Staked SOL,other,Liquid Staking,,,,,,,,,False,0,False,False
+2711,MTC,DOC.COM,other,AI/Big Data;Payments,,,,,,,,,False,0,False,False
+6498,MTC,Metacoin,other,,,,,,,,,,False,0,False,False
+1788,MTL,Metal DAO,other,Layer-2;Payments,,,,,,,,,False,0,False,False
+2497,MTN,Medicalchain,other,,,,,,,,,,False,0,False,False
+4451,MTXLT,Tixl [old],other,,,,,,,,,,False,0,False,False
+28412,MUBI,Multibit,other,Bridge;Interoperability,,multibit-protocol,Bridge,0x38e382f74dfb84608f3c1f10187f6bef5951de93,Multi-Chain,Bitcoin;Ethereum;BounceBit;Polygon;Binance,,multibit,True,1,True,False
+17050,MULTI,Multichain,other,Bridge,,multichain,Bridge,0x9Fb9a33956351cf4fa040f65A13b835A3C8764E3,Multi-Chain,Binance;Ethereum;Polygon;Arbitrum;Optimism;Avalanche;Klaytn;Fantom;Cronos;Kucoin;Polygon zkEVM;Harmony;Arbitrum Nova;OKExChain;Dogechain;Moonbeam;IoTeX;Bittorrent;Velas;Kava;DFK;Fuse;Metis;Moonriver;xDai;Telos;Celo;Aurora;Kardia;Heco;CLV;Cube;Milkomeda;Milkomeda A1;Evmos;Fusion;RSK;Hoo;TomoChain;ThunderCore;Boba;Astar;Conflux;Ronin;smartBCH;EthereumPoW;Oasis;REI;GodwokenV1;OntologyEVM;EthereumClassic;Bitgert;Syscoin;Shiden,,multichain,True,1,True,False
+30285,MUMU,Mumu the Bull (SOL),other,Meme,,,,,,,,,False,0,False,False
+8502,MUSH,Mushroom,other,,,,,,,,,,False,0,False,False
+17704,MV,GensoKishi Metaverse,other,Gaming,,gensokishi,Gaming,polygon:0xa3c322ad15218fbfaed26ba7f616249f7705d945,Polygon,Polygon,,gensokishis-metaverse,True,1,True,False
+4041,MX,MX Token,other,Exchange Token,,,,,,,,,False,0,False,False
+3628,MXC,Moonchain,other,DePIN;IoT,,,,,,,,,False,0,False,False
+1902,MYB,MyBit,other,IoT,,,,,,,,,False,0,False,False
+28382,MYRO,Myro,other,Meme,,,,,,,,,False,0,False,False
+1721,MYST,Mysterium,other,DePIN,,,,,,,,,False,0,False,False
+12749,NAKA,Nakamoto Games,other,NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+2595,NANJ,NANJCOIN,other,,,,,,,,,,False,0,False,False
+267,NAS,Nas,other,,,,,,,,,,False,0,False,False
+1908,NAS,Nebulas,other,,,,,,,,,,False,0,False,False
+321,NAUT,NautilusCoin,other,,,,,,,,,,False,0,False,False
+2544,NCASH,Nitro Network,other,IoT,,,,,,,,,False,0,False,False
+1872,NDC,NEVERDIE,other,,,,,,,,,,False,0,False,False
+1955,NEBL,Neblio,coin,,,,,,,,,,False,0,False,False
+32521,NEIRO,Neiro,other,Meme,,,,,,,,,False,0,False,False
+1811,NET,Nimiq Exchange Token,other,,,,,,,,,,False,0,False,False
+3788,NET,NEXT,other,Exchange Token,,,,,,,,,False,0,False,False
+2694,NEXO,Nexo,other,CEX;Payments,,nexo,CEX,0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206,Multi-Chain,Ethereum;Binance;Polygon;Avalanche;Arbitrum;Optimism;Fantom,,nexo,True,1,True,False
+9816,NFT,AINFT,other,NFT,,,,,,,,,False,0,False,False
+2305,NGC,NAGA,other,Exchange Token,,,,,,,,,False,0,False,False
+39064,NIGHT,Midnight,other,Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+29447,NMT,NetMind Token,other,AI Agents;AI/Big Data,,,,,,,,,False,0,False,False
+2599,NOAH,Noah Coin,other,,,,,,,,,,False,0,False,False
+595,NODE,Node,other,DePIN,,,,,,,,,False,0,False,False
+28850,NOT,Notcoin,other,Gaming;Meme,,,,,,,,,False,0,False,False
+748,NOXT,NobleNXT,other,,,,,,,,,,False,0,False,False
+4110,NPC,NPCoin,other,,,,,,,,,,False,0,False,False
+27960,NPC,Non-Playable Coin,other,Meme,,,,,,,,,False,0,False,False
+2603,NPXS,Pundi X,other,Payments,,,,,,,,,False,0,False,False
+699,NSR,NuShares,other,Payments,,,,,,,,,False,0,False,False
+4761,NU,NuCypher,other,,,,,,,,,,False,0,False,False
+1794,NVST,NVO,other,,,,,,,,,,False,0,False,False
+4890,NWC,Numerico,other,Metaverse,,,,,,,,,False,0,False,False
+1481,NXC,Nexium,other,,,,,,,,,,False,0,False,False
+667,NXTI,NXTInspect,other,,,,,,,,,,False,0,False,False
+532,NXTTY,Nxttycoin,other,,,,,,,,,,False,0,False,False
+622,NXTV,NXTventure,other,,,,,,,,,,False,0,False,False
+649,NXTcoinsco,Tradebots,other,,,,,,,,,,False,0,False,False
+647,NXTprivacy,NXTprivacy,other,,,,,,,,,,False,0,False,False
+4268,NYE,NewYork Exchange,other,,,,,,,,,,False,0,False,False
+1853,OAX,OAX,other,,,,,,,,,,False,0,False,False
+1123,OBITS,OBITS,other,Exchange Token,,,,,,,,,False,0,False,False
+2458,OCN,Odyssey,other,,,,,,,,,,False,0,False,False
+2005,ODN,Obsidian,other,,,,,,,,,,False,0,False,False
+3897,OKB,OKB,other,Exchange Token;Layer-2,,,,,,,,,False,0,False,False
+3782,ONOT,ONOToken,other,,,,,,,,,,False,0,False,False
+11840,OP,Optimism,other,Canonical Bridge;Foundation;Layer-2;Modular Blockchain,,optimism-foundation,Foundation,optimism:0x4200000000000000000000000000000000000042,,,,optimism,True,1,True,False
+1124,OPENBTC,OpenBTC,other,,,,,,,,,,False,0,False,False
+17520,ORBR,Orbler,other,,,,,,,,,,False,0,False,False
+5326,ORC,Orbit Chain,other,Bridge,,orbit-bridge,Bridge,eth:0x662b67d00A13FAf93254714DD601F5Ed49Ef2F51,Multi-Chain,Silicon zkEVM;Ripple;Binance;WEMIX;Klaytn;Ethereum;TON;Polygon;Celo;Heco;Meta,,orbit-chain,True,1,True,False
+25028,ORDI,ORDI,other,,,,,,,,,,False,0,False,False
+1998,ORMEUS,Ormeus Coin,other,Payments,,,,,,,,,False,0,False,False
+3598,OSA,Optimal Shelf Availability Token,other,,,,,,,,,,False,0,False,False
+27533,OSAK,Osaka Protocol,other,Meme,,,,,,,,,False,0,False,False
+4203,OSC,Oasis City,other,,,,,,,,,,False,0,False,False
+2069,OTN,Open Trading Network,other,,,,,,,,,,False,0,False,False
+3784,OVC,OVCODE,other,,,,,,,,,,False,0,False,False
+5026,OXT,Orchid,other,DePIN,,,,,,,,,False,0,False,False
+27178,PAAL,PAAL AI,other,Telegram Bot;AI Agents;AI/Big Data,,paal-ai,Telegram Bot,0x14fee680690900ba0cccfc76ad70fd1b95d10e16,Ethereum,Ethereum,,paal-ai,True,1,True,False
+2900,PAI,Project Pai,other,AI/Big Data;Identity,,,,,,,,,False,0,False,False
+751,PANGEA,Pangea Poker,other,,,,,,,,,,False,0,False,False
+4705,PAXG,PAX Gold,other,RWA;Tokenized Asset,,,,,,,,,False,0,False,False
+2191,PAYX,Paypex,other,,,,,,,,,,False,0,False,False
+1841,PBT,Primalbase Token,other,,,,,,,,,,False,0,False,False
+4200,PCX,ChainX,other,,,,,,,,,,False,0,False,False
+7461,PDA,PlayDapp,other,Gaming;Metaverse,,,,,,,,,False,0,False,False
+1277,PDC,Project Decorum,other,,,,,,,,,,False,0,False,False
+33771,PEANUT,Peanut,other,Meme,,,,,,,,,False,0,False,False
+34466,PENGU,Pudgy Penguins,other,Chain;NFT;Meme,,pudgy-penguins,Chain,solana:2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv,,,,pudgy-penguins,True,1,True,False
+24478,PEPE,Pepe,other,Meme,,,,,,,,,False,0,False,False
+1405,PEPECASH,Pepe Cash,other,Meme,,,,,,,,,False,0,False,False
+24835,PEPECOIN,PepeCoin,other,Meme,,,,,,,,,False,0,False,False
+76,PHS,Philosopher Stones,other,,,,,,,,,,False,0,False,False
+38849,PIEVERSE,Pieverse,other,Payments,,,,,,,,,False,0,False,False
+35053,PIPPIN,pippin,other,Meme,,,,,,,,,False,0,False,False
+3731,PLA,PlayChip,other,Exchange Token;Gaming,,,,,,,,,False,0,False,False
+1784,PLBT,Polybius,other,,,,,,,,,,False,0,False,False
+3364,PLC,PLATINCOIN,other,Payments,,,,,,,,,False,0,False,False
+5084,PLF,PlayFuel,other,,,,,,,,,,False,0,False,False
+3753,PLTC,PlatonCoin,other,,,,,,,,,,False,0,False,False
+1392,PLU,Pluton,other,Payments,,,,,,,,,False,0,False,False
+3164,PMA,PumaPay,other,,,,,,,,,,False,0,False,False
+3581,PNK,Kleros,other,Services;Prediction Market,,kleros,Services,0x93ed3fbe21207ec2e8f2d3c3de6e058cb73bc04d,Multi-Chain,Ethereum;xDai,,kleros,True,1,True,False
+2691,PNT,Penta,other,Bridge,,,,,,,,,False,0,False,False
+33788,PNUT,Peanut the Squirrel,other,Meme,,,,,,,,,False,0,False,False
+2548,POA,POA Network,other,,,,,,,,,,False,0,False,False
+1937,POE,Po.et,other,,,,,,,,,,False,0,False,False
+11823,POKT,Pocket Network,other,DePIN,,,,,,,,,False,0,False,False
+28321,POL,Polygon (prev. MATIC),coin,Chain;Layer-2,,polygon-bridge,Chain,0x455e53cbb86018ac2b8092fdcd39d8444affc3f6,Ethereum,Ethereum,,polygon-ecosystem-token,True,1,True,False
+28782,POPCAT,Popcat (SOL),other,Meme,,,,,,,,,False,0,False,False
+1495,POSW,PoSW Coin,other,,,,,,,,,,False,0,False,False
+2132,POWR,Powerledger,other,,,,,,,,,,False,0,False,False
+1789,PPT,Populous,other,Prediction Market,,,,,,,,,False,0,False,False
+1327,PPY,Peerplays [old],other,,,,,,,,,,False,0,False,False
+1719,PPY,Peerplays,other,,,,,,,,,,False,0,False,False
+2245,PRE,Presearch,other,AI/Big Data,,,,,,,,,False,0,False,False
+2094,PRG,Paragon,other,,,,,,,,,,False,0,False,False
+1974,PRO,Propy,other,RWA;Smart Contract Platform;Tokenized Asset,,,,,,,,,False,0,False,False
+4120,PROM,Prom,other,,,,,,,,,,False,0,False,False
+37593,PROVE,Succinct,other,Layer-2;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+2455,PRS,PressOne,other,,,,,,,,,,False,0,False,False
+1404,PSB,Pesobit,other,,,,,,,,,,False,0,False,False
+1930,PST,Primas,other,,,,,,,,,,False,0,False,False
+1708,PTOY,Patientory,other,,,,,,,,,,False,0,False,False
+62,PTS,BitShares PTS,other,DEX Aggregator,,,,,,,,,False,0,False,False
+2946,PTT,Proton Token,other,,,,,,,,,,False,0,False,False
+9040,PUNDIX,Pundi X (New),other,,,,,,,,,,False,0,False,False
+648,Privatebet,Privatebet,other,,,,,,,,,,False,0,False,False
+2213,QASH,QASH,other,Payments,,,,,,,,,False,0,False,False
+1709,QAU,Quantum,other,,,,,,,,,,False,0,False,False
+3224,QBIT,Qubitica,other,AI/Big Data,,,,,,,,,False,0,False,False
+529,QBK,Qibuck,other,,,,,,,,,,False,0,False,False
+2840,QKC,QuarkChain,coin,Payments,,,,,,,,,False,0,False,False
+2321,QLC,Kepple,other,,,,,,,,,,False,0,False,False
+344,QORA,Qora,other,,,,,,,,,,False,0,False,False
+4644,QQQ,Poseidon Network,other,,,,,,,,,,False,0,False,False
+37057,QQQX,Nasdaq tokenized ETF (xStock),other,Tokenized Asset,,,,,,,,,False,0,False,False
+1226,QWARK,Qwark,other,,,,,,,,,,False,0,False,False
+11346,RACA,RACA,other,NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+38341,RAIN,Rain,other,Prediction Market,,rain,Prediction Market,arbitrum:0x25118290e6A5f4139381D072181157035864099d,Arbitrum,Arbitrum,,rain,True,1,True,False
+2161,RDN,Raiden Network Token,other,,,,,,,,,,False,0,False,False
+34434,REKT,Rekt (rekt.com),other,Meme,,,,,,,,,False,0,False,False
+5777,RENBTC,renBTC,other,Wrapped Asset,,,,,,,,,False,0,False,False
+2829,REPO,REPO,other,,,,,,,,,,False,0,False,False
+3280,RET,RealTract,other,,,,,,,,,,False,0,False,False
+15060,RETH,Rocket Pool ETH,other,Liquid Staking,,,,,,,,,False,0,False,False
+5816,REW,Rewardiqa,other,,,,,,,,,,False,0,False,False
+2553,RFR,Refereum,other,Gaming,,,,,,,,,False,0,False,False
+3701,RIF,Rootstock Infrastructure Framework,other,DePIN;Storage;Payments,,,,,,,,,False,0,False,False
+5072,RKN,Rakon,other,,,,,,,,,,False,0,False,False
+2550,RKT,Rock,other,,,,,,,,,,False,0,False,False
+15271,RLB,Rollbit Coin,other,,,,,,,,,,False,0,False,False
+1683,RLT,RouletteToken,other,,,,,,,,,,False,0,False,False
+12140,RMRK,RMRK,other,NFT;Metaverse,,,,,,,,,False,0,False,False
+1559,RNS,Renos,other,,,,,,,,,,False,0,False,False
+2400,RNT,OneRoot Network,other,RWA,,,,,,,,,False,0,False,False
+2612,RNTB,BitRent,other,,,,,,,,,,False,0,False,False
+1461,ROUND,Round,other,,,,,,,,,,False,0,False,False
+2943,RPL,Rocket Pool,other,Liquid Staking,,rocket-pool,Liquid Staking,0xd33526068d116ce69f19a9ee46f0bd304f21a51f,Ethereum,Ethereum,rocketpool-dao.eth,rocket-pool,True,1,True,True
+29242,RSETH,Kelp DAO Restaked ETH,other,Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+17917,RSS3,RSS3,other,AI/Big Data,,,,,,,,,False,0,False,False
+29974,RSWETH,Restaked Swell Ethereum,other,Liquid Staking,,,,,,,,,False,0,False,False
+2476,RUFF,Ruff,other,IoT,,,,,,,,,False,0,False,False
+1208,RVR,RevolutionVR,other,,,,,,,,,,False,0,False,False
+1991,RVT,Rivetz,other,Payments,,,,,,,,,False,0,False,False
+3733,S4F,S4FE,other,,,,,,,,,,False,0,False,False
+8757,SAFEMOON,SafeMoon,other,Meme,,,,,,,,,False,0,False,False
+9721,SAMO,Samoyedcoin,other,Meme,,,,,,,,,False,0,False,False
+1807,SAN,Santiment Network Token,other,AI/Big Data,,,,,,,,,False,0,False,False
+6210,SAND,The Sandbox,other,Gaming;NFT;Metaverse,,the-sandbox,Gaming,0x3845badAde8e6dFF049820680d1F14bD3903a5d0,Multi-Chain,Polygon;Ethereum,,the-sandbox,True,1,True,False
+28194,SATS,SATS (Ordinals),other,,,,,,,,,,False,0,False,False
+30953,SBBTC,ShibaBitcoin,other,Meme,,,,,,,,,False,0,False,False
+3772,SCC,STEM CELL COIN,other,,,,,,,,,,False,0,False,False
+1969,SCL,Sociall,other,,,,,,,,,,False,0,False,False
+346,SCOT,Scotcoin,other,,,,,,,,,,False,0,False,False
+1113,SCRT,SecretCoin,other,,,,,,,,,,False,0,False,False
+493,SDC,ShadowCash,other,,,,,,,,,,False,0,False,False
+2830,SEELE,Seele-N,other,AI/Big Data,,,,,,,,,False,0,False,False
+38868,SENT,Sentient,other,AI/Big Data,,,,,,,,,False,0,False,False
+4078,SERO,Super Zero Protocol,other,Privacy,,,,,,,,,False,0,False,False
+604,SF0,sharkfund0,other,,,,,,,,,,False,0,False,False
+8119,SFP,SafePal,other,,,,,,,,,,False,0,False,False
+23177,SFRXETH,Frax Staked Ether,other,Liquid Staking,,,,,,,,,False,0,False,False
+1172,SFT,Safex Token,other,Liquid Staking;Privacy,,,,,,,,,False,0,False,False
+299,SHIBE,ShibeCoin,other,,,,,,,,,,False,0,False,False
+1482,SHORTY,Shorty,other,,,,,,,,,,False,0,False,False
+4197,SHR,ShareToken,other,,,,,,,,,,False,0,False,False
+3366,SINS,SafeInsure,other,,,,,,,,,,False,0,False,False
+35766,SIREN,siren,other,AI Agents;AI/Big Data;Meme,,,,,,,,,False,0,False,False
+549,SJCX,Storjcoin X,other,,,,,,,,,,False,0,False,False
+2742,SKB,Sakura Bloom,other,,,,,,,,,,False,0,False,False
+36300,SKYAI,SKYAI,other,AI/Big Data;Meme,,,,,,,,,False,0,False,False
+757,SKYNET,SkyNET,other,,,,,,,,,,False,0,False,False
+29920,SLERF,SLERF,other,Meme,,,,,,,,,False,0,False,False
+2471,SLT,Smartlands Network,other,,,,,,,,,,False,0,False,False
+4079,SLV,Silverway,other,,,,,,,,,,False,0,False,False
+679,SMBR,Sembro Token,other,,,,,,,,,,False,0,False,False
+5277,SNB,SynchroBitcoin,other,,,,,,,,,,False,0,False,False
+1409,SNGLS,SingularDTV,other,,,,,,,,,,False,0,False,False
+1723,SNM,SONM,other,DePIN;Storage;Payments,,,,,,,,,False,0,False,False
+1759,SNT,Status,other,Privacy;Layer-2,,status,Privacy,0x744d70fdbe2ba4cf95131626614a1763df805b9e,,,,status,True,1,True,False
+1595,SOAR,Soarcoin,other,,,,,,,,,,False,0,False,False
+2473,SOC,All Sports,other,,,,,,,,,,False,0,False,False
+3724,SOLVE,SOLVE,other,,,,,,,,,,False,0,False,False
+36542,SOON,SOON,other,Chain;Layer-2,,soon,Chain,solana:4eDf52YYzL6i6gbZ6FXqrLUPXbtP61f1gPSFM66M4XHe,Ethereum,Ethereum,,soon-2,True,1,True,False
+16463,SOS,OpenDAO,other,Services,,the-open-dao-sos,Services,0x3b484b82567a09e2588A13D54D032153f0c0aEe0,Ethereum,Ethereum,,opendao,True,1,True,False
+33110,SOS,Solana Swap,other,Services,,,,,,,,,False,0,False,False
+2219,SPANK,SpankChain,other,,,,,,,,,,False,0,False,False
+2309,SPHTX,SophiaTX,other,AI/Big Data,,,,,,,,,False,0,False,False
+3307,SPND,Spendcoin,other,,,,,,,,,,False,0,False,False
+1272,SPOTS,Spots,other,,,,,,,,,,False,0,False,False
+1002,SPRTS,Sprouts,other,,,,,,,,,,False,0,False,False
+28081,SPX,SPX6900,other,Meme,,,,,,,,,False,0,False,False
+37006,SPYX,SP500 tokenized ETF (xStock),other,Tokenized Asset,,,,,,,,,False,0,False,False
+2313,SRN,SIRIN LABS Token,other,DePIN,,,,,,,,,False,0,False,False
+530,SSD,Sonic,other,,,,,,,,,,False,0,False,False
+12999,SSV,ssv.network,other,Staking Pool,,ssv-network,Staking Pool,0x9D65fF81a3c488d585bBfb0Bfe3c7707c7917f54,Ethereum,Ethereum,,ssv-network,True,1,True,False
+10821,STARL,Starlink,other,Meme;Metaverse,,,,,,,,,False,0,False,False
+1230,STEEM,Steem,coin,,,,,,,,,,False,0,False,False
+1073,STEPS,Steps,other,,,,,,,,,,False,0,False,False
+18934,STG,Stargate Finance,token,Cross Chain Bridge,,,,,,,,,False,0,False,False
+23951,STIK,Staika,other,,,,,,,,,,False,0,False,False
+2493,STK,STK,other,Payments,,,,,,,,,False,0,False,False
+2297,STMX,StormX,other,,,,,,,,,,False,0,False,False
+4162,STO,Storeum,other,,,,,,,,,,False,0,False,False
+1772,STORJ,Storj,other,DePIN;Storage,,,,,,,,,False,0,False,False
+5785,STP,STPAY,other,,,,,,,,,,False,0,False,False
+2541,STQ,Storiqa,other,,,,,,,,,,False,0,False,False
+39711,STRCX,Strategy PP Variable tokenized stock (xStock),other,Tokenized Asset,,,,,,,,,False,0,False,False
+21781,STRD,Stride,other,Liquid Staking;Layer-1,,stride,Liquid Staking,osmosis:ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4,Multi-Chain,Cosmos;HAQQ;Celestia;Osmosis;Injective;BandChain;dYdX;Berachain;Juno;Terra2;Dymension;Stargaze;Sommelier;Stride;Evmos;Umee;Comdex,,stride,True,1,True,False
+4365,STREAM,Streamit Coin,other,Payments,,,,,,,,,False,0,False,False
+1861,STX,Stox,other,Chain;Prediction Market,,,,,,,,,False,0,False,False
+32717,SUNDOG,SUNDOG,other,Meme,,,,,,,,,False,0,False,False
+33983,SUT,SuperTrust,other,,,,,,,,,,False,0,False,False
+607,SWARM,Swarm,other,,,,,,,,,,False,0,False,False
+25147,SWETH,swETH,other,Liquid Staking,,,,,,,,,False,0,False,False
+2506,SWM,Swarm,other,,,,,,,,,,False,0,False,False
+1562,SWT,Swarm City,other,,,,,,,,,,False,0,False,False
+6733,SYBC,SYB Coin,other,,,,,,,,,,False,0,False,False
+23089,T99,Tethereum,other,,,,,,,,,,False,0,False,False
+1592,TAAS,TaaS,other,,,,,,,,,,False,0,False,False
+4981,TAGZ5,TAGZ5,other,,,,,,,,,,False,0,False,False
+37741,TBLLX,TBLL tokenized ETF (xStock),other,Tokenized Asset,,,,,,,,,False,0,False,False
+2364,TCT,TokenClub,other,,,,,,,,,,False,0,False,False
+37574,TETH,Treehouse ETH,other,Liquid Staking,,,,,,,,,False,0,False,False
+1905,TFL,TrueFlip,other,,,,,,,,,,False,0,False,False
+1995,TGT,Target Coin,other,Cross Chain Bridge,,,,,,,,,False,0,False,False
+3144,THR,ThoreCoin,other,Exchange Token,,,,,,,,,False,0,False,False
+36743,TIBBIR,Ribbita by Virtuals,other,Meme,,,,,,,,,False,0,False,False
+2373,TIO,Trade Token,other,,,,,,,,,,False,0,False,False
+7206,TITAN,TitanSwap,other,,,,,,,,,,False,0,False,False
+1873,TIX,Blocktix,other,,,,,,,,,,False,0,False,False
+9020,TKO,Toko Token,other,Exchange Token,,,,,,,,,False,0,False,False
+1588,TKS,Tokes,other,Payments,,,,,,,,,False,0,False,False
+2507,TKY,THEKEY,other,Identity,,,,,,,,,False,0,False,False
+3237,TMC,Timicoin,other,,,,,,,,,,False,0,False,False
+22538,TMG,T-mac DAO,other,,,,,,,,,,False,0,False,False
+3356,TMTG,The Midas Touch Gold,other,,,,,,,,,,False,0,False,False
+2443,TNC,Trinity Network Credit,other,Payments,,,,,,,,,False,0,False,False
+5524,TNC,TNC Coin,other,,,,,,,,,,False,0,False,False
+1923,TNT,Tierion,other,,,,,,,,,,False,0,False,False
+23246,TOMI,tomi,other,,,,,,,,,,False,0,False,False
+2578,TONE,TE-FOOD,other,,,,,,,,,,False,0,False,False
+3826,TOP,TOP,other,,,,,,,,,,False,0,False,False
+27750,TOSHI,Toshi,other,Meme,,,,,,,,,False,0,False,False
+2627,TPAY,TokenPay,other,,,,,,,,,,False,0,False,False
+4005,TRAT,Tratin,other,Payments,,,,,,,,,False,0,False,False
+1423,TRIG,Triggers,other,,,,,,,,,,False,0,False,False
+468,TRK,Truckcoin,other,,,,,,,,,,False,0,False,False
+941,TRMB,TRMB,other,,,,,,,,,,False,0,False,False
+27872,TRUMP,MAGA (magamemecoin.com),other,Meme,,,,,,,,,False,0,False,False
+35336,TRUMP,OFFICIAL TRUMP,other,Meme,,official-trump,Meme,solana:6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN,,,,official-trump,True,1,True,False
+450,TRUST,TrustPlus,other,Developer Tools,,,,,,,,,False,0,False,False
+3354,TRXC,TRONCLASSIC,other,,,,,,,,,,False,0,False,False
+4280,TSHP,12Ships,other,,,,,,,,,,False,0,False,False
+2215,TSL,Energo,other,,,,,,,,,,False,0,False,False
+37004,TSLAX,Tesla tokenized stock (xStock),other,Tokenized Asset,,,,,,,,,False,0,False,False
+5514,TTT,The Transfer Token,other,,,,,,,,,,False,0,False,False
+2886,TTU,TaTaTu,other,,,,,,,,,,False,0,False,False
+24911,TURBO,Turbo,other,AI/Big Data;Meme,,,,,,,,,False,0,False,False
+1129,TVE,The Viral Exchange,other,,,,,,,,,,False,0,False,False
+5964,TWT,Trust Wallet Token,other,Interface;Wallets,,,,,,,,,False,0,False,False
+38339,UB,Unibase,other,AI Agents;AI/Big Data,,,,,,,,,False,0,False,False
+2758,UBT,Unibright,other,,,,,,,,,,False,0,False,False
+2512,UCASH,UNIVERSAL CASH,other,,,,,,,,,,False,0,False,False
+29933,UDS,Undeads Games,other,Gaming,,,,,,,,,False,0,False,False
+10729,UFO,UFO Gaming,other,NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+3863,UGAS,UGAS,other,DePIN,,,,,,,,,False,0,False,False
+2149,UKG,Unikoin Gold,other,Gaming,,,,,,,,,False,0,False,False
+3666,ULT,Ultiledger,other,,,,,,,,,,False,0,False,False
+28293,ULTIMA,Ultima,other,,,,,,,,,,False,0,False,False
+27009,UNIBOT,UniBot,other,Telegram Bot,,unibot,Telegram Bot,0xf819d9cb1c2a819fd991781a822de3ca8607c3c9,,,,unibot,True,1,True,False
+1560,UNIBURST,UniBURST,other,,,,,,,,,,False,0,False,False
+643,UNITY,SuperNET,other,,,,,,,,,,False,0,False,False
+1667,UNY,Unity Ingot,other,,,,,,,,,,False,0,False,False
+4189,UOS,Ultra,coin,NFT;Gaming;Metaverse;Payments,,,,,,,,,False,0,False,False
+28654,UPC,UPCX,other,Payments,,,,,,,,,False,0,False,False
+36828,USELESS,Useless Coin,other,Meme,,,,,,,,,False,0,False,False
+38948,USX,Solstice USX,other,,,,,,,,,,False,0,False,False
+2524,UTNP,Universa,other,,,,,,,,,,False,0,False,False
+32257,UXLINK,UXLINK,other,SoFi,,uxlink,SoFi,arbitrum:0x1a6b3a62391eccaaa992ade44cd4afe6bec8cff1,,,,uxlink,True,1,True,False
+3875,VALOR,Valor Token,other,,,,,,,,,,False,0,False,False
+735,VASH,VPNCoin,other,,,,,,,,,,False,0,False,False
+6947,VBIT,Valobit,other,,,,,,,,,,False,0,False,False
+1710,VERI,Veritaseum,other,,,,,,,,,,False,0,False,False
+30915,VERUM,Verum Coin,other,,,,,,,,,,False,0,False,False
+1817,VGX,VGX Token,other,CEX,,voyager,CEX,0x3C4B6E6e1eA3D4863700D7F76b36B7f3D3f13E3d,Ethereum,Ethereum,,ethos,True,1,True,False
+2019,VIB,Viberate,other,,,,,,,,,,False,0,False,False
+1983,VIBE,VIBE,other,NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+923,VIRAL,Viral,other,,,,,,,,,,False,0,False,False
+29420,VIRTUAL,Virtuals Protocol,other,AI Agents;AI/Big Data;Gaming;Metaverse,,virtuals-protocol,AI Agents,base:0x0b3e328455c4059EEb9e3f84b5543F74E24e7E1b,Base,Base,,virtual-protocol,True,1,True,False
+1566,VISIO,Visio,other,,,,,,,,,,False,0,False,False
+4747,VLX,Velas,coin,,,,,,,,,,False,0,False,False
+14822,VR,Victoria VR,other,AI/Big Data;NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+1465,VRS,Veros,other,,,,,,,,,,False,0,False,False
+1483,VSL,vSlice,other,,,,,,,,,,False,0,False,False
+37322,VSN,Vision,other,,,,,,,,,,False,0,False,False
+2267,WABI,Wabi,other,Payments,,,,,,,,,False,0,False,False
+24760,WBETH,Wrapped Beacon ETH,other,Liquid Staking,,,,,,,,,False,0,False,False
+7192,WBNB,Wrapped BNB,other,Privacy;Wrapped Asset,,,,,,,,,False,0,False,False
+5233,WCC,WinCash,other,,,,,,,,,,False,0,False,False
+33469,WCHZ,Wrapped Chiliz,other,Wrapped Asset,,,,,,,,,False,0,False,False
+1527,WCT,Waves Community Token,other,,,,,,,,,,False,0,False,False
+20456,WE,WeBuy,other,,,,,,,,,,False,0,False,False
+24913,WEOS,Wrapped EOS,other,,,,,,,,,,False,0,False,False
+2396,WETH,WETH,other,DePIN;Privacy;Wrapped Asset,,,,,,,,,False,0,False,False
+20701,WEVER,Wrapped Everscale,other,,,,,,,,,,False,0,False,False
+34261,WFI,WeFi,other,,,,,,,,,,False,0,False,False
+2346,WICC,WaykiChain,coin,,,,,,,,,,False,0,False,False
+28752,WIF,dogwifhat,other,Meme,,,,,,,,,False,0,False,False
+3404,WIX,Wixlar,other,Payments,,,,,,,,,False,0,False,False
+24165,WKAVA,Wrapped Kava,other,,,,,,,,,,False,0,False,False
+11222,WNCG,Nine Chronicles,other,,,,,,,,,,False,0,False,False
+35837,WOULD,would,other,Meme,,,,,,,,,False,0,False,False
+2511,WPR,WePower,other,,,,,,,,,,False,0,False,False
+5161,WRX,WazirX,other,Exchange Token,,,,,,,,,False,0,False,False
+982,WS,Woodshares,other,,,,,,,,,,False,0,False,False
+12409,WSTETH,Lido wstETH,other,Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+1925,WTC,Waltonchain,coin,IoT,,,,,,,,,False,0,False,False
+19076,WVLX,Wrapped Velas,other,,,,,,,,,,False,0,False,False
+2892,WWB,Wowbit,other,,,,,,,,,,False,0,False,False
+35930,WXTZ,Wrapped XTZ,other,Wrapped Asset,,,,,,,,,False,0,False,False
+4220,XAC,General Attention Currency,other,Payments,,,,,,,,,False,0,False,False
+28933,XAI,Xai,other,Canonical Bridge;Cross Chain Bridge;Gaming,,,,,,,,,False,0,False,False
+38481,XAN,Anoma,other,DePIN;Privacy,,,,,,,,,False,0,False,False
+5176,XAUt,Tether Gold,other,RWA;Tokenized Asset,,tether-gold,RWA,0x68749665ff8d2d112fa859aa293f07a622782f38,Multi-Chain,Ethereum;Monad;Plasma;Avalanche;Arbitrum;Celo;Polygon;Ink,,tether-gold,True,1,True,False
+3815,XBASE,Eterbase Utility Token,other,,,,,,,,,,False,0,False,False
+1636,XBY,XTRABYTES,other,,,,,,,,,,False,0,False,False
+335,XC,XCurrency,other,,,,,,,,,,False,0,False,False
+652,XCH,ClearingHouse,other,,,,,,,,,,False,0,False,False
+4105,XCM,CoinMetro Token,other,,,,,,,,,,False,0,False,False
+509,XCR,Crypti,other,,,,,,,,,,False,0,False,False
+2939,XD,Data Transaction Token,other,,,,,,,,,,False,0,False,False
+567,XDP,Dogeparty,other,,,,,,,,,,False,0,False,False
+1737,XEL,XEL,other,,,,,,,,,,False,0,False,False
+3134,XET,ETERNAL TOKEN,other,Payments,,,,,,,,,False,0,False,False
+2349,XIN,Mixin,other,,,,,,,,,,False,0,False,False
+6735,XLT,Nexalt,other,,,,,,,,,,False,0,False,False
+2859,XMX,XMax,other,Gaming,,,,,,,,,False,0,False,False
+5060,XNC,XeniosCoin,other,,,,,,,,,,False,0,False,False
+2369,XNS,Insolar,other,,,,,,,,,,False,0,False,False
+5802,XOR,SORA,other,,,,,,,,,,False,0,False,False
+7281,XPRT,Persistence One,other,Derivatives;Liquid Staking,,,,,,,,,False,0,False,False
+3126,XPX,ProximaX,other,DePIN;Storage,,,,,,,,,False,0,False,False
+1812,XRL,Rialto,other,,,,,,,,,,False,0,False,False
+920,XSD,SounDAC,other,,,,,,,,,,False,0,False,False
+4818,XSR,Xensor,other,IoT,,,,,,,,,False,0,False,False
+5186,XT,ExtStock Token,other,,,,,,,,,,False,0,False,False
+694,XTC,TileCoin,other,,,,,,,,,,False,0,False,False
+5070,XTP,Tap,other,,,,,,,,,,False,0,False,False
+2091,XUC,Exchange Union,other,,,,,,,,,,False,0,False,False
+8677,XYM,Symbol,coin,,,,,,,,,,False,0,False,False
+4899,YAP,Yap Stone,other,,,,,,,,,,False,0,False,False
+1499,YASH,YashCoin,other,,,,,,,,,,False,0,False,False
+95,YBC,YbCoin,other,,,,,,,,,,False,0,False,False
+9892,YOOSHI,YooShi,other,NFT;Gaming,,,,,,,,,False,0,False,False
+7321,YOUC,yOUcash,other,,,,,,,,,,False,0,False,False
+1899,YOYOW,YOYOW,other,,,,,,,,,,False,0,False,False
+6726,YUSRA,YUSRA,other,,,,,,,,,,False,0,False,False
+1219,ZAIF,ZAIF,other,,,,,,,,,,False,0,False,False
+3351,ZB,ZB Token,other,Exchange Token;Payments,,,,,,,,,False,0,False,False
+2685,ZEBI,Zebi Token,other,AI/Big Data,,,,,,,,,False,0,False,False
+3795,ZEON,ZEON,other,,,,,,,,,,False,0,False,False
+34083,ZEREBRO,Zerebro,other,AI Agents;AI/Big Data;Meme,,,,,,,,,False,0,False,False
+5614,ZLW,Zelwin,other,,,,,,,,,,False,0,False,False
+1726,ZRC,ZrCoin,other,Canonical Bridge,,,,,,,,,False,0,False,False
+2047,ZSC,Zeusshield,other,,,,,,,,,,False,0,False,False
+3458,ZT,ZBG Token,other,,,,,,,,,,False,0,False,False
+35293,asBNB,Aster asBNB,other,Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+33981,bUSD0,Bond USD0,other,Liquid Staking,,,,,,,,,False,0,False,False
+21535,cbETH,Coinbase Wrapped Staked ETH,other,Liquid Staking,,,,,,,,,False,0,False,False
+8028,mVIXY,Mirrored ProShares VIX,other,,,,,,,,,,False,0,False,False
+28476,osETH,StakeWise Staked ETH,other,Liquid Staking,,,,,,,,,False,0,False,False
+18523,sAVAX,BENQI Liquid Staked AVAX,other,Liquid Staking,,,,,,,,,False,0,False,False
+8085,stETH,Lido Staked ETH,other,Liquid Staking;Restaking,,,,,,,,,False,0,False,False
+7960,vXVS,Venus XVS,other,,,,,,,,,,False,0,False,False
+32554,wIOTA,wIOTA,other,,,,,,,,,,False,0,False,False
+28695,weETH,Wrapped eETH,other,Privacy;Restaking;Wrapped Asset,,,,,,,,,False,0,False,False
+38590,币安人生,币安人生,other,Meme,,,,,,,,,False,0,False,False
+8104,1INCH,1inch,token,DEX Aggregator;DEX,,1inch,DEX Aggregator,0x111111111117dc0aa78b770fa6a738034120c302,Multi-Chain,Ethereum;Binance,1inch.eth,1inch,True,1,True,True
+36462,A,Vaulta,token,Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+7278,AAVE,Aave,token,Lending;RWA Lending;Yield,,aave-v2,Lending,0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9,Multi-Chain,Ethereum;Polygon;Avalanche,,aave,True,1,True,False
+2545,ABT,ArcBlock,token,AI/Big Data;Interoperability,,,,,,,,,False,0,False,False
+4598,ACA,Acash Coin,token,Canonical Bridge;Dexs,,,,,,,,,False,0,False,False
+6756,ACA,Acala Token,token,Canonical Bridge;Dexs,,acala,Canonical Bridge,,,,,acala,True,1,False,False
+28674,ACE,Fusionist,token,Farm;Gaming,,,,,,,,,False,0,False,False
+33566,ACT,Act I : The AI Prophecy,token,Farm;AI/Big Data;Meme,,,,,,,,,False,0,False,False
+24796,ADF,Art de Finance,token,Yield,,artdefinance,Yield,polygon:0x6BD10299f4f1d31b3489Dc369eA958712d27c81b,Polygon,Polygon,,art-de-finance,True,1,True,False
+1768,ADX,AdEx,token,Derivatives;Dexs;AI Agents;AI/Big Data;Smart Contract Platform,,,,,,,,,False,0,False,False
+3637,AERGO,Aergo,token,Smart Contract Platform,,,,,,,,,False,0,False,False
+29270,AERO,Aerodrome Finance,token,Dexs;Launchpad,,,,,,,,,False,0,False,False
+36458,AETHWETH,Aave Ethereum WETH,token,Yield,,,,,,,,,False,0,False,False
+29676,AEVO,Aevo,token,Derivatives;Options;DEX;Layer-2;Perpetuals,,,,,,,,,False,0,False,False
+2424,AGIX,SingularityNET,token,Staking Pool;AI/Big Data;Payments,,,,,,,,,False,0,False,False
+4134,AKRO,Kaon,token,Yield,,akropolis,Yield,0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7,Ethereum,Ethereum,,akropolis,True,1,True,False
+8613,ALCX,Alchemix,token,Synthetics;Yield,,,,,,,,,False,0,False,False
+16876,ALI,Artificial Liquid Intelligence,token,Dexs;AI Agents;AI/Big Data;NFT;Gaming;Identity;Interoperability;Meme;Metaverse,,,,,,,,,False,0,False,False
+8766,ALICE,MyNeighborAlice,token,Services;NFT;Gaming;Metaverse,,my-neighbor-alice,Services,0xac51066d7bec65dc4589368da368b212745d63e8,,,,my-neighbor-alice,True,1,True,False
+7232,ALPHA,Stella,token,Lending;Leveraged Farming;Liquid Staking;Prediction Market;Yield Aggregator;Yield,,stella,Leveraged Farming,arbitrum:0xc9cbf102c73fb77ec14f8b4c8bd88e050a6b2646,Arbitrum,Arbitrum,,alpha-finance,True,1,True,False
+10897,ALT,Alitas,token,Derivatives;Developer Tools;Dexs;Launchpad,,,,,,,,,False,0,False,False
+2081,AMB,AirDAO,token,AI/Big Data;IoT;Layer-1,,,,,,,,,False,0,False,False
+1125,AMP,HyperSpace,token,Algo-Stables;Payments,,,,,,,,,False,0,False,False
+6945,AMP,Amp,token,Algo-Stables;Payments,,flexa,Payments,0xff20817765cb7f73d4bde2e66e067e58d11095c2,Ethereum,Ethereum,,amp-token,True,1,True,False
+8857,ANC,Anchor Protocol,token,Lending,,anchor,Lending,terra:terra14z56l0fp2lsf86zy3hty2z47ezkhnthtr9yq76,Multi-Chain,Terra;Avalanche,,anchor-protocol,True,1,True,False
+1680,ANT,Aragon,token,Services,,aragon,Services,0xa117000000f279d81a1d3cc75430faa017fa5a2e,,,,aragon,True,1,True,False
+5892,ANY,Anyswap,token,DEX,,,,,,,,,False,0,False,False
+18876,APE,ApeCoin,token,Yield;NFT;Gaming;Meme;Metaverse,,apecoin,Yield,0x4d224452801aced8b2f0aebe155379bb5d594381,,,apecoin.eth,apecoin,True,1,True,True
+473,APEX,ApexCoin,token,Derivatives;Dexs,,,,,,,,,False,0,False,False
+19843,APEX,ApeX Protocol,token,Derivatives;Dexs;DEX;Perpetuals,,,,,,,,,False,0,False,False
+7737,API3,API3,token,Risk Curators,,api3,Risk Curators,0x0b38210ea11411557c13457d4da7dc6ea731b88a,Ethereum,Ethereum,,api3,True,1,True,False
+16334,APX,APX,token,Derivatives;DEX,,,,,,,,,False,0,False,False
+11841,ARB,Arbitrum,token,Canonical Bridge;Layer-2;Modular Blockchain,,arbitrum,Canonical Bridge,arbitrum:0x912CE59144191C1204E64559FE8253a0e49E6548,,,,arbitrum,True,1,True,False
+1467,ARC,Arcade Token,token,DEX Aggregator;Dexs;Services,,,,,,,,,False,0,False,False
+34926,ARC,AI Rig Complex,token,DEX Aggregator;Dexs;Services;AI Agents;AI/Big Data,,,,,,,,,False,0,False,False
+661,ARCH,ARCHcoin,token,Leveraged Farming,,,,,,,,,False,0,False,False
+27565,ARKM,Arkham,token,CEX;Services;AI/Big Data;Derivatives;Perpetuals,,arkham,Services,0x6E2a43be0B1d33b726f0CA3b8de60b3482b8b050,,,,arkham,True,1,True,False
+2058,AST,AirSwap,token,DEX Aggregator;Dexs;DEX;Payments;Smart Contract Platform,,airswap,DEX Aggregator,0x27054b13b1b798b345b591a4d22e6562d47ea75a,,,,airswap,True,1,True,False
+36341,ASTER,Aster,token,Basis Trading;Bridge;CeDeFi;Derivatives;Dexs;Yield;DEX;Perpetuals,,,,,,,,,False,0,False,False
+10188,ATA,Automata Network,token,Yield Aggregator;Modular Blockchain,,,,,,,,,False,0,False,False
+30083,ATH,Aethir,token,Derivatives;Developer Tools;Yield;AI/Big Data;DePIN,,aethir,Developer Tools,0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b,Ethereum,Ethereum,,aethir,True,1,True,False
+2015,ATM,ATMChain,token,Options,,,,,,,,,False,0,False,False
+8602,AUCTION,Bounce Token,token,Launchpad,,bounce-finance,Launchpad,0xA9B1Eb5908CfC3cdf91F9B8B3a74108598009096,Ethereum,Ethereum,,auction,True,1,True,False
+7455,AUDIO,Audius,token,,,,,,,,,,False,0,False,False
+14803,AURORA,Aurora,token,Farm,,aurora-plus,Farm,aurora:0x8bec47865ade3b172a928df8f990bc7f2a3b9f79,Aurora,Aurora,,aurora-near,True,1,True,False
+2559,AUTO,Cube,token,Yield Aggregator,,,,,,,,,False,0,False,False
+32376,AVAIL,Avail,token,Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+38299,AVNT,Avantis,token,Derivatives;DEX;Perpetuals,,avantis,Derivatives,base:0x696f9436b67233384889472cd7cd58a6fb5df4f1,Base,Base,,avantis,True,1,True,False
+4006,AWE,AWE,token,Derivatives;Payments,,,,,,,,,False,0,False,False
+17799,AXL,Axelar,token,Bridge;Launchpad;Interoperability;RWA,,,,,,,,,False,0,False,False
+6783,AXS,Axie Infinity,token,Gaming;NFT;Metaverse,,axie-infinity,Gaming,0xbb0e17ef65f82ab018d8edd776e8dd940327b28b,,,,axie-infinity,True,1,True,False
+36532,B,BUILDon,token,Derivatives;Liquidity Manager;Meme,,,,,,,,,False,0,False,False
+7859,BADGER,Badger DAO,token,Yield Aggregator;Yield,,badger-dao,Yield Aggregator,0x3472A5A71965499acd81997a54BBA8D852C6E53d,Multi-Chain,Ethereum;Arbitrum;Polygon;Binance;Fantom,badgerdao.eth,badger-dao,True,1,True,True
+7064,BAKE,BakeryToken,token,Dexs;NFT;DEX;Gaming,,bakeryswap,Dexs,bsc:0xe02df9e3e622debdd69fb838bb799e3f168902c5,Binance,Binance,,bakerytoken,True,1,True,False
+5728,BAL,Balancer,token,Dexs;DEX;Yield,,,,,,,,,False,0,False,False
+8497,BANANA,ApeSwap,token,Telegram Bot;DEX;Yield,,,,,,,,,False,0,False,False
+4679,BAND,Band,token,,,,,,,,,,False,0,False,False
+38408,BARD,Lombard,token,Bridge;Onchain Capital Allocator;Restaked BTC,,,,,,,,,False,0,False,False
+33834,BBSOL,Bybit Staked SOL,token,,,,,,,,,,False,0,False,False
+28298,BEAM,Beam,token,Chain;Gaming,,beam,Chain,,,,,beam-2,True,1,False,False
+8353,BETH,Beacon ETH,token,,,,,,,,,,False,0,False,False
+7817,BFC,Bifrost,token,Interoperability,,,,,,,,,False,0,False,False
+9543,BICO,Biconomy,token,Bridge;Interoperability,,hyphen,Bridge,0xf17e65822b568b3903685a7c9f496cf7656cc6c2,Multi-Chain,Polygon;Arbitrum;Ethereum;Binance;Avalanche;Optimism,,biconomy,True,1,True,False
+34812,BIO,Bio Protocol,token,Launchpad,,bio-protocol,Launchpad,0xcb1592591996765Ec0eFc1f92599A19767ee5ffA,Multi-Chain,Ethereum;Base,,bio-protocol,True,1,True,False
+11221,BIT,BitDAO,token,CEX,,,,,,,,,False,0,False,False
+659,BITS,Bitswift,token,Yield,,,,,,,,,False,0,False,False
+28480,BLAST,Blast,token,Canonical Bridge;Farm;Layer-2;Modular Blockchain,,,,,,,,,False,0,False,False
+2505,BLZ,Bluzelle,token,DePIN;Storage;Smart Contract Platform,,,,,,,,,False,0,False,False
+2933,BMX,BitMart Token,token,CEX;Derivatives;Dexs;Exchange Token,,bitmart,CEX,0x986ee2b944c42d017f52af21c4c69b84dbea35d8,Multi-Chain,Binance;Bitcoin;Ethereum;Solana;Starknet,,bitmart-token,True,1,True,False
+32882,BNSOL,Binance Staked SOL,token,,,,,,,,,,False,0,False,False
+1727,BNT,Bancor,token,Dexs;DEX;Payments,,,,,,,,,False,0,False,False
+4217,BOA,BOSagora,token,Metaverse,,,,,,,,,False,0,False,False
+11865,BONE,Bone ShibaSwap,token,Dexs;Farm;Layer-2;Meme,,,,,,,,,False,0,False,False
+3475,BOX,BOX Token,token,Dexs;Indexes,,,,,,,,,False,0,False,False
+2945,BOX,ContentBox,token,Dexs;Indexes,,,,,,,,,False,0,False,False
+3653,BRC,Baer Chain,token,Yield,,,,,,,,,False,0,False,False
+11079,BRISE,Bitgert,token,Yield,,bitgert,Yield,bsc:0x8fff93e810a2edaafc326edee51071da9d398e83,Multi-Chain,Binance;Bitgert,,bitrise-token,True,1,True,False
+1121,BST,BitStone,token,Farm;Yield,,,,,,,,,False,0,False,False
+20721,BTC.b,Bitcoin Avalanche Bridged,token,,,,,,,,,,False,0,False,False
+8210,BTCST,Bitcoin Standard Hashrate Token,token,Yield,,,,,,,,,False,0,False,False
+8891,BTCST,Bitcoin Standard Hashrate Token,token,Yield,,btcst,Yield,bsc:0x78650b139471520656b9e7aa7a5e9276814a38e9,Binance,Binance,,btc-standard-hashrate-token,True,1,True,False
+9486,BTCT,Bitcoin TRC20,token,,,,,,,,,,False,0,False,False
+31503,BWB,Bitget Wallet Token,token,,,,,,,,,,False,0,False,False
+5810,BZRX,bZx Protocol,token,DEX;Smart Contract Platform,,ooki,Lending,0x0De05F6447ab4D22c8827449EE4bA2D5C288379B,Multi-Chain,Ethereum;Binance;Arbitrum;Optimism;Polygon,ooki.eth,ooki,True,1,True,True
+10407,BabyDoge,Baby Doge Coin,token,Bridge;Dexs;AI/Big Data;NFT;Gaming;Meme;Payments;RWA,,,,,,,,,False,0,False,False
+10903,C98,Coin98,token,Farm;Derivatives;Perpetuals,,coin98,Farm,bsc:0xaec945e04baf28b135fa7c640f624f8d90f1c3a6,TomoChain,TomoChain,,coin98,True,1,True,False
+7186,CAKE,PancakeSwap,token,Derivatives;Dexs;Luck Games;Options;Prediction Market;Reserve Currency;NFT;DEX;Perpetuals;Privacy;Smart Contract Platform;Yield,,,,,,,,,False,0,False,False
+1573,CASINO,Casino,token,Dexs,,defyswap,Dexs,fantom:0x84b0b7718f8480A9eDa3133Fd385D7EDf2b1d1c4,Multi-Chain,Fantom;Echelon,,defyswap-finance,True,1,True,False
+1882,CAT,BlockCAT,token,Yield Aggregator,,,,,,,,,False,0,False,False
+32724,CAT,Simon's Cat,token,Yield Aggregator;Meme,,,,,,,,,False,0,False,False
+18031,CCD,Concordium,token,Identity;Layer-1;Privacy;Smart Contract Platform;Zero Knowledge,,,,,,,,,False,0,False,False
+2700,CEL,Celsius,token,Yield Aggregator,,,,,,,,,False,0,False,False
+793,CELL,SolarFarm,token,Dexs,,,,,,,,,False,0,False,False
+3814,CELR,Celer Network,token,Bridge;DePIN;Interoperability;Privacy;Zero Knowledge,,cbridge,Bridge,0x4f9254c83eb525f9fcf346490bbb3ed28a81c667,Multi-Chain,Ethereum;Binance;Polygon;Arbitrum;Optimism;Avalanche;zkSync Era;Shiden;Aurora;Linea;Boba;Scroll;Polygon zkEVM;OKExChain;Metis;Fantom;xDai;Celo;Heco;Milkomeda;CLV;Conflux;Harmony;Oasis;REI;Astar;Moonriver;Moonbeam;Syscoin,,celer-network,True,1,True,False
+6748,CFG,Centrifuge,token,RWA;RWA Lending,,,,,,,,,False,0,False,False
+23054,CHEEL,Cheelee,token,Farm,,cheelee,Farm,bcs:0x1f1c90aeb2fd13ea972f0a71e35c0753848e3db0,,,,cheelee,True,1,True,False
+33280,CHEEMS,Cheems (cheems.pet),token,Yield;Meme,,,,,,,,,False,0,False,False
+8534,CHEX,Chintai,token,RWA,,,,,,,,,False,0,False,False
+5692,COMP,Compound,token,Lending;Yield,,,,,,,,,False,0,False,False
+963,CORE,CORE,token,Canonical Bridge;Derivatives;Yield,,,,,,,,,False,0,False,False
+7242,CORE,cVault.finance,token,Canonical Bridge;Derivatives;Yield,,cvault-finance,Yield,0x62359ed7505efc61ff1d56fef82158ccaffa23d7,Ethereum,Ethereum,,cvault-finance,True,1,True,False
+3992,COTI,COTI,token,Layer-2;Privacy,,,,,,,,,False,0,False,False
+788,COVAL,Circuits of Value,token,NFT,,,,,,,,,False,0,False,False
+19269,COW,CoW Protocol,token,Algo-Stables;DEX Aggregator;Launchpad;Yield,,cowswap,DEX Aggregator,0xdef1ca1fb7fbcdc777520aa7f396b4e015f497ab,,,cow.eth,cow-protocol,True,1,True,True
+12573,CPOOL,Clearpool,token,RWA;Uncollateralized Lending,,,,,,,,,False,0,False,False
+3367,CRD,CryptalDash,token,Lending,,,,,,,,,False,0,False,False
+4484,CRN,ChronoCoin,token,Dexs;Yield Aggregator,,,,,,,,,False,0,False,False
+6538,CRV,Curve DAO Token,token,CDP;Dexs;Lending;DEX;Yield,,,,,,,,,False,0,False,False
+1867,CTR,Centra,token,Governance Incentives;Yield,,,,,,,,,False,0,False,False
+6669,CVP,PowerPool,token,Indexes,,,,,,,,,False,0,False,False
+9903,CVX,Convex Finance,token,Yield,,convex-finance,Yield,0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b,Multi-Chain,Ethereum;Fraxtal;Arbitrum;Polygon,,convex-finance,True,1,True,False
+24781,CYBER,Cyber,token,Chain;SoFi;NFT;Interoperability;Layer-2;Smart Contract Platform,,cyberconnect,SoFi,0x14778860e937f509e651192a90589de711fb88a9,,,,cyberconnect,True,1,True,False
+4862,DAD,DAD,token,Yield,,,,,,,,,False,0,False,False
+1253,DAO,The DAO,token,Dexs;Services,,,,,,,,,False,0,False,False
+8420,DAO,DAO Maker,token,Dexs;Services,,,,,,,,,False,0,False,False
+7228,DDX,DerivaDAO,token,Derivatives;DEX,,derivadex,Derivatives,0x3a880652f47bfaa771908c07dd8673a787daed3a,Ethereum,Ethereum,,derivadao,True,1,True,False
+33391,DEEP,DeepBook Protocol,token,Dexs;Launchpad,,,,,,,,,False,0,False,False
+5429,DEP,DEAPcoin,token,Dexs;NFT;DePIN;Gaming;Metaverse,,,,,,,,,False,0,False,False
+603,DEX,InstantDEX,token,Dexs,,,,,,,,,False,0,False,False
+3515,DEX,DEX,token,Dexs,,,,,,,,,False,0,False,False
+7326,DEXE,DeXe,token,AI/Big Data,,,,,,,,,False,0,False,False
+2772,DGTX,Digitex,token,Exchange Token;Derivatives,,,,,,,,,False,0,False,False
+6138,DIA,DIA,token,AI/Big Data;RWA;Smart Contract Platform,,,,,,,,,False,0,False,False
+5741,DMG,DMM: Governance,token,,,,,,,,,,False,0,False,False
+5234,DNA,Metaverse Dualchain Network Architecture,token,Algo-Stables;Farm;Yield,,,,,,,,,False,0,False,False
+2675,DOCK,Dock,token,AI/Big Data;Smart Contract Platform,,,,,,,,,False,0,False,False
+7224,DODO,DODO,token,DEX Aggregator;Dexs;DEX,,,,,,,,,False,0,False,False
+27966,DORA,Dora Factory,token,,,,,,,,,,False,0,False,False
+814,DOT,Dotcoin,token,Foundation;Liquid Staking;Yield,,,,,,,,,False,0,False,False
+2110,DOV,Dovu,token,Dexs,,,,,,,,,False,0,False,False
+1295,DRACO,DT Token,token,Algo-Stables;Farm,,,,,,,,,False,0,False,False
+2593,DRG,Dragon Coins,token,Dexs;Payments,,,,,,,,,False,0,False,False
+31278,DRIFT,Drift,token,Derivatives;Dexs;Liquid Staking;Perpetuals,,,,,,,,,False,0,False,False
+10759,DVF,rhino.fi,token,,,,,,,,,,False,0,False,False
+3139,DX,DxChain Token,token,Launchpad;AI/Big Data;Payments,,,,,,,,,False,0,False,False
+33696,EBTC,ether.fi Staked BTC,token,,,,,,,,,,False,0,False,False
+5274,EDG,Edgeware,token,Smart Contract Platform,,,,,,,,,False,0,False,False
+39720,EDGE,edgeX,token,Bridge;DEX Aggregator;Derivatives;Dexs;Yield;Perpetuals,,,,,,,,,False,0,False,False
+2057,EDO,Eidoo,token,,,,,,,,,,False,0,False,False
+30494,EIGEN,EigenCloud,token,Restaking,,eigencloud,Restaking,0xec53bf9167f50cdeb3ae105f56099aaab9061f83,Ethereum,Ethereum,,eigenlayer,True,1,True,False
+9436,ELON,Dogelon Mars,token,Canonical Bridge;Lending;Meme;Payments,,,,,,,,,False,0,False,False
+30171,ENA,Ethena,token,Basis Trading;RWA,,,,,,,,,False,0,False,False
+13855,ENS,Ethereum Name Service,token,Domains,,ens,Domains,0xc18360217d8f7ab5e7c516566761ea12ce7f9d72,,,ens.eth,ethereum-name-service,True,1,True,True
+8615,EPIC,Epic Chain,token,NFT;Gaming;Layer-2;Metaverse;RWA,,ethernity-chain,Yield,0xbbc2ae13b23d715c30720f079fcd9b4a74093505,Ethereum,Ethereum,,ethernity-chain,True,1,True,False
+8938,EPS,Ellipsis,token,Dexs;DEX,,ellipsis-finance,Dexs,bsc:0xA7f552078dcC247C2684336020c03648500C6d9F,Binance,Binance,,ellipsis,True,1,True,False
+2165,ERC20,ERC20,token,NFT;Payments;Meme;Yield,,,,,,,,,False,0,False,False
+7033,ESD,Empty Set Dollar,token,,,,,,,,,,False,0,False,False
+11156,ETHDYDX,dYdX (ethDYDX),token,Derivatives;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+14280,EUL,Euler,token,Dexs;Lending;Risk Curators,,,,,,,,,False,0,False,False
+33342,EVA,EverValue Coin,token,,,,,,,,,,False,0,False,False
+2778,EXC,Eximchain,token,Dexs,,,,,,,,,False,0,False,False
+4360,FAB,FABRK,token,Yield;AI/Big Data,,,,,,,,,False,0,False,False
+6859,FARM,Harvest Finance,token,Yield Aggregator;Yield,,harvest-finance,Yield Aggregator,0xa0246c9032bC3A600820415aE600c6388619A14D,Multi-Chain,Base;Ethereum;Arbitrum;Polygon;zkSync Era,harvestfi.eth,harvest-finance,True,1,True,True
+32306,FBTC,Function,token,Interoperability,,,,,,,,,False,0,False,False
+7978,FIDA,Bonfida,token,,,,,,,,,,False,0,False,False
+5190,FLEX,FLEX,token,CDP;Yield,,coinflex,Yield,smartbch:0x98Dd7eC28FB43b3C4c770AE532417015fa939Dd3,smartBCH,smartBCH,,flex-coin,True,1,True,False
+7150,FLM,Flamingo,token,Dexs;Lending;Yield,,,,,,,,,False,0,False,False
+10804,FLOKI,FLOKI,token,Token Locker;Gaming;Meme;Metaverse,,flokifi-locker,Token Locker,0xcf0c122c6b73ff809c693db761e7baebe62b6a2e,Multi-Chain,Binance;Ethereum;Base;Cronos;Arbitrum;Optimism;Dogechain;Avalanche;Fantom;Polygon;Kucoin;Op_Bnb;Evmos;Blast;OKExChain,,floki,True,1,True,False
+10508,FLUID,Fluid,token,Dexs;Yield Aggregator,,,,,,,,,False,0,False,False
+1062,FLY,Flycoin,token,CDP;Cross Chain Bridge,,,,,,,,,False,0,False,False
+9421,FORTH,Ampleforth Governance Token,token,Services,,forth-dao,Services,0x77fba179c79de5b7653f68b5039af940ada60ce0,,,,vampleforth-governance-token,True,1,True,False
+6953,FRAX,Frax (prev. FXS),token,Algo-Stables;Dexs;Lending;Liquid Staking;RWA;Services,,,,,,,,,False,0,False,False
+2530,FSN,Fusion,token,Payments,,,,,,,,,False,0,False,False
+3840,FST,1irstcoin,token,Derivatives,,,,,,,,,False,0,False,False
+4195,FTT,FTX Token,token,Exchange Token;Derivatives,,,,,,,,,False,0,False,False
+2120,FUEL,Etherparty,token,Bridge;Chain;Yield;Payments,,,,,,,,,False,0,False,False
+1757,FUN,FUNToken,token,Dexs;Gaming;Payments,,,,,,,,,False,0,False,False
+671,GAIA,GAIA,token,Reserve Currency,,,,,,,,,False,0,False,False
+1785,GAS,Gas,token,Dexs;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+2726,GEN,DAOstack,token,Farm,,,,,,,,,False,0,False,False
+39841,GENIUS,Genius Terminal,token,Derivatives;Perpetuals,,,,,,,,,False,0,False,False
+11857,GMX,GMX,token,Derivatives;Dexs;DEX;Perpetuals,,,,,,,,,False,0,False,False
+13663,GNS,Gains Network,token,Derivatives,,gains-network,Derivatives,polygon:0xe5417af564e4bfda1c483642db72007871397896,Multi-Chain,Arbitrum;Base;Polygon;MegaETH;ApeChain,gains-network.eth,gains-network,True,1,True,True
+785,GP,GoldPieces,token,Launchpad,,,,,,,,,False,0,False,False
+6719,GRT,The Graph,token,Developer Tools;AI/Big Data,,the-graph,Developer Tools,0xc944e90c64b2c07662a292be6244bdf05cda44a7,Multi-Chain,Ethereum;Arbitrum,,the-graph,True,1,True,False
+10052,GTC,Gitcoin,token,Charity Fundraising,,gitcoin,Charity Fundraising,0xde30da39c46104798bb5aa3fe8b9e0e1f348163f,,,gitcoindao.eth,gitcoin,True,1,True,True
+39379,GWEI,ETHGas,token,,,,,,,,,,False,0,False,False
+1750,GXC,GXChain,token,DEX,,,,,,,,,False,0,False,False
+6622,HAKKA,Hakka.Finance,token,Derivatives,,hakka-finance,Derivatives,0x0E29e5AbbB5FD88e28b2d355774e73BD47dE3bcd,Multi-Chain,Ethereum;Binance,hakka.eth,hakka-finance,True,1,True,True
+6941,HBTC,Huobi BTC,token,,,,,,,,,,False,0,False,False
+5299,HDAO,HyperDAO,token,,,,,,,,,,False,0,False,False
+6929,HEGIC,Hegic,token,Options;DEX;Derivatives,,hegic,Options,0x584bC13c7D411c00c01A62e8019472dE68768430,Multi-Chain,Arbitrum;Ethereum,,hegic,True,1,True,False
+5015,HEX,HEX,token,Yield,,hex,Yield,0x2b591e99afe9f32eaa6214f7b7629768c40eeb39,Ethereum,Ethereum,,hex,True,1,True,False
+22461,HFT,Hashflow,token,DEX Aggregator;NFT;DEX;Gaming;Interoperability,,hashflow,DEX Aggregator,0xb3999f658c0391d94a37f7ff328f3fec942bcadc,Multi-Chain,Ethereum;Arbitrum;Polygon;Binance;Avalanche;Optimism,hashflowdao.eth,hashflow,True,1,True,True
+11232,HIGH,Highstreet,token,Gaming;Metaverse,,,,,,,,,False,0,False,False
+22850,HONEY,Hivemapper,token,DePIN;Dexs;Liquid Staking;NFT Marketplace;IoT,,,,,,,,,False,0,False,False
+2430,HOT,Hydro Protocol,token,DEX,,,,,,,,,False,0,False,False
+2176,HST,Decision Token,token,Launchpad;Prediction Market,,,,,,,,,False,0,False,False
+3748,HXRO,Hxro,token,Derivatives,,hxro-network,Derivatives,solana:HxhWkVpk5NS4Ltg5nij2G671CKXFRKPK8vy271Ub4uEK,Solana,Solana,,hxro,True,1,True,False
+7726,ICHI,ICHI,token,Liquidity Manager;Yield,,ichi,Liquidity Manager,0x111111517e4929D3dcbdfa7CCe55d30d4B6BC4d6,Multi-Chain,Hedera;Base;Celo;Binance;Ethereum;Sonic;Flare;Polygon;Linea;Nibiru;Arbitrum;Mantle;Scroll;Blast;Op_Bnb;zkSync Era;Fantom;Zircuit;Kava;Taiko;Polygon zkEVM;Mode;RSK;Hemi;Fuse;Horizen EON;Evmos,ichi.eth,ichi,True,1,True,True
+2099,ICX,ICON,token,Interoperability;Smart Contract Platform,,,,,,,,,False,0,False,False
+3928,IDEX,IDEX,token,Derivatives;Dexs;DEX,,,,,,,,,False,0,False,False
+8719,ILV,Illuvium,token,Gaming;NFT;Metaverse,,illuvium,Gaming,0x767fe9edc9e0df98e07454847909b5e959d7ca0e,Ethereum,Ethereum,ilvgov.eth,illuvium,True,1,True,True
+12760,INF,Sanctum Infinity,token,,,,,,,,,,False,0,False,False
+5103,IPX,Tachyon Protocol,token,Dexs,,,,,,,,,False,0,False,False
+2930,IQ,IQ,token,Services;AI Agents;AI/Big Data;Yield,,iq,Services,0x579cea1889991f68acc35ff5c3dd0621ff29b0c9,Ethereum,Ethereum,,everipedia,True,1,True,False
+3874,IRIS,IRISnet,token,Yield,,,,,,,,,False,0,False,False
+1237,JACK,BlackJack,token,Yield,,,,,,,,,False,0,False,False
+888,JAY,Jay,token,Yield,,,,,,,,,False,0,False,False
+28853,JLP,Jupiter Perps LP,token,DEX,,,,,,,,,False,0,False,False
+5488,JST,JUST,token,Bridge;Lending,,,,,,,,,False,0,False,False
+1503,JUP,Jupiter,token,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking,,,,,,,,,False,0,False,False
+29210,JUP,Jupiter,token,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking;Perpetuals,,jupiter-aggregator,DEX Aggregator,solana:JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN,,,,jupiter-exchange-solana,True,1,True,False
+35763,KAITO,KAITO,token,Services;AI/Big Data,,kaito,Services,base:0x98d0baa52b2d063e780de12f615f963fe8537553,Base,Base,,kaito,True,1,True,False
+5566,KEEP,Keep Network,token,Cross Chain Bridge;Privacy,,keep-network,Cross Chain Bridge,0x85eee30c52b0b379b046fb0f85f4f3dc3009afec,Ethereum,Ethereum,,keep-network,True,1,True,False
+30986,KMNO,Kamino,token,Lending;Liquidity Manager,,,,,,,,,False,0,False,False
+9444,KNC,Kyber Network Crystal v2,token,DEX Aggregator;Dexs;Yield Aggregator;DEX,,,,,,,,,False,0,False,False
+1982,KNCL,Kyber Network Crystal Legacy,token,DEX,,,,,,,,,False,0,False,False
+7535,KP3R,Keep3rV1,token,Derivatives,,keep3r-network,Derivatives,0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44,Ethereum,Ethereum,vkp3r.eth,keep3rv1,True,1,True,True
+8296,KSP,KLAYswap Protocol,token,Dexs,,,,,,,,,False,0,False,False
+2663,KST,StarCoin,token,Dexs,,,,,,,,,False,0,False,False
+33223,LAB,LAB,token,Lending;Trading App;DEX,,lab-terminal,Trading App,bsc:0x7ec43cf65f1663f820427c62a5780b8f2e25593a,,,,lab,True,1,True,False
+35429,LAYER,Solayer,token,Crypto Card Issuer;RWA;Restaking,,,,,,,,,False,0,False,False
+33652,LBTC,Lombard Staked BTC,token,Restaking,,,,,,,,,False,0,False,False
+8000,LDO,Lido DAO,token,Liquid Staking,,lido,Liquid Staking,0x5a98fcbea516cf06857215779fd812ca3bef1b32,Multi-Chain,Ethereum;Solana;Moonbeam;Moonriver;Terra,lido-snapshot.eth,lido-dao,True,1,True,True
+2239,LEND,Aave,token,Lending;Onchain Capital Allocator;Yield,,,,,,,,,False,0,False,False
+2377,LEV,Leverj,token,Derivatives,,,,,,,,,False,0,False,False
+24257,LGCT,Legacy Token,token,Farm,,legacy-network,Farm,bsc:0xD38B305CaC06990c0887032A02C03D6839f770A8,,,,legacy-token,True,1,True,False
+37986,LIGHT,Light,token,Dexs;Meme,,heaven,Dexs,solana:LiGHtkg3uTa9836RaNkKLLriqTNRcMdRAhqjGWNv777,,,,heaven,True,1,True,False
+3083,LINA,LINA,token,Derivatives,,,,,,,,,False,0,False,False
+7102,LINA,Linear Finance,token,Derivatives;DEX;Yield,,linear-finance,Derivatives,bsc:0x762539b45A1dCcE3D36d080F74d1AED37844b878,Binance,Binance,lineardao.eth,linear,True,1,True,True
+35954,LION,Loaded Lions,token,Algo-Stables;Basis Trading;Derivatives;Services;Yield;NFT;Gaming;Meme,,,,,,,,,False,0,False,False
+6833,LIT,Litentry,token,Algo-Stables;Bridge;Derivatives;Dexs;Yield,,,,,,,,,False,0,False,False
+39125,LIT,Lighter,token,Algo-Stables;Bridge;Derivatives;Dexs;Yield;DEX;Perpetuals;Zero Knowledge,,,,,,,,,False,0,False,False
+3855,LOCUS,Locus Chain,token,Yield;Payments,,,,,,,,,False,0,False,False
+8083,LON,Tokenlon Network Token,token,DEX Aggregator;Dexs;DEX,,,,,,,,,False,0,False,False
+810,LQD,LIQUID,token,Lending,,,,,,,,,False,0,False,False
+7429,LQTY,Liquity,token,CDP,,,,,,,,,False,0,False,False
+1934,LRC,Loopring,token,Dexs;DEX;Layer-2;Modular Blockchain;Privacy;Smart Contract Platform;Zero Knowledge,,loopring,Dexs,0xbbbbca6a901c926f240b89eacb641d8aec7aeafd,Multi-Chain,Ethereum;Taiko;Base,loopringdao.eth,loopring,True,1,True,True
+2693,LRN,Loopring [NEO],token,DEX,,,,,,,,,False,0,False,False
+28047,LSD,L7,token,Dexs;Farm;Indexes,,,,,,,,,False,0,False,False
+20314,LUNA,Terra,token,Launchpad,,,,,,,,,False,0,False,False
+4172,LUNC,Terra Classic,token,Payments,,,,,,,,,False,0,False,False
+14783,MAGIC,Treasure,token,Gaming;Yield;AI/Big Data;NFT;Layer-2;Metaverse,,treasure,Gaming,arbitrum:0x539bdE0d7Dbd336b79148AA742883198BBF60342,Arbitrum,Arbitrum,,magic,True,1,True,False
+18037,MAV,Maverick Protocol,token,Dexs;Privacy,,,,,,,,,False,0,False,False
+9175,MBOX,MOBOX,token,Gaming;NFT;Metaverse;Yield,,mobox,Gaming,bsc:0x3203c9e46ca618c8c1ce5dc67e7e9d75f5da2377,Binance,Binance,,mobox,True,1,True,False
+13523,MC,Merit Circle,token,Launchpad;Gaming,,merit-circle,Launchpad,0x949D48EcA67b17269629c7194F4b727d4Ef9E5d6,Ethereum,Ethereum,meritcircle.eth,merit-circle,True,1,True,True
+8335,MDX,Mdex,token,Dexs;DEX;Yield,,mdex,Dexs,bsc:0x9c65ab58d8d978db963e63f2bfb7121627e3a739,Multi-Chain,Binance;Bittorrent;Heco,,mdex,True,1,True,False
+38770,MEGA,MegaETH,token,Dexs;Layer-2,,,,,,,,,False,0,False,False
+28301,MEME,Memecoin,token,Dexs;Farm;NFT;Meme,,memecoin,Farm,0xb131f4A55907B10d1F0A50d8ab8FA09EC342cd74,,,,memecoin-2,True,1,True,False
+30712,MERL,Merlin Chain,token,Bridge;Yield;Layer-2,,merlins-seal,Bridge,merlin:0x5c46bff4b38dc1eae09c5bac65872a1d8bc87378,Multi-Chain,Bitcoin;Arbitrum;Ethereum;Zkfair,,merlin-chain,True,1,True,False
+2873,MET,Metronome,token,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator;Payments,,metronome-v1,Yield,0x2Ebd53d035150f328bd754D6DC66B99B0eDB89aa,Ethereum,Ethereum,,metronome,True,1,True,False
+38353,MET,Meteora,token,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator;DEX,,,,,,,,,False,0,False,False
+3418,META,Metadium,token,Dexs;Reserve Currency;Yield;Identity,,,,,,,,,False,0,False,False
+9640,METIS,Metis,token,Canonical Bridge;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
+30126,MEW,cat in a dogs world,token,Dexs;Meme,,,,,,,,,False,0,False,False
+399,MIN,Mineralscoin,token,DEX Aggregator;Dexs,,,,,,,,,False,0,False,False
+3296,MIN,MINDOL,token,DEX Aggregator;Dexs,,,,,,,,,False,0,False,False
+7857,MIR,Mirror Protocol,token,Derivatives,,mirror,Derivatives,0x09a3ecafa817268f77be1283176b946c4ff2e608,Terra,Terra,,mirror-protocol,True,1,True,False
+1518,MKR,Maker,token,RWA,,,,,,,,,False,0,False,False
+5266,MLK,MiL.k,token,Farm,,,,,,,,,False,0,False,False
+1552,MLN,Enzyme,token,Indexes,,enzyme-finance,Indexes,0xec67005c4e498ec7f55e092bd1d35cbc47c91892,Multi-Chain,Ethereum;Polygon;Arbitrum,enzymefinance.eth,melon,True,2,True,True
+11171,MNGO,Mango,token,Derivatives;Dexs;DEX;Perpetuals,,,,,,,,,False,0,False,False
+2429,MOBI,Mobius,token,Dexs;IoT;Payments,,,,,,,,,False,0,False,False
+1722,MORE,More Coin,token,Lending,,,,,,,,,False,0,False,False
+34104,MORPHO,Morpho,token,Lending,,,,,,,,,False,0,False,False
+9417,MPL,Maple,token,RWA,,,,,,,,,False,0,False,False
+21870,MPLX,Metaplex,token,Launchpad,,metaplex,Launchpad,solana:METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m,,,,metaplex,True,1,True,False
+1847,MSP,Mothership,token,Dexs,,,,,,,,,False,0,False,False
+2982,MVL,MVL,token,Yield;DePIN;IoT,,mvl-staking,Yield,0xa849eaae994fb86afa73382e9bd88c2b6b18dc71,Multi-Chain,Ethereum;Binance,,mass-vehicle-ledger,True,1,True,False
+36410,MYX,MYX Finance,token,Derivatives;Perpetuals,,myx-finance,Derivatives,bsc:0xd82544bf0dfe8385ef8fa34d67e6e4940cc63e16,Multi-Chain,Binance;Linea;Arbitrum;Op_Bnb,,myx-finance,True,1,True,False
+2538,NEC,Nectar,token,Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+5841,NEST,NEST Protocol,token,Derivatives;Dexs;Oracle,,,,,,,,,False,0,False,False
+1080,NEU,NeuCoin,token,Yield,,,,,,,,,False,0,False,False
+2318,NEU,Neumark,token,Yield,,,,,,,,,False,0,False,False
+8191,NFTX,NFTX,token,NFT Marketplace;NFT,,nftx,NFT Marketplace,0x87d73e916d7057945c9bcd8cdd94e42a6f47f776,Multi-Chain,Ethereum;Arbitrum,nftx.eth,nftx,True,1,True,True
+1732,NMR,Numeraire,token,Derivatives;AI/Big Data;Payments,,erasure,Derivatives,0x1776e1f26f98b1a5df9cd347953a26dd3cb46671,Ethereum,Ethereum,,numeraire,True,1,True,False
+26680,NTRN,Neutron,token,Smart Contract Platform,,,,,,,,,False,0,False,False
+5906,NVT,NerveNetwork,token,Dexs;DEX,,nerve-staking,Dexs,bsc:0xf0e406c49c63abf358030a299c0e00118c4c6ba5,Nuls,Nuls,,nervenetwork,True,1,True,False
+5830,NXM,NXM,token,Insurance,,,,,,,,,False,0,False,False
+36044,NXPC,NEXPACE,token,Gaming,,,,,,,,,False,0,False,False
+17591,NYM,NYM,token,DePIN;Interoperability;Layer-1;Privacy;Smart Contract Platform,,,,,,,,,False,0,False,False
+314,OC,OrangeCoin,token,Yield Aggregator,,,,,,,,,False,0,False,False
+3911,OCEAN,Ocean Protocol,token,AI/Big Data;DePIN;Storage,,,,,,,,,False,0,False,False
+5117,OGN,Origin Protocol,token,NFT,,,,,,,,,False,0,False,False
+9067,OHM,Olympus v2,token,Lending;Reserve Currency,,olympus-dao,Reserve Currency,0x64aa3364F17a4D01c6f1751Fd97C2BD3D7e7f1D5,Ethereum,Ethereum,,olympus,True,1,True,False
+6536,OM,MANTRA,token,Lending;Layer-1;RWA,,mantra-dao,Lending,0x3593d125a4f7849a1b059e64f4517a86dd60c95d,Multi-Chain,Ethereum;Binance;Polygon,mantra-dao.eth,mantra-dao,True,1,True,True
+1808,OMG,OMG Network,token,Payments,,,,,,,,,False,0,False,False
+6432,OMI,ECOMI,token,NFT,,,,,,,,,False,0,False,False
+21159,ONDO,Ondo,token,Derivatives;RWA,,,,,,,,,False,0,False,False
+2324,ONE,BigONE Token,token,Dexs;Exchange Token,,,,,,,,,False,0,False,False
+7230,OPIUM,Opium,token,Options;Derivatives,,opium,Options,0x888888888889c00c67689029d7856aac1065ec11,Multi-Chain,Ethereum;Polygon;Arbitrum;Binance,opiumprotocol.eth,opium,True,1,True,True
+3835,ORBS,Orbs,token,Farm,,orbs,Farm,0xff56cc6b1e6ded347aa0b7676c85ab0b3d08b0fa,Ethereum,Ethereum,,orbs,True,1,True,False
+11165,ORCA,Orca,token,Dexs;Launchpad;Lending;DEX,,,,,,,,,False,0,False,False
+5631,ORN,Orion,token,DEX Aggregator;Dexs;DEX,,dedust,Dexs,ton:EQBlqsm144Dq6SjbPI4jjZvA1hqTIP3CvHovbIfW_t-SCALE,TON,TON,,scaleton,True,1,True,False
+12220,OSMO,Osmosis,token,Dexs;Modular Blockchain,,osmosis-dex,Dexs,osmosis:uosmo,Osmosis,Osmosis,,osmosis,True,1,True,False
+2296,OST,OST,token,Dexs,,,,,,,,,False,0,False,False
+1758,PAY,TenX,token,Yield;Payments,,,,,,,,,False,0,False,False
+5354,PEAK,PEAKDEFI,token,Algo-Stables;Yield,,peakdefi,Yield,0x630d98424efe0ea27fb1b3ab7741907dffeaad78,Multi-Chain,Binance;Ethereum,,marketpeak,True,1,True,False
+9481,PENDLE,Pendle,token,Yield;RWA;Restaking,,pendle,Yield,0x808507121b80c02388fad14726482e061b8da827,Multi-Chain,Ethereum;Arbitrum;Plasma;Monad;Hyperliquid L1;Binance;Base;Sonic;Mantle;Avalanche;Optimism;Berachain,,pendle,True,1,True,False
+14806,PEOPLE,ConstitutionDAO,token,Meme,,,,,,,,,False,0,False,False
+6950,PERP,Perpetual Protocol,token,Derivatives;DEX,,,,,,,,,False,0,False,False
+2112,PHB,Phoenix Global,token,,,,,,,,,,False,0,False,False
+29335,PIXEL,Pixels,token,Dexs;NFT;Gaming,,,,,,,,,False,0,False,False
+1834,PLR,Pillar,token,DePIN;Identity,,,,,,,,,False,0,False,False
+1091,PLS,PLAY,token,Chain;Yield,,,,,,,,,False,0,False,False
+5794,PNT,pNetwork,token,Bridge;NFT,,pnetwork,Bridge,0x89ab32156e46f46d02ade3fecbe5fc4243b9aaed,Multi-Chain,Binance;Ethereum;Ultra;Algorand;Arbitrum;Polygon;EOS;Telos;xDai,pnetwork-dao.eth,pnetwork,True,1,True,True
+7208,POLS,Polkastarter,token,Launchpad,,,,,,,,,False,0,False,False
+2496,POLY,Polymath,token,RWA,,,,,,,,,False,0,False,False
+29150,PONKE,Ponke,token,Meme,,,,,,,,,False,0,False,False
+29555,PORTAL,Portal,token,Gaming,,,,,,,,,False,0,False,False
+39042,POWER,Power Protocol,token,Dexs;Reserve Currency;Stablecoin Issuer;Yield;Gaming,,,,,,,,,False,0,False,False
+23711,PRIME,Echelon Prime,token,Gaming;Leveraged Farming;AI/Big Data;NFT,,echelon-prime,Gaming,0xb23d80f5FefcDDaa212212F028021B41DEd428CF,,,,echelon-prime,True,1,True,False
+2202,PRL,Oyster,token,CDP;Gaming;Yield Aggregator,,,,,,,,,False,0,False,False
+5410,PRQ,PARSIQ,token,AI/Big Data;Smart Contract Platform,,,,,,,,,False,0,False,False
+36507,PUMP,Pump.fun,token,Dexs;Launchpad;Reserve Currency;Telegram Bot,,,,,,,,,False,0,False,False
+32272,PUMPBTC,pumpBTC (Rehypothecated BTC),token,Restaking,,,,,,,,,False,0,False,False
+9308,PYR,Vulcan Forged (PYR),token,Dexs;NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+28177,PYTH,Pyth Network,token,MEV;Oracle,,,,,,,,,False,0,False,False
+2242,QBT,Qbao,token,Lending,,,,,,,,,False,0,False,False
+3155,QNT,Quant,token,Interoperability;RWA,,,,,,,,,False,0,False,False
+1684,QTUM,Qtum,token,Smart Contract Platform,,,,,,,,,False,0,False,False
+6843,RAD,Radworks,token,Privacy,,,,,,,,,False,0,False,False
+38967,RAVE,RaveDAO,token,,,,,,,,,,False,0,False,False
+8526,RAY,Raydium,token,Dexs;Interface;Launchpad;DEX;Derivatives;Perpetuals,,,,,,,,,False,0,False,False
+12387,RBN,Ribbon Finance,token,Options;Options Vault;Uncollateralized Lending;Derivatives;RWA,,,,,,,,,False,0,False,False
+703,RBT,Rimbit,token,Reserve Currency,,,,,,,,,False,0,False,False
+2096,RCN,Ripio Credit Network,token,,,,,,,,,,False,0,False,False
+6951,REEF,Reef,token,Gaming;Metaverse;Payments,,,,,,,,,False,0,False,False
+2539,REN,Ren,token,Bridge,,renvm,Bridge,0x408e41876cccdc0f92210600ef50372656052a38,Multi-Chain,Solana;Ethereum;Avalanche;Binance;Fantom;Polygon;Arbitrum;Kava;Optimism,ren-project.eth,republic-protocol,True,1,True,True
+5690,RENDER,Render,token,AI/Big Data;NFT;DePIN;Gaming;Metaverse,,,,,,,,,False,0,False,False
+1104,REP,Augur,token,Prediction Market;DePIN;Storage,,augur,Prediction Market,0x221657776846890989a759ba2973e427dff5c9bb,Ethereum,Ethereum,,augur,True,1,True,False
+2071,REQ,Request,token,Developer Tools;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+7654,RFOX,RFOX,token,Yield;NFT;Metaverse,,rfox,Yield,bsc:0x0a3a21356793b49154fd3bbe91cbc2a16c0457f5,Binance,Binance,,redfox-labs-2,True,1,True,False
+7486,RGT,Rari Governance Token,token,Yield Aggregator;Yield,,rari-capital,Yield Aggregator,0xD291E7a03283640FDc51b121aC401383A46cC623,Multi-Chain,Ethereum;Arbitrum,fuse.eth,rari-governance-token,True,1,True,True
+5798,RING,Darwinia Network,token,Farm;Yield;Gaming;Interoperability;Metaverse,,,,,,,,,False,0,False,False
+38417,RIVER,River,token,CeDeFi;Yield,,,,,,,,,False,0,False,False
+1637,RLC,iExec RLC,token,AI Agents;AI/Big Data;NFT;DePIN;Storage;Interoperability;Payments;Privacy,,,,,,,,,False,0,False,False
+8075,RLY,Rally,token,Yield,,,,,,,,,False,0,False,False
+3325,ROX,Robotina,token,Dexs;IoT,,,,,,,,,False,0,False,False
+4157,RUNE,THORChain,token,Dexs;DEX,,thorchain-dex,Dexs,thorchain:0x0000000000000000000000000000000000000000,Multi-Chain,Thorchain;Bitcoin;Ethereum;Binance;Bitcoincash;Avalanche;Doge;Litecoin;Ripple;Tron;Cosmos;Base;Solana,,thorchain,True,1,True,False
+36671,SAHARA,Sahara AI,token,AI/Big Data;Layer-1,,,,,,,,,False,0,False,False
+2308,SAI,Single Collateral DAI ,token,Derivatives;Onchain Capital Allocator;Yield,,,,,,,,,False,0,False,False
+29082,SAROS,Saros,token,Dexs;DEX,,,,,,,,,False,0,False,False
+7617,SFI,saffron.finance,token,Liquid Staking;Yield,,saffron-finance,Yield,0xb753428af26e81097e7fd17f40c88aaa3e04902c,Ethereum,Ethereum,,saffron-finance,True,1,True,False
+8972,SFUND,Seedify.fund,token,Launchpad;Gaming,,seedify,Launchpad,bsc:0x477bc8d23c634c154061869478bce96be6045d12,Multi-Chain,Binance;Arbitrum;Ethereum,,seedify-fund,True,1,True,False
+5994,SHIB,Shiba Inu,token,Dexs;Meme,,,,,,,,,False,0,False,False
+1619,SKY,Skycoin,token,CDP;Dexs;RWA;Risk Curators;DePIN;Storage,,,,,,,,,False,0,False,False
+33038,SKY,Sky,token,CDP;Dexs;RWA;Risk Curators,,,,,,,,,False,0,False,False
+5824,SLP,Smooth Love Potion,token,Derivatives;NFT;Gaming,,,,,,,,,False,0,False,False
+2277,SMT,SmartMesh,token,Dexs;IoT,,,,,,,,,False,0,False,False
+25264,SNEK,Snek,token,Dexs;Meme,,,,,,,,,False,0,False,False
+2586,SNX,Synthetix,token,Derivatives;Synthetics;DEX;Perpetuals;RWA;Yield,,,,,,,,,False,0,False,False
+16116,SOL,Wrapped Solana,token,Canonical Bridge;Dexs,,,,,,,,,False,0,False,False
+5279,SOLO,Sologenic,token,Basis Trading;Dexs,,sologenic,Dexs,,,,,solo-coin,True,1,False,False
+35818,SOSO,SoSoValue,token,Basis Trading;Bridge;Derivatives;Dexs;Indexes;AI/Big Data,,,,,,,,,False,0,False,False
+2410,SPC,SpaceChain,token,Dexs;Reserve Currency,,,,,,,,,False,0,False,False
+11289,SPELL,Spell Token,token,CDP,,,,,,,,,False,0,False,False
+8161,SPI,Shopping,token,Dexs,,,,,,,,,False,0,False,False
+5601,STAKE,STAKE,token,Canonical Bridge,,xdai-stake-bridge,Canonical Bridge,0x0Ae055097C6d159879521C384F1D2123D1f195e6,Ethereum,Ethereum,,xdai-stake,True,1,True,False
+8911,STRK,Strike,token,Canonical Bridge;Lending,,strike,Lending,0x74232704659ef37c08995e386a2e26cc27a8d7b1,Ethereum,Ethereum,strikeorg.eth,strike,True,1,True,True
+6511,STRONG,Strong,token,Yield,,,,,,,,,False,0,False,False
+24875,STRX,Staked TRX,token,Farm,,,,,,,,,False,0,False,False
+1984,SUB,Substratum,token,Reserve Currency;DePIN,,,,,,,,,False,0,False,False
+6990,SUN,SUN,token,Bridge;Derivatives;Dexs,,,,,,,,,False,0,False,False
+10529,SUN,Sun [New],token,Bridge;Derivatives;Dexs,,sun.io,Dexs,tron:TSSMHYeV2uE9qYH95DqyoCuNCzEL1NvU3S,Tron,Tron,,sun-token,True,1,True,False
+8290,SUPER,SuperVerse,token,Services;NFT;Gaming,,superfarm,Services,0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55,Ethereum,Ethereum,,superfarm,True,1,True,False
+5113,SURE,inSure DeFi,token,AI/Big Data;NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+6758,SUSHI,SushiSwap,token,DEX Aggregator;Dexs;Interface;Lending;Yield;NFT;DEX;Gaming;Meme;Metaverse,,sushiswap,Dexs,0x6b3595068778dd592e39a122f4f5a5cf09c90fe2,Multi-Chain,Ethereum;Polygon;Arbitrum;Base;Boba;xDai;Binance;Moonriver;Celo;Arbitrum Nova;Avalanche;Fantom;Harmony;Fuse;Scroll;OKExChain;Optimism;Katana;Filecoin;Linea;RSK;CORE;Palm;Moonbeam;Polygon zkEVM;Hemi;Bittorrent;Blast;Europa;Telos;ZetaChain;Sonic;ThunderCore;Metis;Kava;HAQQ;Heco;Boba_Bnb,,sushi,True,1,True,False
+5829,SWAP,TrustSwap,token,Bridge;Dexs;Interface;Token Locker,,team-finance,Token Locker,0xCC4304A31d09258b0029eA7FE63d032f52e44EFe,Multi-Chain,Ethereum;Binance;Base;Avalanche;Polygon;Pulse;Arbitrum;Blast;Cronos;Fantom;Odyssey;Kava;Flare;Klaytn;Mantle;LUKSO;Berachain,,trustswap,True,1,True,False
+2341,SWFTC,SwftCoin,token,NFT;Interoperability;Payments,,,,,,,,,False,0,False,False
+2620,SWTH,Carbon Protocol,token,DEX;Derivatives,,,,,,,,,False,0,False,False
+4279,SXP,Solar,token,Dexs;Payments,,swipe,Dexs,0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9,Multi-Chain,Binance;Ethereum,,swipe,True,1,True,False
+12147,SYN,Synapse,token,Cross Chain Bridge;Synthetics;Yield Aggregator;Interoperability,,synapse,Cross Chain Bridge,0x0f2d719407fdbeff09d87557abb7232601fd9f29,Multi-Chain,Ethereum;Canto;Avalanche;Blast;Arbitrum;Binance;Polygon;Optimism;Aurora;Boba;Base;Fantom;Klaytn;Metis;Moonriver;Terra;Cronos;Harmony;Moonbeam,synapseprotocol.eth,synapse-2,True,1,True,True
+329,SYNC,Sync,token,NFT Lending;Reserve Currency,,,,,,,,,False,0,False,False
+33824,SYRUP,Maple Finance,token,Lending;RWA,,,,,,,,,False,0,False,False
+33312,SolvBTC,SolvBTC,token,,,,,,,,,,False,0,False,False
+17751,T,Threshold,token,CDP;Decentralized BTC,,,,,,,,,False,0,False,False
+22974,TAO,Bittensor,token,Chain;AI/Big Data;DePIN;Layer-1,,bittensor,Chain,,,,,bittensor,True,1,False,False
+26133,TBTC,tBTC,token,,,,,,,,,,False,0,False,False
+23082,TEM,TemDAO,token,Lending;Reserve Currency,,,,,,,,,False,0,False,False
+2576,TEN,Tokenomy,token,Yield,,,,,,,,,False,0,False,False
+3822,TFUEL,Theta Fuel,token,AI/Big Data;DePIN;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+3916,THX,ThoreNext,token,Payments,,,,,,,,,False,0,False,False
+1556,TIME,Chrono.tech,token,Lending;Yield,,timewarp,Yield,0x485d17a6f1b8780392d53d64751824253011a260,Multi-Chain,Ethereum;Binance,,chronobank,True,1,True,False
+1660,TKN,Monolith,token,Dexs,,,,,,,,,False,0,False,False
+9119,TLM,Alien Worlds,token,Gaming;NFT;Metaverse,,alien-worlds,Gaming,wax:alien.worlds,Wax,Wax,,alien-worlds,True,1,True,False
+5007,TROY,TROY,token,Farm,,,,,,,,,False,0,False,False
+7725,TRU,TrueFi,token,Uncollateralized Lending;RWA;Yield,,truefi,Uncollateralized Lending,0x4c19596f5aaff459fa38b0f7ed92f11ae6543784,Multi-Chain,Ethereum;Arbitrum,truefigov.eth,truefi,True,1,True,True
+3930,TT,ThunderCore,token,Dexs;Staking Pool,,thundercore-staking,Staking Pool,0x1e053d89e08c24aa2ce5c5b4206744dc2d7bd8f5,ThunderCore,ThunderCore,,thunder-token,True,1,True,False
+5617,UMA,UMA,token,Derivatives,,,,,,,,,False,0,False,False
+7672,UNFI,Unifi Protocol DAO,token,Dexs;Staking Pool,,,,,,,,,False,0,False,False
+4113,UNI,UNI COIN,token,Dexs;Launchpad;Payments,,,,,,,,,False,0,False,False
+7083,UNI,Uniswap,token,Dexs;Launchpad;DEX;Layer-1;Yield,,,,,,,,,False,0,False,False
+36175,UNIBTC,Universal BTC,token,Restaking,,,,,,,,,False,0,False,False
+2273,UQC,Uquid Coin,token,Payments,,,,,,,,,False,0,False,False
+3792,USDE,USDe,token,Derivatives,,,,,,,,,False,0,False,False
+35437,USDF,Aster USDF,token,,,,,,,,,,False,0,False,False
+2320,UTK,xMoney,token,Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+2223,VEE,BLOCKv,token,Lending;NFT,,,,,,,,,False,0,False,False
+7127,VELO,Velo,token,Dexs,,velo-finance,Dexs,bsc:0xf486ad071f3bee968384d2e39e2d8af0fcf6fd46,Binance,Binance,,velo,True,1,True,False
+1904,VEN,Vechain [Token],token,Dexs,,,,,,,,,False,0,False,False
+22059,VENOM,Venom,token,,,,,,,,,,False,0,False,False
+2937,VITE,VITE,token,DAG;DEX,,,,,,,,,False,0,False,False
+19650,VOLT,Volt Inu,token,Dexs;Lending;Liquid Staking;AI/Big Data;NFT;Gaming;Payments;Meme,,,,,,,,,False,0,False,False
+14519,VVS,VVS Finance,token,Dexs;DEX,,,,,,,,,False,0,False,False
+35509,VVV,Venice Token,token,Farm;AI/Big Data,,venice,Farm,base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf,Base,Base,,venice-token,True,1,True,False
+29587,W,Wormhole,token,Bridge;NFT;Interoperability,,portal,Bridge,solana:85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ,Multi-Chain,Ethereum;Algorand;Binance;Solana;Sui;Polygon;Near;Base;Avalanche;Arbitrum;Aptos;Optimism;Moonbeam;Celo;Klaytn;Terra;Oasis;Aurora;Fantom;Karura;Acala;Terra2;Injective;XPLA,,wormhole,True,1,True,False
+36119,WAL,Walrus,token,Developer Tools;Dexs;DePIN;Storage,,walrus-protocol,Developer Tools,sui:0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL,,,,walrus-2,True,1,True,False
+1166,WARP,WARP,token,Lending;Reserve Currency,,polkastarter,Launchpad,ethereum:0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa,Multi-Chain,Ethereum;Binance,,polkastarter,True,1,True,False
+9462,WAVAX,Wrapped AVAX,token,,,,,,,,,,False,0,False,False
+1274,WAVES,Waves,token,Smart Contract Platform,,,,,,,,,False,0,False,False
+28183,WFLR,Wrapped Flare,token,,,,,,,,,,False,0,False,False
+10240,WFTM,Wrapped Fantom,token,,,,,,,,,,False,0,False,False
+24399,WHBAR,Wrapped HBAR,token,,,,,,,,,,False,0,False,False
+34143,WHITE,WhiteRock,token,Options,,,,,,,,,False,0,False,False
+35881,WHYPE,Wrapped HYPE,token,,,,,,,,,,False,0,False,False
+9674,WILD,Wilder World,token,Lending;Yield;NFT;Gaming;Metaverse,,,,,,,,,False,0,False,False
+4206,WIN,WINkLink,token,,,,,,,,,,False,0,False,False
+1500,WINGS,Wings,token,Dexs,,,,,,,,,False,0,False,False
+13502,WLD,Worldcoin,token,Chain;Identity;Privacy;Zero Knowledge,,worldcoin,Chain,0x163f8c2467924be0ae7b5347228cabf260318753,,,,worldcoin-wld,True,1,True,False
+33251,WLFI,World Liberty Financial,token,Lending,,,,,,,,,False,0,False,False
+7501,WOO,WOO,token,CEX;Dexs;Yield;Exchange Token;Derivatives;Perpetuals,,,,,,,,,False,0,False,False
+24735,WPLS,Wrapped Pulse,token,,,,,,,,,,False,0,False,False
+27076,WTFUEL,Wrapped TFUEL,token,,,,,,,,,,False,0,False,False
+27077,WTHETA,Wrapped THETA,token,,,,,,,,,,False,0,False,False
+18579,WTRX,Wrapped TRON,token,,,,,,,,,,False,0,False,False
+4090,WXT,Wirex Token,token,CEX;Lending;Exchange Token;Payments,,nereus-finance,Lending,avax:0xfcDe4A87b8b6FA58326BB462882f1778158B02F1,Avalanche,Avalanche,,wirex,True,1,True,False
+30506,WZEDX,Wrapped Zedxion,token,,,,,,,,,,False,0,False,False
+4566,XDB,XDB CHAIN,token,RWA,,,,,,,,,False,0,False,False
+873,XEM,NEM,token,Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
+2662,XHV,Haven Protocol,token,Privacy,,,,,,,,,False,0,False,False
+769,XUSD,CoinoUSD,token,Algo-Stables;CDP,,,,,,,,,False,0,False,False
+7288,XVS,Venus,token,Lending;Privacy;RWA;Yield,,,,,,,,,False,0,False,False
+2765,XYO,XYO,token,DePIN;Gaming;Metaverse,,,,,,,,,False,0,False,False
+5864,YFI,Yearn,token,Indexes;Risk Curators;Yield Aggregator;Yield,,,,,,,,,False,0,False,False
+5957,YFII,DFI.Money,token,Yield Aggregator;Yield,,yfii,Yield Aggregator,0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83,Ethereum,Ethereum,,yfii-finance,True,1,True,False
+10688,YGG,Yield Guild Games,token,Gaming;NFT;Metaverse,,yield-guild-games,Gaming,0x25f8087ead173b73d6e8b84329989a8eea16cf73,,,,yield-guild-games,True,1,True,False
+3053,YOU,YOU COIN,token,Dexs;Synthetics,,,,,,,,,False,0,False,False
+2363,ZAP,Zap,token,Dexs,,,,,,,,,False,0,False,False
+30636,ZBCN,Zebec Network,token,DePIN;Payments;RWA,,,,,,,,,False,0,False,False
+27765,ZBU,Zeebu,token,Farm,,zeebu,Farm,0xe77f6acd24185e149e329c1c0f479201b9ec2f4b,Multi-Chain,Ethereum;Base;Binance,,zeebu,True,1,True,False
+2826,ZIP,Zipper,token,Dexs,,,,,,,,,False,0,False,False
+24091,ZK,ZKsync,token,Chain;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,,zksync-era,Chain,era:0x5a7d6b2f92c77fad6ccabd7ee0624e64907eaf3e,,,,zksync,True,1,True,False
+8202,ZKB,ZKBase,token,Dexs;Launchpad;DEX;Layer-2;Zero Knowledge,,zkswap,Chain,0xe4815ae53b124e7263f08dcdbbb757d41ed658c6,Ethereum,Ethereum,,zkswap,True,2,True,False
+29779,ZKJ,Polyhedra Network,token,Chain;Interoperability;Layer-2;RWA,,polyhedra-network,Chain,0xc71b5f631354be6853efe9c3ab6b9590f8302e81,,,,polyhedra-network,True,1,True,False
+35931,ZORA,ZORA,token,Canonical Bridge;Launchpad;NFT Marketplace;NFT;Layer-2,,,,,,,,,False,0,False,False
+26997,ZRO,LayerZero,token,Bridge;Interoperability,,,,,,,,,False,0,False,False
+1896,ZRX,0x Protocol,token,DEX Aggregator;DEX,,0x-aggregator,DEX Aggregator,0xe41d2489571d322189246dafa5ebde1f4699f498,,,0xgov.eth,0x,True,1,True,True
+33055,slisBNBx,slisBNBx,token,,,,,,,,,,False,0,False,False
+36246,stkAAVE,Staked Aave,token,,,,,,,,,,False,0,False,False
+38779,syrupUSDC,syrupUSDC,token,,,,,,,,,,False,0,False,False
+38786,syrupUSDT,syrupUSDT,token,,,,,,,,,,False,0,False,False
+7961,vBNB,Venus BNB,token,,,,,,,,,,False,0,False,False
+7962,vBTC,Venus BTC,token,,,,,,,,,,False,0,False,False
+7963,vETH,Venus ETH,token,,,,,,,,,,False,0,False,False
+33310,xSolvBTC,xSolvBTC,token,,,,,,,,,,False,0,False,False

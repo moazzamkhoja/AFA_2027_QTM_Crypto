@@ -31,3 +31,4 @@
 - `Direct` — human-authored code, writing, or edits
 - `Review` — reading and evaluating AI output
 - `Decision` — making a judgment call on research direction
+| 2026-06-23 | ~15 (est., confirm) | Prompt + Decision | Launched the Phase 1 (λ channels) session (Claude Code / Opus 4.8) via `CLAUDE_CODE_PHASE1_KICKOFF_PROMPT.md`; mid-session redirected the data sourcing to canonical chain sources ("etherscan or other chain main data source") instead of an aggregator, to ensure λ numbers come from the real on-chain source; registered a free Etherscan V2 API key ("AFA Paper") and supplied it for gitignored local storage; authorized end-of-session commit+push |

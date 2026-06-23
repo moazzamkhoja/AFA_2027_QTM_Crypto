@@ -1,0 +1,83 @@
+cmc_id,symbol,month_end,staked_eth,circulating_supply,staking_ratio,note
+1027,ETH,2015-08-31,,72861920.49948,,PoW; no staking channel before staking_start
+1027,ETH,2015-09-30,,73582765.49948,,PoW; no staking channel before staking_start
+1027,ETH,2015-10-31,,74363255.49948,,PoW; no staking channel before staking_start
+1027,ETH,2015-11-30,,75120980.49948,,PoW; no staking channel before staking_start
+1027,ETH,2015-12-31,,75902340.49948,,PoW; no staking channel before staking_start
+1027,ETH,2016-01-31,,76683155.49948,,PoW; no staking channel before staking_start
+1027,ETH,2016-02-29,,77411605.49948,,PoW; no staking channel before staking_start
+1027,ETH,2016-03-31,,78639432.999,,PoW; no staking channel before staking_start
+1027,ETH,2016-04-30,,79586408.9366,,PoW; no staking channel before staking_start
+1027,ETH,2016-05-31,,80575034.5615,,PoW; no staking channel before staking_start
+1027,ETH,2016-06-30,,81541593.4678,,PoW; no staking channel before staking_start
+1027,ETH,2016-07-31,,82534791.5928,,PoW; no staking channel before staking_start
+1027,ETH,2016-08-31,,83530646.5928,,PoW; no staking channel before staking_start
+1027,ETH,2016-09-30,,84501647.5303,,PoW; no staking channel before staking_start
+1027,ETH,2016-10-31,,85521109.249,,PoW; no staking channel before staking_start
+1027,ETH,2016-11-30,,86481667.0616,,PoW; no staking channel before staking_start
+1027,ETH,2016-12-31,,87462022.0615,,PoW; no staking channel before staking_start
+1027,ETH,2017-01-31,,88440825.1866,,PoW; no staking channel before staking_start
+1027,ETH,2017-02-28,,89322085.3428,,PoW; no staking channel before staking_start
+1027,ETH,2017-03-31,,90289358.4678,,PoW; no staking channel before staking_start
+1027,ETH,2017-04-30,,91199196.1241,,PoW; no staking channel before staking_start
+1027,ETH,2017-05-31,,92100876.7491,,PoW; no staking channel before staking_start
+1027,ETH,2017-06-30,,92923855.8115,,PoW; no staking channel before staking_start
+1027,ETH,2017-07-31,,93699431.2803,,PoW; no staking channel before staking_start
+1027,ETH,2017-08-31,,94357033.4678,,PoW; no staking channel before staking_start
+1027,ETH,2017-09-30,,94894618.9366,,PoW; no staking channel before staking_start
+1027,ETH,2017-10-31,,95445427.7178,,PoW; no staking channel before staking_start
+1027,ETH,2017-11-30,,96055899.0303,,PoW; no staking channel before staking_start
+1027,ETH,2017-12-31,,96692189.9366,,PoW; no staking channel before staking_start
+1027,ETH,2018-01-31,,97333153.0615,,PoW; no staking channel before staking_start
+1027,ETH,2018-02-28,,97905357.8741,,PoW; no staking channel before staking_start
+1027,ETH,2018-03-31,,98538013.8115,,PoW; no staking channel before staking_start
+1027,ETH,2018-04-30,,99151116.0303,,PoW; no staking channel before staking_start
+1027,ETH,2018-05-31,,99789903.499,,PoW; no staking channel before staking_start
+1027,ETH,2018-06-30,,100407096.2178,,PoW; no staking channel before staking_start
+1027,ETH,2018-07-31,,101042564.2803,,PoW; no staking channel before staking_start
+1027,ETH,2018-08-31,,101676734.2803,,PoW; no staking channel before staking_start
+1027,ETH,2018-09-30,,102289070.5616,,PoW; no staking channel before staking_start
+1027,ETH,2018-10-31,,102920889.6866,,PoW; no staking channel before staking_start
+1027,ETH,2018-11-30,,103525218.3115,,PoW; no staking channel before staking_start
+1027,ETH,2018-12-31,,104124004.9991,,PoW; no staking channel before staking_start
+1027,ETH,2019-01-31,,104657476.9053,,PoW; no staking channel before staking_start
+1027,ETH,2019-02-28,,105049447.4366,,PoW; no staking channel before staking_start
+1027,ETH,2019-03-31,,105470294.1866,,PoW; no staking channel before staking_start
+1027,ETH,2019-04-30,,105879817.9991,,PoW; no staking channel before staking_start
+1027,ETH,2019-05-31,,106302339.9366,,PoW; no staking channel before staking_start
+1027,ETH,2019-06-30,,106710433.0616,,PoW; no staking channel before staking_start
+1027,ETH,2019-07-31,,107132730.3115,,PoW; no staking channel before staking_start
+1027,ETH,2019-08-31,,107554525.3115,,PoW; no staking channel before staking_start
+1027,ETH,2019-09-30,,107960814.3115,,PoW; no staking channel before staking_start
+1027,ETH,2019-10-31,,108374141.6865,,PoW; no staking channel before staking_start
+1027,ETH,2019-11-30,,108752890.999,,PoW; no staking channel before staking_start
+1027,ETH,2019-12-31,,109093989.874,,PoW; no staking channel before staking_start
+1027,ETH,2020-01-31,,109511622.374,,PoW; no staking channel before staking_start
+1027,ETH,2020-02-29,,109907103.374,,PoW; no staking channel before staking_start
+1027,ETH,2020-03-31,,110329988.0615,,PoW; no staking channel before staking_start
+1027,ETH,2020-04-30,,110739014.4365,,PoW; no staking channel before staking_start
+1027,ETH,2020-05-31,,111161227.0615,,PoW; no staking channel before staking_start
+1027,ETH,2020-06-30,,111569776.749,,PoW; no staking channel before staking_start
+1027,ETH,2020-07-31,,111991774.749,,PoW; no staking channel before staking_start
+1027,ETH,2020-08-31,,112414265.624,,PoW; no staking channel before staking_start
+1027,ETH,2020-09-30,,113186353.4365,,PoW; no staking channel before staking_start
+1027,ETH,2020-10-31,,113238291.6865,,PoW; no staking channel before staking_start
+1027,ETH,2020-11-30,,113650451.9365,,PoW; no staking channel before staking_start
+1027,ETH,2020-12-31,2172290.0,114064005.4365,0.019044482890874147,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-01-31,2892194.0,114483295.249,0.02526302194315343,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-02-28,3328834.0,114862145.4365,0.02898112330524334,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-03-31,3626370.0,115281580.9365,0.03145662967614485,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-04-30,4078722.0,115686589.374,0.03525665353322857,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-05-31,5211586.0,116104465.3115,0.044887041906766345,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-06-30,6007938.0,116507217.874,0.051567088371275445,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-07-31,6473218.0,116919732.124,0.055364632491073325,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-08-31,7283810.0,117336669.999,0.06207616084606864,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-09-30,7820514.0,117741190.4365,0.06642122413581122,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-10-31,8095010.0,118156445.874,0.06851094699168914,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-11-30,8452034.0,118555173.1865,0.07129198813369404,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2021-12-31,8840370.0,118971402.999,0.07430668023705081,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2022-01-31,9272034.0,119392331.749,0.07766021371868935,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2022-02-28,9657330.0,119772046.124,0.0806309177518915,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2022-03-31,10999874.0,120191606.124,0.09151948588366132,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2022-04-30,12078114.0,120594563.1865,0.10015471411693035,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2022-05-31,12737925.0,121000068.4365,0.10527204789710326,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
