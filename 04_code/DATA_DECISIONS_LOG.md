@@ -666,3 +666,136 @@ asset-months are 2-channel (the 6 vote-escrow tokens), the rest 1-channel. λ is
 (e.g. use the raw staking/locking ratio as the level where Channel 1 exists, and treat the
 z-scored multi-channel index as the cross-sectional conviction *ranking* the hypotheses
 actually test). Flagged for the Phase 2/4 kickoff.
+
+### Entry 28 — Phase 1 close-out scope and Phase 2 kickoff direction (Cowork review, pre-build)
+**Date:** 2026-06-23
+**Spec section affected:** 3 (λ channels, finishing touches), 4 (NVT_GL), 7 (phasing)
+**Asset(s)/period affected:** n/a (session-scoping decision, not a data change itself)
+**What the spec wanted:** a written coverage report at the end of each phase before
+scope is adjusted (§7) — Phase 1's own report (§7) left several open items needing a
+human call before Phase 2 should start.
+**What was actually available:** three open items from `PHASE1_COVERAGE_REPORT.md` §7
+needed a decision: (1) whether to finish Phase 1 loose ends before or in parallel with
+Phase 2 — NVT_GL doesn't depend on λ density, so it isn't a hard blocker either way;
+(2) whether to procure a paid source (Glassnode/CoinMetrics/Artemis) for Channel 2
+(coin-age) now; (3) how to handle ETH's post-Shapella cumulative-vs-net staking question
+when resuming the staking series.
+**Decision made:** (1) one combined Claude Code session does Phase 1 finishing touches
+(finish ETH series, confirm N=250, revisit the 16 gray-zone names with real lock data,
+reconcile the report's internal asset-month/asset-count inconsistency) followed
+immediately by Phase 2 (NVT_GL) in the same session — see
+`04_code/CLAUDE_CODE_PHASE2_KICKOFF_PROMPT.md`. (2) Channel 2: explore a free workaround
+first (check live whether any BTC-chain explorer exposes a usable UTXO-age/"coins last
+moved" metric) before considering any paid source; if nothing free and credible turns up,
+the gap stays documented and the paid-source question stays open for a later call.
+(3) ETH staking: keep the cumulative-deposit method as-is when resuming the series — do
+NOT add post-Shapella withdrawal netting this pass, since that needs a new
+consensus-layer data source (new scope, not a finishing touch); keep it documented as a
+monotone upper-envelope proxy per Entry 23.
+**Rationale:** NVT_GL's inputs (MC, PQ, g, r_e) are independent of λ, so gating Phase 2
+on λ density would cost time without a real dependency. The Channel 2 paid-source
+question is a real cost decision and shouldn't be made by inertia — checking a free
+option first costs nothing and may partially close the gap. The ETH netting question
+would expand this session's scope into a new data source for a one-line accuracy
+improvement on an already-flagged, already-documented caveat — not worth doing before
+the series is even fully resumed.
+**Downstream impact:** if the free BTC coin-age check in Part A succeeds, it should be
+generalized to other major pre-2020 coins before the paid-source question is revisited.
+If ETH's post-Shapella overstatement turns out to matter materially to a result later,
+the netting question returns as a Phase 3/4 item once a consensus-layer source is
+identified.
+
+### Entry 29 — Phase 1 close-out: ETH series finished, numbers reconciled, Channel 2 BTC re-checked, N=250 confirmed, gray-zone revisited
+**Date:** 2026-06-24
+**Spec section affected:** 3 (λ channels — finishing touches), 2.1 (universe size), 2.3 (classification), 7 (per-phase coverage report)
+**Asset(s)/period affected:** ETH staking series; the λ index headline counts; the 16 gray-zone names; BTC (coin-age source audit)
+**What the spec wanted:** Phase 1's coverage report (§7) left five open items requiring a human call before Phase 2; Entry 28 scoped them into this combined session. This entry records how each was resolved.
+**What was actually available / what was done:**
+
+1. **ETH staking series — FINISHED.** Re-ran `phase1_channel1_eth_staking.py` to completion
+   via its monthly checkpoints (`03_data/raw/phase1_onchain/eth_staking_monthly.json`). Full
+   series is now **66 month-ends, 2020-12 → 2026-05**, cumulative deposited ETH rising from
+   2.17M (ratio 0.019) to 86.16M (ratio 0.714). The cumulative-deposit method was kept
+   **as-is** — post-Shapella withdrawal netting was deliberately NOT added (it needs a
+   consensus-layer/beacon source = new scope, not a finishing touch; Entry 28). Still
+   documented as a **monotone upper-envelope conviction proxy, not a net-stake figure**
+   (the >0.45 ratios in 2025–26 are the documented overstatement; `note` column carries it).
+
+2. **Channel 2 (coin-age) — free BTC workaround checked live (2026-06-24), still a gap.**
+   Before leaving Entry 24's conclusion in place, probed free Bitcoin explorers specifically:
+   - **mempool.space / blockstream.info (Esplora):** no aggregate coin-age / HODL / CDD
+     metric — only per-tx/address/UTXO data (reconstructing coin-age from them = the full
+     UTXO-set indexing Entry 24 ruled out).
+   - **blockchair `/stats`:** free/keyless and carries `cdd_24h` + `hodling_addresses`, but
+     only as a **current 24h snapshot**; historical CDD chart data is not on a free/keyless
+     endpoint (404 / 401 + bot-protection).
+   - **bitcoin-data.com / bgeometrics (`/v1/cdd`, `/v1/ancient-supply`, dormancy, HODL
+     waves):** a genuine free, keyless coin-age API — the closest usable thing found — BUT
+     (i) free tier serves only a **trailing ~4 years** (2022-06→present; 1,458 daily records),
+     so it cannot reach the **pre-2020 depth that is the whole point**; (ii) hard rate limit
+     **10 requests/hour** (`RATE_LIMIT_HOUR_EXCEEDED`); (iii) full history is paywalled — i.e.
+     the same paid-aggregator category Entry 24 flagged, with only a shallow free slice.
+   Nothing free *and* credible *and* panel-usable turned up, so the breadth check on
+   LTC/XRP/DOGE was not pursued (depth + rate caps disqualify the approach first; XRP/DOGE
+   aren't UTXO-CDD chains anyway). **No paid source procured — decision deferred (Entry 28).**
+
+3. **N=250 — confirmed, no change.** Per the report's own §7 point 5: λ density is
+   governance-token-driven, and tightening (or widening) the universe would not close the
+   coin-side gap, which is a **source problem (no free coin-age / non-EVM staking data), not
+   a universe-size problem**. The N=250 rank screen stays as set in Phase 0 (Entries 7, 15).
+   Stated explicitly on record per the directive; no code change.
+
+4. **16 gray-zone names — revisited with real lock data, all stay `other`.** The only
+   Channel-1 lock series built (Entry 26) are the 6 curated escrows (CRV/CVX/FXS/SUSHI/AAVE/
+   YFI) — **none of the 16 gray-zone names is among them**, so no security-staking lock series
+   exists for any of them. Checked each against the actual channel data:
+   - **OP, MNT, RPL, SSV** — have a Snapshot **voting** space (so they DO appear in λ as
+     `other`, voting-only: SSV 31, RPL 28, MNT 10, OP 7 asset-months) but **no security lock**.
+     OP/MNT are L2 gas+governance (security leans on Ethereum); RPL is a node-operator
+     *collateral* bond (like SNX's excluded C-ratio system, Entry 26), SSV an operator bond
+     for distributed-validator infra — neither is chain-security staking. Governance ≠ a coin
+     security lock and ≠ a clean vote-escrow token → stay `other`.
+   - **MANTA, IMX** — L2; staking exists but security leans on Ethereum; no lock series, no
+     voting → `other`.
+   - **ANKR, STRD** — liquid-staking protocol/appchain tokens (Entry 8 keeps the LST sector
+     out of the coin/token cut); STRD is non-EVM (Cosmos), unreachable with the EVM key
+     (Entry 21); no lock series, no voting → `other`.
+   - **EWT** (PoA, weak seigniorage), **GBYTE** (DAG, historically no staking reward),
+     **FCT** (entry-credit, no security-staking reward) → `other`.
+   - **BLUR, LOOKS, ME** (NFT-marketplace governance/incentive tokens) → `other`.
+   - **PNK** (Kleros juror work/fee-share stake — not network security; no lock series) →
+     `other`, still "pending review" as in Entry 18. **PTS** (obscure symbol-collision,
+     likely the mineable ProtoShares but low-confidence) → `other`.
+   **Net: zero reclassifications;** `classification_table.csv` is unchanged, so λ assembly was
+   not re-run on account of this item. Evidence is unchanged from Entry 18, exactly as the
+   report §7.4 anticipated.
+
+5. **Report internal inconsistency — reconciled.** `PHASE1_COVERAGE_REPORT.md` §5 had
+   previously shown **1,326 asset-months / 52 assets** while §8 and Entry 27 showed **1,308 /
+   51**. After the ETH resume the *correct, final* figures are **1,374 asset-months / 52
+   distinct assets** (2020-08 → 2026-05); the +66 over the 1,308 baseline is exactly ETH's
+   now-complete 66-month series (up from 18 partial months). Every section of the report
+   (headline, §4.1a, §5 with its n_channels table and by-year table, §6, §7, §8) was updated
+   to these numbers. Final n_channels split: 1-channel 1,121 (voting-only 924, staking-only
+   197 incl. ETH's 66) + 2-channel 253 (the 6 vote-escrow tokens) = 1,374.
+
+6. **(Optional) CMC `detail.platforms[]` identity-map enrichment — deferred.** Explicitly
+   lower-priority and "not required before Part B" per the kickoff prompt; left for a later
+   session to widen Channel 1's EVM token coverage beyond the curated 6. Not done this session.
+
+**Decision made:** resolve items 1/3/4/5 as above (finish ETH as upper-envelope; confirm
+N=250; keep all 16 gray-zone names `other`; reconcile the report to 1,374/52); keep item 2
+(Channel 2) a documented gap with the free-source audit on record and the paid-source question
+deferred; defer item 6.
+**Rationale:** these are finishing touches, not new scope — each either completes an
+already-validated build (ETH), records a confirmation the report itself asked for (N=250),
+re-examines labels against now-available evidence without inventing unsupportable ones
+(gray-zone), fixes a bookkeeping inconsistency (report), or honestly reports a live source
+audit that came up empty (Channel 2) per the spec's "flag, don't guess" principle.
+**Downstream impact (what to re-check if this changes):** if a paid coin-age source or a
+consensus-layer ETH source is later procured, items 1 (net-stake ETH) and 2 (Channel 2) both
+reopen and λ must be re-assembled. If the CMC `platforms[]` enrichment (item 6) is later run,
+re-run `phase1_build_identity_map.py` → any new curated escrows → `phase1_assemble_lambda.py`,
+and the 1,374/52 headline will move. The gray-zone names should be revisited again only if a
+security-staking lock series is actually built for one of them (e.g. RPL collateral, SSV
+operator bond) — at which point the coin/token call changes, not before.

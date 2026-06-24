@@ -63,21 +63,69 @@ cmc_id,symbol,month_end,staked_eth,circulating_supply,staking_ratio,note
 1027,ETH,2020-09-30,,113186353.4365,,PoW; no staking channel before staking_start
 1027,ETH,2020-10-31,,113238291.6865,,PoW; no staking channel before staking_start
 1027,ETH,2020-11-30,,113650451.9365,,PoW; no staking channel before staking_start
-1027,ETH,2020-12-31,2172290.0,114064005.4365,0.019044482890874147,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-01-31,2892194.0,114483295.249,0.02526302194315343,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-02-28,3328834.0,114862145.4365,0.02898112330524334,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-03-31,3626370.0,115281580.9365,0.03145662967614485,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-04-30,4078722.0,115686589.374,0.03525665353322857,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-05-31,5211586.0,116104465.3115,0.044887041906766345,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-06-30,6007938.0,116507217.874,0.051567088371275445,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-07-31,6473218.0,116919732.124,0.055364632491073325,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-08-31,7283810.0,117336669.999,0.06207616084606864,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-09-30,7820514.0,117741190.4365,0.06642122413581122,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-10-31,8095010.0,118156445.874,0.06851094699168914,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-11-30,8452034.0,118555173.1865,0.07129198813369404,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2021-12-31,8840370.0,118971402.999,0.07430668023705081,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2022-01-31,9272034.0,119392331.749,0.07766021371868935,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2022-02-28,9657330.0,119772046.124,0.0806309177518915,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2022-03-31,10999874.0,120191606.124,0.09151948588366132,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2022-04-30,12078114.0,120594563.1865,0.10015471411693035,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
-1027,ETH,2022-05-31,12737925.0,121000068.4365,0.10527204789710326,"cumulative deposit-contract ETH (overstates post-Shapella); PARTIAL series, resumable"
+1027,ETH,2020-12-31,2172290.0,114064005.4365,0.019044482890874147,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-01-31,2892194.0,114483295.249,0.02526302194315343,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-02-28,3328834.0,114862145.4365,0.02898112330524334,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-03-31,3626370.0,115281580.9365,0.03145662967614485,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-04-30,4078722.0,115686589.374,0.03525665353322857,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-05-31,5211586.0,116104465.3115,0.044887041906766345,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-06-30,6007938.0,116507217.874,0.051567088371275445,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-07-31,6473218.0,116919732.124,0.055364632491073325,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-08-31,7283810.0,117336669.999,0.06207616084606864,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-09-30,7820514.0,117741190.4365,0.06642122413581122,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-10-31,8095010.0,118156445.874,0.06851094699168914,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-11-30,8452034.0,118555173.1865,0.07129198813369404,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2021-12-31,8840370.0,118971402.999,0.07430668023705081,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-01-31,9272034.0,119392331.749,0.07766021371868935,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-02-28,9657330.0,119772046.124,0.0806309177518915,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-03-31,10999874.0,120191606.124,0.09151948588366132,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-04-30,12078114.0,120594563.1865,0.10015471411693035,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-05-31,12737925.0,121000068.4365,0.10527204789710326,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-06-30,12984757.0,121358999.6865,0.1069945948264472,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-07-31,13188757.0,121777944.5615,0.10830168835161647,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-08-31,13478475.0,122189245.374,0.11030819413561918,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-09-30,14081415.0,122597175.499,0.11485921223458251,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-10-31,14683719.0,122373863.499,0.11999064653311359,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-11-30,15452391.0,122373866.2178,0.12627198500452672,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2022-12-31,15855287.0,122373866.2178,0.12956432194256975,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-01-31,16379271.0,122373866.2178,0.1338461511941472,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-02-28,17407687.0,122373866.2178,0.14225003702194014,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-03-31,18013527.0,120334907.6593273,0.1496949418118721,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-04-30,19685964.0,120396526.98317324,0.16350940092110244,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-05-31,23513462.0,120248574.240827,0.1955404639801265,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-06-30,25892930.0,120220157.4747598,0.215379272027956,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-07-31,27658989.0,120178495.4491686,0.23014923673843804,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-08-31,29242388.0,120215701.19319096,0.24324932358882498,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-09-30,30484563.0,120237298.63555016,0.253536659139369,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-10-31,31967780.0,120269517.01431598,0.265801183821124,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-11-30,33700216.0,120240235.58671872,0.28027403502295195,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2023-12-31,35491423.0,120183097.25518528,0.295311269309701,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-01-31,37540628.0,120182539.29787108,0.3123634116845873,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-02-29,40319273.0,120147088.495808,0.3355826054944874,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-03-31,42620997.0,120070566.1839736,0.3549662365603872,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-04-30,44247389.0,122056395.21775667,0.36251594126681963,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-05-31,45515230.0,120140782.20078264,0.378849123222235,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-06-30,47050241.0,120187117.99202669,0.39147490834351606,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-07-31,48850559.0,120249499.96763577,0.40624334415650587,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-08-31,50083020.0,120303365.0220988,0.41630606085540617,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-09-30,51123712.0,120367966.81148952,0.42472854991449494,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-10-31,52680884.0,120407556.52332368,0.43752141079115237,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-11-30,53977617.0,120439501.8582194,0.44817203797091504,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2024-12-31,55320479.868,120472682.07030922,0.45919522100217164,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-01-31,56672599.868,120518600.16811652,0.4702394467654369,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-02-28,57762098.868,120580717.0817573,0.47903263694173903,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-03-31,59462918.868,120657000.54175286,0.49282609878424005,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-04-30,60744757.6823,120730454.54311918,0.5031436178400609,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-05-31,62292620.58701015,120723843.90111604,0.515992686896497,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-06-30,64035193.32587321,120717794.05904733,0.5304536404513103,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-07-31,65742018.36842245,120710195.79522516,0.5446268886842693,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-08-31,68035466.18044402,120706584.06165758,0.5636433729720256,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-09-30,69222573.82566984,120703250.5285526,0.5734938663420261,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-10-31,72351475.47475272,120697955.57826006,0.5994424274058257,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-11-30,73225803.11076842,120695503.2421454,0.6066986850691457,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2025-12-31,75224997.01091975,120694902.97829127,0.623265731647757,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2026-01-31,80141141.79877195,120693814.879476,0.6640037178276313,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2026-02-28,81205019.09117922,120692230.13568255,0.6728272317106768,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2026-03-31,82457739.14723729,120691362.3964843,0.6832116028018195,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2026-04-30,84711559.98961763,120687572.66307002,0.7019078942461743,cumulative deposit-contract ETH (overstates post-Shapella)
+1027,ETH,2026-05-31,86156065.95111494,120685209.65949558,0.7138908420857695,cumulative deposit-contract ETH (overstates post-Shapella)
