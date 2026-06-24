@@ -799,3 +799,62 @@ re-run `phase1_build_identity_map.py` → any new curated escrows → `phase1_as
 and the 1,374/52 headline will move. The gray-zone names should be revisited again only if a
 security-staking lock series is actually built for one of them (e.g. RPL collateral, SSV
 operator bond) — at which point the coin/token call changes, not before.
+
+### Entry 30 — PQ definition (NVT_GL): fees rejected on theoretical grounds, not just feasibility; corrected to sector-appropriate transacted value
+**Date:** 2026-06-24
+**Spec section affected:** 4, 4.1 (NVT_GL — PQ definition)
+**Asset(s)/period affected:** n/a (methodological decision; applies to every coin and token going into Phase 2's PQ series)
+**What the spec wanted:** §4.1 lists "on-chain transaction (transfer) volume" for coins and
+"protocol throughput (DEX volume, total fees, or active-user counts)" for tokens — fees named
+as one acceptable option among several, not a preferred one.
+**What was actually available:** `PHASE2_PQ_DECISION_STATUS.md` (session 010) recommended
+**fees** (DeFiLlama protocol/chain fees) as the working PQ proxy for both coins and tokens, on
+feasibility grounds (free, keyless, deep history) — the human had proposed **TVL** as an
+alternative for tokens. An initial Cowork-side literature check (Artemis Analytics, Token
+Terminal, DeFiLlama definitions of "economic activity") read as support for fees over TVL,
+since all three keep TVL as a metric separate from their "economic activity"/fees framing.
+**Decision made:** Reject fees as PQ — not on feasibility grounds, on theoretical ones. PQ in
+this paper's own M·V = P·Q identity is **nominal GDP**: the dollar value of goods/services
+exchanged, a flow. Fees are the **cost** of facilitating that exchange (a discretionary,
+governance-set rate — fee-switch votes, fee-tier choices), not the value of what was
+exchanged — structurally identical to treating a government's tax revenue as a proxy for
+GDP. (Re-read literally, even DeFiLlama's own description — fees "show how much the protocol
+is *facilitating* in economic activity" — supports this correction: a toll booth facilitates
+billions in freight without its toll revenue measuring that freight's value. The initial
+literature check above read "facilitating" as "measuring"; that was an error, not a difference
+of opinion.) TVL is also rejected as PQ, on the reasoning already on record (stock, not flow)
+but reframed more precisely: TVL is the **capital stock** that enables activity — an AMM's
+pooled inventory, a lending pool's loanable funds, a staking protocol's AUM — i.e. the K in a
+production function, not the output Y. A high-TVL pool with zero trading produces zero
+realized economic activity that period.
+
+The corrected PQ definition is **transacted value**: the dollar value of what actually moved
+through the contract — swap/DEX volume for AMMs, loan-origination/borrow flow for lending,
+notional volume for derivatives — **sector-appropriate**, using the project's own `sector`
+field (Entry 16) to route to the right flow per protocol type, rather than forcing one
+universal proxy (this also resolves the "DEX volume doesn't generalize past DEX-type tokens"
+objection). This is, not coincidentally, what the *original* NVT ratio (Willy Woo's Bitcoin
+metric, this paper's direct namesake) used on the coin side: on-chain transaction *value*,
+never fees. TVL and fees are both **retained as secondary diagnostic columns** (capital-stock
+control; cost-of-intermediation/take-rate), plus a new **Volume/TVL turnover diagnostic** — a
+protocol-level restatement of M·V=PQ with TVL standing in for M.
+
+This correction is not yet fully implementable: whether true on-chain transfer/swap volume
+can be built at panel scale on the free Etherscan key (vs. falling back to DeFiLlama's
+reported volume series) is an open empirical question, addressed by the pilot in Entry 31 /
+`04_code/CLAUDE_CODE_PHASE2_PQ_PILOT_PROMPT.md`.
+**Rationale:** PQ is an accounting identity (P times Q), not a modeling choice — substituting
+a cost/toll variable for it embeds the protocol's own discretionary pricing policy into the
+paper's dependent variable, contaminating it for reasons unrelated to actual usage. The
+tax-revenue/GDP disanalogy and the capital-stock/production-function framing of TVL both come
+directly from re-deriving PQ from the paper's own theoretical namesake (the quantity theory of
+money) rather than from how aggregators happen to label their dashboards. Full discussion in
+`06_documentation/ai_conversations/session_011_2026-06-24_pq_theory.md`.
+**Downstream impact:** Supersedes the "(A) fees `[RECOMMENDED]`" lines for both Decision 1 and
+Decision 2 in `PHASE2_PQ_DECISION_STATUS.md` §3–4. `phase2_pq.py` should NOT be built on fees.
+Whether it is built on true Etherscan-derived transfer/swap volume or on DeFiLlama's reported
+volume series (with TVL/fees as side columns either way) depends on the pilot's findings
+(Entry 31, once logged). If the pilot finds raw-Transfer-log volume infeasible at panel scale,
+DeFiLlama's reported DEX/perps volume becomes the working source and the noise-multiplier
+estimate from the pilot should be carried into the paper's methodology section as a documented
+limitation (spec §6, the classic NVT wash-trading caveat).
