@@ -1,0 +1,796 @@
+cmc_id,symbol,dl_slug,dl_category,month_end,pq_usd,pq_source,note
+8104,1INCH,1inch,DEX Aggregator,2021-01-31,1706836273.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-02-28,3277935915.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-03-31,626956222.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-04-30,550914921.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-05-31,437760812.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-06-30,59271682.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-07-31,25039335.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-08-31,45427406.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-09-30,33341463.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-10-31,62527027.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-11-30,27182311.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2021-12-31,29567944.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2022-01-31,18924491.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2022-02-28,8289131.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2022-03-31,9331667.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2022-04-30,6876342.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2022-05-31,8201239.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2022-06-30,4360520.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2022-07-31,5843123.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2022-08-31,3609814.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2023-12-31,6570656052.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-01-31,6861429296.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-02-29,6682310645.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-03-31,11620970542.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-04-30,13238502706.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-05-31,10514797605.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-06-30,9298694477.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-07-31,8924471842.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-08-31,6310617485.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-09-30,6030427275.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-10-31,6792672921.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-11-30,11654506300.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2024-12-31,13935927206.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-01-31,11153099725.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-02-28,10004270423.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-03-31,8067953598.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-04-30,7790277976.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-05-31,10664471036.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-06-30,8665326941.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-07-31,9178409141.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-08-31,12418291771.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-09-30,12885488337.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-10-31,13140697956.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-11-30,8466231836.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2025-12-31,5824816446.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2026-01-31,5475725795.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2026-02-28,4417295022.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2026-03-31,4198288959.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2026-04-30,2899382294.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2026-05-31,4010948964.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+8104,1INCH,1inch,DEX Aggregator,2026-06-30,2386057994.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+7278,AAVE,aave-v2,Lending,,,NaN:no_transacted_value_object,category 'Lending' has no DeFiLlama transacted-value volume series
+6756,ACA,acala,Canonical Bridge,,,NaN:no_transacted_value_object,category 'Canonical Bridge' has no DeFiLlama transacted-value volume series
+24796,ADF,artdefinance,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+4134,AKRO,akropolis,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+8766,ALICE,my-neighbor-alice,Services,,,NaN:no_transacted_value_object,category 'Services' has no DeFiLlama transacted-value volume series
+7232,ALPHA,stella,Leveraged Farming,,,NaN:no_transacted_value_object,category 'Leveraged Farming' has no DeFiLlama transacted-value volume series
+6945,AMP,flexa,Payments,,,NaN:no_transacted_value_object,category 'Payments' has no DeFiLlama transacted-value volume series
+8857,ANC,anchor,Lending,,,NaN:no_transacted_value_object,category 'Lending' has no DeFiLlama transacted-value volume series
+1680,ANT,aragon,Services,,,NaN:no_transacted_value_object,category 'Services' has no DeFiLlama transacted-value volume series
+18876,APE,apecoin,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+7737,API3,api3,Risk Curators,,,NaN:no_transacted_value_object,category 'Risk Curators' has no DeFiLlama transacted-value volume series
+11841,ARB,arbitrum,Canonical Bridge,,,NaN:no_transacted_value_object,category 'Canonical Bridge' has no DeFiLlama transacted-value volume series
+27565,ARKM,arkham,Services,,,NaN:no_transacted_value_object,category 'Services' has no DeFiLlama transacted-value volume series
+2058,AST,airswap,DEX Aggregator,2023-04-30,157879036.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2023-05-31,76802407.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2023-06-30,66197903.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2023-07-31,33343139.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2023-08-31,24654227.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2023-09-30,37258878.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2023-10-31,72329880.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2023-11-30,65507400.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2023-12-31,76039468.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-01-31,78933435.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-02-29,19935089.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-03-31,75445293.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-04-30,47616920.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-05-31,53823906.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-06-30,42616718.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-07-31,39640006.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-08-31,42461173.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-09-30,22434473.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-10-31,3083900.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-11-30,6109625.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2024-12-31,8331747.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-01-31,4995383.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-02-28,1779015.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-03-31,2190649.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-04-30,1129963.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-05-31,1330826.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-06-30,580850.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-07-31,858340.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-08-31,528583.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-09-30,7406237.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-10-31,0.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-11-30,0.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2025-12-31,0.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2026-01-31,0.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2026-02-28,0.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2026-03-31,0.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2026-04-30,0.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2026-05-31,0.0,defillama_dexs,
+2058,AST,airswap,DEX Aggregator,2026-06-30,0.0,defillama_dexs,
+30083,ATH,aethir,Developer Tools,,,NaN:no_transacted_value_object,category 'Developer Tools' has no DeFiLlama transacted-value volume series
+8602,AUCTION,bounce-finance,Launchpad,,,NaN:no_transacted_value_object,category 'Launchpad' has no DeFiLlama transacted-value volume series
+14803,AURORA,aurora-plus,Farm,,,NaN:no_transacted_value_object,category 'Farm' has no DeFiLlama transacted-value volume series
+38299,AVNT,avantis,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+6783,AXS,axie-infinity,Gaming,,,NaN:no_transacted_value_object,category 'Gaming' has no DeFiLlama transacted-value volume series
+7859,BADGER,badger-dao,Yield Aggregator,,,NaN:no_transacted_value_object,category 'Yield Aggregator' has no DeFiLlama transacted-value volume series
+7064,BAKE,bakeryswap,Dexs,,,NaN:slug_absent_from_volume_dimension,category 'Dexs' but slug 'bakeryswap' not in volume dimension overview
+28298,BEAM,beam,Chain,,,NaN:no_transacted_value_object,category 'Chain' has no DeFiLlama transacted-value volume series
+9543,BICO,hyphen,Bridge,,,NaN:no_transacted_value_object,category 'Bridge' has no DeFiLlama transacted-value volume series
+34812,BIO,bio-protocol,Launchpad,,,NaN:no_transacted_value_object,category 'Launchpad' has no DeFiLlama transacted-value volume series
+2933,BMX,bitmart,CEX,,,NaN:no_transacted_value_object,category 'CEX' has no DeFiLlama transacted-value volume series
+11079,BRISE,bitgert,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+8891,BTCST,btcst,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+5810,BZRX,ooki,Lending,,,NaN:no_transacted_value_object,category 'Lending' has no DeFiLlama transacted-value volume series
+10903,C98,coin98,Farm,,,NaN:no_transacted_value_object,category 'Farm' has no DeFiLlama transacted-value volume series
+1573,CASINO,defyswap,Dexs,,,NaN:slug_absent_from_volume_dimension,category 'Dexs' but slug 'defyswap' not in volume dimension overview
+3814,CELR,cbridge,Bridge,,,NaN:no_transacted_value_object,category 'Bridge' has no DeFiLlama transacted-value volume series
+23054,CHEEL,cheelee,Farm,,,NaN:no_transacted_value_object,category 'Farm' has no DeFiLlama transacted-value volume series
+7242,CORE,cvault-finance,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+19269,COW,cowswap,DEX Aggregator,2023-12-31,937971232.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-01-31,1791480472.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-02-29,1758241387.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-03-31,3490855409.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-04-30,2397929163.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-05-31,2471866802.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-06-30,2229654791.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-07-31,2720474732.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-08-31,3058801004.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-09-30,2729049366.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-10-31,3676218265.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-11-30,6248097836.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2024-12-31,8062621312.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-01-31,8048094007.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-02-28,7505211111.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-03-31,9436029170.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-04-30,6965553043.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-05-31,7251723696.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-06-30,6169114284.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-07-31,10086957720.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-08-31,12734767256.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-09-30,12690133277.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-10-31,12008021052.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-11-30,10786897094.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2025-12-31,4863951260.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2026-01-31,4725601697.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2026-02-28,5240671694.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2026-03-31,4184146876.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2026-04-30,4029266294.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2026-05-31,2701216388.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+19269,COW,cowswap,DEX Aggregator,2026-06-30,2891205628.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+9903,CVX,convex-finance,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+24781,CYBER,cyberconnect,SoFi,,,NaN:no_transacted_value_object,category 'SoFi' has no DeFiLlama transacted-value volume series
+7228,DDX,derivadex,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+30494,EIGEN,eigencloud,Restaking,,,NaN:no_transacted_value_object,category 'Restaking' has no DeFiLlama transacted-value volume series
+13855,ENS,ens,Domains,,,NaN:no_transacted_value_object,category 'Domains' has no DeFiLlama transacted-value volume series
+8615,EPIC,ethernity-chain,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+8938,EPS,ellipsis-finance,Dexs,2022-09-30,5693182.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2022-10-31,45604168.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2022-11-30,121989153.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2022-12-31,40294556.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-01-31,21024905.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-02-28,21682579.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-03-31,54330752.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-04-30,13070983.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-05-31,6375064.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-06-30,13029111.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-07-31,3498621.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-08-31,2094465.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-09-30,1414281.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-10-31,1667893.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-11-30,1349988.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2023-12-31,2985065.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-01-31,2727390.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-02-29,3242090.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-03-31,8559525.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-04-30,5016891.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-05-31,2328506.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-06-30,2835898.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-07-31,2357319.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-08-31,2699768.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-09-30,770549.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-10-31,1234318.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-11-30,3056512.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2024-12-31,3346754.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-01-31,1472072.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-02-28,3240758.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-03-31,1431514.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-04-30,610984.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-05-31,335032.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-06-30,387975.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-07-31,2728088.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-08-31,3873313.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-09-30,19744186.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-10-31,3251308.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-11-30,844591.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2025-12-31,682391.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2026-01-31,909612.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2026-02-28,889942.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2026-03-31,1377405.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2026-04-30,2974436.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2026-05-31,5289678.0,defillama_dexs,
+8938,EPS,ellipsis-finance,Dexs,2026-06-30,660265.0,defillama_dexs,
+6859,FARM,harvest-finance,Yield Aggregator,,,NaN:no_transacted_value_object,category 'Yield Aggregator' has no DeFiLlama transacted-value volume series
+5190,FLEX,coinflex,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+10804,FLOKI,flokifi-locker,Token Locker,,,NaN:no_transacted_value_object,category 'Token Locker' has no DeFiLlama transacted-value volume series
+9421,FORTH,forth-dao,Services,,,NaN:no_transacted_value_object,category 'Services' has no DeFiLlama transacted-value volume series
+13663,GNS,gains-network,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+6719,GRT,the-graph,Developer Tools,,,NaN:no_transacted_value_object,category 'Developer Tools' has no DeFiLlama transacted-value volume series
+10052,GTC,gitcoin,Charity Fundraising,,,NaN:no_transacted_value_object,category 'Charity Fundraising' has no DeFiLlama transacted-value volume series
+6622,HAKKA,hakka-finance,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+6929,HEGIC,hegic,Options,2022-10-31,4151848.0,defillama_options,
+6929,HEGIC,hegic,Options,2022-11-30,14718709.0,defillama_options,
+6929,HEGIC,hegic,Options,2022-12-31,15507023.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-01-31,29617571.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-02-28,20155833.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-03-31,19678606.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-04-30,21881310.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-05-31,14395667.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-06-30,8610157.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-07-31,5591364.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-08-31,6948283.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-09-30,5076641.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-10-31,11026935.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-11-30,9178467.0,defillama_options,
+6929,HEGIC,hegic,Options,2023-12-31,14683645.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-01-31,10214868.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-02-29,11410561.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-03-31,13546666.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-04-30,14459818.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-05-31,18107376.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-06-30,13809346.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-07-31,3068557.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-08-31,2630124.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-09-30,638844.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-10-31,1641793.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-11-30,3425270.0,defillama_options,
+6929,HEGIC,hegic,Options,2024-12-31,6825137.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-01-31,3215236.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-02-28,2655124.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-03-31,3261438.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-04-30,2207878.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-05-31,4623870.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-06-30,3251220.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-07-31,1643995.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-08-31,4123589.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-09-30,3693438.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-10-31,4427490.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-11-30,4530578.0,defillama_options,
+6929,HEGIC,hegic,Options,2025-12-31,1464107.0,defillama_options,
+6929,HEGIC,hegic,Options,2026-01-31,6745574.0,defillama_options,
+6929,HEGIC,hegic,Options,2026-02-28,6027605.0,defillama_options,
+6929,HEGIC,hegic,Options,2026-03-31,7485445.0,defillama_options,
+6929,HEGIC,hegic,Options,2026-04-30,5108352.0,defillama_options,
+6929,HEGIC,hegic,Options,2026-05-31,1442931.0,defillama_options,
+6929,HEGIC,hegic,Options,2026-06-30,7362.0,defillama_options,
+5015,HEX,hex,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+22461,HFT,hashflow,DEX Aggregator,2022-08-31,491350676.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2022-09-30,594101226.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2022-10-31,372603797.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2022-11-30,1159077902.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2022-12-31,429811982.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-01-31,448581910.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-02-28,568206503.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-03-31,491404061.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-04-30,611620630.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-05-31,533493302.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-06-30,420492867.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-07-31,453252330.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-08-31,500785436.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-09-30,601748815.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-10-31,727101876.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-11-30,408733245.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2023-12-31,278527475.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-01-31,355763171.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-02-29,320580405.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-03-31,639474559.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-04-30,683841719.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-05-31,534213125.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-06-30,328286616.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-07-31,475377266.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-08-31,442160079.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-09-30,582738399.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-10-31,444510117.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-11-30,578943528.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2024-12-31,538743549.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-01-31,490962840.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-02-28,332060751.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-03-31,178042379.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-04-30,150892463.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-05-31,170767835.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-06-30,249051303.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-07-31,333723417.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-08-31,526722167.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-09-30,667378306.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-10-31,789541014.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-11-30,359554464.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2025-12-31,278990961.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2026-01-31,497483086.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2026-02-28,533955441.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2026-03-31,143006083.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2026-04-30,357591677.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2026-05-31,277361468.0,defillama_dexs,
+22461,HFT,hashflow,DEX Aggregator,2026-06-30,148801221.0,defillama_dexs,
+3748,HXRO,hxro-network,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+7726,ICHI,ichi,Liquidity Manager,,,NaN:no_transacted_value_object,category 'Liquidity Manager' has no DeFiLlama transacted-value volume series
+8719,ILV,illuvium,Gaming,,,NaN:no_transacted_value_object,category 'Gaming' has no DeFiLlama transacted-value volume series
+2930,IQ,iq,Services,,,NaN:no_transacted_value_object,category 'Services' has no DeFiLlama transacted-value volume series
+29210,JUP,jupiter-aggregator,DEX Aggregator,2022-08-31,982953104.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2022-09-30,1065570425.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2022-10-31,784817772.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2022-11-30,1528229849.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2022-12-31,345524295.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-01-31,993119793.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-02-28,585534286.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-03-31,851587549.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-04-30,557503411.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-05-31,620977084.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-06-30,837136698.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-07-31,1087412988.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-08-31,688516278.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-09-30,474467338.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-10-31,895032994.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-11-30,3702428265.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2023-12-31,16378453011.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-01-31,16049131045.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-02-29,13745038026.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-03-31,47585746168.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-04-30,35108544307.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-05-31,28172601127.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-06-30,28240009172.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-07-31,12199158660.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-08-31,9838128732.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-09-30,8386076617.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-10-31,26609632802.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-11-30,93323603683.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2024-12-31,89686035843.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-01-31,183718828867.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-02-28,99584540929.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-03-31,60980052406.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-04-30,47095078293.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-05-31,62460737204.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-06-30,29663095929.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-07-31,31046361891.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-08-31,25088432994.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-09-30,19503287262.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-10-31,37410694626.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-11-30,47403911969.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2025-12-31,46914851609.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2026-01-31,32259924047.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2026-02-28,27432736688.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2026-03-31,13708111523.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2026-04-30,6095296105.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2026-05-31,8191129001.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+29210,JUP,jupiter-aggregator,DEX Aggregator,2026-06-30,20486684776.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+35763,KAITO,kaito,Services,,,NaN:no_transacted_value_object,category 'Services' has no DeFiLlama transacted-value volume series
+5566,KEEP,keep-network,Cross Chain Bridge,,,NaN:no_transacted_value_object,category 'Cross Chain Bridge' has no DeFiLlama transacted-value volume series
+7535,KP3R,keep3r-network,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+33223,LAB,lab-terminal,Trading App,,,NaN:no_transacted_value_object,category 'Trading App' has no DeFiLlama transacted-value volume series
+8000,LDO,lido,Liquid Staking,,,NaN:no_transacted_value_object,category 'Liquid Staking' has no DeFiLlama transacted-value volume series
+24257,LGCT,legacy-network,Farm,,,NaN:no_transacted_value_object,category 'Farm' has no DeFiLlama transacted-value volume series
+37986,LIGHT,heaven,Dexs,2025-08-31,396323768.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2025-09-30,11052199.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2025-10-31,2415136.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2025-11-30,1655301.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2025-12-31,84961.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2026-01-31,109641.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2026-02-28,42829.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2026-03-31,430512.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2026-04-30,90213.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2026-05-31,39798.0,defillama_dexs,
+37986,LIGHT,heaven,Dexs,2026-06-30,17230.0,defillama_dexs,
+7102,LINA,linear-finance,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+1934,LRC,loopring,Dexs,,,NaN:slug_absent_from_volume_dimension,category 'Dexs' but slug 'loopring' not in volume dimension overview
+14783,MAGIC,treasure,Gaming,,,NaN:no_transacted_value_object,category 'Gaming' has no DeFiLlama transacted-value volume series
+9175,MBOX,mobox,Gaming,,,NaN:no_transacted_value_object,category 'Gaming' has no DeFiLlama transacted-value volume series
+13523,MC,merit-circle,Launchpad,,,NaN:no_transacted_value_object,category 'Launchpad' has no DeFiLlama transacted-value volume series
+8335,MDX,mdex,Dexs,2021-11-30,118800529.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2021-12-31,910031152.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-01-31,698586474.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-02-28,468263751.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-03-31,240453040.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-04-30,162163231.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-05-31,297666574.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-06-30,156401100.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-07-31,103399943.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-08-31,65462207.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-09-30,51974586.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-10-31,142167646.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-11-30,191529130.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2022-12-31,45240771.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-01-31,63831386.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-02-28,48979613.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-03-31,53277351.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-04-30,29630599.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-05-31,17383510.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-06-30,24072652.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-07-31,14424760.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-08-31,10970236.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-09-30,9129926.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-10-31,10536705.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-11-30,15164648.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2023-12-31,20797626.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-01-31,20324009.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-02-29,4986136.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-03-31,57816879.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-04-30,43542497.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-05-31,17424457.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-06-30,18207108.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-07-31,26380116.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-08-31,27351996.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-09-30,13187478.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-10-31,7352056.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-11-30,10035639.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2024-12-31,13596728.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-01-31,6553034.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-02-28,1587392.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-03-31,1152854.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-04-30,806885.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-05-31,977658.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-06-30,517653.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-07-31,869950.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-08-31,862770.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-09-30,989416.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-10-31,2134317.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-11-30,943653.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2025-12-31,505341.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2026-01-31,436435.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2026-02-28,783197.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2026-03-31,402120.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2026-04-30,241670.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2026-05-31,2827.0,defillama_dexs,
+8335,MDX,mdex,Dexs,2026-06-30,22118.0,defillama_dexs,
+28301,MEME,memecoin,Farm,,,NaN:no_transacted_value_object,category 'Farm' has no DeFiLlama transacted-value volume series
+30712,MERL,merlins-seal,Bridge,,,NaN:no_transacted_value_object,category 'Bridge' has no DeFiLlama transacted-value volume series
+2873,MET,metronome-v1,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+7857,MIR,mirror,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+1552,MLN,enzyme-finance,Indexes,,,NaN:no_transacted_value_object,category 'Indexes' has no DeFiLlama transacted-value volume series
+21870,MPLX,metaplex,Launchpad,,,NaN:no_transacted_value_object,category 'Launchpad' has no DeFiLlama transacted-value volume series
+2982,MVL,mvl-staking,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+36410,MYX,myx-finance,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+8191,NFTX,nftx,NFT Marketplace,,,NaN:no_transacted_value_object,category 'NFT Marketplace' has no DeFiLlama transacted-value volume series
+1732,NMR,erasure,Derivatives,,,NaN:derivatives_volume_paywalled_402,DeFiLlama perps/derivatives volume dimension is paid-gated (HTTP 402); no free notional series
+5906,NVT,nerve-staking,Dexs,,,NaN:slug_absent_from_volume_dimension,category 'Dexs' but slug 'nerve-staking' not in volume dimension overview
+9067,OHM,olympus-dao,Reserve Currency,,,NaN:no_transacted_value_object,category 'Reserve Currency' has no DeFiLlama transacted-value volume series
+6536,OM,mantra-dao,Lending,,,NaN:no_transacted_value_object,category 'Lending' has no DeFiLlama transacted-value volume series
+7230,OPIUM,opium,Options,,,NaN:slug_absent_from_volume_dimension,category 'Options' but slug 'opium' not in volume dimension overview
+3835,ORBS,orbs,Farm,,,NaN:no_transacted_value_object,category 'Farm' has no DeFiLlama transacted-value volume series
+5631,ORN,dedust,Dexs,2024-07-31,134655941.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2024-08-31,834531436.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2024-09-30,344713064.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2024-10-31,240946283.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2024-11-30,472506587.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2024-12-31,414870264.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-01-31,212085309.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-02-28,100286020.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-03-31,67722302.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-04-30,33491037.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-05-31,26600313.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-06-30,29760786.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-07-31,23334496.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-08-31,44082778.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-09-30,18785611.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-10-31,29658287.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-11-30,32051701.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2025-12-31,24154090.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2026-01-31,14183870.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2026-02-28,13575313.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2026-03-31,9901263.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2026-04-30,662110.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2026-05-31,13066254.0,defillama_dexs,
+5631,ORN,dedust,Dexs,2026-06-30,23069558.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2021-06-30,65673306.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2021-07-31,124331534.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2021-08-31,187195061.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2021-09-30,400480610.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2021-10-31,644350530.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2021-11-30,1111527739.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2021-12-31,1447761905.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-01-31,3370821865.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-02-28,2677613366.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-03-31,3283799540.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-04-30,1993345111.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-05-31,2216239150.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-06-30,392159162.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-07-31,354918080.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-08-31,426148435.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-09-30,551503478.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-10-31,454674974.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-11-30,450104821.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2022-12-31,229140583.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-01-31,369134651.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-02-28,398101461.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-03-31,374535995.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-04-30,244631022.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-05-31,208686752.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-06-30,195824772.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-07-31,163772765.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-08-31,208587379.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-09-30,166436455.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-10-31,229916549.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-11-30,489541193.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2023-12-31,1120885202.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-01-31,1237209098.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-02-29,1601441145.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-03-31,1934183842.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-04-30,1154671484.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-05-31,698802350.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-06-30,608975961.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-07-31,590012445.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-08-31,570022575.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-09-30,426894799.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-10-31,467097749.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-11-30,873765080.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2024-12-31,931666767.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-01-31,763990096.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-02-28,733357818.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-03-31,584249005.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-04-30,475666384.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-05-31,462660328.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-06-30,271982773.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-07-31,322501886.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-08-31,339290927.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-09-30,217487556.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-10-31,494783572.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-11-30,337151027.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2025-12-31,162958496.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2026-01-31,143824572.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2026-02-28,146875417.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2026-03-31,102527526.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2026-04-30,72297240.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2026-05-31,132401201.0,defillama_dexs,
+12220,OSMO,osmosis-dex,Dexs,2026-06-30,69714187.0,defillama_dexs,
+5354,PEAK,peakdefi,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+9481,PENDLE,pendle,Yield,2024-06-30,164452475.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2024-07-31,746794156.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2024-08-31,861876524.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2024-09-30,1010138499.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2024-10-31,1683381452.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2024-11-30,2277287226.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2024-12-31,4389895405.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-01-31,3404344263.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-02-28,2092416830.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-03-31,2756617258.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-04-30,2137780062.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-05-31,3643497229.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-06-30,1802263368.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-07-31,4286253240.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-08-31,5190352947.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-09-30,8170792384.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-10-31,3753362208.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-11-30,2380663956.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2025-12-31,953516102.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2026-01-31,788175165.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2026-02-28,645509011.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2026-03-31,467427984.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2026-04-30,633724396.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2026-05-31,913843437.0,defillama_dexs,
+9481,PENDLE,pendle,Yield,2026-06-30,647772296.0,defillama_dexs,
+5794,PNT,pnetwork,Bridge,,,NaN:no_transacted_value_object,category 'Bridge' has no DeFiLlama transacted-value volume series
+23711,PRIME,echelon-prime,Gaming,,,NaN:no_transacted_value_object,category 'Gaming' has no DeFiLlama transacted-value volume series
+2539,REN,renvm,Bridge,,,NaN:no_transacted_value_object,category 'Bridge' has no DeFiLlama transacted-value volume series
+1104,REP,augur,Prediction Market,,,NaN:no_transacted_value_object,category 'Prediction Market' has no DeFiLlama transacted-value volume series
+7654,RFOX,rfox,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+7486,RGT,rari-capital,Yield Aggregator,,,NaN:no_transacted_value_object,category 'Yield Aggregator' has no DeFiLlama transacted-value volume series
+4157,RUNE,thorchain-dex,Dexs,2021-04-30,33737847.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2021-05-31,260984298.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2021-06-30,417691089.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2021-07-31,145403894.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2021-08-31,0.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2021-09-30,68718415.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2021-10-31,435863810.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2021-11-30,668638809.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2021-12-31,464110193.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-01-31,482943304.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-02-28,254444852.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-03-31,1588325646.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-04-30,2324601177.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-05-31,1531014568.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-06-30,973599985.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-07-31,1100244804.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-08-31,877663537.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-09-30,648419360.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-10-31,471050294.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-11-30,845393003.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2022-12-31,384991372.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-01-31,578171739.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-02-28,487575263.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-03-31,672642010.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-04-30,464642495.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-05-31,273210077.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-06-30,386019587.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-07-31,447601828.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-08-31,1086353286.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-09-30,878233813.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-10-31,2740994169.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-11-30,5212375386.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2023-12-31,4902422772.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-01-31,4850039415.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-02-29,3834123929.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-03-31,11030375301.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-04-30,5856921878.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-05-31,5102993514.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-06-30,3092111475.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-07-31,3140907707.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-08-31,3027680742.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-09-30,2067245346.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-10-31,2634587215.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-11-30,5380190011.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2024-12-31,5129077313.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-01-31,4536580890.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-02-28,5719463005.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-03-31,4693226540.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-04-30,1989142279.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-05-31,3177183425.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-06-30,2596294432.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-07-31,1835885589.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-08-31,1638613217.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-09-30,1018847255.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-10-31,1466876563.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-11-30,1108914936.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2025-12-31,1447157568.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2026-01-31,1092242684.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2026-02-28,916655885.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2026-03-31,830879197.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2026-04-30,1598601629.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2026-05-31,359130023.0,defillama_dexs,
+4157,RUNE,thorchain-dex,Dexs,2026-06-30,22120234.0,defillama_dexs,
+7617,SFI,saffron-finance,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+8972,SFUND,seedify,Launchpad,,,NaN:no_transacted_value_object,category 'Launchpad' has no DeFiLlama transacted-value volume series
+5279,SOLO,sologenic,Dexs,2025-01-31,1329890.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-02-28,3334535.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-03-31,2679353.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-04-30,3315918.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-05-31,3918489.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-06-30,3326239.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-07-31,5612745.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-08-31,2656547.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-09-30,1721926.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-10-31,2943673.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-11-30,2462323.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2025-12-31,2410602.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2026-01-31,2119550.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2026-02-28,9083005.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2026-03-31,4847678.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2026-04-30,1388700.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2026-05-31,661244.0,defillama_dexs,
+5279,SOLO,sologenic,Dexs,2026-06-30,193653.0,defillama_dexs,
+5601,STAKE,xdai-stake-bridge,Canonical Bridge,,,NaN:no_transacted_value_object,category 'Canonical Bridge' has no DeFiLlama transacted-value volume series
+8911,STRK,strike,Lending,,,NaN:no_transacted_value_object,category 'Lending' has no DeFiLlama transacted-value volume series
+10529,SUN,sun.io,Dexs,,,NaN:slug_absent_from_volume_dimension,category 'Dexs' but slug 'sun.io' not in volume dimension overview
+8290,SUPER,superfarm,Services,,,NaN:no_transacted_value_object,category 'Services' has no DeFiLlama transacted-value volume series
+6758,SUSHI,sushiswap,Dexs,2020-09-30,2250556664.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2020-10-31,864379137.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2020-11-30,1997147519.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2020-12-31,3074801867.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-01-31,12381198696.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-02-28,14389047227.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-03-31,9633749725.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-04-30,11811361127.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-05-31,28653101766.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-06-30,14371891607.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-07-31,6894655196.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-08-31,10751993167.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-09-30,13903900297.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-10-31,19955346178.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-11-30,18753366522.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2021-12-31,13725176547.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-01-31,16603334957.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-02-28,6725175382.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-03-31,5423384729.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-04-30,4797181014.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-05-31,5106178762.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-06-30,2394123824.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-07-31,1824951210.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-08-31,1998494962.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-09-30,1279302053.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-10-31,1231394703.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-11-30,1416665281.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2022-12-31,865571466.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-01-31,1006626870.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-02-28,2134876355.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-03-31,2799516643.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-04-30,980126533.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-05-31,793749526.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-06-30,388515371.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-07-31,425647685.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-08-31,453398920.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-09-30,279468418.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-10-31,261846700.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-11-30,621210335.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2023-12-31,918274666.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-01-31,771353264.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-02-29,588569152.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-03-31,763777247.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-04-30,740277149.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-05-31,527926708.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-06-30,415358177.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-07-31,219393632.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-08-31,274116713.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-09-30,169408855.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-10-31,213312298.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-11-30,342485991.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2024-12-31,439654355.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-01-31,261960650.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-02-28,233970772.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-03-31,135066361.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-04-30,144991821.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-05-31,138165288.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-06-30,77946815.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-07-31,114255239.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-08-31,163579596.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-09-30,91902366.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-10-31,175249406.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-11-30,155526242.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2025-12-31,53789489.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2026-01-31,63382348.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2026-02-28,59577942.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2026-03-31,27663850.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2026-04-30,22616617.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2026-05-31,19818033.0,defillama_dexs,
+6758,SUSHI,sushiswap,Dexs,2026-06-30,20119938.0,defillama_dexs,
+5829,SWAP,team-finance,Token Locker,,,NaN:no_transacted_value_object,category 'Token Locker' has no DeFiLlama transacted-value volume series
+4279,SXP,swipe,Dexs,,,NaN:slug_absent_from_volume_dimension,category 'Dexs' but slug 'swipe' not in volume dimension overview
+12147,SYN,synapse,Cross Chain Bridge,,,NaN:no_transacted_value_object,category 'Cross Chain Bridge' has no DeFiLlama transacted-value volume series
+22974,TAO,bittensor,Chain,,,NaN:no_transacted_value_object,category 'Chain' has no DeFiLlama transacted-value volume series
+1556,TIME,timewarp,Yield,,,NaN:no_transacted_value_object,category 'Yield' has no DeFiLlama transacted-value volume series
+9119,TLM,alien-worlds,Gaming,,,NaN:no_transacted_value_object,category 'Gaming' has no DeFiLlama transacted-value volume series
+7725,TRU,truefi,Uncollateralized Lending,,,NaN:no_transacted_value_object,category 'Uncollateralized Lending' has no DeFiLlama transacted-value volume series
+3930,TT,thundercore-staking,Staking Pool,,,NaN:no_transacted_value_object,category 'Staking Pool' has no DeFiLlama transacted-value volume series
+7127,VELO,velo-finance,Dexs,,,NaN:slug_absent_from_volume_dimension,category 'Dexs' but slug 'velo-finance' not in volume dimension overview
+35509,VVV,venice,Farm,,,NaN:no_transacted_value_object,category 'Farm' has no DeFiLlama transacted-value volume series
+29587,W,portal,Bridge,,,NaN:no_transacted_value_object,category 'Bridge' has no DeFiLlama transacted-value volume series
+36119,WAL,walrus-protocol,Developer Tools,,,NaN:no_transacted_value_object,category 'Developer Tools' has no DeFiLlama transacted-value volume series
+1166,WARP,polkastarter,Launchpad,,,NaN:no_transacted_value_object,category 'Launchpad' has no DeFiLlama transacted-value volume series
+13502,WLD,worldcoin,Chain,,,NaN:no_transacted_value_object,category 'Chain' has no DeFiLlama transacted-value volume series
+4090,WXT,nereus-finance,Lending,,,NaN:no_transacted_value_object,category 'Lending' has no DeFiLlama transacted-value volume series
+5957,YFII,yfii,Yield Aggregator,,,NaN:no_transacted_value_object,category 'Yield Aggregator' has no DeFiLlama transacted-value volume series
+10688,YGG,yield-guild-games,Gaming,,,NaN:no_transacted_value_object,category 'Gaming' has no DeFiLlama transacted-value volume series
+27765,ZBU,zeebu,Farm,,,NaN:no_transacted_value_object,category 'Farm' has no DeFiLlama transacted-value volume series
+24091,ZK,zksync-era,Chain,,,NaN:no_transacted_value_object,category 'Chain' has no DeFiLlama transacted-value volume series
+8202,ZKB,zkswap,Chain,,,NaN:no_transacted_value_object,category 'Chain' has no DeFiLlama transacted-value volume series
+29779,ZKJ,polyhedra-network,Chain,,,NaN:no_transacted_value_object,category 'Chain' has no DeFiLlama transacted-value volume series
+1896,ZRX,0x-aggregator,DEX Aggregator,2022-05-31,1128601288.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2022-06-30,3231889313.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2022-07-31,2182584627.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2022-08-31,1813131362.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2022-09-30,1357660205.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2022-10-31,797074973.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2022-11-30,1448608580.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2022-12-31,634424684.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-01-31,2906170204.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-02-28,1599386808.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-03-31,3246898471.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-04-30,3972585601.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-05-31,1405684202.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-06-30,1195916841.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-07-31,1033351527.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-08-31,937725945.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-09-30,504721679.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-10-31,630545709.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-11-30,1281008479.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2023-12-31,1573557370.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-01-31,1455986546.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-02-29,1466399796.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-03-31,3256659266.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-04-30,1036711051.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-05-31,1190439307.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-06-30,1398771738.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-07-31,1157971233.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-08-31,653751360.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-09-30,564747513.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-10-31,0.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-11-30,2630109415.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2024-12-31,3649706172.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-01-31,3766019851.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-02-28,2310303026.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-03-31,1747837943.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-04-30,1522999671.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-05-31,2548508264.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-06-30,2162025615.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-07-31,3116351073.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-08-31,5043418402.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-09-30,5001793726.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-10-31,7490550988.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-11-30,4681034806.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2025-12-31,3246590416.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2026-01-31,4433844359.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2026-02-28,4511675888.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2026-03-31,3308547735.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2026-04-30,4522080701.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2026-05-31,4189706408.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged
+1896,ZRX,0x-aggregator,DEX Aggregator,2026-06-30,3667254234.0,defillama_aggregators,aggregator routed volume (may double-count underlying DEX volume) - flagged

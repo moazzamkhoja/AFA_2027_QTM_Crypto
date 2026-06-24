@@ -904,3 +904,166 @@ caveat; note that an independent raw-log reconstruction was piloted and found to
 quantity, so the aggregator series is adopted deliberately. Coin-side PQ (ETH/BTC *native* transfers)
 was NOT in this pilot and still faces the archive-state wall (Entries 21/24); DeFiLlama chain-level
 data remains the coin fallback. Full discussion: `06_documentation/ai_conversations/session_012_2026-06-24_pq_pilot.md`.
+
+### Entry 32 — PQ source waterfall finalized: token fee→volume backout rule + coin source ladder (Cowork decision, supersedes Entry 31's coin-fallback line and §4 of `PHASE2_PQ_DECISION_STATUS.md`)
+**Date:** 2026-06-24
+**Spec section affected:** 4, 4.1, 6 (NVT_GL — PQ source, both Decision 1 refinement and Decision 2 resolution)
+**Asset(s)/period affected:** n/a (methodological; sets the PQ source-selection rule for every Phase 2 asset, tokens and coins).
+**Context.** Entry 31 settled tokens on DeFiLlama reported volume but left two things unresolved: (a) what
+to do when a protocol has *no* DeFiLlama volume series, and (b) Decision 2 (coins), which Entry 31's
+closing line punted to "DeFiLlama chain-level data" — almost certainly meaning chain fees, which carries
+the identical toll-vs-value flaw Entry 30 already rejected for token fees. The human pushed back on the
+"archive access" framing for native-coin transfers (correct: that wall applies to historical *state*
+queries — coin-age/HODL-wave, Entry 24 — not to summing the `value` field already in ordinary
+block/transaction data, which any full node retains forever and Etherscan's free API already serves), and
+asked specifically whether DeFiLlama has a coin-side "activity" metric before reaching for Artemis or raw
+Etherscan. Both points are resolved below with live, keyless verification (Cowork web-fetch, not the
+Cowork sandbox's bash egress, which remains blocked).
+**What was checked and found:**
+- **DeFiLlama chain-level volume exists but is chain-structure-dependent.** `/overview/dexs/{chain}`
+  (verified live) returns a real, aggregator-cleaned chain-level DEX-volume series. For Ethereum this is
+  substantial (consistent with its DeFi-heavy structure). For **Bitcoin**, fetched live just now: total24h
+  = **$419,825**, total30d = **$18.9M**, totalAllTime (since DeFiLlama started tracking) = **$2.17B** —
+  driven entirely by three niche bolted-on protocols (Bisq P2P exchange, Garden cross-chain bridge, LN
+  Exchange Spot), not Bitcoin's base-layer settlement, which is orders of magnitude larger. **Conclusion:
+  DeFiLlama chain-DEX-volume is valid only for chains where DeFi/DEX activity is a material share of real
+  economic activity (Ethereum, Solana, Avalanche-style smart-contract platforms). For payment/P2P-dominant
+  coins (BTC, LTC, DOGE, etc.) it is degenerate and would silently understate true activity by orders of
+  magnitude if used uniformly across the panel.** This is the same lesson as Entry 31 (aggregators clean
+  data, but you must check the aggregator is measuring the *right object* for that specific asset) applied
+  to a new case.
+- **Artemis Settlement Volume** (Entry 30/prior Cowork session): theoretically the right object for
+  payment-dominant coins (P2P + DEX + NFT, explicitly includes native/token/stablecoin transfers, explicitly
+  *not* a toll measure) but **access is unverified** — Phase 0 Entry 2 found Artemis's API dead
+  (`api.artemisxyz.com` → HTTP 410); a fresh check found a relaunched API product and free "Lite" tier, but
+  whether Settlement Volume is exposed standalone on the free tier, at what historical depth, and for how
+  much of the ~250-asset coin panel, has **not** been live-tested from this sandbox.
+- **blockchain.com Charts API**: confirmed (web search) to expose a free, keyless, long-history daily
+  "Estimated Transaction Value (USD)" series for BTC specifically, which already excludes change outputs
+  (pre-cleaned of the classic UTXO change-inflation problem). Real candidate, BTC-only — does not generalize
+  to the rest of the coin panel without a per-chain equivalent.
+**Decision made — two rules:**
+1. **Token PQ fallback (refines Entry 31).** Primary source stays DeFiLlama sector-routed reported volume.
+   Where a protocol has **no** DeFiLlama volume series, do **not** fall back to its fee as PQ directly
+   (that reintroduces the Entry 30 toll-vs-value error). Instead, **only if** the protocol's fee is a
+   confidently known, *stable, single-rate* function of notional volume over the window in question (e.g.
+   a documented flat swap fee, so `notional = fee / rate`), back out volume algebraically from the fee and
+   use that as PQ. **Do not** apply this when the rate is multi-tier (e.g. Uniswap V3's several fee-tier
+   pools, where the blended rate is itself unknown without volume — circular), governance-adjustable/variable
+   across the window, or not a simple function of notional (e.g. lending reserve factors, which are a % of
+   *interest*, not of loan volume). If neither DeFiLlama volume nor a confident fee-rate backout exists for
+   a protocol-month, **flag PQ as missing (NaN)** rather than substitute fees directly — per spec §0
+   ("flag, don't guess").
+2. **Coin PQ source ladder (resolves Decision 2), evaluated per coin/chain, not globally:**
+   - **Rung 1 — DeFiLlama chain-level DEX volume** (`/overview/dexs/{chain}`), for chains where this is
+     non-degenerate (material DeFi activity — confirm per-chain before using, not just for majors).
+   - **Rung 2 — Artemis Settlement Volume**, for chains where Rung 1 is degenerate/unavailable (payment-
+     dominant coins), *if and only if* live-verified as free-tier-accessible with adequate panel coverage
+     and historical depth (not yet confirmed — next session's job).
+   - **Rung 3 — coin-specific native fallback**: blockchain.com's Estimated Transaction Value series for
+     BTC; for other chains without an equivalent ready-made series, raw native-`value` block iteration
+     (now known to be a call-volume problem, not an access wall — feasible for a recent window, infeasible
+     for full multi-year history per-chain, same shape as Entry 31's token finding).
+   - **Rung 4 (last resort, explicitly flagged, not a default)** — DeFiLlama chain fees, used only if no
+     asset on rungs 1–3 is available for that coin, and documented in the paper's limitations as a
+     theoretically weaker, toll-based substitute, exactly parallel to how token fees were rejected.
+   Aggregators (DeFiLlama, then Artemis) are preferred over raw reconstruction wherever they validly cover
+   the asset, because they already absorb data-cleaning that raw logs require ad hoc (Entry 31's AAVE
+   sentinel-value problem) — but which rung applies must be checked per asset, not assumed uniformly, per
+   the Bitcoin DEX-volume finding above.
+**Rationale:** Same first-principles standard as Entry 30 (transacted value, not toll) applied consistently
+to both the token fallback case and the coin case; the Bitcoin live check is the empirical guardrail that
+stops "DeFiLlama has *a* volume number for this chain" from being treated as automatically valid — exactly
+the AAVE-sentinel-value lesson, generalized.
+**Downstream impact:** Next Claude Code session should (a) live-verify Artemis Settlement Volume's free-tier
+access, coverage, and historical depth; (b) live-check `/overview/dexs/{chain}` per coin in the panel to
+sort each into Rung 1 vs. needs-Rung-2/3; (c) build `phase2_pq.py` (tokens, with the fee-backout rule coded
+explicitly and rate-confidence judgment calls documented per protocol) and `phase2_nvt_gl.py` (coins, per the
+ladder above), logging every per-asset rung decision and every fee-backout rate used as it goes. Supersedes
+the "DeFiLlama chain-level data remains the coin fallback" line in Entry 31 and finalizes
+`PHASE2_PQ_DECISION_STATUS.md` §4. Full discussion: this Cowork session (no transcript file written; captured
+here and in chat).
+
+### Entry 33 — Phase 2 NVT_GL built: token PQ (16 assets) + covered-coin PQ (50 assets) + full NVT_GL machinery; perps/derivatives volume found paywalled
+**Date:** 2026-06-24
+**Spec section affected:** 4, 4.1, 4.2 (NVT_GL build); 6 (landmines)
+**Asset(s)/period affected:** all assets entering Phase 2; PQ series + g/r_e/PQ\*/NVT_GL per asset-month
+**What the spec wanted:** NVT_GL = MC/PQ\* per asset-month, with PQ = transacted value (Entries 30–32),
+g = trailing-3y CAGR of PQ, r_e = CAPM-style discount rate, g_inf/n robustness constants; emit all
+intermediates so assumptions vary without rebuild (spec §4.2).
+**What was actually built (session 013):**
+- **Token PQ (Part A, `phase2_pq_tokens.py`)** — DeFiLlama sector-routed reported volume. Routed each of
+  the 127 slugged tokens by its DeFiLlama category to the matching free volume dimension: `/summary/dexs`
+  (11 tokens), `/summary/aggregators` (4, flagged as routed/double-counting), `/summary/options` (1).
+  **16 tokens get a monthly volume PQ.** The other 111 are flagged NaN with explicit reasons — 93 have no
+  transacted-value object (Yield/Farm/Lending/Gaming/Services/Bridge/Chain tokens have no swap/notional
+  flow), 8 are slug-absent/ambiguous (SunSwap version-split, VELO/SXP symbol collisions — left NaN not
+  guessed), and **10 are perps whose DeFiLlama volume dimension is now PAID-GATED (HTTP 402 at both
+  `/overview/derivatives` and `/summary/derivatives/{slug}`)** — a new landmine; open-interest is free but
+  is a stock not a flow, so not valid PQ. **Fee→volume backout (Entry 32) fired for 0 protocols** — no token
+  protocol-month met the strict documented-single-stable-rate test (all candidates are multi-tier DEX fees,
+  variable perps fees, or lending reserve factors, explicitly excluded), so none were filled with raw fee.
+- **Coin PQ (Part B covered rungs, `phase2_pq_coins.py`)** — per the B1 rung table (Entry 34). **49 coins
+  via Rung 1** (DeFiLlama `/overview/dexs/{chain}` daily→monthly, materiality ≥1% monthly DEX/mcap) +
+  **BTC via Rung 3** (blockchain.com Estimated Transaction Value, change-excluded, 2010→present). **Rung 4
+  (chain fees) auto-applied to ZERO coins** — it is a flagged toll proxy requiring explicit approval. The 81
+  GAP-R2 coins carry PQ=NaN, deferred to Phase 2b (Entry 34).
+- **NVT_GL (`phase2_nvt_gl.py`)** — PQ0 = trailing-12m sum of monthly PQ (annual throughput); g = trailing
+  3y CAGR of PQ0 (≥1y fallback flagged in `g_window_years`; capped [−50%,+200%]); beta = trailing-36m vs
+  **BTC** (the spec's simple market proxy — the cap-weighted index is numerically unusable, penny-token
+  returns → inf); r_e = rf + beta·MRP with **rf=4%, MRP=30% as documented robustness parameters** (NOT the
+  realized ~114%/yr BTC premium, which is not a forward required return), floored at 0.05; g_inf=3%, n=10.
+  PQ\* = spec §4.1 levelized annuity; NVT_GL = MC/PQ\*. **Result: 1,821 asset-months, 59 assets (46 coins,
+  13 tokens), 2016-08→2026-05.** No pathologies (0 inf, 0 non-positive PQ\*).
+- **Diagnostics (`phase2_pq_diagnostics.py`)** — TVL (capital-stock control) + Volume/TVL turnover per
+  Entry 30/31: 2,534 asset-months, median turnover 1.15×.
+**Decision made:** build NVT_GL on exactly the assets with a defensible transacted-value PQ; flag every gap
+(NaN with reason) rather than substitute a toll/proxy; keep MRP/rf/g_inf/n as emitted robustness parameters.
+**Rationale:** faithful to Entries 30–32 (transacted value, not toll) and spec §0 (flag, don't guess) and
+§4.2 (emit intermediates). Using BTC as the market index is the spec's named simple alternative and is forced
+by the cap-weighted index's numerical fragility.
+**Downstream impact (re-check if this changes):** **g-cap binds on 43.4% of NVT_GL rows**, and PQ\* scales
+with (1+g)^n so NVT_GL spans many orders of magnitude driven by g — **NVT_GL is reliable as a cross-sectional
+RANK/conditioning variable (how H2/H3 use it), not a cardinal level**; g_cap and n are the first sensitivity
+knobs (spec §5). If perps volume access is later obtained, the 10 derivatives tokens reopen. If MRP/rf are
+re-chosen, re-derive r_e from the emitted beta — no rebuild. Outputs: `03_data/phase2/{pq_tokens,pq_coins,
+nvt_gl_panel,pq_diagnostics}.csv`. Full numbers: `03_data/PHASE2_COVERAGE_REPORT.md`. Session:
+`06_documentation/ai_conversations/session_013_2026-06-24_phase2_build.md`.
+
+### Entry 34 — Coin PQ Step-B1 verification: Artemis paid-only; 81 material coins deferred to Phase 2b (human decision)
+**Date:** 2026-06-24
+**Spec section affected:** 4.1 (coin PQ source, Decision 2 / Entry 32 ladder); 7 (phasing — new Phase 2b)
+**Asset(s)/period affected:** the coin side of the panel; 81 material coins (peak mcap ≥ $1B) flagged GAP-R2
+**What the spec wanted:** Entry 32 set a coin source ladder (R1 DeFiLlama chain DEX → R2 Artemis Settlement
+Volume → R3 native → R4 chain fees) and required a live B1 verification of Artemis access + per-coin DeFiLlama
+coverage before building, with an explicit instruction to STOP and report rather than guess if Artemis is
+paid-only or coverage is ambiguous for any material coin.
+**What was actually found (B1, live, session 013 — full report `03_data/PHASE2_COIN_PQ_VERIFICATION_B1.md`):**
+- **Artemis REST API is PAID-ONLY.** Old hosts dead (`api.artemisxyz.com`→410, others DNS-fail, confirming
+  Entry 2). Current product: `settlement_volume` *exists* as a standalone metric (right object), but the free
+  "Lite" tier exposes only Terminal + a Google-Sheets plugin (100k ART calls/mo, not a scriptable REST path);
+  Pro ($300/mo) does not list REST API access; no free self-serve REST tier. **Rung 2 is closed for a
+  reproducible pipeline.**
+- **DeFiLlama chain DEX coverage** (`/overview/dexs/{chain}`, 134 chains live): with an explicit materiality
+  threshold (**30-day chain DEX volume ÷ market cap ≥ 0.01**; BTC 9×10⁻⁶ fails, ETH 0.143/SOL 1.04 pass),
+  **only 49 coins (40 material) are Rung-1 valid.**
+- **blockchain.com** Estimated Transaction Value (USD) for **BTC confirmed** (Rung 3, change-excluded,
+  2010→present) — BTC-specific, does not generalize.
+- **Net: 81 material coins** (XRP, DOGE, LTC, BCH, XMR, ZEC, DASH, ATOM, DOT, MATIC, …) are left with **no
+  free transacted-value PQ source** — their only ladder option was the now-paywalled Artemis. The
+  DeFiLlama/BTC combination does **not** cover the coin panel adequately.
+**Decision made:** This is the B1 STOP-and-report condition. Reported to the human; the human's call (logged):
+**proceed now with the covered panel (16 tokens + 49 R1 coins + BTC) and stand up a Phase 2b to source the 81
+coins later** — rather than auto-dropping them to Rung 4 (toll proxy) or silently NaN-ing them. Phase 2b
+kickoff written: `06_documentation/CLAUDE_CODE_PHASE2B_KICKOFF_PROMPT.md` (XRPL APIs for XRP; bitinfocharts/
+blockchair "sent-in-USD" for the UTXO payment coins; Artemis-paid option if access procured; **XMR noted a
+permanent gap — RingCT hides amounts**). Until Phase 2b, those 81 coins carry PQ=NaN in `pq_coins.csv` /
+`nvt_gl_panel.csv`, flagged `GAP:artemis_paid_only`.
+**Rationale:** Entry 32's ladder is decided, but the B1 instruction explicitly designates the Artemis-paid /
+material-coverage-gap case as a human-review pause point — guessing a toll proxy for XRP/DOGE/LTC/etc. is
+exactly what the rule forbids. Proceeding with the covered panel keeps the session productive while the gap is
+honestly documented and scheduled, not papered over (spec §0).
+**Downstream impact:** Phase 2b must fill these before any coins-only or full-panel H2/H3 result leans on
+coin NVT_GL coverage; the rung table `03_data/phase2_coin_rung_table.csv` (rung=='GAP-R2') is the worklist.
+If Artemis API access is procured, Rung 2 reopens for most of them at once (Settlement Volume only — never the
+Total Economic Activity composite, which bundles toll measures).
