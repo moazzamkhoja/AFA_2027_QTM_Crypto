@@ -858,3 +858,49 @@ volume series (with TVL/fees as side columns either way) depends on the pilot's 
 DeFiLlama's reported DEX/perps volume becomes the working source and the noise-multiplier
 estimate from the pilot should be carried into the paper's methodology section as a documented
 limitation (spec §6, the classic NVT wash-trading caveat).
+
+### Entry 31 — PQ source decided: DeFiLlama reported volume (raw Etherscan Transfer-log PQ piloted and rejected — wrong quantity, not just cost)
+**Date:** 2026-06-24
+**Spec section affected:** 4, 4.1, 6 (NVT_GL — PQ source & methodology limitation)
+**Asset(s)/period affected:** n/a (methodological; sets the PQ source for every Phase 2 asset).
+Pilot evidence: UNI (cmc_id 7083) and AAVE (cmc_id 7278), May 2026 (31-day window).
+**What the spec wanted:** §4.1 lists "on-chain transaction (transfer) volume" as the ideal coin/token
+throughput measure; Entry 30 corrected PQ to sector-appropriate *transacted value* and left open
+whether that is buildable from raw Etherscan logs vs DeFiLlama's reported volume (this Entry).
+**What was actually available / what the pilot found** (full report `03_data/PHASE2_PQ_PILOT_REPORT.md`,
+code `04_code/phase2_pq_pilot.py` + `phase2_pq_pilot_diag.py`, session 012):
+- **Cost is cheap for a recent window, contra a naive read of Entry 24.** Reusing the Channel-1
+  `getLogs` bisection with the counterparty filter dropped (ALL transfers): UNI = 133,350 transfers
+  in **381 calls** (345.6 s); AAVE = 116,910 in **309 calls** (305.1 s) — ~345 calls/token-month,
+  ~11 calls/day, ~0.9 s/call, far under the free 5 req/s & 100k/day caps. Entry 24's "orders of
+  magnitude" wall is the full *multi-year* regime, not a recent window.
+- **Extrapolation:** 1 token full history ~23.5k calls (~6 h); 1 recent month × 127 DeFi-slug tokens
+  ~44k calls (~11 h) — both feasible. **Full history × 127 tokens ~1.75M calls (~17.5 days @ 100k/day);
+  × 241 slugged assets ~3.3M (~33 days)** — infeasible as a routine/repeatable build.
+- **Decisive: the governance token's own Transfer events are the WRONG quantity.** UNI token-transfer
+  volume = **$0.79B** vs DeFiLlama Uniswap DEX swap volume = **$36.75B** (swap **46.6× larger**, daily
+  corr only **0.30**). AAVE raw sum was **physically impossible** ($8.2×10¹⁹ vs 15.4M-token supply):
+  **6** sentinel-value transfers, one of **10¹⁸ tokens = 6.5×10¹⁰× supply**; cleaned = **$2.75B**,
+  still unrelated to Aave lending throughput. Correct on-chain swap volume would require enumerating
+  each protocol's pool `Swap` events (= re-implementing DeFiLlama's adapters) — out of scope on a free key.
+**Decision made:** **PQ source = DeFiLlama's reported, sector-appropriate protocol volume**
+(DEX/swap for AMMs, perps notional for derivatives, borrow/origination for lending), routed by the
+`sector` field (Entry 16). **TVL and fees stay as side diagnostic columns** + the Volume/TVL turnover
+diagnostic, exactly as Entry 30 specified. Raw Etherscan Transfer logs are demoted to an **occasional
+spot-check**, never the primary source. This resolves the Entry 30 open question (and confirms the
+"if infeasible at panel scale → DeFiLlama" branch of Entry 30's downstream-impact note), and finalizes
+both Decision 1 and Decision 2 of `PHASE2_PQ_DECISION_STATUS.md` on the DeFiLlama-volume basis.
+**Rationale:** Two independent reasons, validity first. (1) **Validity:** a governance token's Transfer
+events are not the protocol's transacted value — empirically 47× off and barely correlated for UNI,
+and corrupted by non-economic sentinel transfers for AAVE (spec §6 wash/internal-churn caveat in
+extreme form). (2) **Cost:** full-panel multi-year raw extraction is weeks of continuous runtime on
+the free key. DeFiLlama already computes sector-correct volume from the right per-protocol pool events.
+Option (A) [raw at panel scale] rejected on both grounds; pure Option (C) [flagship raw as a *source*]
+rejected because it still measures the wrong object — flagship raw kept only as a spot-check.
+**Downstream impact:** `phase2_pq.py` to be built on DeFiLlama reported volume (sector-routed), with
+TVL/fees side columns — **after human review of the pilot**, not before. Carry into the paper's
+methodology/limitations (spec §6): reported aggregator volume is itself subject to the NVT wash-trading
+caveat; note that an independent raw-log reconstruction was piloted and found to measure a different
+quantity, so the aggregator series is adopted deliberately. Coin-side PQ (ETH/BTC *native* transfers)
+was NOT in this pilot and still faces the archive-state wall (Entries 21/24); DeFiLlama chain-level
+data remains the coin fallback. Full discussion: `06_documentation/ai_conversations/session_012_2026-06-24_pq_pilot.md`.
