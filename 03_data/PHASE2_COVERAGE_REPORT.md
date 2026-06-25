@@ -1,34 +1,37 @@
 # Phase 2 Coverage Report — NVT_GL (PQ, g, r_e, PQ*, NVT_GL)
 
-**Date:** 2026-06-24
-**Session:** 013 (Claude Code / Opus 4.8), working dir `C:\AFA_2027_QTM_Crypto`
+**Date:** 2026-06-24 (Phase 2); **2026-06-25** (Phase 2b update, session 014)
+**Session:** 013 (Phase 2) + 014 (Phase 2b), Claude Code / Opus 4.8, working dir `C:\AFA_2027_QTM_Crypto`
 **Scope:** builds the Growth-Levelized NVT (NVT_GL = MC / PQ\*) per asset-month, on the resolved
 PQ definition (Entries 30–32). Resumes Part B of `CLAUDE_CODE_PHASE2_KICKOFF_PROMPT.md`.
 **Status:** **token PQ (Part A) + covered-coin PQ (Part B Rungs 1/3) + full NVT_GL machinery
-COMPLETE.** 81 material coins deferred to **Phase 2b** (Artemis paid-only — human decision,
-session 013). Do not start Phase 3 without review.
+COMPLETE. Phase 2b: 8 of the 81 deferred coins now sourced** (DOGE, LTC, BCH, DASH, ETC, BTG +
+partial BSV, ZEC — bitinfocharts native settlement value). 73 coins remain PQ=NaN (XRP & XMR
+permanent; 71 no free native series — all live-verified this session, Entry 35). Do not start
+Phase 3 without review.
 
 ---
 
 ## 0. Headline
 
-| Quantity | Value |
+| Quantity | Value (Phase 2 → **Phase 2b**) |
 |---|---|
 | Observed asset-months in panel | 67,303 |
-| Asset-months with monthly PQ (transacted value) | **2,557** (65 assets) |
-| Asset-months with a computed **NVT_GL** | **1,821** (59 assets: 46 coins, 13 tokens) |
+| Asset-months with monthly PQ (transacted value) | 2,557 → **3,358** (73 assets) |
+| Asset-months with a computed **NVT_GL** | 1,821 → **2,526** (67 assets: **54 coins**, 13 tokens) |
 | NVT_GL month range | 2016-08 → 2026-05 |
-| Assets with PQ: tokens / coins | 16 / 50 |
+| Assets with PQ: tokens / coins | 16 / **58** |
 
 NVT_GL requires MC (always present) **and** PQ history deep enough for both a trailing CAGR `g`
-and a trailing beta — so the 65-asset PQ set narrows to 59 with a full NVT_GL. Coverage by year
-rises from 1 asset (BTC, 2016) to 53 assets (2026), exactly the coin-dominated-early → broad-late
-shape spec §2.2 anticipated.
+and a trailing beta — so the 73-asset PQ set narrows to 67 with a full NVT_GL. Phase 2b added 8
+payment/SoV coins (DOGE, LTC, BCH, DASH, ETC, BTG full-history; BSV→2021-08, ZEC→2022-05 partial),
+deepening the coin-dominated early sample. Coverage by year rises from 4 assets (2016) to 59 (2026),
+exactly the coin-dominated-early → broad-late shape spec §2.2 anticipated.
 
 | Year | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| NVT_GL asset-months | 5 | 12 | 12 | 14 | 24 | 41 | 143 | 325 | 480 | 524 | 241 |
-| distinct assets | 1 | 1 | 1 | 2 | 2 | 6 | 18 | 37 | 44 | 51 | 53 |
+| NVT_GL asset-months | 20 | 57 | 79 | 100 | 119 | 133 | 220 | 393 | 550 | 587 | 268 |
+| distinct assets | 4 | 6 | 8 | 10 | 10 | 14 | 25 | 43 | 50 | 57 | 59 |
 
 ---
 
@@ -62,8 +65,34 @@ are flagged NaN, never filled with the raw fee.
 |---|---|---|---|
 | **R1** DeFiLlama chain DEX volume | 49 | 40 | ETH, BNB, SOL, ADA, TRX, AVAX, TON, NEAR, SUI, APT, STX, HBAR, ALGO, INJ, SEI, POL, … |
 | **R3-BTC** blockchain.com est. tx value | 1 | 1 | BTC (change-excluded, 2010→present) |
-| **GAP-R2** Artemis paid-only → **Phase 2b** | 81 | 81 | XRP, DOGE, LTC, BCH, XMR, ZEC, DASH, ATOM, DOT, MATIC, … (flagged PQ=NaN) |
+| **R3-bitinfo** bitinfocharts native settlement value (**Phase 2b**) | 8 | 8 | DOGE, LTC, BCH, DASH, ETC, BTG (full); BSV (→2021-08), ZEC (→2022-05) partial |
+| **GAP-R2** still uncovered (no free native series) | 73 | 73 | XRP & XMR (permanent), DOT, MATIC, ATOM, VET, THETA, FIL, IOTA, NEO, XTZ, KAS, … (PQ=NaN) |
 | NaN non-material (expected) | 502 | 0 | long tail of sub-$1B / dead coins |
+
+**Phase 2b coin sourcing (session 014, live-verified 2026-06-25 — full audit in
+`DATA_DECISIONS_LOG.md` Entry 35).** PQ for these coins = **native settlement value** (on-chain
+payment/transfer value in USD, the coin-side analogue of Bitcoin's NVT denominator), NOT fees,
+DEX volume, or TVL. Source = bitinfocharts "Sent in USD" (free, keyless, daily, summed→monthly),
+using only its 13 genuine tickers — unrecognised slugs silently serve **Bitcoin's** series, so the
+build is ticker-keyed and BTC-default-guarded. **Honesty flags carried in `pq_coins.csv` notes:**
+"Sent in USD" = total on-chain *output* value, so for UTXO coins (DOGE/LTC/BCH/DASH/BTG/BSV/ZEC)
+it is **change-INFLATED** (the opposite of BTC's change-*excluded* series — these coins' NVT_GL
+levels are correspondingly depressed, e.g. LTC median 5×10⁻⁴, reinforcing the §2a "rank, not
+level" caveat). **ETC** is account-model (no UTXO change). **ZEC** captures only the transparent
+pool — shielded (zk) amounts are cryptographically hidden — and is stale after 2022-05; **BSV**
+stale after 2021-08.
+
+**Still PQ=NaN (73 coins), reasons live-verified this session:**
+- **XRP (cmc_id 52)** — no free keyless historical XRPL payment-volume series: data.ripple.com
+  (Ripple Data API v2) dead/403; xrpscan account-only; xrplmeta = token-metadata/clio node;
+  api.xrpldata.com = NFT API; bithomp 403; data.xrplf.org 404. Raw full-history ledger iteration
+  is the forbidden call-volume wall.
+- **XMR (cmc_id 328)** — RingCT cryptographically hides amounts; native transacted value is
+  unobservable on any source. Permanent gap, never proxied.
+- **71 others** (DOT, KSM, MATIC, ATOM, VET, THETA, FIL, IOTA, NEO, XTZ, KAS, FTM, …) — no free,
+  keyless, ready-made historical USD transacted-value series. Probed live: Cosmos public LCD and
+  api.kaspa.org expose only current state; Filfox only base-fee (a toll, not value); Mintscan /
+  Subscan require API keys. Raw multi-year native iteration forbidden (Entry 31/32). Flagged, not guessed.
 
 **Materiality threshold (R1 split):** a chain qualifies for Rung 1 iff **30-day chain DEX volume
 ÷ latest market cap ≥ 0.01** (≥1% monthly DEX turnover ≈ 12%+ annualized). Calibration: BTC
@@ -123,10 +152,15 @@ pulled to bound calls; slug-level fee 30d totals cached in `_fees_overview.json`
    (VELO, SXP) — left NaN rather than risk mis-attribution.
 
 ## 4. Open items → Phase 2b / Phase 3
-- **Phase 2b:** source transacted-value PQ for the 81 GAP-R2 coins (XRP via XRPL APIs; LTC/BCH/
-  DOGE/DASH via bitinfocharts/blockchair "sent-in-USD"; Artemis-paid option). See
-  `06_documentation/CLAUDE_CODE_PHASE2B_KICKOFF_PROMPT.md`. XMR is a permanent gap (RingCT hides
-  amounts). Until then those coins carry PQ=NaN in the panel.
+- **Phase 2b — DONE for what free sources allow (session 014, 2026-06-25).** 8 of 81 coins
+  sourced via bitinfocharts native "Sent in USD" (DOGE, LTC, BCH, DASH, ETC, BTG full; BSV, ZEC
+  partial) — see §1b and Entry 35. **73 remain PQ=NaN, all live-verified this session:** XRP (old
+  Ripple Data API dead; no free keyless XRPL volume series) and XMR (RingCT) are permanent; the
+  other 71 have no free, keyless, ready-made native transacted-value series (Cosmos/Kaspa LCDs are
+  current-state only, Filfox is fees, Mintscan/Subscan need keys). **If paid access is later
+  procured** (Artemis Settlement Volume, or a Subscan/Mintscan/Glassnode key), Rung 2 reopens for
+  most of the 71 at once and the panel widens further. blockchair has **no** free historical charts
+  API (404) — only current `/stats`.
 - **Sensitivity (deferred, spec §5):** vary g_cap, n, g_inf, rf, MRP; emitted intermediates make
   this a re-compute, not a rebuild.
 - **Do not start Phase 3 without review.**

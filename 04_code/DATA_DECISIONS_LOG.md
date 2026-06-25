@@ -1067,3 +1067,61 @@ honestly documented and scheduled, not papered over (spec §0).
 coin NVT_GL coverage; the rung table `03_data/phase2_coin_rung_table.csv` (rung=='GAP-R2') is the worklist.
 If Artemis API access is procured, Rung 2 reopens for most of them at once (Settlement Volume only — never the
 Total Economic Activity composite, which bundles toll measures).
+
+### Entry 35 — Phase 2b: 8 GAP-R2 coins sourced via bitinfocharts native settlement value; XRP/XMR permanent gaps; 71 others NaN (all live-verified, no Artemis key)
+**Date:** 2026-06-25
+**Spec section affected:** 4.1 (coin PQ source, Entry 32 ladder Rung 3-native); 6 (landmines); 7 (phasing — Phase 2b)
+**Asset(s)/period affected:** the 81 GAP-R2 coins (peak mcap ≥ $1B) deferred from Phase 2 (Entry 34)
+**What the spec wanted:** Phase 2b (`06_documentation/CLAUDE_CODE_PHASE2B_KICKOFF_PROMPT.md`) — source
+*native settlement value* (on-chain payment/transfer value in USD, the coin-side analogue of Bitcoin's NVT
+denominator; NOT fees/DEX-volume/TVL) for the 81 coins, verifying free access live, flagging not guessing,
+and never doing raw multi-year block iteration. Artemis only if a key was procured.
+**What was actually available (live, keyless, 2026-06-25 — `04_code/.api_keys.json` has only `etherscan`,
+so no Artemis; Rung 2 stayed closed):**
+- **bitinfocharts "Sent in USD"** (`/comparison/sentinusd-{ticker}.html`) — free, keyless, daily, long
+  history; summed daily→monthly (matching the BTC handling in `phase2_pq_coins.py`). **Critical landmine:
+  unrecognised slugs silently serve BITCOIN's series** (verified: bch/bsv/btg/nano/peercoin/komodo/… via the
+  `{coin-name}-sentinusd` alias all returned an identical BTC series), so the build is **ticker-keyed** and
+  **BTC-default-guarded** (asserts each covered series' latest value ≠ BTC's). bitinfocharts exposes only 13
+  tickers [btc eth xrp zec doge ltc xmr bch dash etc bsv vtc btg]; the GAP-R2 overlap is **DOGE, LTC, BCH,
+  DASH, ETC, BTG** (current through 2026-06) plus **BSV** (stale, ends 2021-08) and **ZEC** (stale, ends
+  2022-05). XRP's bitinfocharts page exists but is **empty** (not a UTXO chain; no "sent in USD" computed).
+- **XRP (cmc_id 52, highest-value GAP coin):** no free keyless historical XRPL payment-volume series.
+  Checked live — data.ripple.com (Ripple Data API v2, which served `payment_volume`) → **403/dead**;
+  api.xrpscan.com → account endpoints work but **no** historical-volume endpoint (docs+live); xrplmeta
+  (s1.xrplmeta.org) → token-metadata/clio node, not volume; api.xrpldata.com → XRPL **NFT** API; bithomp →
+  403 (key); data.xrplf.org → nginx default / 404. Raw full-history ledger iteration (~21.6k ledgers/day) is
+  the forbidden call-volume wall.
+- **XMR (cmc_id 328):** RingCT cryptographically hides amounts → native transacted value unobservable on any
+  source. Permanent gap, per the kickoff's explicit STOP.
+- **Next tier (ATOM/Cosmos, KAS/Kaspa, DOT-KSM/Polkadot, FIL, THETA, XTZ, VET, IOTA, NEO, …):** probed live —
+  Cosmos public LCD (`cosmos-rest.publicnode.com`) and `api.kaspa.org` return only **current state**
+  (supply/network); Filfox returns **base-fee** (a toll, not value); Mintscan (`apis.mintscan.io`) and Subscan
+  require **API keys**. No free, keyless, ready-made historical USD transacted-value series.
+- **blockchair** has **no** free historical charts API (`/charts/...` → 404); only current `/stats`.
+**Decision made:** Fill PQ for the **8 bitinfocharts-covered coins** (`pq_source=bitinfocharts_sentinusd`,
+`rung=R3-bitinfo`), with explicit per-coin honesty flags in the `note` column: UTXO "Sent in USD" is total
+*output* value and therefore **change-INFLATED** (opposite of BTC's change-excluded series); ETC is
+account-model (no change); ZEC is **transparent-pool only** (shielded amounts hidden) and stale; BSV stale.
+Leave the other **73 coins PQ=NaN** with refined, source-specific reasons (XRP `no_free_xrpl_volume_series`,
+XMR `xmr_ringct_unobservable`, the rest `no_free_native_series_p2b`). No toll/fee proxy (Rung 4) applied to
+any coin; nothing guessed. New script `04_code/phase2b_pq_coins.py` (idempotent post-process on
+`pq_coins.csv`; raw HTML cached gitignored under `03_data/raw/bitinfocharts/`); must run AFTER
+`phase2_pq_coins.py` and BEFORE `phase2_nvt_gl.py`.
+**Result (re-ran `phase2_nvt_gl.py` + `phase2_pq_diagnostics.py`):** PQ asset-months **2,557 → 3,358** (73
+assets); **NVT_GL 1,821 → 2,526 asset-months, 59 → 67 assets (54 coins, 13 tokens)**, 2016-08 → 2026-05; no
+pathologies. g-cap still binds ~43% — the "rank, not cardinal level" caveat (§2a) is reinforced by the
+change-inflated UTXO PQ (e.g. LTC median NVT_GL ≈ 5×10⁻⁴).
+**Rationale:** native on-chain transfer/output value is exactly the coin-side object the original NVT used
+(Entry 30) and is what bitinfocharts "Sent in USD" measures; aggregators are preferred over raw reconstruction
+where they validly cover the asset (Entry 32). Every covered series is flagged for its known bias rather than
+silently blended; every uncovered coin is flagged with a live-verified reason rather than dropped to a toll
+proxy — per spec §0 ("flag, don't guess") and the kickoff's explicit rules.
+**Downstream impact (re-check if this changes):** if Artemis Settlement Volume or a Subscan/Mintscan/Glassnode
+key is procured, Rung 2 reopens for most of the 71 `no_free_native_series_p2b` coins at once (Settlement
+Volume only, never the Total-Economic-Activity composite) and the panel widens further. The 8 change-inflated
+UTXO series should be sensitivity-checked (or, for BTC-comparability, a change-excluded equivalent sought) if a
+coins-only NVT_GL *level* — not rank — ever drives a result. Re-running `phase2_pq_coins.py` regenerates the
+old GAP markers, so `phase2b_pq_coins.py` must be re-run after it. Outputs unchanged in schema:
+`03_data/phase2/{pq_coins,nvt_gl_panel,pq_diagnostics}.csv`. Session: `06_documentation/ai_conversations/
+session_014_2026-06-25_phase2b_coins.md`. **Do not start Phase 3 without review.**
