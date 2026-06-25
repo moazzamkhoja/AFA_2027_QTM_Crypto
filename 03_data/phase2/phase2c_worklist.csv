@@ -1,0 +1,105 @@
+cmc_id,symbol,dl_slug,dl_category
+9543,BICO,hyphen,Bridge
+3814,CELR,cbridge,Bridge
+30712,MERL,merlins-seal,Bridge
+5794,PNT,pnetwork,Bridge
+2539,REN,renvm,Bridge
+29587,W,portal,Bridge
+2933,BMX,bitmart,CEX
+6756,ACA,acala,Canonical Bridge
+11841,ARB,arbitrum,Canonical Bridge
+5601,STAKE,xdai-stake-bridge,Canonical Bridge
+28298,BEAM,beam,Chain
+22974,TAO,bittensor,Chain
+13502,WLD,worldcoin,Chain
+24091,ZK,zksync-era,Chain
+8202,ZKB,zkswap,Chain
+29779,ZKJ,polyhedra-network,Chain
+10052,GTC,gitcoin,Charity Fundraising
+5566,KEEP,keep-network,Cross Chain Bridge
+12147,SYN,synapse,Cross Chain Bridge
+38299,AVNT,avantis,Derivatives
+7228,DDX,derivadex,Derivatives
+13663,GNS,gains-network,Derivatives
+6622,HAKKA,hakka-finance,Derivatives
+3748,HXRO,hxro-network,Derivatives
+7535,KP3R,keep3r-network,Derivatives
+7102,LINA,linear-finance,Derivatives
+7857,MIR,mirror,Derivatives
+36410,MYX,myx-finance,Derivatives
+1732,NMR,erasure,Derivatives
+30083,ATH,aethir,Developer Tools
+6719,GRT,the-graph,Developer Tools
+36119,WAL,walrus-protocol,Developer Tools
+7064,BAKE,bakeryswap,Dexs
+1573,CASINO,defyswap,Dexs
+1934,LRC,loopring,Dexs
+5906,NVT,nerve-staking,Dexs
+10529,SUN,sun.io,Dexs
+4279,SXP,swipe,Dexs
+7127,VELO,velo-finance,Dexs
+13855,ENS,ens,Domains
+14803,AURORA,aurora-plus,Farm
+10903,C98,coin98,Farm
+23054,CHEEL,cheelee,Farm
+24257,LGCT,legacy-network,Farm
+28301,MEME,memecoin,Farm
+3835,ORBS,orbs,Farm
+35509,VVV,venice,Farm
+27765,ZBU,zeebu,Farm
+1552,MLN,enzyme-finance,Indexes
+8602,AUCTION,bounce-finance,Launchpad
+34812,BIO,bio-protocol,Launchpad
+13523,MC,merit-circle,Launchpad
+21870,MPLX,metaplex,Launchpad
+8972,SFUND,seedify,Launchpad
+1166,WARP,polkastarter,Launchpad
+7278,AAVE,aave-v2,Lending
+8857,ANC,anchor,Lending
+5810,BZRX,ooki,Lending
+6536,OM,mantra-dao,Lending
+8911,STRK,strike,Lending
+4090,WXT,nereus-finance,Lending
+7232,ALPHA,stella,Leveraged Farming
+8000,LDO,lido,Liquid Staking
+7726,ICHI,ichi,Liquidity Manager
+8191,NFTX,nftx,NFT Marketplace
+7230,OPIUM,opium,Options
+6945,AMP,flexa,Payments
+1104,REP,augur,Prediction Market
+9067,OHM,olympus-dao,Reserve Currency
+30494,EIGEN,eigencloud,Restaking
+7737,API3,api3,Risk Curators
+8766,ALICE,my-neighbor-alice,Services
+1680,ANT,aragon,Services
+27565,ARKM,arkham,Services
+9421,FORTH,forth-dao,Services
+2930,IQ,iq,Services
+35763,KAITO,kaito,Services
+8290,SUPER,superfarm,Services
+24781,CYBER,cyberconnect,SoFi
+3930,TT,thundercore-staking,Staking Pool
+10804,FLOKI,flokifi-locker,Token Locker
+5829,SWAP,team-finance,Token Locker
+33223,LAB,lab-terminal,Trading App
+7725,TRU,truefi,Uncollateralized Lending
+24796,ADF,artdefinance,Yield
+4134,AKRO,akropolis,Yield
+18876,APE,apecoin,Yield
+11079,BRISE,bitgert,Yield
+8891,BTCST,btcst,Yield
+7242,CORE,cvault-finance,Yield
+9903,CVX,convex-finance,Yield
+8615,EPIC,ethernity-chain,Yield
+5190,FLEX,coinflex,Yield
+5015,HEX,hex,Yield
+2873,MET,metronome-v1,Yield
+2982,MVL,mvl-staking,Yield
+5354,PEAK,peakdefi,Yield
+7654,RFOX,rfox,Yield
+7617,SFI,saffron-finance,Yield
+1556,TIME,timewarp,Yield
+7859,BADGER,badger-dao,Yield Aggregator
+6859,FARM,harvest-finance,Yield Aggregator
+7486,RGT,rari-capital,Yield Aggregator
+5957,YFII,yfii,Yield Aggregator
