@@ -1,0 +1,130 @@
+cmc_id,symbol,dl_slug,status,n_months,ym_start,ym_end,note
+8104,1INCH,1inch,200,64,2021-02,2026-05,ok
+7278,AAVE,aave-v2,200,66,2020-12,2026-05,ok
+6756,ACA,acala,200,0,,,empty series
+24796,ADF,artdefinance,200,29,2024-01,2026-05,ok
+4134,AKRO,akropolis,200,70,2020-08,2026-05,ok
+8766,ALICE,my-neighbor-alice,200,0,,,empty series
+7232,ALPHA,stella,200,36,2023-06,2026-05,ok
+6945,AMP,flexa,200,67,2020-11,2026-05,ok
+8857,ANC,anchor,200,30,2021-04,2023-10,ok
+1680,ANT,aragon,200,0,,,empty series
+18876,APE,apecoin,200,0,,,empty series
+7737,API3,api3,200,52,2022-02,2026-05,ok
+11841,ARB,arbitrum,200,0,,,empty series
+27565,ARKM,arkham,200,0,,,empty series
+2058,AST,airswap,200,0,,,empty series
+30083,ATH,aethir,200,8,2025-10,2026-05,ok
+8602,AUCTION,bounce-finance,200,34,2023-08,2026-05,ok
+14803,AURORA,aurora-plus,200,45,2022-09,2026-05,ok
+38299,AVNT,avantis,200,28,2024-02,2026-05,ok
+17799,AXL,axelar,200,44,2022-10,2026-05,ok
+6783,AXS,axie-infinity,200,0,,,empty series
+7859,BADGER,badger-dao,200,66,2020-12,2026-05,ok
+7064,BAKE,bakeryswap,200,59,2021-07,2026-05,ok
+28298,BEAM,beam,200,0,,,empty series
+9543,BICO,hyphen,200,48,2022-03,2026-02,ok
+34812,BIO,bio-protocol,200,8,2025-10,2026-05,ok
+2933,BMX,bitmart,200,33,2023-09,2026-05,ok
+11079,BRISE,bitgert,200,47,2022-07,2026-05,ok
+8891,BTCST,btcst,200,54,2021-12,2026-05,ok
+5810,BZRX,ooki,200,53,2021-02,2025-06,ok
+10903,C98,coin98,200,14,2025-04,2026-05,ok
+1573,CASINO,defyswap,200,54,2021-12,2026-05,ok
+3814,CELR,cbridge,200,54,2021-11,2026-05,ok
+23054,CHEEL,cheelee,200,0,,,empty series
+7242,CORE,cvault-finance,200,63,2021-03,2026-05,ok
+19269,COW,cowswap,200,0,,,empty series
+9903,CVX,convex-finance,200,61,2021-05,2026-05,ok
+24781,CYBER,cyberconnect,200,0,,,empty series
+7228,DDX,derivadex,200,63,2021-03,2026-05,ok
+30494,EIGEN,eigencloud,200,36,2023-06,2026-05,ok
+13855,ENS,ens,200,0,,,empty series
+8615,EPIC,ethernity-chain,200,60,2021-06,2026-05,ok
+8938,EPS,ellipsis-finance,200,63,2021-03,2026-05,ok
+6859,FARM,harvest-finance,200,68,2020-10,2026-05,ok
+5190,FLEX,coinflex,200,49,2022-05,2026-05,ok
+10804,FLOKI,flokifi-locker,200,39,2023-02,2026-05,ok
+9421,FORTH,forth-dao,200,0,,,empty series
+13663,GNS,gains-network,200,54,2021-12,2026-05,ok
+6719,GRT,the-graph,200,11,2025-07,2026-05,ok
+10052,GTC,gitcoin,200,0,,,empty series
+6622,HAKKA,hakka-finance,200,68,2020-10,2026-05,ok
+6929,HEGIC,hegic,200,68,2020-10,2026-05,ok
+5015,HEX,hex,200,78,2019-12,2026-05,ok
+22461,HFT,hashflow,200,50,2022-02,2026-05,ok
+3748,HXRO,hxro-network,200,40,2023-02,2026-05,ok
+7726,ICHI,ichi,200,60,2021-06,2026-05,ok
+8719,ILV,illuvium,200,60,2021-06,2026-05,ok
+2930,IQ,iq,200,58,2021-08,2026-05,ok
+29210,JUP,jupiter-aggregator,200,0,,,empty series
+35763,KAITO,kaito,200,7,2025-11,2026-05,ok
+5566,KEEP,keep-network,200,68,2020-10,2026-05,ok
+7535,KP3R,keep3r-network,200,56,2021-10,2026-05,ok
+33223,LAB,lab-terminal,200,0,,,empty series
+8000,LDO,lido,200,66,2020-12,2026-05,ok
+24257,LGCT,legacy-network,200,0,,,empty series
+37986,LIGHT,heaven,200,0,,,empty series
+7102,LINA,linear-finance,200,54,2021-12,2026-05,ok
+1934,LRC,loopring,200,70,2020-08,2026-05,ok
+14783,MAGIC,treasure,200,52,2022-02,2026-05,ok
+9175,MBOX,mobox,200,52,2021-12,2026-05,ok
+13523,MC,merit-circle,200,54,2021-12,2026-05,ok
+8335,MDX,mdex,200,65,2021-01,2026-05,ok
+28301,MEME,memecoin,200,0,,,empty series
+30712,MERL,merlins-seal,200,28,2024-02,2026-05,ok
+2873,MET,metronome-v1,200,63,2021-03,2026-05,ok
+7857,MIR,mirror,200,30,2021-04,2023-10,ok
+1552,MLN,enzyme-finance,200,63,2021-03,2026-05,ok
+21870,MPLX,metaplex,200,0,,,empty series
+2982,MVL,mvl-staking,200,32,2023-10,2026-05,ok
+36410,MYX,myx-finance,200,27,2024-03,2026-05,ok
+8191,NFTX,nftx,200,60,2021-06,2026-05,ok
+1732,NMR,erasure,200,63,2021-03,2026-05,ok
+5906,NVT,nerve-staking,200,60,2021-06,2026-05,ok
+9067,OHM,olympus-dao,200,63,2021-03,2026-05,ok
+6536,OM,mantra-dao,200,54,2021-06,2026-05,ok
+7230,OPIUM,opium,200,64,2021-02,2026-05,ok
+3835,ORBS,orbs,200,18,2024-12,2026-05,ok
+5631,ORN,dedust,200,39,2023-03,2026-05,ok
+12220,OSMO,osmosis-dex,200,60,2021-06,2026-05,ok
+5354,PEAK,peakdefi,200,63,2021-03,2026-05,ok
+9481,PENDLE,pendle,200,60,2021-06,2026-05,ok
+6950,PERP,perpetual-protocol,200,60,2021-06,2026-05,ok
+5794,PNT,pnetwork,200,33,2021-09,2024-11,ok
+23711,PRIME,echelon-prime,200,0,,,empty series
+2539,REN,renvm,200,53,2020-10,2025-06,ok
+1104,REP,augur,200,75,2020-03,2026-05,ok
+7654,RFOX,rfox,200,50,2022-04,2026-05,ok
+7486,RGT,rari-capital,200,68,2020-10,2026-05,ok
+4157,RUNE,thorchain-dex,200,62,2021-04,2026-05,ok
+7617,SFI,saffron-finance,200,55,2021-11,2026-05,ok
+8972,SFUND,seedify,200,51,2022-03,2026-05,ok
+5279,SOLO,sologenic,200,0,,,empty series
+5601,STAKE,xdai-stake-bridge,200,68,2020-10,2026-05,ok
+8911,STRK,strike,200,57,2021-09,2026-05,ok
+10529,SUN,sun.io,200,59,2021-07,2026-05,ok
+8290,SUPER,superfarm,200,54,2021-12,2026-05,ok
+6758,SUSHI,sushiswap,200,69,2020-09,2026-05,ok
+5829,SWAP,team-finance,200,47,2022-06,2026-05,ok
+4279,SXP,swipe,200,63,2021-03,2026-05,ok
+12147,SYN,synapse,200,58,2021-08,2026-05,ok
+22974,TAO,bittensor,200,0,,,empty series
+1556,TIME,timewarp,200,57,2021-09,2026-05,ok
+9119,TLM,alien-worlds,200,22,2024-08,2026-05,ok
+7725,TRU,truefi,200,67,2020-11,2026-05,ok
+3930,TT,thundercore-staking,200,38,2023-04,2026-05,ok
+7127,VELO,velo-finance,200,22,2024-08,2026-05,ok
+35509,VVV,venice,200,1,2026-05,2026-05,ok
+29587,W,portal,200,57,2021-09,2026-05,ok
+36119,WAL,walrus-protocol,200,0,,,empty series
+1166,WARP,polkastarter,200,54,2021-12,2026-05,ok
+13502,WLD,worldcoin,200,0,,,empty series
+4090,WXT,nereus-finance,200,52,2022-02,2026-05,ok
+5957,YFII,yfii,200,62,2021-04,2026-05,ok
+10688,YGG,yield-guild-games,200,0,,,empty series
+27765,ZBU,zeebu,200,18,2024-12,2026-05,ok
+24091,ZK,zksync-era,200,0,,,empty series
+8202,ZKB,zkswap,200,64,2021-02,2026-05,ok
+29779,ZKJ,polyhedra-network,200,0,,,empty series
+1896,ZRX,0x-aggregator,200,0,,,empty series

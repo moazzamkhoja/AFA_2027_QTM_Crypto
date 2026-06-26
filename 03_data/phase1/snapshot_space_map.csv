@@ -20,6 +20,7 @@ cmc_id,symbol,name,asset_class,snapshot_space,map_source
 6719,GRT,The Graph,token,graphprotocol.eth,curated
 6758,SUSHI,SushiSwap,token,sushigov.eth,curated
 6859,FARM,Harvest Finance,token,harvestfi.eth,defillama_governanceID
+6950,PERP,Perpetual Protocol,token,vote-perp.eth,curated
 6953,FRAX,Frax (prev. FXS),token,frax.eth,curated
 7083,UNI,Uniswap,token,uniswapgovernance.eth,curated
 7102,LINA,Linear Finance,token,lineardao.eth,defillama_governanceID
@@ -55,3 +56,4 @@ cmc_id,symbol,name,asset_class,snapshot_space,map_source
 22461,HFT,Hashflow,token,hashflowdao.eth,defillama_governanceID
 27075,MNT,Mantle,other,bitdao.eth,defillama_governanceID
 28324,DYDX,dYdX,coin,dydxgov.eth,curated
+30171,ENA,Ethena,token,ethenagovernance.eth,curated

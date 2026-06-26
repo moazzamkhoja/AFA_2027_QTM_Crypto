@@ -52,6 +52,12 @@ CURATED = {
     18934: "stgdao.eth", 11396: "joegovernance.eth", 13855: "ens.eth",
     8000: "lido-snapshot.eth", 10052: "gitcoindao.eth", 18876: "apecoin.eth",
     8104: "1inch.eth",
+    # SESSION 019 (Part A.2): two spaces the Entry-25 "not on Snapshot" gap list
+    # actually has, found via Snapshot ranking search and verified live to be official,
+    # active, token-weighted (erc20-balance-of on the canonical token):
+    #   ENA  -> ethenagovernance.eth (name "Ethena",  symbol ENA,  ENA 0x57e1..6061)
+    #   PERP -> vote-perp.eth        (name "Perpetual Protocol", symbol PERP, 0xbC39..3447)
+    30171: "ethenagovernance.eth", 6950: "vote-perp.eth",
 }
 
 
