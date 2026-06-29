@@ -11,10 +11,13 @@ series.
 (not just Etherscan). PHASE 2 (a later session) = paid services.** Do not sign up for or use any paid tier
 this session — Phase 2 is explicitly out of scope here.
 
-**Dependency:** session 023 (`CLAUDE_CODE_HEX_AKRO_RECONCILIATION_AND_SURVIVORSHIP_PROMPT.md`) must have
-run first — it resolves whether HEX and AKRO are BUILD or REJECT. Read its output
-(`03_data/SESSION023_HEX_AKRO_RECONCILIATION.md` + the Entry-54+ log entries) before building Channel 1, and
-take its verdicts as final for those two tokens. If session 023 has NOT run yet, run it first or stop and say so.
+**Dependency — DONE:** session 023 (`CLAUDE_CODE_HEX_AKRO_RECONCILIATION_AND_SURVIVORSHIP_PROMPT.md`) has
+already run (commit `b7ecb73`, Entries 54/55/56). Its verdicts are **final**: **HEX = BUILD (already shipped —
+this is NOT a rebuild target)** — `03_data/phase1/channel1_hex_stake.csv` via `04_code/phase1_channel1_hex_stake.py`,
+already in the assembler glob; **AKRO = REJECT** (its `Locked()` is an owner-only admin pause switch, not a
+stake — do NOT attempt it). Read `03_data/SESSION023_HEX_AKRO_RECONCILIATION.md` + Entries 54/55/56 before
+building Channel 1 so you don't re-derive or duplicate HEX. **Current λ baseline going into this session:
+2,130 observed asset-months / 68 distinct assets** — measure your deltas from there.
 
 ---
 
@@ -29,8 +32,11 @@ reading" before building anything.
    beacon-deposit getLogs event-replay — the Channel-1 reconstruction template), Entry 24 (Channel 2
    unbuilt = "highest-value addition"), Entry 25 (Channel 3 = Snapshot + token-weight guard), Entry 26
    (single-escrow custody standard + cross-check-to-balanceOf at ~0.00% drift), Entry 49 (the
-   circulating_supply staked-token double-count artifact), Entry 53 (session 022 feasibility), and the
-   Entry-54+ HEX/AKRO entries from session 023.
+   circulating_supply staked-token double-count artifact), Entry 53 (session 022 feasibility), and
+   **Entries 54 (HEX BUILD — a THIRD Channel-1 template: non-custodial burn-and-track, reconstructed from
+   StakeStart(+)/StakeEnd(−) decoded-event amounts, no escrow; see `phase1_channel1_hex_stake.py`), 55
+   (AKRO REJECT — the "an event named Locked() is not necessarily a lock" lesson), 56 (the 284 dead-listing
+   survivorship-bias note)** from session 023. **Next free log entry number = 57.**
 2. 03_data/ETHERSCAN_LAMBDA_CHANNEL_EMPIRICAL.md and 03_data/NON_EVM_LAMBDA_CHANNEL_ASSESSMENT.md — the
    per-channel findings and the measured free/paid chain gate.
 3. The three maps, joined on cmc_id, are your build worklist:
@@ -73,12 +79,24 @@ BLAST, UNI, ENS, SUSHI, GTC, KP3R, BTRST, RGT, HFT, STRK, MNT, BLUR, RAIN, TOMI,
 
 ### Task B — Channel 1: build the free-chain confirmed locks
 Confirmed genuine, amount-bearing (build via getLogs event-replay -> monthly locked / total-or-circulating
-supply, cross-checked to a live contract balanceOf/global read at ~0.00% drift, Entry 26):
-NMR, stkAAVE, XAN — plus HEX and AKRO IFF session 023 resolved them to BUILD (use its exact method/verdict).
-- VSL: bare `Locked()` (no amount in event) -> reconstruct from the lock contract's balanceOf at each
-  month-end block, not event amounts; flag as the weaker construction.
+supply, cross-checked to a live contract balanceOf/global read at ~0.00% drift, Entry 26): **NMR, stkAAVE,
+XAN.** (**HEX is already BUILT in session 023 — do NOT rebuild it; AKRO is REJECT — do NOT attempt it.**)
+- **Before reconstructing ANY token, read its verified source and confirm the event is a genuine holder
+  lock/stake — not an admin/pause/vesting flag.** Session 023's AKRO finding is the cautionary case: its
+  `Locked()` was an owner-only `Lockable.lock()` pause switch that fired once with no amount, and session
+  022's name-matching classifier wrongly flagged it "GENUINE." **Apply this directly to VSL below** — its
+  `Locked()` may be the same false positive; verify the mechanism before building.
+- VSL: bare `Locked()` (no amount in event) -> ONLY if the source confirms it's a real lock, reconstruct
+  from the lock contract's balanceOf at each month-end block, not event amounts; flag as the weaker
+  construction. If `Locked()` is an admin/pause flag (the AKRO pattern), REJECT it with the contract reason.
 - Apply the Entry-49 denominator check per token: does CMC circulating_supply already exclude the staked
   amount (ratio can exceed 1)? State per token; keep un-capped + flagged, use z-scored rank not level.
+  (HEX is the worked example — its contract NatSpec exposed `allocatedSupply = totalSupply + locked`, so the
+  clean `locked/(locked+circ)` fraction was written alongside `locked/circ`; do the same where a token's
+  contract exposes a staked-inclusive supply.)
+- For high-event-count tokens, Dune's **free** decoded-event tables (`<project>_<chain>.<CONTRACT>_evt_<Event>`,
+  `small` engine) are an acceptable getLogs substitute and were used for HEX (Entry 54) and the Bucket-1/3
+  builds (Entries 48/51) — same "logs not eth_call" rule, far fewer calls than windowed Etherscan getLogs.
 - Land as a new 03_data/phase1/channel1_freebuild.csv (picked up by the assembler glob). Extend
   phase1_channel1_evm_locks*.py, don't rewrite. Re-run the assembler; report the delta.
 
@@ -120,6 +138,10 @@ session 023 documents them as survivorship bias).
 - DATA_DECISIONS_LOG.md is append-only — continue at the next free entry number; never edit prior entries.
 - Standardize/assemble exactly as phase1_assemble_lambda.py already does (z-score per channel per month,
   equal-weight available channels, record channel count) — extend, don't change its logic.
+- KNOWN GOTCHA (session 023): `phase1_assemble_lambda.py` writes `lambda_panel.csv` correctly, then can
+  throw a cosmetic `UnicodeEncodeError` on a `→` in its final `print` under the Windows cp1252 console — the
+  CSV is already written when it throws. Run it with `PYTHONUTF8=1` (or read the file to confirm the counts)
+  rather than assuming the assembly failed. A one-char fix to that print is fine if you touch it.
 
 ## CONTEXT-WINDOW DISCIPLINE (required)
 Track your context usage as you work. **When you reach ~2/3 (about 66%) of the context window**, STOP
