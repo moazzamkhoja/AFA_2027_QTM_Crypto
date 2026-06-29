@@ -1,0 +1,406 @@
+cmc_id,symbol,name,asset_class,chain,class,tx_repository,ch1_staking,ch2_holding,ch3_voting
+30943,$MICHI,michi (SOL),other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+900,007,007Coin,other,,NO-IDENTITY,,no,no,no
+28683,1000SATS,SATS,other,,NO-IDENTITY,,no,no,no
+1109,1337,Elite,other,,NO-IDENTITY,,no,no,no
+930,16BIT,16bit,other,,NO-IDENTITY,,no,no,no
+33031,1MBABYDOGE,Baby Doge Coin,other,,NO-IDENTITY,,no,no,no
+38515,2Z,DoubleZero,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+890,8BIT,8Bit,other,,NO-IDENTITY,,no,no,no
+1706,ADK,Aidos Kuneen,other,,NO-IDENTITY,,no,no,no
+34026,AI16Z,ai16z,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+7431,AKT,Akash Network,other,Osmosis,NonEVM-indexed,Mintscan/LCD,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+6957,ALBT,AllianceBlock,other,,NO-IDENTITY,,no,no,no
+3260,AMO,AMO Coin,other,KAIA,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+115,APC,Applecoin,other,,NO-IDENTITY,,no,no,no
+2767,APIS,APIS,other,,NO-IDENTITY,,no,no,no
+2992,APL,Apollo Currency,other,,NO-IDENTITY,,no,no,no
+1688,APX,APX,other,,NO-IDENTITY,,no,no,no
+1624,ATMOS,Atmos,other,Vaulta,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+620,ATOMIC,ATOMIC,other,,NO-IDENTITY,,no,no,no
+3620,ATP,Atlas Protocol,other,BNB Beacon Chain (BEP2),Obscure,varies,unknown,maybe,unknown
+6216,AXEL,AXEL,other,,NO-IDENTITY,,no,no,no
+1597,B@,Bankcoin,other,,NO-IDENTITY,,no,no,no
+642,BANX,Banx,other,,NO-IDENTITY,,no,no,no
+31369,BBTC,BounceBit BTC,other,BounceBit,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+1668,BCAP,BCAP,other,,NO-IDENTITY,,no,no,no
+7686,BCHA,Bitcoin Cash ABC,other,,NO-IDENTITY,,no,no,no
+2033,BCO,BridgeCoin,other,,NO-IDENTITY,,no,no,no
+1771,BET,DAOBet,other,,NO-IDENTITY,,no,no,no
+18736,BFIC,Blockchain Foundation for Innovation & Collaboration,other,,NO-IDENTITY,,no,no,no
+926,BGCAFFE,Buongiorno Caffe,other,,NO-IDENTITY,,no,no,no
+3966,BHD,BitcoinHD,other,,NO-IDENTITY,,no,no,no
+3020,BHP,BHPCoin,other,,NO-IDENTITY,,no,no,no
+562,BILS,BilShares,other,,NO-IDENTITY,,no,no,no
+1057,BKS,BlockShares,other,,NO-IDENTITY,,no,no,no
+729,BLITZ,Blitzcash,other,,NO-IDENTITY,,no,no,no
+1374,BLOCKPAY,BlockPay,other,,NO-IDENTITY,,no,no,no
+29870,BOME,BOOK OF MEME,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+3801,BORA,BORA,other,KAIA,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+2095,BOS,BOScoin,other,,NO-IDENTITY,,no,no,no
+2211,BOT,Bodhi,other,,NO-IDENTITY,,no,no,no
+5815,BPS,BitcoinPoS,other,,NO-IDENTITY,,no,no,no
+1303,BRX,Breakout Stake,other,,NO-IDENTITY,,no,no,no
+28862,BSOL,BlazeStake Staked SOL,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+3974,BTC2,Bitcoin 2,other,,NO-IDENTITY,,no,no,no
+2392,BTO,Bottos,other,,NO-IDENTITY,,no,no,no
+1201,BTSR,BTSR,other,,NO-IDENTITY,,no,no,no
+904,BTX,BitcoinTX,other,,NO-IDENTITY,,no,no,no
+1300,CADASTRAL,Bitland,other,,NO-IDENTITY,,no,no,no
+28670,CAIR,Crypto-AI-Robo.com,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1510,CCRB,CryptoCarbon,other,,NO-IDENTITY,,no,no,no
+2427,CHAT,ChatCoin,other,,NO-IDENTITY,,no,no,no
+34125,CHILLGUY,Just a chill guy,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+274,CINNI,Cinni,other,,NO-IDENTITY,,no,no,no
+961,CIRC,CryptoCircuits,other,,NO-IDENTITY,,no,no,no
+2246,CMT,CyberMiles,other,,NO-IDENTITY,,no,no,no
+579,CNMT,Coinomat,other,,NO-IDENTITY,,no,no,no
+1823,COE,CoEval,other,,NO-IDENTITY,,no,no,no
+265,COMM,CommunityCoin,other,,NO-IDENTITY,,no,no,no
+818,CON,PayCon,other,,NO-IDENTITY,,no,no,no
+2641,CPX,Apex,other,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+869,CRAVE,Crave,other,,NO-IDENTITY,,no,no,no
+2556,CS,Credits,other,,NO-IDENTITY,,no,no,no
+45,CSC,CasinoCoin,other,Solana; XRP Ledger,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1100,CUBE,DigiCube,other,,NO-IDENTITY,,no,no,no
+854,CV2,Colossuscoin V2,other,,NO-IDENTITY,,no,no,no
+4152,CVCC,CryptoVerificationCoin,other,,NO-IDENTITY,,no,no,no
+3686,CVNT,Content Value Network,other,,NO-IDENTITY,,no,no,no
+1077,CYT,Cryptokenz,other,,NO-IDENTITY,,no,no,no
+2316,DBC,DeepBrain Chain,other,,NO-IDENTITY,,no,no,no
+811,DEBUNE,DeBuNe,other,,NO-IDENTITY,,no,no,no
+10442,DESO,Decentralized Social,other,,NO-IDENTITY,,no,no,no
+1612,DIBC,DIBCOIN,other,,NO-IDENTITY,,no,no,no
+717,DICE,NeoDICE,other,,NO-IDENTITY,,no,no,no
+5622,DMCH,Darma Cash,other,,NO-IDENTITY,,no,no,no
+30933,DOG,Dog (Bitcoin),other,Runes; Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+32698,DOGS,DOGS,other,TON,NonEVM-indexed,Toncenter,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+3924,DREP,DREP,other,BNB Beacon Chain (BEP2),Obscure,varies,unknown,maybe,unknown
+1520,DRS,Digital Rupees,other,,NO-IDENTITY,,no,no,no
+908,DRZ,Droidz,other,,NO-IDENTITY,,no,no,no
+2446,DTA,DATA,other,,NO-IDENTITY,,no,no,no
+1603,DTB,Databits,other,,NO-IDENTITY,,no,no,no
+1782,ECOB,Ecobit,other,,NO-IDENTITY,,no,no,no
+9466,EDGT,Edgecoin,other,Stellar,NonEVM-indexed,Horizon,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1249,EL,Elcoin,other,,NO-IDENTITY,,no,no,no
+4748,EON,Dimension Chain,other,,NO-IDENTITY,,no,no,no
+4086,ERD,Elrond,other,,NO-IDENTITY,,no,no,no
+1714,ETT,EncryptoTel [WAVES],other,,NO-IDENTITY,,no,no,no
+224,FAIR,FairCoin,other,,NO-IDENTITY,,no,no,no
+33597,FARTCOIN,Fartcoin,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1087,FCT,Factom,other,,NO-IDENTITY,,no,no,no
+570,FIBRE,Fibre,other,,NO-IDENTITY,,no,no,no
+444,FIMK,FIMKrypto,other,,NO-IDENTITY,,no,no,no
+606,FLDC,FoldingCoin,other,,NO-IDENTITY,,no,no,no
+1133,FLOZ,Floz,other,,NO-IDENTITY,,no,no,no
+1161,FLVR,FlavorCoin,other,,NO-IDENTITY,,no,no,no
+4512,FNSA,FINSCHIA,other,,NO-IDENTITY,,no,no,no
+12131,FRTS,Fruits,other,,NO-IDENTITY,,no,no,no
+1670,FUNC,FUNCoin,other,,NO-IDENTITY,,no,no,no
+1075,FUND,Cryptofund,other,,NO-IDENTITY,,no,no,no
+1225,GBT,GameBet Coin,other,,NO-IDENTITY,,no,no,no
+779,GEMZ,GetGems,other,,NO-IDENTITY,,no,no,no
+823,GEO,GeoCoin,other,,NO-IDENTITY,,no,no,no
+30063,GIGA,Gigachad,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+5200,GLEEC,Gleec Coin,other,,NO-IDENTITY,,no,no,no
+33440,GOAT,Goatseus Maximus,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1480,GOLOS,Golos,other,,NO-IDENTITY,,no,no,no
+32956,GRASS,Grass,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+402,GRE,Greencoin,other,,NO-IDENTITY,,no,no,no
+34792,GRIFFAIN,GRIFFAIN,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+976,GRM,Gridmaster,other,,NO-IDENTITY,,no,no,no
+2746,GRN,GreenPower,other,,NO-IDENTITY,,no,no,no
+1071,GSY,GenesysCoin,other,,NO-IDENTITY,,no,no,no
+3914,GTN,GlitzKoin,other,,NO-IDENTITY,,no,no,no
+1122,GYC,GongYiCoin,other,,NO-IDENTITY,,no,no,no
+1308,HEAT,HEAT,other,,NO-IDENTITY,,no,no,no
+1477,HKG,Hacker Gold,other,,NO-IDENTITY,,no,no,no
+32195,HMSTR,Hamster Kombat,other,,NO-IDENTITY,,no,no,no
+5221,HNS,Handshake,other,,NO-IDENTITY,,no,no,no
+5127,HTDF,Orient Walt,other,,NO-IDENTITY,,no,no,no
+525,HYP,HyperStake,other,,NO-IDENTITY,,no,no,no
+466,HZ,Horizon,other,,NO-IDENTITY,,no,no,no
+1408,ICN,Iconomi,other,,NO-IDENTITY,,no,no,no
+1276,ICOO,ICO OpenLedger,other,,NO-IDENTITY,,no,no,no
+2276,IGNIS,Ignis,other,,NO-IDENTITY,,no,no,no
+970,INDEX,CoinoIndex,other,,NO-IDENTITY,,no,no,no
+2209,INK,Ink,other,,NO-IDENTITY,,no,no,no
+1626,INPAY,InPay,other,smartBCH,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+29835,IO,io.net,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2433,IPC,IPChain,other,,NO-IDENTITY,,no,no,no
+645,JINN,Jinn,other,,NO-IDENTITY,,no,no,no
+481,JLH,jl777hodl,other,,NO-IDENTITY,,no,no,no
+1516,JNS,Janus,other,,NO-IDENTITY,,no,no,no
+4967,JUL,Joule,other,,NO-IDENTITY,,no,no,no
+1379,JWL,Jewels,other,,NO-IDENTITY,,no,no,no
+6170,KFX,KnoxFS,other,,NO-IDENTITY,,no,no,no
+39072,KHYPE,Kinetiq Staked HYPE,other,HyperEVM,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+6724,KLV,Klever Coin,other,,NO-IDENTITY,,no,no,no
+400,KORE,Kore,other,,NO-IDENTITY,,no,no,no
+1224,KR,Krypton,other,,NO-IDENTITY,,no,no,no
+2378,KRM,Karma,other,,NO-IDENTITY,,no,no,no
+9720,LAT,PlatON,other,,NO-IDENTITY,,no,no,no
+1309,LIR,LetItRide,other,,NO-IDENTITY,,no,no,no
+1454,LKK,Lykke,other,,NO-IDENTITY,,no,no,no
+3178,LKY,Linkey,other,,NO-IDENTITY,,no,no,no
+1380,LMC,LoMoCoin,other,,NO-IDENTITY,,no,no,no
+5329,LRG,Largo Coin,other,,NO-IDENTITY,,no,no,no
+550,LTBC,LTBcoin,other,,NO-IDENTITY,,no,no,no
+1068,LTD,LimitedCoin,other,,NO-IDENTITY,,no,no,no
+291,MAID,MaidSafeCoin,other,,NO-IDENTITY,,no,no,no
+13631,MANTA,Manta Network,other,Ethereum; Manta Pacific,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+1056,MAPC,MapCoin,other,,NO-IDENTITY,,no,no,no
+3175,MARO,Maro,other,,NO-IDENTITY,,no,no,no
+651,MARYJ,MaryJane,other,,NO-IDENTITY,,no,no,no
+5548,MASS,Massnet,other,,NO-IDENTITY,,no,no,no
+4209,MB8,MB8 Coin,other,,NO-IDENTITY,,no,no,no
+32197,ME,Magic Eden,other,Multi-Chain; Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2303,MED,MediBloc,other,Cosmos,NonEVM-indexed,Mintscan/LCD,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2845,MEDX,MediBloc [ERC20],other,,NO-IDENTITY,,no,no,no
+35347,MELANIA,Official Melania Meme,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1590,MER,Mercury,other,,NO-IDENTITY,,no,no,no
+4676,MEXC,MEXC Token,other,,NO-IDENTITY,,no,no,no
+1649,MGC,MergeCoin,other,,NO-IDENTITY,,no,no,no
+556,MGW,MGW,other,,NO-IDENTITY,,no,no,no
+3756,MHC,#MetaHash,other,,NO-IDENTITY,,no,no,no
+1051,MI,Xiaomicoin,other,,NO-IDENTITY,,no,no,no
+989,MMBTCD,MMBTCD,other,,NO-IDENTITY,,no,no,no
+686,MMNXT,MMNXT,other,,NO-IDENTITY,,no,no,no
+575,MNTA,Moneta,other,,NO-IDENTITY,,no,no,no
+7878,MOB,MobileCoin,other,,NO-IDENTITY,,no,no,no
+24600,MOBILE,Helium Mobile,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2441,MOF,Molecular Future,other,Tron20,NonEVM-indexed,TronScan/TronGrid,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+33093,MOODENG,Moo Deng (moodengsol.com),other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+155,MRC,microCoin,other,,NO-IDENTITY,,no,no,no
+621,MRKT,FreeMarket,other,,NO-IDENTITY,,no,no,no
+1550,MSCN,Master Swiscoin,other,,NO-IDENTITY,,no,no,no
+6498,MTC,Metacoin,other,,NO-IDENTITY,,no,no,no
+1788,MTL,Metal DAO,other,Metal,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+4451,MTXLT,Tixl [old],other,,NO-IDENTITY,,no,no,no
+30285,MUMU,Mumu the Bull (SOL),other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+28382,MYRO,Myro,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+267,NAS,Nas,other,,NO-IDENTITY,,no,no,no
+1908,NAS,Nebulas,other,,NO-IDENTITY,,no,no,no
+321,NAUT,NautilusCoin,other,,NO-IDENTITY,,no,no,no
+1811,NET,Nimiq Exchange Token,other,,NO-IDENTITY,,no,no,no
+595,NODE,Node,other,,NO-IDENTITY,,no,no,no
+28850,NOT,Notcoin,other,TON,NonEVM-indexed,Toncenter,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+748,NOXT,NobleNXT,other,,NO-IDENTITY,,no,no,no
+4110,NPC,NPCoin,other,,NO-IDENTITY,,no,no,no
+699,NSR,NuShares,other,,NO-IDENTITY,,no,no,no
+1794,NVST,NVO,other,,NO-IDENTITY,,no,no,no
+667,NXTI,NXTInspect,other,,NO-IDENTITY,,no,no,no
+532,NXTTY,Nxttycoin,other,,NO-IDENTITY,,no,no,no
+622,NXTV,NXTventure,other,,NO-IDENTITY,,no,no,no
+649,NXTcoinsco,Tradebots,other,,NO-IDENTITY,,no,no,no
+647,NXTprivacy,NXTprivacy,other,,NO-IDENTITY,,no,no,no
+1123,OBITS,OBITS,other,,NO-IDENTITY,,no,no,no
+2005,ODN,Obsidian,other,,NO-IDENTITY,,no,no,no
+3897,OKB,OKB,other,X Layer,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+1124,OPENBTC,OpenBTC,other,,NO-IDENTITY,,no,no,no
+25028,ORDI,ORDI,other,Ordinals - BRC20,Obscure,varies,unknown,maybe,unknown
+2900,PAI,Project Pai,other,,NO-IDENTITY,,no,no,no
+751,PANGEA,Pangea Poker,other,,NO-IDENTITY,,no,no,no
+1841,PBT,Primalbase Token,other,,NO-IDENTITY,,no,no,no
+4200,PCX,ChainX,other,,NO-IDENTITY,,no,no,no
+1277,PDC,Project Decorum,other,,NO-IDENTITY,,no,no,no
+1405,PEPECASH,Pepe Cash,other,,NO-IDENTITY,,no,no,no
+76,PHS,Philosopher Stones,other,,NO-IDENTITY,,no,no,no
+35053,PIPPIN,pippin,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+3364,PLC,PLATINCOIN,other,,NO-IDENTITY,,no,no,no
+33788,PNUT,Peanut the Squirrel,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+28782,POPCAT,Popcat (SOL),other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1495,POSW,PoSW Coin,other,,NO-IDENTITY,,no,no,no
+1327,PPY,Peerplays [old],other,,NO-IDENTITY,,no,no,no
+1719,PPY,Peerplays,other,,NO-IDENTITY,,no,no,no
+1404,PSB,Pesobit,other,,NO-IDENTITY,,no,no,no
+62,PTS,BitShares PTS,other,,NO-IDENTITY,,no,no,no
+648,Privatebet,Privatebet,other,,NO-IDENTITY,,no,no,no
+529,QBK,Qibuck,other,,NO-IDENTITY,,no,no,no
+2321,QLC,Kepple,other,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+344,QORA,Qora,other,,NO-IDENTITY,,no,no,no
+1226,QWARK,Qwark,other,,NO-IDENTITY,,no,no,no
+1559,RNS,Renos,other,,NO-IDENTITY,,no,no,no
+1208,RVR,RevolutionVR,other,,NO-IDENTITY,,no,no,no
+9721,SAMO,Samoyedcoin,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+28194,SATS,SATS (Ordinals),other,Ordinals - BRC20,Obscure,varies,unknown,maybe,unknown
+3772,SCC,STEM CELL COIN,other,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1113,SCRT,SecretCoin,other,,NO-IDENTITY,,no,no,no
+493,SDC,ShadowCash,other,,NO-IDENTITY,,no,no,no
+4078,SERO,Super Zero Protocol,other,,NO-IDENTITY,,no,no,no
+604,SF0,sharkfund0,other,,NO-IDENTITY,,no,no,no
+1172,SFT,Safex Token,other,,NO-IDENTITY,,no,no,no
+299,SHIBE,ShibeCoin,other,,NO-IDENTITY,,no,no,no
+1482,SHORTY,Shorty,other,,NO-IDENTITY,,no,no,no
+3366,SINS,SafeInsure,other,,NO-IDENTITY,,no,no,no
+549,SJCX,Storjcoin X,other,,NO-IDENTITY,,no,no,no
+757,SKYNET,SkyNET,other,,NO-IDENTITY,,no,no,no
+29920,SLERF,SLERF,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2471,SLT,Smartlands Network,other,,NO-IDENTITY,,no,no,no
+679,SMBR,Sembro Token,other,,NO-IDENTITY,,no,no,no
+33110,SOS,Solana Swap,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2309,SPHTX,SophiaTX,other,,NO-IDENTITY,,no,no,no
+1272,SPOTS,Spots,other,,NO-IDENTITY,,no,no,no
+1002,SPRTS,Sprouts,other,,NO-IDENTITY,,no,no,no
+530,SSD,Sonic,other,,NO-IDENTITY,,no,no,no
+1073,STEPS,Steps,other,,NO-IDENTITY,,no,no,no
+23951,STIK,Staika,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+21781,STRD,Stride,other,Multi-Chain; Osmosis,NonEVM-indexed,Mintscan/LCD,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+4365,STREAM,Streamit Coin,other,,NO-IDENTITY,,no,no,no
+32717,SUNDOG,SUNDOG,other,Tron20,NonEVM-indexed,TronScan/TronGrid,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+607,SWARM,Swarm,other,,NO-IDENTITY,,no,no,no
+3144,THR,ThoreCoin,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1588,TKS,Tokes,other,,NO-IDENTITY,,no,no,no
+2507,TKY,THEKEY,other,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+3237,TMC,Timicoin,other,,NO-IDENTITY,,no,no,no
+2443,TNC,Trinity Network Credit,other,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1923,TNT,Tierion,other,,NO-IDENTITY,,no,no,no
+2627,TPAY,TokenPay,other,,NO-IDENTITY,,no,no,no
+1423,TRIG,Triggers,other,,NO-IDENTITY,,no,no,no
+468,TRK,Truckcoin,other,,NO-IDENTITY,,no,no,no
+941,TRMB,TRMB,other,,NO-IDENTITY,,no,no,no
+35336,TRUMP,OFFICIAL TRUMP,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+450,TRUST,TrustPlus,other,,NO-IDENTITY,,no,no,no
+2215,TSL,Energo,other,,NO-IDENTITY,,no,no,no
+2886,TTU,TaTaTu,other,,NO-IDENTITY,,no,no,no
+1129,TVE,The Viral Exchange,other,,NO-IDENTITY,,no,no,no
+1560,UNIBURST,UniBURST,other,,NO-IDENTITY,,no,no,no
+643,UNITY,SuperNET,other,,NO-IDENTITY,,no,no,no
+36828,USELESS,Useless Coin,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+38948,USX,Solstice USX,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+735,VASH,VPNCoin,other,,NO-IDENTITY,,no,no,no
+923,VIRAL,Viral,other,,NO-IDENTITY,,no,no,no
+1566,VISIO,Visio,other,,NO-IDENTITY,,no,no,no
+5233,WCC,WinCash,other,,NO-IDENTITY,,no,no,no
+33469,WCHZ,Wrapped Chiliz,other,Chiliz Chain; Chiliz Legacy Chain,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+1527,WCT,Waves Community Token,other,,NO-IDENTITY,,no,no,no
+20456,WE,WeBuy,other,KAIA,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+24913,WEOS,Wrapped EOS,other,EOS EVM,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+20701,WEVER,Wrapped Everscale,other,Everscale,NonEVM-indexed,ton-style,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+28752,WIF,dogwifhat,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+24165,WKAVA,Wrapped Kava,other,Kava,NonEVM-indexed,Mintscan/LCD,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+35837,WOULD,would,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+982,WS,Woodshares,other,,NO-IDENTITY,,no,no,no
+19076,WVLX,Wrapped Velas,other,Velas,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+1636,XBY,XTRABYTES,other,,NO-IDENTITY,,no,no,no
+335,XC,XCurrency,other,,NO-IDENTITY,,no,no,no
+652,XCH,ClearingHouse,other,,NO-IDENTITY,,no,no,no
+509,XCR,Crypti,other,,NO-IDENTITY,,no,no,no
+2939,XD,Data Transaction Token,other,,NO-IDENTITY,,no,no,no
+567,XDP,Dogeparty,other,,NO-IDENTITY,,no,no,no
+1737,XEL,XEL,other,,NO-IDENTITY,,no,no,no
+5060,XNC,XeniosCoin,other,,NO-IDENTITY,,no,no,no
+2369,XNS,Insolar,other,,NO-IDENTITY,,no,no,no
+920,XSD,SounDAC,other,,NO-IDENTITY,,no,no,no
+694,XTC,TileCoin,other,,NO-IDENTITY,,no,no,no
+4899,YAP,Yap Stone,other,,NO-IDENTITY,,no,no,no
+1499,YASH,YashCoin,other,,NO-IDENTITY,,no,no,no
+95,YBC,YbCoin,other,,NO-IDENTITY,,no,no,no
+7321,YOUC,yOUcash,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1899,YOYOW,YOYOW,other,,NO-IDENTITY,,no,no,no
+6726,YUSRA,YUSRA,other,,NO-IDENTITY,,no,no,no
+1219,ZAIF,ZAIF,other,,NO-IDENTITY,,no,no,no
+2685,ZEBI,Zebi Token,other,,NO-IDENTITY,,no,no,no
+34083,ZEREBRO,Zerebro,other,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1726,ZRC,ZrCoin,other,,NO-IDENTITY,,no,no,no
+32554,wIOTA,wIOTA,other,IOTA EVM,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+36462,A,Vaulta,token,Vaulta,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+6756,ACA,Acala Token,token,,NO-IDENTITY,,no,no,no
+33566,ACT,Act I : The AI Prophecy,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1125,AMP,HyperSpace,token,,NO-IDENTITY,,no,no,no
+473,APEX,ApexCoin,token,,NO-IDENTITY,,no,no,no
+34926,ARC,AI Rig Complex,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+661,ARCH,ARCHcoin,token,,NO-IDENTITY,,no,no,no
+33834,BBSOL,Bybit Staked SOL,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+659,BITS,Bitswift,token,,NO-IDENTITY,,no,no,no
+32882,BNSOL,Binance Staked SOL,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+3653,BRC,Baer Chain,token,,NO-IDENTITY,,no,no,no
+1121,BST,BitStone,token,,NO-IDENTITY,,no,no,no
+8210,BTCST,Bitcoin Standard Hashrate Token,token,,NO-IDENTITY,,no,no,no
+9486,BTCT,Bitcoin TRC20,token,Tron20,NonEVM-indexed,TronScan/TronGrid,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1573,CASINO,Casino,token,Multi-Chain,Obscure,varies,unknown,maybe,unknown
+18031,CCD,Concordium,token,,NO-IDENTITY,,no,no,no
+793,CELL,SolarFarm,token,,NO-IDENTITY,,no,no,no
+963,CORE,CORE,token,,NO-IDENTITY,,no,no,no
+4484,CRN,ChronoCoin,token,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1867,CTR,Centra,token,,NO-IDENTITY,,no,no,no
+1253,DAO,The DAO,token,,NO-IDENTITY,,no,no,no
+33391,DEEP,DeepBook Protocol,token,Sui Network,NonEVM-indexed,Sui RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+603,DEX,InstantDEX,token,,NO-IDENTITY,,no,no,no
+5234,DNA,Metaverse Dualchain Network Architecture,token,,NO-IDENTITY,,no,no,no
+2675,DOCK,Dock,token,,NO-IDENTITY,,no,no,no
+814,DOT,Dotcoin,token,,NO-IDENTITY,,no,no,no
+1295,DRACO,DT Token,token,,NO-IDENTITY,,no,no,no
+31278,DRIFT,Drift,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+7978,FIDA,Bonfida,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+7150,FLM,Flamingo,token,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1062,FLY,Flycoin,token,,NO-IDENTITY,,no,no,no
+671,GAIA,GAIA,token,,NO-IDENTITY,,no,no,no
+1785,GAS,Gas,token,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+785,GP,GoldPieces,token,,NO-IDENTITY,,no,no,no
+1750,GXC,GXChain,token,,NO-IDENTITY,,no,no,no
+22850,HONEY,Hivemapper,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2099,ICX,ICON,token,,NO-IDENTITY,,no,no,no
+12760,INF,Sanctum Infinity,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+5103,IPX,Tachyon Protocol,token,,NO-IDENTITY,,no,no,no
+1237,JACK,BlackJack,token,,NO-IDENTITY,,no,no,no
+888,JAY,Jay,token,,NO-IDENTITY,,no,no,no
+28853,JLP,Jupiter Perps LP,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+5488,JST,JUST,token,Tron20,NonEVM-indexed,TronScan/TronGrid,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+29210,JUP,Jupiter,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+30986,KMNO,Kamino,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+8296,KSP,KLAYswap Protocol,token,KAIA,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+2663,KST,StarCoin,token,,NO-IDENTITY,,no,no,no
+35429,LAYER,Solayer,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+37986,LIGHT,Light,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+810,LQD,LIQUID,token,,NO-IDENTITY,,no,no,no
+2693,LRN,Loopring [NEO],token,,NO-IDENTITY,,no,no,no
+20314,LUNA,Terra,token,Osmosis,NonEVM-indexed,Mintscan/LCD,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+38770,MEGA,MegaETH,token,MegaETH; Solana,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+38353,MET,Meteora,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+30126,MEW,cat in a dogs world,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+399,MIN,Mineralscoin,token,,NO-IDENTITY,,no,no,no
+11171,MNGO,Mango,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2429,MOBI,Mobius,token,Stellar,NonEVM-indexed,Horizon,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1080,NEU,NeuCoin,token,,NO-IDENTITY,,no,no,no
+26680,NTRN,Neutron,token,Osmosis,NonEVM-indexed,Mintscan/LCD,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+314,OC,OrangeCoin,token,,NO-IDENTITY,,no,no,no
+6432,OMI,ECOMI,token,,NO-IDENTITY,,no,no,no
+11165,ORCA,Orca,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+12220,OSMO,Osmosis,token,Osmosis,NonEVM-indexed,Mintscan/LCD,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2112,PHB,Phoenix Global,token,Neo,NonEVM-indexed,NeoTube/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+1091,PLS,PLAY,token,,NO-IDENTITY,,no,no,no
+36507,PUMP,Pump.fun,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+28177,PYTH,Pyth Network,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+2242,QBT,Qbao,token,,NO-IDENTITY,,no,no,no
+1684,QTUM,Qtum,token,,NO-IDENTITY,,no,no,no
+703,RBT,Rimbit,token,,NO-IDENTITY,,no,no,no
+6951,REEF,Reef,token,Reef,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+4157,RUNE,THORChain,token,Multi-Chain; THORChain,NonEVM-indexed,Midgard,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+29082,SAROS,Saros,token,Solana; Viction,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+1619,SKY,Skycoin,token,,NO-IDENTITY,,no,no,no
+25264,SNEK,Snek,token,Cardano,NonEVM-indexed,Koios/Blockfrost,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+24875,STRX,Staked TRX,token,Tron20,NonEVM-indexed,TronScan/TronGrid,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+6990,SUN,SUN,token,,NO-IDENTITY,,no,no,no
+10529,SUN,Sun [New],token,Tron; Tron20,NonEVM-indexed,TronScan/TronGrid,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+4279,SXP,Solar,token,Multi-Chain,Obscure,varies,unknown,maybe,unknown
+329,SYNC,Sync,token,,NO-IDENTITY,,no,no,no
+22974,TAO,Bittensor,token,Bittensor; Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+3822,TFUEL,Theta Fuel,token,,NO-IDENTITY,,no,no,no
+3792,USDE,USDe,token,,NO-IDENTITY,,no,no,no
+1904,VEN,Vechain [Token],token,,NO-IDENTITY,,no,no,no
+22059,VENOM,Venom,token,,NO-IDENTITY,,no,no,no
+36119,WAL,Walrus,token,Sui Network,NonEVM-indexed,Sui RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+28183,WFLR,Wrapped Flare,token,Flare Network,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+24399,WHBAR,Wrapped HBAR,token,Hedera Hashgraph,NonEVM-indexed,Mirror Node,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+35881,WHYPE,Wrapped HYPE,token,HyperEVM,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+24735,WPLS,Wrapped Pulse,token,PulseChain,EVM-non-Etherscan,chain Blockscout/RPC,per-contract (same method as Etherscan),yes (contract events),per-contract (same method as Etherscan)
+27076,WTFUEL,Wrapped TFUEL,token,Theta Network,NonEVM-indexed,Theta explorer,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+27077,WTHETA,Wrapped THETA,token,Theta Network,NonEVM-indexed,Theta explorer,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+18579,WTRX,Wrapped TRON,token,Tron20,NonEVM-indexed,TronScan/TronGrid,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+4566,XDB,XDB CHAIN,token,,NO-IDENTITY,,no,no,no
+873,XEM,NEM,token,,NO-IDENTITY,,no,no,no
+2662,XHV,Haven Protocol,token,,NO-IDENTITY,,no,no,no
+769,XUSD,CoinoUSD,token,,NO-IDENTITY,,no,no,no
+30636,ZBCN,Zebec Network,token,Solana,NonEVM-indexed,Solscan/RPC,per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only,yes (transfer history via indexer),per-project program (Anchor/CosmWasm/Realms); native staking=gas-coin only
+24091,ZK,ZKsync,token,zkSync Era,Obscure,varies,unknown,maybe,unknown
