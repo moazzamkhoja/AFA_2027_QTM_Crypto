@@ -1,0 +1,399 @@
+cmc_id,symbol,name,defillama_categories,sector,tags,ambiguous_flag
+314,OC,OrangeCoin,Yield Aggregator,Yield Aggregator,,True
+329,SYNC,Sync,NFT Lending;Reserve Currency,NFT Lending;Reserve Currency,,True
+399,MIN,Mineralscoin,DEX Aggregator;Dexs,DEX Aggregator;Dexs,,True
+473,APEX,ApexCoin,Derivatives;Dexs,Derivatives;Dexs,,True
+603,DEX,InstantDEX,Dexs,Dexs,,True
+659,BITS,Bitswift,Yield,Yield,enterprise-solutions;platform,True
+661,ARCH,ARCHcoin,Leveraged Farming,Leveraged Farming,,True
+671,GAIA,GAIA,Reserve Currency,Reserve Currency,,True
+703,RBT,Rimbit,Reserve Currency,Reserve Currency,,True
+769,XUSD,CoinoUSD,Algo-Stables;CDP,Algo-Stables;CDP,,True
+785,GP,GoldPieces,Launchpad,Launchpad,,True
+788,COVAL,Circuits of Value,,NFT,bitcoin-ecosystem;btc-ecosystem;collectibles-nfts;defi,False
+793,CELL,SolarFarm,Dexs,Dexs,,True
+810,LQD,LIQUID,Lending,Lending,,True
+814,DOT,Dotcoin,Foundation;Liquid Staking;Yield,Foundation;Liquid Staking;Yield,,True
+873,XEM,NEM,,Payments;Smart Contract Platform,defi;fantom-ecosystem;medium-of-exchange;payments;poi;smart-contracts,False
+888,JAY,Jay,Yield,Yield,,True
+963,CORE,CORE,Canonical Bridge;Derivatives;Yield,Canonical Bridge;Derivatives;Yield,,True
+1062,FLY,Flycoin,CDP;Cross Chain Bridge,CDP;Cross Chain Bridge,,True
+1080,NEU,NeuCoin,Yield,Yield,,True
+1091,PLS,PLAY,Chain;Yield,Chain;Yield,,True
+1104,REP,Augur,Prediction Market,Prediction Market;DePIN;Storage,1confirmation-portfolio;defi;depin;ethereum-ecosystem;ipfs;multicoin-capital-portfolio;oracles;pantera-capital-portfolio;platform;polygon-ecosystem;prediction-markets;reputation;storage,False
+1121,BST,BitStone,Farm;Yield,Farm;Yield,,True
+1125,AMP,HyperSpace,Algo-Stables;Payments,Algo-Stables;Payments,,True
+1166,WARP,WARP,Lending;Reserve Currency,Lending;Reserve Currency,,True
+1237,JACK,BlackJack,Yield,Yield,,True
+1253,DAO,The DAO,Dexs;Services,Dexs;Services,,True
+1274,WAVES,Waves,,Smart Contract Platform,bnb-chain-ecosystem;defi;dwf-labs-portfolio;ethereum-ecosystem;lpos;platform;smart-contracts;solana-ecosystem;waves-ecosystem,False
+1295,DRACO,DT Token,Algo-Stables;Farm,Algo-Stables;Farm,,True
+1467,ARC,Arcade Token,DEX Aggregator;Dexs;Services,DEX Aggregator;Dexs;Services,,True
+1500,WINGS,Wings,Dexs,Dexs,asset-management;crowdfunding,True
+1503,JUP,Jupiter,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking,binance-smart-chain;bnb-chain;enterprise-solutions;platform,True
+1518,MKR,Maker,,RWA,1confirmation-portfolio;a16z-portfolio;arbitrum-ecosystem;arbitrum-ecosytem;avalanche-ecosystem;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;dao;defi;dragonfly-capital-portfolio;electric-capital-portfolio;ethereum-ecosystem;governance;lending-borowing;made-in-america;near-protocol-ecosystem;pantera-capital-portfolio;paradigm-portfolio;paradigm-xzy-screener;placeholder-ventures-portfolio;polychain-capital-portfolio;real-world-assets;spartan-group;standard-crypto-portfolio;store-of-value,False
+1552,MLN,Enzyme,Indexes,Indexes,asset-management;binance-ecosystem;binance-listing;defi;ethereum-ecosystem;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;placeholder-ventures-portfolio;polygon-ecosystem,False
+1556,TIME,Chrono.tech,Lending;Yield,Lending;Yield,binance-smart-chain;bnb-chain;defi;dwf-labs-portfolio,False
+1573,CASINO,Casino,Dexs,Dexs,,True
+1619,SKY,Skycoin,CDP;Dexs;RWA;Risk Curators,CDP;Dexs;RWA;Risk Curators;DePIN;Storage,distributed-computing;filesharing;platform;storage,True
+1637,RLC,iExec RLC,,AI Agents;AI/Big Data;NFT;DePIN;Storage;Interoperability;Payments;Privacy,ai-agents;ai-big-data;arbitrum-ecosystem;art;binance-ecosystem;binance-listing;collectibles-nfts;communications-social-media;content-creation;defi;depin;distributed-computing;dot-ecosystem;enterprise-solutions;ethereum-ecosystem;filesharing;generative-ai;interoperability;marketing;marketplace;oracles;payments;platform;polkadot;polkadot-ecosystem;polygon-ecosystem;privacy;research;scaling;services;storage;substrate;token;web3,False
+1660,TKN,Monolith,Dexs,Dexs,defi;services,False
+1680,ANT,Aragon,Services,Services,boostvc-portfolio;cosmos-ecosystem;dao;enterprise-solutions;ethereum;ethereum-ecosystem;governance;placeholder-ventures-portfolio;platform;polkadot;substrate;web3,False
+1684,QTUM,Qtum,,Smart Contract Platform,binance-ecosystem;binance-liquidity-enhancement-program;binance-listing;bitcoin-ecosystem;btc-ecosystem;defi;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;made-in-china;platform;qtum-ecosystem;smart-contracts,False
+1722,MORE,More Coin,Lending,Lending,entertainment;events;loyalty,True
+1732,NMR,Numeraire,Derivatives,Derivatives;AI/Big Data;Payments,ai-big-data;asset-management;binance-ecosystem;binance-listing;coinfund-portfolio;defi;ethereum-ecosystem;generative-ai;paradigm-portfolio;paradigm-xzy-screener;payments;placeholder-ventures-portfolio;research;usv-portfolio,False
+1750,GXC,GXChain,,DEX,decentralized-exchange;decentralized-exchange-dex-token;platform,False
+1757,FUN,FUNToken,Dexs,Dexs;Gaming;Payments,binance-ecosystem;binance-listing;defi;ethereum-ecosystem;gambling;gaming;marketplace;pantera-capital-portfolio;payments,False
+1758,PAY,TenX,Yield,Yield;Payments,fenbushi-capital-portfolio;kenetic-capital-portfolio;kinetic-capital;medium-of-exchange,True
+1768,ADX,AdEx,Derivatives;Dexs,Derivatives;Dexs;AI Agents;AI/Big Data;Smart Contract Platform,account-abstraction;ai-agents;ai-applications;ai-big-data;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defai;defi;dot-ecosystem;ethereum-ecosystem;generative-ai;marketing;polkadot;polkadot-ecosystem;polygon-ecosystem;smart-contracts;substrate;web3;x402-ecosystem,False
+1785,GAS,Gas,Dexs,Dexs;Payments;Smart Contract Platform,binance-ecosystem;binance-listing;defi;medium-of-exchange;neo-ecosystem;payments;smart-contracts,False
+1808,OMG,OMG Network,,Payments,alleged-sec-securities;defi;ethereum-ecosystem;medium-of-exchange;pantera-capital-portfolio;payments;scaling;sec-security-token;state-channel;state-channels,False
+1834,PLR,Pillar,,DePIN;Identity,dao;defi;distributed-computing;governance;identity;platform;wallet,False
+1847,MSP,Mothership,Dexs,Dexs,,True
+1867,CTR,Centra,Governance Incentives;Yield,Governance Incentives;Yield,,True
+1882,CAT,BlockCAT,Yield Aggregator,Yield Aggregator,,True
+1904,VEN,Vechain [Token],Dexs,Dexs,,True
+1982,KNCL,Kyber Network Crystal Legacy,,DEX,amm;dao;decentralized-exchange;defi;governance;kinetic-capital;marketplace;pantera-capital-portfolio;parafi-capital;three-arrows-capital-portfolio,False
+1984,SUB,Substratum,Reserve Currency,Reserve Currency;DePIN,distributed-computing;platform;sharing-economy,True
+2015,ATM,ATMChain,Options,Options,,True
+2057,EDO,Eidoo,,,defi;services,False
+2058,AST,AirSwap,DEX Aggregator;Dexs,DEX Aggregator;Dexs;DEX;Payments;Smart Contract Platform,decentralized-exchange;decentralized-exchange-dex-token;defi;ethereum-ecosystem;gnosis-chain-ecosystem;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;marketplace;oracles;payments;smart-contracts,False
+2071,REQ,Request,Developer Tools,Developer Tools;Payments;Smart Contract Platform,binance-ecosystem;binance-listing;defi;ethereum-ecosystem;medium-of-exchange;payments;polygon-ecosystem;smart-contracts,False
+2081,AMB,AirDAO,,AI/Big Data;IoT;Layer-1,ai-big-data;defi;dwf-labs-portfolio;enterprise-solutions;governance;iot;layer-1;logistics;platform,False
+2096,RCN,Ripio Credit Network,,,boostvc-portfolio;defi;fenbushi-capital-portfolio;hashkey-capital-portfolio;lending-borowing;services,False
+2099,ICX,ICON,,Interoperability;Smart Contract Platform,binance-ecosystem;binance-listing;binance-smart-chain;cosmos-ecosystem;cross-chain;defi;enterprise-solutions;ethereum-ecosystem;interoperability;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;pantera-capital-portfolio;platform;smart-contracts,False
+2110,DOV,Dovu,Dexs,Dexs,binance-smart-chain;bnb-chain,True
+2112,PHB,Phoenix Global,,,binance-smart-chain;defi;enterprise-solutions;research;services,False
+2120,FUEL,Etherparty,Bridge;Chain;Yield,Bridge;Chain;Yield;Payments,dapp;marketplace;payments,True
+2165,ERC20,ERC20,,NFT;Payments;Meme;Yield,binance-smart-chain;bnb-chain;collectibles-nfts;defi;ethereum;ethereum-ecosystem;medium-of-exchange;memes;payments;yield-farming,False
+2176,HST,Decision Token,Launchpad;Prediction Market,Launchpad;Prediction Market,,True
+2202,PRL,Oyster,CDP;Gaming;Yield Aggregator,CDP;Gaming;Yield Aggregator,,True
+2223,VEE,BLOCKv,Lending,Lending;NFT,collectibles-nfts;communications-social-media;content-creation;enterprise-solutions;ethereum-ecosystem;media;polygon-ecosystem,True
+2239,LEND,Aave,Lending;Onchain Capital Allocator;Yield,Lending;Onchain Capital Allocator;Yield,defi;platform,False
+2242,QBT,Qbao,Lending,Lending,marketplace,True
+2273,UQC,Uquid Coin,,Payments,asset-management;commodities;defi;defi-2;e-commerce;ethereum-ecosystem;marketplace;payments;token,False
+2277,SMT,SmartMesh,Dexs,Dexs;IoT,iot;technology,True
+2296,OST,OST,Dexs,Dexs,kinetic-capital;services,True
+2308,SAI,Single Collateral DAI ,Derivatives;Onchain Capital Allocator;Yield,Derivatives;Onchain Capital Allocator;Yield,,True
+2318,NEU,Neumark,Yield,Yield,asset-management;crowdfunding,True
+2320,UTK,xMoney,,Payments;Smart Contract Platform,binance-ecosystem;binance-listing;cybersecurity;defi;elrond-ecosystem;ethereum-ecosystem;multiversx-ecosystem;payments;smart-contracts,False
+2324,ONE,BigONE Token,Dexs,Dexs;Exchange Token,binance-smart-chain;bnb-chain;centralized-exchange;marketplace,True
+2341,SWFTC,SwftCoin,,NFT;Interoperability;Payments,binance-smart-chain;bnb-chain;bnb-chain-ecosystem;collectibles-nfts;defi;ethereum-ecosystem;interoperability;marketplace;payments,False
+2363,ZAP,Zap,Dexs,Dexs,defi;oracles,False
+2377,LEV,Leverj,,Derivatives,asset-management;derivatives,False
+2410,SPC,SpaceChain,Dexs;Reserve Currency,Dexs;Reserve Currency,ethereum-ecosystem;technology,True
+2424,AGIX,SingularityNET,Staking Pool,Staking Pool;AI/Big Data;Payments,ai-big-data;cardano-ecosystem;cross-chain-aggregator-dex;cross-chain-dex-aggregator;generative-ai;marketplace;payments,False
+2429,MOBI,Mobius,Dexs,Dexs;IoT;Payments,iot;payments;platform,True
+2430,HOT,Hydro Protocol,,DEX,decentralized-exchange;defi;marketplace,False
+2496,POLY,Polymath,,RWA,crowdfunding;ethereum-ecosystem;marketplace;real-world-assets,False
+2505,BLZ,Bluzelle,,DePIN;Storage;Smart Contract Platform,bnb-chain-ecosystem;cosmos-ecosystem;defi;depin;distributed-computing;dot-ecosystem;ethereum-ecosystem;filesharing;injective-ecosystem;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;platform;polkadot-ecosystem;smart-contracts;storage,False
+2530,FSN,Fusion,,Payments,defi;fantom-ecosystem;payments;platform,False
+2538,NEC,Nectar,,Payments;Smart Contract Platform,defi;marketplace;payments;smart-contracts,False
+2545,ABT,ArcBlock,,AI/Big Data;Interoperability,ai-big-data;defi;ethereum-ecosystem;interoperability;made-in-america;marketplace,False
+2559,AUTO,Cube,Yield Aggregator,Yield Aggregator,cybersecurity,True
+2576,TEN,Tokenomy,Yield,Yield,marketplace,True
+2586,SNX,Synthetix,Derivatives;Synthetics,Derivatives;Synthetics;DEX;Perpetuals;RWA;Yield,alameda-research-portfolio;avalanche-ecosystem;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;celsius-bankruptcy-estate;coinbase-ventures-portfolio;dao;decentralized-exchange;decentralized-exchange-dex-token;defi;defiance-capital;defiance-capital-portfolio;derivatives;dwf-labs-portfolio;ethereum-ecosystem;fantom-ecosystem;framework-ventures;framework-ventures-portfolio;governance;heco-ecosystem;near-protocol-ecosystem;optimism-ecosystem;paradigm-portfolio;parafi-capital;perp-dex-coins;perpetuals;polygon-ecosystem;real-world-assets;real-world-assets-protocols;services;solana-ecosystem;spartan-group;synthetic-protocols;synthetics;three-arrows-capital-portfolio;yield-farming,False
+2593,DRG,Dragon Coins,Dexs,Dexs;Payments,media;payments,True
+2620,SWTH,Carbon Protocol,,DEX;Derivatives,arbitrum-ecosytem;binance-smart-chain;bnb-chain;cosmos-ecosystem;decentralized-exchange;decentralized-exchange-dex-token;defi;defiance-capital;defiance-capital-portfolio;derivatives;injective-ecosystem;three-arrows-capital-portfolio,False
+2662,XHV,Haven Protocol,,Privacy,defi;privacy,False
+2663,KST,StarCoin,Dexs,Dexs,,True
+2675,DOCK,Dock,,AI/Big Data;Smart Contract Platform,ai-big-data;dot-ecosystem;governance;jobs;polkadot-ecosystem;services;smart-contracts;substrate,False
+2693,LRN,Loopring [NEO],,DEX,decentralized-exchange;defi;marketplace,False
+2700,CEL,Celsius,Yield Aggregator,Yield Aggregator,exnetwork-capital-portfolio;lending-borowing,False
+2726,GEN,DAOstack,Farm,Farm,dao;platform,False
+2765,XYO,XYO,,DePIN;Gaming;Metaverse,alleged-sec-securities;defi;depin;distributed-computing;ethereum-ecosystem;gaming;logistics;made-in-america;metaverse;move-to-earn;oracles;play-to-earn;solana-ecosystem;web3,False
+2772,DGTX,Digitex,,Exchange Token;Derivatives,asset-management;centralized-exchange;derivatives,False
+2778,EXC,Eximchain,Dexs,Dexs,,True
+2826,ZIP,Zipper,Dexs,Dexs,,True
+2873,MET,Metronome,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator;Payments,defi;payments;platform;wallet,False
+2930,IQ,IQ,Services,Services;AI Agents;AI/Big Data;Yield,ai-agents;ai-big-data;arbitrum-ecosystem;binance-ecosystem;binance-listing;communications-social-media;content-creation;dao;defi;eos;eos-ecosystem;ethereum-ecosystem;loyalty;media;olympus-pro-ecosystem;polygon-ecosystem;yield-farming,False
+2933,BMX,BitMart Token,CEX;Derivatives;Dexs,CEX;Derivatives;Dexs;Exchange Token,centralized-exchange;ethereum-ecosystem;marketplace,True
+2937,VITE,VITE,,DAG;DEX,binance-smart-chain;bnb-chain;dag;decentralized-exchange;decentralized-exchange-dex-token;enterprise-solutions;multiple-algorithms;platform;scaling,False
+2945,BOX,ContentBox,Dexs;Indexes,Dexs;Indexes,,True
+2982,MVL,MVL,Yield,Yield;DePIN;IoT,binance-chain;binance-smart-chain;bnb-chain-ecosystem;depin;dwf-labs-portfolio;ethereum-ecosystem;iot;toncoin-ecosystem,True
+3053,YOU,YOU COIN,Dexs;Synthetics,Dexs;Synthetics,content-creation;marketplace,True
+3083,LINA,LINA,Derivatives,Derivatives,enterprise-solutions;services,True
+3139,DX,DxChain Token,Launchpad,Launchpad;AI/Big Data;Payments,ai-big-data;payments;technology,True
+3155,QNT,Quant,,Interoperability;RWA,binance-ecosystem;binance-listing;defi;ethereum-ecosystem;interoperability;iso-20022;platform;real-world-assets;real-world-assets-protocols,False
+3296,MIN,MINDOL,DEX Aggregator;Dexs,DEX Aggregator;Dexs,,True
+3325,ROX,Robotina,Dexs,Dexs;IoT,energy;iot,True
+3367,CRD,CryptalDash,Lending,Lending,,True
+3418,META,Metadium,Dexs;Reserve Currency;Yield,Dexs;Reserve Currency;Yield;Identity,arrington-xrp-capital;ethereum-ecosystem;identity;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;platform,True
+3475,BOX,BOX Token,Dexs;Indexes,Dexs;Indexes,,True
+3515,DEX,DEX,Dexs,Dexs,,True
+3637,AERGO,Aergo,,Smart Contract Platform,binance-ecosystem;binance-listing;bnb-chain-ecosystem;defi;enterprise-solutions;ethereum-ecosystem;platform;smart-contracts,False
+3653,BRC,Baer Chain,Yield,Yield,,True
+3748,HXRO,Hxro,Derivatives,Derivatives,alameda-research-portfolio;cms-holdings-portfolio;coinfund-portfolio;ledgerprime-portfolio;solana-ecosystem;three-arrows-capital-portfolio,True
+3792,USDE,USDe,Derivatives,Derivatives,,True
+3814,CELR,Celer Network,Bridge,Bridge;DePIN;Interoperability;Privacy;Zero Knowledge,arbitrum-ecosystem;arbitrum-ecosytem;arrington-xrp-capital;arrington-xrp-capital-portfolio;binance-ecosystem;binance-launchpad;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;cross-chain;defi;depin;dot-ecosystem;enterprise-solutions;ethereum-ecosystem;interoperability;metis-andromeda-ecosystem;moonbeam-ecosystem;oasis-ecosystem;pantera-capital-portfolio;platform;polkadot;polkadot-ecosystem;privacy;scaling;sei-ecosystem;state-channel;state-channels;substrate;zero-knowledge-proofs,False
+3822,TFUEL,Theta Fuel,,AI/Big Data;DePIN;Payments;Smart Contract Platform,ai-big-data;binance-ecosystem;binance-listing;communications-social-media;content-creation;defi;depin;distributed-computing;entertainment;made-in-america;media;payments;sharing-economy;smart-contracts;vr-ar,False
+3835,ORBS,Orbs,Farm,Farm,arbitrum-ecosystem;avalanche-ecosystem;bnb-chain-ecosystem;defi;dwf-labs-portfolio;enterprise-solutions;ethereum-ecosystem;fantom-ecosystem;harmony-ecosystem;polygon-ecosystem;services;solana-ecosystem,False
+3840,FST,1irstcoin,Derivatives,Derivatives,services,True
+3855,LOCUS,Locus Chain,Yield,Yield;Payments,defi;ethereum-ecosystem;payments;platform;scaling,False
+3874,IRIS,IRISnet,Yield,Yield,cosmos-ecosystem;ethereum-ecosystem;injective-ecosystem;osmosis-ecosystem;polygon-ecosystem,True
+3911,OCEAN,Ocean Protocol,,AI/Big Data;DePIN;Storage,ai-big-data;dao;dcg-portfolio;defi;depin;distributed-computing;dot-ecosystem;fabric-ventures-portfolio;filesharing;generative-ai;injective-ecosystem;ipfs;platform;polkadot-ecosystem;polygon-ecosystem;storage;substrate;web3,False
+3916,THX,ThoreNext,,Payments,defi;medium-of-exchange;payments,False
+3928,IDEX,IDEX,Derivatives;Dexs,Derivatives;Dexs;DEX,binance-ecosystem;binance-listing;decentralized-exchange;decentralized-exchange-dex-token;defi;derivatives;ethereum-ecosystem;perp-dex-coins,False
+3930,TT,ThunderCore,Dexs;Staking Pool,Dexs;Staking Pool,bnb-chain-ecosystem;ethereum-ecosystem;huobi-capital;huobi-capital-portfolio;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;pantera-capital-portfolio;platform;thundercore-ecosystem,True
+3992,COTI,COTI,,Layer-2;Privacy,alleged-sec-securities;arbitrum-ecosystem;arbitrum-ecosytem;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;cardano;cardano-ecosystem;defi;dwf-labs-portfolio;ethereum-ecosystem;fantom-ecosystem;layer-2;privacy;privacy-blockchain;privacy-coins;sec-security-token,False
+4006,AWE,AWE,,Derivatives;Payments,base-ecosystem;binance-ecosystem;binance-listing;defi;derivatives;ethereum-ecosystem;payments;polkadot-ecosystem;synthetics,False
+4090,WXT,Wirex Token,CEX;Lending,CEX;Lending;Exchange Token;Payments,asset-management;avalanche-ecosystem;centralized-exchange;ethereum-ecosystem;mobile-payment;mobile-payments;payments;stellar-ecosystem,True
+4113,UNI,UNI COIN,Dexs;Launchpad,Dexs;Launchpad;Payments,medium-of-exchange,True
+4134,AKRO,Kaon,Yield,Yield,alameda-research-portfolio;dao;defi;dot-ecosystem;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;ledgerprime-portfolio;polkadot-ecosystem;spartan-group;substrate;yearn-partnerships;yield-aggregator,False
+4157,RUNE,THORChain,Dexs,Dexs;DEX,binance-ecosystem;binance-listing;cosmos-ecosystem;decentralized-exchange;decentralized-exchange-dex-token;defi;dex;exnetwork-capital-portfolio;injective-ecosystem;multicoin-capital-portfolio;thorchain-ecosystem,False
+4172,LUNC,Terra Classic,,Payments,alleged-sec-securities;arrington-xrp-capital;arrington-xrp-capital-portfolio;avalanche-ecosystem;binance-ecosystem;binance-labs-portfolio;binance-listing;coinbase-ventures-portfolio;cosmos-ecosystem;defi;ethereum-ecosystem;hashkey-capital-portfolio;huobi-capital;huobi-capital-portfolio;injective-ecosystem;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;osmosis-ecosystem;pantera-capital-portfolio;payments;polygon-ecosystem;sec-security-token;secret-ecosystem;solana-ecosystem;stablecoin-algorithmically-stabilized;store-of-value;terra-ecosystem,False
+4195,FTT,FTX Token,,Exchange Token;Derivatives,alameda-research-portfolio;alleged-sec-securities;binance-ecosystem;binance-listing;bnb-chain-ecosystem;celsius-bankruptcy-estate;centralized-exchange;cms-holdings-portfolio;defi;derivatives;ethereum-ecosystem;exnetwork-capital-portfolio;ftx-bankruptcy-estate;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;marketplace;pantera-capital-portfolio;sec-security-token;solana-ecosystem,False
+4206,WIN,WINkLink,,,binance-ecosystem;binance-labs-portfolio;binance-launchpad;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;gambling;oracles;tron-ecosystem;tron20-ecosystem,False
+4217,BOA,BOSagora,,Metaverse,dao;metaverse,False
+4279,SXP,Solar,Dexs,Dexs;Payments,alameda-research-portfolio;binance-ecosystem;binance-labs-portfolio;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;medium-of-exchange;payments;wallet,False
+4360,FAB,FABRK,Yield,Yield;AI/Big Data,ai-big-data;platform,True
+4484,CRN,ChronoCoin,Dexs;Yield Aggregator,Dexs;Yield Aggregator,,True
+4566,XDB,XDB CHAIN,,RWA,real-world-assets,False
+4598,ACA,Acash Coin,Canonical Bridge;Dexs,Canonical Bridge;Dexs,,True
+4679,BAND,Band,,,binance-chain;binance-ecosystem;binance-labs-portfolio;binance-launchpad;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;cosmos-ecosystem;defi;ethereum-ecosystem;fantom-ecosystem;gnosis-chain-ecosystem;injective-ecosystem;near-protocol-ecosystem;oracles;polygon-ecosystem;solana-ecosystem;spartan-group;web3,False
+4862,DAD,DAD,Yield,Yield,,True
+5007,TROY,TROY,Farm,Farm,binance-launchpad;bnb-chain-ecosystem;ethereum-ecosystem,True
+5015,HEX,HEX,Yield,Yield,,True
+5103,IPX,Tachyon Protocol,Dexs,Dexs,,True
+5113,SURE,inSure DeFi,,AI/Big Data;NFT;Gaming;Metaverse,ai-big-data;avalanche-ecosystem;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;collectibles-nfts;dao;defi;dot-ecosystem;ethereum-ecosystem;gaming;insurance;metaverse;polkadot-ecosystem;polygon-ecosystem,False
+5117,OGN,Origin Protocol,,NFT,base-ecosystem;binance-ecosystem;binance-listing;coinlist-launchpad;collectibles-nfts;defi;ethereum-ecosystem;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;made-in-america;pantera-capital-portfolio,False
+5190,FLEX,FLEX,CDP;Yield,CDP;Yield,,True
+5234,DNA,Metaverse Dualchain Network Architecture,Algo-Stables;Farm;Yield,Algo-Stables;Farm;Yield,,True
+5266,MLK,MiL.k,Farm,Farm,arbitrum-ecosystem;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-smart-chain;bnb-chain;bnb-chain-ecosystem,True
+5274,EDG,Edgeware,,Smart Contract Platform,coinbase-ventures-portfolio;dao;dot-ecosystem;framework-ventures;framework-ventures-portfolio;hashkey-capital-portfolio;ledgerprime-portfolio;polkadot;polkadot-ecosystem;smart-contracts;substrate,False
+5279,SOLO,Sologenic,Basis Trading;Dexs,Basis Trading;Dexs,bnb-chain-ecosystem;xrp-ecosystem,True
+5299,HDAO,HyperDAO,,,dao,False
+5354,PEAK,PEAKDEFI,Algo-Stables;Yield,Algo-Stables;Yield,binance-smart-chain;bnb-chain;defi;launchpad,False
+5410,PRQ,PARSIQ,,AI/Big Data;Smart Contract Platform,ai-big-data;algorand-ecosystem;analytics;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;ethereum-ecosystem;polkadot-ecosystem;services;smart-contracts;solana-ecosystem;web3,False
+5429,DEP,DEAPcoin,Dexs,Dexs;NFT;DePIN;Gaming;Metaverse,avalanche-ecosystem;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;collectibles-nfts;depin;ethereum-ecosystem;fantom-ecosystem;gaming;metaverse;play-to-earn;polygon-ecosystem;solana-ecosystem,True
+5488,JST,JUST,Bridge;Lending,Bridge;Lending,binance-ecosystem;binance-listing;defi;tron-ecosystem;tron20-ecosystem,False
+5566,KEEP,Keep Network,Cross Chain Bridge,Cross Chain Bridge;Privacy,a16z-portfolio;boostvc-portfolio;coinbase-ventures-portfolio;defi;ethereum-ecosystem;fabric-ventures-portfolio;multicoin-capital-portfolio;paradigm-portfolio;paradigm-xzy-screener;parafi-capital;polychain-capital-portfolio;privacy;privacy-blockchain;solana-ecosystem,False
+5601,STAKE,STAKE,Canonical Bridge,Canonical Bridge,defi;exnetwork-capital-portfolio,False
+5617,UMA,UMA,,Derivatives,amber-group-portfolio;avalanche-ecosystem;binance-ecosystem;binance-listing;blockchain-capital-portfolio;coinbase-ventures-portfolio;dao;defi;derivatives;dragonfly-capital-portfolio;ethereum-ecosystem;governance;injective-ecosystem;oracles;placeholder-ventures-portfolio;polygon-ecosystem;synthetic-protocols;synthetics,False
+5631,ORN,Orion,DEX Aggregator;Dexs,DEX Aggregator;Dexs;DEX,algorand-ecosystem;avalanche-ecosystem;dao-maker;defi;dex;exnetwork-capital-portfolio;fantom-ecosystem;injective-ecosystem,False
+5690,RENDER,Render,,AI/Big Data;NFT;DePIN;Gaming;Metaverse,ai-big-data;alameda-research-portfolio;art;binance-ecosystem;binance-listing;cmc-crypto-yearbook-2024-2025;collectibles-nfts;defi;depin;distributed-computing;ethereum-ecosystem;gaming;generative-ai;made-in-america;media;metaverse;multicoin-capital-portfolio;polygon-ecosystem;scaling;solana-ecosystem;video;vr-ar;web3,False
+5741,DMG,DMM: Governance,,,asset-management;dao;defi,False
+5798,RING,Darwinia Network,Farm;Yield,Farm;Yield;Gaming;Interoperability;Metaverse,dot-ecosystem;gaming;interoperability;metaverse;polkadot-ecosystem;substrate,True
+5824,SLP,Smooth Love Potion,Derivatives,Derivatives;NFT;Gaming,binance-ecosystem;binance-listing;bnb-chain-ecosystem;collectibles-nfts;ethereum-ecosystem;gaming;play-to-earn;ronin-ecosystem;solana-ecosystem,True
+5829,SWAP,TrustSwap,Bridge;Dexs;Interface;Token Locker,Bridge;Dexs;Interface;Token Locker,avalanche-ecosystem;bnb-chain-ecosystem;defi;ethereum-ecosystem;launchpad;polygon-ecosystem,False
+5830,NXM,NXM,Insurance,Insurance,arrington-xrp-capital-portfolio;defi;insurance;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;placeholder-ventures-portfolio,False
+5841,NEST,NEST Protocol,Derivatives;Dexs;Oracle,Derivatives;Dexs;Oracle,defi;dwf-labs-portfolio;oracles,False
+5892,ANY,Anyswap,,DEX,amm;arbitrum-ecosytem;avalanche-ecosystem;binance-smart-chain;bnb-chain;decentralized-exchange;decentralized-exchange-dex-token;defi;fantom-ecosystem,False
+5906,NVT,NerveNetwork,Dexs,Dexs;DEX,decentralized-exchange;decentralized-exchange-dex-token,False
+5957,YFII,DFI.Money,Yield Aggregator,Yield Aggregator;Yield,binance-chain;binance-smart-chain;bnb-chain;dao;defi;governance;yield-aggregator;yield-farming,False
+5994,SHIB,Shiba Inu,Dexs,Dexs;Meme,animal-memes;base-ecosystem;binance-ecosystem;binance-listing;bnb-chain-ecosystem;doggone-doggerel;ethereum-ecosystem;etherlink-ecosystem;memes;sec-cftc-digital-commodities;sec-cftc-token-taxonomy,True
+6138,DIA,DIA,,AI/Big Data;RWA;Smart Contract Platform,ai-big-data;arbitrum-ecosystem;arbitrum-ecosytem;avalanche-ecosystem;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;dot-ecosystem;ethereum-ecosystem;exnetwork-capital-portfolio;fantom-ecosystem;injective-ecosystem;near-protocol-ecosystem;oracles;platform;polkadot;polkadot-ecosystem;polygon-ecosystem;real-world-assets;real-world-assets-protocols;smart-contracts;solana-ecosystem;substrate;web3,False
+6432,OMI,ECOMI,,NFT,collectibles-nfts;dao-maker;exnetwork-capital-portfolio,False
+6511,STRONG,Strong,,Yield,defi;yield-farming,False
+6669,CVP,PowerPool,Indexes,Indexes,dao;defi;governance;ledgerprime-portfolio;mvb;polygon-ecosystem;yearn-partnerships,False
+6748,CFG,Centrifuge,RWA;RWA Lending,RWA;RWA Lending,binance-ecosystem;binance-listing;coinlist-launchpad;ethereum;ethereum-ecosystem;moonbeam-ecosystem;polkadot;polkadot-ecosystem;real-world-assets;real-world-assets-protocols;sei-ecosystem;substrate,False
+6756,ACA,Acala Token,Canonical Bridge;Dexs,Canonical Bridge;Dexs,arrington-xrp-capital-portfolio;binance-ecosystem;binance-listing;defi;injective-ecosystem;polkadot;polkadot-ecosystem;spartan-group;substrate,False
+6783,AXS,Axie Infinity,Gaming,Gaming;NFT;Metaverse,alleged-sec-securities;animoca-brands-portfolio;binance-ecosystem;binance-launchpad;binance-listing;collectibles-nfts;defiance-capital;defiance-capital-portfolio;ethereum-ecosystem;gaming;harmony-ecosystem;metaverse;play-to-earn;ronin-ecosystem;sec-security-token;solana-ecosystem;trading-card-game,False
+6833,LIT,Litentry,Algo-Stables;Bridge;Derivatives;Dexs;Yield,Algo-Stables;Bridge;Derivatives;Dexs;Yield,binance-launchpool;dapp;defi;dwf-labs-portfolio;ethereum;ethereum-ecosystem;injective-ecosystem;polkadot;polkadot-ecosystem;substrate;web3,False
+6843,RAD,Radworks,,Privacy,binance-ecosystem;binance-listing;coinbase-ventures-portfolio;dao;ethereum-ecosystem;fabric-ventures-portfolio;placeholder-ventures-portfolio;privacy;web3,False
+6929,HEGIC,Hegic,Options,Options;DEX;Derivatives,arbitrum-ecosystem;arbitrum-ecosytem;decentralized-exchange;decentralized-exchange-dex-token;defi;derivatives;ethereum-ecosystem;fantom-ecosystem;options,False
+6941,HBTC,Huobi BTC,,,bitcoin-ecosystem;btc-ecosystem;defi;ethereum-ecosystem;heco;heco-ecosystem;rehypothecated-crypto;solana-ecosystem,False
+6945,AMP,Amp,Algo-Stables;Payments,Algo-Stables;Payments,alleged-sec-securities;binance-ecosystem;binance-listing;ethereum-ecosystem;made-in-america;sec-security-token,True
+6951,REEF,Reef,,Gaming;Metaverse;Payments,avalanche-ecosystem;binance-launchpool;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;dot-ecosystem;enterprise-solutions;entertainment;ethereum-ecosystem;exnetwork-capital-portfolio;gaming;hybrid-pow-npos;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;media;metaverse;payments;polkadot;polkadot-ecosystem;polygon-ecosystem;reef-chain;reef-ecosystem;substrate;wallet;web3,False
+6990,SUN,SUN,Bridge;Derivatives;Dexs,Bridge;Derivatives;Dexs,,True
+7033,ESD,Empty Set Dollar,,,defi;rebase;seigniorage,False
+7064,BAKE,BakeryToken,Dexs,Dexs;NFT;DEX;Gaming,amm;binance-chain;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;collectibles-nfts;defi;dex;gaming,False
+7150,FLM,Flamingo,Dexs;Lending,Dexs;Lending;Yield,binance-chain;binance-ecosystem;binance-launchpool;binance-listing;dao;defi;neo-ecosystem;yield-farming,False
+7208,POLS,Polkastarter,Launchpad,Launchpad,binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;dot-ecosystem;ethereum-ecosystem;exnetwork-capital-portfolio;launchpad;polkadot;polkadot-ecosystem,False
+7224,DODO,DODO,DEX Aggregator;Dexs,DEX Aggregator;Dexs;DEX,alameda-research-portfolio;arbitrum-ecosystem;arbitrum-ecosytem;binance-ecosystem;binance-launchpool;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;cms-holdings-portfolio;coinbase-ventures-portfolio;decentralized-exchange;decentralized-exchange-dex-token;defi;defiance-capital;defiance-capital-portfolio;dwf-labs-portfolio;ethereum-ecosystem;exnetwork-capital-portfolio;framework-ventures;framework-ventures-portfolio;made-in-china;near-protocol-ecosystem;pantera-capital-portfolio;three-arrows-capital-portfolio,False
+7228,DDX,DerivaDAO,Derivatives,Derivatives;DEX,alleged-sec-securities;decentralized-exchange;decentralized-exchange-dex-token;defi;derivatives,False
+7232,ALPHA,Stella,Lending;Leveraged Farming;Liquid Staking;Prediction Market;Yield Aggregator,Lending;Leveraged Farming;Liquid Staking;Prediction Market;Yield Aggregator;Yield,alameda-research-portfolio;arbitrum-ecosystem;avalanche-ecosystem;binance-ecosystem;binance-launchpad;binance-launchpool;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;defiance-capital;defiance-capital-portfolio;ethereum-ecosystem;injective-ecosystem;multicoin-capital-portfolio;optimism-ecosystem;spartan-group;yield-aggregator;yield-farming,False
+7242,CORE,cVault.finance,Canonical Bridge;Derivatives;Yield,Canonical Bridge;Derivatives;Yield,dao;defi;governance,False
+7288,XVS,Venus,Lending,Lending;Privacy;RWA;Yield,arbitrum-ecosystem;base-ecosystem;binance-ecosystem;binance-launchpool;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;ethereum-ecosystem;lending-borowing;opbnb-ecosystem;optimism-ecosystem;privacy;real-world-assets;real-world-assets-protocols;unichain-ecosystem;yield-farming;zksync-era-ecosystem,False
+7326,DEXE,DeXe,,AI/Big Data,ai-big-data;asset-management;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;dao;defi;ethereum-ecosystem,False
+7455,AUDIO,Audius,,,binance-ecosystem;binance-labs-portfolio;binance-listing;bnb-chain-ecosystem;coinbase-ventures-portfolio;dao;ethereum-ecosystem;gnosis-chain-ecosystem;made-in-america;multicoin-capital-portfolio;music;pantera-capital-portfolio;solana-ecosystem;standard-crypto-portfolio;web3,False
+7501,WOO,WOO,CEX;Dexs;Yield,CEX;Dexs;Yield;Exchange Token;Derivatives;Perpetuals,amber-group-portfolio;amm;arbitrum-ecosystem;arbitrum-ecosytem;avalanche-ecosystem;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;centralized-exchange;decentralized-exchange-dex-token;defi;derivatives;ethereum-ecosystem;exnetwork-capital-portfolio;injective-ecosystem;mvb;near-protocol-ecosystem;perp-dex-coins;perpetuals;polygon-ecosystem;three-arrows-capital-portfolio;vbc-ventures-portfolio;yield-farming,False
+7617,SFI,saffron.finance,Liquid Staking;Yield,Liquid Staking;Yield,binance-smart-chain;bnb-chain;bnb-chain-ecosystem;coinbase-ventures-portfolio;defi;ethereum-ecosystem;fantom-ecosystem;ledgerprime-portfolio;multicoin-capital-portfolio;yield-aggregator;yield-farming,False
+7654,RFOX,RFOX,Yield,Yield;NFT;Metaverse,binance-smart-chain;bnb-chain;collectibles-nfts;ethereum;ethereum-ecosystem;metaverse,True
+7672,UNFI,Unifi Protocol DAO,Dexs;Staking Pool,Dexs;Staking Pool,binance-launchpool;binance-smart-chain;bnb-chain;defi,False
+7737,API3,API3,Risk Curators,Risk Curators,binance-ecosystem;binance-listing;cardano;cardano-ecosystem;coinfund-portfolio;dcg-portfolio;defi;ethereum-ecosystem;fantom-ecosystem;injective-ecosystem;oracles;pantera-capital-portfolio;placeholder-ventures-portfolio;polygon-ecosystem;web3,False
+7817,BFC,Bifrost,,Interoperability,avalanche-ecosystem;defi;dot-ecosystem;dwf-labs-portfolio;ethereum-ecosystem;exnetwork-capital-portfolio;interoperability;platform;vbc-ventures-portfolio,False
+7857,MIR,Mirror Protocol,Derivatives,Derivatives,arrington-xrp-capital-portfolio;cosmos-ecosystem;defi;derivatives;injective-ecosystem;pantera-capital-portfolio;synthetics;terra-ecosystem,False
+7961,vBNB,Venus BNB,,,binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;rehypothecated-crypto,False
+7962,vBTC,Venus BTC,,,binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;rehypothecated-crypto,False
+7963,vETH,Venus ETH,,,binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;rehypothecated-crypto,False
+7978,FIDA,Bonfida,,,binance-ecosystem;binance-listing;cms-holdings-portfolio;defi;dwf-labs-portfolio;ftx-bankruptcy-estate;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;solana-ecosystem;three-arrows-capital-portfolio,False
+8075,RLY,Rally,,Yield,a16z-portfolio;alleged-sec-securities;coinbase-ventures-portfolio;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;ledgerprime-portfolio;sec-security-token;social-money;social-token;yield-farming,False
+8083,LON,Tokenlon Network Token,DEX Aggregator;Dexs,DEX Aggregator;Dexs;DEX,arbitrum-ecosystem;arbitrum-ecosytem;decentralized-exchange;decentralized-exchange-dex-token;defi;ethereum-ecosystem,False
+8161,SPI,Shopping,Dexs,Dexs,binance-smart-chain;bnb-chain;e-commerce,True
+8202,ZKB,ZKBase,Dexs;Launchpad,Dexs;Launchpad;DEX;Layer-2;Zero Knowledge,amm;decentralized-exchange;decentralized-exchange-dex-token;layer-2;rollups;scaling;zero-knowledge-proofs,False
+8210,BTCST,Bitcoin Standard Hashrate Token,Yield,Yield,,True
+8290,SUPER,SuperVerse,Services,Services;NFT;Gaming,animoca-brands-portfolio;avalanche-ecosystem;base-ecosystem;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;collectibles-nfts;defi;ethereum-ecosystem;exnetwork-capital-portfolio;gaming;injective-ecosystem;launchpad;made-in-america;polkastarter;polygon-ecosystem;soneium-ecosystem;superstarter,False
+8296,KSP,KLAYswap Protocol,Dexs,Dexs,defi,False
+8335,MDX,Mdex,Dexs,Dexs;DEX;Yield,amm;binance-smart-chain;bnb-chain;decentralized-exchange;decentralized-exchange-dex-token;defi;heco;heco-ecosystem;yield-farming,False
+8353,BETH,Beacon ETH,,,bnb-chain;bnb-chain-ecosystem;defi;eth-staking;rehypothecated-crypto,False
+8420,DAO,DAO Maker,Dexs;Services,Dexs;Services,bnb-chain-ecosystem;dao-maker;defi;ethereum-ecosystem;governance;injective-ecosystem;launchpad;solana-ecosystem;vbc-ventures-portfolio,False
+8497,BANANA,ApeSwap,Telegram Bot,Telegram Bot;DEX;Yield,amm;binance-smart-chain;bnb-chain;decentralized-exchange;decentralized-exchange-dex-token;defi;dex;yield-farming,False
+8526,RAY,Raydium,Dexs;Interface;Launchpad,Dexs;Interface;Launchpad;DEX;Derivatives;Perpetuals,amm;binance-ecosystem;binance-listing;decentralized-exchange;decentralized-exchange-dex-token;defi;derivatives;dex;k300-ventures-portfolio;perpetuals;petrock-capital;petrock-capital-portfolio;solana-ecosystem,False
+8534,CHEX,Chintai,,RWA,bnb-chain-ecosystem;decentralized-exchange-dex-token;defi;eos;eos-ecosystem;ethereum-ecosystem;real-world-assets;real-world-assets-protocols;solana-ecosystem,False
+8602,AUCTION,Bounce Token,Launchpad,Launchpad,binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;bounce-launchpad;defi;dot-ecosystem;dwf-labs-portfolio;ethereum-ecosystem;polkadot-ecosystem,False
+8615,EPIC,Epic Chain,,NFT;Gaming;Layer-2;Metaverse;RWA,binance-ecosystem;binance-listing;collectibles-nfts;ethereum-ecosystem;gaming;layer-2;metaverse;polkastarter;polygon-ecosystem;real-world-assets;real-world-assets-protocols,False
+8719,ILV,Illuvium,Gaming,Gaming;NFT;Metaverse,binance-ecosystem;binance-listing;collectibles-nfts;dao;ethereum-ecosystem;gaming;metaverse;play-to-earn,False
+8766,ALICE,MyNeighborAlice,Services,Services;NFT;Gaming;Metaverse,binance-ecosystem;binance-launchpool;binance-listing;bnb-chain-ecosystem;chromia-ecosystem;collectibles-nfts;dao-maker;defi;entertainment;ethereum-ecosystem;exnetwork-capital-portfolio;gaming;k300-ventures-portfolio;metaverse;play-to-earn;solana-ecosystem,False
+8857,ANC,Anchor Protocol,Lending,Lending,arrington-xrp-capital-portfolio;binance-launchpool;cosmos-ecosystem;injective-ecosystem;terra-ecosystem,True
+8891,BTCST,Bitcoin Standard Hashrate Token,Yield,Yield,binance-launchpool;binance-smart-chain;bitcoin-ecosystem;bnb-chain;btc-ecosystem,True
+8938,EPS,Ellipsis,Dexs,Dexs;DEX,binance-smart-chain;bnb-chain;bnb-chain-ecosystem;decentralized-exchange;decentralized-exchange-dex-token;defi;dex,False
+8972,SFUND,Seedify.fund,Launchpad,Launchpad;Gaming,arbitrum-ecosystem;avalanche-ecosystem;base-ecosystem;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;dwf-labs-portfolio;ethereum-ecosystem;gaming;launchpad;play-to-earn;polygon-ecosystem,True
+9119,TLM,Alien Worlds,Gaming,Gaming;NFT;Metaverse,animoca-brands-portfolio;binance-ecosystem;binance-launchpool;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;collectibles-nfts;dao;entertainment;ethereum-ecosystem;gaming;metaverse;play-to-earn,False
+9175,MBOX,MOBOX,Gaming,Gaming;NFT;Metaverse;Yield,arbitrum-ecosystem;binance-ecosystem;binance-launchpool;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;collectibles-nfts;defi;dwf-labs-portfolio;gaming;metaverse;play-to-earn;yield-farming,False
+9308,PYR,Vulcan Forged (PYR),Dexs,Dexs;NFT;Gaming;Metaverse,binance-ecosystem;binance-listing;collectibles-nfts;dwf-labs-portfolio;entertainment;ethereum-ecosystem;gaming;metaverse;polygon-ecosystem,True
+9417,MPL,Maple,,RWA,circle-ventures-portfolio;defi;ethereum-ecosystem;real-world-assets;spartan-group,False
+9421,FORTH,Ampleforth Governance Token,Services,Services,binance-ecosystem;binance-listing;dao;ethereum-ecosystem;governance;near-protocol-ecosystem,False
+9436,ELON,Dogelon Mars,Canonical Bridge;Lending,Canonical Bridge;Lending;Meme;Payments,animal-memes;base-ecosystem;bnb-chain-ecosystem;cronos-ecosystem;doggone-doggerel;ethereum-ecosystem;memes;payments;polygon-ecosystem;solana-ecosystem,True
+9444,KNC,Kyber Network Crystal v2,DEX Aggregator;Dexs;Yield Aggregator,DEX Aggregator;Dexs;Yield Aggregator;DEX,amm;arbitrum-ecosystem;arbitrum-ecosytem;binance-ecosystem;binance-listing;bnb-chain-ecosystem;dao;decentralized-exchange;decentralized-exchange-dex-token;defi;ethereum-ecosystem;governance;kenetic-capital-portfolio;kinetic-capital;kinetic-capital-portfolio;marketplace;optimism-ecosystem;pantera-capital-portfolio;parafi-capital;polygon-ecosystem;three-arrows-capital-portfolio,False
+9462,WAVAX,Wrapped AVAX,,,aurora-ecosystem;avalanche-ecosystem;cronos-ecosystem;defi;linea-ecosystem;milkomeda-ecosystem;osmosis-ecosystem;rehypothecated-crypto;terra-ecosystem,False
+9486,BTCT,Bitcoin TRC20,,,defi;rehypothecated-crypto;tron20-ecosystem,False
+9543,BICO,Biconomy,Bridge,Bridge;Interoperability,account-abstraction;arbitrum-ecosystem;avalanche-ecosystem;base-ecosystem;binance-ecosystem;binance-labs-portfolio;binance-liquidity-enhancement-program;binance-listing;bnb-chain-ecosystem;coinbase-ventures-portfolio;coinlist-launchpad;defi;dwf-labs-portfolio;ethereum-ecosystem;fenbushi-capital-portfolio;interoperability;mvb;optimism-ecosystem;platform;polygon-ecosystem,False
+9640,METIS,Metis,Canonical Bridge,Canonical Bridge;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,binance-ecosystem;binance-listing;dwf-labs-portfolio;ethereum-ecosystem;layer-2;metis-andromeda-ecosystem;metisdao-ecosystem;modular-blockchain;okex-blockdream-ventures-portfolio;okx-ventures-portfolio;privacy;rollups;scaling;zero-knowledge-proofs,False
+9674,WILD,Wilder World,Lending;Yield,Lending;Yield;NFT;Gaming;Metaverse,animoca-brands-portfolio;avalanche-ecosystem;binance-alpha;binance-alpha-airdrops;binance-ecosystem;bnb-chain-ecosystem;collectibles-nfts;defi;ethereum-ecosystem;gaming;made-in-america;metaverse;polkastarter;skyvision-capital;skyvision-capital-portfolio;solana-ecosystem;vr-ar,False
+10188,ATA,Automata Network,Yield Aggregator,Yield Aggregator;Modular Blockchain,binance-ecosystem;binance-launchpool;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;defi;eigenlayer-ecosystem;ethereum-ecosystem;jump-crypto;modular-blockchain;polkadot;polkadot-ecosystem;polygon-ecosystem;rollups,False
+10240,WFTM,Wrapped Fantom,,,bnb-chain-ecosystem;celo-ecosystem;cronos-ecosystem;defi;ethereum-ecosystem;fantom-ecosystem;milkomeda-ecosystem;moonbeam-ecosystem;rehypothecated-crypto,False
+10407,BabyDoge,Baby Doge Coin,Bridge;Dexs,Bridge;Dexs;AI/Big Data;NFT;Gaming;Meme;Payments;RWA,ai-big-data;animal-memes;art;base-ecosystem;binance-ecosystem;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;collectibles-nfts;communications-social-media;content-creation;cross-chain;decentralized-exchange-dex-token;defi;doggone-doggerel;entertainment;ethereum-ecosystem;gaming;generative-ai;launchpad;loyalty;made-in-america;marketing;marketplace;media;memes;payments;philanthropy;real-estate;real-world-assets;real-world-assets-protocols;services;solana-ecosystem;tap-to-earn;toncoin-ecosystem;web3,False
+10508,FLUID,Fluid,Dexs;Yield Aggregator,Dexs;Yield Aggregator,arbitrum-ecosystem;base-ecosystem;binance-alpha;binance-ecosystem;binance-listing;coinbase-ventures-portfolio;dao;defi;ethereum-ecosystem;standard-crypto-portfolio,False
+10529,SUN,Sun [New],Bridge;Derivatives;Dexs,Bridge;Derivatives;Dexs,binance-ecosystem;binance-listing;made-in-china;tron-ecosystem;tron20-ecosystem,True
+10688,YGG,Yield Guild Games,Gaming,Gaming;NFT;Metaverse,a16z-portfolio;abstract-chain-ecosystem;animoca-brands-portfolio;base-ecosystem;binance-ecosystem;binance-listing;bnb-chain-ecosystem;collectibles-nfts;dao;dwf-labs-portfolio;entertainment;ethereum-ecosystem;gaming;gaming-guild;harmony-ecosystem;metaverse;okex-blockdream-ventures-portfolio;okx-ventures-portfolio;play-to-earn;polygon-ecosystem;ronin-ecosystem;solana-ecosystem,False
+10759,DVF,rhino.fi,,,arbitrum-ecosytem;defi;okex-blockdream-ventures-portfolio;okx-ventures-portfolio;spartan-group,False
+10804,FLOKI,FLOKI,Token Locker,Token Locker;Gaming;Meme;Metaverse,animal-memes;binance-ecosystem;binance-listing;bnb-chain;bnb-chain-ecosystem;defi;doggone-doggerel;dwf-labs-portfolio;ethereum-ecosystem;gaming;memes;metaverse;paal-ecosystem;play-to-earn;tokenfi-launchpad,False
+10897,ALT,Alitas,Derivatives;Developer Tools;Dexs;Launchpad,Derivatives;Developer Tools;Dexs;Launchpad,binance-smart-chain;bnb-chain,True
+10903,C98,Coin98,Farm,Farm;Derivatives;Perpetuals,binance-ecosystem;binance-launchpad;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;celo-ecosystem;defi;derivatives;dwf-labs-portfolio;ethereum-ecosystem;injective-ecosystem;perp-dex-coins;perpetuals;polygon-ecosystem;solana-ecosystem;spartan-group;viction-ecosystem;wallet,False
+11079,BRISE,Bitgert,Yield,Yield,bnb-chain;bnb-chain-ecosystem;ethereum-ecosystem;solana-ecosystem,True
+11156,ETHDYDX,dYdX (ethDYDX),,Derivatives;Privacy;Zero Knowledge,binance-ecosystem;binance-listing;cosmos-ecosystem;decentralized-exchange-dex-token;defi;derivatives;ethereum-ecosystem;paradigm-portfolio;privacy;solana-ecosystem;spartan-group;three-arrows-capital-portfolio;zero-knowledge-proofs,False
+11165,ORCA,Orca,Dexs;Launchpad;Lending,Dexs;Launchpad;Lending;DEX,amm;binance-ecosystem;binance-listing;decentralized-exchange-dex-token;defi;dex;solana-ecosystem;three-arrows-capital-portfolio,False
+11171,MNGO,Mango,Derivatives;Dexs,Derivatives;Dexs;DEX;Perpetuals,alleged-sec-securities;dao;decentralized-exchange;decentralized-exchange-dex-token;defi;derivatives;dex;governance;perp-dex-coins;perpetuals;solana-ecosystem,False
+11221,BIT,BitDAO,CEX,CEX,dao;dragonfly-capital-portfolio;fenbushi-capital-portfolio;governance;pantera-capital-portfolio;spartan-group,False
+11232,HIGH,Highstreet,,Gaming;Metaverse,animoca-brands-portfolio;binance-ecosystem;binance-launchpool;binance-listing;bnb-chain-ecosystem;bullperks-launchpad;defi;dwf-labs-portfolio;ethereum-ecosystem;gaming;metaverse;skyvision-capital-portfolio;solana-ecosystem;vr-ar,False
+11289,SPELL,Spell Token,CDP,CDP,arbitrum-ecosystem;arbitrum-ecosytem;avalanche-ecosystem;binance-ecosystem;binance-listing;defi;defi-2;dwf-labs-portfolio;ethereum-ecosystem;fantom-ecosystem;olympus-pro-ecosystem;protocol-owned-liquidity;solana-ecosystem,False
+11865,BONE,Bone ShibaSwap,Dexs;Farm,Dexs;Farm;Layer-2;Meme,animal-memes;doggone-doggerel;ethereum-ecosystem;layer-2;memes,True
+12220,OSMO,Osmosis,Dexs,Dexs;Modular Blockchain,binance-ecosystem;binance-listing;cosmos-ecosystem;ethereum-ecosystem;injective-ecosystem;modular-blockchain;osmosis-ecosystem;polygon-ecosystem,True
+12387,RBN,Ribbon Finance,Options;Options Vault;Uncollateralized Lending,Options;Options Vault;Uncollateralized Lending;Derivatives;RWA,coinbase-ventures-portfolio;derivatives;ethereum-ecosystem;real-world-assets,False
+12573,CPOOL,Clearpool,RWA;Uncollateralized Lending,RWA;Uncollateralized Lending,binance-alpha;binance-ecosystem;cmc-crypto-yearbook-2024-2025;defi;ethereum-ecosystem;real-world-assets;real-world-assets-protocols;solana-ecosystem,False
+12760,INF,Sanctum Infinity,,,defi;rehypothecated-crypto;solana-ecosystem,False
+13502,WLD,Worldcoin,Chain,Chain;Identity;Privacy;Zero Knowledge,a16z-portfolio;binance-ecosystem;binance-listing;blockchain-capital-portfolio;defi;ethereum-ecosystem;governance;identity;made-in-america;optimism-ecosystem;privacy;token;world-chain-mainnet-ecosystem;zero-knowledge-proofs,False
+14280,EUL,Euler,Dexs;Lending;Risk Curators,Dexs;Lending;Risk Curators,arbitrum-ecosystem;base-ecosystem;binance-alpha-airdrops;binance-ecosystem;binance-listing;bnb-chain-ecosystem;ethereum-ecosystem;paradigm-portfolio,True
+14519,VVS,VVS Finance,Dexs,Dexs;DEX,cronos-ecosystem;decentralized-exchange-dex-token;defi;dex;ethereum-ecosystem,False
+14783,MAGIC,Treasure,Gaming;Yield,Gaming;Yield;AI/Big Data;NFT;Layer-2;Metaverse,ai-agent-launchpad;ai-big-data;arbitrum-ecosystem;arbitrum-ecosytem;binance-ecosystem;binance-listing;collectibles-nfts;ethereum-ecosystem;gaming;layer-2;metaverse,True
+14803,AURORA,Aurora,Farm,Farm,aurora-ecosystem;dwf-labs-portfolio;ethereum-ecosystem;injective-ecosystem;near-protocol-ecosystem;okex-blockdream-ventures-portfolio;okx-ventures-portfolio,True
+14806,PEOPLE,ConstitutionDAO,,Meme,binance-ecosystem;binance-listing;dao;ethereum-ecosystem;made-in-america;memes;political-memes;solana-ecosystem,False
+16116,SOL,Wrapped Solana,Canonical Bridge;Dexs,Canonical Bridge;Dexs,avalanche-ecosystem;bnb-chain-ecosystem;defi;ethereum-ecosystem;monad-ecosystem;near-protocol-ecosystem;neon-evm-ecosystem;osmosis-ecosystem;polygon-ecosystem;rehypothecated-crypto;solana-ecosystem;terra-ecosystem,False
+16334,APX,APX,,Derivatives;DEX,arbitrum-ecosystem;arbitrum-ecosytem;base-ecosystem;binance-alpha;binance-ecosystem;bnb-chain;bnb-chain-ecosystem;decentralized-exchange-dex-token;defi;derivatives;dex,False
+16876,ALI,Artificial Liquid Intelligence,Dexs,Dexs;AI Agents;AI/Big Data;NFT;Gaming;Identity;Interoperability;Meme;Metaverse,ai-agents;ai-big-data;ai-memes;alameda-research-portfolio;base-ecosystem;collectibles-nfts;communications-social-media;content-creation;cronos-ecosystem;crypto-com-capital-portfolio;defi;education;enterprise-solutions;entertainment;ethereum-ecosystem;galaxy-digital-portfolio;gaming;generative-ai;governance;huobi-capital-portfolio;identity;interoperability;marketing;media;memes;metaverse;platform;polygon-ecosystem;services;solana-ecosystem;video;web3,False
+17591,NYM,NYM,,DePIN;Interoperability;Layer-1;Privacy;Smart Contract Platform,bnb-chain-ecosystem;coinlist-launchpad;defi;depin;distributed-computing;ethereum-ecosystem;fenbushi-capital-portfolio;governance;hashkey-capital-portfolio;interoperability;layer-1;osmosis-ecosystem;polychain-capital-portfolio;privacy;privacy-coins;smart-contracts;wallet;web3,False
+17751,T,Threshold,CDP;Decentralized BTC,CDP;Decentralized BTC,binance-ecosystem;binance-listing;bitcoin-ecosystem;btc-ecosystem;ethereum-ecosystem,True
+17799,AXL,Axelar,Bridge;Launchpad,Bridge;Launchpad;Interoperability;RWA,arbitrum-ecosystem;avalanche-ecosystem;base-ecosystem;binance-ecosystem;binance-labs-portfolio;binance-listing;bnb-chain-ecosystem;coinbase-ventures-portfolio;coinlist-launchpad;defi;ethereum-ecosystem;fantom-ecosystem;galaxy-digital-portfolio;interoperability;linea-ecosystem;made-in-america;mantle-ecosystem;optimism-ecosystem;osmosis-ecosystem;polychain-capital-portfolio;polygon-ecosystem;real-world-assets;real-world-assets-protocols;scroll-ecosystem;sei-ecosystem,False
+18031,CCD,Concordium,,Identity;Layer-1;Privacy;Smart Contract Platform;Zero Knowledge,defi;governance;identity;layer-1;platform;privacy;privacy-blockchain;smart-contracts;wallet;zero-knowledge-proofs,False
+18037,MAV,Maverick Protocol,Dexs,Dexs;Privacy,arbitrum-ecosystem;base-ecosystem;binance-ecosystem;binance-launchpool;binance-listing;bnb-chain-ecosystem;circle-ventures-portfolio;defi;ethereum-ecosystem;gemini-frontier-fund;jump-crypto;pantera-capital-portfolio;privacy;shima-capital;spartan-group;zksync-era-ecosystem,False
+18579,WTRX,Wrapped TRON,,,defi;rehypothecated-crypto;tron20-ecosystem,False
+19650,VOLT,Volt Inu,Dexs;Lending;Liquid Staking,Dexs;Lending;Liquid Staking;AI/Big Data;NFT;Gaming;Payments;Meme,ai-big-data;animal-memes;binance-smart-chain;bnb-chain-ecosystem;collectibles-nfts;dao;decentralized-exchange-dex-token;defi;doggone-doggerel;ethereum-ecosystem;gaming;medium-of-exchange;memes;paal-ecosystem;payments;play-to-earn;polygon-ecosystem,False
+19843,APEX,ApeX Protocol,Derivatives;Dexs,Derivatives;Dexs;DEX;Perpetuals,arbitrum-ecosystem;decentralized-exchange-dex-token;defi;derivatives;dex;ethereum-ecosystem;perp-dex-coins;perpetuals,False
+20314,LUNA,Terra,Launchpad,Launchpad,alleged-sec-securities;binance-ecosystem;binance-listing;osmosis-ecosystem,True
+20721,BTC.b,Bitcoin Avalanche Bridged,,,avalanche-ecosystem;bitcoin-ecosystem;defi;rehypothecated-crypto,False
+21159,ONDO,Ondo,Derivatives;RWA,Derivatives;RWA,binance-alpha;binance-ecosystem;binance-listing;cmc-crypto-yearbook-2024-2025;coinlist-launchpad;ethereum-ecosystem;made-in-america;real-world-assets;real-world-assets-protocols;world-liberty-financial-portfolio,False
+21870,MPLX,Metaplex,Launchpad,Launchpad,binance-alpha;binance-alpha-airdrops;binance-ecosystem;bnb-chain-ecosystem;solana-ecosystem,True
+22059,VENOM,Venom,,,dao;defi,False
+22850,HONEY,Hivemapper,DePIN;Dexs;Liquid Staking;NFT Marketplace,DePIN;Dexs;Liquid Staking;NFT Marketplace;IoT,depin;distributed-computing;iot;made-in-america;solana-ecosystem,True
+22974,TAO,Bittensor,Chain,Chain;AI/Big Data;DePIN;Layer-1,ai-big-data;binance-ecosystem;binance-listing;bittensor-ecosystem;cmc-crypto-yearbook-2024-2025;dao;dcg-portfolio;depin;distributed-computing;generative-ai;layer-1;open-source;oracles;polkadot-ecosystem;polychain-capital-portfolio;robotics,False
+23054,CHEEL,Cheelee,Farm,Farm,bnb-chain-ecosystem,True
+23082,TEM,TemDAO,Lending;Reserve Currency,Lending;Reserve Currency,,True
+23711,PRIME,Echelon Prime,Gaming;Leveraged Farming,Gaming;Leveraged Farming;AI/Big Data;NFT,ai-big-data;base-ecosystem;cmc-crypto-yearbook-2024-2025;collectibles-nfts;ethereum-ecosystem;gaming;generative-ai;paradigm-portfolio;trading-card-game,True
+24091,ZK,ZKsync,Chain,Chain;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,a16z-portfolio;binance-ecosystem;binance-listing;blockchain-capital-portfolio;egirl-capital-portfolio;ethereum-ecosystem;governance;layer-2;modular-blockchain;okx-ventures-portfolio;privacy;privacy-blockchain;rollups;zero-knowledge-proofs;zksync-era-ecosystem,False
+24257,LGCT,Legacy Token,Farm,Farm,base-ecosystem;bnb-chain-ecosystem;education;ethereum-ecosystem,True
+24399,WHBAR,Wrapped HBAR,,,defi;hedera-hashgraph-ecosystem;rehypothecated-crypto,False
+24735,WPLS,Wrapped Pulse,,,defi;pulsechain-ecosystem;rehypothecated-crypto,False
+24781,CYBER,Cyber,Chain;SoFi,Chain;SoFi;NFT;Interoperability;Layer-2;Smart Contract Platform,ai-applications;amber-group-portfolio;animoca-brands-portfolio;arbitrum-ecosystem;arbitrum-ecosytem;base-ecosystem;binance-ecosystem;binance-labs-portfolio;binance-launchpool;binance-listing;binance-smart-chain;bnb-chain;bnb-chain-ecosystem;coinlist-launchpad;collectibles-nfts;communications-social-media;cyber-ecosystem;dragonfly-capital-portfolio;dwf-labs-portfolio;ethereum-ecosystem;governance;interoperability;layer-2;linea-ecosystem;multicoin-capital-portfolio;optimism-ecosystem;platform;polygon-ecosystem;polygon-ventures-portfolio;reputation;smart-contracts;spartan-group;web3,False
+24796,ADF,Art de Finance,Yield,Yield,polygon-ecosystem,True
+24875,STRX,Staked TRX,Farm,Farm,defi;rehypothecated-crypto;tron20-ecosystem,False
+25264,SNEK,Snek,Dexs,Dexs;Meme,cardano-ecosystem;memes,True
+26133,TBTC,tBTC,,,arbitrum-ecosystem;base-ecosystem;bitcoin-ecosystem;defi;ethereum-ecosystem;optimism-ecosystem;polygon-ecosystem;rehypothecated-crypto;solana-ecosystem;starknet-ecosystem,False
+26680,NTRN,Neutron,,Smart Contract Platform,binance-ecosystem;binance-labs-portfolio;binance-launchpool;binance-listing;coinfund-portfolio;cross-chain;defi;nomad-capital;osmosis-ecosystem;parallel-evm;smart-contracts,False
+26997,ZRO,LayerZero,Bridge,Bridge;Interoperability,a16z-portfolio;arbitrum-ecosystem;avalanche-ecosystem;base-ecosystem;binance-ecosystem;binance-labs-portfolio;binance-listing;coinbase-ventures-portfolio;cross-chain;defi;ethereum-ecosystem;interoperability;multicoin-capital-portfolio;optimism-ecosystem;polygon-ecosystem;sino-global-capital,False
+27076,WTFUEL,Wrapped TFUEL,,,defi;rehypothecated-crypto;theta-network-ecosystem,False
+27077,WTHETA,Wrapped THETA,,,defi;rehypothecated-crypto;theta-network-ecosystem,False
+27565,ARKM,Arkham,CEX;Services,CEX;Services;AI/Big Data;Derivatives;Perpetuals,ai-big-data;analytics;binance-ecosystem;binance-labs-portfolio;binance-launchpad;binance-listing;cmc-crypto-yearbook-2024-2025;defi;derivatives;ethereum-ecosystem;governance;made-in-america;marketplace;perp-dex-coins;perpetuals;research,False
+27765,ZBU,Zeebu,Farm,Farm,base-ecosystem;bnb-chain-ecosystem;ethereum-ecosystem;loyalty,True
+27966,DORA,Dora Factory,,,bounce-launchpad;cosmos-ecosystem;dao;duckstarter;ethereum-ecosystem;governance;okex-blockdream-ventures-portfolio,False
+28047,LSD,L7,Dexs;Farm;Indexes,Dexs;Farm;Indexes,asset-management;binance-chain;web3,True
+28177,PYTH,Pyth Network,MEV;Oracle,MEV;Oracle,binance-ecosystem;binance-listing;cmc-crypto-yearbook-2024-2025;cross-chain;defi;oracles;solana-ecosystem,False
+28183,WFLR,Wrapped Flare,,,defi;flare-network-ecosystem;rehypothecated-crypto,False
+28298,BEAM,Beam,Chain,Chain;Gaming,base-ecosystem;beam-ecosystem;binance-chain;binance-ecosystem;binance-launchpool;binance-listing;bnb-chain-ecosystem;dwf-labs-portfolio;ethereum-ecosystem;gaming;gaming-guild;governance;play-to-earn;spartan-group;token,False
+28301,MEME,Memecoin,Dexs;Farm,Dexs;Farm;NFT;Meme,binance-ecosystem;binance-launchpool;binance-listing;collectibles-nfts;ethereum-ecosystem;memes,True
+28480,BLAST,Blast,Canonical Bridge;Farm,Canonical Bridge;Farm;Layer-2;Modular Blockchain,blast-ecosystem;egirl-capital-portfolio;ethereum-ecosystem;layer-2;modular-blockchain;paradigm-portfolio;rollups;standard-crypto-portfolio,True
+28674,ACE,Fusionist,Farm,Farm;Gaming,binance-ecosystem;binance-launchpool;binance-listing;bnb-chain-ecosystem;communications-social-media;gaming;social-token,True
+28853,JLP,Jupiter Perps LP,,DEX,defi;dex;lp-tokens;solana-ecosystem,False
+29082,SAROS,Saros,Dexs,Dexs;DEX,binance-alpha;binance-alpha-airdrops;binance-ecosystem;dex;solana-ecosystem;viction-ecosystem,False
+29150,PONKE,Ponke,,Meme,animal-memes;base-ecosystem;binance-ecosystem;binance-listing;defi;ip-memes;made-in-america;memes;solana-ecosystem,False
+29210,JUP,Jupiter,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking;Perpetuals,amm;binance-ecosystem;binance-liquidity-enhancement-program;binance-listing;cross-chain;decentralized-exchange-dex-token;defi;derivatives;moonshot;perp-dex-coins;perpetuals;solana-ecosystem,False
+29335,PIXEL,Pixels,Dexs,Dexs;NFT;Gaming,animoca-brands-portfolio;binance-ecosystem;binance-launchpool;binance-listing;collectibles-nfts;ethereum-ecosystem;gaming;gaming-guild;governance;play-to-earn;ronin-ecosystem;web3,False
+29555,PORTAL,Portal,,Gaming,base-ecosystem;binance-ecosystem;binance-launchpool;binance-listing;cross-chain;defi;dwf-labs-portfolio;ethereum-ecosystem;gaming;solana-ecosystem,False
+29587,W,Wormhole,Bridge,Bridge;NFT;Interoperability,arbitrum-ecosystem;arrington-xrp-capital-portfolio;base-ecosystem;binance-ecosystem;binance-listing;cmc-crypto-yearbook-2024-2025;coinbase-ventures-portfolio;collectibles-nfts;cross-chain;dao;defi;ethereum-ecosystem;governance;interoperability;jump-crypto;multicoin-capital-portfolio;optimism-ecosystem;solana-ecosystem;web3,False
+29676,AEVO,Aevo,Derivatives;Options,Derivatives;Options;DEX;Layer-2;Perpetuals,binance-ecosystem;binance-launchpool;binance-listing;derivatives;dex;ethereum-ecosystem;layer-2;perp-dex-coins;perpetuals,False
+29779,ZKJ,Polyhedra Network,Chain,Chain;Interoperability;Layer-2;RWA,animoca-brands-portfolio;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-labs-portfolio;binance-listing;bnb-chain-ecosystem;defi;ethereum-ecosystem;hashkey-capital-portfolio;interoperability;layer-2;okx-ventures-portfolio;polychain-capital-portfolio;real-world-assets;real-world-assets-protocols,False
+30083,ATH,Aethir,Derivatives;Developer Tools;Yield,Derivatives;Developer Tools;Yield;AI/Big Data;DePIN,ai-big-data;arbitrum-ecosystem;binance-alpha;binance-ecosystem;binance-listing;cmc-crypto-yearbook-2024-2025;depin;distributed-computing;ethereum-ecosystem;solana-ecosystem,True
+30126,MEW,cat in a dogs world,Dexs,Dexs;Meme,animal-memes;binance-alpha;binance-ecosystem;binance-listing;cat-themed;cmc-crypto-yearbook-2024-2025;doggone-doggerel;ip-memes;memes;moonshot;solana-ecosystem,True
+30494,EIGEN,EigenCloud,Restaking,Restaking,binance-ecosystem;binance-listing;cmc-crypto-yearbook-2024-2025;defi;ethereum-ecosystem;made-in-america;restaking;x402-ecosystem,False
+30506,WZEDX,Wrapped Zedxion,,,bnb-chain-ecosystem;defi;rehypothecated-crypto;zedxion-smart-chain-ecosystem,False
+30636,ZBCN,Zebec Network,,DePIN;Payments;RWA,defi;depin;iso-20022;made-in-america;payments;real-world-assets;real-world-assets-protocols;solana-ecosystem,False
+30712,MERL,Merlin Chain,Bridge;Yield,Bridge;Yield;Layer-2,amber-group-portfolio;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-listing;bitcoin-ecosystem;bnb-chain-ecosystem;ethereum-ecosystem;layer-2;made-in-china;merlin-ecosystem,True
+30986,KMNO,Kamino,Lending;Liquidity Manager,Lending;Liquidity Manager,binance-ecosystem;binance-listing;defi;lending-borowing;solana-ecosystem,False
+31278,DRIFT,Drift,Derivatives;Dexs;Liquid Staking,Derivatives;Dexs;Liquid Staking;Perpetuals,binance-alpha;binance-ecosystem;binance-listing;decentralized-exchange-dex-token;defi;derivatives;governance;jump-crypto;multicoin-capital-portfolio;perpetuals;polychain-capital-portfolio;solana-ecosystem,False
+31503,BWB,Bitget Wallet Token,,,base-ecosystem;ethereum-ecosystem;governance;solana-ecosystem;toncoin-ecosystem;wallet;web3,False
+32272,PUMPBTC,pumpBTC (Rehypothecated BTC),,Restaking,bnb-chain-ecosystem;defi;ethereum-ecosystem;rehypothecated-crypto;restaking,False
+32306,FBTC,Function,,Interoperability,bitcoin-ecosystem;defi;ethereum-ecosystem;interoperability;mantle-ecosystem;rehypothecated-crypto,False
+32376,AVAIL,Avail,,Privacy;Zero Knowledge,base-ecosystem;binance-alpha;binance-alpha-airdrops;binance-ecosystem;bnb-chain-ecosystem;defi;ethereum-ecosystem;polkadot;polkadot-ecosystem;privacy;zero-knowledge-proofs,False
+32724,CAT,Simon's Cat,Yield Aggregator,Yield Aggregator;Meme,animal-memes;binance-ecosystem;binance-hodler-airdrops;binance-listing;binance-smart-chain;bnb-chain-ecosystem;cat-themed;defi;dwf-labs-portfolio;ip-memes;memes;solana-ecosystem;tokenfi-launchpad,False
+32882,BNSOL,Binance Staked SOL,,,binance-ecosystem;binance-listing;defi;rehypothecated-crypto;solana-ecosystem,False
+33038,SKY,Sky,CDP;Dexs;RWA;Risk Curators,CDP;Dexs;RWA;Risk Curators,1confirmation-portfolio;a16z-portfolio;arbitrum-ecosystem;binance-ecosystem;binance-listing;bitcoin-ecosystem;bnb-chain-ecosystem;dao;defi;dragonfly-capital-portfolio;electric-capital-portfolio;ethereum-ecosystem;governance;lending-borowing;near-protocol-ecosystem;pantera-capital-portfolio;paradigm-portfolio;placeholder-ventures-portfolio;polychain-capital-portfolio;real-world-assets;real-world-assets-protocols;spartan-group;standard-crypto-portfolio;store-of-value,False
+33055,slisBNBx,slisBNBx,,,bnb-chain-ecosystem;defi;rehypothecated-crypto,False
+33223,LAB,LAB,Lending;Trading App,Lending;Trading App;DEX,binance-alpha;binance-ecosystem;binance-listing;binance-wallet-ido;bnb-chain-ecosystem;defi;dex;governance;platform,False
+33251,WLFI,World Liberty Financial,Lending,Lending,binance-ecosystem;binance-listing;bnb-chain-ecosystem;defi;ethereum-ecosystem;made-in-america;solana-ecosystem;wlfi-ecosystem,False
+33280,CHEEMS,Cheems (cheems.pet),Yield,Yield;Meme,animal-memes;binance-alpha;binance-ecosystem;binance-listing;bnb-chain-ecosystem;doggone-doggerel;memes,True
+33310,xSolvBTC,xSolvBTC,,,avalanche-ecosystem;bitcoin-ecosystem;bnb-chain-ecosystem;corn-ecosystem;defi;ethereum-ecosystem;merlin-ecosystem;rehypothecated-crypto,False
+33312,SolvBTC,SolvBTC,,,arbitrum-ecosystem;avalanche-ecosystem;bitcoin-ecosystem;bnb-chain-ecosystem;corn-ecosystem;defi;ethereum-ecosystem;merlin-ecosystem;rehypothecated-crypto;starknet-ecosystem,False
+33342,EVA,EverValue Coin,,,arbitrum-ecosystem;asset-backed-token;defi;web3,False
+33391,DEEP,DeepBook Protocol,Dexs;Launchpad,Dexs;Launchpad,binance-ecosystem;binance-listing;decentralized-exchange-dex-token;defi;move-vm;sui-ecosystem,False
+33566,ACT,Act I : The AI Prophecy,Farm,Farm;AI/Big Data;Meme,ai-big-data;ai-memes;binance-ecosystem;binance-liquidity-enhancement-program;binance-listing;memes;pump-fun-ecosystem;solana-ecosystem,True
+33652,LBTC,Lombard Staked BTC,,Restaking,base-ecosystem;bitcoin-ecosystem;bnb-chain-ecosystem;corn-ecosystem;defi;ethereum-ecosystem;etherlink-ecosystem;rehypothecated-crypto;restaking;starknet-ecosystem,False
+33696,EBTC,ether.fi Staked BTC,,,defi;ethereum-ecosystem;rehypothecated-crypto,False
+33824,SYRUP,Maple Finance,Lending;RWA,Lending;RWA,base-ecosystem;binance-alpha;binance-ecosystem;binance-listing;circle-ventures-portfolio;dao;defi;ethereum-ecosystem;framework-ventures-portfolio;real-world-assets;real-world-assets-protocols,False
+33834,BBSOL,Bybit Staked SOL,,,defi;rehypothecated-crypto;solana-ecosystem,False
+34104,MORPHO,Morpho,Lending,Lending,arbitrum-ecosystem;base-ecosystem;binance-alpha;binance-ecosystem;binance-liquidity-enhancement-program;binance-listing;coinbase-ventures-portfolio;defi;ethereum-ecosystem;fenbushi-capital-portfolio;lending-borowing;pantera-capital-portfolio,False
+34143,WHITE,WhiteRock,Options,Options,ethereum-ecosystem;solana-ecosystem,True
+34812,BIO,Bio Protocol,Launchpad,Launchpad,base-ecosystem;binance-ecosystem;binance-labs-portfolio;binance-listing;bnb-chain-ecosystem;dao;desci;ethereum-ecosystem;solana-ecosystem,False
+34926,ARC,AI Rig Complex,DEX Aggregator;Dexs;Services,DEX Aggregator;Dexs;Services;AI Agents;AI/Big Data,ai-agents;ai-big-data;binance-alpha;binance-ecosystem;binance-listing;pump-fun-ecosystem;solana-ecosystem,True
+35429,LAYER,Solayer,Crypto Card Issuer;RWA;Restaking,Crypto Card Issuer;RWA;Restaking,binance-ecosystem;binance-hodler-airdrops;binance-labs-portfolio;binance-listing;defi;polychain-capital-portfolio;restaking;solana-ecosystem,False
+35437,USDF,Aster USDF,,,bnb-chain-ecosystem;defi,False
+35509,VVV,Venice Token,Farm,Farm;AI/Big Data,ai-applications;ai-big-data;base-ecosystem;binance-alpha;binance-ecosystem;binance-listing;made-in-america,True
+35763,KAITO,KAITO,Services,Services;AI/Big Data,ai-big-data;base-ecosystem;binance-ecosystem;binance-hodler-airdrops;binance-listing;communications-social-media;dragonfly-capital-portfolio;governance;hashkey-capital-portfolio;social-token;spartan-group,False
+35818,SOSO,SoSoValue,Basis Trading;Bridge;Derivatives;Dexs;Indexes,Basis Trading;Bridge;Derivatives;Dexs;Indexes;AI/Big Data,ai-big-data;asset-management;base-ecosystem;dapp;defi;ethereum-ecosystem,False
+35881,WHYPE,Wrapped HYPE,,,defi;hyperevm-ecosystem;rehypothecated-crypto,False
+35931,ZORA,ZORA,Canonical Bridge;Launchpad;NFT Marketplace,Canonical Bridge;Launchpad;NFT Marketplace;NFT;Layer-2,base-ecosystem;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-listing;collectibles-nfts;communications-social-media;layer-2;social-money,True
+35954,LION,Loaded Lions,Algo-Stables;Basis Trading;Derivatives;Services;Yield,Algo-Stables;Basis Trading;Derivatives;Services;Yield;NFT;Gaming;Meme,arbitrum-ecosystem;collectibles-nfts;cronos-ecosystem;gaming;memes;solana-ecosystem,True
+36044,NXPC,NEXPACE,,Gaming,avalanche-ecosystem;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-hodler-airdrops;binance-liquidity-enhancement-program;binance-listing;bnb-chain-ecosystem;defi;gaming,False
+36119,WAL,Walrus,Developer Tools;Dexs,Developer Tools;Dexs;DePIN;Storage,binance-alpha-airdrops;binance-ecosystem;binance-hodler-airdrops;binance-liquidity-enhancement-program;binance-listing;depin;move-vm;storage;sui-ecosystem,True
+36175,UNIBTC,Universal BTC,,Restaking,aptos-ecosystem;arbitrum-ecosystem;base-ecosystem;bera-chain-ecosystem;bnb-chain-ecosystem;b²-network-ecosystem;corn-ecosystem;defi;duckchain-ecosystem;ethereum-ecosystem;iotex-ecosystem;mantle-ecosystem;merlin-ecosystem;mode-ecosystem;move-vm;optimism-ecosystem;rehypothecated-crypto;restaking;rootstock-rsk-ecosystem;solana-ecosystem;sonic-ecosystem;taiko-ecosystem;unichain-ecosystem;zeta-ecosystem,False
+36246,stkAAVE,Staked Aave,,,defi;ethereum-ecosystem;rehypothecated-crypto,False
+36341,ASTER,Aster,Basis Trading;Bridge;CeDeFi;Derivatives;Dexs;Yield,Basis Trading;Bridge;CeDeFi;Derivatives;Dexs;Yield;DEX;Perpetuals,binance-alpha;binance-ecosystem;binance-listing;bnb-chain-ecosystem;decentralized-exchange-dex-token;defi;derivatives;dex;made-in-china;perp-dex-coins;perpetuals,False
+36410,MYX,MYX Finance,Derivatives,Derivatives;Perpetuals,binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-listing;binance-wallet-ido;bnb-chain-ecosystem;defi;derivatives;perp-dex-coins;perpetuals,False
+36458,AETHWETH,Aave Ethereum WETH,,Yield,aave-tokens;asset-management;defi;ethereum-ecosystem;rehypothecated-crypto;yield-farming,False
+36462,A,Vaulta,,Payments;Smart Contract Platform,2017-2018-alt-season;binance-ecosystem;binance-listing;defi;dwf-labs-portfolio;enterprise-solutions;eos-ecosystem;fenbushi-capital-portfolio;galaxy-digital-portfolio;made-in-america;medium-of-exchange;smart-contracts;wlfi-ecosystem,False
+36507,PUMP,Pump.fun,Dexs;Launchpad;Reserve Currency;Telegram Bot,Dexs;Launchpad;Reserve Currency;Telegram Bot,binance-alpha;binance-ecosystem;binance-listing;coinlist-launchpad;launchpad;pump-fun-ecosystem;solana-ecosystem,True
+36532,B,BUILDon,Derivatives;Liquidity Manager,Derivatives;Liquidity Manager;Meme,ai-memes;binance-alpha;binance-ecosystem;binance-listing;bnb-chain-ecosystem;four-meme-ecosystem;memes;wlfi-ecosystem;world-liberty-financial-portfolio,True
+36671,SAHARA,Sahara AI,,AI/Big Data;Layer-1,ai-big-data;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-hodler-airdrops;binance-labs-portfolio;binance-listing;data-provenance;governance;layer-1;nomad-capital;pantera-capital-portfolio;polychain-capital-portfolio,False
+37986,LIGHT,Light,Dexs,Dexs;Meme,memes;solana-ecosystem,True
+38299,AVNT,Avantis,Derivatives,Derivatives;DEX;Perpetuals,base-ecosystem;binance-alpha-airdrops;binance-ecosystem;binance-hodler-airdrops;binance-listing;decentralized-exchange-dex-token;defi;derivatives;dex;galaxy-digital-portfolio;pantera-capital-portfolio;perp-dex-coins;perpetuals,False
+38353,MET,Meteora,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator;DEX,amm;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-liquidity-enhancement-program;binance-listing;dapp;decentralized-exchange-dex-token;defi;dex;solana-ecosystem,False
+38408,BARD,Lombard,Bridge;Onchain Capital Allocator;Restaked BTC,Bridge;Onchain Capital Allocator;Restaked BTC,binance-alpha-airdrops;binance-ecosystem;binance-hodler-airdrops;binance-labs-portfolio;binance-listing;bitcoin-ecosystem;bnb-chain-ecosystem;defi;ethereum-ecosystem;nomad-capital;okx-ventures-portfolio;polychain-capital-portfolio,False
+38417,RIVER,River,CeDeFi,CeDeFi;Yield,base-ecosystem;binance-alpha;binance-buildkey-tge;binance-ecosystem;binance-listing;binance-wallet-ido;bnb-chain-ecosystem;cms-holdings-portfolio;cross-chain;defi;ethereum-ecosystem;yield-farming,False
+38770,MEGA,MegaETH,Dexs,Dexs;Layer-2,binance-ecosystem;binance-listing;dragonfly-capital-portfolio;layer-2;platform,True
+38779,syrupUSDC,syrupUSDC,,,arbitrum-ecosystem;defi;ethereum-ecosystem;rehypothecated-crypto;solana-ecosystem,False
+38786,syrupUSDT,syrupUSDT,,,defi;ethereum-ecosystem;plasma-ecosystem;rehypothecated-crypto,False
+38967,RAVE,RaveDAO,,,base-ecosystem;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-listing;bnb-chain-ecosystem;dao;entertainment;ethereum-ecosystem;music,False
+39042,POWER,Power Protocol,Dexs;Reserve Currency;Stablecoin Issuer;Yield,Dexs;Reserve Currency;Stablecoin Issuer;Yield;Gaming,binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-listing;bnb-chain-ecosystem;ethereum-ecosystem;gaming;ronin-ecosystem,True
+39125,LIT,Lighter,Algo-Stables;Bridge;Derivatives;Dexs;Yield,Algo-Stables;Bridge;Derivatives;Dexs;Yield;DEX;Perpetuals;Zero Knowledge,a16z-portfolio;binance-ecosystem;binance-listing;coinbase-ventures-portfolio;decentralized-exchange-dex-token;defi;derivatives;dex;dragonfly-capital-portfolio;ethereum-ecosystem;perp-dex-coins;perpetuals;zero-knowledge-proofs,False
+39379,GWEI,ETHGas,,,amber-group-portfolio;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-listing;bnb-chain-ecosystem;defi;ethereum-ecosystem;governance;polychain-capital-portfolio,False
+39720,EDGE,edgeX,Bridge;DEX Aggregator;Derivatives;Dexs;Yield,Bridge;DEX Aggregator;Derivatives;Dexs;Yield;Perpetuals,amber-group-portfolio;binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-listing;bnb-chain-ecosystem;circle-ventures-portfolio;decentralized-exchange-dex-token;defi;derivatives;ethereum-ecosystem;perp-dex-coins;perpetuals,False
+39841,GENIUS,Genius Terminal,,Derivatives;Perpetuals,binance-alpha;binance-alpha-airdrops;binance-ecosystem;binance-hodler-airdrops;binance-labs-portfolio;binance-listing;bnb-chain-ecosystem;defi;derivatives;perpetuals,False
