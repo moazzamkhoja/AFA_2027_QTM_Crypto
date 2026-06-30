@@ -94,6 +94,28 @@ TOKENS = [
     (29587, "W",      1,     "0xB0fFa8000886e57F86dd5264b9582b2Ad87b2b91", TOPIC_U256, "primary"),
     (33251, "WLFI",   1,     "0xdA5e1988097297dCdc1f90D4dFE7909e847CBeF6", TOPIC_U256, "primary"),
     # ETHDYDX (11156) intentionally OMITTED -- DelegatedPowerChanged/Aave-power model, ratio~1.
+    # ---- SESSION 025 P2-2: BSC/Base/Optimism/Linea ERC20Votes tokens, now buildable on the
+    #      Etherscan Pro key (Entry 61). All 7 below VERIFIED FIRING via phase1_p2p2_probe.py
+    #      (DelegateVotesChanged actually emits with newBalance>0). The other 8 P2-2 Ch-3
+    #      candidates (BAKE/BNX/EDG/ESPORTS/MCT/MDX/PONKE/TKO) are DORMANT -- ERC20Votes ABI
+    #      present but the delegation event NEVER fired (0 logs on both topics) -> NOT built
+    #      (no conviction signal; the AKRO "verify the mechanism" discipline). All net-new
+    #      (no Snapshot turnout series) -> role=primary.
+    (10897, "ALT",     56,    "0x5ca09af27b8a4f1d636380909087536bc7e2d94d", TOPIC_U256, "primary"),
+    (4006,  "AWE",     8453,  "0x1B4617734C43F6159F3a70b7E06d883647512778", TOPIC_U256, "primary"),
+    (23054, "CHEEL",   56,    "0x1F1C90aEb2fd13EA972F0a71e35c0753848e3DB0", TOPIC_U256, "primary"),
+    (23635, "FORM",    56,    "0x5b73A93b4E5e4f1FD27D8b3F8C97D69908b5E284", TOPIC_U256, "primary"),
+    (27657, "LINEA",   59144, "0x1789e0043623282d5dcc7f213d703c6d8bafbb04", TOPIC_U256, "primary"),
+    # OP (11840, Optimism) — VERIFIED FIRING but DEFERRED (session 025): its full
+    # DelegateVotesChanged history is pathologically large (the native Optimism governance
+    # token; the OP airdrop drove a very large self-delegation count). A full-history getLogs
+    # replay did not complete in >80 min / 400MB+ and was killed; a PARTIAL history would give a
+    # WRONG delegated-weight stock, so OP is NOT built this session (same "don't ship a partial
+    # series" discipline as Channel-2 deferrals). Re-run alone with a large dedicated budget or a
+    # block-windowed incremental fetch. Mechanism is confirmed (Entry 61/62) — this is a
+    # throughput deferral, not a rejection.
+    # (11840, "OP",    10,    "0x4200000000000000000000000000000000000042", TOPIC_U256, "primary"),
+    (35931, "ZORA",    8453,  "0x1111111111166b7fe7bd91427724b487980afc69", TOPIC_U256, "primary"),
     # ---- CROSS-CHECK (already have a Snapshot Channel-3 turnout series; NOT in lambda) ----
     # NB: the session-022 universe map (empirical "got logs" record, Entry 53) reports ALL 10
     # of these under the uint256 DelegateVotesChanged topic -- trust the map over the source's
@@ -146,8 +168,22 @@ def get_decimals(addr, chainid):
         return 18
 
 
+import os as _os
+DELEG_CAP = int(_os.environ.get("DELEG_CAP", "6000"))  # per-token getLogs cap; tail -> defer
+_DCALLS = {"n": 0}
+
+
+class DelegationCapHit(Exception):
+    pass
+
+
 def fetch_logs(addr, topic0, chainid, lo, hi, out):
-    """Recursively page getLogs in [lo,hi], appending (block, logIndex, delegate, newBal)."""
+    """Recursively page getLogs in [lo,hi], appending (block, logIndex, delegate, newBal).
+    Aborts (raises DelegationCapHit) past DELEG_CAP calls so a pathologically large delegation
+    history (e.g. OP) defers instead of hanging -- a partial replay would be a wrong stock."""
+    _DCALLS["n"] += 1
+    if _DCALLS["n"] > DELEG_CAP:
+        raise DelegationCapHit(f">{DELEG_CAP} getLogs calls")
     j = api({"module": "logs", "action": "getLogs", "address": addr, "topic0": topic0,
              "fromBlock": lo, "toBlock": hi}, chainid)
     res = j.get("result")
@@ -196,6 +232,7 @@ def build_token(cmc_id, sym, chainid, addr, topic0, role, panel):
         # Fall back to a high block if the month-end lookup fails (don't poison the whole fetch).
         last_block = block_at(months[-1], chainid) or 999_999_999
         events = []
+        _DCALLS["n"] = 0
         fetch_logs(addr, topic0, chainid, 0, last_block, events)
         events.sort(key=lambda e: (e[0], e[1]))
         mblocks = {m: block_at(m, chainid) for m in months}

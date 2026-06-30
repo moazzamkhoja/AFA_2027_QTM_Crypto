@@ -1,0 +1,193 @@
+{
+  "ch3": [
+    {
+      "cmc_id": 10897,
+      "symbol": "ALT",
+      "chainid": 56,
+      "topic": "u256",
+      "logs_counted": 2,
+      "max_newbalance_raw": "35582357233801105",
+      "capped": false,
+      "calls": 1,
+      "secs": 18.0,
+      "verdict": "FIRES"
+    },
+    {
+      "cmc_id": 4006,
+      "symbol": "AWE",
+      "chainid": 8453,
+      "topic": "u256",
+      "logs_counted": 45288,
+      "max_newbalance_raw": "10000000000000000000000000",
+      "capped": true,
+      "calls": 60,
+      "secs": 127.1,
+      "verdict": "FIRES"
+    },
+    {
+      "cmc_id": 7064,
+      "symbol": "BAKE",
+      "chainid": 56,
+      "topic": "u96",
+      "logs_counted": 0,
+      "max_newbalance_raw": "0",
+      "capped": false,
+      "calls": 2,
+      "secs": 28.9,
+      "verdict": "DORMANT"
+    },
+    {
+      "cmc_id": 9891,
+      "symbol": "BNX",
+      "chainid": 56,
+      "topic": "u96",
+      "logs_counted": 0,
+      "max_newbalance_raw": "0",
+      "capped": false,
+      "calls": 2,
+      "secs": 4.9,
+      "verdict": "DORMANT"
+    },
+    {
+      "cmc_id": 23054,
+      "symbol": "CHEEL",
+      "chainid": 56,
+      "topic": "u256",
+      "logs_counted": 251,
+      "max_newbalance_raw": "2094975874262152777",
+      "capped": false,
+      "calls": 3,
+      "secs": 32.0,
+      "verdict": "FIRES"
+    },
+    {
+      "cmc_id": 5274,
+      "symbol": "EDG",
+      "chainid": 56,
+      "topic": "u96",
+      "logs_counted": 0,
+      "max_newbalance_raw": "0",
+      "capped": false,
+      "calls": 2,
+      "secs": 1.9,
+      "verdict": "DORMANT"
+    },
+    {
+      "cmc_id": 37414,
+      "symbol": "ESPORTS",
+      "chainid": 56,
+      "topic": "u96",
+      "logs_counted": 0,
+      "max_newbalance_raw": "0",
+      "capped": false,
+      "calls": 2,
+      "secs": 3.9,
+      "verdict": "DORMANT"
+    },
+    {
+      "cmc_id": 23635,
+      "symbol": "FORM",
+      "chainid": 56,
+      "topic": "u256",
+      "logs_counted": 218,
+      "max_newbalance_raw": "416054687500000000000",
+      "capped": false,
+      "calls": 1,
+      "secs": 1.0,
+      "verdict": "FIRES"
+    },
+    {
+      "cmc_id": 27657,
+      "symbol": "LINEA",
+      "chainid": 59144,
+      "topic": "u256",
+      "logs_counted": 7,
+      "max_newbalance_raw": "66694792134331000000000",
+      "capped": false,
+      "calls": 1,
+      "secs": 0.7,
+      "verdict": "FIRES"
+    },
+    {
+      "cmc_id": 16946,
+      "symbol": "MCT",
+      "chainid": 56,
+      "topic": "u96",
+      "logs_counted": 0,
+      "max_newbalance_raw": "0",
+      "capped": false,
+      "calls": 2,
+      "secs": 4.8,
+      "verdict": "DORMANT"
+    },
+    {
+      "cmc_id": 8335,
+      "symbol": "MDX",
+      "chainid": 56,
+      "topic": "u96",
+      "logs_counted": 0,
+      "max_newbalance_raw": "0",
+      "capped": false,
+      "calls": 2,
+      "secs": 5.5,
+      "verdict": "DORMANT"
+    },
+    {
+      "cmc_id": 11840,
+      "symbol": "OP",
+      "chainid": 10,
+      "topic": "u256",
+      "logs_counted": 46974,
+      "max_newbalance_raw": "951406513749479064387573",
+      "capped": true,
+      "calls": 60,
+      "secs": 58.4,
+      "verdict": "FIRES"
+    },
+    {
+      "cmc_id": 29150,
+      "symbol": "PONKE",
+      "chainid": 8453,
+      "topic": "u96",
+      "logs_counted": 0,
+      "max_newbalance_raw": "0",
+      "capped": false,
+      "calls": 2,
+      "secs": 1.5,
+      "verdict": "DORMANT"
+    },
+    {
+      "cmc_id": 9020,
+      "symbol": "TKO",
+      "chainid": 56,
+      "topic": "u96",
+      "logs_counted": 0,
+      "max_newbalance_raw": "0",
+      "capped": false,
+      "calls": 2,
+      "secs": 3.4,
+      "verdict": "DORMANT"
+    },
+    {
+      "cmc_id": 35931,
+      "symbol": "ZORA",
+      "chainid": 8453,
+      "topic": "u256",
+      "logs_counted": 9338,
+      "max_newbalance_raw": "309265068919688070294667",
+      "capped": false,
+      "calls": 13,
+      "secs": 20.3,
+      "verdict": "FIRES"
+    }
+  ],
+  "tnc": {
+    "cmc_id": 5524,
+    "symbol": "TNC",
+    "chainid": 56,
+    "locked_event_decl": "event Locked(address indexed account)",
+    "locked_amount_topic_logs": 0,
+    "capped": false,
+    "calls": 5
+  }
+}
