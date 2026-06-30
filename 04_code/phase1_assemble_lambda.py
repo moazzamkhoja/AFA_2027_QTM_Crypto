@@ -51,13 +51,24 @@ def load_channels():
         d["channel"] = "ch1_staking"
         d["ym"] = d["month_end"].str[:7]
         frames.append(d[["cmc_id", "ym", "channel", "value"]])
-    # Channel 3 -- voting turnout
+    # Channel 3 -- voting turnout (Snapshot, Entry 25)
     cv = P / "channel3_voting.csv"
     if cv.exists():
         d = pd.read_csv(cv)
         d = d[d["vw_turnout"].notna()][["cmc_id", "ym", "vw_turnout"]].rename(
             columns={"vw_turnout": "value"})
         d["channel"] = "ch3_voting"
+        frames.append(d[["cmc_id", "ym", "channel", "value"]])
+    # Channel 3b -- on-chain governance delegation (session 024, Entry 57). A DISTINCT
+    # sub-channel from Snapshot turnout (stock of governance-activated supply vs per-proposal
+    # turnout flow), z-scored in its own cross-section. Only role=='primary' rows enter lambda
+    # (net-new tokens with no Snapshot series); role=='crosscheck' rows are validation-only.
+    cd = P / "channel3_onchain_delegation.csv"
+    if cd.exists():
+        d = pd.read_csv(cd)
+        d = d[(d["delegation_ratio"].notna()) & (d.get("role") == "primary")][
+            ["cmc_id", "ym", "delegation_ratio"]].rename(columns={"delegation_ratio": "value"})
+        d["channel"] = "ch3_delegation"
         frames.append(d[["cmc_id", "ym", "channel", "value"]])
     if not frames:
         raise SystemExit("no channel inputs found")
@@ -114,7 +125,7 @@ def main():
     # coverage summary
     print(f"wrote {OUT}")
     print(f"  lambda asset-months: {len(lam)} | distinct assets: {lam.cmc_id.nunique()}")
-    print(f"  month range: {lam.ym.min()}→{lam.ym.max()}")
+    print(f"  month range: {lam.ym.min()}->{lam.ym.max()}")
     print("\n  n_channels distribution (asset-months):")
     print(lam.n_channels.value_counts().sort_index().to_string())
     print("\n  channel-combo distribution:")

@@ -1,0 +1,14 @@
+{
+  "RAD": {
+    "transfers_counted": 204428,
+    "getLogs_calls": 700,
+    "capped": true,
+    "seconds": 713.8
+  },
+  "MET": {
+    "transfers_counted": 24636,
+    "getLogs_calls": 79,
+    "capped": false,
+    "seconds": 79.6
+  }
+}
