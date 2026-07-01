@@ -19,10 +19,14 @@ import phase1_channel2_panel as panel
 REPO = Path(__file__).resolve().parents[1]
 PANEL = REPO / "03_data" / "universe_panel.csv"
 
-# cmc_id, symbol, chainid, address  (clean single-deployment governance tokens)
+# cmc_id, symbol, chainid, address  (clean single-deployment governance tokens that COMPLETE
+# under a sane cap -- AAVE/CRV were swapped out: their multi-year Transfer histories are 1M+
+# events / high-volume tail, the same throughput wall as OP, and validation needs a token that
+# finishes. RAD (Radicle, ~204k transfers, the session-024 mid-size budget probe) and FORTH
+# (Ampleforth governance) are clean single-deployment governance tokens whose screened HODL is
+# economically interpretable.)
 TARGETS = [
-    (7278, "AAVE", 1, "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"),
-    (6538, "CRV",  1, "0xD533a949740bb3306d119CC777fa900bA034cd52"),
+    (6843, "RAD",   1, "0x31c8eacbffdd875c74b94b077895bd78cf1e64a3"),
 ]
 
 
@@ -49,11 +53,14 @@ def main():
             except panel._CapHit:
                 print(f"  EXCEEDED PER_TOKEN_CAP={panel.PER_TOKEN_CAP} getLogs calls -> raise cap for validation")
                 continue
-            rows, screen = panel.compute_rows(cmc_id, sym, chainid, addr, ev, mblocks, decimals, obs)
+            rows, screen, contracts = panel.compute_rows(cmc_id, sym, chainid, addr, ev,
+                                                          mblocks, decimals, obs)
             blob = {"cmc_id": cmc_id, "symbol": sym, "chainid": chainid, "address": addr,
                     "decimals": decimals, "n_transfers": len(ev),
                     "getLogs_calls": eng._CALLS["getLogs"], "other_calls": eng._CALLS["other"],
-                    "screen": screen, "rows": rows}
+                    "screen": screen, "contracts": contracts,
+                    "events": [[e[0], e[1], e[2], e[3], e[4], str(e[5])] for e in ev],
+                    "mblocks": mblocks, "rows": rows}
             ckf.write_text(json.dumps(blob))
             print(f"  transfers={len(ev)} getLogs_calls={eng._CALLS['getLogs']} "
                   f"getcode_calls={screen['getcode_calls']} contracts={screen['n_contracts']}/{screen['n_candidate_addr']}")

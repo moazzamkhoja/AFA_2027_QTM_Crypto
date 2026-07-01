@@ -70,12 +70,13 @@ def load_channels():
             ["cmc_id", "ym", "delegation_ratio"]].rename(columns={"delegation_ratio": "value"})
         d["channel"] = "ch3_delegation"
         frames.append(d[["cmc_id", "ym", "channel", "value"]])
-    # Channel 2 -- holding duration / coin-age (session 025, Entry 62). Panel-scale FIFO
+    # Channel 2 -- holding duration / coin-age (session 025, Entry 63). Panel-scale FIFO
     # coin-age build (phase1_channel2_panel.py) on the Etherscan Pro key. The lambda input is
     # the CONTRACT-SCREENED HODL-6m share (supply held >=6 months by NON-contract addresses /
-    # circulating) -- the raw share is dominated by LP/treasury/staking contract holders
-    # (session-024 finding 90.8%->1.3%), so only the screened series is a conviction signal.
-    # CEX custodial EOAs are not screened (no free label feed) -> documented residual bias.
+    # ON-CHAIN supply) -- the raw share is dominated by LP/treasury/staking contract holders
+    # (session-024 finding 90.8%->1.3%), so only the screened series is a conviction signal; the
+    # denominator is on-chain supply not CMC circulating (the session-025 fix that bounds it in
+    # [0,1]). CEX custodial EOAs are not screened (no free label feed) -> documented residual bias.
     c2 = P / "channel2_holding.csv"
     if c2.exists():
         d = pd.read_csv(c2)
