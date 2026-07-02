@@ -63,6 +63,34 @@ DAILY_CAP = int(os.environ.get("DAILY_CAP", "170000"))         # leave headroom 
 WINDOWS = eng.WINDOWS
 ZERO = eng.ZERO
 
+# VALUE-SANITY cap (session 026): a real ERC20 Transfer cannot move more than the token's supply,
+# so any Transfer whose value exceeds VAL_CAP_MULT x the token's max circulating supply is
+# address-poisoning SPAM (fake near-max-uint256 Transfers that, replayed through FIFO, become
+# PHANTOM lots the sender never held -> they dominate the coin-age on-chain-supply denominator).
+# Skipping them is correctness-preserving. The cap is PER-TOKEN (set via set_val_cap before each
+# replay); the multiplier is generous (100x) so even heavily-locked tokens whose on-chain supply
+# exceeds CMC circulating are never clipped, while spam (>=1000x circ, up to 1e11x) is caught.
+VAL_CAP_MULT = int(os.environ.get("VAL_CAP_MULT", "100"))
+CONTAM_MULT = int(os.environ.get("CONTAM_MULT", "100"))  # month excluded if onchain>CONTAM_MULT*circ
+# NB 100x (not 50x): early-launch tokens legitimately show on-chain supply >> CMC circulating when
+# most supply is vesting-locked (Entry-49) -- e.g. CRV's first month on-chain 1.3B vs circ 26M
+# (51x) with total supply 3B is REAL, not spam. 100x retains such legit heavy-lock months while
+# still catching address-poisoning contamination (the flagged tokens sit at 100-42,000x).
+_VAL_CAP = 2 ** 256   # module-global per-token cap in RAW units; set_val_cap() updates it
+
+
+def set_val_cap(circ_series, decimals):
+    """Set the per-token raw-value cap = VAL_CAP_MULT x max(circulating_supply) x 10**decimals.
+    Falls back to 2**128 if circulating is unavailable (still catches the extreme phantoms)."""
+    global _VAL_CAP
+    mx = None
+    try:
+        vals = [c for c in circ_series if c is not None and c == c and c > 0]
+        mx = max(vals) if vals else None
+    except Exception:
+        mx = None
+    _VAL_CAP = int(VAL_CAP_MULT * mx * (10 ** decimals)) if mx else 2 ** 128
+
 
 def ck_path(cmc_id, sym):
     return RAW / f"{cmc_id}_{sym}.json"
@@ -195,7 +223,7 @@ def _replay(ev, mblocks, months):
             continue
         while idx < len(ev) and ev[idx][0] <= mb:
             _, _, ts, frm, to, val = ev[idx]; idx += 1
-            if val <= 0:
+            if val <= 0 or val >= _VAL_CAP:   # skip zero + address-poisoning spam (phantom lots)
                 continue
             if frm != ZERO:
                 eng.fifo_pop(lots[frm], val)
@@ -269,6 +297,23 @@ def rows_from_state(cmc_id, sym, state, months, decimals, contracts, circ):
         # screened >6m supply = total >6m supply minus the contract part captured in top-K
         screened_old = held["hodl_6m"] - old_contract
         denom = onchain
+        # LAYER-2 CONTAMINATION EXCLUSION: if the reconstructed on-chain supply exceeds
+        # CONTAM_MULT x circulating, the month is contaminated by address-poisoning spam that the
+        # per-event value cap did not fully remove (accumulated sub-cap phantom lots) -> the HODL
+        # ratio is meaningless, so emit None. CONTAM_MULT=50 is generous: even heavily-locked
+        # tokens (on-chain total >> CMC circulating, the Entry-49 pattern) rarely exceed ~10x, so
+        # 50x only fires on genuine contamination. Clean tokens (on-chain ~ circulating) are never
+        # touched -> validation stays byte-identical on RPL.
+        cm = circ.get(m)
+        onchain_tok = onchain / scale
+        contaminated = (cm and cm > 0 and onchain_tok > CONTAM_MULT * cm)
+        if contaminated:
+            row = {"cmc_id": cmc_id, "symbol": sym, "month_end": m,
+                   "hodl_6m": None, "hodl_12m": None, "hodl_6m_contractscreened": None,
+                   "onchain_supply": onchain_tok, "circulating_supply": cm,
+                   "cex_screened": False, "note": f"excluded: onchain>{CONTAM_MULT}x circ (spam-contaminated)"}
+            rows.append(row)
+            continue
         row = {"cmc_id": cmc_id, "symbol": sym, "month_end": m,
                "hodl_6m": (held["hodl_6m"] / denom) if denom else None,
                "hodl_12m": (held["hodl_12m"] / denom) if denom else None,
@@ -286,6 +331,7 @@ def compute_rows(cmc_id, sym, chainid, addr, ev, mblocks, decimals, obs, contrac
     (rows, screen_info, contracts) so the caller can cache the contract set in the checkpoint."""
     months = list(obs.month_end)
     circ = dict(zip(obs.month_end, obs.circulating_supply))
+    set_val_cap(obs.circulating_supply, decimals)
     state = _replay(ev, mblocks, months)
     n_cand = 0
     if contracts is None:
@@ -342,6 +388,31 @@ def load_universe():
             for r in free.itertuples()]
 
 
+def load_worklist(cmc_ids):
+    """SESSION 026: build universe entries for an EXPLICIT priority list of cmc_ids, in the
+    GIVEN order (not smallest-first). Used to target the high-VALUE tail tokens -- the ones that
+    already have ch1/ch3 and become 2-/3-channel assets the moment ch2 lands -- rather than
+    grinding the whole >3,000-holder tail smallest-first (which would spend wall-clock on
+    low-value small tokens before reaching e.g. RPL/FRAX/CVX). Entries preserve WORKLIST order."""
+    m = pd.read_csv(MAP)
+    free = m[(m.chain.isin(CHAIN_ID)) & (m.etherscan_reachable == "yes") & (m.address.notna())]
+    free = free.drop_duplicates("cmc_id")
+    by_cmc = {int(r.cmc_id): r for r in free.itertuples()}
+    hc = {}
+    if SIZES.exists():
+        s = pd.read_csv(SIZES)
+        hc = {int(r.cmc_id): (r.holder_count if pd.notna(r.holder_count) else None)
+              for r in s.itertuples()}
+    out = []
+    for cid in cmc_ids:
+        r = by_cmc.get(cid)
+        if r is None:
+            print(f"  WORKLIST: cmc {cid} not in free-chain map -> skipped")
+            continue
+        out.append((cid, str(r.symbol), CHAIN_ID[r.chain], str(r.address), hc.get(cid)))
+    return out
+
+
 def aggregate(recompute=False):
     """Rebuild channel2_holding.csv from all completed per-token checkpoints. With recompute=
     True, regenerate each token's rows from its stored events + cached contract set (no network)
@@ -368,6 +439,7 @@ def aggregate(recompute=False):
             mblocks = blob["mblocks"]
             months = list(obs.month_end)
             circ = dict(zip(obs.month_end, obs.circulating_supply))
+            set_val_cap(obs.circulating_supply, blob["decimals"])
             state = _replay(ev, mblocks, months)
             r, _ = rows_from_state(cmc_id, sym, state, months, blob["decimals"],
                                    set(blob.get("contracts", [])), circ)
@@ -376,6 +448,19 @@ def aggregate(recompute=False):
             rows.extend(r); comp += 1; recomp += 1
         elif "rows" in blob:
             rows.extend(blob["rows"]); comp += 1
+    # POST-HOC LAYER-2 safety net: null the HODL fields of any row (incl. STREAMED-token rows that
+    # --recompute cannot re-derive) whose reconstructed on-chain supply exceeds CONTAM_MULT x
+    # circulating -> uniform contamination exclusion across every token, whatever engine built it.
+    n_ex = 0
+    for r in rows:
+        on = r.get("onchain_supply"); c = r.get("circulating_supply")
+        if (r.get("hodl_6m_contractscreened") is not None and on and c and c > 0
+                and on > CONTAM_MULT * c):
+            r["hodl_6m"] = None; r["hodl_12m"] = None; r["hodl_6m_contractscreened"] = None
+            r["note"] = f"excluded: onchain>{CONTAM_MULT}x circ (spam-contaminated)"
+            n_ex += 1
+    if n_ex:
+        print(f"  post-hoc contamination exclusion: nulled {n_ex} rows (onchain>{CONTAM_MULT}x circ)")
     if rows:
         df = pd.DataFrame(rows)
         df = df[[c for c in df.columns if not c.startswith("_")]]
@@ -395,7 +480,16 @@ def main():
     eng.SLEEP = float(os.environ.get("SLEEP", "0.12"))
     panel = pd.read_csv(PANEL)
     panel["ym"] = panel["month_end"].str[:7]
-    universe = load_universe()
+    # WORKLIST (session 026): an explicit priority-ordered cmc_id list targets the high-value
+    # tail. When set, tokens are processed in that order and the HOLDER_MAX metadata-defer is
+    # BYPASSED for them (they are deliberately requested large tokens; PER_TOKEN_CAP still guards
+    # against a pathological history). Empty -> the default smallest-first full-universe sweep.
+    wl_env = os.environ.get("WORKLIST", "").strip()
+    worklist_mode = bool(wl_env)
+    if worklist_mode:
+        universe = load_worklist([int(x) for x in wl_env.replace(" ", "").split(",") if x])
+    else:
+        universe = load_universe()
     # MET legacy checkpoint used a different filename (SYM.json); skip-aware via cmc check below
     completed = deferred = skipped = processed = 0
     calls_today = 0
@@ -411,7 +505,8 @@ def main():
             continue
         # DEFER BY METADATA: skip the high-volume tail without fetching (holder count is a cheap
         # proxy for Transfer volume; the sizeprobe pre-pass measured it). No wasted cap-burning.
-        if holders is not None and holders > HOLDER_MAX:
+        # BYPASSED in worklist mode (the tokens are explicitly requested).
+        if not worklist_mode and holders is not None and holders > HOLDER_MAX:
             ckf.write_text(json.dumps({"cmc_id": cmc_id, "symbol": sym, "deferred": True,
                                        "reason": f"high-volume by metadata: {int(holders)} holders "
                                                  f"> HOLDER_MAX {HOLDER_MAX}", "holder_count": int(holders)}))
