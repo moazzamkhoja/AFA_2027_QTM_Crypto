@@ -69,6 +69,17 @@ SCREEN_TOPK = panel.SCREEN_TOPK
 MAX_RAW_VAL = 2 ** 128
 VAL_CAP_MULT = int(os.environ.get("VAL_CAP_MULT", "100"))
 
+# Session 028 (Entry 74): per-token ABSOLUTE value cap, in TOKEN units. For tokens whose
+# address-poisoning phantoms stay UNDER VAL_CAP_MULT x circ per event (AAVE: the 100x-circ
+# cap left enough sub-cap phantoms to push reconstructed supply to 1.02e9 vs the real 16M,
+# nulling 2024-08..2026-05 via the CONTAM_MULT guard). A real Transfer can never exceed the
+# token's fixed totalSupply, so the cap for a listed token is its on-chain totalSupply
+# (verified live via eth_call before listing). PER-TOKEN ONLY -- the global VAL_CAP_MULT /
+# CONTAM_MULT thresholds are untouched.
+PER_TOKEN_VAL_CAP = {
+    7278: 16_000_000,   # AAVE: eth_call totalSupply() == 16,000,000.0 exactly (constant)
+}
+
 
 def compute_val_cap(circ_series, decimals):
     """Per-token raw-value cap = VAL_CAP_MULT x max(circulating_supply) x 10**decimals; falls
@@ -264,6 +275,14 @@ class StreamReplay:
             self.mi += 1
         if val <= 0 or val >= self.val_cap:   # skip zero and address-poisoning spam (phantom lots)
             return
+        # SELF-TRANSFER SKIP (session 028, Entry 74): a Transfer with from==to is a balance
+        # no-op regardless of value -- but replayed as pop+append it (a) creates PHANTOM supply
+        # whenever the fake value exceeds the address's live lots (the AAVE poisoning vector:
+        # fake-value SELF-transfers from a 0-balance address, incl. the Entry-66 max-uint256
+        # 1.16e60 and sub-cap 1e7 values that pass ANY value cap), and (b) would wrongly refresh
+        # the lot age of a real holder. Skipping is an accounting identity, not a threshold.
+        if frm == to:
+            return
         if frm != ZERO:
             eng.fifo_pop(self.lots[frm], val)
         if to != ZERO:
@@ -296,7 +315,12 @@ def build_token_stream(cmc_id, sym, chainid, addr, obs):
     mblocks = {m: panel.month_block(m, chainid) for m in months}
     last_block = mblocks.get(months[-1]) or 999_999_999
 
-    val_cap = compute_val_cap(obs.circulating_supply, decimals)
+    if cmc_id in PER_TOKEN_VAL_CAP:
+        val_cap = int(PER_TOKEN_VAL_CAP[cmc_id] * (10 ** decimals))
+        print(f"    {sym}: per-token val_cap = {PER_TOKEN_VAL_CAP[cmc_id]:,} tokens "
+              f"(Entry-74 totalSupply cap)", flush=True)
+    else:
+        val_cap = compute_val_cap(obs.circulating_supply, decimals)
     rep = StreamReplay(months, mblocks, val_cap)
     # window boundaries
     wins = []

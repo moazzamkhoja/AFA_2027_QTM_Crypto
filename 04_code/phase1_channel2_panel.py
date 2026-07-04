@@ -225,6 +225,8 @@ def _replay(ev, mblocks, months):
             _, _, ts, frm, to, val = ev[idx]; idx += 1
             if val <= 0 or val >= _VAL_CAP:   # skip zero + address-poisoning spam (phantom lots)
                 continue
+            if frm == to:   # self-transfer = balance no-op; fake-value self-transfers create
+                continue    # phantom lots at ANY cap + refresh lot age (Entry 74; mirrors stream)
             if frm != ZERO:
                 eng.fifo_pop(lots[frm], val)
             if to != ZERO:

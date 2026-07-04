@@ -192,6 +192,8 @@ def build(token):
             idx += 1
             if val <= 0:
                 continue
+            if frm == to:   # self-transfer = balance no-op; fake-value self-transfers create
+                continue    # phantom lots + refresh lot age (Entry 74; mirrors panel/stream)
             if frm != ZERO:
                 fifo_pop(lots[frm], val)
             if to != ZERO:
