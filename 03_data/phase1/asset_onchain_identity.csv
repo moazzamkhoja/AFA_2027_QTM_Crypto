@@ -712,7 +712,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 36711,BLOCK,Block (bl0ck.gg),other,,,,,,,,,,False,0,False,False
 1374,BLOCKPAY,BlockPay,other,,,,,,,,,,False,0,False,False
 11206,BLOK,Bloktopia,other,Metaverse,,,,,,,,,False,0,False,False
-23121,BLUR,Blur,other,NFT Lending;NFT Marketplace;NFT,,,,,,,,,False,0,False,False
+23121,BLUR,Blur,other,NFT Lending;NFT Marketplace;NFT,,blur,NFT Marketplace,,,,,,True,0,False,False
 1976,BMC,Blackmoon,other,,,,,,,,,,False,0,False,False
 3742,BNANA,Chimpion,other,,,,,,,,,,False,0,False,False
 9891,BNX,BinaryX (old),other,,,,,,,,,,False,0,False,False
@@ -1312,7 +1312,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 10821,STARL,Starlink,other,Meme;Metaverse,,,,,,,,,False,0,False,False
 1230,STEEM,Steem,coin,,,,,,,,,,False,0,False,False
 1073,STEPS,Steps,other,,,,,,,,,,False,0,False,False
-18934,STG,Stargate Finance,token,Cross Chain Bridge,,,,,,,,,False,0,False,False
+18934,STG,Stargate Finance,token,Cross Chain Bridge,,stargate-finance,Cross Chain Bridge,,,,,,True,0,False,False
 23951,STIK,Staika,other,,,,,,,,,,False,0,False,False
 2493,STK,STK,other,Payments,,,,,,,,,False,0,False,False
 2297,STMX,StormX,other,,,,,,,,,,False,0,False,False
@@ -1502,12 +1502,12 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 24796,ADF,Art de Finance,token,Yield,,artdefinance,Yield,polygon:0x6BD10299f4f1d31b3489Dc369eA958712d27c81b,Polygon,Polygon,,art-de-finance,True,1,True,False
 1768,ADX,AdEx,token,Derivatives;Dexs;AI Agents;AI/Big Data;Smart Contract Platform,,,,,,,,,False,0,False,False
 3637,AERGO,Aergo,token,Smart Contract Platform,,,,,,,,,False,0,False,False
-29270,AERO,Aerodrome Finance,token,Dexs;Launchpad,,,,,,,,,False,0,False,False
+29270,AERO,Aerodrome Finance,token,Dexs;Launchpad,,aerodrome,Dexs,,,,,,True,0,False,False
 36458,AETHWETH,Aave Ethereum WETH,token,Yield,,,,,,,,,False,0,False,False
 29676,AEVO,Aevo,token,Derivatives;Options;DEX;Layer-2;Perpetuals,,,,,,,,,False,0,False,False
 2424,AGIX,SingularityNET,token,Staking Pool;AI/Big Data;Payments,,,,,,,,,False,0,False,False
 4134,AKRO,Kaon,token,Yield,,akropolis,Yield,0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7,Ethereum,Ethereum,,akropolis,True,1,True,False
-8613,ALCX,Alchemix,token,Synthetics;Yield,,,,,,,,,False,0,False,False
+8613,ALCX,Alchemix,token,Synthetics;Yield,,alchemix,Synthetics,,,,,,True,0,False,False
 16876,ALI,Artificial Liquid Intelligence,token,Dexs;AI Agents;AI/Big Data;NFT;Gaming;Identity;Interoperability;Meme;Metaverse,,,,,,,,,False,0,False,False
 8766,ALICE,MyNeighborAlice,token,Services;NFT;Gaming;Metaverse,,my-neighbor-alice,Services,0xac51066d7bec65dc4589368da368b212745d63e8,,,,my-neighbor-alice,True,1,True,False
 7232,ALPHA,Stella,token,Lending;Leveraged Farming;Liquid Staking;Prediction Market;Yield Aggregator;Yield,,stella,Leveraged Farming,arbitrum:0xc9cbf102c73fb77ec14f8b4c8bd88e050a6b2646,Arbitrum,Arbitrum,,alpha-finance,True,1,True,False
@@ -1545,7 +1545,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 36532,B,BUILDon,token,Derivatives;Liquidity Manager;Meme,,,,,,,,,False,0,False,False
 7859,BADGER,Badger DAO,token,Yield Aggregator;Yield,,badger-dao,Yield Aggregator,0x3472A5A71965499acd81997a54BBA8D852C6E53d,Multi-Chain,Ethereum;Arbitrum;Polygon;Binance;Fantom,badgerdao.eth,badger-dao,True,1,True,True
 7064,BAKE,BakeryToken,token,Dexs;NFT;DEX;Gaming,,bakeryswap,Dexs,bsc:0xe02df9e3e622debdd69fb838bb799e3f168902c5,Binance,Binance,,bakerytoken,True,1,True,False
-5728,BAL,Balancer,token,Dexs;DEX;Yield,,,,,,,,,False,0,False,False
+5728,BAL,Balancer,token,Dexs;DEX;Yield,,balancer,Dexs,,,,,,True,0,False,False
 8497,BANANA,ApeSwap,token,Telegram Bot;DEX;Yield,,,,,,,,,False,0,False,False
 4679,BAND,Band,token,,,,,,,,,,False,0,False,False
 38408,BARD,Lombard,token,Bridge;Onchain Capital Allocator;Restaked BTC,,,,,,,,,False,0,False,False
@@ -1561,9 +1561,9 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 2505,BLZ,Bluzelle,token,DePIN;Storage;Smart Contract Platform,,,,,,,,,False,0,False,False
 2933,BMX,BitMart Token,token,CEX;Derivatives;Dexs;Exchange Token,,bitmart,CEX,0x986ee2b944c42d017f52af21c4c69b84dbea35d8,Multi-Chain,Binance;Bitcoin;Ethereum;Solana;Starknet,,bitmart-token,True,1,True,False
 32882,BNSOL,Binance Staked SOL,token,,,,,,,,,,False,0,False,False
-1727,BNT,Bancor,token,Dexs;DEX;Payments,,,,,,,,,False,0,False,False
+1727,BNT,Bancor,token,Dexs;DEX;Payments,,bancor,Dexs,,,,,,True,0,False,False
 4217,BOA,BOSagora,token,Metaverse,,,,,,,,,False,0,False,False
-11865,BONE,Bone ShibaSwap,token,Dexs;Farm;Layer-2;Meme,,,,,,,,,False,0,False,False
+11865,BONE,Bone ShibaSwap,token,Dexs;Farm;Layer-2;Meme,,shibaswap,Dexs,,,,,,True,0,False,False
 3475,BOX,BOX Token,token,Dexs;Indexes,,,,,,,,,False,0,False,False
 2945,BOX,ContentBox,token,Dexs;Indexes,,,,,,,,,False,0,False,False
 3653,BRC,Baer Chain,token,Yield,,,,,,,,,False,0,False,False
@@ -1577,7 +1577,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 5810,BZRX,bZx Protocol,token,DEX;Smart Contract Platform,,ooki,Lending,0x0De05F6447ab4D22c8827449EE4bA2D5C288379B,Multi-Chain,Ethereum;Binance;Arbitrum;Optimism;Polygon,ooki.eth,ooki,True,1,True,True
 10407,BabyDoge,Baby Doge Coin,token,Bridge;Dexs;AI/Big Data;NFT;Gaming;Meme;Payments;RWA,,,,,,,,,False,0,False,False
 10903,C98,Coin98,token,Farm;Derivatives;Perpetuals,,coin98,Farm,bsc:0xaec945e04baf28b135fa7c640f624f8d90f1c3a6,TomoChain,TomoChain,,coin98,True,1,True,False
-7186,CAKE,PancakeSwap,token,Derivatives;Dexs;Luck Games;Options;Prediction Market;Reserve Currency;NFT;DEX;Perpetuals;Privacy;Smart Contract Platform;Yield,,,,,,,,,False,0,False,False
+7186,CAKE,PancakeSwap,token,Derivatives;Dexs;Luck Games;Options;Prediction Market;Reserve Currency;NFT;DEX;Perpetuals;Privacy;Smart Contract Platform;Yield,,pancakeswap,Dexs,,,,,,True,0,False,False
 1573,CASINO,Casino,token,Dexs,,defyswap,Dexs,fantom:0x84b0b7718f8480A9eDa3133Fd385D7EDf2b1d1c4,Multi-Chain,Fantom;Echelon,,defyswap-finance,True,1,True,False
 1882,CAT,BlockCAT,token,Yield Aggregator,,,,,,,,,False,0,False,False
 32724,CAT,Simon's Cat,token,Yield Aggregator;Meme,,,,,,,,,False,0,False,False
@@ -1589,7 +1589,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 23054,CHEEL,Cheelee,token,Farm,,cheelee,Farm,bcs:0x1f1c90aeb2fd13ea972f0a71e35c0753848e3db0,,,,cheelee,True,1,True,False
 33280,CHEEMS,Cheems (cheems.pet),token,Yield;Meme,,,,,,,,,False,0,False,False
 8534,CHEX,Chintai,token,RWA,,,,,,,,,False,0,False,False
-5692,COMP,Compound,token,Lending;Yield,,,,,,,,,False,0,False,False
+5692,COMP,Compound,token,Lending;Yield,,compound-finance,Lending,,,,,,True,0,False,False
 963,CORE,CORE,token,Canonical Bridge;Derivatives;Yield,,,,,,,,,False,0,False,False
 7242,CORE,cVault.finance,token,Canonical Bridge;Derivatives;Yield,,cvault-finance,Yield,0x62359ed7505efc61ff1d56fef82158ccaffa23d7,Ethereum,Ethereum,,cvault-finance,True,1,True,False
 3992,COTI,COTI,token,Layer-2;Privacy,,,,,,,,,False,0,False,False
@@ -1598,7 +1598,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 12573,CPOOL,Clearpool,token,RWA;Uncollateralized Lending,,,,,,,,,False,0,False,False
 3367,CRD,CryptalDash,token,Lending,,,,,,,,,False,0,False,False
 4484,CRN,ChronoCoin,token,Dexs;Yield Aggregator,,,,,,,,,False,0,False,False
-6538,CRV,Curve DAO Token,token,CDP;Dexs;Lending;DEX;Yield,,,,,,,,,False,0,False,False
+6538,CRV,Curve DAO Token,token,CDP;Dexs;Lending;DEX;Yield,,curve-finance,Dexs,,,,,,True,0,False,False
 1867,CTR,Centra,token,Governance Incentives;Yield,,,,,,,,,False,0,False,False
 6669,CVP,PowerPool,token,Indexes,,,,,,,,,False,0,False,False
 9903,CVX,Convex Finance,token,Yield,,convex-finance,Yield,0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b,Multi-Chain,Ethereum;Fraxtal;Arbitrum;Polygon,,convex-finance,True,1,True,False
@@ -1632,14 +1632,14 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 2057,EDO,Eidoo,token,,,,,,,,,,False,0,False,False
 30494,EIGEN,EigenCloud,token,Restaking,,eigencloud,Restaking,0xec53bf9167f50cdeb3ae105f56099aaab9061f83,Ethereum,Ethereum,,eigenlayer,True,1,True,False
 9436,ELON,Dogelon Mars,token,Canonical Bridge;Lending;Meme;Payments,,,,,,,,,False,0,False,False
-30171,ENA,Ethena,token,Basis Trading;RWA,,,,,,,,,False,0,False,False
+30171,ENA,Ethena,token,Basis Trading;RWA,,ethena,Basis Trading,,,,,,True,0,False,False
 13855,ENS,Ethereum Name Service,token,Domains,,ens,Domains,0xc18360217d8f7ab5e7c516566761ea12ce7f9d72,,,ens.eth,ethereum-name-service,True,1,True,True
 8615,EPIC,Epic Chain,token,NFT;Gaming;Layer-2;Metaverse;RWA,,ethernity-chain,Yield,0xbbc2ae13b23d715c30720f079fcd9b4a74093505,Ethereum,Ethereum,,ethernity-chain,True,1,True,False
 8938,EPS,Ellipsis,token,Dexs;DEX,,ellipsis-finance,Dexs,bsc:0xA7f552078dcC247C2684336020c03648500C6d9F,Binance,Binance,,ellipsis,True,1,True,False
 2165,ERC20,ERC20,token,NFT;Payments;Meme;Yield,,,,,,,,,False,0,False,False
 7033,ESD,Empty Set Dollar,token,,,,,,,,,,False,0,False,False
 11156,ETHDYDX,dYdX (ethDYDX),token,Derivatives;Privacy;Zero Knowledge,,,,,,,,,False,0,False,False
-14280,EUL,Euler,token,Dexs;Lending;Risk Curators,,,,,,,,,False,0,False,False
+14280,EUL,Euler,token,Dexs;Lending;Risk Curators,,euler,Lending,,,,,,True,0,False,False
 33342,EVA,EverValue Coin,token,,,,,,,,,,False,0,False,False
 2778,EXC,Eximchain,token,Dexs,,,,,,,,,False,0,False,False
 4360,FAB,FABRK,token,Yield;AI/Big Data,,,,,,,,,False,0,False,False
@@ -1649,10 +1649,10 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 5190,FLEX,FLEX,token,CDP;Yield,,coinflex,Yield,smartbch:0x98Dd7eC28FB43b3C4c770AE532417015fa939Dd3,smartBCH,smartBCH,,flex-coin,True,1,True,False
 7150,FLM,Flamingo,token,Dexs;Lending;Yield,,,,,,,,,False,0,False,False
 10804,FLOKI,FLOKI,token,Token Locker;Gaming;Meme;Metaverse,,flokifi-locker,Token Locker,0xcf0c122c6b73ff809c693db761e7baebe62b6a2e,Multi-Chain,Binance;Ethereum;Base;Cronos;Arbitrum;Optimism;Dogechain;Avalanche;Fantom;Polygon;Kucoin;Op_Bnb;Evmos;Blast;OKExChain,,floki,True,1,True,False
-10508,FLUID,Fluid,token,Dexs;Yield Aggregator,,,,,,,,,False,0,False,False
+10508,FLUID,Fluid,token,Dexs;Yield Aggregator,,fluid,Dexs,,,,,,True,0,False,False
 1062,FLY,Flycoin,token,CDP;Cross Chain Bridge,,,,,,,,,False,0,False,False
 9421,FORTH,Ampleforth Governance Token,token,Services,,forth-dao,Services,0x77fba179c79de5b7653f68b5039af940ada60ce0,,,,vampleforth-governance-token,True,1,True,False
-6953,FRAX,Frax (prev. FXS),token,Algo-Stables;Dexs;Lending;Liquid Staking;RWA;Services,,,,,,,,,False,0,False,False
+6953,FRAX,Frax (prev. FXS),token,Algo-Stables;Dexs;Lending;Liquid Staking;RWA;Services,,frax-finance,Algo-Stables,,,,,,True,0,False,False
 2530,FSN,Fusion,token,Payments,,,,,,,,,False,0,False,False
 3840,FST,1irstcoin,token,Derivatives,,,,,,,,,False,0,False,False
 4195,FTT,FTX Token,token,Exchange Token;Derivatives,,,,,,,,,False,0,False,False
@@ -1662,7 +1662,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 1785,GAS,Gas,token,Dexs;Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
 2726,GEN,DAOstack,token,Farm,,,,,,,,,False,0,False,False
 39841,GENIUS,Genius Terminal,token,Derivatives;Perpetuals,,,,,,,,,False,0,False,False
-11857,GMX,GMX,token,Derivatives;Dexs;DEX;Perpetuals,,,,,,,,,False,0,False,False
+11857,GMX,GMX,token,Derivatives;Dexs;DEX;Perpetuals,,gmx,Derivatives,,,,,,True,0,False,False
 13663,GNS,Gains Network,token,Derivatives,,gains-network,Derivatives,polygon:0xe5417af564e4bfda1c483642db72007871397896,Multi-Chain,Arbitrum;Base;Polygon;MegaETH;ApeChain,gains-network.eth,gains-network,True,1,True,True
 785,GP,GoldPieces,token,Launchpad,,,,,,,,,False,0,False,False
 6719,GRT,The Graph,token,Developer Tools;AI/Big Data,,the-graph,Developer Tools,0xc944e90c64b2c07662a292be6244bdf05cda44a7,Multi-Chain,Ethereum;Arbitrum,,the-graph,True,1,True,False
@@ -1718,7 +1718,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 3855,LOCUS,Locus Chain,token,Yield;Payments,,,,,,,,,False,0,False,False
 8083,LON,Tokenlon Network Token,token,DEX Aggregator;Dexs;DEX,,,,,,,,,False,0,False,False
 810,LQD,LIQUID,token,Lending,,,,,,,,,False,0,False,False
-7429,LQTY,Liquity,token,CDP,,,,,,,,,False,0,False,False
+7429,LQTY,Liquity,token,CDP,,liquity,CDP,,,,,,True,0,False,False
 1934,LRC,Loopring,token,Dexs;DEX;Layer-2;Modular Blockchain;Privacy;Smart Contract Platform;Zero Knowledge,,loopring,Dexs,0xbbbbca6a901c926f240b89eacb641d8aec7aeafd,Multi-Chain,Ethereum;Taiko;Base,loopringdao.eth,loopring,True,1,True,True
 2693,LRN,Loopring [NEO],token,DEX,,,,,,,,,False,0,False,False
 28047,LSD,L7,token,Dexs;Farm;Indexes,,,,,,,,,False,0,False,False
@@ -1770,7 +1770,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 6536,OM,MANTRA,token,Lending;Layer-1;RWA,,mantra-dao,Lending,0x3593d125a4f7849a1b059e64f4517a86dd60c95d,Multi-Chain,Ethereum;Binance;Polygon,mantra-dao.eth,mantra-dao,True,1,True,True
 1808,OMG,OMG Network,token,Payments,,,,,,,,,False,0,False,False
 6432,OMI,ECOMI,token,NFT,,,,,,,,,False,0,False,False
-21159,ONDO,Ondo,token,Derivatives;RWA,,,,,,,,,False,0,False,False
+21159,ONDO,Ondo,token,Derivatives;RWA,,ondo-finance,RWA,,,,,,True,0,False,False
 2324,ONE,BigONE Token,token,Dexs;Exchange Token,,,,,,,,,False,0,False,False
 7230,OPIUM,Opium,token,Options;Derivatives,,opium,Options,0x888888888889c00c67689029d7856aac1065ec11,Multi-Chain,Ethereum;Polygon;Arbitrum;Binance,opiumprotocol.eth,opium,True,1,True,True
 3835,ORBS,Orbs,token,Farm,,orbs,Farm,0xff56cc6b1e6ded347aa0b7676c85ab0b3d08b0fa,Ethereum,Ethereum,,orbs,True,1,True,False
@@ -1858,7 +1858,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 329,SYNC,Sync,token,NFT Lending;Reserve Currency,,,,,,,,,False,0,False,False
 33824,SYRUP,Maple Finance,token,Lending;RWA,,,,,,,,,False,0,False,False
 33312,SolvBTC,SolvBTC,token,,,,,,,,,,False,0,False,False
-17751,T,Threshold,token,CDP;Decentralized BTC,,,,,,,,,False,0,False,False
+17751,T,Threshold,token,CDP;Decentralized BTC,,threshold-network,Decentralized BTC,,,,,,True,0,False,False
 22974,TAO,Bittensor,token,Chain;AI/Big Data;DePIN;Layer-1,,bittensor,Chain,,,,,bittensor,True,1,False,False
 26133,TBTC,tBTC,token,,,,,,,,,,False,0,False,False
 23082,TEM,TemDAO,token,Lending;Reserve Currency,,,,,,,,,False,0,False,False
@@ -1874,7 +1874,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 5617,UMA,UMA,token,Derivatives,,,,,,,,,False,0,False,False
 7672,UNFI,Unifi Protocol DAO,token,Dexs;Staking Pool,,,,,,,,,False,0,False,False
 4113,UNI,UNI COIN,token,Dexs;Launchpad;Payments,,,,,,,,,False,0,False,False
-7083,UNI,Uniswap,token,Dexs;Launchpad;DEX;Layer-1;Yield,,,,,,,,,False,0,False,False
+7083,UNI,Uniswap,token,Dexs;Launchpad;DEX;Layer-1;Yield,,uniswap,Dexs,,,,,,True,0,False,False
 36175,UNIBTC,Universal BTC,token,Restaking,,,,,,,,,False,0,False,False
 2273,UQC,Uquid Coin,token,Payments,,,,,,,,,False,0,False,False
 3792,USDE,USDe,token,Derivatives,,,,,,,,,False,0,False,False
@@ -1886,7 +1886,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 22059,VENOM,Venom,token,,,,,,,,,,False,0,False,False
 2937,VITE,VITE,token,DAG;DEX,,,,,,,,,False,0,False,False
 19650,VOLT,Volt Inu,token,Dexs;Lending;Liquid Staking;AI/Big Data;NFT;Gaming;Payments;Meme,,,,,,,,,False,0,False,False
-14519,VVS,VVS Finance,token,Dexs;DEX,,,,,,,,,False,0,False,False
+14519,VVS,VVS Finance,token,Dexs;DEX,,vvs-finance,Dexs,,,,,,True,0,False,False
 35509,VVV,Venice Token,token,Farm;AI/Big Data,,venice,Farm,base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf,Base,Base,,venice-token,True,1,True,False
 29587,W,Wormhole,token,Bridge;NFT;Interoperability,,portal,Bridge,solana:85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ,Multi-Chain,Ethereum;Algorand;Binance;Solana;Sui;Polygon;Near;Base;Avalanche;Arbitrum;Aptos;Optimism;Moonbeam;Celo;Klaytn;Terra;Oasis;Aurora;Fantom;Karura;Acala;Terra2;Injective;XPLA,,wormhole,True,1,True,False
 36119,WAL,Walrus,token,Developer Tools;Dexs;DePIN;Storage,,walrus-protocol,Developer Tools,sui:0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL,,,,walrus-2,True,1,True,False
@@ -1914,9 +1914,9 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 873,XEM,NEM,token,Payments;Smart Contract Platform,,,,,,,,,False,0,False,False
 2662,XHV,Haven Protocol,token,Privacy,,,,,,,,,False,0,False,False
 769,XUSD,CoinoUSD,token,Algo-Stables;CDP,,,,,,,,,False,0,False,False
-7288,XVS,Venus,token,Lending;Privacy;RWA;Yield,,,,,,,,,False,0,False,False
+7288,XVS,Venus,token,Lending;Privacy;RWA;Yield,,venus,Lending,,,,,,True,0,False,False
 2765,XYO,XYO,token,DePIN;Gaming;Metaverse,,,,,,,,,False,0,False,False
-5864,YFI,Yearn,token,Indexes;Risk Curators;Yield Aggregator;Yield,,,,,,,,,False,0,False,False
+5864,YFI,Yearn,token,Indexes;Risk Curators;Yield Aggregator;Yield,,yearn,Yield Aggregator,,,,,,True,0,False,False
 5957,YFII,DFI.Money,token,Yield Aggregator;Yield,,yfii,Yield Aggregator,0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83,Ethereum,Ethereum,,yfii-finance,True,1,True,False
 10688,YGG,Yield Guild Games,token,Gaming;NFT;Metaverse,,yield-guild-games,Gaming,0x25f8087ead173b73d6e8b84329989a8eea16cf73,,,,yield-guild-games,True,1,True,False
 3053,YOU,YOU COIN,token,Dexs;Synthetics,,,,,,,,,False,0,False,False

@@ -54,6 +54,33 @@ LOOSE_ADDS = [
     (6950, "PERP", "perpetual-protocol"),
 ]
 
+# SESSION 027 (Entry 68): asset_class=='other' lambda assets whose dl_slug IS the right
+# protocol-level TVL (the token-class filter below excludes them; each verified individually --
+# name + category + live TVL). NOT added: GBYTE (oswap-amm is a third-party DEX on Obyte, not
+# GBYTE's protocol), PENGU (not Abstract's fee token -- no defensible TVL), OP/MNT (Foundation/
+# treasury slugs = treasury holdings, not protocol TVL -> they get CHAIN-level TVL below).
+OTHER_ADDS = [
+    (2943, "RPL", "rocket-pool"),        # Liquid Staking, $899M
+    (12999, "SSV", "ssv-network"),       # Staking Pool (DVT-secured ETH), $8.3B
+    (23121, "BLUR", "blur"),             # parent: Blur Bids pool + Blur Lending
+    (38341, "RAIN", "rain"),             # Prediction Market, $29M
+    (17704, "MV", "gensokishi"),         # Gaming; small but real series
+]
+
+# SESSION 027 (Entry 68): CHAIN-level TVL for canonical L2 governance tokens whose protocol
+# entry on DeFiLlama is a Foundation/treasury or an empty parent (ARB's 'arbitrum' and APE's
+# 'apecoin' serve empty tvl[]). Source: api.llama.fi/v2/historicalChainTvl/{chain} (daily
+# {date, tvl}). dl_slug recorded as 'chain:{name}' so downstream can distinguish chain-level
+# denominators from protocol-level ones. COINS are deliberately absent (they use NVT, not
+# NV/TVL). 'Optimism' is a dead DL alias -- the live chain name is 'OP Mainnet'.
+CHAIN_LEVEL = [
+    (11841, "ARB", "Arbitrum"),
+    (11840, "OP", "OP Mainnet"),
+    (27075, "MNT", "Mantle"),
+    (18876, "APE", "ApeChain"),
+    (28480, "BLAST", "Blast"),
+]
+
 
 def _get(url, timeout=90, retries=3):
     """GET with light backoff; returns (status_code:int|str, json|None|text)."""
@@ -92,6 +119,22 @@ def fetch_protocol(slug):
     return d
 
 
+def fetch_chain(chain_name):
+    """Return the cached/freshly-fetched historicalChainTvl list [{date, tvl}], or None."""
+    cf = RAW / f"chain_{chain_name.replace(' ', '_')}.json"
+    if cf.exists():
+        try:
+            return json.loads(cf.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    sc, d = _get(f"https://api.llama.fi/v2/historicalChainTvl/{chain_name}")
+    time.sleep(0.2)
+    if sc != 200 or not isinstance(d, list):
+        return None
+    cf.write_text(json.dumps(d), encoding="utf-8")
+    return d
+
+
 def monthly_last(tvl_series):
     """Collapse a [{date, totalLiquidityUSD}] series to {ym: last_value_in_month}.
     'Last observation per calendar month' = the entry with the max unix date within
@@ -119,10 +162,11 @@ def main():
     # append the individually-verified looser-match tokens (Part B stretch goal)
     sym_by_cmc = dict(zip(ident.cmc_id, ident.symbol))
     add_rows = pd.DataFrame([{"cmc_id": c, "symbol": sym_by_cmc.get(c, s), "dl_slug": slug,
-                              "_loose": True} for c, s, slug in LOOSE_ADDS])
+                              "_loose": True} for c, s, slug in LOOSE_ADDS + OTHER_ADDS])
     tok["_loose"] = False
+    tok = tok[~tok.cmc_id.isin(add_rows.cmc_id)]   # adds are authoritative for their cmc_ids
     tok = pd.concat([tok, add_rows], ignore_index=True)
-    print(f"  + {len(add_rows)} individually-verified looser matches -> {len(tok)} total")
+    print(f"  + {len(add_rows)} individually-verified adds (loose + other-class) -> {len(tok)} total")
 
     panel = pd.read_csv(PANEL)
     panel["ym"] = panel["month_end"].str[:7]
@@ -158,6 +202,28 @@ def main():
                      "note": "ok" if yms else "empty series"})
         print(f"[{i:>3}/{len(tok)}] {sym:<8} {slug:<28} "
               f"months={len(yms):>3}  {yms[0] if yms else '-'}->{yms[-1] if yms else '-'}")
+
+    # SESSION 027: chain-level TVL for canonical L2 governance tokens (Entry 68)
+    for cmc_id, sym, chain in CHAIN_LEVEL:
+        ser = fetch_chain(chain)
+        tag = f"chain:{chain}"
+        if not ser:
+            diag.append({"cmc_id": cmc_id, "symbol": sym, "dl_slug": tag, "status": "ERR",
+                         "n_months": 0, "ym_start": None, "ym_end": None, "note": "fetch failed"})
+            print(f"[chain] {sym:<8} {tag:<28} FETCH FAIL")
+            continue
+        mser = monthly_last([{"date": p.get("date"), "totalLiquidityUSD": p.get("tvl")}
+                             for p in ser])
+        mser = {ym: v for ym, v in mser.items() if ym in valid_yms}
+        for ym in sorted(mser):
+            rows.append({"cmc_id": cmc_id, "symbol": sym, "dl_slug": tag,
+                         "month_end": ym_to_monthend[ym], "ym": ym, "tvl_usd": mser[ym]})
+        yms = sorted(mser)
+        diag.append({"cmc_id": cmc_id, "symbol": sym, "dl_slug": tag, "status": 200,
+                     "n_months": len(yms), "ym_start": yms[0] if yms else None,
+                     "ym_end": yms[-1] if yms else None, "note": "ok" if yms else "empty series"})
+        print(f"[chain] {sym:<8} {tag:<28} months={len(yms):>3}  "
+              f"{yms[0] if yms else '-'}->{yms[-1] if yms else '-'}")
 
     out = pd.DataFrame(rows).sort_values(["cmc_id", "ym"])
     out.to_csv(OUT, index=False)
