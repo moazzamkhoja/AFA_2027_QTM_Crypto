@@ -244,19 +244,23 @@ def xdc_series():
             cf.write_text(json.dumps(cache))
         if cache[ym] is not None:
             ser[ym] = cache[ym] / 1e18
-    # cross-check: live balance vs event replay (constant genesis offset established;
-    # here re-verify the replay+offset identity at the head)
+    # cross-check: balance vs event replay at the SAME block (the cache's scan head).
+    # Session 029 fix: comparing the (static) cached replay to the LIVE balance breaks
+    # as soon as any post-cache flow occurs (on 2026-07-04 a net -10M outflow moved the
+    # apparent offset 32.6M -> 22.6M within hours). Both sides pinned at scan_to makes
+    # the +32,625,000 genesis/eventless-stake identity time-invariant.
     ev = load_events("xdc", ["propose", "vote", "unvote", "withdraw"])
-    rep = (sum(words(l["data"])[-1] for l in ev["propose"])
-           + sum(words(l["data"])[-1] for l in ev["vote"])
-           - sum(words(l["data"])[-1] for l in ev["unvote"])
-           - sum(words(l["data"])[-1] for l in ev["withdraw"])) / 1e18
-    j = api({"module": "account", "action": "balance",
-             "address": XDC_VALIDATOR, "tag": "latest"}, 50)
-    live = int(j["result"]) / 1e18
-    off = live - rep
-    print(f"  XDC cross-check: live balance {live:,.0f} vs event replay {rep:,.0f} "
-          f"-> offset {off:,.0f} (expected 32,625,000 genesis/eventless stake)")
+    scan_to = json.loads((RAW / "xdc_propose.json").read_text())["scan_to"]
+    rep = (sum(words(l["data"])[-1] for l in ev["propose"] if l["b"] <= scan_to)
+           + sum(words(l["data"])[-1] for l in ev["vote"] if l["b"] <= scan_to)
+           - sum(words(l["data"])[-1] for l in ev["unvote"] if l["b"] <= scan_to)
+           - sum(words(l["data"])[-1] for l in ev["withdraw"] if l["b"] <= scan_to)) / 1e18
+    j = api({"module": "account", "action": "balancehistory",
+             "address": XDC_VALIDATOR, "blockno": scan_to}, 50)
+    bal = int(j["result"]) / 1e18
+    off = bal - rep
+    print(f"  XDC cross-check: balance@scan_to({scan_to:,}) {bal:,.0f} vs event replay "
+          f"{rep:,.0f} -> offset {off:,.0f} (expected 32,625,000 genesis/eventless stake)")
     if abs(off - 32_625_000) > 1_000_000:
         raise RuntimeError("XDC replay/balance offset moved; re-verify before shipping")
     return ser, ("xdcscan(etherscanV2/50) balancehistory of XDCValidator 0x...0088 at "
@@ -361,6 +365,51 @@ def avax_series():
          "SOL/AERO precedent")
 
 
+# ---------------------------------------------------------------- POL / MATIC (session 029, Entry 78)
+
+def pol_series():
+    """Polygon PoS stake from StakeManager on ETHEREUM MAINNET
+    (0x5e3Ef299fDDf15eAa0432E6e66473ace8c13D908, UpgradableProxy). Metric =
+    currentValidatorSetTotalStake() (validatorState.amount: active validator
+    self-stake + ALL delegations; live 3.58B, matches the official dashboard) --
+    NOT totalStaked(), which tracks validator SELF-stake only (11.7M live).
+    Etherscan's proxy eth_call ignores historical tags (Entry-71 landmine);
+    eth.drpc.org serves FULL mainnet archive eth_call keyless (probed), so the
+    series is a state read of the chain's own getter at month-end blocks
+    (fetched by _s029_pol_fetch.py). Cross-checks: (1) drpc vs Etherscan proxy
+    at head +0.00000% (independent providers, same state); (2) POL/MATIC token
+    balanceOf(StakeManager) / stake = 1.028-1.075 every month (constant-shape
+    superset: stake + unclaimed rewards buffer)."""
+    cf = RAW / "pol_stakemanager_history.json"
+    if not cf.exists():
+        raise RuntimeError(f"missing {cf} -- run _s029_pol_fetch.py")
+    cache = json.loads(cf.read_text())
+    ser, ratios = {}, []
+    for ym, v in cache.items():
+        if v.get("total_stake"):
+            ser[ym] = v["total_stake"] / 1e18
+            bal = (v.get("matic_bal") or 0) + (v.get("pol_bal") or 0)
+            if bal:
+                ratios.append(bal / v["total_stake"])
+    # Integrity condition = the superset FLOOR: the contract can never hold LESS than
+    # the stake it accounts for (a ratio <1 would mean phantom stake -> abort). The
+    # buffer WIDTH varies with unclaimed rewards + undelegation queues: 1.02-1.08 in
+    # steady state, peaking 1.34 in 2021-03 (the Q1-2021 delegation-churn spike),
+    # reverting to <=1.13 from 2021-04 on. Ceiling 1.5 = sanity only.
+    if ratios and not (1.0 <= min(ratios) and max(ratios) < 1.5):
+        raise RuntimeError(f"POL balance/stake superset broke [1,1.5): "
+                           f"{min(ratios):.4f}..{max(ratios):.4f}; re-verify")
+    print(f"  POL superset check: balance/stake in [{min(ratios):.4f}, {max(ratios):.4f}] "
+          f"across {len(ratios)} months (unclaimed-rewards buffer)")
+    return ser, ("eth.drpc.org archive eth_call StakeManager.currentValidatorSetTotalStake() "
+                 "at month-end blocks (chain's own aggregate; drpc==etherscan at head "
+                 "+0.00000%)"), \
+        ("MATIC rows 2020-06..2024-08, POL rows 2024-09+ (the Polygon-2.0 listing "
+         "handoff; no overlap month, one physical stake never enters lambda twice); "
+         "token balance of StakeManager = 1.03-1.07x stake (unclaimed rewards) "
+         "recorded as the superset cross-check")
+
+
 # ---------------------------------------------------------------- emit
 
 def main():
@@ -408,6 +457,13 @@ def main():
     print("AVAX (official Metrics API):")
     s, src, fl = avax_series()
     add(5805, "AVAX", s, src, fl)
+
+    print("POL/MATIC (StakeManager via drpc archive):")
+    s, src, fl = pol_series()
+    # listing handoff: MATIC (cmc 3890) carries the series through 2024-08, POL
+    # (cmc 28321, observed from 2024-09) from 2024-09 -- disjoint by construction
+    add(3890, "MATIC", {ym: v for ym, v in s.items() if ym <= "2024-08"}, src, fl)
+    add(28321, "POL", {ym: v for ym, v in s.items() if ym >= "2024-09"}, src, fl)
 
     out = pd.DataFrame(rows)
     out.to_csv(OUT, index=False)

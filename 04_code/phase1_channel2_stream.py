@@ -54,7 +54,13 @@ PROG = REPO / "03_data" / "phase1" / "_channel2_stream_progress.json"
 SIZES = REPO / "03_data" / "phase1" / "_channel2_sizes.csv"
 RAW.mkdir(parents=True, exist_ok=True)
 
-CHAIN_ID = {"Ethereum": 1, "Polygon": 137, "Arbitrum": 42161, "Blast": 81457}
+# Session 029 (Entry 76): +BSC/+Base. The engine was already per-token multi-chain -- every
+# API call passes the token's chainid (robust_getlogs / get_decimals / month_block /
+# screen_contracts) -- the only mainnet-era constraint was this chain-name lookup used by
+# load_worklist. Etherscan Pro V2 getLogs coverage probed live this session: 56/137/42161/8453
+# all answer (BSC already proven by the session-028 BNB build).
+CHAIN_ID = {"Ethereum": 1, "Polygon": 137, "Arbitrum": 42161, "Blast": 81457,
+            "BSC": 56, "Base": 8453}
 WINDOWS = eng.WINDOWS
 ZERO = eng.ZERO
 SCREEN_TOPK = panel.SCREEN_TOPK
