@@ -1,0 +1,32 @@
+STREAM build: 1 tokens | WORKERS=8 BLOCK_WINDOW=100000 RATE=8.0/s DAILY_CAP=185000
+  --- MYX cmc=36410 chain=56 START (gl_so_far=0) ---
+    MYX batch 1/128 block<=799,999 tf=0 gl=8 lots=0 2s
+    MYX batch 6/128 block<=4,799,999 tf=0 gl=48 lots=0 6s
+    MYX batch 11/128 block<=8,799,999 tf=0 gl=88 lots=0 12s
+    MYX batch 16/128 block<=12,799,999 tf=0 gl=128 lots=0 17s
+    MYX batch 21/128 block<=16,799,999 tf=0 gl=168 lots=0 22s
+    MYX batch 26/128 block<=20,799,999 tf=0 gl=208 lots=0 27s
+    MYX batch 31/128 block<=24,799,999 tf=0 gl=248 lots=0 32s
+    MYX batch 36/128 block<=28,799,999 tf=0 gl=288 lots=0 37s
+    MYX batch 41/128 block<=32,799,999 tf=0 gl=328 lots=0 42s
+    MYX batch 46/128 block<=36,799,999 tf=0 gl=368 lots=0 47s
+    MYX batch 51/128 block<=40,799,999 tf=0 gl=408 lots=0 53s
+    MYX batch 56/128 block<=44,799,999 tf=0 gl=448 lots=0 60s
+    MYX batch 61/128 block<=48,799,999 tf=0 gl=488 lots=0 67s
+    MYX batch 66/128 block<=52,799,999 tf=8852029 gl=26532 lots=39143 3659s
+    MYX batch 71/128 block<=56,799,999 tf=10468562 gl=31442 lots=59912 4346s
+    MYX batch 76/128 block<=60,799,999 tf=12670115 gl=38076 lots=41758 5271s
+    MYX batch 81/128 block<=64,799,999 tf=15459154 gl=46346 lots=46823 6394s
+    MYX batch 86/128 block<=68,799,999 tf=17218953 gl=51526 lots=72062 7191s
+    MYX batch 91/128 block<=72,799,999 tf=18003410 gl=53856 lots=81949 7536s
+    MYX batch 96/128 block<=76,799,999 tf=18630995 gl=55712 lots=64495 7831s
+    MYX batch 101/128 block<=80,799,999 tf=19167624 gl=57322 lots=68516 8060s
+    MYX batch 106/128 block<=84,799,999 tf=20313553 gl=60878 lots=58572 8548s
+    MYX batch 111/128 block<=88,799,999 tf=20895093 gl=62606 lots=62395 8802s
+    MYX batch 116/128 block<=92,799,999 tf=21620446 gl=64778 lots=61034 9144s
+    MYX batch 121/128 block<=96,799,999 tf=22029105 gl=65976 lots=63348 9317s
+    MYX batch 126/128 block<=100,799,999 tf=22334288 gl=66892 lots=60378 9460s
+  MYX      cmc=36410 DONE tf=22451143 gl=67233 code=21/40 scrMo=10 HODLmed=3.0% last=5.2%
+aggregate: 307 completed tokens (0 recomputed), 1 deferred -> C:\AFA_2027_QTM_Crypto\03_data\phase1\channel2_holding.csv (9867 rows)
+
+STREAM done: 1 built, 0 skipped, 67233 getLogs; aggregate -> 307 tokens / 9867 rows
