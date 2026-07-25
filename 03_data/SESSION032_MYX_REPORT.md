@@ -41,4 +41,4 @@
 - `03_data/universe_coverage_status.csv` — regenerated (154/231/1,554).
 - `03_data/raw/phase1_onchain/holding/36410_MYX.json` — checkpoint.
 - `04_code/DATA_DECISIONS_LOG.md` — Entry 82.
-- Build log: `03_data/logs/session032_myx_run.log`.
+- Build log: `03_data/phase1/_session032_stream.log`.
