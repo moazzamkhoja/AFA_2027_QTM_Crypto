@@ -83,7 +83,7 @@ cmc_id,symbol,month_end,pq_usd,pq_source,rung,note
 1,BTC,2017-05-31,21807206423.931534,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2017-06-30,21331200725.315857,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2017-07-31,21257255227.026543,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
-1,BTC,2017-08-31,31671886640.590076,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
+1,BTC,2017-08-31,31671886640.59008,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2017-09-30,26891047557.975315,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2017-10-31,36053056566.82688,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2017-11-30,67820323987.98554,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
@@ -103,7 +103,7 @@ cmc_id,symbol,month_end,pq_usd,pq_source,rung,note
 1,BTC,2019-01-31,15993602369.117125,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2019-02-28,14451936194.192047,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2019-03-31,16141861393.860811,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
-1,BTC,2019-04-30,23715475565.729877,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
+1,BTC,2019-04-30,23715475565.72988,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2019-05-31,36245867149.954285,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2019-06-30,47781969035.95853,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2019-07-31,43907565244.461975,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
@@ -174,7 +174,7 @@ cmc_id,symbol,month_end,pq_usd,pq_source,rung,note
 1,BTC,2024-12-31,374990322859.0516,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2025-01-31,264932014938.40448,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2025-02-28,243726331250.33344,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
-1,BTC,2025-03-31,227875494724.75095,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
+1,BTC,2025-03-31,227875494724.75092,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2025-04-30,248870464284.4028,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2025-05-31,284741244734.54987,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
 1,BTC,2025-06-30,243794250652.8085,blockchain.com_est_tx_value,R3-BTC,"Estimated Transaction Value USD, change-excluded"
@@ -1491,7 +1491,7 @@ cmc_id,symbol,month_end,pq_usd,pq_source,rung,note
 2010,ADA,2026-04-30,32452949.0,defillama_chain_dex,R1,chain=Cardano; mat_ratio=0.0103
 2010,ADA,2026-05-31,36476300.0,defillama_chain_dex,R1,chain=Cardano; mat_ratio=0.0103
 2010,ADA,2026-06-30,79704138.0,defillama_chain_dex,R1,chain=Cardano; mat_ratio=0.0103
-2011,XTZ,,,NaN:no_free_native_series_p2b,GAP-R2,"Phase 2b (2026-06-25): no free, keyless, ready-made historical USD transacted-value series. DeFiLlama chain-DEX degenerate (why GAP-R2); Artemis Settlement Volume paid-only (no key); Cosmos LCD / api.kaspa.org expose only current state, Filfox only base-fee (toll), Mintscan/Subscan need keys. Raw multi-year native iteration forbidden (Entry 31/32). PQ=NaN, flagged."
+2011,XTZ,,,NaN:xtz_no_free_native_series_s033,GAP-R2,"Session 033 (2026-07-25): XTZ native transfer value has NO free keyless historical source, verified live: TzKT api.tzkt.io/v1/statistics/daily = supply/staking fields ONLY (no totalTransferred; full 287-path swagger checked, no volume/sum endpoint); back.tzkt.io/v1/home = current-day volume + 30d price chart only; TzStats api.tzstats.com DEAD (conn refused); TzPro unreachable; CoinMetrics community API + GitHub CSVs expose only TxCnt/TxTfrCnt for xtz (TxTfrValUSD 403 pro-gated); bitinfocharts sentinusd-xtz EMPTY page; Messari legacy API 404; CryptoCompare blockchain histo 401 key-gated. Raw TzKT operation iteration forbidden (Entry 31/32). PQ=NaN, flagged."
 2027,CNX,,,NaN:no_free_native_series_p2b,GAP-R2,"Phase 2b (2026-06-25): no free, keyless, ready-made historical USD transacted-value series. DeFiLlama chain-DEX degenerate (why GAP-R2); Artemis Settlement Volume paid-only (no key); Cosmos LCD / api.kaspa.org expose only current state, Filfox only base-fee (toll), Mintscan/Subscan need keys. Raw multi-year native iteration forbidden (Entry 31/32). PQ=NaN, flagged."
 2083,BTG,2017-10-31,1269492090.0,bitinfocharts_sentinusd,R3-bitinfo,native UTXO total-output value (USD) summed daily->monthly; change-INFLATED (includes change outputs; NOT change-excluded like BTC's blockchain.com series); bitinfocharts 'Sent in USD'
 2083,BTG,2017-11-30,2828459875.0,bitinfocharts_sentinusd,R3-bitinfo,native UTXO total-output value (USD) summed daily->monthly; change-INFLATED (includes change outputs; NOT change-excluded like BTC's blockchain.com series); bitinfocharts 'Sent in USD'
@@ -1812,7 +1812,7 @@ cmc_id,symbol,month_end,pq_usd,pq_source,rung,note
 3635,CRO,2026-05-31,37088491.0,defillama_chain_dex,R1,chain=Cronos; mat_ratio=0.0113
 3635,CRO,2026-06-30,29294880.0,defillama_chain_dex,R1,chain=Cronos; mat_ratio=0.0113
 3794,ATOM,,,NaN:no_free_native_series_p2b,GAP-R2,"Phase 2b (2026-06-25): no free, keyless, ready-made historical USD transacted-value series. DeFiLlama chain-DEX degenerate (why GAP-R2); Artemis Settlement Volume paid-only (no key); Cosmos LCD / api.kaspa.org expose only current state, Filfox only base-fee (toll), Mintscan/Subscan need keys. Raw multi-year native iteration forbidden (Entry 31/32). PQ=NaN, flagged."
-3890,MATIC,,,NaN:no_free_native_series_p2b,GAP-R2,"Phase 2b (2026-06-25): no free, keyless, ready-made historical USD transacted-value series. DeFiLlama chain-DEX degenerate (why GAP-R2); Artemis Settlement Volume paid-only (no key); Cosmos LCD / api.kaspa.org expose only current state, Filfox only base-fee (toll), Mintscan/Subscan need keys. Raw multi-year native iteration forbidden (Entry 31/32). PQ=NaN, flagged."
+3890,MATIC,,,NaN:polygon_native_volume_no_free_source,GAP-R2,"Session 033 (2026-07-25): bitinfocharts does not expose 'sentinusd-matic' (tested live -- returns BTC default series, BTC-guard triggered). Polygon native MATIC transfer value requires PolygonScan full-history export (no free API) or Artemis (paid); CoinMetrics community rejects value metrics for 'matic'. DeFiLlama Polygon chain DEX volume degenerate (not settlement value). Lambda window ends 2024-08 at POL handoff -- short window reduces regression value. MATIC stays PQ=NaN."
 3945,ONE,,,NaN:no_free_native_series_p2b,GAP-R2,"Phase 2b (2026-06-25): no free, keyless, ready-made historical USD transacted-value series. DeFiLlama chain-DEX degenerate (why GAP-R2); Artemis Settlement Volume paid-only (no key); Cosmos LCD / api.kaspa.org expose only current state, Filfox only base-fee (toll), Mintscan/Subscan need keys. Raw multi-year native iteration forbidden (Entry 31/32). PQ=NaN, flagged."
 3951,ARRR,,,NaN:no_free_native_series_p2b,GAP-R2,"Phase 2b (2026-06-25): no free, keyless, ready-made historical USD transacted-value series. DeFiLlama chain-DEX degenerate (why GAP-R2); Artemis Settlement Volume paid-only (no key); Cosmos LCD / api.kaspa.org expose only current state, Filfox only base-fee (toll), Mintscan/Subscan need keys. Raw multi-year native iteration forbidden (Entry 31/32). PQ=NaN, flagged."
 4030,ALGO,2022-09-30,6228045.0,defillama_chain_dex,R1,chain=Algorand; mat_ratio=0.0152
