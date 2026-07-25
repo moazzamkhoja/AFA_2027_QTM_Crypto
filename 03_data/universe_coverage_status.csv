@@ -121,7 +121,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 146,CGA,Cryptographic Anomaly,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 999,CHC,ChainCoin,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 3978,CHR,Chromia,coin,Dexs;AI/Big Data;NFT;Gaming;Layer-1;Metaverse;Modular Blockchain;RWA,pos_possible,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pos_possible] | pq_nvtgl
-4066,CHZ,Chiliz,coin,NFT;Layer-1;Payments,pos_possible,0,0,,False,False,False,False,True,9,defillama_chain_dex,False,0,,,,,partial,ch1_staking[pos_possible]
+4066,CHZ,Chiliz,coin,NFT;Layer-1;Payments,pos_possible,35,1,ch1_staking,True,False,False,False,True,9,defillama_chain_dex,False,0,,,,,complete,COMPLETE
 1306,CJ,Cryptojacks,coin,,pos,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking | pq_nvtgl
 4948,CKB,Nervos Network,coin,NFT;Interoperability;Layer-2;Modular Blockchain;Smart Contract Platform,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 460,CLAM,Clams,coin,Yield;Payments,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
@@ -834,7 +834,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 5908,DKA,dKargo,other,AI/Big Data,,0,0,,False,False,False,False,False,0,,False,0,4524.0,362.0,Ethereum,yes,not_started,ch2_holding(4524h) | ch3_governance | tvl_defillama
 1949,DLT,Agrello,other,AI/Big Data;Payments,,0,0,,False,False,False,False,False,0,,False,0,7008.0,561.0,Ethereum,yes,not_started,ch2_holding(7008h) | ch3_governance | tvl_defillama
 5622,DMCH,Darma Cash,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-2503,DMT,DMarket,other,Canonical Bridge;NFT;Payments,,0,0,,False,False,False,False,False,0,,False,0,4990.0,399.0,Ethereum,yes,not_started,ch2_holding(4990h) | ch3_governance | tvl_defillama
+2503,DMT,DMarket,other,Canonical Bridge;NFT;Payments,,32,1,ch2_holding,False,True,False,False,False,0,,False,0,4990.0,399.0,Ethereum,yes,partial,tvl_defillama
 1856,DNT,district0x,other,Payments,,0,0,,False,False,False,False,False,0,,False,0,40124.0,3210.0,Ethereum,yes,not_started,ch2_holding(40124h) | ch3_governance | tvl_defillama
 30933,DOG,Dog (Bitcoin),other,Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 32698,DOGS,DOGS,other,Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -878,20 +878,20 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 37414,ESPORTS,Yooldo,other,Gaming,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 3409,ETA,Etheera,other,,,0,0,,False,False,False,False,False,0,,False,0,3814.0,305.0,Ethereum,yes,not_started,ch2_holding(3814h) | ch3_governance | tvl_defillama
 3589,ETHM,Ethereum Meta,other,,,0,0,,False,False,False,False,False,0,,False,0,939.0,75.0,Ethereum,yes,not_started,ch2_holding(939h) | ch3_governance | tvl_defillama
-27566,ETHX,Stader ETHx,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,30855.0,2468.0,Ethereum,yes,not_started,ch2_holding(30855h) | ch3_governance | tvl_defillama
+27566,ETHX,Stader ETHx,other,Liquid Staking,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,30855.0,2468.0,Ethereum,yes,partial,tvl_defillama
 1714,ETT,EncryptoTel [WAVES],other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 3968,EUM,Elitium,other,,,35,1,ch2_holding,False,True,False,False,False,0,,False,0,1870.0,150.0,Ethereum,yes,partial,tvl_defillama
 3261,EVN,EvenCoin,other,,,18,1,ch2_holding,False,True,False,False,False,0,,False,0,2693.0,215.0,Ethereum,yes,partial,tvl_defillama
 2066,EVR,Everus,other,,,0,0,,False,False,False,False,False,0,,False,0,6082.0,487.0,Ethereum,yes,not_started,ch2_holding(6082h) | ch3_governance | tvl_defillama
 5268,EWT,Energy Web Token,other,Identity,,8,1,ch2_holding,False,True,False,False,False,0,,False,0,903.0,72.0,Ethereum,yes,partial,tvl_defillama
 5620,EXE,8X8 PROTOCOL,other,,,3,1,ch2_holding,False,True,False,False,False,0,,False,0,781.0,62.0,Ethereum,yes,partial,tvl_defillama
-29520,EZETH,Renzo Restaked ETH,other,Liquid Staking;Restaking,,0,0,,False,False,False,False,False,0,,False,0,24403.0,1952.0,Ethereum,yes,not_started,ch2_holding(24403h) | ch3_governance | tvl_defillama
+29520,EZETH,Renzo Restaked ETH,other,Liquid Staking;Restaking,,12,1,ch2_holding,False,True,False,False,False,0,,False,0,24403.0,1952.0,Ethereum,yes,partial,tvl_defillama
 34330,FAI,Freysa,other,AI Agents;AI/Big Data,,0,0,,False,False,False,False,False,0,,False,0,,,Base,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 224,FAIR,FairCoin,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 33597,FARTCOIN,Fartcoin,other,AI/Big Data;Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1087,FCT,Factom,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 3773,FET,Artificial Superintelligence Alliance,other,AI Agents;AI/Big Data;NFT;IoT,,0,0,,False,False,False,False,False,0,,False,0,168656.0,13492.0,Ethereum,yes,not_started,ch2_holding(168656h) | ch3_governance | tvl_defillama
-38482,FF,Falcon Finance,other,Basis Trading,,0,0,,False,False,False,False,False,0,,False,0,11090.0,887.0,Ethereum,yes,not_started,ch2_holding(11090h) | ch3_governance | tvl_defillama
+38482,FF,Falcon Finance,other,Basis Trading,,9,1,ch2_holding,False,True,False,False,False,0,,True,9,11090.0,887.0,Ethereum,yes,complete,COMPLETE
 570,FIBRE,Fibre,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 444,FIMK,FIMKrypto,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 606,FLDC,FoldingCoin,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -976,7 +976,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 2082,ICOS,ICOS,other,,,10,1,ch2_holding,False,True,False,False,False,0,,False,0,737.0,59.0,Ethereum,yes,partial,tvl_defillama
 21846,ID,SPACE ID,other,,,0,0,,False,False,False,False,False,0,,False,0,4699.0,376.0,Ethereum,yes,not_started,ch2_holding(4699h) | ch3_governance | tvl_defillama
 2459,IDH,indaHash,other,,,0,0,,False,False,False,False,False,0,,False,0,18166.0,1453.0,Ethereum,yes,not_started,ch2_holding(18166h) | ch3_governance | tvl_defillama
-1888,IFT,InvestFeed,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,3313.0,265.0,Ethereum,yes,not_started,ch2_holding(3313h) | ch3_governance | tvl_defillama
+1888,IFT,InvestFeed,other,Liquid Staking,,15,1,ch2_holding,False,True,False,False,False,0,,False,0,3313.0,265.0,Ethereum,yes,partial,tvl_defillama
 2276,IGNIS,Ignis,other,Payments,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2552,IHT,IHT Real Estate Protocol,other,,,0,0,,False,False,False,False,False,0,,False,0,61458.0,4917.0,Ethereum,yes,not_started,ch2_holding(61458h) | ch3_governance | tvl_defillama
 10603,IMX,Immutable,other,Chain;NFT Marketplace;NFT;Gaming;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,,0,0,,False,False,False,False,False,0,,False,0,98032.0,7843.0,Ethereum,yes,not_started,ch2_holding(98032h) | ch3_governance | tvl_defillama
@@ -1076,7 +1076,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 2845,MEDX,MediBloc [ERC20],other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 35347,MELANIA,Official Melania Meme,other,Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1590,MER,Mercury,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-29035,METH,Mantle Staked Ether,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,10718.0,857.0,Ethereum,yes,not_started,ch2_holding(10718h) | ch3_governance | tvl_defillama
+29035,METH,Mantle Staked Ether,other,Liquid Staking,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,10718.0,857.0,Ethereum,yes,partial,tvl_defillama
 4676,MEXC,MEXC Token,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1649,MGC,MergeCoin,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 29839,MGC,Meta Games Coin,other,,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1108,8 +1108,8 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 1788,MTL,Metal DAO,other,Layer-2;Payments,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2497,MTN,Medicalchain,other,,,0,0,,False,False,False,False,False,0,,False,0,7409.0,593.0,Ethereum,yes,not_started,ch2_holding(7409h) | ch3_governance | tvl_defillama
 4451,MTXLT,Tixl [old],other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-28412,MUBI,Multibit,other,Bridge;Interoperability,,0,0,,False,False,False,False,False,0,,False,0,18631.0,1490.0,Ethereum,yes,not_started,ch2_holding(18631h) | ch3_governance | tvl_defillama
-17050,MULTI,Multichain,other,Bridge,,0,0,,False,False,False,False,False,0,,False,0,4215.0,337.0,Ethereum,yes,not_started,ch2_holding(4215h) | ch3_governance | tvl_defillama
+28412,MUBI,Multibit,other,Bridge;Interoperability,,13,1,ch2_holding,False,True,False,False,False,0,,True,30,18631.0,1490.0,Ethereum,yes,complete,COMPLETE
+17050,MULTI,Multichain,other,Bridge,,12,1,ch2_holding,False,True,False,False,False,0,,True,49,4215.0,337.0,Ethereum,yes,complete,COMPLETE
 30285,MUMU,Mumu the Bull (SOL),other,Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 8502,MUSH,Mushroom,other,,,0,0,,False,False,False,False,False,0,,False,0,3426.0,274.0,Ethereum,yes,not_started,ch2_holding(3426h) | ch3_governance | tvl_defillama
 17704,MV,GensoKishi Metaverse,other,Gaming,,18,1,ch2_holding,False,True,False,False,False,0,,True,52,1037.0,83.0,Ethereum,yes,complete,COMPLETE
@@ -1161,7 +1161,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 11840,OP,Optimism,other,Canonical Bridge;Foundation;Layer-2;Modular Blockchain,,7,1,ch3_voting,False,False,True,False,False,0,,True,59,,,Optimism,yes,complete,COMPLETE
 1124,OPENBTC,OpenBTC,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 17520,ORBR,Orbler,other,,,32,1,ch2_holding,False,True,False,False,False,0,,False,0,796.0,64.0,Ethereum,yes,partial,tvl_defillama
-5326,ORC,Orbit Chain,other,Bridge,,0,0,,False,False,False,False,False,0,,False,0,8258.0,661.0,Ethereum,yes,not_started,ch2_holding(8258h) | ch3_governance | tvl_defillama
+5326,ORC,Orbit Chain,other,Bridge,,36,1,ch2_holding,False,True,False,False,False,0,,True,46,8258.0,661.0,Ethereum,yes,complete,COMPLETE
 25028,ORDI,ORDI,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1998,ORMEUS,Ormeus Coin,other,Payments,,0,0,,False,False,False,False,False,0,,False,0,4231.0,338.0,Ethereum,yes,not_started,ch2_holding(4231h) | ch3_governance | tvl_defillama
 3598,OSA,Optimal Shelf Availability Token,other,,,0,0,,False,False,False,False,False,0,,False,0,3798.0,304.0,Ethereum,yes,not_started,ch2_holding(3798h) | ch3_governance | tvl_defillama
@@ -1237,7 +1237,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 5777,RENBTC,renBTC,other,Wrapped Asset,,0,0,,False,False,False,False,False,0,,False,0,4455.0,356.0,Ethereum,yes,not_started,ch2_holding(4455h) | ch3_governance | tvl_defillama
 2829,REPO,REPO,other,,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 3280,RET,RealTract,other,,,0,0,,False,False,False,False,False,0,,False,0,8222.0,658.0,Ethereum,yes,not_started,ch2_holding(8222h) | ch3_governance | tvl_defillama
-15060,RETH,Rocket Pool ETH,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,21391.0,1711.0,Ethereum,yes,not_started,ch2_holding(21391h) | ch3_governance | tvl_defillama
+15060,RETH,Rocket Pool ETH,other,Liquid Staking,,17,1,ch2_holding,False,True,False,False,False,0,,False,0,21391.0,1711.0,Ethereum,yes,partial,tvl_defillama
 5816,REW,Rewardiqa,other,,,0,0,,False,False,False,False,False,0,,False,0,94.0,8.0,Ethereum,yes,not_started,ch2_holding(94h) | ch3_governance | tvl_defillama
 2553,RFR,Refereum,other,Gaming,,0,0,,False,False,False,False,False,0,,False,0,65142.0,5211.0,Ethereum,yes,not_started,ch2_holding(65142h) | ch3_governance | tvl_defillama
 3701,RIF,Rootstock Infrastructure Framework,other,DePIN;Storage;Payments,,17,1,ch2_holding,False,True,False,False,False,0,,False,0,32.0,3.0,Ethereum,yes,partial,tvl_defillama
@@ -1251,9 +1251,9 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 2612,RNTB,BitRent,other,,,0,0,,False,False,False,False,False,0,,False,0,25457.0,2037.0,Ethereum,yes,not_started,ch2_holding(25457h) | ch3_governance | tvl_defillama
 1461,ROUND,Round,other,,,10,1,ch2_holding,False,True,False,False,False,0,,False,0,429.0,34.0,Ethereum,yes,partial,tvl_defillama
 2943,RPL,Rocket Pool,other,Liquid Staking,,72,3,ch1_staking|ch1_staking+ch2_holding|ch1_staking+ch2_holding+ch3_voting,True,True,True,False,False,0,,True,56,12253.0,980.0,Ethereum,yes,complete,COMPLETE
-29242,RSETH,Kelp DAO Restaked ETH,other,Liquid Staking;Restaking,,0,0,,False,False,False,False,False,0,,False,0,23023.0,1842.0,Ethereum,yes,not_started,ch2_holding(23023h) | ch3_governance | tvl_defillama
+29242,RSETH,Kelp DAO Restaked ETH,other,Liquid Staking;Restaking,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,23023.0,1842.0,Ethereum,yes,partial,tvl_defillama
 17917,RSS3,RSS3,other,AI/Big Data,,0,0,,False,False,False,False,False,0,,False,0,22985.0,1839.0,Ethereum,yes,not_started,ch2_holding(22985h) | ch3_governance | tvl_defillama
-29974,RSWETH,Restaked Swell Ethereum,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,5461.0,437.0,Ethereum,yes,not_started,ch2_holding(5461h) | ch3_governance | tvl_defillama
+29974,RSWETH,Restaked Swell Ethereum,other,Liquid Staking,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,5461.0,437.0,Ethereum,yes,partial,tvl_defillama
 2476,RUFF,Ruff,other,IoT,,0,0,,False,False,False,False,False,0,,False,0,51722.0,4138.0,Ethereum,yes,not_started,ch2_holding(51722h) | ch3_governance | tvl_defillama
 1208,RVR,RevolutionVR,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1991,RVT,Rivetz,other,Payments,,0,0,,False,False,False,False,False,0,,False,0,7171.0,574.0,Ethereum,yes,not_started,ch2_holding(7171h) | ch3_governance | tvl_defillama
@@ -1274,7 +1274,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 4078,SERO,Super Zero Protocol,other,Privacy,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 604,SF0,sharkfund0,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 8119,SFP,SafePal,other,,,36,1,ch2_holding,False,True,False,False,False,0,,False,0,783.0,63.0,Ethereum,yes,partial,tvl_defillama
-23177,SFRXETH,Frax Staked Ether,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,3930.0,314.0,Ethereum,yes,not_started,ch2_holding(3930h) | ch3_governance | tvl_defillama
+23177,SFRXETH,Frax Staked Ether,other,Liquid Staking,,10,1,ch2_holding,False,True,False,False,False,0,,False,0,3930.0,314.0,Ethereum,yes,partial,tvl_defillama
 1172,SFT,Safex Token,other,Liquid Staking;Privacy,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 299,SHIBE,ShibeCoin,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1482,SHORTY,Shorty,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1327,7 +1327,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 32717,SUNDOG,SUNDOG,other,Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 33983,SUT,SuperTrust,other,,,0,0,,False,False,False,False,False,0,,False,0,54718.0,4377.0,Polygon,yes,not_started,ch2_holding(54718h) | ch3_governance | tvl_defillama
 607,SWARM,Swarm,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-25147,SWETH,swETH,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,15199.0,1216.0,Ethereum,yes,not_started,ch2_holding(15199h) | ch3_governance | tvl_defillama
+25147,SWETH,swETH,other,Liquid Staking,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,15199.0,1216.0,Ethereum,yes,partial,tvl_defillama
 2506,SWM,Swarm,other,,,0,0,,False,False,False,False,False,0,,False,0,4821.0,386.0,Ethereum,yes,not_started,ch2_holding(4821h) | ch3_governance | tvl_defillama
 1562,SWT,Swarm City,other,,,0,0,,False,False,False,False,False,0,,False,0,3284.0,263.0,Ethereum,yes,not_started,ch2_holding(3284h) | ch3_governance | tvl_defillama
 6733,SYBC,SYB Coin,other,,,0,0,,False,False,False,False,False,0,,False,0,544.0,44.0,Ethereum,yes,not_started,ch2_holding(544h) | ch3_governance | tvl_defillama
@@ -1336,7 +1336,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 4981,TAGZ5,TAGZ5,other,,,6,1,ch2_holding,False,True,False,False,False,0,,False,0,593.0,47.0,Ethereum,yes,partial,tvl_defillama
 37741,TBLLX,TBLL tokenized ETF (xStock),other,Tokenized Asset,,1,1,ch2_holding,False,True,False,False,False,0,,False,0,28.0,2.0,Ethereum,yes,partial,tvl_defillama
 2364,TCT,TokenClub,other,,,0,0,,False,False,False,False,False,0,,False,0,24437.0,1955.0,Ethereum,yes,not_started,ch2_holding(24437h) | ch3_governance | tvl_defillama
-37574,TETH,Treehouse ETH,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,10288.0,823.0,Ethereum,yes,not_started,ch2_holding(10288h) | ch3_governance | tvl_defillama
+37574,TETH,Treehouse ETH,other,Liquid Staking,,5,1,ch2_holding,False,True,False,False,False,0,,False,0,10288.0,823.0,Ethereum,yes,partial,tvl_defillama
 1905,TFL,TrueFlip,other,,,38,1,ch2_holding,False,True,False,False,False,0,,False,0,1340.0,107.0,Ethereum,yes,partial,tvl_defillama
 1995,TGT,Target Coin,other,Cross Chain Bridge,,8,1,ch2_holding,False,True,False,False,False,0,,False,0,714.0,57.0,Ethereum,yes,partial,tvl_defillama
 3144,THR,ThoreCoin,other,Exchange Token,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1410,7 +1410,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 1483,VSL,vSlice,other,,,20,1,ch2_holding,False,True,False,False,False,0,,False,0,659.0,53.0,Ethereum,yes,partial,tvl_defillama
 37322,VSN,Vision,other,,,0,0,,False,False,False,False,False,0,,False,0,3652.0,292.0,Ethereum,yes,not_started,ch2_holding(3652h) | ch3_governance | tvl_defillama
 2267,WABI,Wabi,other,Payments,,0,0,,False,False,False,False,False,0,,False,0,10280.0,822.0,Ethereum,yes,not_started,ch2_holding(10280h) | ch3_governance | tvl_defillama
-24760,WBETH,Wrapped Beacon ETH,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,7114.0,569.0,Ethereum,yes,not_started,ch2_holding(7114h) | ch3_governance | tvl_defillama
+24760,WBETH,Wrapped Beacon ETH,other,Liquid Staking,,23,1,ch2_holding,False,True,False,False,False,0,,False,0,7114.0,569.0,Ethereum,yes,partial,tvl_defillama
 7192,WBNB,Wrapped BNB,other,Privacy;Wrapped Asset,,0,0,,False,False,False,False,False,0,,False,0,16445.0,1316.0,Ethereum,yes,not_started,ch2_holding(16445h) | ch3_governance | tvl_defillama
 5233,WCC,WinCash,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 33469,WCHZ,Wrapped Chiliz,other,Wrapped Asset,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1429,13 +1429,13 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 2511,WPR,WePower,other,,,0,0,,False,False,False,False,False,0,,False,0,51334.0,4107.0,Ethereum,yes,not_started,ch2_holding(51334h) | ch3_governance | tvl_defillama
 5161,WRX,WazirX,other,Exchange Token,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 982,WS,Woodshares,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-12409,WSTETH,Lido wstETH,other,Liquid Staking;Restaking,,0,0,,False,False,False,False,False,0,,False,0,37793.0,3023.0,Ethereum,yes,not_started,ch2_holding(37793h) | ch3_governance | tvl_defillama
+12409,WSTETH,Lido wstETH,other,Liquid Staking;Restaking,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,37793.0,3023.0,Ethereum,yes,partial,tvl_defillama
 1925,WTC,Waltonchain,coin,IoT,unknown,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[unknown] | pq_nvtgl
 19076,WVLX,Wrapped Velas,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2892,WWB,Wowbit,other,,,0,0,,False,False,False,False,False,0,,False,0,,,Optimism,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 35930,WXTZ,Wrapped XTZ,other,Wrapped Asset,,8,1,ch2_holding,False,True,False,False,False,0,,False,0,275.0,22.0,Ethereum,yes,partial,tvl_defillama
 4220,XAC,General Attention Currency,other,Payments,,14,1,ch2_holding,False,True,False,False,False,0,,False,0,505.0,40.0,Ethereum,yes,partial,tvl_defillama
-28933,XAI,Xai,other,Canonical Bridge;Cross Chain Bridge;Gaming,,0,0,,False,False,False,False,False,0,,False,0,51656.0,4132.0,Arbitrum,yes,not_started,ch2_holding(51656h) | ch3_governance | tvl_defillama
+28933,XAI,Xai,other,Canonical Bridge;Cross Chain Bridge;Gaming,,29,1,ch2_holding,False,True,False,False,False,0,,True,28,51656.0,4132.0,Arbitrum,yes,complete,COMPLETE
 38481,XAN,Anoma,other,DePIN;Privacy,,9,2,ch1_staking+ch2_holding,True,True,False,False,False,0,,False,0,12963.0,1037.0,Ethereum,yes,partial,tvl_defillama
 5176,XAUt,Tether Gold,other,RWA;Tokenized Asset,,0,0,,False,False,False,False,False,0,,False,0,55084.0,4407.0,Ethereum,yes,not_started,ch2_holding(55084h) | ch3_governance | tvl_defillama
 3815,XBASE,Eterbase Utility Token,other,,,1,1,ch2_holding,False,True,False,False,False,0,,False,0,119.0,10.0,Ethereum,yes,partial,tvl_defillama
@@ -1481,15 +1481,15 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 2047,ZSC,Zeusshield,other,,,0,0,,False,False,False,False,False,0,,False,0,60081.0,4806.0,Ethereum,yes,not_started,ch2_holding(60081h) | ch3_governance | tvl_defillama
 3458,ZT,ZBG Token,other,,,0,0,,False,False,False,False,False,0,,False,0,42535.0,3403.0,Ethereum,yes,not_started,ch2_holding(42535h) | ch3_governance | tvl_defillama
 35293,asBNB,Aster asBNB,other,Liquid Staking;Restaking,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
-33981,bUSD0,Bond USD0,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,3008.0,241.0,Ethereum,yes,not_started,ch2_holding(3008h) | ch3_governance | tvl_defillama
-21535,cbETH,Coinbase Wrapped Staked ETH,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,54640.0,4371.0,Ethereum,yes,not_started,ch2_holding(54640h) | ch3_governance | tvl_defillama
+33981,bUSD0,Bond USD0,other,Liquid Staking,,9,1,ch2_holding,False,True,False,False,False,0,,False,0,3008.0,241.0,Ethereum,yes,partial,tvl_defillama
+21535,cbETH,Coinbase Wrapped Staked ETH,other,Liquid Staking,,17,1,ch2_holding,False,True,False,False,False,0,,False,0,54640.0,4371.0,Ethereum,yes,partial,tvl_defillama
 8028,mVIXY,Mirrored ProShares VIX,other,,,1,1,ch2_holding,False,True,False,False,False,0,,False,0,102.0,8.0,Ethereum,yes,partial,tvl_defillama
 28476,osETH,StakeWise Staked ETH,other,Liquid Staking,,9,1,ch2_holding,False,True,False,False,False,0,,False,0,1845.0,148.0,Ethereum,yes,partial,tvl_defillama
 18523,sAVAX,BENQI Liquid Staked AVAX,other,Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,,,Avalanche,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 8085,stETH,Lido Staked ETH,other,Liquid Staking;Restaking,,0,0,,False,False,False,False,False,0,,False,0,614874.0,49190.0,Ethereum,yes,not_started,ch2_holding(614874h) | ch3_governance | tvl_defillama
 7960,vXVS,Venus XVS,other,,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 32554,wIOTA,wIOTA,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-28695,weETH,Wrapped eETH,other,Privacy;Restaking;Wrapped Asset,,0,0,,False,False,False,False,False,0,,False,0,27433.0,2195.0,Ethereum,yes,not_started,ch2_holding(27433h) | ch3_governance | tvl_defillama
+28695,weETH,Wrapped eETH,other,Privacy;Restaking;Wrapped Asset,,12,1,ch2_holding,False,True,False,False,False,0,,False,0,27433.0,2195.0,Ethereum,yes,partial,tvl_defillama
 38590,币安人生,币安人生,other,Meme,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 8104,1INCH,1inch,token,DEX Aggregator;DEX,,66,3,ch1_staking+ch2_holding|ch1_staking+ch2_holding+ch3_voting,True,True,True,False,True,38,defillama_aggregators,True,64,111505.0,8920.0,Ethereum,yes,complete,COMPLETE
 36462,A,Vaulta,token,Payments;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1500,15 +1500,15 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 28674,ACE,Fusionist,token,Farm;Gaming,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 33566,ACT,Act I : The AI Prophecy,token,Farm;AI/Big Data;Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 24796,ADF,Art de Finance,token,Yield,,4,1,ch2_holding,False,True,False,False,False,0,,True,29,23384.0,1871.0,Polygon,yes,complete,COMPLETE
-1768,ADX,AdEx,token,Derivatives;Dexs;AI Agents;AI/Big Data;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,4886.0,391.0,Ethereum,yes,not_started,ch2_holding(4886h) | ch3_governance | tvl_defillama
+1768,ADX,AdEx,token,Derivatives;Dexs;AI Agents;AI/Big Data;Smart Contract Platform,,64,1,ch2_holding,False,True,False,False,False,0,,False,0,4886.0,391.0,Ethereum,yes,partial,tvl_defillama
 3637,AERGO,Aergo,token,Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,9006.0,720.0,Ethereum,yes,not_started,ch2_holding(9006h) | ch3_governance | tvl_defillama
 29270,AERO,Aerodrome Finance,token,Dexs;Launchpad,,26,1,ch1_staking,True,False,False,False,False,0,,True,34,,,Base,yes,complete,COMPLETE
-36458,AETHWETH,Aave Ethereum WETH,token,Yield,,0,0,,False,False,False,False,False,0,,False,0,45976.0,3678.0,Ethereum,yes,not_started,ch2_holding(45976h) | ch3_governance | tvl_defillama
-29676,AEVO,Aevo,token,Derivatives;Options;DEX;Layer-2;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,45552.0,3644.0,Ethereum,yes,not_started,ch2_holding(45552h) | ch3_governance | tvl_defillama
-2424,AGIX,SingularityNET,token,Staking Pool;AI/Big Data;Payments,,0,0,,False,False,False,False,False,0,,False,0,52790.0,4223.0,Ethereum,yes,not_started,ch2_holding(52790h) | ch3_governance | tvl_defillama
+36458,AETHWETH,Aave Ethereum WETH,token,Yield,,8,1,ch2_holding,False,True,False,False,False,0,,False,0,45976.0,3678.0,Ethereum,yes,partial,tvl_defillama
+29676,AEVO,Aevo,token,Derivatives;Options;DEX;Layer-2;Perpetuals,,27,1,ch2_holding,False,True,False,False,False,0,,True,38,45552.0,3644.0,Ethereum,yes,complete,COMPLETE
+2424,AGIX,SingularityNET,token,Staking Pool;AI/Big Data;Payments,,39,1,ch2_holding,False,True,False,False,False,0,,False,0,52790.0,4223.0,Ethereum,yes,partial,tvl_defillama
 4134,AKRO,Kaon,token,Yield,,51,1,ch2_holding,False,True,False,False,False,0,,True,70,19069.0,1526.0,Ethereum,yes,complete,COMPLETE
 8613,ALCX,Alchemix,token,Synthetics;Yield,,60,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,55,14502.0,1160.0,Ethereum,yes,complete,COMPLETE
-16876,ALI,Artificial Liquid Intelligence,token,Dexs;AI Agents;AI/Big Data;NFT;Gaming;Identity;Interoperability;Meme;Metaverse,,0,0,,False,False,False,False,False,0,,False,0,15927.0,1274.0,Ethereum,yes,not_started,ch2_holding(15927h) | ch3_governance | tvl_defillama
+16876,ALI,Artificial Liquid Intelligence,token,Dexs;AI Agents;AI/Big Data;NFT;Gaming;Identity;Interoperability;Meme;Metaverse,,40,1,ch2_holding,False,True,False,False,False,0,,False,0,15927.0,1274.0,Ethereum,yes,partial,tvl_defillama
 8766,ALICE,MyNeighborAlice,token,Services;NFT;Gaming;Metaverse,,0,0,,False,False,False,False,False,0,,False,0,8951.0,716.0,Ethereum,yes,not_started,ch2_holding(8951h) | ch3_governance | tvl_defillama
 7232,ALPHA,Stella,token,Lending;Leveraged Farming;Liquid Staking;Prediction Market;Yield Aggregator;Yield,,54,1,ch2_holding,False,True,False,False,False,0,,True,36,11551.0,924.0,Ethereum,yes,complete,COMPLETE
 10897,ALT,Alitas,token,Derivatives;Developer Tools;Dexs;Launchpad,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1520,23 +1520,23 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 5892,ANY,Anyswap,token,DEX,,15,1,ch2_holding,False,True,False,False,False,0,,False,0,1759.0,141.0,Ethereum,yes,partial,tvl_defillama
 18876,APE,ApeCoin,token,Yield;NFT;Gaming;Meme;Metaverse,,51,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,20,188459.0,15077.0,Ethereum,yes,complete,COMPLETE
 473,APEX,ApexCoin,token,Derivatives;Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-19843,APEX,ApeX Protocol,token,Derivatives;Dexs;DEX;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,5857.0,469.0,Ethereum,yes,not_started,ch2_holding(5857h) | ch3_governance | tvl_defillama
+19843,APEX,ApeX Protocol,token,Derivatives;Dexs;DEX;Perpetuals,,9,1,ch2_holding,False,True,False,False,False,0,,True,46,5857.0,469.0,Ethereum,yes,complete,COMPLETE
 7737,API3,API3,token,Risk Curators,,52,2,ch1_staking+ch2_holding,True,True,False,False,False,0,,True,52,23890.0,1911.0,Ethereum,yes,complete,COMPLETE
 16334,APX,APX,token,Derivatives;DEX,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 11841,ARB,Arbitrum,token,Canonical Bridge;Layer-2;Modular Blockchain,,39,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,59,63920.0,5114.0,Ethereum,yes,complete,COMPLETE
 1467,ARC,Arcade Token,token,DEX Aggregator;Dexs;Services,,9,1,ch2_holding,False,True,False,False,False,0,,False,0,192.0,15.0,Ethereum,yes,partial,tvl_defillama
 34926,ARC,AI Rig Complex,token,DEX Aggregator;Dexs;Services;AI Agents;AI/Big Data,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 661,ARCH,ARCHcoin,token,Leveraged Farming,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-27565,ARKM,Arkham,token,CEX;Services;AI/Big Data;Derivatives;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,39791.0,3183.0,Ethereum,yes,not_started,ch2_holding(39791h) | ch3_governance | tvl_defillama
+27565,ARKM,Arkham,token,CEX;Services;AI/Big Data;Derivatives;Perpetuals,,28,1,ch2_holding,False,True,False,False,False,0,,False,0,39791.0,3183.0,Ethereum,yes,partial,tvl_defillama
 2058,AST,AirSwap,token,DEX Aggregator;Dexs;DEX;Payments;Smart Contract Platform,,0,0,,False,False,False,False,True,10,defillama_dexs,False,0,12163.0,973.0,Ethereum,yes,partial,ch2_holding(12163h) | ch3_governance
 36341,ASTER,Aster,token,Basis Trading;Bridge;CeDeFi;Derivatives;Dexs;Yield;DEX;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 10188,ATA,Automata Network,token,Yield Aggregator;Modular Blockchain,,54,1,ch2_holding,False,True,False,False,False,0,,False,0,2600.0,208.0,Ethereum,yes,partial,tvl_defillama
 30083,ATH,Aethir,token,Derivatives;Developer Tools;Yield;AI/Big Data;DePIN,,24,1,ch2_holding,False,True,False,False,False,0,,True,8,54004.0,4320.0,Ethereum,yes,complete,COMPLETE
-2015,ATM,ATMChain,token,Options,,0,0,,False,False,False,False,False,0,,False,0,29064.0,2325.0,Ethereum,yes,not_started,ch2_holding(29064h) | ch3_governance | tvl_defillama
+2015,ATM,ATMChain,token,Options,,13,1,ch2_holding,False,True,False,False,False,0,,False,0,29064.0,2325.0,Ethereum,yes,partial,tvl_defillama
 8602,AUCTION,Bounce Token,token,Launchpad,,30,1,ch2_holding,False,True,False,False,False,0,,True,34,9304.0,744.0,Ethereum,yes,complete,COMPLETE
 7455,AUDIO,Audius,token,,,0,0,,False,False,False,False,False,0,,False,0,37611.0,3009.0,Ethereum,yes,not_started,ch2_holding(37611h) | ch3_governance | tvl_defillama
 14803,AURORA,Aurora,token,Farm,,53,1,ch2_holding,False,True,False,False,False,0,,True,45,7640.0,611.0,Ethereum,yes,complete,COMPLETE
-2559,AUTO,Cube,token,Yield Aggregator,,0,0,,False,False,False,False,False,0,,False,0,11209.0,897.0,Ethereum,yes,not_started,ch2_holding(11209h) | ch3_governance | tvl_defillama
+2559,AUTO,Cube,token,Yield Aggregator,,31,1,ch2_holding,False,True,False,False,False,0,,False,0,11209.0,897.0,Ethereum,yes,partial,tvl_defillama
 32376,AVAIL,Avail,token,Privacy;Zero Knowledge,,0,0,,False,False,False,False,False,0,,False,0,3438.0,275.0,Ethereum,yes,not_started,ch2_holding(3438h) | ch3_governance | tvl_defillama
 38299,AVNT,Avantis,token,Derivatives;DEX;Perpetuals,,9,1,ch2_holding,False,True,False,False,False,0,,True,28,,,Base,yes,complete,COMPLETE
 4006,AWE,AWE,token,Derivatives;Payments,,13,1,ch3_delegation,False,False,False,True,False,0,,False,0,,,Base,yes,partial,tvl_defillama
@@ -1548,7 +1548,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 5728,BAL,Balancer,token,Dexs;DEX;Yield,,65,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,76,48758.0,3901.0,Ethereum,yes,complete,COMPLETE
 8497,BANANA,ApeSwap,token,Telegram Bot;DEX;Yield,,16,1,ch2_holding,False,True,False,False,False,0,,False,0,212.0,17.0,Ethereum,yes,partial,tvl_defillama
 4679,BAND,Band,token,,,0,0,,False,False,False,False,False,0,,False,0,34707.0,2777.0,Ethereum,yes,not_started,ch2_holding(34707h) | ch3_governance | tvl_defillama
-38408,BARD,Lombard,token,Bridge;Onchain Capital Allocator;Restaked BTC,,0,0,,False,False,False,False,False,0,,False,0,16698.0,1336.0,Ethereum,yes,not_started,ch2_holding(16698h) | ch3_governance | tvl_defillama
+38408,BARD,Lombard,token,Bridge;Onchain Capital Allocator;Restaked BTC,,9,1,ch2_holding,False,True,False,False,False,0,,True,21,16698.0,1336.0,Ethereum,yes,complete,COMPLETE
 33834,BBSOL,Bybit Staked SOL,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 28298,BEAM,Beam,token,Chain;Gaming,,0,0,,False,False,False,False,False,0,,False,0,48392.0,3871.0,Ethereum,yes,not_started,ch2_holding(48392h) | ch3_governance | tvl_defillama
 8353,BETH,Beacon ETH,token,,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1564,8 +1564,8 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 1727,BNT,Bancor,token,Dexs;DEX;Payments,,108,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,67,38531.0,3082.0,Ethereum,yes,complete,COMPLETE
 4217,BOA,BOSagora,token,Metaverse,,0,0,,False,False,False,False,False,0,,False,0,49.0,4.0,Ethereum,yes,not_started,ch2_holding(49h) | ch3_governance | tvl_defillama
 11865,BONE,Bone ShibaSwap,token,Dexs;Farm;Layer-2;Meme,,33,1,ch3_delegation,False,False,False,True,False,0,,True,59,93107.0,7449.0,Ethereum,yes,complete,COMPLETE
-3475,BOX,BOX Token,token,Dexs;Indexes,,0,0,,False,False,False,False,False,0,,False,0,20306.0,1624.0,Ethereum,yes,not_started,ch2_holding(20306h) | ch3_governance | tvl_defillama
-2945,BOX,ContentBox,token,Dexs;Indexes,,0,0,,False,False,False,False,False,0,,False,0,30438.0,2435.0,Ethereum,yes,not_started,ch2_holding(30438h) | ch3_governance | tvl_defillama
+3475,BOX,BOX Token,token,Dexs;Indexes,,22,1,ch2_holding,False,True,False,False,False,0,,False,0,20306.0,1624.0,Ethereum,yes,partial,tvl_defillama
+2945,BOX,ContentBox,token,Dexs;Indexes,,16,1,ch2_holding,False,True,False,False,False,0,,False,0,30438.0,2435.0,Ethereum,yes,partial,tvl_defillama
 3653,BRC,Baer Chain,token,Yield,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 11079,BRISE,Bitgert,token,Yield,,28,1,ch2_holding,False,True,False,False,False,0,,True,47,3754.0,300.0,Ethereum,yes,complete,COMPLETE
 1121,BST,BitStone,token,Farm;Yield,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1575,17 +1575,17 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 9486,BTCT,Bitcoin TRC20,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 31503,BWB,Bitget Wallet Token,token,,,1,1,ch2_holding,False,True,False,False,False,0,,False,0,496.0,40.0,Ethereum,yes,partial,tvl_defillama
 5810,BZRX,bZx Protocol,token,DEX;Smart Contract Platform,,26,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,53,5051.0,404.0,Ethereum,yes,complete,COMPLETE
-10407,BabyDoge,Baby Doge Coin,token,Bridge;Dexs;AI/Big Data;NFT;Gaming;Meme;Payments;RWA,,0,0,,False,False,False,False,False,0,,False,0,28177.0,2254.0,Ethereum,yes,not_started,ch2_holding(28177h) | ch3_governance | tvl_defillama
+10407,BabyDoge,Baby Doge Coin,token,Bridge;Dexs;AI/Big Data;NFT;Gaming;Meme;Payments;RWA,,48,1,ch2_holding,False,True,False,False,False,0,,True,44,28177.0,2254.0,Ethereum,yes,complete,COMPLETE
 10903,C98,Coin98,token,Farm;Derivatives;Perpetuals,,59,1,ch2_holding,False,True,False,False,False,0,,True,14,5323.0,426.0,Ethereum,yes,complete,COMPLETE
 7186,CAKE,PancakeSwap,token,Derivatives;Dexs;Luck Games;Options;Prediction Market;Reserve Currency;NFT;DEX;Perpetuals;Privacy;Smart Contract Platform;Yield,,39,2,ch1_staking+ch2_holding|ch2_holding,True,True,False,False,False,0,,True,62,20586.0,1647.0,Ethereum,yes,complete,COMPLETE
 1573,CASINO,Casino,token,Dexs,,0,0,,False,False,False,False,False,0,,True,54,,,non-EVM,no,partial,ch2_holding | ch3_governance
-1882,CAT,BlockCAT,token,Yield Aggregator,,0,0,,False,False,False,False,False,0,,False,0,4398.0,352.0,Ethereum,yes,not_started,ch2_holding(4398h) | ch3_governance | tvl_defillama
+1882,CAT,BlockCAT,token,Yield Aggregator,,12,1,ch2_holding,False,True,False,False,False,0,,False,0,4398.0,352.0,Ethereum,yes,partial,tvl_defillama
 32724,CAT,Simon's Cat,token,Yield Aggregator;Meme,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 18031,CCD,Concordium,token,Identity;Layer-1;Privacy;Smart Contract Platform;Zero Knowledge,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-2700,CEL,Celsius,token,Yield Aggregator,,0,0,,False,False,False,False,False,0,,False,0,30186.0,2415.0,Ethereum,yes,not_started,ch2_holding(30186h) | ch3_governance | tvl_defillama
+2700,CEL,Celsius,token,Yield Aggregator,,54,1,ch2_holding,False,True,False,False,False,0,,False,0,30186.0,2415.0,Ethereum,yes,partial,tvl_defillama
 793,CELL,SolarFarm,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 3814,CELR,Celer Network,token,Bridge;DePIN;Interoperability;Privacy;Zero Knowledge,,85,1,ch2_holding,False,True,False,False,False,0,,True,54,22899.0,1832.0,Ethereum,yes,complete,COMPLETE
-6748,CFG,Centrifuge,token,RWA;RWA Lending,,0,0,,False,False,False,False,False,0,,False,0,10969.0,878.0,Ethereum,yes,not_started,ch2_holding(10969h) | ch3_governance | tvl_defillama
+6748,CFG,Centrifuge,token,RWA;RWA Lending,,15,1,ch2_holding,False,True,False,False,False,0,,True,15,10969.0,878.0,Ethereum,yes,complete,COMPLETE
 23054,CHEEL,Cheelee,token,Farm,,32,1,ch3_delegation,False,False,False,True,False,0,,False,0,,,BSC,yes,partial,tvl_defillama
 33280,CHEEMS,Cheems (cheems.pet),token,Yield;Meme,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 8534,CHEX,Chintai,token,RWA,,0,0,,False,False,False,False,False,0,,False,0,9474.0,758.0,Ethereum,yes,not_started,ch2_holding(9474h) | ch3_governance | tvl_defillama
@@ -1595,40 +1595,40 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 3992,COTI,COTI,token,Layer-2;Privacy,,0,0,,False,False,False,False,False,0,,False,0,29219.0,2338.0,Ethereum,yes,not_started,ch2_holding(29219h) | ch3_governance | tvl_defillama
 788,COVAL,Circuits of Value,token,NFT,,0,0,,False,False,False,False,False,0,,False,0,12101.0,968.0,Ethereum,yes,not_started,ch2_holding(12101h) | ch3_governance | tvl_defillama
 19269,COW,CoW Protocol,token,Algo-Stables;DEX Aggregator;Launchpad;Yield,,11,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,False,0,7056.0,564.0,Ethereum,yes,partial,tvl_defillama
-12573,CPOOL,Clearpool,token,RWA;Uncollateralized Lending,,0,0,,False,False,False,False,False,0,,False,0,22668.0,1813.0,Ethereum,yes,not_started,ch2_holding(22668h) | ch3_governance | tvl_defillama
-3367,CRD,CryptalDash,token,Lending,,0,0,,False,False,False,False,False,0,,False,0,3939.0,315.0,Ethereum,yes,not_started,ch2_holding(3939h) | ch3_governance | tvl_defillama
+12573,CPOOL,Clearpool,token,RWA;Uncollateralized Lending,,18,1,ch2_holding,False,True,False,False,False,0,,True,50,22668.0,1813.0,Ethereum,yes,complete,COMPLETE
+3367,CRD,CryptalDash,token,Lending,,4,1,ch2_holding,False,True,False,False,False,0,,False,0,3939.0,315.0,Ethereum,yes,partial,tvl_defillama
 4484,CRN,ChronoCoin,token,Dexs;Yield Aggregator,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 6538,CRV,Curve DAO Token,token,CDP;Dexs;Lending;DEX;Yield,,69,3,ch1_staking+ch2_holding|ch1_staking+ch2_holding+ch3_voting,True,True,True,False,False,0,,True,76,100379.0,8030.0,Ethereum,yes,complete,COMPLETE
 1867,CTR,Centra,token,Governance Incentives;Yield,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 6669,CVP,PowerPool,token,Indexes,,44,1,ch3_delegation,False,False,False,True,False,0,,False,0,6085.0,487.0,Ethereum,yes,partial,tvl_defillama
 9903,CVX,Convex Finance,token,Yield,,56,3,ch1_staking+ch2_holding+ch3_voting,True,True,True,False,False,0,,True,61,31170.0,2494.0,Ethereum,yes,complete,COMPLETE
 24781,CYBER,Cyber,token,Chain;SoFi;NFT;Interoperability;Layer-2;Smart Contract Platform,,14,1,ch3_delegation,False,False,False,True,False,0,,False,0,6986.0,559.0,Ethereum,yes,partial,tvl_defillama
-4862,DAD,DAD,token,Yield,,0,0,,False,False,False,False,False,0,,False,0,7051.0,564.0,Ethereum,yes,not_started,ch2_holding(7051h) | ch3_governance | tvl_defillama
+4862,DAD,DAD,token,Yield,,40,1,ch2_holding,False,True,False,False,False,0,,False,0,7051.0,564.0,Ethereum,yes,partial,tvl_defillama
 1253,DAO,The DAO,token,Dexs;Services,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-8420,DAO,DAO Maker,token,Dexs;Services,,0,0,,False,False,False,False,False,0,,False,0,17422.0,1394.0,Ethereum,yes,not_started,ch2_holding(17422h) | ch3_governance | tvl_defillama
+8420,DAO,DAO Maker,token,Dexs;Services,,48,1,ch2_holding,False,True,False,False,False,0,,False,0,17422.0,1394.0,Ethereum,yes,partial,tvl_defillama
 7228,DDX,DerivaDAO,token,Derivatives;DEX,,32,2,ch2_holding+ch3_delegation,False,True,False,True,False,0,,True,63,2969.0,238.0,Ethereum,yes,complete,COMPLETE
 33391,DEEP,DeepBook Protocol,token,Dexs;Launchpad,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-5429,DEP,DEAPcoin,token,Dexs;NFT;DePIN;Gaming;Metaverse,,0,0,,False,False,False,False,False,0,,False,0,19457.0,1557.0,Ethereum,yes,not_started,ch2_holding(19457h) | ch3_governance | tvl_defillama
+5429,DEP,DEAPcoin,token,Dexs;NFT;DePIN;Gaming;Metaverse,,48,1,ch2_holding,False,True,False,False,False,0,,False,0,19457.0,1557.0,Ethereum,yes,partial,tvl_defillama
 603,DEX,InstantDEX,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 3515,DEX,DEX,token,Dexs,,25,1,ch2_holding,False,True,False,False,False,0,,False,0,404.0,32.0,Ethereum,yes,partial,tvl_defillama
 7326,DEXE,DeXe,token,AI/Big Data,,0,0,,False,False,False,False,False,0,,False,0,3589.0,287.0,Ethereum,yes,not_started,ch2_holding(3589h) | ch3_governance | tvl_defillama
-2772,DGTX,Digitex,token,Exchange Token;Derivatives,,0,0,,False,False,False,False,False,0,,False,0,14616.0,1169.0,Ethereum,yes,not_started,ch2_holding(14616h) | ch3_governance | tvl_defillama
+2772,DGTX,Digitex,token,Exchange Token;Derivatives,,6,1,ch2_holding,False,True,False,False,False,0,,False,0,14616.0,1169.0,Ethereum,yes,partial,tvl_defillama
 6138,DIA,DIA,token,AI/Big Data;RWA;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,24830.0,1986.0,Ethereum,yes,not_started,ch2_holding(24830h) | ch3_governance | tvl_defillama
 5741,DMG,DMM: Governance,token,,,5,1,ch3_delegation,False,False,False,True,False,0,,False,0,7690.0,615.0,Ethereum,yes,partial,tvl_defillama
 5234,DNA,Metaverse Dualchain Network Architecture,token,Algo-Stables;Farm;Yield,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2675,DOCK,Dock,token,AI/Big Data;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-7224,DODO,DODO,token,DEX Aggregator;Dexs;DEX,,0,0,,False,False,False,False,False,0,,False,0,15823.0,1266.0,Ethereum,yes,not_started,ch2_holding(15823h) | ch3_governance | tvl_defillama
+7224,DODO,DODO,token,DEX Aggregator;Dexs;DEX,,63,1,ch2_holding,False,True,False,False,False,0,,True,67,15823.0,1266.0,Ethereum,yes,complete,COMPLETE
 27966,DORA,Dora Factory,token,,,18,1,ch2_holding,False,True,False,False,False,0,,False,0,1884.0,151.0,Ethereum,yes,partial,tvl_defillama
 814,DOT,Dotcoin,token,Foundation;Liquid Staking;Yield,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-2110,DOV,Dovu,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,7523.0,602.0,Ethereum,yes,not_started,ch2_holding(7523h) | ch3_governance | tvl_defillama
+2110,DOV,Dovu,token,Dexs,,41,1,ch2_holding,False,True,False,False,False,0,,False,0,7523.0,602.0,Ethereum,yes,partial,tvl_defillama
 1295,DRACO,DT Token,token,Algo-Stables;Farm,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-2593,DRG,Dragon Coins,token,Dexs;Payments,,0,0,,False,False,False,False,False,0,,False,0,3548.0,284.0,Ethereum,yes,not_started,ch2_holding(3548h) | ch3_governance | tvl_defillama
+2593,DRG,Dragon Coins,token,Dexs;Payments,,18,1,ch2_holding,False,True,False,False,False,0,,False,0,3548.0,284.0,Ethereum,yes,partial,tvl_defillama
 31278,DRIFT,Drift,token,Derivatives;Dexs;Liquid Staking;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 10759,DVF,rhino.fi,token,,,32,1,ch2_holding,False,True,False,False,False,0,,False,0,1108.0,89.0,Ethereum,yes,partial,tvl_defillama
 3139,DX,DxChain Token,token,Launchpad;AI/Big Data;Payments,,0,0,,False,False,False,False,False,0,,False,0,10845.0,868.0,Ethereum,yes,not_started,ch2_holding(10845h) | ch3_governance | tvl_defillama
 33696,EBTC,ether.fi Staked BTC,token,,,10,1,ch2_holding,False,True,False,False,False,0,,False,0,2121.0,170.0,Ethereum,yes,partial,tvl_defillama
 5274,EDG,Edgeware,token,Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
-39720,EDGE,edgeX,token,Bridge;DEX Aggregator;Derivatives;Dexs;Yield;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,15779.0,1262.0,Ethereum,yes,not_started,ch2_holding(15779h) | ch3_governance | tvl_defillama
+39720,EDGE,edgeX,token,Bridge;DEX Aggregator;Derivatives;Dexs;Yield;Perpetuals,,3,1,ch2_holding,False,True,False,False,False,0,,True,22,15779.0,1262.0,Ethereum,yes,complete,COMPLETE
 2057,EDO,Eidoo,token,,,0,0,,False,False,False,False,False,0,,False,0,8005.0,640.0,Ethereum,yes,not_started,ch2_holding(8005h) | ch3_governance | tvl_defillama
 30494,EIGEN,EigenCloud,token,Restaking,,15,1,ch3_delegation,False,False,False,True,False,0,,True,36,223377.0,17870.0,Ethereum,yes,complete,COMPLETE
 9436,ELON,Dogelon Mars,token,Canonical Bridge;Lending;Meme;Payments,,0,0,,False,False,False,False,False,0,,False,0,163818.0,13105.0,Ethereum,yes,not_started,ch2_holding(163818h) | ch3_governance | tvl_defillama
@@ -1638,7 +1638,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 8938,EPS,Ellipsis,token,Dexs;DEX,,53,1,ch2_holding,False,True,False,False,True,24,defillama_dexs,True,63,,,BSC,yes,complete,COMPLETE
 2165,ERC20,ERC20,token,NFT;Payments;Meme;Yield,,0,0,,False,False,False,False,False,0,,False,0,103063.0,8245.0,Ethereum,yes,not_started,ch2_holding(103063h) | ch3_governance | tvl_defillama
 7033,ESD,Empty Set Dollar,token,,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,1819.0,146.0,Ethereum,yes,partial,tvl_defillama
-11156,ETHDYDX,dYdX (ethDYDX),token,Derivatives;Privacy;Zero Knowledge,,0,0,,False,False,False,False,False,0,,False,0,45249.0,3620.0,Ethereum,yes,not_started,ch2_holding(45249h) | ch3_governance | tvl_defillama
+11156,ETHDYDX,dYdX (ethDYDX),token,Derivatives;Privacy;Zero Knowledge,,49,1,ch2_holding,False,True,False,False,False,0,,True,67,45249.0,3620.0,Ethereum,yes,complete,COMPLETE
 14280,EUL,Euler,token,Dexs;Lending;Risk Curators,,12,1,ch3_delegation,False,False,False,True,False,0,,True,54,5161.0,413.0,Ethereum,yes,complete,COMPLETE
 33342,EVA,EverValue Coin,token,,,0,0,,False,False,False,False,False,0,,False,0,8066.0,645.0,Arbitrum,yes,not_started,ch2_holding(8066h) | ch3_governance | tvl_defillama
 2778,EXC,Eximchain,token,Dexs,,6,1,ch2_holding,False,True,False,False,False,0,,False,0,2649.0,212.0,Ethereum,yes,partial,tvl_defillama
@@ -1655,12 +1655,12 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 6953,FRAX,Frax (prev. FXS),token,Algo-Stables;Dexs;Lending;Liquid Staking;RWA;Services,,54,3,ch1_staking+ch2_holding|ch1_staking+ch2_holding+ch3_voting,True,True,True,False,False,0,,True,66,17726.0,1418.0,Ethereum,yes,complete,COMPLETE
 2530,FSN,Fusion,token,Payments,,1,1,ch2_holding,False,True,False,False,False,0,,False,0,212.0,17.0,Ethereum,yes,partial,tvl_defillama
 3840,FST,1irstcoin,token,Derivatives,,35,1,ch2_holding,False,True,False,False,False,0,,False,0,2160.0,173.0,Ethereum,yes,partial,tvl_defillama
-4195,FTT,FTX Token,token,Exchange Token;Derivatives,,0,0,,False,False,False,False,False,0,,False,0,31385.0,2511.0,Ethereum,yes,not_started,ch2_holding(31385h) | ch3_governance | tvl_defillama
+4195,FTT,FTX Token,token,Exchange Token;Derivatives,,81,1,ch2_holding,False,True,False,False,False,0,,False,0,31385.0,2511.0,Ethereum,yes,partial,tvl_defillama
 2120,FUEL,Etherparty,token,Bridge;Chain;Yield;Payments,,0,0,,False,False,False,False,False,0,,False,0,62538.0,5003.0,Ethereum,yes,not_started,ch2_holding(62538h) | ch3_governance | tvl_defillama
 1757,FUN,FUNToken,token,Dexs;Gaming;Payments,,0,0,,False,False,False,False,False,0,,False,0,81523.0,6522.0,Ethereum,yes,not_started,ch2_holding(81523h) | ch3_governance | tvl_defillama
 671,GAIA,GAIA,token,Reserve Currency,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1785,GAS,Gas,token,Dexs;Payments;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-2726,GEN,DAOstack,token,Farm,,0,0,,False,False,False,False,False,0,,False,0,7372.0,590.0,Ethereum,yes,not_started,ch2_holding(7372h) | ch3_governance | tvl_defillama
+2726,GEN,DAOstack,token,Farm,,6,1,ch2_holding,False,True,False,False,False,0,,False,0,7372.0,590.0,Ethereum,yes,partial,tvl_defillama
 39841,GENIUS,Genius Terminal,token,Derivatives;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 11857,GMX,GMX,token,Derivatives;Dexs;DEX;Perpetuals,,44,3,ch1_staking+ch2_holding|ch1_staking+ch2_holding+ch3_voting,True,True,True,False,False,0,,True,57,299448.0,23956.0,Arbitrum,yes,complete,COMPLETE
 13663,GNS,Gains Network,token,Derivatives,,38,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,54,20614.0,1649.0,Polygon,yes,complete,COMPLETE
@@ -1677,12 +1677,12 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 22461,HFT,Hashflow,token,DEX Aggregator;NFT;DEX;Gaming;Interoperability,,39,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,True,27,defillama_dexs,True,50,16154.0,1292.0,Ethereum,yes,complete,COMPLETE
 11232,HIGH,Highstreet,token,Gaming;Metaverse,,0,0,,False,False,False,False,False,0,,False,0,7537.0,603.0,Ethereum,yes,not_started,ch2_holding(7537h) | ch3_governance | tvl_defillama
 22850,HONEY,Hivemapper,token,DePIN;Dexs;Liquid Staking;NFT Marketplace;IoT,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-2430,HOT,Hydro Protocol,token,DEX,,0,0,,False,False,False,False,False,0,,False,0,26439.0,2115.0,Ethereum,yes,not_started,ch2_holding(26439h) | ch3_governance | tvl_defillama
+2430,HOT,Hydro Protocol,token,DEX,,36,1,ch2_holding,False,True,False,False,False,0,,False,0,26439.0,2115.0,Ethereum,yes,partial,tvl_defillama
 2176,HST,Decision Token,token,Launchpad;Prediction Market,,0,0,,False,False,False,False,False,0,,False,0,4340.0,347.0,Ethereum,yes,not_started,ch2_holding(4340h) | ch3_governance | tvl_defillama
 3748,HXRO,Hxro,token,Derivatives,,24,1,ch2_holding,False,True,False,False,False,0,,True,40,6680.0,534.0,Ethereum,yes,partial,
 7726,ICHI,ICHI,token,Liquidity Manager;Yield,,30,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,60,652.0,52.0,Ethereum,yes,complete,COMPLETE
 2099,ICX,ICON,token,Interoperability;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-3928,IDEX,IDEX,token,Derivatives;Dexs;DEX,,0,0,,False,False,False,False,False,0,,False,0,16089.0,1287.0,Ethereum,yes,not_started,ch2_holding(16089h) | ch3_governance | tvl_defillama
+3928,IDEX,IDEX,token,Derivatives;Dexs;DEX,,64,1,ch2_holding,False,True,False,False,False,0,,True,105,16089.0,1287.0,Ethereum,yes,complete,COMPLETE
 8719,ILV,Illuvium,token,Gaming;NFT;Metaverse,,59,1,ch2_holding,False,True,False,False,False,0,,True,60,53445.0,4276.0,Ethereum,yes,complete,COMPLETE
 12760,INF,Sanctum Infinity,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 5103,IPX,Tachyon Protocol,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1692,31 +1692,31 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 888,JAY,Jay,token,Yield,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 28853,JLP,Jupiter Perps LP,token,DEX,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 5488,JST,JUST,token,Bridge;Lending,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-1503,JUP,Jupiter,token,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking,,0,0,,False,False,False,False,False,0,,False,0,21968.0,1757.0,Ethereum,yes,not_started,ch2_holding(21968h) | ch3_governance | tvl_defillama
+1503,JUP,Jupiter,token,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking,,14,1,ch2_holding,False,True,False,False,False,0,,False,0,21968.0,1757.0,Ethereum,yes,partial,tvl_defillama
 29210,JUP,Jupiter,token,Basis Trading;DCA Tools;DEX Aggregator;Derivatives;Interface;Launchpad;Lending;Liquid Staking;Perpetuals,,0,0,,False,False,False,False,True,17,defillama_aggregators,False,0,,,non-EVM,no,partial,ch2_holding | ch3_governance
 35763,KAITO,KAITO,token,Services;AI/Big Data,,16,1,ch2_holding,False,True,False,False,False,0,,True,7,,,Base,yes,complete,COMPLETE
 5566,KEEP,Keep Network,token,Cross Chain Bridge;Privacy,,63,1,ch2_holding,False,True,False,False,False,0,,True,68,11857.0,949.0,Ethereum,yes,complete,COMPLETE
 30986,KMNO,Kamino,token,Lending;Liquidity Manager,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-9444,KNC,Kyber Network Crystal v2,token,DEX Aggregator;Dexs;Yield Aggregator;DEX,,0,0,,False,False,False,False,False,0,,False,0,17940.0,1435.0,Ethereum,yes,not_started,ch2_holding(17940h) | ch3_governance | tvl_defillama
+9444,KNC,Kyber Network Crystal v2,token,DEX Aggregator;Dexs;Yield Aggregator;DEX,,59,1,ch2_holding,False,True,False,False,False,0,,True,68,17940.0,1435.0,Ethereum,yes,complete,COMPLETE
 1982,KNCL,Kyber Network Crystal Legacy,token,DEX,,0,0,,False,False,False,False,False,0,,False,0,79462.0,6357.0,Ethereum,yes,not_started,ch2_holding(79462h) | ch3_governance | tvl_defillama
 7535,KP3R,Keep3rV1,token,Derivatives,,47,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,56,8488.0,679.0,Ethereum,yes,complete,COMPLETE
 8296,KSP,KLAYswap Protocol,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2663,KST,StarCoin,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 33223,LAB,LAB,token,Lending;Trading App;DEX,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 35429,LAYER,Solayer,token,Crypto Card Issuer;RWA;Restaking,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-33652,LBTC,Lombard Staked BTC,token,Restaking,,0,0,,False,False,False,False,False,0,,False,0,23339.0,1867.0,Ethereum,yes,not_started,ch2_holding(23339h) | ch3_governance | tvl_defillama
+33652,LBTC,Lombard Staked BTC,token,Restaking,,10,1,ch2_holding,False,True,False,False,False,0,,False,0,23339.0,1867.0,Ethereum,yes,partial,tvl_defillama
 8000,LDO,Lido DAO,token,Liquid Staking,,51,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,66,65488.0,5239.0,Ethereum,yes,complete,COMPLETE
 2239,LEND,Aave,token,Lending;Onchain Capital Allocator;Yield,,0,0,,False,False,False,False,False,0,,False,0,133500.0,10680.0,Ethereum,yes,not_started,ch2_holding(133500h) | ch3_governance | tvl_defillama
 2377,LEV,Leverj,token,Derivatives,,2,1,ch2_holding,False,True,False,False,False,0,,False,0,1261.0,101.0,Ethereum,yes,partial,tvl_defillama
 24257,LGCT,Legacy Token,token,Farm,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 37986,LIGHT,Light,token,Dexs;Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-3083,LINA,LINA,token,Derivatives,,0,0,,False,False,False,False,False,0,,False,0,10184.0,815.0,Ethereum,yes,not_started,ch2_holding(10184h) | ch3_governance | tvl_defillama
+3083,LINA,LINA,token,Derivatives,,18,1,ch2_holding,False,True,False,False,False,0,,False,0,10184.0,815.0,Ethereum,yes,partial,tvl_defillama
 7102,LINA,Linear Finance,token,Derivatives;DEX;Yield,,50,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,54,22802.0,1824.0,Ethereum,yes,complete,COMPLETE
 35954,LION,Loaded Lions,token,Algo-Stables;Basis Trading;Derivatives;Services;Yield;NFT;Gaming;Meme,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,139.0,11.0,Arbitrum,yes,partial,tvl_defillama
-6833,LIT,Litentry,token,Algo-Stables;Bridge;Derivatives;Dexs;Yield,,0,0,,False,False,False,False,False,0,,False,0,7004.0,560.0,Ethereum,yes,not_started,ch2_holding(7004h) | ch3_governance | tvl_defillama
-39125,LIT,Lighter,token,Algo-Stables;Bridge;Derivatives;Dexs;Yield;DEX;Perpetuals;Zero Knowledge,,0,0,,False,False,False,False,False,0,,False,0,4933.0,395.0,Ethereum,yes,not_started,ch2_holding(4933h) | ch3_governance | tvl_defillama
-3855,LOCUS,Locus Chain,token,Yield;Payments,,0,0,,False,False,False,False,False,0,,False,0,5830.0,466.0,Ethereum,yes,not_started,ch2_holding(5830h) | ch3_governance | tvl_defillama
-8083,LON,Tokenlon Network Token,token,DEX Aggregator;Dexs;DEX,,0,0,,False,False,False,False,False,0,,False,0,39931.0,3194.0,Ethereum,yes,not_started,ch2_holding(39931h) | ch3_governance | tvl_defillama
+6833,LIT,Litentry,token,Algo-Stables;Bridge;Derivatives;Dexs;Yield,,48,1,ch2_holding,False,True,False,False,False,0,,False,0,7004.0,560.0,Ethereum,yes,partial,tvl_defillama
+39125,LIT,Lighter,token,Algo-Stables;Bridge;Derivatives;Dexs;Yield;DEX;Perpetuals;Zero Knowledge,,6,1,ch2_holding,False,True,False,False,False,0,,True,14,4933.0,395.0,Ethereum,yes,complete,COMPLETE
+3855,LOCUS,Locus Chain,token,Yield;Payments,,41,1,ch2_holding,False,True,False,False,False,0,,False,0,5830.0,466.0,Ethereum,yes,partial,tvl_defillama
+8083,LON,Tokenlon Network Token,token,DEX Aggregator;Dexs;DEX,,65,1,ch2_holding,False,True,False,False,False,0,,True,59,39931.0,3194.0,Ethereum,yes,complete,COMPLETE
 810,LQD,LIQUID,token,Lending,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 7429,LQTY,Liquity,token,CDP,,40,2,ch1_staking+ch2_holding,True,True,False,False,False,0,,True,62,14381.0,1150.0,Ethereum,yes,complete,COMPLETE
 1934,LRC,Loopring,token,Dexs;DEX;Layer-2;Modular Blockchain;Privacy;Smart Contract Platform;Zero Knowledge,,85,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,70,167253.0,13380.0,Ethereum,yes,complete,COMPLETE
@@ -1725,7 +1725,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 20314,LUNA,Terra,token,Launchpad,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 4172,LUNC,Terra Classic,token,Payments,,0,0,,False,False,False,False,False,0,,False,0,17798.0,1424.0,Ethereum,yes,not_started,ch2_holding(17798h) | ch3_governance | tvl_defillama
 14783,MAGIC,Treasure,token,Gaming;Yield;AI/Big Data;NFT;Layer-2;Metaverse,,46,1,ch2_holding,False,True,False,False,False,0,,True,52,5807.0,465.0,Ethereum,yes,complete,COMPLETE
-18037,MAV,Maverick Protocol,token,Dexs;Privacy,,0,0,,False,False,False,False,False,0,,False,0,10897.0,872.0,Ethereum,yes,not_started,ch2_holding(10897h) | ch3_governance | tvl_defillama
+18037,MAV,Maverick Protocol,token,Dexs;Privacy,,34,1,ch2_holding,False,True,False,False,False,0,,True,38,10897.0,872.0,Ethereum,yes,complete,COMPLETE
 9175,MBOX,MOBOX,token,Gaming;NFT;Metaverse;Yield,,54,1,ch2_holding,False,True,False,False,False,0,,True,52,,,BSC,yes,complete,COMPLETE
 13523,MC,Merit Circle,token,Launchpad;Gaming,,24,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,54,7064.0,565.0,Ethereum,yes,complete,COMPLETE
 8335,MDX,Mdex,token,Dexs;DEX;Yield,,43,1,ch2_holding,False,True,False,False,True,24,defillama_dexs,True,65,,,BSC,yes,complete,COMPLETE
@@ -1734,11 +1734,11 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 30712,MERL,Merlin Chain,token,Bridge;Yield;Layer-2,,9,1,ch2_holding,False,True,False,False,False,0,,True,28,11.0,1.0,Ethereum,yes,complete,COMPLETE
 2873,MET,Metronome,token,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator;Payments,,11,2,ch2_holding|ch2_holding+ch3_delegation,False,True,False,True,False,0,,True,63,748.0,60.0,Ethereum,yes,complete,COMPLETE
 38353,MET,Meteora,token,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator;DEX,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-3418,META,Metadium,token,Dexs;Reserve Currency;Yield;Identity,,0,0,,False,False,False,False,False,0,,False,0,4137.0,331.0,Ethereum,yes,not_started,ch2_holding(4137h) | ch3_governance | tvl_defillama
-9640,METIS,Metis,token,Canonical Bridge;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,,0,0,,False,False,False,False,False,0,,False,0,24328.0,1946.0,Ethereum,yes,not_started,ch2_holding(24328h) | ch3_governance | tvl_defillama
+3418,META,Metadium,token,Dexs;Reserve Currency;Yield;Identity,,87,1,ch2_holding,False,True,False,False,False,0,,False,0,4137.0,331.0,Ethereum,yes,partial,tvl_defillama
+9640,METIS,Metis,token,Canonical Bridge;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,,54,1,ch2_holding,False,True,False,False,False,0,,True,54,24328.0,1946.0,Ethereum,yes,complete,COMPLETE
 30126,MEW,cat in a dogs world,token,Dexs;Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 399,MIN,Mineralscoin,token,DEX Aggregator;Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-3296,MIN,MINDOL,token,DEX Aggregator;Dexs,,0,0,,False,False,False,False,False,0,,False,0,20121.0,1610.0,Ethereum,yes,not_started,ch2_holding(20121h) | ch3_governance | tvl_defillama
+3296,MIN,MINDOL,token,DEX Aggregator;Dexs,,15,1,ch2_holding,False,True,False,False,False,0,,False,0,20121.0,1610.0,Ethereum,yes,partial,tvl_defillama
 7857,MIR,Mirror Protocol,token,Derivatives,,28,1,ch2_holding,False,True,False,False,False,0,,True,30,28960.0,2317.0,Ethereum,yes,complete,COMPLETE
 1518,MKR,Maker,token,RWA,,0,0,,False,False,False,False,False,0,,False,0,72749.0,5820.0,Ethereum,yes,not_started,ch2_holding(72749h) | ch3_governance | tvl_defillama
 5266,MLK,MiL.k,token,Farm,,0,0,,False,False,False,False,False,0,,False,0,132093.0,10567.0,Arbitrum,yes,not_started,ch2_holding(132093h) | ch3_governance | tvl_defillama
@@ -1746,7 +1746,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 11171,MNGO,Mango,token,Derivatives;Dexs;DEX;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2429,MOBI,Mobius,token,Dexs;IoT;Payments,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1722,MORE,More Coin,token,Lending,,1,1,ch2_holding,False,True,False,False,False,0,,False,0,117.0,9.0,Ethereum,yes,partial,tvl_defillama
-34104,MORPHO,Morpho,token,Lending,,0,0,,False,False,False,False,False,0,,False,0,20799.0,1664.0,Ethereum,yes,not_started,ch2_holding(20799h) | ch3_governance | tvl_defillama
+34104,MORPHO,Morpho,token,Lending,,18,1,ch2_holding,False,True,False,False,False,0,,True,29,20799.0,1664.0,Ethereum,yes,complete,COMPLETE
 9417,MPL,Maple,token,RWA,,0,0,,False,False,False,False,False,0,,False,0,8497.0,680.0,Ethereum,yes,not_started,ch2_holding(8497h) | ch3_governance | tvl_defillama
 21870,MPLX,Metaplex,token,Launchpad,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 1847,MSP,Mothership,token,Dexs,,19,1,ch2_holding,False,True,False,False,False,0,,False,0,2679.0,214.0,Ethereum,yes,partial,tvl_defillama
@@ -1760,7 +1760,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 1732,NMR,Numeraire,token,Derivatives;AI/Big Data;Payments,,108,1,ch2_holding,False,True,False,False,False,0,,True,63,39074.0,3126.0,Ethereum,yes,complete,COMPLETE
 26680,NTRN,Neutron,token,Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 5906,NVT,NerveNetwork,token,Dexs;DEX,,15,1,ch2_holding,False,True,False,False,False,0,,True,60,81.0,6.0,Ethereum,yes,complete,COMPLETE
-5830,NXM,NXM,token,Insurance,,0,0,,False,False,False,False,False,0,,False,0,3793.0,303.0,Ethereum,yes,not_started,ch2_holding(3793h) | ch3_governance | tvl_defillama
+5830,NXM,NXM,token,Insurance,,30,1,ch2_holding,False,True,False,False,False,0,,False,0,3793.0,303.0,Ethereum,yes,partial,tvl_defillama
 36044,NXPC,NEXPACE,token,Gaming,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 17591,NYM,NYM,token,DePIN;Interoperability;Layer-1;Privacy;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,17889.0,1431.0,Ethereum,yes,not_started,ch2_holding(17889h) | ch3_governance | tvl_defillama
 314,OC,OrangeCoin,token,Yield Aggregator,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1777,14 +1777,14 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 11165,ORCA,Orca,token,Dexs;Launchpad;Lending;DEX,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 5631,ORN,Orion,token,DEX Aggregator;Dexs;DEX,,49,1,ch2_holding,False,True,False,False,False,0,,True,39,9800.0,784.0,Ethereum,yes,complete,COMPLETE
 12220,OSMO,Osmosis,token,Dexs;Modular Blockchain,,0,0,,False,False,False,False,True,41,defillama_dexs,True,60,,,non-EVM,no,partial,ch2_holding | ch3_governance
-2296,OST,OST,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,12527.0,1002.0,Ethereum,yes,not_started,ch2_holding(12527h) | ch3_governance | tvl_defillama
-1758,PAY,TenX,token,Yield;Payments,,0,0,,False,False,False,False,False,0,,False,0,57388.0,4591.0,Ethereum,yes,not_started,ch2_holding(57388h) | ch3_governance | tvl_defillama
+2296,OST,OST,token,Dexs,,42,1,ch2_holding,False,True,False,False,False,0,,False,0,12527.0,1002.0,Ethereum,yes,partial,tvl_defillama
+1758,PAY,TenX,token,Yield;Payments,,52,1,ch2_holding,False,True,False,False,False,0,,False,0,57388.0,4591.0,Ethereum,yes,partial,tvl_defillama
 5354,PEAK,PEAKDEFI,token,Algo-Stables;Yield,,13,1,ch3_delegation,False,False,False,True,False,0,,True,63,10957.0,877.0,Ethereum,yes,complete,COMPLETE
 9481,PENDLE,Pendle,token,Yield;RWA;Restaking,,36,2,ch1_staking+ch2_holding,True,True,False,False,True,12,defillama_dexs,True,60,72824.0,5826.0,Ethereum,yes,complete,COMPLETE
 14806,PEOPLE,ConstitutionDAO,token,Meme,,0,0,,False,False,False,False,False,0,,False,0,19380.0,1550.0,Ethereum,yes,not_started,ch2_holding(19380h) | ch3_governance | tvl_defillama
 6950,PERP,Perpetual Protocol,token,Derivatives;DEX,,56,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,60,14585.0,1167.0,Ethereum,yes,complete,COMPLETE
 2112,PHB,Phoenix Global,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-29335,PIXEL,Pixels,token,Dexs;NFT;Gaming,,0,0,,False,False,False,False,False,0,,False,0,6700.0,536.0,Ethereum,yes,not_started,ch2_holding(6700h) | ch3_governance | tvl_defillama
+29335,PIXEL,Pixels,token,Dexs;NFT;Gaming,,28,1,ch2_holding,False,True,False,False,False,0,,False,0,6700.0,536.0,Ethereum,yes,partial,tvl_defillama
 1834,PLR,Pillar,token,DePIN;Identity,,0,0,,False,False,False,False,False,0,,False,0,21875.0,1750.0,Ethereum,yes,not_started,ch2_holding(21875h) | ch3_governance | tvl_defillama
 1091,PLS,PLAY,token,Chain;Yield,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 5794,PNT,pNetwork,token,Bridge;NFT,,43,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,33,10791.0,863.0,Ethereum,yes,complete,COMPLETE
@@ -1793,12 +1793,12 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 29150,PONKE,Ponke,token,Meme,,0,0,,False,False,False,False,False,0,,False,0,,,Base,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 29555,PORTAL,Portal,token,Gaming,,0,0,,False,False,False,False,False,0,,False,0,20283.0,1623.0,Ethereum,yes,not_started,ch2_holding(20283h) | ch3_governance | tvl_defillama
 39042,POWER,Power Protocol,token,Dexs;Reserve Currency;Stablecoin Issuer;Yield;Gaming,,4,1,ch2_holding,False,True,False,False,False,0,,False,0,1394.0,112.0,Ethereum,yes,partial,tvl_defillama
-23711,PRIME,Echelon Prime,token,Gaming;Leveraged Farming;AI/Big Data;NFT,,0,0,,False,False,False,False,False,0,,False,0,27397.0,2192.0,Ethereum,yes,not_started,ch2_holding(27397h) | ch3_governance | tvl_defillama
-2202,PRL,Oyster,token,CDP;Gaming;Yield Aggregator,,0,0,,False,False,False,False,False,0,,False,0,13577.0,1086.0,Ethereum,yes,not_started,ch2_holding(13577h) | ch3_governance | tvl_defillama
+23711,PRIME,Echelon Prime,token,Gaming;Leveraged Farming;AI/Big Data;NFT,,31,1,ch2_holding,False,True,False,False,False,0,,False,0,27397.0,2192.0,Ethereum,yes,partial,tvl_defillama
+2202,PRL,Oyster,token,CDP;Gaming;Yield Aggregator,,10,1,ch2_holding,False,True,False,False,False,0,,False,0,13577.0,1086.0,Ethereum,yes,partial,tvl_defillama
 5410,PRQ,PARSIQ,token,AI/Big Data;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,17401.0,1392.0,Ethereum,yes,not_started,ch2_holding(17401h) | ch3_governance | tvl_defillama
 36507,PUMP,Pump.fun,token,Dexs;Launchpad;Reserve Currency;Telegram Bot,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 32272,PUMPBTC,pumpBTC (Rehypothecated BTC),token,Restaking,,4,1,ch2_holding,False,True,False,False,False,0,,False,0,538.0,43.0,Ethereum,yes,partial,tvl_defillama
-9308,PYR,Vulcan Forged (PYR),token,Dexs;NFT;Gaming;Metaverse,,0,0,,False,False,False,False,False,0,,False,0,14863.0,1189.0,Ethereum,yes,not_started,ch2_holding(14863h) | ch3_governance | tvl_defillama
+9308,PYR,Vulcan Forged (PYR),token,Dexs;NFT;Gaming;Metaverse,,53,1,ch2_holding,False,True,False,False,False,0,,False,0,14863.0,1189.0,Ethereum,yes,partial,tvl_defillama
 28177,PYTH,Pyth Network,token,MEV;Oracle,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2242,QBT,Qbao,token,Lending,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 3155,QNT,Quant,token,Interoperability;RWA,,0,0,,False,False,False,False,False,0,,False,0,167438.0,13395.0,Ethereum,yes,not_started,ch2_holding(167438h) | ch3_governance | tvl_defillama
@@ -1806,7 +1806,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 6843,RAD,Radworks,token,Privacy,,58,2,ch2_holding+ch3_delegation,False,True,False,True,False,0,,False,0,7785.0,623.0,Ethereum,yes,partial,tvl_defillama
 38967,RAVE,RaveDAO,token,,,0,0,,False,False,False,False,False,0,,False,0,13277.0,1062.0,Ethereum,yes,not_started,ch2_holding(13277h) | ch3_governance | tvl_defillama
 8526,RAY,Raydium,token,Dexs;Interface;Launchpad;DEX;Derivatives;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
-12387,RBN,Ribbon Finance,token,Options;Options Vault;Uncollateralized Lending;Derivatives;RWA,,0,0,,False,False,False,False,False,0,,False,0,6539.0,523.0,Ethereum,yes,not_started,ch2_holding(6539h) | ch3_governance | tvl_defillama
+12387,RBN,Ribbon Finance,token,Options;Options Vault;Uncollateralized Lending;Derivatives;RWA,,30,1,ch2_holding,False,True,False,False,False,0,,True,63,6539.0,523.0,Ethereum,yes,complete,COMPLETE
 703,RBT,Rimbit,token,Reserve Currency,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2096,RCN,Ripio Credit Network,token,,,0,0,,False,False,False,False,False,0,,False,0,24334.0,1947.0,Ethereum,yes,not_started,ch2_holding(24334h) | ch3_governance | tvl_defillama
 6951,REEF,Reef,token,Gaming;Metaverse;Payments,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1816,11 +1816,11 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 2071,REQ,Request,token,Developer Tools;Payments;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,41564.0,3325.0,Ethereum,yes,not_started,ch2_holding(41564h) | ch3_governance | tvl_defillama
 7654,RFOX,RFOX,token,Yield;NFT;Metaverse,,36,1,ch2_holding,False,True,False,False,False,0,,True,50,9662.0,773.0,Ethereum,yes,complete,COMPLETE
 7486,RGT,Rari Governance Token,token,Yield Aggregator;Yield,,25,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,68,9403.0,752.0,Ethereum,yes,complete,COMPLETE
-5798,RING,Darwinia Network,token,Farm;Yield;Gaming;Interoperability;Metaverse,,0,0,,False,False,False,False,False,0,,False,0,8221.0,658.0,Ethereum,yes,not_started,ch2_holding(8221h) | ch3_governance | tvl_defillama
-38417,RIVER,River,token,CeDeFi;Yield,,0,0,,False,False,False,False,False,0,,False,0,3671.0,294.0,Ethereum,yes,not_started,ch2_holding(3671h) | ch3_governance | tvl_defillama
+5798,RING,Darwinia Network,token,Farm;Yield;Gaming;Interoperability;Metaverse,,30,1,ch2_holding,False,True,False,False,False,0,,False,0,8221.0,658.0,Ethereum,yes,partial,tvl_defillama
+38417,RIVER,River,token,CeDeFi;Yield,,6,1,ch2_holding,False,True,False,False,False,0,,True,27,3671.0,294.0,Ethereum,yes,complete,COMPLETE
 1637,RLC,iExec RLC,token,AI Agents;AI/Big Data;NFT;DePIN;Storage;Interoperability;Payments;Privacy,,0,0,,False,False,False,False,False,0,,False,0,25487.0,2039.0,Ethereum,yes,not_started,ch2_holding(25487h) | ch3_governance | tvl_defillama
-8075,RLY,Rally,token,Yield,,0,0,,False,False,False,False,False,0,,False,0,21442.0,1715.0,Ethereum,yes,not_started,ch2_holding(21442h) | ch3_governance | tvl_defillama
-3325,ROX,Robotina,token,Dexs;IoT,,0,0,,False,False,False,False,False,0,,False,0,5792.0,463.0,Ethereum,yes,not_started,ch2_holding(5792h) | ch3_governance | tvl_defillama
+8075,RLY,Rally,token,Yield,,37,1,ch2_holding,False,True,False,False,False,0,,False,0,21442.0,1715.0,Ethereum,yes,partial,tvl_defillama
+3325,ROX,Robotina,token,Dexs;IoT,,20,1,ch2_holding,False,True,False,False,False,0,,False,0,5792.0,463.0,Ethereum,yes,partial,tvl_defillama
 4157,RUNE,THORChain,token,Dexs;DEX,,0,0,,False,False,False,False,True,50,defillama_dexs,True,62,,,non-EVM,no,partial,ch2_holding | ch3_governance
 36671,SAHARA,Sahara AI,token,AI/Big Data;Layer-1,,12,1,ch2_holding,False,True,False,False,False,0,,False,0,2243.0,179.0,Ethereum,yes,partial,tvl_defillama
 2308,SAI,Single Collateral DAI ,token,Derivatives;Onchain Capital Allocator;Yield,,0,0,,False,False,False,False,False,0,,False,0,176501.0,14120.0,Ethereum,yes,not_started,ch2_holding(176501h) | ch3_governance | tvl_defillama
@@ -1829,22 +1829,22 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 8972,SFUND,Seedify.fund,token,Launchpad;Gaming,,23,1,ch2_holding,False,True,False,False,False,0,,True,51,,,BSC,yes,complete,COMPLETE
 5994,SHIB,Shiba Inu,token,Dexs;Meme,,0,0,,False,False,False,False,False,0,,False,0,1599075.0,127926.0,Ethereum,yes,not_started,ch2_holding(1599075h) | ch3_governance | tvl_defillama
 1619,SKY,Skycoin,token,CDP;Dexs;RWA;Risk Curators;DePIN;Storage,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-33038,SKY,Sky,token,CDP;Dexs;RWA;Risk Curators,,0,0,,False,False,False,False,False,0,,False,0,14010.0,1121.0,Ethereum,yes,not_started,ch2_holding(14010h) | ch3_governance | tvl_defillama
+33038,SKY,Sky,token,CDP;Dexs;RWA;Risk Curators,,13,1,ch2_holding,False,True,False,False,False,0,,True,89,14010.0,1121.0,Ethereum,yes,complete,COMPLETE
 5824,SLP,Smooth Love Potion,token,Derivatives;NFT;Gaming,,0,0,,False,False,False,False,False,0,,False,0,63973.0,5118.0,Ethereum,yes,not_started,ch2_holding(63973h) | ch3_governance | tvl_defillama
-2277,SMT,SmartMesh,token,Dexs;IoT,,0,0,,False,False,False,False,False,0,,False,0,7387.0,591.0,Ethereum,yes,not_started,ch2_holding(7387h) | ch3_governance | tvl_defillama
+2277,SMT,SmartMesh,token,Dexs;IoT,,37,1,ch2_holding,False,True,False,False,False,0,,False,0,7387.0,591.0,Ethereum,yes,partial,tvl_defillama
 25264,SNEK,Snek,token,Dexs;Meme,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2586,SNX,Synthetix,token,Derivatives;Synthetics;DEX;Perpetuals;RWA;Yield,,0,0,,False,False,False,False,False,0,,False,0,87825.0,7026.0,Ethereum,yes,not_started,ch2_holding(87825h) | ch3_governance | tvl_defillama
-16116,SOL,Wrapped Solana,token,Canonical Bridge;Dexs,,0,0,,False,False,False,False,False,0,,False,0,50092.0,4007.0,Ethereum,yes,not_started,ch2_holding(50092h) | ch3_governance | tvl_defillama
+16116,SOL,Wrapped Solana,token,Canonical Bridge;Dexs,,10,1,ch2_holding,False,True,False,False,False,0,,False,0,50092.0,4007.0,Ethereum,yes,partial,tvl_defillama
 5279,SOLO,Sologenic,token,Basis Trading;Dexs,,0,0,,False,False,False,False,True,2,defillama_dexs,False,0,,,BSC,yes,partial,ch2_holding | ch3_governance
-35818,SOSO,SoSoValue,token,Basis Trading;Bridge;Derivatives;Dexs;Indexes;AI/Big Data,,0,0,,False,False,False,False,False,0,,False,0,4767.0,381.0,Ethereum,yes,not_started,ch2_holding(4767h) | ch3_governance | tvl_defillama
+35818,SOSO,SoSoValue,token,Basis Trading;Bridge;Derivatives;Dexs;Indexes;AI/Big Data,,9,1,ch2_holding,False,True,False,False,False,0,,True,17,4767.0,381.0,Ethereum,yes,complete,COMPLETE
 2410,SPC,SpaceChain,token,Dexs;Reserve Currency,,20,1,ch2_holding,False,True,False,False,False,0,,False,0,2549.0,204.0,Ethereum,yes,partial,tvl_defillama
-11289,SPELL,Spell Token,token,CDP,,0,0,,False,False,False,False,False,0,,False,0,36091.0,2887.0,Ethereum,yes,not_started,ch2_holding(36091h) | ch3_governance | tvl_defillama
-8161,SPI,Shopping,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,14675.0,1174.0,Ethereum,yes,not_started,ch2_holding(14675h) | ch3_governance | tvl_defillama
+11289,SPELL,Spell Token,token,CDP,,54,1,ch2_holding,False,True,False,False,False,0,,True,60,36091.0,2887.0,Ethereum,yes,complete,COMPLETE
+8161,SPI,Shopping,token,Dexs,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,14675.0,1174.0,Ethereum,yes,partial,tvl_defillama
 5601,STAKE,STAKE,token,Canonical Bridge,,30,1,ch2_holding,False,True,False,False,False,0,,True,68,8845.0,708.0,Ethereum,yes,complete,COMPLETE
 8911,STRK,Strike,token,Canonical Bridge;Lending,,50,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,57,11873.0,950.0,Ethereum,yes,complete,COMPLETE
-6511,STRONG,Strong,token,Yield,,0,0,,False,False,False,False,False,0,,False,0,32849.0,2628.0,Ethereum,yes,not_started,ch2_holding(32849h) | ch3_governance | tvl_defillama
+6511,STRONG,Strong,token,Yield,,18,1,ch2_holding,False,True,False,False,False,0,,False,0,32849.0,2628.0,Ethereum,yes,partial,tvl_defillama
 24875,STRX,Staked TRX,token,Farm,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-1984,SUB,Substratum,token,Reserve Currency;DePIN,,0,0,,False,False,False,False,False,0,,False,0,35606.0,2848.0,Ethereum,yes,not_started,ch2_holding(35606h) | ch3_governance | tvl_defillama
+1984,SUB,Substratum,token,Reserve Currency;DePIN,,17,1,ch2_holding,False,True,False,False,False,0,,False,0,35606.0,2848.0,Ethereum,yes,partial,tvl_defillama
 6990,SUN,SUN,token,Bridge;Derivatives;Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 10529,SUN,Sun [New],token,Bridge;Derivatives;Dexs,,0,0,,False,False,False,False,False,0,,True,59,,,non-EVM,no,partial,ch2_holding | ch3_governance
 8290,SUPER,SuperVerse,token,Services;NFT;Gaming,,64,1,ch2_holding,False,True,False,False,False,0,,True,54,42588.0,3407.0,Ethereum,yes,complete,COMPLETE
@@ -1856,23 +1856,23 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 4279,SXP,Solar,token,Dexs;Payments,,0,0,,False,False,False,False,False,0,,True,63,,,non-EVM,no,partial,ch2_holding | ch3_governance
 12147,SYN,Synapse,token,Cross Chain Bridge;Synthetics;Yield Aggregator;Interoperability,,39,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,58,10416.0,833.0,Ethereum,yes,complete,COMPLETE
 329,SYNC,Sync,token,NFT Lending;Reserve Currency,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-33824,SYRUP,Maple Finance,token,Lending;RWA,,0,0,,False,False,False,False,False,0,,False,0,16395.0,1312.0,Ethereum,yes,not_started,ch2_holding(16395h) | ch3_governance | tvl_defillama
+33824,SYRUP,Maple Finance,token,Lending;RWA,,14,1,ch2_holding,False,True,False,False,False,0,,True,61,16395.0,1312.0,Ethereum,yes,complete,COMPLETE
 33312,SolvBTC,SolvBTC,token,,,0,0,,False,False,False,False,False,0,,False,0,4306.0,344.0,Ethereum,yes,not_started,ch2_holding(4306h) | ch3_governance | tvl_defillama
 17751,T,Threshold,token,CDP;Decentralized BTC,,50,1,ch3_delegation,False,False,False,True,False,0,,True,58,9457.0,757.0,Ethereum,yes,complete,COMPLETE
 22974,TAO,Bittensor,token,Chain;AI/Big Data;DePIN;Layer-1,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 26133,TBTC,tBTC,token,,,0,0,,False,False,False,False,False,0,,False,0,25120.0,2010.0,Ethereum,yes,not_started,ch2_holding(25120h) | ch3_governance | tvl_defillama
 23082,TEM,TemDAO,token,Lending;Reserve Currency,,2,1,ch2_holding,False,True,False,False,False,0,,False,0,2678.0,214.0,Ethereum,yes,partial,tvl_defillama
-2576,TEN,Tokenomy,token,Yield,,0,0,,False,False,False,False,False,0,,False,0,4680.0,374.0,Ethereum,yes,not_started,ch2_holding(4680h) | ch3_governance | tvl_defillama
+2576,TEN,Tokenomy,token,Yield,,54,1,ch2_holding,False,True,False,False,False,0,,False,0,4680.0,374.0,Ethereum,yes,partial,tvl_defillama
 3822,TFUEL,Theta Fuel,token,AI/Big Data;DePIN;Payments;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 3916,THX,ThoreNext,token,Payments,,17,1,ch2_holding,False,True,False,False,False,0,,False,0,1086.0,87.0,Ethereum,yes,partial,tvl_defillama
 1556,TIME,Chrono.tech,token,Lending;Yield,,42,1,ch2_holding,False,True,False,False,False,0,,True,57,2380.0,190.0,Ethereum,yes,complete,COMPLETE
-1660,TKN,Monolith,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,6551.0,524.0,Ethereum,yes,not_started,ch2_holding(6551h) | ch3_governance | tvl_defillama
+1660,TKN,Monolith,token,Dexs,,48,1,ch2_holding,False,True,False,False,False,0,,False,0,6551.0,524.0,Ethereum,yes,partial,tvl_defillama
 9119,TLM,Alien Worlds,token,Gaming;NFT;Metaverse,,58,1,ch2_holding,False,True,False,False,False,0,,True,22,5830.0,466.0,Ethereum,yes,complete,COMPLETE
-5007,TROY,TROY,token,Farm,,0,0,,False,False,False,False,False,0,,False,0,6044.0,484.0,Ethereum,yes,not_started,ch2_holding(6044h) | ch3_governance | tvl_defillama
+5007,TROY,TROY,token,Farm,,53,1,ch2_holding,False,True,False,False,False,0,,False,0,6044.0,484.0,Ethereum,yes,partial,tvl_defillama
 7725,TRU,TrueFi,token,Uncollateralized Lending;RWA;Yield,,50,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,67,16229.0,1298.0,Ethereum,yes,complete,COMPLETE
 3930,TT,ThunderCore,token,Dexs;Staking Pool,,60,1,ch2_holding,False,True,False,False,False,0,,True,38,280.0,22.0,Ethereum,yes,complete,COMPLETE
-5617,UMA,UMA,token,Derivatives,,0,0,,False,False,False,False,False,0,,False,0,26117.0,2089.0,Ethereum,yes,not_started,ch2_holding(26117h) | ch3_governance | tvl_defillama
-7672,UNFI,Unifi Protocol DAO,token,Dexs;Staking Pool,,0,0,,False,False,False,False,False,0,,False,0,4670.0,374.0,Ethereum,yes,not_started,ch2_holding(4670h) | ch3_governance | tvl_defillama
+5617,UMA,UMA,token,Derivatives,,69,1,ch2_holding,False,True,False,False,False,0,,False,0,26117.0,2089.0,Ethereum,yes,partial,tvl_defillama
+7672,UNFI,Unifi Protocol DAO,token,Dexs;Staking Pool,,45,1,ch2_holding,False,True,False,False,False,0,,False,0,4670.0,374.0,Ethereum,yes,partial,tvl_defillama
 4113,UNI,UNI COIN,token,Dexs;Launchpad;Payments,,9,1,ch2_holding,False,True,False,False,False,0,,False,0,1301.0,104.0,Ethereum,yes,partial,tvl_defillama
 7083,UNI,Uniswap,token,Dexs;Launchpad;DEX;Layer-1;Yield,,68,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,91,385104.0,30808.0,Ethereum,yes,complete,COMPLETE
 36175,UNIBTC,Universal BTC,token,Restaking,,7,1,ch2_holding,False,True,False,False,False,0,,False,0,942.0,75.0,Ethereum,yes,partial,tvl_defillama
@@ -1880,12 +1880,12 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 3792,USDE,USDe,token,Derivatives,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 35437,USDF,Aster USDF,token,,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 2320,UTK,xMoney,token,Payments;Smart Contract Platform,,0,0,,False,False,False,False,False,0,,False,0,19109.0,1529.0,Ethereum,yes,not_started,ch2_holding(19109h) | ch3_governance | tvl_defillama
-2223,VEE,BLOCKv,token,Lending;NFT,,0,0,,False,False,False,False,False,0,,False,0,15185.0,1215.0,Ethereum,yes,not_started,ch2_holding(15185h) | ch3_governance | tvl_defillama
+2223,VEE,BLOCKv,token,Lending;NFT,,71,1,ch2_holding,False,True,False,False,False,0,,False,0,15185.0,1215.0,Ethereum,yes,partial,tvl_defillama
 7127,VELO,Velo,token,Dexs,,11,1,ch1_staking,True,False,False,False,False,0,,True,22,,,BSC,yes,complete,COMPLETE
 1904,VEN,Vechain [Token],token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 22059,VENOM,Venom,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2937,VITE,VITE,token,DAG;DEX,,44,1,ch2_holding,False,True,False,False,False,0,,False,0,2365.0,189.0,Ethereum,yes,partial,tvl_defillama
-19650,VOLT,Volt Inu,token,Dexs;Lending;Liquid Staking;AI/Big Data;NFT;Gaming;Payments;Meme,,0,0,,False,False,False,False,False,0,,False,0,11954.0,956.0,Ethereum,yes,not_started,ch2_holding(11954h) | ch3_governance | tvl_defillama
+19650,VOLT,Volt Inu,token,Dexs;Lending;Liquid Staking;AI/Big Data;NFT;Gaming;Payments;Meme,,22,1,ch2_holding,False,True,False,False,False,0,,False,0,11954.0,956.0,Ethereum,yes,partial,tvl_defillama
 14519,VVS,VVS Finance,token,Dexs;DEX,,46,1,ch2_holding,False,True,False,False,False,0,,True,55,2199.0,176.0,Ethereum,yes,complete,COMPLETE
 35509,VVV,Venice Token,token,Farm;AI/Big Data,,4,2,ch1_staking+ch2_holding,True,True,False,False,False,0,,True,1,,,Base,yes,complete,COMPLETE
 29587,W,Wormhole,token,Bridge;NFT;Interoperability,,26,1,ch3_delegation,False,False,False,True,False,0,,True,57,9149.0,732.0,Ethereum,yes,complete,COMPLETE
@@ -1896,14 +1896,14 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 28183,WFLR,Wrapped Flare,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 10240,WFTM,Wrapped Fantom,token,,,0,0,,False,False,False,False,False,0,,False,0,94585.0,7567.0,Ethereum,yes,not_started,ch2_holding(94585h) | ch3_governance | tvl_defillama
 24399,WHBAR,Wrapped HBAR,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-34143,WHITE,WhiteRock,token,Options,,0,0,,False,False,False,False,False,0,,False,0,24780.0,1982.0,Ethereum,yes,not_started,ch2_holding(24780h) | ch3_governance | tvl_defillama
+34143,WHITE,WhiteRock,token,Options,,16,1,ch2_holding,False,True,False,False,False,0,,False,0,24780.0,1982.0,Ethereum,yes,partial,tvl_defillama
 35881,WHYPE,Wrapped HYPE,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-9674,WILD,Wilder World,token,Lending;Yield;NFT;Gaming;Metaverse,,0,0,,False,False,False,False,False,0,,False,0,22490.0,1799.0,Ethereum,yes,not_started,ch2_holding(22490h) | ch3_governance | tvl_defillama
+9674,WILD,Wilder World,token,Lending;Yield;NFT;Gaming;Metaverse,,54,1,ch2_holding,False,True,False,False,False,0,,False,0,22490.0,1799.0,Ethereum,yes,partial,tvl_defillama
 4206,WIN,WINkLink,token,,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
-1500,WINGS,Wings,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,11302.0,904.0,Ethereum,yes,not_started,ch2_holding(11302h) | ch3_governance | tvl_defillama
+1500,WINGS,Wings,token,Dexs,,45,1,ch2_holding,False,True,False,False,False,0,,False,0,11302.0,904.0,Ethereum,yes,partial,tvl_defillama
 13502,WLD,Worldcoin,token,Chain;Identity;Privacy;Zero Knowledge,,0,0,,False,False,False,False,False,0,,False,0,61595.0,4928.0,Ethereum,yes,not_started,ch2_holding(61595h) | ch3_governance | tvl_defillama
 33251,WLFI,World Liberty Financial,token,Lending,,9,1,ch3_delegation,False,False,False,True,False,0,,False,0,99662.0,7973.0,Ethereum,yes,partial,tvl_defillama
-7501,WOO,WOO,token,CEX;Dexs;Yield;Exchange Token;Derivatives;Perpetuals,,0,0,,False,False,False,False,False,0,,False,0,19272.0,1542.0,Ethereum,yes,not_started,ch2_holding(19272h) | ch3_governance | tvl_defillama
+7501,WOO,WOO,token,CEX;Dexs;Yield;Exchange Token;Derivatives;Perpetuals,,62,1,ch2_holding,False,True,False,False,False,0,,True,52,19272.0,1542.0,Ethereum,yes,complete,COMPLETE
 24735,WPLS,Wrapped Pulse,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 27076,WTFUEL,Wrapped TFUEL,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 27077,WTHETA,Wrapped THETA,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
@@ -1919,16 +1919,16 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 5864,YFI,Yearn,token,Indexes;Risk Curators;Yield Aggregator;Yield,,70,3,ch1_staking+ch2_holding|ch1_staking+ch2_holding+ch3_voting,True,True,True,False,False,0,,True,76,52242.0,4179.0,Ethereum,yes,complete,COMPLETE
 5957,YFII,DFI.Money,token,Yield Aggregator;Yield,,50,1,ch2_holding,False,True,False,False,False,0,,True,62,14486.0,1159.0,Ethereum,yes,complete,COMPLETE
 10688,YGG,Yield Guild Games,token,Gaming;NFT;Metaverse,,0,0,,False,False,False,False,False,0,,False,0,22955.0,1836.0,Ethereum,yes,not_started,ch2_holding(22955h) | ch3_governance | tvl_defillama
-3053,YOU,YOU COIN,token,Dexs;Synthetics,,0,0,,False,False,False,False,False,0,,False,0,13892.0,1111.0,Ethereum,yes,not_started,ch2_holding(13892h) | ch3_governance | tvl_defillama
-2363,ZAP,Zap,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,5972.0,478.0,Ethereum,yes,not_started,ch2_holding(5972h) | ch3_governance | tvl_defillama
+3053,YOU,YOU COIN,token,Dexs;Synthetics,,16,1,ch2_holding,False,True,False,False,False,0,,False,0,13892.0,1111.0,Ethereum,yes,partial,tvl_defillama
+2363,ZAP,Zap,token,Dexs,,11,1,ch2_holding,False,True,False,False,False,0,,False,0,5972.0,478.0,Ethereum,yes,partial,tvl_defillama
 30636,ZBCN,Zebec Network,token,DePIN;Payments;RWA,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 27765,ZBU,Zeebu,token,Farm,,20,1,ch2_holding,False,True,False,False,False,0,,True,18,85.0,7.0,Ethereum,yes,complete,COMPLETE
-2826,ZIP,Zipper,token,Dexs,,0,0,,False,False,False,False,False,0,,False,0,11626.0,930.0,Ethereum,yes,not_started,ch2_holding(11626h) | ch3_governance | tvl_defillama
+2826,ZIP,Zipper,token,Dexs,,28,1,ch2_holding,False,True,False,False,False,0,,False,0,11626.0,930.0,Ethereum,yes,partial,tvl_defillama
 24091,ZK,ZKsync,token,Chain;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 8202,ZKB,ZKBase,token,Dexs;Launchpad;DEX;Layer-2;Zero Knowledge,,2,1,ch2_holding,False,True,False,False,False,0,,True,64,1688.0,135.0,Ethereum,yes,complete,COMPLETE
 29779,ZKJ,Polyhedra Network,token,Chain;Interoperability;Layer-2;RWA,,0,0,,False,False,False,False,False,0,,False,0,44465.0,3557.0,Ethereum,yes,not_started,ch2_holding(44465h) | ch3_governance | tvl_defillama
 35931,ZORA,ZORA,token,Canonical Bridge;Launchpad;NFT Marketplace;NFT;Layer-2,,11,1,ch3_delegation,False,False,False,True,False,0,,False,0,,,Base,yes,partial,tvl_defillama
-26997,ZRO,LayerZero,token,Bridge;Interoperability,,0,0,,False,False,False,False,False,0,,False,0,24638.0,1971.0,Ethereum,yes,not_started,ch2_holding(24638h) | ch3_governance | tvl_defillama
+26997,ZRO,LayerZero,token,Bridge;Interoperability,,24,1,ch2_holding,False,True,False,False,False,0,,True,1,24638.0,1971.0,Ethereum,yes,complete,COMPLETE
 1896,ZRX,0x Protocol,token,DEX Aggregator;DEX,,106,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,True,37,defillama_aggregators,False,0,190081.0,15206.0,Ethereum,yes,partial,
 33055,slisBNBx,slisBNBx,token,,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 36246,stkAAVE,Staked Aave,token,,,0,0,,False,False,False,False,False,0,,False,0,19342.0,1547.0,Ethereum,yes,not_started,ch2_holding(19342h) | ch3_governance | tvl_defillama

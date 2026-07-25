@@ -1,0 +1,907 @@
+STREAM build: 102 tokens | WORKERS=8 BLOCK_WINDOW=100000 RATE=8.0/s DAILY_CAP=185000
+  MSOL cmc=11461 already complete -> skip
+  --- bUSD0 cmc=33981 chain=1 START (gl_so_far=0) ---
+    bUSD0 batch 1/32 block<=799,999 tf=0 gl=8 lots=0 2s
+    bUSD0 batch 6/32 block<=4,799,999 tf=0 gl=48 lots=0 6s
+    bUSD0 batch 11/32 block<=8,799,999 tf=0 gl=88 lots=0 12s
+    bUSD0 batch 16/32 block<=12,799,999 tf=0 gl=128 lots=0 17s
+    bUSD0 batch 21/32 block<=16,799,999 tf=0 gl=168 lots=0 22s
+    bUSD0 batch 26/32 block<=20,799,999 tf=40290 gl=328 lots=6963 43s
+    bUSD0 batch 31/32 block<=24,799,999 tf=286399 gl=1034 lots=18468 137s
+  bUSD0    cmc=33981 DONE tf=288913 gl=1039 code=11/63 scrMo=9 HODLmed=5.9% last=5.9%
+  --- IFT cmc=1888 chain=1 START (gl_so_far=1039) ---
+    IFT batch 1/15 block<=799,999 tf=0 gl=1047 lots=0 2s
+    IFT batch 6/15 block<=4,799,999 tf=19624 gl=1143 lots=6621 16s
+    IFT batch 11/15 block<=8,799,999 tf=29972 gl=1211 lots=10715 25s
+  IFT      cmc=1888 DONE tf=30119 gl=1237 code=1/71 scrMo=15 HODLmed=52.2% last=92.7%
+  --- DRG cmc=2593 chain=1 START (gl_so_far=1237) ---
+    DRG batch 1/15 block<=799,999 tf=0 gl=1245 lots=0 2s
+    DRG batch 6/15 block<=4,799,999 tf=7 gl=1285 lots=6 7s
+    DRG batch 11/15 block<=8,799,999 tf=21682 gl=1367 lots=8185 20s
+  DRG      cmc=2593 DONE tf=23511 gl=1397 code=13/50 scrMo=18 HODLmed=32.8% last=33.5%
+  --- RIVER cmc=38417 chain=1 START (gl_so_far=1397) ---
+    RIVER batch 1/32 block<=799,999 tf=0 gl=1405 lots=0 2s
+    RIVER batch 6/32 block<=4,799,999 tf=0 gl=1445 lots=0 7s
+    RIVER batch 11/32 block<=8,799,999 tf=0 gl=1485 lots=0 12s
+    RIVER batch 16/32 block<=12,799,999 tf=0 gl=1525 lots=0 17s
+    RIVER batch 21/32 block<=16,799,999 tf=0 gl=1565 lots=0 22s
+    RIVER batch 26/32 block<=20,799,999 tf=0 gl=1605 lots=0 28s
+    RIVER batch 31/32 block<=24,799,999 tf=76613 gl=1869 lots=5369 84s
+  RIVER    cmc=38417 DONE tf=91950 gl=1910 code=10/42 scrMo=6 HODLmed=0.0% last=0.0%
+  --- NXM cmc=5830 chain=1 START (gl_so_far=1910) ---
+    NXM batch 1/21 block<=799,999 tf=0 gl=1918 lots=0 2s
+    NXM batch 6/21 block<=4,799,999 tf=0 gl=1958 lots=0 7s
+    NXM batch 11/21 block<=8,799,999 tf=1381 gl=1998 lots=163 12s
+    NXM batch 16/21 block<=12,799,999 tf=103392 gl=2330 lots=5181 86s
+    NXM batch 21/21 block<=16,731,850 tf=118725 gl=2370 lots=6090 102s
+  NXM      cmc=5830 DONE tf=118725 gl=2370 code=8/66 scrMo=30 HODLmed=40.0% last=46.7%
+  --- SFRXETH cmc=23177 chain=1 START (gl_so_far=2370) ---
+    SFRXETH batch 1/32 block<=799,999 tf=0 gl=2378 lots=0 2s
+    SFRXETH batch 6/32 block<=4,799,999 tf=0 gl=2418 lots=0 7s
+    SFRXETH batch 11/32 block<=8,799,999 tf=0 gl=2458 lots=0 12s
+    SFRXETH batch 16/32 block<=12,799,999 tf=0 gl=2498 lots=0 17s
+    SFRXETH batch 21/32 block<=16,799,999 tf=5809 gl=2540 lots=1648 23s
+    SFRXETH batch 26/32 block<=20,799,999 tf=99501 gl=2788 lots=8787 57s
+    SFRXETH batch 31/32 block<=24,799,999 tf=149587 gl=2900 lots=10601 73s
+  SFRXETH  cmc=23177 DONE tf=153350 gl=2913 code=21/53 scrMo=10 HODLmed=35.6% last=47.8%
+  --- CRD cmc=3367 chain=1 START (gl_so_far=2913) ---
+    CRD batch 1/16 block<=799,999 tf=0 gl=2921 lots=0 2s
+    CRD batch 6/16 block<=4,799,999 tf=0 gl=2961 lots=0 6s
+    CRD batch 11/16 block<=8,799,999 tf=1473 gl=3009 lots=1400 13s
+    CRD batch 16/16 block<=12,151,617 tf=54921 gl=3207 lots=10288 44s
+  CRD      cmc=3367 DONE tf=54921 gl=3207 code=0/32 scrMo=4 HODLmed=9.4% last=2.0%
+  --- META cmc=3418 chain=1 START (gl_so_far=3207) ---
+    META batch 1/32 block<=799,999 tf=0 gl=3215 lots=0 2s
+    META batch 6/32 block<=4,799,999 tf=0 gl=3255 lots=0 7s
+    META batch 11/32 block<=8,799,999 tf=13126 gl=3353 lots=7322 20s
+    META batch 16/32 block<=12,799,999 tf=13126 gl=3393 lots=7322 25s
+    META batch 21/32 block<=16,799,999 tf=13126 gl=3433 lots=7322 30s
+    META batch 26/32 block<=20,799,999 tf=13126 gl=3473 lots=7322 35s
+    META batch 31/32 block<=24,799,999 tf=13126 gl=3513 lots=7322 40s
+  META     cmc=3418 DONE tf=13126 gl=3518 code=4/34 scrMo=87 HODLmed=91.1% last=91.1%
+  --- MULTI cmc=17050 chain=1 START (gl_so_far=3518) ---
+    MULTI batch 1/24 block<=799,999 tf=0 gl=3526 lots=0 2s
+    MULTI batch 6/24 block<=4,799,999 tf=0 gl=3566 lots=0 6s
+    MULTI batch 11/24 block<=8,799,999 tf=0 gl=3606 lots=0 11s
+    MULTI batch 16/24 block<=12,799,999 tf=0 gl=3646 lots=0 17s
+    MULTI batch 21/24 block<=16,799,999 tf=37536 gl=3758 lots=2729 33s
+  MULTI    cmc=17050 DONE tf=60295 gl=3822 code=10/44 scrMo=12 HODLmed=7.0% last=7.7%
+  --- CAT cmc=1882 chain=1 START (gl_so_far=3822) ---
+    CAT batch 1/9 block<=799,999 tf=0 gl=3830 lots=0 2s
+    CAT batch 6/9 block<=4,799,999 tf=21928 gl=3916 lots=9474 22s
+  CAT      cmc=1882 DONE tf=28461 gl=3941 code=2/91 scrMo=12 HODLmed=6.4% last=75.8%
+  --- TEN cmc=2576 chain=1 START (gl_so_far=3941) ---
+    TEN batch 1/21 block<=799,999 tf=0 gl=3949 lots=0 2s
+    TEN batch 6/21 block<=4,799,999 tf=0 gl=3989 lots=0 7s
+    TEN batch 11/21 block<=8,799,999 tf=42829 gl=4139 lots=12905 45s
+    TEN batch 16/21 block<=12,799,999 tf=49884 gl=4183 lots=14577 56s
+    TEN batch 21/21 block<=16,731,850 tf=51201 gl=4223 lots=14805 67s
+  TEN      cmc=2576 DONE tf=51201 gl=4223 code=4/90 scrMo=54 HODLmed=79.5% last=91.9%
+  --- UNFI cmc=7672 chain=1 START (gl_so_far=4223) ---
+    UNFI batch 1/27 block<=799,999 tf=0 gl=4231 lots=0 2s
+    UNFI batch 6/27 block<=4,799,999 tf=0 gl=4271 lots=0 7s
+    UNFI batch 11/27 block<=8,799,999 tf=0 gl=4311 lots=0 12s
+    UNFI batch 16/27 block<=12,799,999 tf=13957 gl=4361 lots=3377 22s
+    UNFI batch 21/27 block<=16,799,999 tf=35902 gl=4417 lots=7117 55s
+    UNFI batch 26/27 block<=20,799,999 tf=57530 gl=4473 lots=10475 73s
+  UNFI     cmc=7672 DONE tf=61320 gl=4486 code=12/140 scrMo=45 HODLmed=49.4% last=9.6%
+  --- SOSO cmc=35818 chain=1 START (gl_so_far=4486) ---
+    SOSO batch 1/32 block<=799,999 tf=0 gl=4494 lots=0 2s
+    SOSO batch 6/32 block<=4,799,999 tf=0 gl=4534 lots=0 7s
+    SOSO batch 11/32 block<=8,799,999 tf=0 gl=4574 lots=0 12s
+    SOSO batch 16/32 block<=12,799,999 tf=0 gl=4614 lots=0 17s
+    SOSO batch 21/32 block<=16,799,999 tf=0 gl=4654 lots=0 22s
+    SOSO batch 26/32 block<=20,799,999 tf=0 gl=4694 lots=0 27s
+    SOSO batch 31/32 block<=24,799,999 tf=362193 gl=5782 lots=205983 252s
+  SOSO     cmc=35818 DONE tf=363859 gl=5787 code=10/37 scrMo=9 HODLmed=0.5% last=0.5%
+  --- ADX cmc=1768 chain=1 START (gl_so_far=5787) ---
+    ADX batch 1/31 block<=799,999 tf=0 gl=5795 lots=0 2s
+    ADX batch 6/31 block<=4,799,999 tf=0 gl=5835 lots=0 7s
+    ADX batch 11/31 block<=8,799,999 tf=0 gl=5875 lots=0 12s
+    ADX batch 16/31 block<=12,799,999 tf=81746 gl=6125 lots=9215 45s
+    ADX batch 21/31 block<=16,799,999 tf=113097 gl=6207 lots=13550 56s
+    ADX batch 26/31 block<=20,799,999 tf=140003 gl=6259 lots=15938 64s
+    ADX batch 31/31 block<=24,560,658 tf=180121 gl=6347 lots=18138 77s
+  ADX      cmc=1768 DONE tf=180121 gl=6347 code=29/124 scrMo=64 HODLmed=17.4% last=36.2%
+  --- LIT cmc=39125 chain=1 START (gl_so_far=6347) ---
+    LIT batch 1/32 block<=799,999 tf=0 gl=6355 lots=0 1s
+    LIT batch 6/32 block<=4,799,999 tf=0 gl=6395 lots=0 7s
+    LIT batch 11/32 block<=8,799,999 tf=0 gl=6435 lots=0 12s
+    LIT batch 16/32 block<=12,799,999 tf=0 gl=6475 lots=0 17s
+    LIT batch 21/32 block<=16,799,999 tf=0 gl=6515 lots=0 22s
+    LIT batch 26/32 block<=20,799,999 tf=0 gl=6555 lots=0 27s
+    LIT batch 31/32 block<=24,799,999 tf=77228 gl=6831 lots=17404 62s
+  LIT      cmc=39125 DONE tf=143947 gl=7038 code=0/0 scrMo=6 HODLmed=0.0% last=0.0%
+  --- DMT cmc=2503 chain=1 START (gl_so_far=7038) ---
+    DMT batch 1/16 block<=799,999 tf=0 gl=7046 lots=0 2s
+    DMT batch 6/16 block<=4,799,999 tf=4323 gl=7106 lots=4211 9s
+    DMT batch 11/16 block<=8,799,999 tf=22278 gl=7174 lots=12968 19s
+    DMT batch 16/16 block<=12,546,588 tf=29500 gl=7212 lots=14552 24s
+  DMT      cmc=2503 DONE tf=29500 gl=7212 code=4/50 scrMo=32 HODLmed=78.6% last=56.1%
+  --- RSWETH cmc=29974 chain=1 START (gl_so_far=7212) ---
+    RSWETH batch 1/32 block<=799,999 tf=0 gl=7220 lots=0 1s
+    RSWETH batch 6/32 block<=4,799,999 tf=0 gl=7260 lots=0 6s
+    RSWETH batch 11/32 block<=8,799,999 tf=0 gl=7300 lots=0 11s
+    RSWETH batch 16/32 block<=12,799,999 tf=0 gl=7340 lots=0 16s
+    RSWETH batch 21/32 block<=16,799,999 tf=0 gl=7380 lots=0 22s
+    RSWETH batch 26/32 block<=20,799,999 tf=211179 gl=8022 lots=44653 174s
+    RSWETH batch 31/32 block<=24,799,999 tf=341901 gl=8374 lots=49371 247s
+  RSWETH   cmc=29974 DONE tf=346322 gl=8385 code=21/50 scrMo=11 HODLmed=41.2% last=54.3%
+  --- ROX cmc=3325 chain=1 START (gl_so_far=8385) ---
+    ROX batch 1/15 block<=799,999 tf=0 gl=8393 lots=0 2s
+    ROX batch 6/15 block<=4,799,999 tf=0 gl=8433 lots=0 7s
+    ROX batch 11/15 block<=8,799,999 tf=21803 gl=8533 lots=11127 24s
+  ROX      cmc=3325 DONE tf=24486 gl=8563 code=1/37 scrMo=20 HODLmed=69.6% last=82.7%
+  --- LOCUS cmc=3855 chain=1 START (gl_so_far=8563) ---
+    LOCUS batch 1/32 block<=799,999 tf=0 gl=8571 lots=0 2s
+    LOCUS batch 6/32 block<=4,799,999 tf=0 gl=8611 lots=0 7s
+    LOCUS batch 11/32 block<=8,799,999 tf=23607 gl=8697 lots=8875 22s
+    LOCUS batch 16/32 block<=12,799,999 tf=58102 gl=8833 lots=10535 45s
+    LOCUS batch 21/32 block<=16,799,999 tf=67907 gl=8873 lots=12664 54s
+    LOCUS batch 26/32 block<=20,799,999 tf=90505 gl=8937 lots=17975 70s
+    LOCUS batch 31/32 block<=24,799,999 tf=105130 gl=8981 lots=19532 85s
+  LOCUS    cmc=3855 DONE tf=105674 gl=8986 code=11/58 scrMo=41 HODLmed=79.9% last=84.4%
+  --- APEX cmc=19843 chain=1 START (gl_so_far=8986) ---
+    APEX batch 1/32 block<=799,999 tf=0 gl=8994 lots=0 2s
+    APEX batch 6/32 block<=4,799,999 tf=0 gl=9034 lots=0 7s
+    APEX batch 11/32 block<=8,799,999 tf=0 gl=9074 lots=0 12s
+    APEX batch 16/32 block<=12,799,999 tf=0 gl=9114 lots=0 17s
+    APEX batch 21/32 block<=16,799,999 tf=3054 gl=9154 lots=980 22s
+    APEX batch 26/32 block<=20,799,999 tf=22194 gl=9212 lots=6498 36s
+    APEX batch 31/32 block<=24,799,999 tf=201877 gl=9716 lots=17318 170s
+  APEX     cmc=19843 DONE tf=211511 gl=9743 code=10/50 scrMo=9 HODLmed=51.4% last=52.5%
+  --- ZAP cmc=2363 chain=1 START (gl_so_far=9743) ---
+    ZAP batch 1/17 block<=799,999 tf=0 gl=9751 lots=0 2s
+    ZAP batch 6/17 block<=4,799,999 tf=919 gl=9791 lots=551 7s
+    ZAP batch 11/17 block<=8,799,999 tf=9179 gl=9831 lots=3507 14s
+    ZAP batch 16/17 block<=12,799,999 tf=64140 gl=9977 lots=14533 51s
+  ZAP      cmc=2363 DONE tf=68553 gl=9985 code=5/32 scrMo=11 HODLmed=42.5% last=45.1%
+  --- TROY cmc=5007 chain=1 START (gl_so_far=9985) ---
+    TROY batch 1/28 block<=799,999 tf=0 gl=9993 lots=0 2s
+    TROY batch 6/28 block<=4,799,999 tf=0 gl=10033 lots=0 6s
+    TROY batch 11/28 block<=8,799,999 tf=0 gl=10073 lots=0 11s
+    TROY batch 16/28 block<=12,799,999 tf=5342 gl=10113 lots=2063 18s
+    TROY batch 21/28 block<=16,799,999 tf=9976 gl=10153 lots=3359 24s
+    TROY batch 26/28 block<=20,799,999 tf=13842 gl=10193 lots=4123 31s
+  TROY     cmc=5007 DONE tf=20531 gl=10211 code=5/150 scrMo=53 HODLmed=87.7% last=30.3%
+  --- RBN cmc=12387 chain=1 START (gl_so_far=10211) ---
+    RBN batch 1/28 block<=799,999 tf=0 gl=10219 lots=0 1s
+    RBN batch 6/28 block<=4,799,999 tf=0 gl=10259 lots=0 6s
+    RBN batch 11/28 block<=8,799,999 tf=0 gl=10299 lots=0 11s
+    RBN batch 16/28 block<=12,799,999 tf=1122 gl=10343 lots=1121 18s
+    RBN batch 21/28 block<=16,799,999 tf=141070 gl=10759 lots=14906 102s
+    RBN batch 26/28 block<=20,799,999 tf=244131 gl=11041 lots=25873 200s
+  RBN      cmc=12387 DONE tf=257795 gl=11073 code=38/88 scrMo=30 HODLmed=9.7% last=8.4%
+  --- TKN cmc=1660 chain=1 START (gl_so_far=11073) ---
+    TKN batch 1/17 block<=799,999 tf=0 gl=11081 lots=0 1s
+    TKN batch 6/17 block<=4,799,999 tf=29542 gl=11211 lots=12347 20s
+    TKN batch 11/17 block<=8,799,999 tf=71552 gl=11313 lots=18241 36s
+    TKN batch 16/17 block<=12,799,999 tf=112027 gl=11413 lots=24494 51s
+  TKN      cmc=1660 DONE tf=112365 gl=11417 code=6/52 scrMo=48 HODLmed=74.2% last=66.4%
+  --- PIXEL cmc=29335 chain=1 START (gl_so_far=11417) ---
+    PIXEL batch 1/32 block<=799,999 tf=0 gl=11425 lots=0 2s
+    PIXEL batch 6/32 block<=4,799,999 tf=0 gl=11465 lots=0 7s
+    PIXEL batch 11/32 block<=8,799,999 tf=0 gl=11505 lots=0 13s
+    PIXEL batch 16/32 block<=12,799,999 tf=0 gl=11545 lots=0 18s
+    PIXEL batch 21/32 block<=16,799,999 tf=0 gl=11585 lots=0 23s
+    PIXEL batch 26/32 block<=20,799,999 tf=34378 gl=11703 lots=11563 39s
+    PIXEL batch 31/32 block<=24,799,999 tf=70364 gl=11783 lots=19404 52s
+  PIXEL    cmc=29335 DONE tf=73738 gl=11792 code=9/81 scrMo=28 HODLmed=5.1% last=3.6%
+  --- LIT cmc=6833 chain=1 START (gl_so_far=11792) ---
+    LIT batch 1/28 block<=799,999 tf=0 gl=11800 lots=0 1s
+    LIT batch 6/28 block<=4,799,999 tf=0 gl=11840 lots=0 6s
+    LIT batch 11/28 block<=8,799,999 tf=0 gl=11880 lots=0 11s
+    LIT batch 16/28 block<=12,799,999 tf=24369 gl=11994 lots=9136 28s
+    LIT batch 21/28 block<=16,799,999 tf=45003 gl=12040 lots=14774 36s
+    LIT batch 26/28 block<=20,799,999 tf=63467 gl=12092 lots=20268 44s
+  LIT      cmc=6833 DONE tf=69575 gl=12104 code=11/98 scrMo=48 HODLmed=28.7% last=5.3%
+  --- DAD cmc=4862 chain=1 START (gl_so_far=12104) ---
+    DAD batch 1/24 block<=799,999 tf=0 gl=12112 lots=0 2s
+    DAD batch 6/24 block<=4,799,999 tf=0 gl=12152 lots=0 12s
+    DAD batch 11/24 block<=8,799,999 tf=1899 gl=12206 lots=1853 20s
+    DAD batch 16/24 block<=12,799,999 tf=21906 gl=12286 lots=7982 47s
+    DAD batch 21/24 block<=16,799,999 tf=33536 gl=12336 lots=8954 82s
+  DAD      cmc=4862 DONE tf=34288 gl=12353 code=2/72 scrMo=40 HODLmed=65.8% last=46.0%
+  --- WBETH cmc=24760 chain=1 START (gl_so_far=12353) ---
+    WBETH batch 1/32 block<=799,999 tf=0 gl=12361 lots=0 1s
+    WBETH batch 6/32 block<=4,799,999 tf=0 gl=12401 lots=0 6s
+    WBETH batch 11/32 block<=8,799,999 tf=0 gl=12441 lots=0 11s
+    WBETH batch 16/32 block<=12,799,999 tf=0 gl=12481 lots=0 16s
+    WBETH batch 21/32 block<=16,799,999 tf=0 gl=12521 lots=0 22s
+    WBETH batch 26/32 block<=20,799,999 tf=58267 gl=12715 lots=19794 64s
+    WBETH batch 31/32 block<=24,799,999 tf=113052 gl=12843 lots=28333 95s
+  WBETH    cmc=24760 DONE tf=116275 gl=12850 code=12/121 scrMo=23 HODLmed=18.6% last=89.4%
+  --- GEN cmc=2726 chain=1 START (gl_so_far=12850) ---
+    GEN batch 1/16 block<=799,999 tf=0 gl=12858 lots=0 2s
+    GEN batch 6/16 block<=4,799,999 tf=0 gl=12898 lots=0 7s
+    GEN batch 11/16 block<=8,799,999 tf=42906 gl=13022 lots=12569 35s
+    GEN batch 16/16 block<=12,346,295 tf=94914 gl=13148 lots=19217 58s
+  GEN      cmc=2726 DONE tf=94914 gl=13148 code=11/32 scrMo=6 HODLmed=43.7% last=44.9%
+  --- SMT cmc=2277 chain=1 START (gl_so_far=13148) ---
+    SMT batch 1/16 block<=799,999 tf=0 gl=13156 lots=0 2s
+    SMT batch 6/16 block<=4,799,999 tf=6240 gl=13218 lots=3040 13s
+    SMT batch 11/16 block<=8,799,999 tf=29988 gl=13328 lots=12430 30s
+    SMT batch 16/16 block<=12,151,617 tf=29988 gl=13362 lots=12430 34s
+  SMT      cmc=2277 DONE tf=29988 gl=13362 code=0/42 scrMo=37 HODLmed=100.0% last=100.0%
+  --- DOV cmc=2110 chain=1 START (gl_so_far=13362) ---
+    DOV batch 1/23 block<=799,999 tf=0 gl=13370 lots=0 2s
+    DOV batch 6/23 block<=4,799,999 tf=8705 gl=13440 lots=4140 10s
+    DOV batch 11/23 block<=8,799,999 tf=14374 gl=13484 lots=6529 16s
+    DOV batch 16/23 block<=12,799,999 tf=36940 gl=13572 lots=11931 28s
+    DOV batch 21/23 block<=16,799,999 tf=67105 gl=13650 lots=16291 40s
+  DOV      cmc=2110 DONE tf=73665 gl=13667 code=10/88 scrMo=41 HODLmed=56.5% last=50.4%
+  --- RING cmc=5798 chain=1 START (gl_so_far=13667) ---
+    RING batch 1/22 block<=799,999 tf=0 gl=13675 lots=0 1s
+    RING batch 6/22 block<=4,799,999 tf=0 gl=13715 lots=0 6s
+    RING batch 11/22 block<=8,799,999 tf=85184 gl=14015 lots=11143 46s
+    RING batch 16/22 block<=12,799,999 tf=192181 gl=14325 lots=32351 87s
+    RING batch 21/22 block<=16,799,999 tf=215185 gl=14393 lots=35943 97s
+  RING     cmc=5798 DONE tf=216241 gl=14401 code=27/80 scrMo=30 HODLmed=12.6% last=23.0%
+  --- ORC cmc=5326 chain=1 START (gl_so_far=14401) ---
+    ORC batch 1/25 block<=799,999 tf=0 gl=14409 lots=0 1s
+    ORC batch 6/25 block<=4,799,999 tf=0 gl=14449 lots=0 6s
+    ORC batch 11/25 block<=8,799,999 tf=208 gl=14489 lots=49 11s
+    ORC batch 16/25 block<=12,799,999 tf=48773 gl=14653 lots=13062 33s
+    ORC batch 21/25 block<=16,799,999 tf=82915 gl=14727 lots=18902 44s
+  ORC      cmc=5326 DONE tf=91546 gl=14757 code=14/107 scrMo=36 HODLmed=51.3% last=45.4%
+  --- LINA cmc=3083 chain=1 START (gl_so_far=14757) ---
+    LINA batch 1/14 block<=799,999 tf=0 gl=14765 lots=0 2s
+    LINA batch 6/14 block<=4,799,999 tf=0 gl=14805 lots=0 7s
+    LINA batch 11/14 block<=8,799,999 tf=34154 gl=14909 lots=12778 34s
+  LINA     cmc=3083 DONE tf=53175 gl=14973 code=0/71 scrMo=18 HODLmed=73.9% last=93.8%
+  --- TETH cmc=37574 chain=1 START (gl_so_far=14973) ---
+    TETH batch 1/32 block<=799,999 tf=0 gl=14981 lots=0 2s
+    TETH batch 6/32 block<=4,799,999 tf=0 gl=15021 lots=0 6s
+    TETH batch 11/32 block<=8,799,999 tf=0 gl=15061 lots=0 11s
+    TETH batch 16/32 block<=12,799,999 tf=0 gl=15101 lots=0 17s
+    TETH batch 21/32 block<=16,799,999 tf=0 gl=15141 lots=0 22s
+    TETH batch 26/32 block<=20,799,999 tf=37 gl=15181 lots=19 27s
+    TETH batch 31/32 block<=24,799,999 tf=252559 gl=15953 lots=47886 129s
+  TETH     cmc=37574 DONE tf=259957 gl=15970 code=8/52 scrMo=5 HODLmed=3.9% last=3.9%
+  --- METH cmc=29035 chain=1 START (gl_so_far=15970) ---
+    METH batch 1/32 block<=799,999 tf=0 gl=15978 lots=0 1s
+    METH batch 6/32 block<=4,799,999 tf=0 gl=16018 lots=0 6s
+    METH batch 11/32 block<=8,799,999 tf=0 gl=16058 lots=0 11s
+    METH batch 16/32 block<=12,799,999 tf=0 gl=16098 lots=0 16s
+    METH batch 21/32 block<=16,799,999 tf=0 gl=16138 lots=0 22s
+    METH batch 26/32 block<=20,799,999 tf=99069 gl=16452 lots=26263 65s
+    METH batch 31/32 block<=24,799,999 tf=167224 gl=16628 lots=32248 88s
+  METH     cmc=29035 DONE tf=170478 gl=16635 code=16/59 scrMo=11 HODLmed=12.5% last=14.1%
+  --- MAV cmc=18037 chain=1 START (gl_so_far=16635) ---
+    MAV batch 1/32 block<=799,999 tf=0 gl=16643 lots=0 2s
+    MAV batch 6/32 block<=4,799,999 tf=0 gl=16683 lots=0 7s
+    MAV batch 11/32 block<=8,799,999 tf=0 gl=16723 lots=0 12s
+    MAV batch 16/32 block<=12,799,999 tf=0 gl=16763 lots=0 17s
+    MAV batch 21/32 block<=16,799,999 tf=0 gl=16803 lots=0 22s
+    MAV batch 26/32 block<=20,799,999 tf=76236 gl=17009 lots=26051 51s
+    MAV batch 31/32 block<=24,799,999 tf=112804 gl=17097 lots=29938 65s
+  MAV      cmc=18037 DONE tf=114273 gl=17101 code=30/127 scrMo=34 HODLmed=3.0% last=17.6%
+  --- CFG cmc=6748 chain=1 START (gl_so_far=17101) ---
+    CFG batch 1/32 block<=799,999 tf=0 gl=17109 lots=0 1s
+    CFG batch 6/32 block<=4,799,999 tf=0 gl=17149 lots=0 6s
+    CFG batch 11/32 block<=8,799,999 tf=0 gl=17189 lots=0 11s
+    CFG batch 16/32 block<=12,799,999 tf=0 gl=17229 lots=0 16s
+    CFG batch 21/32 block<=16,799,999 tf=0 gl=17269 lots=0 21s
+    CFG batch 26/32 block<=20,799,999 tf=0 gl=17309 lots=0 26s
+    CFG batch 31/32 block<=24,799,999 tf=196112 gl=17911 lots=19733 106s
+  CFG      cmc=6748 DONE tf=275392 gl=18152 code=11/64 scrMo=15 HODLmed=0.0% last=46.1%
+  --- FF cmc=38482 chain=1 START (gl_so_far=18152) ---
+    FF batch 1/32 block<=799,999 tf=0 gl=18160 lots=0 2s
+    FF batch 6/32 block<=4,799,999 tf=0 gl=18200 lots=0 7s
+    FF batch 11/32 block<=8,799,999 tf=0 gl=18240 lots=0 12s
+    FF batch 16/32 block<=12,799,999 tf=0 gl=18280 lots=0 17s
+    FF batch 21/32 block<=16,799,999 tf=0 gl=18320 lots=0 22s
+    FF batch 26/32 block<=20,799,999 tf=0 gl=18360 lots=0 27s
+    FF batch 31/32 block<=24,799,999 tf=319044 gl=19388 lots=72035 228s
+  FF       cmc=38482 DONE tf=361148 gl=19505 code=13/36 scrMo=9 HODLmed=0.0% last=0.3%
+  --- AUTO cmc=2559 chain=1 START (gl_so_far=19505) ---
+    AUTO batch 1/15 block<=799,999 tf=0 gl=19513 lots=0 2s
+    AUTO batch 6/15 block<=4,799,999 tf=0 gl=19553 lots=0 7s
+    AUTO batch 11/15 block<=8,799,999 tf=46256 gl=19707 lots=20660 55s
+  AUTO     cmc=2559 DONE tf=52425 gl=19737 code=2/64 scrMo=31 HODLmed=38.2% last=73.1%
+  --- WINGS cmc=1500 chain=1 START (gl_so_far=19737) ---
+    WINGS batch 1/15 block<=799,999 tf=0 gl=19745 lots=0 2s
+    WINGS batch 6/15 block<=4,799,999 tf=72582 gl=19993 lots=19098 47s
+    WINGS batch 11/15 block<=8,799,999 tf=140654 gl=20179 lots=37603 85s
+  WINGS    cmc=1500 DONE tf=153383 gl=20215 code=18/89 scrMo=45 HODLmed=39.7% last=46.7%
+  --- ZIP cmc=2826 chain=1 START (gl_so_far=20215) ---
+    ZIP batch 1/15 block<=799,999 tf=0 gl=20223 lots=0 2s
+    ZIP batch 6/15 block<=4,799,999 tf=0 gl=20263 lots=0 7s
+    ZIP batch 11/15 block<=8,799,999 tf=31328 gl=20373 lots=14717 27s
+  ZIP      cmc=2826 DONE tf=35485 gl=20401 code=1/59 scrMo=28 HODLmed=35.1% last=35.7%
+  --- VOLT cmc=19650 chain=1 START (gl_so_far=20401) ---
+    VOLT batch 1/28 block<=799,999 tf=0 gl=20409 lots=0 1s
+    VOLT batch 6/28 block<=4,799,999 tf=0 gl=20449 lots=0 7s
+    VOLT batch 11/28 block<=8,799,999 tf=0 gl=20489 lots=0 12s
+    VOLT batch 16/28 block<=12,799,999 tf=0 gl=20529 lots=0 17s
+    VOLT batch 21/28 block<=16,799,999 tf=0 gl=20569 lots=0 22s
+    VOLT batch 26/28 block<=20,799,999 tf=91717 gl=20821 lots=18216 85s
+  VOLT     cmc=19650 DONE tf=121182 gl=20891 code=5/42 scrMo=22 HODLmed=48.8% last=54.7%
+  --- OST cmc=2296 chain=1 START (gl_so_far=20891) ---
+    OST batch 1/16 block<=799,999 tf=0 gl=20899 lots=0 1s
+    OST batch 6/16 block<=4,799,999 tf=16418 gl=21001 lots=11395 19s
+    OST batch 11/16 block<=8,799,999 tf=105718 gl=21295 lots=30113 81s
+    OST batch 16/16 block<=12,546,588 tf=147047 gl=21401 lots=37705 110s
+  OST      cmc=2296 DONE tf=147047 gl=21401 code=8/67 scrMo=42 HODLmed=44.3% last=44.3%
+  --- PRL cmc=2202 chain=1 START (gl_so_far=21401) ---
+    PRL batch 1/9 block<=799,999 tf=0 gl=21409 lots=0 2s
+    PRL batch 6/9 block<=4,799,999 tf=7867 gl=21477 lots=4296 13s
+  PRL      cmc=2202 DONE tf=72495 gl=21664 code=1/78 scrMo=10 HODLmed=25.1% last=46.7%
+  --- YOU cmc=3053 chain=1 START (gl_so_far=21664) ---
+    YOU batch 1/15 block<=799,999 tf=0 gl=21672 lots=0 2s
+    YOU batch 6/15 block<=4,799,999 tf=0 gl=21712 lots=0 7s
+    YOU batch 11/15 block<=8,799,999 tf=52271 gl=21868 lots=14154 40s
+  YOU      cmc=3053 DONE tf=57296 gl=21902 code=2/30 scrMo=16 HODLmed=94.3% last=99.3%
+  --- SKY cmc=33038 chain=1 START (gl_so_far=21902) ---
+    SKY batch 1/32 block<=799,999 tf=0 gl=21910 lots=0 1s
+    SKY batch 6/32 block<=4,799,999 tf=0 gl=21950 lots=0 8s
+    SKY batch 11/32 block<=8,799,999 tf=0 gl=21990 lots=0 13s
+    SKY batch 16/32 block<=12,799,999 tf=0 gl=22030 lots=0 18s
+    SKY batch 21/32 block<=16,799,999 tf=0 gl=22070 lots=0 23s
+    SKY batch 26/32 block<=20,799,999 tf=1384 gl=22116 lots=294 31s
+    SKY batch 31/32 block<=24,799,999 tf=889450 gl=24764 lots=35678 469s
+    retry 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+    retry 2: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+    retry 3: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+    retry 4: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+    retry 5: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+    retry 1: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+    retry 2: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+    retry 3: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+    retry 4: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+  SKY      cmc=33038 DONE tf=996285 gl=25077 code=26/107 scrMo=13 HODLmed=0.3% last=3.5%
+  --- DGTX cmc=2772 chain=1 START (gl_so_far=25077) ---
+    DGTX batch 1/16 block<=799,999 tf=0 gl=25085 lots=0 2s
+    DGTX batch 6/16 block<=4,799,999 tf=0 gl=25125 lots=0 8s
+    DGTX batch 11/16 block<=8,799,999 tf=0 gl=25165 lots=0 14s
+    DGTX batch 16/16 block<=12,346,295 tf=44823 gl=25341 lots=19558 59s
+  DGTX     cmc=2772 DONE tf=44823 gl=25341 code=2/25 scrMo=6 HODLmed=0.0% last=32.3%
+  --- SPI cmc=8161 chain=1 START (gl_so_far=25341) ---
+    SPI batch 1/20 block<=799,999 tf=0 gl=25349 lots=0 2s
+    SPI batch 6/20 block<=4,799,999 tf=0 gl=25389 lots=0 8s
+    SPI batch 11/20 block<=8,799,999 tf=0 gl=25429 lots=0 13s
+    SPI batch 16/20 block<=12,799,999 tf=139639 gl=25871 lots=35033 155s
+  SPI      cmc=8161 DONE tf=168006 gl=25936 code=12/42 scrMo=11 HODLmed=26.6% last=46.6%
+  --- PYR cmc=9308 chain=1 START (gl_so_far=25936) ---
+    PYR batch 1/32 block<=799,999 tf=0 gl=25944 lots=0 1s
+    PYR batch 6/32 block<=4,799,999 tf=0 gl=25984 lots=0 6s
+    PYR batch 11/32 block<=8,799,999 tf=0 gl=26024 lots=0 11s
+    PYR batch 16/32 block<=12,799,999 tf=0 gl=26064 lots=0 16s
+    PYR batch 21/32 block<=16,799,999 tf=71553 gl=26262 lots=19080 75s
+    PYR batch 26/32 block<=20,799,999 tf=212016 gl=26652 lots=51288 154s
+    PYR batch 31/32 block<=24,799,999 tf=294137 gl=26878 lots=62378 209s
+  PYR      cmc=9308 DONE tf=299812 gl=26896 code=11/150 scrMo=53 HODLmed=29.0% last=17.0%
+  --- VEE cmc=2223 chain=1 START (gl_so_far=26896) ---
+    VEE batch 1/29 block<=799,999 tf=0 gl=26904 lots=0 3s
+    VEE batch 6/29 block<=4,799,999 tf=8485 gl=26982 lots=4610 16s
+    VEE batch 11/29 block<=8,799,999 tf=51168 gl=27092 lots=15042 38s
+    VEE batch 16/29 block<=12,799,999 tf=67719 gl=27140 lots=17524 48s
+    VEE batch 21/29 block<=16,799,999 tf=82599 gl=27182 lots=19195 60s
+    VEE batch 26/29 block<=20,799,999 tf=119946 gl=27284 lots=23731 86s
+  VEE      cmc=2223 DONE tf=261517 gl=27693 code=8/85 scrMo=71 HODLmed=63.6% last=60.9%
+  --- SWETH cmc=25147 chain=1 START (gl_so_far=27693) ---
+    SWETH batch 1/32 block<=799,999 tf=0 gl=27701 lots=0 2s
+    SWETH batch 6/32 block<=4,799,999 tf=0 gl=27741 lots=0 6s
+    SWETH batch 11/32 block<=8,799,999 tf=0 gl=27781 lots=0 11s
+    SWETH batch 16/32 block<=12,799,999 tf=0 gl=27821 lots=0 17s
+    SWETH batch 21/32 block<=16,799,999 tf=0 gl=27861 lots=0 22s
+    SWETH batch 26/32 block<=20,799,999 tf=599999 gl=29615 lots=144584 271s
+    SWETH batch 31/32 block<=24,799,999 tf=804927 gl=30217 lots=150520 353s
+  SWETH    cmc=25147 DONE tf=814882 gl=30242 code=22/65 scrMo=11 HODLmed=12.2% last=16.3%
+  --- EDGE cmc=39720 chain=1 START (gl_so_far=30242) ---
+    EDGE batch 1/32 block<=799,999 tf=0 gl=30250 lots=0 1s
+    EDGE batch 6/32 block<=4,799,999 tf=0 gl=30290 lots=0 6s
+    EDGE batch 11/32 block<=8,799,999 tf=0 gl=30330 lots=0 11s
+    EDGE batch 16/32 block<=12,799,999 tf=0 gl=30370 lots=0 17s
+    EDGE batch 21/32 block<=16,799,999 tf=0 gl=30410 lots=0 22s
+    EDGE batch 26/32 block<=20,799,999 tf=0 gl=30450 lots=0 27s
+    EDGE batch 31/32 block<=24,799,999 tf=295587 gl=31414 lots=145920 307s
+  EDGE     cmc=39720 DONE tf=581563 gl=32299 code=0/0 scrMo=3 HODLmed=0.0% last=0.0%
+  --- DODO cmc=7224 chain=1 START (gl_so_far=32299) ---
+    DODO batch 1/32 block<=799,999 tf=0 gl=32307 lots=0 2s
+    DODO batch 6/32 block<=4,799,999 tf=0 gl=32347 lots=0 7s
+    DODO batch 11/32 block<=8,799,999 tf=0 gl=32387 lots=0 12s
+    DODO batch 16/32 block<=12,799,999 tf=271429 gl=33191 lots=30802 185s
+    DODO batch 21/32 block<=16,799,999 tf=368593 gl=33447 lots=44260 241s
+    DODO batch 26/32 block<=20,799,999 tf=417324 gl=33561 lots=52047 271s
+    DODO batch 31/32 block<=24,799,999 tf=460781 gl=33659 lots=57035 302s
+  DODO     cmc=7224 DONE tf=465519 gl=33668 code=38/150 scrMo=63 HODLmed=17.9% last=34.1%
+  --- ALI cmc=16876 chain=1 START (gl_so_far=33668) ---
+    ALI batch 1/32 block<=799,999 tf=0 gl=33676 lots=0 6s
+    ALI batch 6/32 block<=4,799,999 tf=0 gl=33716 lots=0 11s
+    ALI batch 11/32 block<=8,799,999 tf=0 gl=33756 lots=0 16s
+    ALI batch 16/32 block<=12,799,999 tf=0 gl=33796 lots=0 21s
+    ALI batch 21/32 block<=16,799,999 tf=92338 gl=34074 lots=17311 85s
+    ALI batch 26/32 block<=20,799,999 tf=179156 gl=34284 lots=32403 133s
+    ALI batch 31/32 block<=24,799,999 tf=297733 gl=34618 lots=41295 204s
+  ALI      cmc=16876 DONE tf=299290 gl=34622 code=32/80 scrMo=40 HODLmed=8.4% last=15.4%
+  --- IDEX cmc=3928 chain=1 START (gl_so_far=34622) ---
+    IDEX batch 1/30 block<=799,999 tf=0 gl=34630 lots=0 2s
+    IDEX batch 6/30 block<=4,799,999 tf=0 gl=34670 lots=0 7s
+    IDEX batch 11/30 block<=8,799,999 tf=28587 gl=34838 lots=15147 29s
+    IDEX batch 16/30 block<=12,799,999 tf=64162 gl=34936 lots=21482 44s
+    IDEX batch 21/30 block<=16,799,999 tf=99591 gl=35030 lots=28370 60s
+    IDEX batch 26/30 block<=20,799,999 tf=118189 gl=35080 lots=33148 70s
+  IDEX     cmc=3928 DONE tf=159564 gl=35208 code=5/77 scrMo=64 HODLmed=70.1% last=41.6%
+  --- SYRUP cmc=33824 chain=1 START (gl_so_far=35208) ---
+    SYRUP batch 1/32 block<=799,999 tf=0 gl=35216 lots=0 1s
+    SYRUP batch 6/32 block<=4,799,999 tf=0 gl=35256 lots=0 7s
+    SYRUP batch 11/32 block<=8,799,999 tf=0 gl=35296 lots=0 12s
+    SYRUP batch 16/32 block<=12,799,999 tf=0 gl=35336 lots=0 17s
+    SYRUP batch 21/32 block<=16,799,999 tf=0 gl=35376 lots=0 22s
+    SYRUP batch 26/32 block<=20,799,999 tf=2 gl=35416 lots=2 27s
+    SYRUP batch 31/32 block<=24,799,999 tf=541864 gl=37024 lots=44259 307s
+  SYRUP    cmc=33824 DONE tf=574251 gl=37125 code=15/95 scrMo=14 HODLmed=11.4% last=23.6%
+  --- BARD cmc=38408 chain=1 START (gl_so_far=37125) ---
+    BARD batch 1/32 block<=799,999 tf=0 gl=37133 lots=0 1s
+    BARD batch 6/32 block<=4,799,999 tf=0 gl=37173 lots=0 13s
+    BARD batch 11/32 block<=8,799,999 tf=0 gl=37213 lots=0 18s
+    BARD batch 16/32 block<=12,799,999 tf=0 gl=37253 lots=0 23s
+    BARD batch 21/32 block<=16,799,999 tf=0 gl=37293 lots=0 28s
+    BARD batch 26/32 block<=20,799,999 tf=0 gl=37333 lots=0 33s
+    BARD batch 31/32 block<=24,799,999 tf=464676 gl=38817 lots=163354 436s
+  BARD     cmc=38408 DONE tf=501084 gl=38928 code=13/33 scrMo=9 HODLmed=0.0% last=1.4%
+  --- DAO cmc=8420 chain=1 START (gl_so_far=38928) ---
+    DAO batch 1/31 block<=799,999 tf=0 gl=38936 lots=0 9s
+    DAO batch 6/31 block<=4,799,999 tf=0 gl=38976 lots=0 14s
+    DAO batch 11/31 block<=8,799,999 tf=0 gl=39016 lots=0 19s
+    DAO batch 16/31 block<=12,799,999 tf=154535 gl=39520 lots=30904 174s
+    DAO batch 21/31 block<=16,799,999 tf=424303 gl=40306 lots=64218 361s
+    DAO batch 26/31 block<=20,799,999 tf=551163 gl=40656 lots=78942 434s
+    DAO batch 31/31 block<=24,782,520 tf=649613 gl=40928 lots=85277 501s
+  DAO      cmc=8420 DONE tf=649613 gl=40928 code=38/84 scrMo=48 HODLmed=4.9% last=11.1%
+  --- KNC cmc=9444 chain=1 START (gl_so_far=40928) ---
+    KNC batch 1/32 block<=799,999 tf=0 gl=40936 lots=0 1s
+    KNC batch 6/32 block<=4,799,999 tf=0 gl=40976 lots=0 8s
+    KNC batch 11/32 block<=8,799,999 tf=0 gl=41016 lots=0 18s
+    KNC batch 16/32 block<=12,799,999 tf=24149 gl=41112 lots=7649 33s
+    KNC batch 21/32 block<=16,799,999 tf=227631 gl=41704 lots=38977 142s
+    KNC batch 26/32 block<=20,799,999 tf=313712 gl=41936 lots=52518 198s
+    KNC batch 31/32 block<=24,799,999 tf=437292 gl=42286 lots=63002 282s
+  KNC      cmc=9444 DONE tf=452019 gl=42331 code=28/150 scrMo=59 HODLmed=24.1% last=22.6%
+  --- MUBI cmc=28412 chain=1 START (gl_so_far=42331) ---
+    MUBI batch 1/27 block<=799,999 tf=0 gl=42339 lots=0 2s
+    MUBI batch 6/27 block<=4,799,999 tf=0 gl=42379 lots=0 6s
+    MUBI batch 11/27 block<=8,799,999 tf=0 gl=42419 lots=0 11s
+    MUBI batch 16/27 block<=12,799,999 tf=0 gl=42459 lots=0 17s
+    MUBI batch 21/27 block<=16,799,999 tf=0 gl=42499 lots=0 22s
+    MUBI batch 26/27 block<=20,799,999 tf=426106 gl=43807 lots=73692 218s
+  MUBI     cmc=28412 DONE tf=445657 gl=43857 code=4/70 scrMo=13 HODLmed=6.3% last=26.9%
+  --- WOO cmc=7501 chain=1 START (gl_so_far=43857) ---
+    WOO batch 1/32 block<=799,999 tf=0 gl=43865 lots=0 1s
+    WOO batch 6/32 block<=4,799,999 tf=0 gl=43905 lots=0 7s
+    WOO batch 11/32 block<=8,799,999 tf=0 gl=43945 lots=0 12s
+    WOO batch 16/32 block<=12,799,999 tf=158866 gl=44441 lots=21104 86s
+    WOO batch 21/32 block<=16,799,999 tf=398795 gl=45139 lots=47554 180s
+    WOO batch 26/32 block<=20,799,999 tf=589635 gl=45677 lots=74593 255s
+    WOO batch 31/32 block<=24,799,999 tf=785227 gl=46215 lots=87741 331s
+  WOO      cmc=7501 DONE tf=798802 gl=46252 code=45/150 scrMo=62 HODLmed=16.1% last=20.7%
+  --- DEP cmc=5429 chain=1 START (gl_so_far=46252) ---
+    DEP batch 1/32 block<=799,999 tf=0 gl=46260 lots=0 1s
+    DEP batch 6/32 block<=4,799,999 tf=0 gl=46300 lots=0 7s
+    DEP batch 11/32 block<=8,799,999 tf=47 gl=46340 lots=24 12s
+    DEP batch 16/32 block<=12,799,999 tf=24183 gl=46402 lots=4724 36s
+    DEP batch 21/32 block<=16,799,999 tf=143564 gl=46732 lots=29557 105s
+    DEP batch 26/32 block<=20,799,999 tf=245317 gl=46996 lots=36178 160s
+    DEP batch 31/32 block<=24,799,999 tf=317652 gl=47180 lots=41541 213s
+  DEP      cmc=5429 DONE tf=322914 gl=47197 code=8/80 scrMo=48 HODLmed=45.6% last=23.6%
+  --- MIN cmc=3296 chain=1 START (gl_so_far=47197) ---
+    MIN batch 1/15 block<=799,999 tf=0 gl=47205 lots=0 2s
+    MIN batch 6/15 block<=4,799,999 tf=0 gl=47245 lots=0 6s
+    MIN batch 11/15 block<=8,799,999 tf=22118 gl=47383 lots=20715 29s
+  MIN      cmc=3296 DONE tf=28613 gl=47417 code=1/39 scrMo=15 HODLmed=77.8% last=80.7%
+  --- BOX cmc=3475 chain=1 START (gl_so_far=47417) ---
+    BOX batch 1/14 block<=799,999 tf=0 gl=47425 lots=0 2s
+    BOX batch 6/14 block<=4,799,999 tf=0 gl=47465 lots=0 7s
+    BOX batch 11/14 block<=8,799,999 tf=28025 gl=47619 lots=22108 30s
+  BOX      cmc=3475 DONE tf=28248 gl=47637 code=0/66 scrMo=22 HODLmed=85.1% last=95.4%
+  --- MORPHO cmc=34104 chain=1 START (gl_so_far=47637) ---
+    MORPHO batch 1/32 block<=799,999 tf=0 gl=47645 lots=0 2s
+    MORPHO batch 6/32 block<=4,799,999 tf=0 gl=47685 lots=0 6s
+    MORPHO batch 11/32 block<=8,799,999 tf=0 gl=47725 lots=0 11s
+    MORPHO batch 16/32 block<=12,799,999 tf=0 gl=47765 lots=0 17s
+    MORPHO batch 21/32 block<=16,799,999 tf=0 gl=47805 lots=0 22s
+    MORPHO batch 26/32 block<=20,799,999 tf=0 gl=47845 lots=0 28s
+    MORPHO batch 31/32 block<=24,799,999 tf=736754 gl=50039 lots=52436 395s
+  MORPHO   cmc=34104 DONE tf=814919 gl=50256 code=19/66 scrMo=18 HODLmed=9.0% last=20.0%
+  --- RETH cmc=15060 chain=1 START (gl_so_far=50256) ---
+    RETH batch 1/32 block<=799,999 tf=0 gl=50264 lots=0 1s
+    RETH batch 6/32 block<=4,799,999 tf=0 gl=50304 lots=0 6s
+    RETH batch 11/32 block<=8,799,999 tf=0 gl=50344 lots=0 11s
+    RETH batch 16/32 block<=12,799,999 tf=0 gl=50384 lots=0 16s
+    RETH batch 21/32 block<=16,799,999 tf=96732 gl=50648 lots=19679 54s
+    RETH batch 26/32 block<=20,799,999 tf=406895 gl=51568 lots=67458 180s
+    RETH batch 31/32 block<=24,799,999 tf=830611 gl=52860 lots=79644 349s
+  RETH     cmc=15060 DONE tf=868428 gl=53001 code=25/52 scrMo=17 HODLmed=20.2% last=21.6%
+  --- RLY cmc=8075 chain=1 START (gl_so_far=53001) ---
+    RLY batch 1/27 block<=799,999 tf=0 gl=53009 lots=0 1s
+    RLY batch 6/27 block<=4,799,999 tf=0 gl=53049 lots=0 6s
+    RLY batch 11/27 block<=8,799,999 tf=0 gl=53089 lots=0 16s
+    RLY batch 16/27 block<=12,799,999 tf=114325 gl=53443 lots=12917 84s
+    RLY batch 21/27 block<=16,799,999 tf=347152 gl=54187 lots=45479 213s
+    RLY batch 26/27 block<=20,799,999 tf=427960 gl=54401 lots=55631 280s
+  RLY      cmc=8075 DONE tf=431472 gl=54410 code=21/86 scrMo=37 HODLmed=14.4% last=30.3%
+  --- JUP cmc=1503 chain=1 START (gl_so_far=54410) ---
+    JUP batch 1/21 block<=799,999 tf=0 gl=54418 lots=0 2s
+    JUP batch 6/21 block<=4,799,999 tf=0 gl=54458 lots=0 8s
+    JUP batch 11/21 block<=8,799,999 tf=0 gl=54498 lots=0 14s
+    JUP batch 16/21 block<=12,799,999 tf=52287 gl=54672 lots=11280 136s
+    JUP batch 21/21 block<=16,731,850 tf=95120 gl=54768 lots=18743 164s
+  JUP      cmc=1503 DONE tf=95120 gl=54768 code=13/49 scrMo=14 HODLmed=25.3% last=38.5%
+  --- WILD cmc=9674 chain=1 START (gl_so_far=54768) ---
+    WILD batch 1/32 block<=799,999 tf=0 gl=54776 lots=0 2s
+    WILD batch 6/32 block<=4,799,999 tf=0 gl=54816 lots=0 24s
+    WILD batch 11/32 block<=8,799,999 tf=0 gl=54856 lots=0 36s
+    WILD batch 16/32 block<=12,799,999 tf=9306 gl=54922 lots=3371 107s
+    WILD batch 21/32 block<=16,799,999 tf=144323 gl=55288 lots=28559 229s
+    WILD batch 26/32 block<=20,799,999 tf=241349 gl=55558 lots=46790 339s
+    WILD batch 31/32 block<=24,799,999 tf=517806 gl=56368 lots=64523 490s
+  WILD     cmc=9674 DONE tf=526364 gl=56392 code=58/149 scrMo=54 HODLmed=9.8% last=18.8%
+  --- CPOOL cmc=12573 chain=1 START (gl_so_far=56392) ---
+    CPOOL batch 1/32 block<=799,999 tf=0 gl=56400 lots=0 1s
+    CPOOL batch 6/32 block<=4,799,999 tf=0 gl=56440 lots=0 6s
+    CPOOL batch 11/32 block<=8,799,999 tf=0 gl=56480 lots=0 11s
+    CPOOL batch 16/32 block<=12,799,999 tf=0 gl=56520 lots=0 16s
+    CPOOL batch 21/32 block<=16,799,999 tf=45467 gl=56634 lots=5779 51s
+    CPOOL batch 26/32 block<=20,799,999 tf=184475 gl=57022 lots=26065 121s
+    CPOOL batch 31/32 block<=24,799,999 tf=704549 gl=58544 lots=64089 382s
+  CPOOL    cmc=12573 DONE tf=748913 gl=58687 code=16/64 scrMo=18 HODLmed=29.4% last=31.1%
+  --- RSETH cmc=29242 chain=1 START (gl_so_far=58687) ---
+    RSETH batch 1/32 block<=799,999 tf=0 gl=58695 lots=0 1s
+    RSETH batch 6/32 block<=4,799,999 tf=0 gl=58735 lots=0 6s
+    RSETH batch 11/32 block<=8,799,999 tf=0 gl=58775 lots=0 11s
+    RSETH batch 16/32 block<=12,799,999 tf=0 gl=58815 lots=0 16s
+    RSETH batch 21/32 block<=16,799,999 tf=0 gl=58855 lots=0 21s
+    RSETH batch 26/32 block<=20,799,999 tf=239727 gl=59565 lots=41890 146s
+    RSETH batch 31/32 block<=24,799,999 tf=404704 gl=60015 lots=54290 221s
+  RSETH    cmc=29242 DONE tf=415042 gl=60048 code=14/56 scrMo=11 HODLmed=2.7% last=2.5%
+  --- LBTC cmc=33652 chain=1 START (gl_so_far=60048) ---
+    LBTC batch 1/32 block<=799,999 tf=0 gl=60056 lots=0 1s
+    LBTC batch 6/32 block<=4,799,999 tf=0 gl=60096 lots=0 6s
+    LBTC batch 11/32 block<=8,799,999 tf=0 gl=60136 lots=0 11s
+    LBTC batch 16/32 block<=12,799,999 tf=0 gl=60176 lots=0 16s
+    LBTC batch 21/32 block<=16,799,999 tf=0 gl=60216 lots=0 21s
+    LBTC batch 26/32 block<=20,799,999 tf=63661 gl=60456 lots=19091 53s
+    LBTC batch 31/32 block<=24,799,999 tf=529276 gl=61868 lots=73700 236s
+  LBTC     cmc=33652 DONE tf=547656 gl=61917 code=26/85 scrMo=10 HODLmed=2.1% last=3.1%
+  --- METIS cmc=9640 chain=1 START (gl_so_far=61917) ---
+    METIS batch 1/32 block<=799,999 tf=0 gl=61925 lots=0 1s
+    METIS batch 6/32 block<=4,799,999 tf=0 gl=61965 lots=0 6s
+    METIS batch 11/32 block<=8,799,999 tf=0 gl=62005 lots=0 11s
+    METIS batch 16/32 block<=12,799,999 tf=7073 gl=62075 lots=4378 24s
+    METIS batch 21/32 block<=16,799,999 tf=294049 gl=62901 lots=45963 189s
+    METIS batch 26/32 block<=20,799,999 tf=487079 gl=63469 lots=76004 293s
+    METIS batch 31/32 block<=24,799,999 tf=626729 gl=63851 lots=89092 374s
+  METIS    cmc=9640 DONE tf=641646 gl=63896 code=22/150 scrMo=54 HODLmed=11.5% last=10.7%
+  --- EZETH cmc=29520 chain=1 START (gl_so_far=63896) ---
+    EZETH batch 1/32 block<=799,999 tf=0 gl=63904 lots=0 1s
+    EZETH batch 6/32 block<=4,799,999 tf=0 gl=63944 lots=0 6s
+    EZETH batch 11/32 block<=8,799,999 tf=0 gl=63984 lots=0 11s
+    EZETH batch 16/32 block<=12,799,999 tf=0 gl=64024 lots=0 16s
+    EZETH batch 21/32 block<=16,799,999 tf=0 gl=64064 lots=0 21s
+    EZETH batch 26/32 block<=20,799,999 tf=555909 gl=65714 lots=90188 288s
+    EZETH batch 31/32 block<=24,799,999 tf=772922 gl=66356 lots=103845 385s
+  EZETH    cmc=29520 DONE tf=778082 gl=66369 code=14/45 scrMo=12 HODLmed=14.8% last=25.4%
+  --- ZRO cmc=26997 chain=1 START (gl_so_far=66369) ---
+    ZRO batch 1/32 block<=799,999 tf=0 gl=66377 lots=0 3s
+    ZRO batch 6/32 block<=4,799,999 tf=0 gl=66417 lots=0 8s
+    ZRO batch 11/32 block<=8,799,999 tf=0 gl=66457 lots=0 13s
+    ZRO batch 16/32 block<=12,799,999 tf=0 gl=66497 lots=0 18s
+    ZRO batch 21/32 block<=16,799,999 tf=0 gl=66537 lots=0 23s
+    ZRO batch 26/32 block<=20,799,999 tf=116760 gl=66909 lots=30427 80s
+    ZRO batch 31/32 block<=24,799,999 tf=608233 gl=68345 lots=76837 281s
+  ZRO      cmc=26997 DONE tf=655100 gl=68482 code=21/49 scrMo=24 HODLmed=22.5% last=34.9%
+  --- WHITE cmc=34143 chain=1 START (gl_so_far=68482) ---
+    WHITE batch 1/32 block<=799,999 tf=0 gl=68490 lots=0 3s
+    WHITE batch 6/32 block<=4,799,999 tf=0 gl=68530 lots=0 8s
+    WHITE batch 11/32 block<=8,799,999 tf=0 gl=68570 lots=0 13s
+    WHITE batch 16/32 block<=12,799,999 tf=0 gl=68610 lots=0 18s
+    WHITE batch 21/32 block<=16,799,999 tf=0 gl=68650 lots=0 23s
+    WHITE batch 26/32 block<=20,799,999 tf=0 gl=68690 lots=0 29s
+    WHITE batch 31/32 block<=24,799,999 tf=472659 gl=70066 lots=45348 224s
+  WHITE    cmc=34143 DONE tf=477196 gl=70075 code=4/54 scrMo=16 HODLmed=90.4% last=97.7%
+  --- UMA cmc=5617 chain=1 START (gl_so_far=70075) ---
+    UMA batch 1/32 block<=799,999 tf=0 gl=70083 lots=0 3s
+    UMA batch 6/32 block<=4,799,999 tf=0 gl=70123 lots=0 8s
+    UMA batch 11/32 block<=8,799,999 tf=0 gl=70163 lots=0 13s
+    UMA batch 16/32 block<=12,799,999 tf=310297 gl=71123 lots=60272 140s
+    UMA batch 21/32 block<=16,799,999 tf=455637 gl=71559 lots=78275 201s
+    UMA batch 26/32 block<=20,799,999 tf=570997 gl=71893 lots=90490 253s
+    UMA batch 31/32 block<=24,799,999 tf=785372 gl=72541 lots=109731 340s
+  UMA      cmc=5617 DONE tf=806941 gl=72620 code=45/142 scrMo=69 HODLmed=21.0% last=22.0%
+  --- HOT cmc=2430 chain=1 START (gl_so_far=72620) ---
+    HOT batch 1/17 block<=799,999 tf=0 gl=72628 lots=0 3s
+    HOT batch 6/17 block<=4,799,999 tf=0 gl=72668 lots=0 8s
+    HOT batch 11/17 block<=8,799,999 tf=55884 gl=72842 lots=29000 33s
+    HOT batch 16/17 block<=12,799,999 tf=63851 gl=72884 lots=31202 40s
+  HOT      cmc=2430 DONE tf=64098 gl=72888 code=1/72 scrMo=36 HODLmed=83.7% last=93.9%
+  --- PRIME cmc=23711 chain=1 START (gl_so_far=72888) ---
+    PRIME batch 1/32 block<=799,999 tf=0 gl=72896 lots=0 3s
+    PRIME batch 6/32 block<=4,799,999 tf=0 gl=72936 lots=0 8s
+    PRIME batch 11/32 block<=8,799,999 tf=0 gl=72976 lots=0 13s
+    PRIME batch 16/32 block<=12,799,999 tf=0 gl=73016 lots=0 18s
+    PRIME batch 21/32 block<=16,799,999 tf=127482 gl=73412 lots=18464 83s
+    PRIME batch 26/32 block<=20,799,999 tf=491894 gl=74478 lots=51642 229s
+    PRIME batch 31/32 block<=24,799,999 tf=872205 gl=75610 lots=87287 387s
+  PRIME    cmc=23711 DONE tf=883569 gl=75646 code=20/93 scrMo=31 HODLmed=15.4% last=12.2%
+  --- weETH cmc=28695 chain=1 START (gl_so_far=75646) ---
+    weETH batch 1/32 block<=799,999 tf=0 gl=75654 lots=0 3s
+    weETH batch 6/32 block<=4,799,999 tf=0 gl=75694 lots=0 8s
+    weETH batch 11/32 block<=8,799,999 tf=0 gl=75734 lots=0 13s
+    weETH batch 16/32 block<=12,799,999 tf=0 gl=75774 lots=0 18s
+    weETH batch 21/32 block<=16,799,999 tf=0 gl=75814 lots=0 24s
+    weETH batch 26/32 block<=20,799,999 tf=631866 gl=77742 lots=69685 313s
+    weETH batch 31/32 block<=24,799,999 tf=1281281 gl=79660 lots=46304 606s
+  weETH    cmc=28695 DONE tf=1386191 gl=79959 code=27/90 scrMo=12 HODLmed=1.7% last=4.2%
+  --- BabyDoge cmc=10407 chain=1 START (gl_so_far=79959) ---
+    BabyDoge batch 1/32 block<=799,999 tf=0 gl=79967 lots=0 3s
+    BabyDoge batch 6/32 block<=4,799,999 tf=0 gl=80007 lots=0 8s
+    BabyDoge batch 11/32 block<=8,799,999 tf=0 gl=80047 lots=0 13s
+    BabyDoge batch 16/32 block<=12,799,999 tf=0 gl=80087 lots=0 18s
+    BabyDoge batch 21/32 block<=16,799,999 tf=33618 gl=80183 lots=11412 34s
+    BabyDoge batch 26/32 block<=20,799,999 tf=103596 gl=80351 lots=28405 59s
+    BabyDoge batch 31/32 block<=24,799,999 tf=246441 gl=80735 lots=49007 113s
+  BabyDoge cmc=10407 DONE tf=250321 gl=80742 code=12/118 scrMo=48 HODLmed=78.1% last=78.3%
+  --- ATM cmc=2015 chain=1 START (gl_so_far=80742) ---
+    ATM batch 1/9 block<=799,999 tf=0 gl=80750 lots=0 3s
+    ATM batch 6/9 block<=4,799,999 tf=42215 gl=80950 lots=27266 28s
+  ATM      cmc=2015 DONE tf=61645 gl=81003 code=6/80 scrMo=13 HODLmed=7.8% last=12.7%
+  --- CEL cmc=2700 chain=1 START (gl_so_far=81003) ---
+    CEL batch 1/27 block<=799,999 tf=0 gl=81011 lots=0 3s
+    CEL batch 6/27 block<=4,799,999 tf=0 gl=81051 lots=0 8s
+    CEL batch 11/27 block<=8,799,999 tf=39458 gl=81171 lots=9278 24s
+    CEL batch 16/27 block<=12,799,999 tf=655850 gl=82953 lots=119252 262s
+    CEL batch 21/27 block<=16,799,999 tf=1044470 gl=84095 lots=36663 419s
+    CEL batch 26/27 block<=20,799,999 tf=1092663 gl=84227 lots=41115 439s
+  CEL      cmc=2700 DONE tf=1096985 gl=84240 code=17/86 scrMo=54 HODLmed=55.1% last=31.1%
+  --- BOX cmc=2945 chain=1 START (gl_so_far=84240) ---
+    BOX batch 1/14 block<=799,999 tf=0 gl=84248 lots=0 3s
+    BOX batch 6/14 block<=4,799,999 tf=0 gl=84288 lots=0 8s
+    BOX batch 11/14 block<=8,799,999 tf=98930 gl=84696 lots=53971 61s
+  BOX      cmc=2945 DONE tf=100577 gl=84720 code=0/38 scrMo=16 HODLmed=96.0% last=96.4%
+  --- ETHX cmc=27566 chain=1 START (gl_so_far=84720) ---
+    ETHX batch 1/32 block<=799,999 tf=0 gl=84728 lots=0 3s
+    ETHX batch 6/32 block<=4,799,999 tf=0 gl=84768 lots=0 8s
+    ETHX batch 11/32 block<=8,799,999 tf=0 gl=84808 lots=0 13s
+    ETHX batch 16/32 block<=12,799,999 tf=0 gl=84848 lots=0 18s
+    ETHX batch 21/32 block<=16,799,999 tf=0 gl=84888 lots=0 23s
+    ETHX batch 26/32 block<=20,799,999 tf=111595 gl=85222 lots=35460 73s
+    ETHX batch 31/32 block<=24,799,999 tf=173549 gl=85368 lots=45524 93s
+  ETHX     cmc=27566 DONE tf=178293 gl=85381 code=10/79 scrMo=11 HODLmed=13.1% last=15.2%
+  --- FTT cmc=4195 chain=1 START (gl_so_far=85381) ---
+    FTT batch 1/32 block<=799,999 tf=0 gl=85389 lots=0 3s
+    FTT batch 6/32 block<=4,799,999 tf=0 gl=85429 lots=0 8s
+    FTT batch 11/32 block<=8,799,999 tf=6807 gl=85481 lots=1016 16s
+    FTT batch 16/32 block<=12,799,999 tf=98780 gl=85727 lots=26547 55s
+    FTT batch 21/32 block<=16,799,999 tf=443646 gl=86755 lots=116640 209s
+    FTT batch 26/32 block<=20,799,999 tf=571207 gl=87105 lots=139357 262s
+    FTT batch 31/32 block<=24,799,999 tf=680679 gl=87429 lots=150610 307s
+  FTT      cmc=4195 DONE tf=689112 gl=87456 code=14/131 scrMo=81 HODLmed=34.7% last=82.5%
+  --- STRONG cmc=6511 chain=1 START (gl_so_far=87456) ---
+    STRONG batch 1/19 block<=799,999 tf=0 gl=87464 lots=0 1s
+    STRONG batch 6/19 block<=4,799,999 tf=0 gl=87504 lots=0 6s
+    STRONG batch 11/19 block<=8,799,999 tf=0 gl=87544 lots=0 11s
+    STRONG batch 16/19 block<=12,799,999 tf=532976 gl=89210 lots=17952 271s
+  STRONG   cmc=6511 DONE tf=6663109 gl=107493 code=11/82 scrMo=18 HODLmed=95.6% last=94.4%
+  --- SUB cmc=1984 chain=1 START (gl_so_far=107493) ---
+    SUB batch 1/15 block<=799,999 tf=0 gl=107501 lots=0 1s
+    SUB batch 6/15 block<=4,799,999 tf=0 gl=107541 lots=0 6s
+    SUB batch 11/15 block<=8,799,999 tf=56645 gl=107791 lots=42556 55s
+  SUB      cmc=1984 DONE tf=61591 gl=107817 code=2/45 scrMo=17 HODLmed=71.5% last=85.5%
+  --- SPELL cmc=11289 chain=1 START (gl_so_far=107817) ---
+    SPELL batch 1/32 block<=799,999 tf=0 gl=107825 lots=0 1s
+    SPELL batch 6/32 block<=4,799,999 tf=0 gl=107865 lots=0 6s
+    SPELL batch 11/32 block<=8,799,999 tf=0 gl=107905 lots=0 11s
+    SPELL batch 16/32 block<=12,799,999 tf=21074 gl=108005 lots=3235 40s
+    SPELL batch 21/32 block<=16,799,999 tf=621509 gl=109793 lots=86324 343s
+    SPELL batch 26/32 block<=20,799,999 tf=739343 gl=110127 lots=105290 411s
+    SPELL batch 31/32 block<=24,799,999 tf=934084 gl=110693 lots=122266 500s
+  SPELL    cmc=11289 DONE tf=945921 gl=110728 code=27/136 scrMo=54 HODLmed=15.4% last=21.8%
+  --- WSTETH cmc=12409 chain=1 START (gl_so_far=110728) ---
+    WSTETH batch 1/32 block<=799,999 tf=0 gl=110736 lots=0 1s
+    WSTETH batch 6/32 block<=4,799,999 tf=0 gl=110776 lots=0 6s
+    WSTETH batch 11/32 block<=8,799,999 tf=0 gl=110816 lots=0 11s
+    WSTETH batch 16/32 block<=12,799,999 tf=739 gl=110856 lots=234 16s
+    WSTETH batch 21/32 block<=16,799,999 tf=199208 gl=111398 lots=13167 91s
+    WSTETH batch 26/32 block<=20,799,999 tf=1313875 gl=114668 lots=26419 511s
+    WSTETH batch 31/32 block<=24,799,999 tf=3795919 gl=121972 lots=57915 1652s
+  WSTETH   cmc=12409 DONE tf=4015810 gl=122629 code=24/57 scrMo=11 HODLmed=12.2% last=15.3%
+  --- ARKM cmc=27565 chain=1 START (gl_so_far=122629) ---
+    ARKM batch 1/32 block<=799,999 tf=0 gl=122637 lots=0 1s
+    ARKM batch 6/32 block<=4,799,999 tf=0 gl=122677 lots=0 6s
+    ARKM batch 11/32 block<=8,799,999 tf=0 gl=122717 lots=0 11s
+    ARKM batch 16/32 block<=12,799,999 tf=0 gl=122757 lots=0 16s
+    ARKM batch 21/32 block<=16,799,999 tf=0 gl=122797 lots=0 21s
+    ARKM batch 26/32 block<=20,799,999 tf=272952 gl=123657 lots=127778 139s
+    ARKM batch 31/32 block<=24,799,999 tf=560597 gl=124503 lots=179471 252s
+  ARKM     cmc=27565 DONE tf=589187 gl=124590 code=34/121 scrMo=28 HODLmed=13.5% last=14.3%
+  --- LON cmc=8083 chain=1 START (gl_so_far=124590) ---
+    LON batch 1/32 block<=799,999 tf=0 gl=124598 lots=0 1s
+    LON batch 6/32 block<=4,799,999 tf=0 gl=124638 lots=0 6s
+    LON batch 11/32 block<=8,799,999 tf=0 gl=124678 lots=0 11s
+    LON batch 16/32 block<=12,799,999 tf=392475 gl=125898 lots=157570 273s
+    LON batch 21/32 block<=16,799,999 tf=443925 gl=126020 lots=162673 303s
+    LON batch 26/32 block<=20,799,999 tf=472968 gl=126100 lots=164891 324s
+    LON batch 31/32 block<=24,799,999 tf=504272 gl=126154 lots=167034 350s
+  LON      cmc=8083 DONE tf=505756 gl=126159 code=23/88 scrMo=65 HODLmed=14.9% last=15.5%
+  --- ETHDYDX cmc=11156 chain=1 START (gl_so_far=126159) ---
+    ETHDYDX batch 1/30 block<=799,999 tf=0 gl=126167 lots=0 1s
+    ETHDYDX batch 6/30 block<=4,799,999 tf=0 gl=126207 lots=0 6s
+    ETHDYDX batch 11/30 block<=8,799,999 tf=0 gl=126247 lots=0 11s
+    ETHDYDX batch 16/30 block<=12,799,999 tf=0 gl=126287 lots=0 22s
+    ETHDYDX batch 21/30 block<=16,799,999 tf=460782 gl=127637 lots=109262 229s
+    ETHDYDX batch 26/30 block<=20,799,999 tf=740820 gl=128423 lots=180365 373s
+  ETHDYDX  cmc=11156 DONE tf=880118 gl=128846 code=11/123 scrMo=49 HODLmed=15.5% last=14.1%
+  --- AEVO cmc=29676 chain=1 START (gl_so_far=128846) ---
+    AEVO batch 1/32 block<=799,999 tf=0 gl=128854 lots=0 1s
+    AEVO batch 6/32 block<=4,799,999 tf=0 gl=128894 lots=0 6s
+    AEVO batch 11/32 block<=8,799,999 tf=0 gl=128934 lots=0 11s
+    AEVO batch 16/32 block<=12,799,999 tf=0 gl=128974 lots=0 16s
+    AEVO batch 21/32 block<=16,799,999 tf=0 gl=129014 lots=0 21s
+    AEVO batch 26/32 block<=20,799,999 tf=361553 gl=130134 lots=198990 306s
+    AEVO batch 31/32 block<=24,799,999 tf=614393 gl=130898 lots=220396 454s
+  AEVO     cmc=29676 DONE tf=633035 gl=130955 code=15/94 scrMo=27 HODLmed=16.7% last=29.4%
+  --- AETHWETH cmc=36458 chain=1 START (gl_so_far=130955) ---
+    AETHWETH batch 1/32 block<=799,999 tf=0 gl=130963 lots=0 6s
+    AETHWETH batch 6/32 block<=4,799,999 tf=0 gl=131003 lots=0 11s
+    AETHWETH batch 11/32 block<=8,799,999 tf=0 gl=131043 lots=0 16s
+    AETHWETH batch 16/32 block<=12,799,999 tf=0 gl=131083 lots=0 21s
+    AETHWETH batch 21/32 block<=16,799,999 tf=4712 gl=131129 lots=1555 29s
+    AETHWETH batch 26/32 block<=20,799,999 tf=219558 gl=131719 lots=27266 132s
+    AETHWETH batch 31/32 block<=24,799,999 tf=1232753 gl=134719 lots=66139 725s
+  AETHWETH cmc=36458 DONE tf=1366558 gl=135124 code=17/57 scrMo=8 HODLmed=29.6% last=48.5%
+  --- SOL cmc=16116 chain=1 START (gl_so_far=135124) ---
+    SOL batch 1/32 block<=799,999 tf=0 gl=135132 lots=0 1s
+    SOL batch 6/32 block<=4,799,999 tf=0 gl=135172 lots=0 6s
+    SOL batch 11/32 block<=8,799,999 tf=0 gl=135212 lots=0 11s
+    SOL batch 16/32 block<=12,799,999 tf=0 gl=135252 lots=0 16s
+    SOL batch 21/32 block<=16,799,999 tf=51777 gl=135390 lots=12362 36s
+    SOL batch 26/32 block<=20,799,999 tf=368853 gl=136286 lots=56175 154s
+    SOL batch 31/32 block<=24,799,999 tf=1071912 gl=138312 lots=54701 419s
+  SOL      cmc=16116 DONE tf=1098234 gl=138381 code=12/58 scrMo=10 HODLmed=15.5% last=17.8%
+  --- XAI cmc=28933 chain=42161 START (gl_so_far=138381) ---
+    XAI batch 1/587 block<=799,999 tf=0 gl=138389 lots=0 1s
+    XAI batch 6/587 block<=4,799,999 tf=0 gl=138429 lots=0 6s
+    XAI batch 11/587 block<=8,799,999 tf=0 gl=138469 lots=0 11s
+    XAI batch 16/587 block<=12,799,999 tf=0 gl=138509 lots=0 16s
+    XAI batch 21/587 block<=16,799,999 tf=0 gl=138549 lots=0 21s
+    XAI batch 26/587 block<=20,799,999 tf=0 gl=138589 lots=0 27s
+    XAI batch 31/587 block<=24,799,999 tf=0 gl=138629 lots=0 32s
+    XAI batch 36/587 block<=28,799,999 tf=0 gl=138669 lots=0 37s
+    XAI batch 41/587 block<=32,799,999 tf=0 gl=138709 lots=0 42s
+    XAI batch 46/587 block<=36,799,999 tf=0 gl=138749 lots=0 47s
+    XAI batch 51/587 block<=40,799,999 tf=0 gl=138789 lots=0 52s
+    XAI batch 56/587 block<=44,799,999 tf=0 gl=138829 lots=0 57s
+    XAI batch 61/587 block<=48,799,999 tf=0 gl=138869 lots=0 62s
+    XAI batch 66/587 block<=52,799,999 tf=0 gl=138909 lots=0 67s
+    XAI batch 71/587 block<=56,799,999 tf=0 gl=138949 lots=0 72s
+    XAI batch 76/587 block<=60,799,999 tf=0 gl=138989 lots=0 77s
+    XAI batch 81/587 block<=64,799,999 tf=0 gl=139029 lots=0 82s
+    XAI batch 86/587 block<=68,799,999 tf=0 gl=139069 lots=0 87s
+    XAI batch 91/587 block<=72,799,999 tf=0 gl=139109 lots=0 92s
+    XAI batch 96/587 block<=76,799,999 tf=0 gl=139149 lots=0 97s
+    XAI batch 101/587 block<=80,799,999 tf=0 gl=139189 lots=0 102s
+    XAI batch 106/587 block<=84,799,999 tf=0 gl=139229 lots=0 107s
+    XAI batch 111/587 block<=88,799,999 tf=0 gl=139269 lots=0 112s
+    XAI batch 116/587 block<=92,799,999 tf=0 gl=139309 lots=0 117s
+    XAI batch 121/587 block<=96,799,999 tf=0 gl=139349 lots=0 122s
+    XAI batch 126/587 block<=100,799,999 tf=0 gl=139389 lots=0 127s
+    XAI batch 131/587 block<=104,799,999 tf=0 gl=139429 lots=0 132s
+    XAI batch 136/587 block<=108,799,999 tf=0 gl=139469 lots=0 137s
+    XAI batch 141/587 block<=112,799,999 tf=0 gl=139509 lots=0 142s
+    XAI batch 146/587 block<=116,799,999 tf=0 gl=139549 lots=0 147s
+    XAI batch 151/587 block<=120,799,999 tf=0 gl=139589 lots=0 152s
+    XAI batch 156/587 block<=124,799,999 tf=0 gl=139629 lots=0 157s
+    XAI batch 161/587 block<=128,799,999 tf=0 gl=139669 lots=0 162s
+    XAI batch 166/587 block<=132,799,999 tf=0 gl=139709 lots=0 167s
+    XAI batch 171/587 block<=136,799,999 tf=0 gl=139749 lots=0 172s
+    XAI batch 176/587 block<=140,799,999 tf=0 gl=139789 lots=0 177s
+    XAI batch 181/587 block<=144,799,999 tf=0 gl=139829 lots=0 182s
+    XAI batch 186/587 block<=148,799,999 tf=0 gl=139869 lots=0 187s
+    XAI batch 191/587 block<=152,799,999 tf=0 gl=139909 lots=0 192s
+    XAI batch 196/587 block<=156,799,999 tf=0 gl=139949 lots=0 197s
+    XAI batch 201/587 block<=160,799,999 tf=75 gl=139989 lots=4 202s
+    XAI batch 206/587 block<=164,799,999 tf=190 gl=140029 lots=9 207s
+    XAI batch 211/587 block<=168,799,999 tf=207163 gl=140729 lots=115301 296s
+    XAI batch 216/587 block<=172,799,999 tf=336453 gl=141153 lots=143485 354s
+    XAI batch 221/587 block<=176,799,999 tf=379294 gl=141259 lots=146492 368s
+    XAI batch 226/587 block<=180,799,999 tf=426934 gl=141385 lots=151724 386s
+    XAI batch 231/587 block<=184,799,999 tf=499143 gl=141599 lots=155915 414s
+    XAI batch 236/587 block<=188,799,999 tf=542434 gl=141719 lots=159001 431s
+    XAI batch 241/587 block<=192,799,999 tf=582944 gl=141823 lots=162043 446s
+    XAI batch 246/587 block<=196,799,999 tf=620687 gl=141913 lots=165452 459s
+    XAI batch 251/587 block<=200,799,999 tf=657543 gl=141995 lots=167861 471s
+    XAI batch 256/587 block<=204,799,999 tf=701974 gl=142101 lots=171037 486s
+    XAI batch 261/587 block<=208,799,999 tf=726583 gl=142149 lots=173096 493s
+    XAI batch 266/587 block<=212,799,999 tf=764705 gl=142245 lots=177307 506s
+    XAI batch 271/587 block<=216,799,999 tf=804330 gl=142341 lots=179072 520s
+    XAI batch 276/587 block<=220,799,999 tf=848386 gl=142447 lots=181301 535s
+    XAI batch 281/587 block<=224,799,999 tf=889582 gl=142557 lots=184277 552s
+    XAI batch 286/587 block<=228,799,999 tf=943336 gl=142693 lots=187192 570s
+    XAI batch 291/587 block<=232,799,999 tf=1035429 gl=142959 lots=75820 605s
+    XAI batch 296/587 block<=236,799,999 tf=1103163 gl=143145 lots=78866 629s
+    XAI batch 301/587 block<=240,799,999 tf=1158626 gl=143303 lots=82514 650s
+    XAI batch 306/587 block<=244,799,999 tf=1212896 gl=143451 lots=86472 669s
+    XAI batch 311/587 block<=248,799,999 tf=1275964 gl=143623 lots=91693 692s
+    XAI batch 316/587 block<=252,799,999 tf=1303771 gl=143677 lots=93285 701s
+    XAI batch 321/587 block<=256,799,999 tf=1338470 gl=143747 lots=94853 711s
+    XAI batch 326/587 block<=260,799,999 tf=1378271 gl=143843 lots=96898 724s
+    XAI batch 331/587 block<=264,799,999 tf=1417703 gl=143935 lots=99061 737s
+    XAI batch 336/587 block<=268,799,999 tf=1455134 gl=144023 lots=101094 769s
+    XAI batch 341/587 block<=272,799,999 tf=1491652 gl=144095 lots=102510 779s
+    XAI batch 346/587 block<=276,799,999 tf=1546017 gl=144227 lots=104661 797s
+    XAI batch 351/587 block<=280,799,999 tf=1621568 gl=144431 lots=107666 825s
+    XAI batch 356/587 block<=284,799,999 tf=1683592 gl=144603 lots=111300 848s
+    XAI batch 361/587 block<=288,799,999 tf=1737068 gl=144733 lots=113917 865s
+    XAI batch 366/587 block<=292,799,999 tf=1780662 gl=144839 lots=117508 880s
+    XAI batch 371/587 block<=296,799,999 tf=1820639 gl=144941 lots=119780 895s
+    XAI batch 376/587 block<=300,799,999 tf=1853007 gl=145005 lots=121186 905s
+    XAI batch 381/587 block<=304,799,999 tf=1881518 gl=145053 lots=122120 913s
+    XAI batch 386/587 block<=308,799,999 tf=1908754 gl=145099 lots=123362 920s
+    XAI batch 391/587 block<=312,799,999 tf=1932689 gl=145143 lots=124360 928s
+    XAI batch 396/587 block<=316,799,999 tf=1954407 gl=145183 lots=125030 935s
+    XAI batch 401/587 block<=320,799,999 tf=1977611 gl=145233 lots=125618 944s
+    XAI batch 406/587 block<=324,799,999 tf=1997996 gl=145273 lots=126280 951s
+    XAI batch 411/587 block<=328,799,999 tf=2032309 gl=145371 lots=93678 964s
+    XAI batch 416/587 block<=332,799,999 tf=2057998 gl=145429 lots=94678 973s
+    XAI batch 421/587 block<=336,799,999 tf=2105388 gl=145555 lots=95955 992s
+    XAI batch 426/587 block<=340,799,999 tf=2133738 gl=145609 lots=96738 1001s
+    XAI batch 431/587 block<=344,799,999 tf=2156980 gl=145651 lots=97513 1009s
+    XAI batch 436/587 block<=348,799,999 tf=2179198 gl=145697 lots=98209 1016s
+    XAI batch 441/587 block<=352,799,999 tf=2206550 gl=145753 lots=98816 1025s
+    XAI batch 446/587 block<=356,799,999 tf=2233354 gl=145805 lots=99496 1034s
+    XAI batch 451/587 block<=360,799,999 tf=2263213 gl=145855 lots=100441 1042s
+    XAI batch 456/587 block<=364,799,999 tf=2283904 gl=145895 lots=101096 1049s
+    XAI batch 461/587 block<=368,799,999 tf=2306444 gl=145937 lots=102609 1057s
+    XAI batch 466/587 block<=372,799,999 tf=2322875 gl=145977 lots=103106 1063s
+    XAI batch 471/587 block<=376,799,999 tf=2336865 gl=146017 lots=103550 1071s
+    XAI batch 476/587 block<=380,799,999 tf=2359633 gl=146071 lots=104144 1078s
+    XAI batch 481/587 block<=384,799,999 tf=2376990 gl=146123 lots=104647 1089s
+    XAI batch 486/587 block<=388,799,999 tf=2393614 gl=146167 lots=105393 1097s
+    XAI batch 491/587 block<=392,799,999 tf=2407667 gl=146213 lots=106127 1104s
+    XAI batch 496/587 block<=396,799,999 tf=2426045 gl=146257 lots=108157 1111s
+    XAI batch 501/587 block<=400,799,999 tf=2439156 gl=146297 lots=108613 1117s
+    XAI batch 506/587 block<=404,799,999 tf=2467003 gl=146375 lots=109829 1129s
+    XAI batch 511/587 block<=408,799,999 tf=2477641 gl=146415 lots=110149 1135s
+    XAI batch 516/587 block<=412,799,999 tf=2490370 gl=146469 lots=110541 1142s
+    XAI batch 521/587 block<=416,799,999 tf=2500012 gl=146509 lots=110884 1149s
+    XAI batch 526/587 block<=420,799,999 tf=2511841 gl=146551 lots=111121 1155s
+    XAI batch 531/587 block<=424,799,999 tf=2534498 gl=146629 lots=111637 1166s
+    XAI batch 536/587 block<=428,799,999 tf=2542951 gl=146669 lots=111938 1171s
+    XAI batch 541/587 block<=432,799,999 tf=2550911 gl=146709 lots=112166 1178s
+    XAI batch 546/587 block<=436,799,999 tf=2557699 gl=146749 lots=112366 1183s
+    XAI batch 551/587 block<=440,799,999 tf=2570344 gl=146803 lots=112709 1191s
+    XAI batch 556/587 block<=444,799,999 tf=2581911 gl=146849 lots=113003 1198s
+    XAI batch 561/587 block<=448,799,999 tf=2587276 gl=146889 lots=113218 1203s
+    XAI batch 566/587 block<=452,799,999 tf=2593261 gl=146929 lots=113393 1209s
+    XAI batch 571/587 block<=456,799,999 tf=2602946 gl=146971 lots=113604 1215s
+    XAI batch 576/587 block<=460,799,999 tf=2609098 gl=147011 lots=113801 1221s
+    XAI batch 581/587 block<=464,799,999 tf=2615296 gl=147051 lots=114032 1226s
+    XAI batch 586/587 block<=468,799,999 tf=2619644 gl=147091 lots=114213 1231s
+  XAI      cmc=28933 DONE tf=2619661 gl=147092 code=26/89 scrMo=29 HODLmed=17.0% last=38.8%
+  --- AGIX cmc=2424 chain=1 START (gl_so_far=147092) ---
+    AGIX batch 1/26 block<=799,999 tf=0 gl=147100 lots=0 1s
+    AGIX batch 6/26 block<=4,799,999 tf=0 gl=147140 lots=0 6s
+    AGIX batch 11/26 block<=8,799,999 tf=0 gl=147180 lots=0 11s
+    AGIX batch 16/26 block<=12,799,999 tf=35038 gl=147348 lots=26938 33s
+    AGIX batch 21/26 block<=16,799,999 tf=307099 gl=148118 lots=83038 145s
+    AGIX batch 26/26 block<=20,209,441 tf=814797 gl=149579 lots=207526 352s
+  AGIX     cmc=2424 DONE tf=814797 gl=149579 code=7/54 scrMo=39 HODLmed=55.8% last=41.2%
+  --- cbETH cmc=21535 chain=1 START (gl_so_far=149579) ---
+    cbETH batch 1/32 block<=799,999 tf=0 gl=149587 lots=0 1s
+    cbETH batch 6/32 block<=4,799,999 tf=0 gl=149627 lots=0 6s
+    cbETH batch 11/32 block<=8,799,999 tf=0 gl=149667 lots=0 11s
+    cbETH batch 16/32 block<=12,799,999 tf=0 gl=149707 lots=0 17s
+    cbETH batch 21/32 block<=16,799,999 tf=59224 gl=149887 lots=13658 60s
+    cbETH batch 26/32 block<=20,799,999 tf=579603 gl=151407 lots=161572 322s
+    cbETH batch 31/32 block<=24,799,999 tf=874170 gl=152249 lots=194811 476s
+  cbETH    cmc=21535 DONE tf=886222 gl=152280 code=8/109 scrMo=17 HODLmed=59.5% last=68.9%
+  --- PAY cmc=1758 chain=1 START (gl_so_far=152280) ---
+    PAY batch 1/19 block<=799,999 tf=0 gl=152288 lots=0 1s
+    PAY batch 6/19 block<=4,799,999 tf=296813 gl=153260 lots=109215 143s
+    PAY batch 11/19 block<=8,799,999 tf=486022 gl=153866 lots=163987 248s
+    PAY batch 16/19 block<=12,799,999 tf=545590 gl=154026 lots=176887 282s
+  PAY      cmc=1758 DONE tf=551739 gl=154049 code=12/85 scrMo=52 HODLmed=38.5% last=72.0%
+aggregate: 408 completed tokens (0 recomputed), 1 deferred -> C:\AFA_2027_QTM_Crypto\03_data\phase1\channel2_holding.csv (12955 rows)
+
+STREAM done: 101 built, 1 skipped, 154049 getLogs; aggregate -> 408 tokens / 12955 rows

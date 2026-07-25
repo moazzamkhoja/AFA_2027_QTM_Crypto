@@ -1,0 +1,103 @@
+cmc_id,symbol,name,asset_class,existing_slug,match_how,dl_slug,dl_name,dl_category,tvl_usd,n_cands,rejected
+11461,MSOL,Marinade Staked SOL,other,,NONE,,,,,0,
+33981,bUSD0,Bond USD0,other,,NONE,,,,,0,
+1888,IFT,InvestFeed,other,,NONE,,,,,0,
+2593,DRG,Dragon Coins,token,,symbol-rejected,,,,,0,saphyre-v3(Saphyre V3);saphyre-v2(Saphyre V2);saphyre-rfq(Saphyre RFQ)
+38417,RIVER,River,token,,symbol+name,river-omni-cdp,River Omni-CDP,CeDeFi,79993002.87306648,1,river-omni-cdp
+5830,NXM,NXM,token,,NONE,,,,,0,
+23177,SFRXETH,Frax Staked Ether,other,,NONE,,,,,0,
+3367,CRD,CryptalDash,token,,symbol-rejected,,,,,0,crolend-finance(CroLend Finance)
+3418,META,Metadium,token,,symbol-rejected,,,,,0,futarchy-amm(Futarchy AMM);cometa(Cometa)
+17050,MULTI,Multichain,other,multichain,cmcId,multichain,Multichain,Bridge,37621575.21462167,1,multichain
+1882,CAT,BlockCAT,token,,symbol-rejected,,,,,0,cleopatra-dao(Cleopatra DAO)
+2576,TEN,Tokenomy,token,,NONE,,,,,0,
+7672,UNFI,Unifi Protocol DAO,token,,symbol+name,unifi-staking,UniFi Staking,Staking Pool,0.0,1,unifi-staking
+35818,SOSO,SoSoValue,token,,symbol+name,sosovalue-indexes,SoSoValue Indexes,Indexes,80097114.40930492,2,sosovalue-indexes;sosovalue-basis
+1768,ADX,AdEx,token,,symbol-rejected,,,,,0,adrena-protocol(Adrena Protocol);atodex(AtoDEX)
+39125,LIT,Lighter,token,,symbol+name,lighter-bridge,Lighter Bridge,Bridge,508388573.66432625,5,lighter-bridge;lighter-robinhood-perps;lighter-v1;lighter-perps;lighter-spot
+2503,DMT,DMarket,other,,symbol-rejected,,,,,0,sanko-bridge(Sanko Bridge)
+29974,RSWETH,Restaked Swell Ethereum,other,,NONE,,,,,0,
+3325,ROX,Robotina,token,,symbol-rejected,,,,,0,roguex(Roguex)
+3855,LOCUS,Locus Chain,token,,symbol+name,locus-finance,Locus Finance,Yield,46192.5635175038,1,locus-finance
+19843,APEX,ApeX Protocol,token,,symbol+name,apex-pro,ApeX Pro,Derivatives,1429971.0814050029,2,apex-pro;apex-defi
+2363,ZAP,Zap,token,,symbol-rejected,,,,,0,zapzy(Zapzy)
+5007,TROY,TROY,token,,symbol-rejected,,,,,0,troydefi(TroyDefi)
+12387,RBN,Ribbon Finance,token,,symbol+name,ribbon,Ribbon,Options Vault,3424994.5967722745,3,ribbon;ribbon-earn;ribbon-lend
+1660,TKN,Monolith,token,,symbol-rejected,,,,,0,tokan-exchange(Tokan Exchange)
+29335,PIXEL,Pixels,token,,symbol-rejected,,,,,0,pixelswap(PixelSwap)
+6833,LIT,Litentry,token,,symbol-rejected,,,,,0,lighter-bridge(Lighter Bridge);lighter-robinhood-perps(Lighter Robinhood Perps);timeless-finance(Timeless Finance);lighter-v1(Lighter V1);droplit-protocol(Droplit Protocol)
+4862,DAD,DAD,token,,symbol-rejected,,,,,0,dapp-account-dao(Dapp Account DAO)
+24760,WBETH,Wrapped Beacon ETH,other,,NONE,,,,,0,
+2726,GEN,DAOstack,token,,symbol-rejected,,,,,0,genesis-dao(Genesis DAO)
+2277,SMT,SmartMesh,token,,NONE,,,,,0,
+2110,DOV,Dovu,token,,symbol-rejected,,,,,0,dove-swap-v2(Dove Swap V2);dove-swap-v3(Dove Swap V3)
+5798,RING,Darwinia Network,token,,symbol-rejected,,,,,0,ringswap(Ringswap);onering-v2(OneRing V2)
+5326,ORC,Orbit Chain,other,orbit-bridge,cmcId,orbit-bridge,Orbit Bridge,Bridge,15070347.502114678,1,orbit-bridge
+3083,LINA,LINA,token,,NONE,,,,,0,
+37574,TETH,Treehouse ETH,other,,NONE,,,,,0,
+29035,METH,Mantle Staked Ether,other,,NONE,,,,,0,
+18037,MAV,Maverick Protocol,token,,symbol+name,maverick-v1,Maverick V1,Dexs,1179630.3933752135,2,maverick-v1;maverick-v2
+6748,CFG,Centrifuge,token,,symbol+name,centrifuge-protocol,Centrifuge Protocol,RWA,1628808482.076311,1,centrifuge-protocol
+38482,FF,Falcon Finance,other,,symbol+name,falcon-finance,Falcon Finance,Basis Trading,1255471530.178514,1,falcon-finance
+2559,AUTO,Cube,token,,NONE,,,,,0,
+1500,WINGS,Wings,token,,NONE,,,,,0,
+2826,ZIP,Zipper,token,,NONE,,,,,0,
+19650,VOLT,Volt Inu,token,,symbol-rejected,,,,,0,voltswap-v2(VoltSwap V2);voltage-v4(Voltage V4);voltage-liquid-staking(Voltage Liquid Staking);voltage-amm(Voltage AMM);voltage-lending(Voltage Lending)
+2296,OST,OST,token,,symbol-rejected,,,,,0,oreswap(OreSwap)
+2202,PRL,Oyster,token,,symbol-rejected,,,,,0,parallel-protocol-v3(Parallel Protocol V3);parallel-protocol-v2(Parallel Protocol V2);sui-pearl(Sui Pearl)
+3053,YOU,YOU COIN,token,,NONE,,,,,0,
+33038,SKY,Sky,token,,symbol+name,sky-lending,Sky Lending,CDP,5980758729.298397,3,sky-lending;sky-money;sky-rwa
+2772,DGTX,Digitex,token,,NONE,,,,,0,
+8161,SPI,Shopping,token,,symbol-rejected,,,,,0,spicyswap(SpicySwap)
+9308,PYR,Vulcan Forged (PYR),token,,symbol-rejected,,,,,0,vulcandex(VulcanDex)
+2223,VEE,BLOCKv,token,,NONE,,,,,0,
+25147,SWETH,swETH,other,,NONE,,,,,0,
+39720,EDGE,edgeX,token,,symbol+name,edgex-bridge,edgeX Bridge,Bridge,86310467.96200109,4,edgex-bridge;edgex-perps;edgex-spot;edgex-v2
+7224,DODO,DODO,token,,symbol+name,dodo-amm,DODO AMM,Dexs,11932989.441912942,2,dodo-amm;dodo-agg
+16876,ALI,Artificial Liquid Intelligence,token,,NONE,,,,,0,
+3928,IDEX,IDEX,token,,symbol+name,idex-v1,IDEX V1,Dexs,29746308.68424358,2,idex-v1;idex-classic
+33824,SYRUP,Maple Finance,token,,symbol+name,maple,Maple,Lending,2314744482.063117,2,maple;maple-rwa
+38408,BARD,Lombard,token,,symbol+name,lombard-lbtc,Lombard LBTC,Restaked BTC,590427253.6183326,3,lombard-lbtc;lombard-btc.b;lombard-vaults
+8420,DAO,DAO Maker,token,,symbol+name,dao-maker-vesting,DAO Maker Vesting,Services,0.0,1,dao-maker-vesting
+9444,KNC,Kyber Network Crystal v2,token,,symbol-rejected,,,,,0,kyberswap-classic(KyberSwap Classic);kyberswap-elastic(KyberSwap Elastic);kyberswap-aggregator(KyberSwap Aggregator);kyberswap-fairflow(KyberSwap FairFlow)
+28412,MUBI,Multibit,other,multibit-protocol,cmcId,multibit-protocol,MultiBit Protocol,Bridge,121818.02434356962,1,multibit-protocol
+7501,WOO,WOO,token,,symbol+name,woo-x,WOO X,CEX,4386544.308679035,1,woo-x
+5429,DEP,DEAPcoin,token,,NONE,,,,,0,
+3296,MIN,MINDOL,token,,symbol-rejected,,,,,0,minswap-dex(Minswap DEX);minswap-aggregator(Minswap Aggregator)
+3475,BOX,BOX Token,token,,symbol-rejected,,,,,0,bwatch(Bwatch)
+34104,MORPHO,Morpho,token,,symbol+name,morpho-blue,Morpho Blue,Lending,7459709860.69141,5,morpho-blue;morpho-midnight;morpho-optimizer-aavev2;morpho-optimizer-compoundv2;morpho-optimizer-aavev3
+15060,RETH,Rocket Pool ETH,other,,NONE,,,,,0,
+8075,RLY,Rally,token,,NONE,,,,,0,
+1503,JUP,Jupiter,token,,symbol+name,jupiter-lend,Jupiter Lend,Lending,944544980.2836121,10,jupiter-lend;jupiter-perpetual-exchange;jupiter-staked-sol;jupiter-offerbook;jupiter-prediction;ape-jupiter
+9674,WILD,Wilder World,token,,symbol-rejected,,,,,0,grassland-finance(GrassLand Finance)
+12573,CPOOL,Clearpool,token,,symbol+name,clearpool-tpool,Clearpool TPOOL,RWA,21423006.079159174,2,clearpool-tpool;clearpool-lending
+29242,RSETH,Kelp DAO Restaked ETH,other,,NONE,,,,,0,
+33652,LBTC,Lombard Staked BTC,token,,NONE,,,,,0,
+9640,METIS,Metis,token,,symbol+name,metis-bridge,Metis Bridge,Canonical Bridge,24545724.537678555,2,metis-bridge;metis
+29520,EZETH,Renzo Restaked ETH,other,,NONE,,,,,0,
+26997,ZRO,LayerZero,token,,symbol+name,layerzero-v2,LayerZero V2,Bridge,6708979855.334043,2,layerzero-v2;layerzero-v1
+34143,WHITE,WhiteRock,token,,NONE,,,,,0,
+5617,UMA,UMA,token,,NONE,,,,,0,
+2430,HOT,Hydro Protocol,token,,NONE,,,,,0,
+23711,PRIME,Echelon Prime,token,echelon-prime,cmcId,echelon-prime,Echelon Prime,Gaming,0.0,1,echelon-prime
+28695,weETH,Wrapped eETH,other,,NONE,,,,,0,
+10407,BabyDoge,Baby Doge Coin,token,,symbol-rejected,,,,,0,babydogeswap(BabyDogeSwap);babydoge-bridge(BabyDoge Bridge);babydoge-algebra(BabyDoge Algebra)
+2015,ATM,ATMChain,token,,symbol-rejected,,,,,0,basevol(BaseVol)
+2700,CEL,Celsius,token,,symbol-rejected,,,,,0,celeron(Celeron)
+2945,BOX,ContentBox,token,,symbol-rejected,,,,,0,bwatch(Bwatch)
+27566,ETHX,Stader ETHx,other,,NONE,,,,,0,
+4195,FTT,FTX Token,token,,NONE,,,,,0,
+6511,STRONG,Strong,token,,NONE,,,,,0,
+1984,SUB,Substratum,token,,symbol-rejected,,,,,0,subzero+(Subzero+)
+11289,SPELL,Spell Token,token,,symbol+name,abracadabra-spell,Abracadabra Spell,CDP,4139969.957941549,1,abracadabra-spell
+12409,WSTETH,Lido wstETH,other,,NONE,,,,,0,
+27565,ARKM,Arkham,token,arkham,cmcId,arkham,Arkham,Services,0.0,1,arkham
+8083,LON,Tokenlon Network Token,token,,symbol+name,tokenlon-amm,Tokenlon AMM,Dexs,471855.12872334814,2,tokenlon-amm;tokenlon-agg
+11156,ETHDYDX,dYdX (ethDYDX),token,,NONE,,,,,0,
+29676,AEVO,Aevo,token,,symbol+name,aevo-perps,Aevo Perps,Derivatives,14742196.236051919,2,aevo-perps;aevo-options
+36458,AETHWETH,Aave Ethereum WETH,token,,NONE,,,,,0,
+16116,SOL,Wrapped Solana,token,,symbol+name,solana-farm,Solana Farm,Dexs,183.65141953024443,1,solana-farm
+28933,XAI,Xai,other,,symbol+name,xai-bridge,XAI Bridge,Canonical Bridge,74318.04250471063,1,xai-bridge
+2424,AGIX,SingularityNET,token,,symbol+name,singularitynet-agix-staking,SingularityNet AGIX Staking,Staking Pool,0.0,1,singularitynet-agix-staking
+21535,cbETH,Coinbase Wrapped Staked ETH,other,,NONE,,,,,0,
+1758,PAY,TenX,token,,symbol-rejected,,,,,0,stipend(Stipend)

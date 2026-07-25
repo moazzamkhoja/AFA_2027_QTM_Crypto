@@ -65,6 +65,12 @@ OTHER_ADDS = [
     (23121, "BLUR", "blur"),             # parent: Blur Bids pool + Blur Lending
     (38341, "RAIN", "rain"),             # Prediction Market, $29M
     (17704, "MV", "gensokishi"),         # Gaming; small but real series
+    # SESSION 034 (Entry 84): asset_class=='other' Batch-1 tokens with verified protocol TVL.
+    # MULTI/ORC = dead/hacked bridges -- historical TVL is the survivorship-bias defense.
+    (17050, "MULTI", "multichain"),      # Bridge, DEAD (July 2023); DL cmcId=17050 exact
+    (5326, "ORC", "orbit-bridge"),       # Bridge, hacked 2024-01; DL cmcId=5326 exact
+    (28412, "MUBI", "multibit-protocol"),  # Bridge; DL cmcId=28412 exact
+    (38482, "FF", "falcon-finance"),     # Basis Trading, $1.26B; symbol+name exact
 ]
 
 # SESSION 027 (Entry 68): CHAIN-level TVL for canonical L2 governance tokens whose protocol
@@ -79,6 +85,10 @@ CHAIN_LEVEL = [
     (27075, "MNT", "Mantle"),
     (18876, "APE", "ApeChain"),
     (28480, "BLAST", "Blast"),
+    # SESSION 034 (Entry 84): same Entry-68 pattern -- canonical L2/L3 gas+gov tokens whose
+    # protocol-level DL entries are bridge escrows, not protocol TVL.
+    (9640, "METIS", "Metis"),
+    (28933, "XAI", "Xai"),
 ]
 
 

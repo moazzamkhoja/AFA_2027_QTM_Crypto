@@ -1732,3 +1732,60 @@ The only clean number is historical `getTotalLockedGold()`/`balanceOf`, i.e. arc
 **DYDX (28324, 1 λ month):** legitimately a coin (dYdX Chain Cosmos L1 native) but 1 λ month (2024-03) is far too short for regression. Skip; revisit only if λ extends via a Cosmos/Mintscan key.
 **Downstream impact: NONE.** pq_coins.csv row count unchanged (3,275; 2 marker notes edited). phase2_nvt_gl.py + build_coverage_status.py re-run clean and identical: NVT_GL 2,526 asset-months / 67 assets; **coins regression-ready (λ∩NVT_GL) 20 / 645 months — unchanged**; coverage 154 complete / 231 partial / 1,554 not_started. Regression-ready total stays 143.
 **Open items for session 034:** Entry-79 (b)–(e) unchanged — DOT/KSM Subscan key, CHZ manual anchor (gate-open), CORE key, WARP identity review, non-TVL breadth ch2 (~500 >3k-holder tokens). (f)/(g) MATIC probe now CLOSED (this entry). Report: 03_data/SESSION033_XTZ_MATIC_NVT_REPORT.md.
+
+### Entry 84 — Session 034: CHZ ch1 BUILT; Blockchair XTZ/MATIC FAILED (keyless unusable);
+  EVM DeFi Breadth Batch 1 (101 of 102 tokens)
+
+CHZ (4066): ch1 staking built via Chiliz Chain 2.0 public RPC (chiliz.drpc.org;
+eth_getBalance on 0x...1000 staking contract at month-end blocks; anchor drift -1.03%
+vs 2,416,757,292 CHZ confirmed 2026-07-25 on staking.chiliz.com). Window:
+2023-07..2026-05 (35 months). Staking ratio range 2.35%..26.61% (real ~4x step-up
+2024-06). pq_source suffix: chiliz-chain-pubRPC. CHZ already had 21 non-NaN PQ months
+in pq_coins.csv -> CHZ = 21st regression-ready coin.
+
+Blockchair XTZ: FAILED. tezos/{calls,operations,transactions} all HTTP 404 (no
+aggregation tables exposed for Tezos); IP was then blacklisted (HTTP 430 "apply for
+an API key") after ~4 anonymous requests, including on /stats. Free anonymous tier is
+effectively unusable in 2026. Paid key (~$30/mo) MIGHT unblock, but the 404s suggest
+Tezos aggregation may not exist at any tier - confirm with Blockchair support before
+paying. NOT subscribed (needs Moazzam approval). XTZ stays PQ=NaN.
+
+Blockchair MATIC: FAILED, same blacklist; polygon/transactions also 404 before the
+430s started. Same paid-key caveat. MATIC stays PQ=NaN.
+
+EVM DeFi Breadth Batch 1: 101 of 102 tokens built (MSOL 11461 already complete ->
+skipped). 154,049 getLogs (est 147k), 47.56M transfers, 2,916 screened lambda months.
+B2 clean across the batch (no 100x contamination flags). B4 flagged-high (HODLmed>80%,
+kept per rule): META, TROY, SMT, YOU, BOX(3475), WHITE, HOT, BOX(2945), STRONG.
+Biggest builds: STRONG 6.66M tf / 20.0k gl, WSTETH 4.02M tf / 11.9k gl, XAI 2.62M tf.
+Survivorship targets built: CEL (Celsius, 54 scrMo), FTT (FTX, 81 scrMo), MULTI
+(Multichain, via prior slug).
+
+TVL slug matching (the ABC-validation lesson applied): raw symbol match was ~40% wrong
+(Litentry->lighter, old-Jupiter 1503->jupiter-lend, Wrapped Solana->solana-farm, etc.).
+Re-matched with DL cmcId authority + name corroboration + individual verification:
+- 24 token-class dl_slugs written to asset_onchain_identity.csv (incl. ETHDYDX->dydx-v3,
+  KNC 9444->kyberswap-classic, SYRUP->maple, SKY->sky-lending, MORPHO->morpho-blue).
+- OTHER_ADDS += MULTI/multichain (dead, 49 mo), ORC/orbit-bridge (hacked, 46 mo),
+  MUBI/multibit-protocol, FF/falcon-finance.
+- CHAIN_LEVEL += METIS/chain:Metis (54 mo), XAI/chain:Xai (28 mo) per Entry-68 pattern.
+- REJECTED on semantics: UNFI (DL unifi cmcId=1412 collision), LOCUS (Locus Finance !=
+  Locus Chain), JUP 1503 (Solana Jupiter != 2017 Jupiter), SOL 16116 (wrapped), DAO 8420
+  (vesting tracker != protocol TVL), AGIX (own-token staking pool = circular), WOO woo-x
+  (CEX reserves; used woofi-swap instead).
+- LST receipt tokens (wstETH/weETH/cbETH/rETH/sfrxETH/mETH/ETHx/swETH/rswETH/ezETH/
+  rsETH/WBETH/tETH/LBTC/MSOL/aEthWETH/bUSD0) deliberately get NO protocol TVL: the
+  receipt token's NV IS the protocol TVL (NV/TVL ~= 1 by construction, circular).
+- CEL and FTT have NO DeFiLlama entries (CeFi books never TVL-tracked); dead-protocol
+  TVL defense rests on MULTI/ORC/dydx-v3/ribbon/idex-v1 etc.
+- ARKM, PRIME (echelon-prime): slugs valid but DL series empty (zero-TVL protocols).
+tvl_panel.csv rebuilt: 159 assets / 7,889 asset-months (was ~128/6,7xx).
+
+Post-assemble: lambda 12,599 asset-months / 444 assets (was 9,648/342).
+Regression-ready 143 -> 173 (coins 20->21 [CHZ], tokens/other 123->152 [+29 Batch-1]).
+channel2_holding.csv: 408 tokens / 12,955 rows. Coverage: 184 complete / 302 partial /
+1,453 not_started.
+Remaining EVM DeFi breadth batches:
+  Batch 2 (session 035): 13 tokens, ~119k getLogs - WORKLIST in 034 prompt
+  Batch 3 (session 036): stETH + MEME, ~110k getLogs
+  Batch 4 (session 037): SHIB alone, ~128k getLogs
