@@ -1751,7 +1751,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 21870,MPLX,Metaplex,token,Launchpad,,0,0,,False,False,False,False,False,0,,False,0,,,BSC,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 1847,MSP,Mothership,token,Dexs,,19,1,ch2_holding,False,True,False,False,False,0,,False,0,2679.0,214.0,Ethereum,yes,partial,tvl_defillama
 2982,MVL,MVL,token,Yield;DePIN;IoT,,63,1,ch2_holding,False,True,False,False,False,0,,True,32,11742.0,939.0,Ethereum,yes,complete,COMPLETE
-36410,MYX,MYX Finance,token,Derivatives;Perpetuals,,0,0,,False,False,False,False,False,0,,True,27,,,BSC,yes,partial,ch2_holding | ch3_governance
+36410,MYX,MYX Finance,token,Derivatives;Perpetuals,,10,1,ch2_holding,False,True,False,False,False,0,,True,27,,,BSC,yes,complete,COMPLETE
 2538,NEC,Nectar,token,Payments;Smart Contract Platform,,22,1,ch2_holding,False,True,False,False,False,0,,False,0,1005.0,80.0,Ethereum,yes,partial,tvl_defillama
 5841,NEST,NEST Protocol,token,Derivatives;Dexs;Oracle,,5,1,ch2_holding,False,True,False,False,False,0,,False,0,426.0,34.0,Ethereum,yes,partial,tvl_defillama
 1080,NEU,NeuCoin,token,Yield,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
