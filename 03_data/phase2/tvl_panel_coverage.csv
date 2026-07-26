@@ -11,6 +11,7 @@ cmc_id,symbol,dl_slug,status,n_months,ym_start,ym_end,note
 7232,ALPHA,stella,200,36,2023-06,2026-05,ok
 6945,AMP,flexa,200,67,2020-11,2026-05,ok
 8857,ANC,anchor,200,30,2021-04,2023-10,ok
+3783,ANKR,ankr,200,67,2020-11,2026-05,ok
 1680,ANT,aragon,200,0,,,empty series
 18876,APE,apecoin,200,0,,,empty series
 18876,APE,chain:ApeChain,200,20,2024-10,2026-05,ok
@@ -89,9 +90,11 @@ cmc_id,symbol,dl_slug,status,n_months,ym_start,ym_end,note
 35763,KAITO,kaito,200,7,2025-11,2026-05,ok
 5566,KEEP,keep-network,200,68,2020-10,2026-05,ok
 9444,KNC,kyberswap-classic,200,68,2020-10,2026-05,ok
+1982,KNCL,kyberswap-classic,200,9,2020-10,2021-06,ok
 7535,KP3R,keep3r-network,200,56,2021-10,2026-05,ok
 33223,LAB,lab-terminal,200,0,,,empty series
 8000,LDO,lido,200,66,2020-12,2026-05,ok
+2239,LEND,aave-v1,200,73,2020-05,2026-05,ok
 24257,LGCT,legacy-network,200,0,,,empty series
 37986,LIGHT,heaven,200,0,,,empty series
 7102,LINA,linear-finance,200,54,2021-12,2026-05,ok
@@ -147,6 +150,7 @@ cmc_id,symbol,dl_slug,status,n_months,ym_start,ym_end,note
 7617,SFI,saffron-finance,200,55,2021-11,2026-05,ok
 8972,SFUND,seedify,200,51,2022-03,2026-05,ok
 33038,SKY,sky-lending,200,89,2019-01,2026-05,ok
+2586,SNX,synthetix,200,82,2019-08,2026-05,ok
 5279,SOLO,sologenic,200,0,,,empty series
 35818,SOSO,sosovalue-indexes,200,17,2025-01,2026-05,ok
 11289,SPELL,abracadabra-spell,200,60,2021-06,2026-05,ok

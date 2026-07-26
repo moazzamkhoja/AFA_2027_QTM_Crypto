@@ -1706,7 +1706,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 35429,LAYER,Solayer,token,Crypto Card Issuer;RWA;Restaking,,,,,,,,,False,0,False,False
 33652,LBTC,Lombard Staked BTC,token,Restaking,,,,,,,,,False,0,False,False
 8000,LDO,Lido DAO,token,Liquid Staking,,lido,Liquid Staking,0x5a98fcbea516cf06857215779fd812ca3bef1b32,Multi-Chain,Ethereum;Solana;Moonbeam;Moonriver;Terra,lido-snapshot.eth,lido-dao,True,1,True,True
-2239,LEND,Aave,token,Lending;Onchain Capital Allocator;Yield,,,,,,,,,False,0,False,False
+2239,LEND,Aave,token,Lending;Onchain Capital Allocator;Yield,,aave-v1,Lending,,,,,,False,0,False,False
 2377,LEV,Leverj,token,Derivatives,,,,,,,,,False,0,False,False
 24257,LGCT,Legacy Token,token,Farm,,legacy-network,Farm,bsc:0xD38B305CaC06990c0887032A02C03D6839f770A8,,,,legacy-token,True,1,True,False
 37986,LIGHT,Light,token,Dexs;Meme,,heaven,Dexs,solana:LiGHtkg3uTa9836RaNkKLLriqTNRcMdRAhqjGWNv777,,,,heaven,True,1,True,False
@@ -1833,7 +1833,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 5824,SLP,Smooth Love Potion,token,Derivatives;NFT;Gaming,,,,,,,,,False,0,False,False
 2277,SMT,SmartMesh,token,Dexs;IoT,,,,,,,,,False,0,False,False
 25264,SNEK,Snek,token,Dexs;Meme,,,,,,,,,False,0,False,False
-2586,SNX,Synthetix,token,Derivatives;Synthetics;DEX;Perpetuals;RWA;Yield,,,,,,,,,False,0,False,False
+2586,SNX,Synthetix,token,Derivatives;Synthetics;DEX;Perpetuals;RWA;Yield,,synthetix,Derivatives,,,,,,False,0,False,False
 16116,SOL,Wrapped Solana,token,Canonical Bridge;Dexs,,,,,,,,,False,0,False,False
 5279,SOLO,Sologenic,token,Basis Trading;Dexs,,sologenic,Dexs,,,,,solo-coin,True,1,False,False
 35818,SOSO,SoSoValue,token,Basis Trading;Bridge;Derivatives;Dexs;Indexes;AI/Big Data,,sosovalue-indexes,Indexes,,,,,,False,0,False,False

@@ -1789,3 +1789,39 @@ Remaining EVM DeFi breadth batches:
   Batch 2 (session 035): 13 tokens, ~119k getLogs - WORKLIST in 034 prompt
   Batch 3 (session 036): stETH + MEME, ~110k getLogs
   Batch 4 (session 037): SHIB alone, ~128k getLogs
+
+### Entry 85 — Session 035: EVM DeFi Breadth Batch 2 (13/13 tokens); KNCL window-clip;
+  SNX/LEND/ANKR TVL
+
+Batch 2 built 13/13 in one run: 74,783 getLogs (est 119k -> 0.63x), 22.9M transfers,
+592 screened months. B2 clean. B4 flagged-high kept: PNT (97.9% - dead token, 5 scrMo).
+Long histories: FUN 105 scrMo (2017+), ANKR 85, SNX 73 (assemble window 2019-05+),
+SLP 58, ELON 56. Note: cmc 2691 "PNT" is Penta (dead 2018 token), NOT pNetwork - the
+034 prompt's note was wrong; actual gl ~1.1k not 14.3k.
+
+TVL decisions:
+- SNX (2586) -> parent slug `synthetix` (children v1+v2/v3/v4 only in /protocols;
+  parent fetchable per Entry-68 CRV/GMX precedent). 82 mo, 73 lambda-overlap.
+- LEND (2239) -> `aave-v1` (AAVE 7278 keeps aave-v2; protocol-era split, no window
+  needed). 73 mo, 4 lambda-overlap (2020-05..2020-08 - LEND died 2020-08; the
+  low-TVL dead-token region).
+- ANKR (3783) -> OTHER_ADDS `ankr` (cmcId=3783 exact; other-class filter gap, same as
+  RPL Entry 68). 67 mo, 66 overlap.
+- KNCL (1982) -> `kyberswap-classic` WINDOW-CLIPPED <=2021-06 via new CLIP mechanism
+  in phase2_build_tvl_panel.py (MATIC/POL rule: KNC 9444 lambda starts 2021-07;
+  one physical TVL never in two assets' rows same month). 9 mo 2020-10..2021-06.
+- MKR investigated: DL parent `maker` 400s; MakerDAO history lives in sky-lending
+  (parent#maker) already on SKY 33038. MKR has ZERO lambda months -> no assignment,
+  no double-count risk (SKY lambda 2025-05+ only touches post-migration months).
+  Revisit only if MKR ever gets lambda.
+- SAI (2308): NO TVL by rule - liability/receipt-token circularity (SAI is the CDP
+  stablecoin itself; NV ~= pegged supply, NV/TVL = inverse collateral ratio, not a
+  valuation multiple). Same family as the LST receipt exclusion (Entry 84). SAI keeps
+  its 25 lambda months (ch2 survivorship) but is not regression-ready.
+- EETH (28568): LST receipt token -> excluded (Entry 84 rule). 11 lambda months kept.
+- No TVL exists: FUEL, FUN, ERC20, MLK, SLP, ELON, PNT (meme/game/dead, no protocol).
+
+tvl_panel: 163 assets / 8,120 asset-months. Post-assemble: lambda 13,191 / 457 assets.
+Regression-ready 173 -> 177 (coins 21, tokens/other 156). ch2 421 tokens / 13,580 rows.
+Coverage 188/311/1,440.
+Remaining breadth batches: 036 stETH+MEME (~110k gl), 037 SHIB (~128k gl).

@@ -71,7 +71,19 @@ OTHER_ADDS = [
     (5326, "ORC", "orbit-bridge"),       # Bridge, hacked 2024-01; DL cmcId=5326 exact
     (28412, "MUBI", "multibit-protocol"),  # Bridge; DL cmcId=28412 exact
     (38482, "FF", "falcon-finance"),     # Basis Trading, $1.26B; symbol+name exact
+    # SESSION 035 (Entry 85):
+    (3783, "ANKR", "ankr"),              # Liquid Staking, $20M; DL cmcId=3783 exact
+    (1982, "KNCL", "kyberswap-classic"),  # old KNC; WINDOW-CLIPPED <=2021-06, see CLIP below
 ]
+
+# SESSION 035 (Entry 85): per-cmc_id month clips for token-migration handoffs (the
+# MATIC/POL rule: one physical TVL never enters two assets' regression rows in the same
+# month). KNCL (old KNC) gets kyberswap-classic only BEFORE KNC v2 (9444, listed 2021-07,
+# lambda 2021-07+) takes over; 9444 keeps the full series (its lambda intersects 2021-07+
+# only). {cmc_id: (ym_min_or_None, ym_max_or_None)} inclusive.
+CLIP = {
+    1982: (None, "2021-06"),
+}
 
 # SESSION 027 (Entry 68): CHAIN-level TVL for canonical L2 governance tokens whose protocol
 # entry on DeFiLlama is a Foundation/treasury or an empty parent (ARB's 'arbitrum' and APE's
@@ -200,6 +212,10 @@ def main():
         mser = monthly_last(tvl)
         # restrict to months present in the universe panel
         mser = {ym: v for ym, v in mser.items() if ym in valid_yms}
+        if cmc_id in CLIP:
+            lo, hi = CLIP[cmc_id]
+            mser = {ym: v for ym, v in mser.items()
+                    if (lo is None or ym >= lo) and (hi is None or ym <= hi)}
         for ym in sorted(mser):
             rows.append({"cmc_id": cmc_id, "symbol": sym, "dl_slug": slug,
                          "month_end": ym_to_monthend[ym], "ym": ym,
