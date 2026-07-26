@@ -1,0 +1,22 @@
+STREAM build: 2 tokens | WORKERS=8 BLOCK_WINDOW=100000 RATE=8.0/s DAILY_CAP=185000
+  --- stETH cmc=8085 chain=1 START (gl_so_far=0) ---
+    stETH batch 1/32 block<=799,999 tf=0 gl=8 lots=0 1s
+    stETH batch 6/32 block<=4,799,999 tf=0 gl=48 lots=0 6s
+    stETH batch 11/32 block<=8,799,999 tf=0 gl=88 lots=0 11s
+    stETH batch 16/32 block<=12,799,999 tf=38239 gl=220 lots=10021 29s
+    stETH batch 21/32 block<=16,799,999 tf=713904 gl=2184 lots=171406 293s
+    stETH batch 26/32 block<=20,799,999 tf=2683322 gl=7906 lots=304690 1072s
+    stETH batch 31/32 block<=24,799,999 tf=4360656 gl=12864 lots=293999 1725s
+  stETH    cmc=8085 DONE tf=4529175 gl=13365 code=46/150 scrMo=50 HODLmed=13.4% last=13.1%
+  --- MEME cmc=28301 chain=1 START (gl_so_far=13365) ---
+    MEME batch 1/32 block<=799,999 tf=0 gl=13373 lots=0 1s
+    MEME batch 6/32 block<=4,799,999 tf=0 gl=13413 lots=0 6s
+    MEME batch 11/32 block<=8,799,999 tf=0 gl=13453 lots=0 11s
+    MEME batch 16/32 block<=12,799,999 tf=0 gl=13493 lots=0 16s
+    MEME batch 21/32 block<=16,799,999 tf=0 gl=13533 lots=0 21s
+    MEME batch 26/32 block<=20,799,999 tf=2223538 gl=20351 lots=855854 932s
+    MEME batch 31/32 block<=24,799,999 tf=2912581 gl=22385 lots=952304 1244s
+  MEME     cmc=28301 DONE tf=2932933 gl=22444 code=19/104 scrMo=31 HODLmed=3.7% last=15.4%
+aggregate: 423 completed tokens (0 recomputed), 1 deferred -> C:\AFA_2027_QTM_Crypto\03_data\phase1\channel2_holding.csv (13661 rows)
+
+STREAM done: 2 built, 0 skipped, 22444 getLogs; aggregate -> 423 tokens / 13661 rows
