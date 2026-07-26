@@ -1825,3 +1825,27 @@ tvl_panel: 163 assets / 8,120 asset-months. Post-assemble: lambda 13,191 / 457 a
 Regression-ready 173 -> 177 (coins 21, tokens/other 156). ch2 421 tokens / 13,580 rows.
 Coverage 188/311/1,440.
 Remaining breadth batches: 036 stETH+MEME (~110k gl), 037 SHIB (~128k gl).
+
+### Entry 86 - Session 036: stETH + MEME ch2 built (lambda-only; no TVL regression entry)
+
+stETH (8085/Ethereum): 13,365 getLogs / 4,529,175 transfers / 50 screened months.
+B2 pass. B4 pass (HODL-6m median 13.4%, last 13.1%). TVL excluded: LST receipt
+circularity (NV~=Lido TVL by construction, Entry 84 rule). Lambda months retained for
+conviction-only panel. No stETH -> lido mapping created.
+
+MEME (28301/Ethereum): 9,079 getLogs / 2,932,933 transfers / 31 screened months.
+B2 pass. B4 pass (HODL-6m median 3.7%, last 15.4%). TVL: DeFiLlama HAS a `memecoin`
+protocol listing (cmcId=28301, correct contract 0xb131...cd74, category Farm) but its
+TVL series is EMPTY (0 data points, no currentChainTvls) -> no usable protocol TVL,
+lambda-only. Nuance vs prompt: cmcId match exists but carries no data; not a symbol
+clash (conflux MemeDex is the unrelated symbol match).
+
+getLogs actual 22,444 total vs ~110k estimate (est was ~5x high; sparse pre-2021
+blocks). Runtime ~50 min.
+
+Post-assemble: lambda 13,272 asset-months / 459 assets. Regression-ready 177
+(no change, as expected - both adds lambda-only). ch2 423 tokens / 13,661 rows.
+Coverage 188/313/1,438.
+
+Remaining EVM breadth: Session 037 - SHIB (5994), ~128k getLogs est (likely high),
+lambda-only.
