@@ -1871,3 +1871,70 @@ lambda-only. (Session 037 repurposed for DOT/KSM/CORE ch1 — see Entry 87.)
 **Session 037 prompt:** 04_code/CLAUDE_CODE_SESSION037_DOT_KSM_CORE_PROMPT.md
 **Session 038 (SHIB ch2):** deferred; see prior "next" note above.
 **Regression-ready target post-037:** 177 -> 180 (coins 21->24) if all three PASS.
+
+### Entry 88 — Session 037 RESULTS: DOT + KSM + CORE ch1 ALL BUILT (method pivot: archive-RPC state reads)
+
+**Method pivot (supersedes the Entry-87 build plan):** Subscan `era_stat` turned out
+to be PER-ADDRESS (400 "address is a required field") — Subscan exposes NO
+network-wide bonded history on the free plan (`/api/scan/daily` category `Bonded`
+returns all zeros and the key has a ~2-month `history_window_exceeded` cap; the
+subscan.io site itself was mid-upgrade, charts unreachable). Instead: raw-key
+state reads (twox128/twox64concat, no metadata decode) of
+`Staking.ErasTotalStake(ActiveEra)` at month-end blocks (interpolation search on
+`Timestamp.Now`) from public ARCHIVE RPCs. Post-Asset-Hub-Migration months
+(relay staking storage cleared) read from the Asset Hub at the same timestamp:
+DOT relay<=2025-10 / AH from 2025-11; KSM relay<=2025-09 / AH from 2025-10.
+Endpoints: OnFinality public (relays); parity `*-asset-hub-rpc.polkadot.io` (AHs,
+archive verified to >=2022). Script: `04_code/session037_build_dot_ksm.py`.
+
+**DOT (6636):** 71 months (2020-08-31..2026-06-30) built. 1 DOT = 1e10 Planck.
+Latest 862,345,368 DOT. Cross-check: fresh head 881,519,184 -> drift -2.18% PASS
+(July growth); external anchor ~881.9M / 52.0% (Coinbase+StakingRewards 2026-07)
+matches fresh to 0.05%. AHM boundary continuous (831.5M -> 825.9M, -0.7%).
+Source: archiveRPC polkadot(+assethub):Staking.ErasTotalStake / 1e10.
+
+**KSM (5034):** 76 months (2020-03-31..2026-06-30) built. 1 KSM = 1e12 Planck.
+DROPPED 2019-11..2020-02: pre-runtime-1050 storage only exposes `SlotStake` =
+MINIMUM validator backing (11k KSM), not network total — wrong metric (and
+pre-universe anyway). Latest 8,384,479 KSM; fresh 8,559,862 -> drift -2.05% PASS;
+external anchor ~8.5M / 46.0% matches. staking_ratio suppressed for 2020-07
+(CMC circulating 2.99M < staked 5.98M — bad CMC point; 8.47M next month). Note:
+CMC holds KSM circulating at 8.47M through 2020-2024 -> ratios 0.77-0.93 there
+carry a stale denominator (universe panel remains supply authority).
+Source: archiveRPC kusama(+assethub):Staking.ErasTotalStake / 1e12.
+
+**CORE (23254):** BUILT EXACT, 42 months (2023-01-31..2026-06-30).
+staking-api.coredao.org `/staking/summary/overall` is CURRENT-ONLY (round param
+ignored), openapi.coredao.org proxy/balancehistory endpoints return empty 200s,
+and rpc.coredao.org is pruned — but Ankr (`rpc.ankr.com/core`) and dRPC
+(`core.drpc.org`) are ARCHIVE. Definition validated TO THE DIGIT at head:
+official stakedCoreAmount == sum over ACTIVE validators
+(ValidatorSet.getValidatorOps(), legacy fallback currentValidatorSet(i) walk) of
+CoreAgent.candidateMap(op).amount (0x...1011, post-StakeHub upgrade; from
+2024-11) / PledgeAgent.agentsMap(op) word0 (0x...1007, legacy; <=2024-10;
+word0 vs word2 differ <2%, boundary continuous with real Oct-Nov 2024 decline).
+Naive contract-BALANCE reads would run ~6% HIGH (335.9M vs 315.8M) — rejected.
+Latest 307,727,006 CORE; fresh API 315,775,339 -> drift -2.55% PASS.
+Ratio range 0.114-0.81 (early CMC circulating tiny). CORE-only (BTC/hashpower
+dual-staking excluded). Script: `04_code/session037_build_core.py`.
+Source: core-archiveRPC eth_call active-validator stake sum.
+
+**Post-assemble:** lambda 13,272 -> 13,449 asset-months / 459 -> 462 assets.
+Coverage 188/313/1,438 -> 189/314/1,436. Regression-ready 177 -> 178:
+coins 21 -> 22 (CORE enters — it already had 27 NVT_GL months; same-month
+lambda x NVT overlap confirmed). DOT/KSM do NOT enter: the Entry-87/prompt
+premise "DOT+KSM have NVT_GL" was WRONG — nvt_gl_panel has 68/70 rows for them
+but pq_usd ALL NULL (no PQ source) -> they move not_started -> PARTIAL
+(pq_nvtgl is now their only gap; ch1 gate CLOSED).
+
+**Bookkeeping note:** the narrative "coins 21" vs coverage-file pos-coin count 20
+pre-session is explained by TRX (cmc 1958): coin_staking_type mislabeled
+`pow_only` (TRON is DPoS) while having ch1 lambda (78 months) — the file counts
+it in the pow bucket, narrative counted it as a staking coin. Worth a one-line
+fix in a future universe-map pass; not touched this session.
+
+**Open items for session 038:** SHIB (5994) ch2 ~128k gl est (treat as ~5x high);
+WARP (1166) identity review; Cosmos key -> CRO/INJ/SEI/KAVA ch1; Blockchair
+support email re XTZ/MATIC before paying; DOT/KSM PQ source hunt (would make
+them regression-ready); TRX coin_staking_type fix; bibliography sanity-check.
+Report: 03_data/SESSION037_DOT_KSM_CORE_REPORT.md

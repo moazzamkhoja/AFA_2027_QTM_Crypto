@@ -132,7 +132,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 2027,CNX,Cryptonex,coin,Exchange Token;Payments;Smart Contract Platform,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 65,COL,Colossuscoin,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 2001,COLX,ColossusXT,coin,Privacy,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
-23254,CORE,Core,coin,Canonical Bridge;Derivatives;Yield;Layer-1,pos_possible,0,0,,False,False,False,False,True,27,defillama_chain_dex,False,0,,,,,partial,ch1_staking[pos_possible]
+23254,CORE,Core,coin,Canonical Bridge;Derivatives;Yield;Layer-1,pos_possible,40,1,ch1_staking,True,False,False,False,True,27,defillama_chain_dex,False,0,,,,,complete,COMPLETE
 1008,CPS,Capricoin+,coin,,pos,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking | pq_nvtgl
 1676,CREA,CREA,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 986,CREVA,CrevaCoin,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
@@ -175,7 +175,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 74,DOGE,Dogecoin,coin,Chain;Payments;Meme,pow_only,0,0,,False,False,False,False,True,118,bitinfocharts_sentinusd,False,0,,,,,complete,COMPLETE
 551,DONU,Donu,coin,,pos,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking | pq_nvtgl
 145,DOPE,DopeCoin,coin,Dexs,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
-6636,DOT,Polkadot,coin,Foundation;Liquid Staking;Yield;Layer-1,pos_possible,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pos_possible] | pq_nvtgl
+6636,DOT,Polkadot,coin,Foundation;Liquid Staking;Yield;Layer-1,pos_possible,68,1,ch1_staking,True,False,False,False,False,0,,False,0,,,,,partial,pq_nvtgl
 660,DSH,Dashcoin,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 69,DTC,Datacoin,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 4092,DUSK,Dusk,coin,Layer-1;Privacy;RWA;Smart Contract Platform;Zero Knowledge,pos,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking | pq_nvtgl
@@ -1021,7 +1021,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 400,KORE,Kore,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 1224,KR,Krypton,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 2378,KRM,Karma,other,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-5034,KSM,Kusama,coin,Liquid Staking,unknown,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[unknown] | pq_nvtgl
+5034,KSM,Kusama,coin,Liquid Staking,unknown,69,1,ch1_staking,True,False,False,False,False,0,,False,0,,,,,partial,pq_nvtgl
 15185,KUJI,Kujira,coin,Liquidations,unknown,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[unknown] | pq_nvtgl
 2090,LA,LATOKEN,other,Exchange Token;Payments,,0,0,,False,False,False,False,False,0,,False,0,4261.0,341.0,Ethereum,yes,not_started,ch2_holding(4261h) | ch3_governance | tvl_defillama
 3657,LAMB,Lambda,other,AI/Big Data;DePIN;Storage,,0,0,,False,False,False,False,False,0,,False,0,16218.0,1297.0,Ethereum,yes,not_started,ch2_holding(16218h) | ch3_governance | tvl_defillama
