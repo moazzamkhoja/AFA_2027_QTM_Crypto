@@ -1847,5 +1847,27 @@ Post-assemble: lambda 13,272 asset-months / 459 assets. Regression-ready 177
 (no change, as expected - both adds lambda-only). ch2 423 tokens / 13,661 rows.
 Coverage 188/313/1,438.
 
-Remaining EVM breadth: Session 037 - SHIB (5994), ~128k getLogs est (likely high),
-lambda-only.
+Remaining EVM breadth: Session 038 - SHIB (5994), ~128k getLogs est (likely high),
+lambda-only. (Session 037 repurposed for DOT/KSM/CORE ch1 — see Entry 87.)
+
+### Entry 87 — Keys received; Session 037 scope: DOT + KSM ch1 (Subscan) + CORE ch1 probe (CoreScan)
+**Date:** 2026-07-27
+**Keys added to .api_keys.json:**
+- "subscan": 3d09e805af23487a9e1ee546338b7216 (received prior session — confirmed in place)
+- "coredao": 97375a02225a40688d743659236ea82b (received this session from scan.coredao.org)
+
+**Assets unlocked:**
+- DOT (6636) + KSM (5034): Subscan era_stat key-gated (Entry 44). With key in place, build is
+  ready: POST polkadot.api.subscan.io/api/scan/staking/era_stat (X-API-Key header), paginate
+  all eras, bonded_total / 1e10 (DOT) or 1e12 (KSM), map end_block_num -> timestamp via
+  genesis_ts + block_num * 6s, bucket to months. Both have NVT_GL -> regression-ready on ch1
+  build. Expected: coins 21 -> 23.
+- CORE (23254): openapi.coredao.org 401 without key (Entry 78). Key now available.
+  Probe: GET openapi.coredao.org/api/stats/staking_summary?apikey=<key>. If historical series
+  available -> build directly. If current-only -> block-level balance reads on PledgeAgent/staking
+  contract (Core EVM chainid 1116, block time ~3s, genesis 2023-01-14). CORE has NVT_GL
+  (40 months) -> regression-ready if ch1 confirmed. Expected: coins -> 24.
+
+**Session 037 prompt:** 04_code/CLAUDE_CODE_SESSION037_DOT_KSM_CORE_PROMPT.md
+**Session 038 (SHIB ch2):** deferred; see prior "next" note above.
+**Regression-ready target post-037:** 177 -> 180 (coins 21->24) if all three PASS.
