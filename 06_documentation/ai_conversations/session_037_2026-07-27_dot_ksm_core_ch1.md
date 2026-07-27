@@ -4,7 +4,7 @@
 **Model/interface:** Claude Fable 5 via Claude Code (desktop app, Windows)
 **Kickoff:** user pointed to `CLAUDE_CODE_SESSION037_DOT_KSM_CORE_PROMPT.md` ("proceed from there")
 **Mode:** autonomous after launch; standing end-of-session commit+push authorization
-**Commits:** (this session's commit — see git log)
+**Commits:** 7ca6b14 (+ record-keeping hash-fix commit after)
 
 ---
 
