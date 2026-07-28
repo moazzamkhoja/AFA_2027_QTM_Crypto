@@ -2011,3 +2011,67 @@ Post-assemble: λ 13,510 / 463 assets (unchanged). Coverage 189 complete /
 support email decision (XTZ/MATIC only — DOT/KSM now ruled out); DOT/KSM PQ
 reopens only on Subscan Pro decision; bibliography sanity-check.
 Report: 03_data/SESSION039_DOTKSM_PQ_FIXES_REPORT.md
+
+### Entry 91 — Session 040: CRO/KAVA ch1 via Cosmos Archive LCD; INJ/SEI negative
+
+**Approach:** free, keyless Cosmos SDK LCD `cosmos/staking/v1beta1/pool` with
+`x-cosmos-block-height` header at month-end blocks found via binary search on
+`cosmos/base/tendermint/v1beta1/blocks/{height}` timestamps. Candidate endpoints
+refreshed from the chains.cosmos.directory registry after the kickoff prompt''s
+CRO candidates proved DNS-dead (rest.crypto.org, notional.ventures).
+
+**Archive probe results (liveness + 365-day state-depth test):**
+- CRO: `rest.mainnet.crypto.org` — PASS
+- INJ: FAIL — all 7 registry candidates pruned (`no commit info found` /
+  `version mismatch on immutable IAVL tree`). No free archive LCD exists.
+- KAVA: `api.data.kava.io` (official archive) — PASS, but aggressive HTTP-420
+  rate limiting; required 0.6–1.5 s call pacing + 15–45 s backoff retries and
+  two retry passes to complete.
+- SEI: FAIL — all 8 registry candidates pruned. **Two gateways
+  (`sei.api.pocket.network`, `rest.cosmos.directory/sei`) are FAKE archives:
+  they silently ignore the `x-cosmos-block-height` header and return live
+  state.** Caught because "archive" bonded == live bonded digit-for-digit; the
+  probe now hard-fails any node whose year-old bonded equals live bonded. This
+  guard is load-bearing — without it SEI would have shipped a flat bogus series.
+
+**State-decode (codec) boundaries — `invalid denom:` on older heights:**
+- CRO: block store is complete back to genesis (2021-03-25) but staking state
+  decodes only from ~2025-06 onward → 11 months built.
+- KAVA: current chain kava_2222-10 restarted at height 1 on 2022-05-25 (older
+  months have no blocks at all); state decodes only from ~2024-Q2 →
+  26 months built. 2022-05..2024-03 permanently unavailable on this node.
+- Binary search gained a guard: if the earliest stored block postdates the
+  target month-end, the month is skipped (previously it would silently return
+  block 1 and mis-attribute post-restart state to earlier months).
+
+**Built (03_data/phase1/channel1_cosmos_lcd.csv, 37 rows):**
+- CRO (3635, basecro/10^8): 11 months 2025-07-31..2026-05-31, ratio 0.309–0.370
+- KAVA (4846, ukava/10^6): 26 months 2024-04-30..2026-05-31, ratio 0.091–0.127
+
+**Cross-check (latest built month vs live pool):**
+- CRO drift: 1.81% — PASS
+- KAVA drift: 23.06% — WARN, investigated and explained: bonded was 99.1M at
+  2026-06-30 and 103.1M at ~2026-07-14 vs 127.8M live (2026-07-28) — a genuine
+  ~25M-KAVA staking surge in the two weeks before this session, not a
+  denom/decimal error. Series trajectory is smooth and ratio bounded.
+
+**Coverage label fixes:** coin_staking_type pos_possible → pos for CRO (3635)
+and KAVA (4846). SEI stays pos_possible (nothing built); INJ was already pos.
+
+**Environment note:** user-site pandas was found mid-upgrade-interrupted
+(`~andas` remnant; `to_csv` ModuleNotFoundError, then full import failure) —
+reinstalled clean (pandas 3.0.5); assemble + coverage builders ran unmodified.
+The session builder writes its CSV via stdlib `csv` as defense.
+
+**Post-assemble:** λ 13,510 → 13,547 asset-months / 463 → 465 assets.
+Coverage 191 complete / 312 partial / 1,436 not_started.
+Regression-ready 178 → 180 (coins 22 → 24: CRO + KAVA in; tokens/other 156
+unchanged).
+
+**INJ/SEI ch1 verdict:** blocked on archive state access, not on method.
+Reopen only if a free archive LCD emerges or a dedicated indexer (paid) is
+approved.
+
+Output: 03_data/phase1/channel1_cosmos_lcd.csv
+Builders: 04_code/session040_cosmos_lcd.py, 04_code/session040_kava_retry.py
+Report: 03_data/SESSION040_COSMOS_LCD_REPORT.md

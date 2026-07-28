@@ -1,0 +1,235 @@
+
+=== CRO probe ===
+  https://rest.mainnet.crypto.org LIVE -- bonded=1440786008540495606
+  https://rest.mainnet.crypto.org latest height=30964940
+  https://rest.mainnet.crypto.org ARCHIVE OK @ 25708940: bonded=1106679373591263360
+  --> USE: https://rest.mainnet.crypto.org (latest 30964940)
+
+=== INJ probe ===
+  https://injective-api.highstakes.ch LIVE -- bonded=56874844355451502145
+  https://injective-api.highstakes.ch latest height=176161018
+  https://injective-api.highstakes.ch archive probe FAILED @ 165649018: 500 {"code":2, "message":"codespace sdk code 18: invalid request: failed to load state at height 165649018; no commit info found (latest height: 176161025)", "detai
+  https://rest.lavenderfive.com:443/injective LIVE -- bonded=56874844997050237949
+  https://rest.lavenderfive.com:443/injective latest height=176161036
+  https://rest.lavenderfive.com:443/injective archive probe FAILED @ 165649036: 500 {"code":2,"message":"codespace sdk code 18: invalid request: failed to load state at height 165649036; version mismatch on immutable IAVL tree; version does not
+  https://injective-rest.publicnode.com LIVE -- bonded=56874844997050237949
+  https://injective-rest.publicnode.com latest height=176161058
+  https://injective-rest.publicnode.com archive probe FAILED @ 165649058: 500 {"code":2, "message":"codespace sdk code 18: invalid request: failed to load state at height 165649058; version mismatch on immutable IAVL tree; version does no
+  https://public.stakewolle.com/cosmos/injective/rest LIVE -- bonded=56874844997050237949
+  https://public.stakewolle.com/cosmos/injective/rest latest height=176161076
+  https://public.stakewolle.com/cosmos/injective/rest archive probe FAILED @ 165649076: 500 {"code":2, "message":"codespace sdk code 18: invalid request: failed to load state at height 165649076; no commit info found (latest height: 176161085)", "detai
+  https://injective.rpc.uquad.org:443 LIVE -- bonded=56874844997050237949
+  https://injective.rpc.uquad.org:443 latest height=176161096
+  https://injective.rpc.uquad.org:443 archive probe FAILED @ 165649096: 500 {"code":2, "message":"codespace sdk code 18: invalid request: failed to load state at height 165649096; version mismatch on immutable IAVL tree; version does no
+  https://sentry.lcd.injective.network LIVE -- bonded=56874844997050237949
+  https://sentry.lcd.injective.network latest height=176161116
+  https://sentry.lcd.injective.network archive probe FAILED @ 165649116: 500 {"code":2,"message":"codespace sdk code 18: invalid request: failed to load state at height 165649116; no commit info found (latest height: 176161125)","details
+  https://rest.cosmos.directory/injective LIVE -- bonded=56874844997050237949
+  https://rest.cosmos.directory/injective latest height=176161136
+  https://rest.cosmos.directory/injective archive probe FAILED @ 165649136: 500 {"code":2, "message":"codespace sdk code 18: invalid request: failed to load state at height 165649136; no commit info found (latest height: 176161144)", "detai
+  --> NO ARCHIVE NODE FOUND for INJ
+
+=== KAVA probe ===
+  https://api.data.kava.io LIVE -- bonded=127765400170518
+  https://api.data.kava.io latest height=21845478
+  https://api.data.kava.io ARCHIVE OK @ 16589478: bonded=113460102353227
+  --> USE: https://api.data.kava.io (latest 21845478)
+
+=== SEI probe ===
+  https://rest.lavenderfive.com:443/sei LIVE -- bonded=4172265728872083
+  https://rest.lavenderfive.com:443/sei latest height=222766121
+  https://rest.lavenderfive.com:443/sei archive probe FAILED @ 143926121: 500 {
+  "code": 2,
+  "message": "UnmarshalJSON cannot decode empty bytes: panic",
+  "details": [
+  ]
+}
+  https://api-sei.stingray.plus LIVE -- bonded=4172265728872083
+  https://api-sei.stingray.plus latest height=222766151
+  https://api-sei.stingray.plus archive probe FAILED @ 143926151: 500 {
+  "code": 2,
+  "message": "UnmarshalJSON cannot decode empty bytes: panic",
+  "details": [
+  ]
+}
+  https://lcd-sei.whispernode.com:443 pool: EXC HTTPSConnectionPool(host='lcd-sei.whispernode.com', port=443): Max retries exceeded with url: /cosmos/staking/v1beta1/pool (Caused by NameResolutionError("HTTPSConnection(host='lcd-sei.whispernode.com', port=443): Failed to resolve 'lcd-sei.whispernode.com' ([Errno 11001] getaddrinfo failed)")) -- skip
+  https://sei.api.kjnodes.com pool: EXC HTTPSConnectionPool(host='sei.api.kjnodes.com', port=443): Max retries exceeded with url: /cosmos/staking/v1beta1/pool (Caused by NameResolutionError("HTTPSConnection(host='sei.api.kjnodes.com', port=443): Failed to resolve 'sei.api.kjnodes.com' ([Errno 11001] getaddrinfo failed)")) -- skip
+  https://sei-rest.publicnode.com LIVE -- bonded=4172265728872083
+  https://sei-rest.publicnode.com latest height=222766282
+  https://sei-rest.publicnode.com archive probe FAILED @ 143926282: 500 {
+  "code": 2,
+  "message": "UnmarshalJSON cannot decode empty bytes: panic",
+  "details": [
+  ]
+}
+
+  https://sei.api.pocket.network LIVE -- bonded=4172265728872083
+  https://sei.api.pocket.network latest height=222766313
+  https://sei.api.pocket.network FAKE ARCHIVE @ 143926313: bonded identical to live -- header ignored
+  https://rest.sei-apis.com LIVE -- bonded=4172265728872083
+  https://rest.sei-apis.com latest height=222766317
+  https://rest.sei-apis.com archive probe FAILED @ 143926317: 500 {
+  "code": 2,
+  "message": "UnmarshalJSON cannot decode empty bytes: panic",
+  "details": [
+  ]
+}
+  https://rest.cosmos.directory/sei LIVE -- bonded=4172265728872083
+  https://rest.cosmos.directory/sei latest height=222766340
+  https://rest.cosmos.directory/sei FAKE ARCHIVE @ 143926340: bonded identical to live -- header ignored
+  --> NO ARCHIVE NODE FOUND for SEI
+
+=== CRO build (lcd=https://rest.mainnet.crypto.org) ===
+  CRO: earliest stored block 1 at 2021-03-25T01:00:00Z
+  CRO 2021-03: pool query failed at 92593: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-04: pool query failed at 493730: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-05: pool query failed at 909288: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-06: pool query failed at 1313372: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-07: pool query failed at 1736450: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-08: pool query failed at 2166239: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-09: pool query failed at 2586249: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-10: pool query failed at 3022109: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-11: pool query failed at 3441619: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2021-12: pool query failed at 3881476: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-01: pool query failed at 4324840: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-02: pool query failed at 4727570: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-03: pool query failed at 5170592: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-04: pool query failed at 5594205: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-05: pool query failed at 6034397: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-06: pool query failed at 6465676: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-07: pool query failed at 6916763: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-08: pool query failed at 7368630: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-09: pool query failed at 7814328: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-10: pool query failed at 8282929: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-11: pool query failed at 8754570: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2022-12: pool query failed at 9242288: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-01: pool query failed at 9733701: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-02: pool query failed at 10188964: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-03: pool query failed at 10714797: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-04: pool query failed at 11224704: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-05: pool query failed at 11746980: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-06: pool query failed at 12246047: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-07: pool query failed at 12764187: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-08: pool query failed at 13280942: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-09: pool query failed at 13776691: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-10: pool query failed at 14287726: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-11: pool query failed at 14785677: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2023-12: pool query failed at 15300992: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-01: pool query failed at 15819127: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-02: pool query failed at 16304664: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-03: pool query failed at 16822467: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-04: pool query failed at 17326036: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-05: pool query failed at 17844215: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-06: pool query failed at 18344107: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-07: pool query failed at 18858981: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-08: pool query failed at 19374553: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-09: pool query failed at 19873320: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-10: pool query failed at 20387234: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-11: pool query failed at 20883264: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2024-12: pool query failed at 21395491: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2025-01: pool query failed at 21903938: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2025-02: pool query failed at 22365345: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2025-03: pool query failed at 22879185: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2025-04: pool query failed at 23376122: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2025-05: pool query failed at 23889601: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2025-06: pool query failed at 24385601: 500 {"code":13, "message":"invalid denom: ", "details":[]}
+  CRO 2025-07: height=24897536, staked=11,982,657,838, ratio=0.3704
+  CRO 2025-08: height=25409240, staked=11,034,698,257, ratio=0.3284
+  CRO 2025-09: height=25902495, staked=11,131,850,524, ratio=0.3195
+  CRO 2025-10: height=26411533, staked=11,286,126,979, ratio=0.3127
+  CRO 2025-11: height=26905419, staked=11,543,637,966, ratio=0.3092
+  CRO 2025-12: height=27422953, staked=12,388,649,330, ratio=0.3211
+  CRO 2026-01: height=27945909, staked=12,713,626,392, ratio=0.3192
+  CRO 2026-02: height=28419276, staked=12,982,519,239, ratio=0.3161
+  CRO 2026-03: height=28944378, staked=13,159,815,272, ratio=0.3110
+  CRO 2026-04: height=29453435, staked=13,940,604,101, ratio=0.3200
+  CRO 2026-05: height=29981181, staked=14,147,571,306, ratio=0.3157
+CRO: 11 months built
+
+=== KAVA build (lcd=https://api.data.kava.io) ===
+  KAVA: earliest stored block 1 at 2022-05-25T17:00:00Z
+  KAVA 2020-03: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2020-04: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2020-05: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2020-06: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2020-07: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2020-08: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2020-09: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2020-10: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2020-12: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-01: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-02: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-03: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-04: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-05: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-06: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-07: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-08: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-09: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-10: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-11: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2021-12: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2022-01: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2022-02: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2022-03: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2022-04: predates earliest stored block (2022-05-25) -- skip
+  KAVA 2022-05: pool query failed at 87194: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2022-06: pool query failed at 499172: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2022-07: pool query failed at 922215: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2022-08: pool query failed at 1341857: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2022-09: pool query failed at 1749739: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2022-10: binary search failed: block 2170480: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2022-11: binary search failed: block 11797608: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2022-12: binary search failed: block 11797608: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2023-01: pool query failed at 3410294: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2023-02: pool query failed at 3789430: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2023-03: pool query failed at 4205262: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2023-04: pool query failed at 4608606: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2023-05: pool query failed at 5026259: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2023-06: pool query failed at 5437207: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2023-07: binary search failed: block 5864838: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2023-08: binary search failed: block 13641342: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2023-09: binary search failed: block 13641342: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2023-10: pool query failed at 7134730: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2023-11: pool query failed at 7546314: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2023-12: pool query failed at 7972057: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2024-01: pool query failed at 8396460: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2024-02: pool query failed at 8800021: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2024-03: pool query failed at 9231126: 500 {"code":13,"message":"invalid denom: ","details":[]}
+  KAVA 2024-04: binary search failed: block 10807920: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2024-05: binary search failed: block 15538302: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2024-06: binary search failed: block 15538302: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2024-07: height=11016736, staked=135,795,075, ratio=0.1254
+  KAVA 2024-08: height=11493541, staked=138,017,872, ratio=0.1275
+  KAVA 2024-09: height=11953899, staked=136,791,260, ratio=0.1263
+  KAVA 2024-10: height=12442523, staked=132,275,722, ratio=0.1222
+  KAVA 2024-11: height=12887610, staked=119,380,938, ratio=0.1102
+  KAVA 2024-12: height=13333698, staked=124,979,942, ratio=0.1154
+  KAVA 2025-01: binary search failed: block 13782751: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2025-02: binary search failed: block 17589588: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2025-03: binary search failed: block 17589588: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2025-04: height=15075188, staked=121,270,745, ratio=0.1120
+  KAVA 2025-05: height=15529013, staked=122,078,388, ratio=0.1127
+  KAVA 2025-06: height=15970093, staked=121,827,437, ratio=0.1125
+  KAVA 2025-07: height=16430562, staked=118,032,813, ratio=0.1090
+  KAVA 2025-08: height=16890005, staked=111,993,161, ratio=0.1034
+  KAVA 2025-09: height=17333940, staked=107,307,437, ratio=0.0991
+  KAVA 2025-10: height=17792595, staked=104,124,777, ratio=0.0962
+  KAVA 2025-11: binary search failed: block 18235878: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2025-12: binary search failed: block 19819036: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2026-01: binary search failed: block 19819036: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2026-02: height=19589225, staked=98,992,992, ratio=0.0914
+  KAVA 2026-03: height=20055351, staked=102,526,364, ratio=0.0947
+  KAVA 2026-04: height=20507052, staked=99,288,989, ratio=0.0917
+  KAVA 2026-05: height=20973939, staked=98,300,526, ratio=0.0908
+KAVA: 17 months built
+
+Wrote 28 rows to C:\AFA_2027_QTM_Crypto\03_data\phase1\channel1_cosmos_lcd.csv
+         n       first        last  mean_ratio
+symbol                                        
+CRO     11  2025-07-31  2026-05-31    0.322133
+KAVA    17  2024-07-31  2026-05-31    0.108265
+
+=== Cross-check (built latest vs live pool) ===
+CRO: built_latest=14,147,571,306  live=14,407,865,160  drift=1.81%  PASS
+KAVA: built_latest=98,300,526  live=127,765,879  drift=23.06%  WARN (staking shifted since last panel month)

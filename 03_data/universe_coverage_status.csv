@@ -136,7 +136,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 1008,CPS,Capricoin+,coin,,pos,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking | pq_nvtgl
 1676,CREA,CREA,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 986,CREVA,CrevaCoin,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
-3635,CRO,Cronos,coin,Dexs;Exchange Token;Layer-1;Payments,pos_possible,0,0,,False,False,False,False,True,43,defillama_chain_dex,False,0,,,,,partial,ch1_staking[pos_possible]
+3635,CRO,Cronos,coin,Dexs;Exchange Token;Layer-1;Payments,pos,11,1,ch1_staking,True,False,False,False,True,43,defillama_chain_dex,False,0,,,,,complete,COMPLETE
 2447,CRPT,Crypterium,coin,Smart Contract Platform,pos_possible,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pos_possible] | pq_nvtgl
 720,CRW,Crown,coin,,pos,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking | pq_nvtgl
 337,CRYPT,CryptCoin,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
@@ -298,7 +298,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 32880,KAIA,Kaia,coin,Layer-1,pos_possible,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pos_possible] | pq_nvtgl
 116,KARMA,Karmacoin,coin,Reserve Currency,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 20396,KAS,Kaspa,coin,DAG;Layer-1,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
-4846,KAVA,Kava,coin,Layer-1,pos_possible,0,0,,False,False,False,False,True,36,defillama_chain_dex,False,0,,,,,partial,ch1_staking[pos_possible]
+4846,KAVA,Kava,coin,Layer-1,pos,26,1,ch1_staking,True,False,False,False,True,36,defillama_chain_dex,False,0,,,,,complete,COMPLETE
 1371,KB3,B3Coin,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 5647,KDA,Kadena,coin,AI/Big Data;NFT;Gaming;Layer-1;Smart Contract Platform,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 1993,KIN,Kin,coin,Smart Contract Platform,pos_possible,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pos_possible] | pq_nvtgl

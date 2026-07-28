@@ -1,0 +1,93 @@
+{
+  "CRO": [
+    {
+      "lcd": "https://rest.mainnet.crypto.org",
+      "liveness": "OK",
+      "archive": "PASS @ 25708940"
+    }
+  ],
+  "INJ": [
+    {
+      "lcd": "https://injective-api.highstakes.ch",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\"code\":2, \"message\":\"codespace sdk code 18: invalid request: failed to load state at height 165649018; no commit info found (latest height: 176161025)\", \"detai"
+    },
+    {
+      "lcd": "https://rest.lavenderfive.com:443/injective",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\"code\":2,\"message\":\"codespace sdk code 18: invalid request: failed to load state at height 165649036; version mismatch on immutable IAVL tree; version does not"
+    },
+    {
+      "lcd": "https://injective-rest.publicnode.com",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\"code\":2, \"message\":\"codespace sdk code 18: invalid request: failed to load state at height 165649058; version mismatch on immutable IAVL tree; version does no"
+    },
+    {
+      "lcd": "https://public.stakewolle.com/cosmos/injective/rest",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\"code\":2, \"message\":\"codespace sdk code 18: invalid request: failed to load state at height 165649076; no commit info found (latest height: 176161085)\", \"detai"
+    },
+    {
+      "lcd": "https://injective.rpc.uquad.org:443",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\"code\":2, \"message\":\"codespace sdk code 18: invalid request: failed to load state at height 165649096; version mismatch on immutable IAVL tree; version does no"
+    },
+    {
+      "lcd": "https://sentry.lcd.injective.network",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\"code\":2,\"message\":\"codespace sdk code 18: invalid request: failed to load state at height 165649116; no commit info found (latest height: 176161125)\",\"details"
+    },
+    {
+      "lcd": "https://rest.cosmos.directory/injective",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\"code\":2, \"message\":\"codespace sdk code 18: invalid request: failed to load state at height 165649136; no commit info found (latest height: 176161144)\", \"detai"
+    }
+  ],
+  "KAVA": [
+    {
+      "lcd": "https://api.data.kava.io",
+      "liveness": "OK",
+      "archive": "PASS @ 16589478"
+    }
+  ],
+  "SEI": [
+    {
+      "lcd": "https://rest.lavenderfive.com:443/sei",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\n  \"code\": 2,\n  \"message\": \"UnmarshalJSON cannot decode empty bytes: panic\",\n  \"details\": [\n  ]\n}"
+    },
+    {
+      "lcd": "https://api-sei.stingray.plus",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\n  \"code\": 2,\n  \"message\": \"UnmarshalJSON cannot decode empty bytes: panic\",\n  \"details\": [\n  ]\n}"
+    },
+    {
+      "lcd": "https://lcd-sei.whispernode.com:443",
+      "liveness": "FAIL EXC HTTPSConnectionPool(host='lcd-sei.whispernode.com', port=443): Max retries exceeded with url: /cosmos/staking/v1beta1/pool (Caused by NameResolutionError(\"HTTPSConnection(host='lcd-sei.whispernode.com', port=443): Failed to resolve 'lcd-sei.whispernode.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "lcd": "https://sei.api.kjnodes.com",
+      "liveness": "FAIL EXC HTTPSConnectionPool(host='sei.api.kjnodes.com', port=443): Max retries exceeded with url: /cosmos/staking/v1beta1/pool (Caused by NameResolutionError(\"HTTPSConnection(host='sei.api.kjnodes.com', port=443): Failed to resolve 'sei.api.kjnodes.com' ([Errno 11001] getaddrinfo failed)\"))"
+    },
+    {
+      "lcd": "https://sei-rest.publicnode.com",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\n  \"code\": 2,\n  \"message\": \"UnmarshalJSON cannot decode empty bytes: panic\",\n  \"details\": [\n  ]\n}\n"
+    },
+    {
+      "lcd": "https://sei.api.pocket.network",
+      "liveness": "OK",
+      "archive": "FAIL height header ignored (old bonded == live bonded)"
+    },
+    {
+      "lcd": "https://rest.sei-apis.com",
+      "liveness": "OK",
+      "archive": "FAIL 500 {\n  \"code\": 2,\n  \"message\": \"UnmarshalJSON cannot decode empty bytes: panic\",\n  \"details\": [\n  ]\n}"
+    },
+    {
+      "lcd": "https://rest.cosmos.directory/sei",
+      "liveness": "OK",
+      "archive": "FAIL height header ignored (old bonded == live bonded)"
+    }
+  ]
+}

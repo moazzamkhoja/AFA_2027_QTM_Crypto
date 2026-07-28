@@ -1,0 +1,27 @@
+Retry months: ['2024-04', '2024-05', '2024-06', '2025-01', '2025-02', '2025-03', '2025-11', '2025-12', '2026-01']
+  KAVA 2024-04: height=9650114, staked=137,365,064, ratio=0.1269
+  KAVA 2024-05: binary search failed again: block 10081622: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2024-06: height=10537974, staked=136,537,149, ratio=0.1261
+  KAVA 2025-01: height=13782753, staked=123,900,598, ratio=0.1144
+  KAVA 2025-02: height=14184581, staked=124,467,439, ratio=0.1149
+  KAVA 2025-03: height=14635917, staked=111,203,334, ratio=0.1027
+  KAVA 2025-11: height=18239955, staked=106,109,102, ratio=0.0980
+  KAVA 2025-12: binary search failed again: block 18704457: 420 {"error": "RequestRateLimitExceeded"}
+  KAVA 2026-01: height=19168178, staked=101,331,373, ratio=0.0936
+
+CSV now 35 rows (7 recovered)
+
+=== KAVA drift diagnostic ===
+  2026-06-30 (2026-06-30): bonded=99,085,501
+  ~2026-07-14 (block 21628219): bonded=103,114,022
+  live: bonded=127,765,970
+Retry months: ['2024-05', '2025-12']
+  KAVA 2024-05: height=10082629, staked=137,754,241, ratio=0.1272
+  KAVA 2025-12: height=18704453, staked=106,634,181, ratio=0.0985
+
+CSV now 37 rows (2 recovered)
+
+=== KAVA drift diagnostic ===
+  2026-06-30 (2026-06-30): bonded=99,085,501
+  ~2026-07-14 (block 21628219): bonded=103,114,022
+  live: bonded=127,765,970
