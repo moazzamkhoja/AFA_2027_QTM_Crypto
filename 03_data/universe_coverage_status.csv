@@ -1827,7 +1827,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 29082,SAROS,Saros,token,Dexs;DEX,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 7617,SFI,saffron.finance,token,Liquid Staking;Yield,,28,1,ch2_holding,False,True,False,False,False,0,,True,55,12223.0,978.0,Ethereum,yes,complete,COMPLETE
 8972,SFUND,Seedify.fund,token,Launchpad;Gaming,,23,1,ch2_holding,False,True,False,False,False,0,,True,51,,,BSC,yes,complete,COMPLETE
-5994,SHIB,Shiba Inu,token,Dexs;Meme,,0,0,,False,False,False,False,False,0,,False,0,1599075.0,127926.0,Ethereum,yes,not_started,ch2_holding(1599075h) | ch3_governance | tvl_defillama
+5994,SHIB,Shiba Inu,token,Dexs;Meme,,61,1,ch2_holding,False,True,False,False,False,0,,False,0,1599075.0,127926.0,Ethereum,yes,partial,tvl_defillama
 1619,SKY,Skycoin,token,CDP;Dexs;RWA;Risk Curators;DePIN;Storage,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 33038,SKY,Sky,token,CDP;Dexs;RWA;Risk Curators,,13,1,ch2_holding,False,True,False,False,False,0,,True,89,14010.0,1121.0,Ethereum,yes,complete,COMPLETE
 5824,SLP,Smooth Love Potion,token,Derivatives;NFT;Gaming,,58,1,ch2_holding,False,True,False,False,False,0,,False,0,63973.0,5118.0,Ethereum,yes,partial,tvl_defillama

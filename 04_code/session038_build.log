@@ -1,0 +1,13 @@
+STREAM build: 1 tokens | WORKERS=8 BLOCK_WINDOW=100000 RATE=8.0/s DAILY_CAP=185000
+  --- SHIB cmc=5994 chain=1 START (gl_so_far=0) ---
+    SHIB batch 1/32 block<=799,999 tf=0 gl=8 lots=0 1s
+    SHIB batch 6/32 block<=4,799,999 tf=0 gl=48 lots=0 6s
+    SHIB batch 11/32 block<=8,799,999 tf=0 gl=88 lots=0 11s
+    SHIB batch 16/32 block<=12,799,999 tf=2596323 gl=7754 lots=680890 1025s
+    SHIB batch 21/32 block<=16,799,999 tf=9830411 gl=28988 lots=1470222 3909s
+    SHIB batch 26/32 block<=20,799,999 tf=13543296 gl=39994 lots=1527831 5463s
+    SHIB batch 31/32 block<=24,799,999 tf=17582451 gl=52810 lots=1655471 7280s
+  SHIB     cmc=5994 DONE tf=17845462 gl=53683 code=13/81 scrMo=61 HODLmed=78.1% last=82.5%
+aggregate: 424 completed tokens (0 recomputed), 1 deferred -> C:\AFA_2027_QTM_Crypto\03_data\phase1\channel2_holding.csv (13722 rows)
+
+STREAM done: 1 built, 0 skipped, 53683 getLogs; aggregate -> 424 tokens / 13722 rows

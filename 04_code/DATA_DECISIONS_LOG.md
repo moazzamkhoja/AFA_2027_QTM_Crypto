@@ -1938,3 +1938,25 @@ WARP (1166) identity review; Cosmos key -> CRO/INJ/SEI/KAVA ch1; Blockchair
 support email re XTZ/MATIC before paying; DOT/KSM PQ source hunt (would make
 them regression-ready); TRX coin_staking_type fix; bibliography sanity-check.
 Report: 03_data/SESSION037_DOT_KSM_CORE_REPORT.md
+
+### Entry 89 — Session 038: SHIB ch2 built (λ-only; no TVL regression entry)
+
+SHIB (5994/Ethereum): 53,683 getLogs / 17,845,462 transfers / 61 screened months
+(2021-05..2026-05, zero contaminated). B2 pass (no month excluded by the 100×
+contamination guard). B4 pass (screened HODL-6m median 78.1% ≤ 80%; last month
+82.5%). Contract screen 13/81 candidate addresses. Actual getLogs vs 128k
+estimate: 0.42x (holder-count overestimate pattern of sessions 034–036 holds).
+Wall time ~2.1h at 8 workers.
+
+TVL: no protocol TVL for SHIB. `shibaswap` slug in tvl_panel belongs to BONE
+(cmc_id=11865, ShibaSwap governance token, 59 months already in panel) —
+assigning to SHIB would double-count the DEX TVL against the wrong token.
+SHIB → λ-only.
+
+Post-assemble: λ 13,449 → 13,510 asset-months / 462 → 463 assets.
+channel2_holding.csv 423 → 424 tokens / 13,661 → 13,722 rows. Coverage
+189 complete / 315 partial / 1,435 not_started (SHIB not_started → partial).
+Regression-ready 178 → 178 (no change, as expected: coins 22, tokens/other 156).
+
+EVM DeFi breadth complete (all batches 1–3b done). Next: Session 039 — DOT/KSM PQ
+source probe; TRX coin_staking_type fix; WARP identity review.
