@@ -4,7 +4,7 @@
 **Model/interface:** Claude Fable 5 via Claude Code (desktop app, Windows)
 **Kickoff:** user pointed to `CLAUDE_CODE_SESSION039_DOTKSM_PQ_FIXES_PROMPT.md` ("proceed")
 **Mode:** autonomous after launch; standing end-of-session commit+push authorization
-**Commit:** (recorded post-push; see git log — session 039 commit)
+**Commit:** 9172e42
 
 ---
 
