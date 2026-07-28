@@ -56,3 +56,5 @@ connection error from a different project, user then said to ignore it).
 - api.data.kava.io rate-limits with HTTP **420** (not 429).
 - kava_2222-10 height reset (2022-05-25) means pre-2022-05 KAVA months are
   unreachable on the current chain regardless of archive depth.
+
+**Commit:** 9587d0d (pushed to origin/main at session end)
