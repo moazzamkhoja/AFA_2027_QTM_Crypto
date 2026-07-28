@@ -520,7 +520,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 1638,TRST,WeTrust,coin,Smart Contract Platform,pos_possible,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pos_possible] | pq_nvtgl
 2457,TRUE,TrueChain,coin,Prediction Market;Smart Contract Platform,pos_possible,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pos_possible] | pq_nvtgl
 1185,TRUMP,TrumpCoin,coin,Meme,pos,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking | pq_nvtgl
-1958,TRX,TRON,coin,Chain;Storage;Layer-1;Payments,pow_only,78,1,ch1_staking,True,False,False,False,True,58,defillama_chain_dex,False,0,,,,,complete,COMPLETE
+1958,TRX,TRON,coin,Chain;Storage;Layer-1;Payments,pos,78,1,ch1_staking,True,False,False,False,True,58,defillama_chain_dex,False,0,,,,,complete,COMPLETE
 1032,TX,TransferCoin,coin,,pos,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking | pq_nvtgl
 588,UBQ,Ubiq,coin,Services,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
 168,UFO,Uniform Fiscal Object,coin,,pow_only,0,0,,False,False,False,False,False,0,,False,0,,,,,not_started,ch1_staking[pow_only] | pq_nvtgl
@@ -1890,7 +1890,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 35509,VVV,Venice Token,token,Farm;AI/Big Data,,4,2,ch1_staking+ch2_holding,True,True,False,False,False,0,,True,1,,,Base,yes,complete,COMPLETE
 29587,W,Wormhole,token,Bridge;NFT;Interoperability,,26,1,ch3_delegation,False,False,False,True,False,0,,True,57,9149.0,732.0,Ethereum,yes,complete,COMPLETE
 36119,WAL,Walrus,token,Developer Tools;Dexs;DePIN;Storage,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
-1166,WARP,WARP,token,Lending;Reserve Currency,,0,0,,False,False,False,False,False,0,,True,54,31788.0,2543.0,Ethereum,yes,partial,ch2_holding(31788h) | ch3_governance
+1166,WARP,WARP,token,Lending;Reserve Currency,,0,0,,False,False,False,False,False,0,,False,0,31788.0,2543.0,Ethereum,yes,not_started,ch2_holding(31788h) | ch3_governance | tvl_defillama
 9462,WAVAX,Wrapped AVAX,token,,,0,0,,False,False,False,False,False,0,,False,0,,,Avalanche,yes,not_started,ch2_holding | ch3_governance | tvl_defillama
 1274,WAVES,Waves,token,Smart Contract Platform,,18,1,ch2_holding,False,True,False,False,False,0,,False,0,128.0,10.0,Ethereum,yes,partial,tvl_defillama
 28183,WFLR,Wrapped Flare,token,,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama

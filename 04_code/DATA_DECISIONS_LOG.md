@@ -1960,3 +1960,54 @@ Regression-ready 178 → 178 (no change, as expected: coins 22, tokens/other 156
 
 EVM DeFi breadth complete (all batches 1–3b done). Next: Session 039 — DOT/KSM PQ
 source probe; TRX coin_staking_type fix; WARP identity review.
+
+### Entry 90 — Session 039: DOT/KSM PQ probe negative; TRX label fix; WARP closed
+
+**DOT/KSM PQ probe (Task A): NEGATIVE — no free source.**
+Subscan /api/scan/daily (key on file): `format=month` not supported (day/hour/6hour
+only); `format=day` over any multi-year window → 403 `history_window_exceeded` for
+ALL four categories (transfer/extrinsic/transaction/fee), both polkadot and kusama.
+Window bisection: 30-day range returns data, 90-day fails → free window ≈ 2 months,
+same wall session 037 hit for "Bonded". The 30-day payload is also degenerate
+(2026-06-01: total=3 transfers / 5.98 DOT — not network-wide volume).
+Blockchair: /polkadot/stats and /kusama/stats return 200 keyless, BUT (a) the
+aggregation endpoint (`/{chain}/calls?a=date(time),sum(value)&q=type(transfer)`)
+is HTTP 404 — same no-aggregation-tables pattern as XTZ/MATIC (Entry 84), and
+(b) both indexes are FROZEN (DOT best block 2025-05-26, KSM 2025-05-09) — even a
+paid key could not cover the panel through 2026-06. Raw block iteration remains
+FORBIDDEN (Entry 31/32). Decision: **no free PQ source for DOT/KSM; candidates
+exhausted. They stay PARTIAL (gap = pq_nvtgl only). Reopens only with Subscan Pro
+or another paid volume series** (Blockchair ruled out — stale index).
+
+**TRX (1958) coin_staking_type fix (Task B):**
+Label was `pow_only`; corrected to `pos` (TRON = DPoS; ch1 freezeresource series,
+78 λ months). Source of label: `universe_coverage_status.csv` itself —
+build_coverage_status.py line 33 carries `coin_staking_type` forward from the old
+file (static metadata, no live source). Edited the CSV row + re-ran the builder.
+TRX coverage status: complete (unchanged), but now via the pos λ∩NVT same-month
+path (58 overlap months) instead of the pow_only NVT-alone path. Regression-ready
+coins now derive cleanly to 22 WITH TRX included — the Entry-88 "coin-count ±1"
+bookkeeping discrepancy is resolved; headline totals unchanged (178).
+
+**WARP (1166) identity review (Task C): PERMANENT IDENTITY MISMATCH — CLOSED.**
+CMC id 1166 = "WARP" warpcoin.com — a 2016-02 standalone PoS coin (CMC category
+"coin"), inactive since 2018-05-08, own chain (chainz.cryptoid.info explorer),
+supply 1.1M. It NEVER deployed an ERC-20. The stored contract
+0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa (ch2 checkpoint: 27,257 getLogs,
+0 transfers ever) is a different, later "WARP"-named token; the dl_slug
+`polkastarter` is DeFiLlama's own wrong cmcId (Polkastarter = POLS, cmc 7208 —
+the Entry-52 collision). Actions: (1) `phase1_build_identity_map.py` gains a
+BAD_DL_CMCID = {"1166"} registry-drop override so rebuilds can't resurrect the
+mapping; (2) identity CSV row cleared (dl_slug/address/chains blanked,
+dl_matched=False); (3) 54 bogus polkastarter TVL months PURGED from tvl_panel
+(8,120 → 8,066 months / 163 → 162 assets); (4) coverage now `not_started`.
+No λ rows existed (empty checkpoint never contributed) — no λ impact.
+
+Post-assemble: λ 13,510 / 463 assets (unchanged). Coverage 189 complete /
+314 partial / 1,436 not_started (WARP partial → not_started). Regression-ready
+178 (coins 22, tokens/other 156) — unchanged, now internally consistent.
+
+**Open items for session 040:** Cosmos key → CRO/INJ/SEI/KAVA ch1; Blockchair
+support email decision (XTZ/MATIC only — DOT/KSM now ruled out); DOT/KSM PQ
+reopens only on Subscan Pro decision; bibliography sanity-check.
+Report: 03_data/SESSION039_DOTKSM_PQ_FIXES_REPORT.md

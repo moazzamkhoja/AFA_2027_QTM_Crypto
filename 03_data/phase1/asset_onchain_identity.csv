@@ -1890,7 +1890,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 35509,VVV,Venice Token,token,Farm;AI/Big Data,,venice,Farm,base:0xacfe6019ed1a7dc6f7b508c02d1b04ec88cc21bf,Base,Base,,venice-token,True,1,True,False
 29587,W,Wormhole,token,Bridge;NFT;Interoperability,,portal,Bridge,solana:85VBFQZC9TZkfaptBWjvUw7YbZjy52A6mjtPGjstQAmQ,Multi-Chain,Ethereum;Algorand;Binance;Solana;Sui;Polygon;Near;Base;Avalanche;Arbitrum;Aptos;Optimism;Moonbeam;Celo;Klaytn;Terra;Oasis;Aurora;Fantom;Karura;Acala;Terra2;Injective;XPLA,,wormhole,True,1,True,False
 36119,WAL,Walrus,token,Developer Tools;Dexs;DePIN;Storage,,walrus-protocol,Developer Tools,sui:0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL,,,,walrus-2,True,1,True,False
-1166,WARP,WARP,token,Lending;Reserve Currency,,polkastarter,Launchpad,ethereum:0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa,Multi-Chain,Ethereum;Binance,,polkastarter,True,1,True,False
+1166,WARP,WARP,token,Lending;Reserve Currency,,,,,,,,,False,0,False,False
 9462,WAVAX,Wrapped AVAX,token,,,,,,,,,,False,0,False,False
 1274,WAVES,Waves,token,Smart Contract Platform,,,,,,,,,False,0,False,False
 28183,WFLR,Wrapped Flare,token,,,,,,,,,,False,0,False,False

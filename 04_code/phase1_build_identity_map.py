@@ -62,6 +62,14 @@ def parse_snapshot_space(gov_id):
     return ""
 
 
+# DeFiLlama registry cmcIds verified WRONG (Entry 79 / Entry 90): the listed cmcId
+# points at a different asset than the protocol. Matches are dropped so the identity
+# row stays blank rather than inheriting a colliding slug/address.
+#   1166: DL 'polkastarter' claims cmcId 1166, but CMC 1166 = WARP (warpcoin.com,
+#         2016 standalone PoS coin, inactive 2018) -- Polkastarter/POLS is cmc 7208.
+BAD_DL_CMCID = {"1166"}
+
+
 def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     protocols = load_protocols()
@@ -77,6 +85,8 @@ def main():
         try:
             cmc = str(int(float(cmc)))
         except (ValueError, TypeError):
+            continue
+        if cmc in BAD_DL_CMCID:
             continue
         tvl = p.get("tvl") or 0
         rec = {
