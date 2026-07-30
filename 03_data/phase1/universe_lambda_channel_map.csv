@@ -17,7 +17,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 1706,ADK,Aidos Kuneen,other,no,non-EVM,,no,,,-,,,,-,,
 4057,ADN,Aladdin,other,no,Ethereum,0x95a41fB80ca70306e9Ecf4e51ceA31bD18379C18,yes,yes,Aladdin,-,,,Transfer-log,-,,
 1775,ADT,adToken,other,no,Ethereum,0xd0d6d6c5fe4a677d343cc433536bb717bae167dd,yes,yes, [UNVERIFIED],-,,,Transfer-log,-,,
-1037,AGRS,Agoras: Tau Net,other,no,Ethereum,0x738865301a9b7dd80dc3666dd48cf034ec42bdda,yes,yes,AgorasToken,event-declared-no-logs,Locked(address),0,Transfer-log,-,,
+1037,AGRS,Agoras: Tau Net,other,no,Ethereum,0x738865301a9b7dd80dc3666dd48cf034ec42bdda,yes,yes,AgorasToken,event-declared-no-logs,Locked(address),0.0,Transfer-log,-,,
 3664,AGVC,AgaveCoin,other,no,Ethereum,0x8b79656FC38a04044E495e22fAD747126ca305C4,yes,yes,AgaveCoin,-,,,Transfer-log,-,,
 34026,AI16Z,ai16z,other,no,non-EVM,,no,,,-,,,,-,,
 38430,AIA,DeAgentAI,other,no,BSC,0x53EC33Cd4fA46b9ecED9cA3f6dB626C5FfCd55cC,yes,no(PAID),AIA,-,,,Transfer-log(PAID),-,,
@@ -93,7 +93,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 36711,BLOCK,Block (bl0ck.gg),other,no,Base,0x015e03A6Ccef48a18dDB6cFDC3066D9443875672,yes,no(PAID),BLOCK,-,,,Transfer-log(PAID),-,,
 1374,BLOCKPAY,BlockPay,other,no,non-EVM,,no,,,-,,,,-,,
 11206,BLOK,Bloktopia,other,no,BSC,0xA0d96fD642156FC7E964949642257b3572f10cD6,yes,no(PAID),Blok,-,,,Transfer-log(PAID),-,,
-23121,BLUR,Blur,other,no,Ethereum,0x5283d291dbcf85356a21ba090e6db59121208b44,yes,yes,BlurToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+23121,BLUR,Blur,other,no,Ethereum,0x5283d291dbcf85356a21ba090e6db59121208b44,yes,yes,BlurToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 1976,BMC,Blackmoon,other,no,Ethereum,0xdf6ef343350780bf8c3410bf062e0c015b1dd671,yes,yes,BMCAssetProxy,-,,,Transfer-log,-,,
 3742,BNANA,Chimpion,other,no,Ethereum,0x07ef9e82721ac16809d24dafbe1792ce01654db4,yes,yes,ChimpToken,-,,,Transfer-log,-,,
 9891,BNX,BinaryX (old),other,no,BSC,0x8C851d1a123Ff703BD1f9dabe631b69902Df5f97,yes,no(PAID),WindToken,-,,,Transfer-log(PAID),ERC20Votes-ABIonly[PAID-chain],"DelegateVotesChanged(address,uint256,uint256)",
@@ -118,7 +118,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 2454,BTCU,Bitcoin Unlimited,other,no,Arbitrum,0x15fe999af89d43b1ac0790335da0ec61473a5b93,yes,yes,CoinToken,-,,,Transfer-log,-,,
 2392,BTO,Bottos,other,no,non-EVM,,no,,,-,,,,-,,
 4257,BTRS,Bitball Treasure,other,no,Ethereum,0x8a2FE0bBD6dfEA4bC19123bABD5630Fd8D7F070f,yes,yes,BitballTreasure,-,,,Transfer-log,-,,
-11584,BTRST,Braintrust,other,no,Ethereum,0x799ebfabe77a6e34311eeee9825190b9ece32824,yes,yes,BTRST,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+11584,BTRST,Braintrust,other,no,Ethereum,0x799ebfabe77a6e34311eeee9825190b9ece32824,yes,yes,BTRST,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 1201,BTSR,BTSR,other,no,non-EVM,,no,,,-,,,,-,,
 3718,BTTOLD,BitTorrent,other,no,BSC,0x8595f9da7b868b1822194faed312235e43007b49,yes,no(PAID),BEP20UpgradeableProxy->impl:BEP20TokenImplementation,-,,,Transfer-log(PAID),-,,
 3737,BTU,BTU Protocol,other,no,Ethereum,0xb683d83a532e2cb7dfa5275eed3698436371cc9f,yes,yes,BTU,-,,,Transfer-log,-,,
@@ -155,7 +155,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 2246,CMT,CyberMiles,other,no,non-EVM,,no,,,-,,,,-,,
 2043,CND,Cindicator,other,no,Ethereum,0xd4c435f5b09f855c3317c8524cb1f586e42795fa,yes,yes,CND,-,,,Transfer-log,-,,
 579,CNMT,Coinomat,other,no,non-EVM,,no,,,-,,,,-,,
-3648,CNUS,CoinUs,other,no,Ethereum,0x722f2f3eac7e9597c73a593f7cf3de33fbfc3308,yes,yes,CnusToken,event-declared-no-logs,Locked(address),0,Transfer-log,-,,
+3648,CNUS,CoinUs,other,no,Ethereum,0x722f2f3eac7e9597c73a593f7cf3de33fbfc3308,yes,yes,CnusToken,event-declared-no-logs,Locked(address),0.0,Transfer-log,-,,
 38489,COAI,ChainOpera AI,other,no,BSC,0x0A8D6C86e1bcE73fE4D0bD531e1a567306836EA5,yes,no(PAID),ERC1967Proxy->impl:COAI,-,,,Transfer-log(PAID),-,,
 2006,COB,Cobinhood,other,no,Ethereum,0xb2f7eb1f2c37645be61d73953035360e768d81e6,yes,yes,CobinhoodToken,-,,,Transfer-log,-,,
 1823,COE,CoEval,other,no,non-EVM,,no,,,-,,,,-,,
@@ -463,7 +463,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 989,MMBTCD,MMBTCD,other,no,non-EVM,,no,,,-,,,,-,,
 686,MMNXT,MMNXT,other,no,non-EVM,,no,,,-,,,,-,,
 1673,MNE,Minereum,other,no,Ethereum,0x426ca1ea2406c07d75db9585f22781c096e3d0e0,yes,yes,Minereum,-,,,Transfer-log,-,,
-27075,MNT,Mantle,other,no,Ethereum,0x3c3a81e81dc49a522a592e7622a7e711c06bf354,yes,yes,TransparentUpgradeableProxy->impl:L1MantleToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+27075,MNT,Mantle,other,no,Ethereum,0x3c3a81e81dc49a522a592e7622a7e711c06bf354,yes,yes,TransparentUpgradeableProxy->impl:L1MantleToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 32856,MNT,Mr Mint,other,no,BSC,0x3e81aa8d6813ec9d7e6ddb4e523fb1601a0e86f3,yes,no(PAID),MrMint,-,,,Transfer-log(PAID),-,,
 575,MNTA,Moneta,other,no,non-EVM,,no,,,-,,,,-,,
 7878,MOB,MobileCoin,other,no,non-EVM,,no,,,-,,,,-,,
@@ -604,7 +604,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 37057,QQQX,Nasdaq tokenized ETF (xStock),other,no,Ethereum,0xa753a7395cae905cd615da0b82a53e0560f250af,yes,yes,BackedTokenProxy->impl:BackedAutoFeeTokenImplementation,-,,,Transfer-log,-,,
 1226,QWARK,Qwark,other,no,non-EVM,,no,,,-,,,,-,,
 11346,RACA,RACA,other,no,Ethereum,0x12BB890508c125661E03b09EC06E404bc9289040,yes,yes,RACAV2Token,-,,,Transfer-log,ERC20Votes-DORMANT,"DelegateVotesChanged(address,uint256,uint256)",
-38341,RAIN,Rain,other,no,Arbitrum,0x25118290e6A5f4139381D072181157035864099d,yes,yes,ERC1967Proxy->impl:Rain,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+38341,RAIN,Rain,other,no,Arbitrum,0x25118290e6A5f4139381D072181157035864099d,yes,yes,ERC1967Proxy->impl:Rain,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 2161,RDN,Raiden Network Token,other,no,Ethereum,0x255aa6df07540cb5d3d297f0d0d4d84cb52bc8e6,yes,yes,RaidenToken,-,,,Transfer-log,-,,
 34434,REKT,Rekt (rekt.com),other,no,Ethereum,0xdd3B11eF34cd511a2DA159034a05fcb94D806686,yes,yes,Rekt,-,,,Transfer-log,-,,
 5777,RENBTC,renBTC,other,no,Ethereum,0xeb4c2781e4eba804ce9a9803c67d0893436bb27d,yes,yes,RenBTC->impl:RenERC20LogicV1,-,,,Transfer-log,-,,
@@ -725,7 +725,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 2443,TNC,Trinity Network Credit,other,no,non-EVM,,no,,,-,,,,-,,
 5524,TNC,TNC Coin,other,no,BSC,0x02CAa44EB838Fc0E49b73213d9d22e5F23798fDa,yes,no(PAID),CrossChainTNCToken,lock/stake-ABIonly[PAID-chain],Locked(address),,Transfer-log(PAID),-,,
 1923,TNT,Tierion,other,no,non-EVM,,no,,,-,,,,-,,
-23246,TOMI,tomi,other,no,Ethereum,0x4385328cc4d643ca98dfea734360c0f596c83449,yes,yes,TransparentUpgradeableProxy->impl:Tomi,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+23246,TOMI,tomi,other,no,Ethereum,0x4385328cc4d643ca98dfea734360c0f596c83449,yes,yes,TransparentUpgradeableProxy->impl:Tomi,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 2578,TONE,TE-FOOD,other,no,Ethereum,0x2ab6bb8408ca3199b8fa6c92d5b455f820af03c4,yes,yes,TEFoods827Token,-,,,Transfer-log,-,,
 3826,TOP,TOP,other,no,Ethereum,0xdcD85914b8aE28c1E62f1C488E1D968D5aaFfE2b,yes,yes,TOPToken,-,,,Transfer-log,-,,
 27750,TOSHI,Toshi,other,no,BSC,0x6a2608Dabe09bc1128EEC7275B92DFB939D5Db3f,yes,no(PAID),TransparentUpgradeableProxy->impl:HypERC20,-,,,Transfer-log(PAID),-,,
@@ -763,7 +763,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 36828,USELESS,Useless Coin,other,no,non-EVM,,no,,,-,,,,-,,
 38948,USX,Solstice USX,other,no,non-EVM,,no,,,-,,,,-,,
 2524,UTNP,Universa,other,no,Ethereum,0x9e3319636e2126e3c0bc9e3134AEC5e1508A46c7,yes,yes,UTNP,-,,,Transfer-log,-,,
-32257,UXLINK,UXLINK,other,no,Arbitrum,0x1a6b3a62391eccaaa992ade44cd4afe6bec8cff1,yes,yes,UXLINKToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",1
+32257,UXLINK,UXLINK,other,no,Arbitrum,0x1a6b3a62391eccaaa992ade44cd4afe6bec8cff1,yes,yes,UXLINKToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",1.0
 3875,VALOR,Valor Token,other,no,Ethereum,0x297e4e5e59ad72b1b0a2fd446929e76117be0e0a,yes,yes,ValorToken,-,,,Transfer-log,-,,
 735,VASH,VPNCoin,other,no,non-EVM,,no,,,-,,,,-,,
 6947,VBIT,Valobit,other,no,Ethereum,0xb8366948b4a3f07bcbf14eb1739daa42a26b07c4,yes,yes,VALOBIT,-,,,Transfer-log,-,,
@@ -777,7 +777,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 1566,VISIO,Visio,other,no,non-EVM,,no,,,-,,,,-,,
 14822,VR,Victoria VR,other,no,Ethereum,0x7d5121505149065b562c789a0145ed750e6e8cdd,yes,yes,VictoriaVR,-,,,Transfer-log,-,,
 1465,VRS,Veros,other,no,Ethereum,0xAbC430136A4dE71c9998242de8c1b4B97D2b9045,yes,yes,ERC20,-,,,Transfer-log,-,,
-1483,VSL,vSlice,other,no,Ethereum,0x5c543e7ae0a1104f78406c340e9c64fd9fce5170,yes,yes,Token,GENUINE,Locked(),39,Transfer-log,-,,
+1483,VSL,vSlice,other,no,Ethereum,0x5c543e7ae0a1104f78406c340e9c64fd9fce5170,yes,yes,Token,GENUINE,Locked(),39.0,Transfer-log,-,,
 37322,VSN,Vision,other,no,Ethereum,0x699ccf919c1dfdfa4c374292f42cadc9899bf753,yes,yes,ERC1967Proxy->impl:VisionToken,-,,,Transfer-log,-,,
 2267,WABI,Wabi,other,no,Ethereum,0x286bda1413a2df81731d4930ce2f862a35a609fe,yes,yes,WaBi,-,,,Transfer-log,-,,
 24760,WBETH,Wrapped Beacon ETH,other,no,Ethereum,0xa2E3356610840701BDf5611a53974510Ae27E2e1,yes,yes,FiatTokenProxy->impl:WrapTokenV3ETH,-,,,Transfer-log,-,,
@@ -804,7 +804,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 35930,WXTZ,Wrapped XTZ,other,no,Ethereum,0xc9b53ab2679f573e480d01e0f49e2b5cfb7a3eab,yes,yes,WXTZ,-,,,Transfer-log,-,,
 4220,XAC,General Attention Currency,other,no,Ethereum,0xde4c5a791913838027a2185709e98c5c6027ea63,yes,yes,XACToken,-,,,Transfer-log,-,,
 28933,XAI,Xai,other,no,Arbitrum,0x4Cb9a7AE498CEDcBb5EAe9f25736aE7d428C9D66,yes,yes,TransparentUpgradeableProxy->impl:Xai2,-,,,Transfer-log,-,,
-38481,XAN,Anoma,other,no,Ethereum,0xcedbea37c8872c4171259cdfd5255cb8923cf8e7,yes,yes,ERC1967Proxy->impl:XanV1,GENUINE,"Locked(address,uint256)",100,Transfer-log,-,,
+38481,XAN,Anoma,other,no,Ethereum,0xcedbea37c8872c4171259cdfd5255cb8923cf8e7,yes,yes,ERC1967Proxy->impl:XanV1,GENUINE,"Locked(address,uint256)",100.0,Transfer-log,-,,
 5176,XAUt,Tether Gold,other,no,Ethereum,0x68749665FF8D2d112Fa859AA293F07A622782F38,yes,yes,TransparentUpgradeableProxy->impl:TetherToken,-,,,Transfer-log,-,,
 3815,XBASE,Eterbase Utility Token,other,no,Ethereum,0x5bdC00B6676579b301B276198Db1ea9AffB94329,yes,yes,XBASE,-,,,Transfer-log,-,,
 1636,XBY,XTRABYTES,other,no,non-EVM,,no,,,-,,,,-,,
@@ -860,7 +860,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 38590,币安人生,币安人生,other,no,BSC,0x924fa68a0FC644485b8df8AbfA0A41C2e7744444,yes,no(PAID),Token,-,,,Transfer-log(PAID),-,,
 8104,1INCH,1inch,token,no,Ethereum,0x111111111117dc0aa78b770fa6a738034120c302,yes,yes,OneInch,-,,,Transfer-log,-,,
 36462,A,Vaulta,token,yes,non-EVM,,no,,,-,,,,-,,
-7278,AAVE,Aave,token,no,Ethereum,0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9,yes,yes,InitializableAdminUpgradeabilityProxy->impl:AaveTokenV3,-,,,Transfer-log,delegation-only,"DelegateChanged(address,address,uint8)",100
+7278,AAVE,Aave,token,no,Ethereum,0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9,yes,yes,InitializableAdminUpgradeabilityProxy->impl:AaveTokenV3,-,,,Transfer-log,delegation-only,"DelegateChanged(address,address,uint8)",100.0
 2545,ABT,ArcBlock,token,yes,Ethereum,0xb98d4c97425d9908e66e53a6fdf673acca0be986,yes,yes,ArcBlockToken,-,,,Transfer-log,-,,
 4598,ACA,Acash Coin,token,yes,Ethereum,0x63d958d765f5bd88efdbd8afd32445393b24907f,yes,yes,ACASH,-,,,Transfer-log,-,,
 6756,ACA,Acala Token,token,yes,non-EVM,,no,,,-,,,,-,,
@@ -873,7 +873,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 36458,AETHWETH,Aave Ethereum WETH,token,yes,Ethereum,0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8,yes,yes,InitializableImmutableAdminUpgradeabilityProxy->impl:ATokenInstance,-,,,Transfer-log,-,,
 29676,AEVO,Aevo,token,yes,Ethereum,0xB528edBef013aff855ac3c50b381f253aF13b997,yes,yes,AevoToken,-,,,Transfer-log,-,,
 2424,AGIX,SingularityNET,token,yes,Ethereum,0x5B7533812759B45C2B44C19e320ba2cD2681b542,yes,yes,SingularityNetToken,-,,,Transfer-log,-,,
-4134,AKRO,Kaon,token,yes,Ethereum,0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7,yes,yes,TokenProxy->impl:AkropolisToken,GENUINE,Locked(),1,Transfer-log,-,,
+4134,AKRO,Kaon,token,yes,Ethereum,0x8ab7404063ec4dbcfd4598215992dc3f8ec853d7,yes,yes,TokenProxy->impl:AkropolisToken,GENUINE,Locked(),1.0,Transfer-log,-,,
 8613,ALCX,Alchemix,token,no,Ethereum,0xdbdb4d16eda451d0503b854cf79d55697f90c8df,yes,yes,AlchemixToken,-,,,Transfer-log,-,,
 16876,ALI,Artificial Liquid Intelligence,token,yes,Ethereum,0x6b0b3a982b4634ac68dd83a4dbf02311ce324181,yes,yes,AliERC20v2,-,,,Transfer-log,ERC20Votes-DORMANT,"VotingPowerChanged(address,address,uint256,uint256)",
 8766,ALICE,MyNeighborAlice,token,yes,Ethereum,0xAC51066d7bEC65Dc4589368da368b212745d63E8,yes,yes,AliceToken,-,,,Transfer-log,-,,
@@ -895,7 +895,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 34926,ARC,AI Rig Complex,token,yes,non-EVM,,no,,,-,,,,-,,
 661,ARCH,ARCHcoin,token,yes,non-EVM,,no,,,-,,,,-,,
 27565,ARKM,Arkham,token,yes,Ethereum,0x6E2a43be0B1d33b726f0CA3b8de60b3482b8b050,yes,yes,ERC1967Proxy->impl:ARKM,-,,,Transfer-log,-,,
-2058,AST,AirSwap,token,yes,Ethereum,0x27054b13b1b798b345b591a4d22e6562d47ea75a,yes,yes,AirSwapToken,event-declared-no-logs,"BalanceLocked(address,uint256,uint256,uint256)",0,Transfer-log,-,,
+2058,AST,AirSwap,token,yes,Ethereum,0x27054b13b1b798b345b591a4d22e6562d47ea75a,yes,yes,AirSwapToken,event-declared-no-logs,"BalanceLocked(address,uint256,uint256,uint256)",0.0,Transfer-log,-,,
 36341,ASTER,Aster,token,yes,BSC,0x000Ae314E2A2172a039B26378814C252734f556A,yes,no(PAID),AsterToken,-,,,Transfer-log(PAID),-,,
 10188,ATA,Automata Network,token,yes,Ethereum,0xa2120b9e674d3fc3875f415a7df52e382f141225,yes,yes,ATAToken,-,,,Transfer-log,-,,
 30083,ATH,Aethir,token,yes,Ethereum,0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b,yes,yes,AethirToken,-,,,Transfer-log,-,,
@@ -922,15 +922,15 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 7817,BFC,Bifrost,token,yes,Ethereum,0x0c7D5ae016f806603CB1782bEa29AC69471CAb9c,yes,yes,ERC20,-,,,Transfer-log,-,,
 9543,BICO,Biconomy,token,yes,Ethereum,0xF17e65822b568B3903685a7c9F496CF7656Cc6C2,yes,yes,BicoTokenProxy->impl:BicoTokenImplementation,-,,,Transfer-log,-,,
 34812,BIO,Bio Protocol,token,yes,Ethereum,0xcb1592591996765ec0efc1f92599a19767ee5ffa,yes,yes,BioToken,-,,,Transfer-log,-,,
-11221,BIT,BitDAO,token,yes,Ethereum,0x1A4b46696b2bB4794Eb3D4c26f1c55F9170fa4C5,yes,yes,BitDAO,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+11221,BIT,BitDAO,token,yes,Ethereum,0x1A4b46696b2bB4794Eb3D4c26f1c55F9170fa4C5,yes,yes,BitDAO,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 659,BITS,Bitswift,token,yes,non-EVM,,no,,,-,,,,-,,
-28480,BLAST,Blast,token,yes,Blast,0xb1a5700fA2358173Fe465e6eA4Ff52E36e88E2ad,yes,yes,GovernanceToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+28480,BLAST,Blast,token,yes,Blast,0xb1a5700fA2358173Fe465e6eA4Ff52E36e88E2ad,yes,yes,GovernanceToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 2505,BLZ,Bluzelle,token,yes,Ethereum,0x5732046a883704404f284ce41ffadd5b007fd668,yes,yes,BluzelleToken,-,,,Transfer-log,-,,
 2933,BMX,BitMart Token,token,yes,Ethereum,0x986EE2B944c42D017F52Af21c4c69B84DBeA35d8,yes,yes,BMC,-,,,Transfer-log,-,,
 32882,BNSOL,Binance Staked SOL,token,yes,non-EVM,,no,,,-,,,,-,,
 1727,BNT,Bancor,token,no,Ethereum,0x1f573d6fb3f13d689ff844b4ce37794d79a7ff1c,yes,yes,SmartToken,-,,,Transfer-log,-,,
 4217,BOA,BOSagora,token,yes,Ethereum,0x51bD4f39803fcAEFf3ef45aae2C3aaFf0B9faDcb,yes,yes,BOSAGORA,-,,,Transfer-log,-,,
-11865,BONE,Bone ShibaSwap,token,yes,Ethereum,0x9813037ee2218799597d83D4a5B6F3b6778218d9,yes,yes,BoneToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",16
+11865,BONE,Bone ShibaSwap,token,yes,Ethereum,0x9813037ee2218799597d83D4a5B6F3b6778218d9,yes,yes,BoneToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",16.0
 3475,BOX,BOX Token,token,yes,Ethereum,0xe1A178B681BD05964d3e3Ed33AE731577d9d96dD,yes,yes,BOX,-,,,Transfer-log,-,,
 2945,BOX,ContentBox,token,yes,Ethereum,0x63f584fa56e60e4d0fe8802b27c7e6e3b33e007f,yes,yes,BOXToken,-,,,Transfer-log,-,,
 3653,BRC,Baer Chain,token,yes,non-EVM,,no,,,-,,,,-,,
@@ -956,7 +956,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 23054,CHEEL,Cheelee,token,yes,BSC,0x1F1C90aEb2fd13EA972F0a71e35c0753848e3DB0,yes,no(PAID),TransparentUpgradeableProxy->impl:CHEEL,-,,,Transfer-log(PAID),ERC20Votes-ABIonly[PAID-chain],"DelegateVotesChanged(address,uint256,uint256)",
 33280,CHEEMS,Cheems (cheems.pet),token,yes,BSC,0x0df0587216a4a1bb7d5082fdc491d93d2dd4b413,yes,no(PAID),ERC20Mintable,-,,,Transfer-log(PAID),-,,
 8534,CHEX,Chintai,token,yes,Ethereum,0x9Ce84F6A69986a83d92C324df10bC8E64771030f,yes,yes,ERC1967Proxy->impl:ChexV2,-,,,Transfer-log,-,,
-5692,COMP,Compound,token,yes,Ethereum,0xc00e94cb662c3520282e6f5717214004a7f26888,yes,yes,Comp,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+5692,COMP,Compound,token,yes,Ethereum,0xc00e94cb662c3520282e6f5717214004a7f26888,yes,yes,Comp,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 963,CORE,CORE,token,yes,non-EVM,,no,,,-,,,,-,,
 7242,CORE,cVault.finance,token,yes,Ethereum,0x62359ed7505efc61ff1d56fef82158ccaffa23d7,yes,yes,CORE,-,,,Transfer-log,ERC20Votes-negligible,"DelegateVotesChanged(address,uint256,uint256)",
 3992,COTI,COTI,token,yes,Ethereum,0xDDB3422497E61e13543BeA06989C0789117555c5,yes,yes,Coti,-,,,Transfer-log,-,,
@@ -967,13 +967,13 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 4484,CRN,ChronoCoin,token,yes,non-EVM,,no,,,-,,,,-,,
 6538,CRV,Curve DAO Token,token,no,Ethereum,0xD533a949740bb3306d119CC777fa900bA034cd52,yes,yes,Vyper_contract,-,,,Transfer-log,-,,
 1867,CTR,Centra,token,yes,non-EVM,,no,,,-,,,,-,,
-6669,CVP,PowerPool,token,yes,Ethereum,0x38e4adb44ef08f22f5b5b76a8f0c2d0dcbe7dca1,yes,yes,Cvp,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+6669,CVP,PowerPool,token,yes,Ethereum,0x38e4adb44ef08f22f5b5b76a8f0c2d0dcbe7dca1,yes,yes,Cvp,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 9903,CVX,Convex Finance,token,no,Ethereum,0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b,yes,yes,ConvexToken,-,,,Transfer-log,-,,
-24781,CYBER,Cyber,token,yes,Ethereum,0x14778860e937f509e651192a90589de711fb88a9,yes,yes,CyberToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",2
+24781,CYBER,Cyber,token,yes,Ethereum,0x14778860e937f509e651192a90589de711fb88a9,yes,yes,CyberToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",2.0
 4862,DAD,DAD,token,yes,Ethereum,0x5b322514ff727253292637d9054301600c2c81e8,yes,yes,DAD,-,,,Transfer-log,-,,
 1253,DAO,The DAO,token,yes,non-EVM,,no,,,-,,,,-,,
 8420,DAO,DAO Maker,token,yes,Ethereum,0x0f51bb10119727a7e5ea3538074fb341f56b09ad,yes,yes,Token,-,,,Transfer-log,-,,
-7228,DDX,DerivaDAO,token,yes,Ethereum,0x3a880652f47bfaa771908c07dd8673a787daed3a,yes,yes,DDX,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint96,uint96)",100
+7228,DDX,DerivaDAO,token,yes,Ethereum,0x3a880652f47bfaa771908c07dd8673a787daed3a,yes,yes,DDX,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint96,uint96)",100.0
 33391,DEEP,DeepBook Protocol,token,yes,non-EVM,,no,,,-,,,,-,,
 5429,DEP,DEAPcoin,token,yes,Ethereum,0x1a3496c18d558bd9c6c8f609e1b129f67ab08163,yes,yes,DEAPCoin,-,,,Transfer-log,-,,
 603,DEX,InstantDEX,token,yes,non-EVM,,no,,,-,,,,-,,
@@ -981,7 +981,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 7326,DEXE,DeXe,token,yes,Ethereum,0xde4EE8057785A7e8e800Db58F9784845A5C2Cbd6,yes,yes,Dexe,-,,,Transfer-log,-,,
 2772,DGTX,Digitex,token,yes,Ethereum,0xc666081073e8dff8d3d1c2292a29ae1a2153ec09,yes,yes,DGTXToken,-,,,Transfer-log,-,,
 6138,DIA,DIA,token,yes,Ethereum,0x84ca8bc7997272c7cfb4d0cd3d55cd942b3c9419,yes,yes,DIAToken,-,,,Transfer-log,-,,
-5741,DMG,DMM: Governance,token,yes,Ethereum,0xEd91879919B71bB6905f23af0A68d231EcF87b14,yes,yes,DMGToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+5741,DMG,DMM: Governance,token,yes,Ethereum,0xEd91879919B71bB6905f23af0A68d231EcF87b14,yes,yes,DMGToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 5234,DNA,Metaverse Dualchain Network Architecture,token,yes,non-EVM,,no,,,-,,,,-,,
 2675,DOCK,Dock,token,yes,non-EVM,,no,,,-,,,,-,,
 7224,DODO,DODO,token,yes,Ethereum,0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd,yes,yes,DODOToken,-,,,Transfer-log,-,,
@@ -997,16 +997,16 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 5274,EDG,Edgeware,token,yes,BSC,0x4e0da40b9063dc48364c1c0ffb4ae9d091fc2270,yes,no(PAID),Edgeware,-,,,Transfer-log(PAID),ERC20Votes-ABIonly[PAID-chain],"DelegateVotesChanged(address,uint256,uint256)",
 39720,EDGE,edgeX,token,yes,Ethereum,0xB0076DE78Dc50581770BBa1D211dDc0aD4F2a241,yes,yes,ERC1967Proxy->impl:EdgeToken,-,,,Transfer-log,-,,
 2057,EDO,Eidoo,token,yes,Ethereum,0xced4e93198734ddaff8492d525bd258d49eb388e,yes,yes,EidooToken,-,,,Transfer-log,-,,
-30494,EIGEN,EigenCloud,token,yes,Ethereum,0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83,yes,yes,TransparentUpgradeableProxy->impl:Eigen,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",54
+30494,EIGEN,EigenCloud,token,yes,Ethereum,0xec53bF9167f50cDEB3Ae105f56099aaaB9061F83,yes,yes,TransparentUpgradeableProxy->impl:Eigen,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",54.0
 9436,ELON,Dogelon Mars,token,yes,Ethereum,0x761d38e5ddf6ccf6cf7c55759d5210750b5d60f3,yes,yes,Dogelon,-,,,Transfer-log,-,,
 30171,ENA,Ethena,token,no,Ethereum,0x57e114B691Db790C35207b2e685D4A43181e6061,yes,yes,ENA,-,,,Transfer-log,-,,
-13855,ENS,Ethereum Name Service,token,no,Ethereum,0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72,yes,yes,ENSToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+13855,ENS,Ethereum Name Service,token,no,Ethereum,0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72,yes,yes,ENSToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 8615,EPIC,Epic Chain,token,yes,Ethereum,0x94314a14df63779c99c0764a30e0cd22fa78fc0e,yes,yes,EpicToken,-,,,Transfer-log,-,,
 8938,EPS,Ellipsis,token,yes,BSC,0xA7f552078dcC247C2684336020c03648500C6d9F,yes,no(PAID),Vyper_contract,-,,,Transfer-log(PAID),-,,
 2165,ERC20,ERC20,token,yes,Ethereum,0xc3761EB917CD790B30dAD99f6Cc5b4Ff93C4F9eA,yes,yes,TokenERC20,-,,,Transfer-log,-,,
 7033,ESD,Empty Set Dollar,token,yes,Ethereum,0x36f3fd68e7325a35eb768f1aedaae9ea0689d723,yes,yes,Dollar,-,,,Transfer-log,-,,
-11156,ETHDYDX,dYdX (ethDYDX),token,yes,Ethereum,0x92d6c1e31e14520e676a687f0a93788b716beff5,yes,yes,DydxToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegatedPowerChanged(address,uint256,uint8)",100
-14280,EUL,Euler,token,yes,Ethereum,0xd9fcd98c322942075a5c3860693e9f4f03aae07b,yes,yes,Eul,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+11156,ETHDYDX,dYdX (ethDYDX),token,yes,Ethereum,0x92d6c1e31e14520e676a687f0a93788b716beff5,yes,yes,DydxToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegatedPowerChanged(address,uint256,uint8)",100.0
+14280,EUL,Euler,token,yes,Ethereum,0xd9fcd98c322942075a5c3860693e9f4f03aae07b,yes,yes,Eul,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 33342,EVA,EverValue Coin,token,yes,Arbitrum,0x45d9831d8751b2325f3dbf48db748723726e1c8c,yes,yes,EverValueCoin,-,,,Transfer-log,-,,
 2778,EXC,Eximchain,token,yes,Ethereum,0x00c4b398500645eb5da00a1a379a88b11683ba01,yes,yes,EximchainToken,-,,,Transfer-log,-,,
 4360,FAB,FABRK,token,yes,Ethereum,0x12683dc9eec95a5f742d40206e73319e6b9d8a91,yes,yes,FABToken,-,,,Transfer-log,-,,
@@ -1016,9 +1016,9 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 5190,FLEX,FLEX,token,yes,Ethereum,0xfcf8eda095e37a41e002e266daad7efc1579bc0a,yes,yes,FLEXCoin,-,,,Transfer-log,-,,
 7150,FLM,Flamingo,token,yes,non-EVM,,no,,,-,,,,-,,
 10804,FLOKI,FLOKI,token,yes,Ethereum,0xcf0c122c6b73ff809c693db761e7baebe62b6a2e,yes,yes,FLOKI,-,,,Transfer-log,ERC20Votes-negligible,"DelegateVotesChanged(address,uint224,uint224)",
-10508,FLUID,Fluid,token,yes,Ethereum,0x6f40d4A6237C257fff2dB00FA0510DeEECd303eb,yes,yes,InstaToken->impl:InstaTokenDelegate,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+10508,FLUID,Fluid,token,yes,Ethereum,0x6f40d4A6237C257fff2dB00FA0510DeEECd303eb,yes,yes,InstaToken->impl:InstaTokenDelegate,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 1062,FLY,Flycoin,token,yes,non-EVM,,no,,,-,,,,-,,
-9421,FORTH,Ampleforth Governance Token,token,yes,Ethereum,0x77fba179c79de5b7653f68b5039af940ada60ce0,yes,yes,Forth,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+9421,FORTH,Ampleforth Governance Token,token,yes,Ethereum,0x77fba179c79de5b7653f68b5039af940ada60ce0,yes,yes,Forth,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 6953,FRAX,Frax (prev. FXS),token,no,Ethereum,0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0,yes,yes,FRAXShares,-,,,Transfer-log,-,,
 2530,FSN,Fusion,token,yes,Ethereum,0x9AfC975EdB8a0B57f066e8e0A72A5e2ADbdCb605,yes,yes,Token,-,,,Transfer-log,-,,
 3840,FST,1irstcoin,token,yes,Ethereum,0x310c93dfc1c5e34cdf51678103f63c41762089cd,yes,yes,MainToken,admin/vesting-lock(not conviction),,,Transfer-log,-,,
@@ -1033,15 +1033,15 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 13663,GNS,Gains Network,token,no,Polygon,0xE5417Af564e4bFDA1c483642db72007871397896,yes,yes,GainsNetworkToken,-,,,Transfer-log,-,,
 785,GP,GoldPieces,token,yes,non-EVM,,no,,,-,,,,-,,
 6719,GRT,The Graph,token,no,Ethereum,0xc944e90c64b2c07662a292be6244bdf05cda44a7,yes,yes,GraphToken,-,,,Transfer-log,-,,
-10052,GTC,Gitcoin,token,no,Ethereum,0xde30da39c46104798bb5aa3fe8b9e0e1f348163f,yes,yes,GTC,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+10052,GTC,Gitcoin,token,no,Ethereum,0xde30da39c46104798bb5aa3fe8b9e0e1f348163f,yes,yes,GTC,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 39379,GWEI,ETHGas,token,yes,Ethereum,0x2798b1cC5A993085E8A9D46e80499F1B63f42204,yes,yes,EthgasToken,-,,,Transfer-log,-,,
 1750,GXC,GXChain,token,yes,non-EVM,,no,,,-,,,,-,,
 6622,HAKKA,Hakka.Finance,token,no,Ethereum,0x0e29e5abbb5fd88e28b2d355774e73bd47de3bcd,yes,yes,Hakka,-,,,Transfer-log,-,,
 6941,HBTC,Huobi BTC,token,yes,Ethereum,0x0316EB71485b0Ab14103307bf65a021042c6d380,yes,yes,HBTCToken,-,,,Transfer-log,-,,
 5299,HDAO,HyperDAO,token,yes,Ethereum,0x74faab6986560fd1140508e4266d8a7b87274ffd,yes,yes,HDAOToken,-,,,Transfer-log,-,,
 6929,HEGIC,Hegic,token,yes,Ethereum,0x584bC13c7D411c00c01A62e8019472dE68768430,yes,yes,Hegic,-,,,Transfer-log,-,,
-5015,HEX,HEX,token,yes,Ethereum,0x2b591e99afe9f32eaa6214f7b7629768c40eeb39,yes,yes,HEX,GENUINE,"StakeStart(uint256,address,uint40)",100,Transfer-log,-,,
-22461,HFT,Hashflow,token,no,Ethereum,0xb3999F658C0391d94A37f7FF328F3feC942BcADC,yes,yes,HFT,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+5015,HEX,HEX,token,yes,Ethereum,0x2b591e99afe9f32eaa6214f7b7629768c40eeb39,yes,yes,HEX,GENUINE,"StakeStart(uint256,address,uint40)",100.0,Transfer-log,-,,
+22461,HFT,Hashflow,token,no,Ethereum,0xb3999F658C0391d94A37f7FF328F3feC942BcADC,yes,yes,HFT,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 11232,HIGH,Highstreet,token,yes,Ethereum,0x71Ab77b7dbB4fa7e017BC15090b2163221420282,yes,yes,HIGH,-,,,Transfer-log,-,,
 22850,HONEY,Hivemapper,token,yes,non-EVM,,no,,,-,,,,-,,
 2430,HOT,Hydro Protocol,token,yes,Ethereum,0x9af839687f6c94542ac5ece2e317daae355493a1,yes,yes,HydroToken,-,,,Transfer-log,-,,
@@ -1066,7 +1066,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 30986,KMNO,Kamino,token,yes,non-EVM,,no,,,-,,,,-,,
 9444,KNC,Kyber Network Crystal v2,token,yes,Ethereum,0xdeFA4e8a7bcBA345F687a2f1456F5Edd9CE97202,yes,yes,AdminUpgradeabilityProxy->impl:KyberNetworkTokenV2,-,,,Transfer-log,-,,
 1982,KNCL,Kyber Network Crystal Legacy,token,yes,Ethereum,0xdd974d5c2e2928dea5f71b9825b8b646686bd200,yes,yes,KyberNetworkCrystal,-,,,Transfer-log,-,,
-7535,KP3R,Keep3rV1,token,no,Ethereum,0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44,yes,yes,Keep3rV1,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+7535,KP3R,Keep3rV1,token,no,Ethereum,0x1ceb5cb57c4d4e2b2433641b95dd330a33185a44,yes,yes,Keep3rV1,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 8296,KSP,KLAYswap Protocol,token,yes,non-EVM,,no,,,-,,,,-,,
 2663,KST,StarCoin,token,yes,non-EVM,,no,,,-,,,,-,,
 33223,LAB,LAB,token,yes,BSC,0x7ec43Cf65F1663F820427C62A5780b8f2E25593A,yes,no(PAID),LabToken,-,,,Transfer-log(PAID),-,,
@@ -1099,7 +1099,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 38770,MEGA,MegaETH,token,yes,non-EVM,,no,,,-,,,,-,,
 28301,MEME,Memecoin,token,yes,Ethereum,0xb131f4A55907B10d1F0A50d8ab8FA09EC342cd74,yes,yes,Memecoin,-,,,Transfer-log,-,,
 30712,MERL,Merlin Chain,token,yes,Ethereum,0xa0c56a8c0692bD10B3fA8f8bA79Cf5332B7107F9,yes,yes,DelayedERC1967Proxy->impl:MultiControlERC20,-,,,Transfer-log,-,,
-2873,MET,Metronome,token,yes,Ethereum,0x2Ebd53d035150f328bd754D6DC66B99B0eDB89aa,yes,yes,Metronome2,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+2873,MET,Metronome,token,yes,Ethereum,0x2Ebd53d035150f328bd754D6DC66B99B0eDB89aa,yes,yes,Metronome2,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 38353,MET,Meteora,token,yes,non-EVM,,no,,,-,,,,-,,
 3418,META,Metadium,token,yes,Ethereum,0xde2f7766c8bf14ca67193128535e5c7454f8387c,yes,yes,Metadium,-,,,Transfer-log,-,,
 9640,METIS,Metis,token,yes,Ethereum,0x9E32b13ce7f2E80A01932B42553652E053D6ed8e,yes,yes,MToken,-,,,Transfer-log,-,,
@@ -1124,7 +1124,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 1080,NEU,NeuCoin,token,yes,non-EVM,,no,,,-,,,,-,,
 2318,NEU,Neumark,token,yes,Ethereum,0xa823e6722006afe99e91c30ff5295052fe6b8e32,yes,yes,Neumark,-,,,Transfer-log,-,,
 8191,NFTX,NFTX,token,no,Ethereum,0x87d73E916D7057945c9BcD8cdd94e42A6F47f776,yes,yes,MiniMeToken,-,,,Transfer-log,-,,
-1732,NMR,Numeraire,token,yes,Ethereum,0x1776e1F26f98b1A5dF9cD347953a26dd3Cb46671,yes,yes,NumeraireBackend->impl:UpgradeDelegate,GENUINE,"Staked(address,bytes32,uint256,uint256,uint256,uint256)",100,Transfer-log,delegation-only,"DelegateChanged(address,address)",4
+1732,NMR,Numeraire,token,yes,Ethereum,0x1776e1F26f98b1A5dF9cD347953a26dd3Cb46671,yes,yes,NumeraireBackend->impl:UpgradeDelegate,GENUINE,"Staked(address,bytes32,uint256,uint256,uint256,uint256)",100.0,Transfer-log,delegation-only,"DelegateChanged(address,address)",4.0
 26680,NTRN,Neutron,token,yes,non-EVM,,no,,,-,,,,-,,
 5906,NVT,NerveNetwork,token,yes,Ethereum,0x7b6f71c8b123b38aa8099e0098bec7fbc35b8a13,yes,yes,ERC20Minter,-,,,Transfer-log,-,,
 5830,NXM,NXM,token,yes,Ethereum,0xd7c49cee7e9188cca6ad8ff264c1da2e69d4cf3b,yes,yes,NXMToken,-,,,Transfer-log,-,,
@@ -1137,7 +1137,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 6536,OM,MANTRA,token,no,BSC,0xf78d2e7936f5fe18308a3b2951a93b6c4a41f5e2,yes,no(PAID),BEP20UpgradeableProxy->impl:BEP20TokenImplementation,-,,,Transfer-log(PAID),-,,
 1808,OMG,OMG Network,token,yes,Ethereum,0xd26114cd6ee289accf82350c8d8487fedb8a0c07,yes,yes,OMGToken,-,,,Transfer-log,-,,
 6432,OMI,ECOMI,token,yes,non-EVM,,no,,,-,,,,-,,
-21159,ONDO,Ondo,token,yes,Ethereum,0xfaba6f8e4a5e8ab82f62fe7c39859fa577269be3,yes,yes,Ondo,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+21159,ONDO,Ondo,token,yes,Ethereum,0xfaba6f8e4a5e8ab82f62fe7c39859fa577269be3,yes,yes,Ondo,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 2324,ONE,BigONE Token,token,yes,Ethereum,0x946551dd05c5abd7cc808927480225ce36d8c475,yes,yes,Token,-,,,Transfer-log,-,,
 7230,OPIUM,Opium,token,no,Ethereum,0x888888888889c00c67689029d7856aac1065ec11,yes,yes,OpiumToken,-,,,Transfer-log,-,,
 3835,ORBS,Orbs,token,yes,Ethereum,0xff56cc6b1e6ded347aa0b7676c85ab0b3d08b0fa,yes,yes,OrbsToken,-,,,Transfer-log,-,,
@@ -1146,7 +1146,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 12220,OSMO,Osmosis,token,yes,non-EVM,,no,,,-,,,,-,,
 2296,OST,OST,token,yes,Ethereum,0x2c4e8f2d746113d0696ce89b35f0d8bf88e0aeca,yes,yes,SimpleToken,-,,,Transfer-log,-,,
 1758,PAY,TenX,token,yes,Ethereum,0xb97048628db6b661d4c2aa833e95dbe1a905b280,yes,yes,PayToken,-,,,Transfer-log,-,,
-5354,PEAK,PEAKDEFI,token,yes,Ethereum,0x630d98424efe0ea27fb1b3ab7741907dffeaad78,yes,yes,TokenProxy->impl:PEAKDEFI_V2,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",94
+5354,PEAK,PEAKDEFI,token,yes,Ethereum,0x630d98424efe0ea27fb1b3ab7741907dffeaad78,yes,yes,TokenProxy->impl:PEAKDEFI_V2,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",94.0
 9481,PENDLE,Pendle,token,no,Ethereum,0x808507121b80c02388fad14726482e061b8da827,yes,yes,PENDLE,-,,,Transfer-log,ERC20Votes-negligible,"DelegateVotesChanged(address,uint256,uint256)",
 14806,PEOPLE,ConstitutionDAO,token,yes,Ethereum,0x7a58c0be72be218b41c608b7fe7c5bb630736c71,yes,yes,Tickets,-,,,Transfer-log,-,,
 6950,PERP,Perpetual Protocol,token,no,Ethereum,0xbc396689893d065f41bc2c6ecbee5e0085233447,yes,yes,PerpToken,-,,,Transfer-log,-,,
@@ -1170,7 +1170,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 2242,QBT,Qbao,token,yes,non-EVM,,no,,,-,,,,-,,
 3155,QNT,Quant,token,yes,Ethereum,0x4a220e6096b25eadb88358cb44068a3248254675,yes,yes,StandardToken,-,,,Transfer-log,-,,
 1684,QTUM,Qtum,token,yes,non-EVM,,no,,,-,,,,-,,
-6843,RAD,Radworks,token,yes,Ethereum,0x31c8eacbffdd875c74b94b077895bd78cf1e64a3,yes,yes,RadicleToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+6843,RAD,Radworks,token,yes,Ethereum,0x31c8eacbffdd875c74b94b077895bd78cf1e64a3,yes,yes,RadicleToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 38967,RAVE,RaveDAO,token,yes,Ethereum,0x17205fab260a7a6383a81452cE6315A39370Db97,yes,yes,RaveToken,-,,,Transfer-log,-,,
 8526,RAY,Raydium,token,yes,BSC,0x13b6A55662f6591f8B8408Af1C73B017E32eEdB8,yes,no(PAID),BridgeToken->impl:TokenImplementation,-,,,Transfer-log(PAID),-,,
 12387,RBN,Ribbon Finance,token,yes,Ethereum,0x6123b0049f904d730db3c36a31167d9d4121fa6b,yes,yes,RibbonToken,-,,,Transfer-log,-,,
@@ -1182,7 +1182,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 1104,REP,Augur,token,yes,Ethereum,0x1985365e9f78359a9B6AD760e32412f4a445E862,yes,yes,Delegator->impl:ReputationToken,-,,,Transfer-log,-,,
 2071,REQ,Request,token,yes,Ethereum,0x8f8221afbb33998d8584a2b05749ba73c37a938a,yes,yes,RequestToken,-,,,Transfer-log,-,,
 7654,RFOX,RFOX,token,yes,Ethereum,0xa1d6df714f91debf4e0802a542e13067f31b8262,yes,yes,Token,-,,,Transfer-log,-,,
-7486,RGT,Rari Governance Token,token,no,Ethereum,0xd291e7a03283640fdc51b121ac401383a46cc623,yes,yes,AdminUpgradeabilityProxy->impl:RariGovernanceToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+7486,RGT,Rari Governance Token,token,no,Ethereum,0xd291e7a03283640fdc51b121ac401383a46cc623,yes,yes,AdminUpgradeabilityProxy->impl:RariGovernanceToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 5798,RING,Darwinia Network,token,yes,Ethereum,0x9469d013805bffb7d3debe5e7839237e535ec483,yes,yes,RING,-,,,Transfer-log,-,,
 38417,RIVER,River,token,yes,Ethereum,0xdA7AD9dea9397cffdDAE2F8a052B82f1484252B3,yes,yes,River,-,,,Transfer-log,-,,
 1637,RLC,iExec RLC,token,yes,Ethereum,0x607f4c5bb672230e8672085532f7e901544a7375,yes,yes,RLC,-,,,Transfer-log,-,,
@@ -1208,7 +1208,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 11289,SPELL,Spell Token,token,yes,Ethereum,0x090185f2135308bad17527004364ebcc2d37e5f6,yes,yes,Spell,-,,,Transfer-log,-,,
 8161,SPI,Shopping,token,yes,Ethereum,0x9b02dd390a603add5c07f9fd9175b7dabe8d63b7,yes,yes,ShoppingIO,-,,,Transfer-log,-,,
 5601,STAKE,STAKE,token,yes,Ethereum,0x0Ae055097C6d159879521C384F1D2123D1f195e6,yes,yes,ERC677MultiBridgeToken,-,,,Transfer-log,-,,
-8911,STRK,Strike,token,no,Ethereum,0x74232704659ef37c08995e386a2e26cc27a8d7b1,yes,yes,STRK,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+8911,STRK,Strike,token,no,Ethereum,0x74232704659ef37c08995e386a2e26cc27a8d7b1,yes,yes,STRK,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 6511,STRONG,Strong,token,yes,Ethereum,0x990f341946a3fdb507ae7e52d17851b87168017c,yes,yes,Strong,-,,,Transfer-log,-,,
 24875,STRX,Staked TRX,token,yes,non-EVM,,no,,,-,,,,-,,
 1984,SUB,Substratum,token,yes,Ethereum,0x8D75959f1E61EC2571aa72798237101F084DE63a,yes,yes,Substratum,-,,,Transfer-log,-,,
@@ -1216,16 +1216,16 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 10529,SUN,Sun [New],token,yes,non-EVM,,no,,,-,,,,-,,
 8290,SUPER,SuperVerse,token,yes,Ethereum,0xe53ec727dbdeb9e2d5456c3be40cff031ab40a55,yes,yes,Token,-,,,Transfer-log,ERC20Votes-negligible,"DelegateVotesChanged(address,uint256,uint256)",
 5113,SURE,inSure DeFi,token,yes,Ethereum,0xcb86c6a22cb56b6cf40cafedb06ba0df188a416e,yes,yes,TokenERC20,-,,,Transfer-log,-,,
-6758,SUSHI,SushiSwap,token,no,Ethereum,0x6b3595068778dd592e39a122f4f5a5cf09c90fe2,yes,yes,SushiToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+6758,SUSHI,SushiSwap,token,no,Ethereum,0x6b3595068778dd592e39a122f4f5a5cf09c90fe2,yes,yes,SushiToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 5829,SWAP,TrustSwap,token,yes,Ethereum,0xcc4304a31d09258b0029ea7fe63d032f52e44efe,yes,yes,AdminUpgradeabilityProxy->impl:SwapToken,-,,,Transfer-log,-,,
 2341,SWFTC,SwftCoin,token,yes,Ethereum,0x0bb217E40F8a5Cb79Adf04E1aAb60E5abd0dfC1e,yes,yes,SwftCoin,-,,,Transfer-log,-,,
 2620,SWTH,Carbon Protocol,token,yes,Ethereum,0xb4371da53140417cbb3362055374b10d97e420bb,yes,yes,SwitcheoToken,-,,,Transfer-log,-,,
-4279,SXP,Solar,token,yes,non-EVM,,no,,,-,,,,-,,
+4279,SXP,Solar,token,yes,Ethereum,0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9,yes,yes,,-,,,Transfer-log,-,,
 12147,SYN,Synapse,token,no,Ethereum,0x0f2D719407FdBeFF09D87557AbB7232601FD9F29,yes,yes,SynapseERC20,-,,,Transfer-log,-,,
 329,SYNC,Sync,token,yes,non-EVM,,no,,,-,,,,-,,
 33824,SYRUP,Maple Finance,token,yes,Ethereum,0x643C4E15d7d62Ad0aBeC4a9BD4b001aA3Ef52d66,yes,yes,MapleTokenProxy->impl:MapleToken,-,,,Transfer-log,-,,
 33312,SolvBTC,SolvBTC,token,yes,Ethereum,0x7a56e1c57c7475ccf742a1832b028f0456652f97,yes,yes,BeaconProxy->impl:SolvBTCV3,-,,,Transfer-log,-,,
-17751,T,Threshold,token,yes,Ethereum,0xCdF7028ceAB81fA0C6971208e83fa7872994beE5,yes,yes,T,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+17751,T,Threshold,token,yes,Ethereum,0xCdF7028ceAB81fA0C6971208e83fa7872994beE5,yes,yes,T,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 22974,TAO,Bittensor,token,yes,non-EVM,,no,,,-,,,,-,,
 26133,TBTC,tBTC,token,yes,Ethereum,0x18084fba666a33d37592fa2633fd49a74dd93a88,yes,yes,TBTC,-,,,Transfer-log,-,,
 23082,TEM,TemDAO,token,yes,Ethereum,0xaE0585a259A3BCAB258D6EE02FB583f7B33C2a12,yes,yes,TempleCoin,-,,,Transfer-log,-,,
@@ -1241,7 +1241,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 5617,UMA,UMA,token,yes,Ethereum,0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828,yes,yes,VotingToken,-,,,Transfer-log,-,,
 7672,UNFI,Unifi Protocol DAO,token,yes,Ethereum,0x441761326490cacf7af299725b6292597ee822c2,yes,yes,UNFI,-,,,Transfer-log,-,,
 4113,UNI,UNI COIN,token,yes,Ethereum,0xe6877ea9c28fbdec631ffbc087956d0023a76bf2,yes,yes,UniCoinToken,-,,,Transfer-log,-,,
-7083,UNI,Uniswap,token,no,Ethereum,0x1f9840a85d5af5bf1d1762f925bdaddc4201f984,yes,yes,Uni,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+7083,UNI,Uniswap,token,no,Ethereum,0x1f9840a85d5af5bf1d1762f925bdaddc4201f984,yes,yes,Uni,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 36175,UNIBTC,Universal BTC,token,yes,Ethereum,0x004e9c3ef86bc1ca1f0bb5c7662861ee93350568,yes,yes,TransparentUpgradeableProxy->impl:uniBTC,-,,,Transfer-log,-,,
 2273,UQC,Uquid Coin,token,yes,Ethereum,0x8806926ab68eb5a7b909dcaf6fdbe5d93271d6e2,yes,yes,UquidCoin,-,,,Transfer-log,-,,
 3792,USDE,USDe,token,yes,non-EVM,,no,,,-,,,,-,,
@@ -1255,7 +1255,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 19650,VOLT,Volt Inu,token,yes,Ethereum,0x7f792db54b0e580cdc755178443f0430cf799aca,yes,yes,VoltInu,-,,,Transfer-log,-,,
 14519,VVS,VVS Finance,token,yes,Ethereum,0x839e71613f9aA06E5701CF6de63E303616B0DDE3,yes,yes,CosmosERC20,-,,,Transfer-log,-,,
 35509,VVV,Venice Token,token,yes,Base,0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf,yes,no(PAID),Venice,-,,,Transfer-log(PAID),-,,
-29587,W,Wormhole,token,yes,Ethereum,0xB0fFa8000886e57F86dd5264b9582b2Ad87b2b91,yes,yes,ERC1967Proxy->impl:WToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100
+29587,W,Wormhole,token,yes,Ethereum,0xB0fFa8000886e57F86dd5264b9582b2Ad87b2b91,yes,yes,ERC1967Proxy->impl:WToken,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",100.0
 36119,WAL,Walrus,token,yes,non-EVM,,no,,,-,,,,-,,
 1166,WARP,WARP,token,yes,Ethereum,0x83e6f1E41cdd28eAcEB20Cb649155049Fac3D5Aa,yes,yes,PolkastarterToken,-,,,Transfer-log,-,,
 9462,WAVAX,Wrapped AVAX,token,yes,Avalanche,0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7,yes,no(PAID),WAVAX,-,,,Transfer-log(PAID),-,,
@@ -1269,7 +1269,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 4206,WIN,WINkLink,token,yes,BSC,0xaef0d72a118ce24fee3cd1d43d383897d05b4e99,yes,no(PAID),BEP20UpgradeableProxy->impl:BEP20TokenImplementation,-,,,Transfer-log(PAID),-,,
 1500,WINGS,Wings,token,yes,Ethereum,0x667088b212ce3d06a1b553a7221E1fD19000d9aF,yes,yes,Token,-,,,Transfer-log,-,,
 13502,WLD,Worldcoin,token,yes,Ethereum,0x163f8c2467924be0ae7b5347228cabf260318753,yes,yes,WLD,admin/vesting-lock(not conviction),,,Transfer-log,-,,
-33251,WLFI,World Liberty Financial,token,yes,Ethereum,0xdA5e1988097297dCdc1f90D4dFE7909e847CBeF6,yes,yes,TransparentUpgradeableProxy->impl:WorldLibertyFinancialV3,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",23
+33251,WLFI,World Liberty Financial,token,yes,Ethereum,0xdA5e1988097297dCdc1f90D4dFE7909e847CBeF6,yes,yes,TransparentUpgradeableProxy->impl:WorldLibertyFinancialV3,-,,,Transfer-log,ERC20Votes-ACTIVE,"DelegateVotesChanged(address,uint256,uint256)",23.0
 7501,WOO,WOO,token,yes,Ethereum,0x4691937a7508860f876c9c0a2a617e7d9e945d4b,yes,yes,WootradeNetwork,-,,,Transfer-log,-,,
 24735,WPLS,Wrapped Pulse,token,yes,non-EVM,,no,,,-,,,,-,,
 27076,WTFUEL,Wrapped TFUEL,token,yes,non-EVM,,no,,,-,,,,-,,
@@ -1298,7 +1298,7 @@ cmc_id,symbol,name,asset_class,in_bucket1,chain,address,etherscan_reachable,getl
 26997,ZRO,LayerZero,token,yes,Ethereum,0x6985884C4392D348587B19cb9eAAf157F13271cd,yes,yes,LayerZeroToken,-,,,Transfer-log,-,,
 1896,ZRX,0x Protocol,token,no,Ethereum,0xe41d2489571d322189246dafa5ebde1f4699f498,yes,yes,ZRXToken,-,,,Transfer-log,-,,
 33055,slisBNBx,slisBNBx,token,yes,BSC,0x4b30fcAA7945fE9fDEFD2895aae539ba102Ed6F6,yes,no(PAID),TransparentUpgradeableProxy->impl:slisBNBx,-,,,Transfer-log(PAID),-,,
-36246,stkAAVE,Staked Aave,token,yes,Ethereum,0x4da27a545c0c5B758a6BA100e3a049001de870f5,yes,yes,InitializableAdminUpgradeabilityProxy->impl:StakedAaveV3,GENUINE,"Staked(address,address,uint256,uint256)",100,Transfer-log,delegation-only,"DelegateChanged(address,address,uint8)",100
+36246,stkAAVE,Staked Aave,token,yes,Ethereum,0x4da27a545c0c5B758a6BA100e3a049001de870f5,yes,yes,InitializableAdminUpgradeabilityProxy->impl:StakedAaveV3,GENUINE,"Staked(address,address,uint256,uint256)",100.0,Transfer-log,delegation-only,"DelegateChanged(address,address,uint8)",100.0
 38779,syrupUSDC,syrupUSDC,token,yes,Ethereum,0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b,yes,yes,MaplePool,-,,,Transfer-log,-,,
 38786,syrupUSDT,syrupUSDT,token,yes,Ethereum,0x356b8d89c1e1239cbbb9de4815c39a1474d5ba7d,yes,yes,MaplePool,-,,,Transfer-log,-,,
 7961,vBNB,Venus BNB,token,yes,BSC,0xA07c5b74C9B40447a954e1466938b865b6BBea36,yes,no(PAID),VBNB,-,,,Transfer-log(PAID),-,,

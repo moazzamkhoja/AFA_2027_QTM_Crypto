@@ -1776,7 +1776,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 3835,ORBS,Orbs,token,Farm,,85,2,ch1_staking+ch2_holding|ch2_holding,True,True,False,False,False,0,,True,18,9074.0,726.0,Ethereum,yes,complete,COMPLETE
 11165,ORCA,Orca,token,Dexs;Launchpad;Lending;DEX,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 5631,ORN,Orion,token,DEX Aggregator;Dexs;DEX,,49,1,ch2_holding,False,True,False,False,False,0,,True,39,9800.0,784.0,Ethereum,yes,complete,COMPLETE
-12220,OSMO,Osmosis,token,Dexs;Modular Blockchain,,0,0,,False,False,False,False,True,41,defillama_dexs,True,60,,,non-EVM,no,partial,ch2_holding | ch3_governance
+12220,OSMO,Osmosis,token,Dexs;Modular Blockchain,pos,2,1,ch1_staking,True,False,False,False,True,41,defillama_dexs,True,60,,,non-EVM,no,complete,COMPLETE
 2296,OST,OST,token,Dexs,,42,1,ch2_holding,False,True,False,False,False,0,,False,0,12527.0,1002.0,Ethereum,yes,partial,tvl_defillama
 1758,PAY,TenX,token,Yield;Payments,,52,1,ch2_holding,False,True,False,False,False,0,,False,0,57388.0,4591.0,Ethereum,yes,partial,tvl_defillama
 5354,PEAK,PEAKDEFI,token,Algo-Stables;Yield,,13,1,ch3_delegation,False,False,False,True,False,0,,True,63,10957.0,877.0,Ethereum,yes,complete,COMPLETE
@@ -1853,7 +1853,7 @@ cmc_id,symbol,name,asset_class,sector,coin_staking_type,lambda_months,lambda_n_c
 5829,SWAP,TrustSwap,token,Bridge;Dexs;Interface;Token Locker,,49,1,ch2_holding,False,True,False,False,False,0,,True,47,17370.0,1390.0,Ethereum,yes,complete,COMPLETE
 2341,SWFTC,SwftCoin,token,NFT;Interoperability;Payments,,0,0,,False,False,False,False,False,0,,False,0,35521.0,2842.0,Ethereum,yes,not_started,ch2_holding(35521h) | ch3_governance | tvl_defillama
 2620,SWTH,Carbon Protocol,token,DEX;Derivatives,,33,1,ch2_holding,False,True,False,False,False,0,,False,0,212.0,17.0,Ethereum,yes,partial,tvl_defillama
-4279,SXP,Solar,token,Dexs;Payments,,0,0,,False,False,False,False,False,0,,True,63,,,non-EVM,no,partial,ch2_holding | ch3_governance
+4279,SXP,Solar,token,Dexs;Payments,,77,1,ch2_holding,False,True,False,False,False,0,,True,63,,,Ethereum,yes,complete,COMPLETE
 12147,SYN,Synapse,token,Cross Chain Bridge;Synthetics;Yield Aggregator;Interoperability,,39,2,ch2_holding|ch2_holding+ch3_voting,False,True,True,False,False,0,,True,58,10416.0,833.0,Ethereum,yes,complete,COMPLETE
 329,SYNC,Sync,token,NFT Lending;Reserve Currency,,0,0,,False,False,False,False,False,0,,False,0,,,non-EVM,no,not_started,ch2_holding | ch3_governance | tvl_defillama
 33824,SYRUP,Maple Finance,token,Lending;RWA,,14,1,ch2_holding,False,True,False,False,False,0,,True,61,16395.0,1312.0,Ethereum,yes,complete,COMPLETE

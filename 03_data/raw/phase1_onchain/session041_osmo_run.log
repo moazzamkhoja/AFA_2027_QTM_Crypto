@@ -1,0 +1,58 @@
+https://osmosis-api.noders.services ARCHIVE CONFIRMED @ 61992504 (latest 67467504)
+earliest stored block 58476184 at 2026-04-03T05:57:29Z
+OSMO 2022-01: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-02: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-03: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-04: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-05: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-06: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-07: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-08: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-09: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-10: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-11: predates earliest stored block (2026-04-03) -- skip
+OSMO 2022-12: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-01: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-02: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-03: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-04: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-05: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-06: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-07: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-08: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-09: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-10: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-11: predates earliest stored block (2026-04-03) -- skip
+OSMO 2023-12: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-01: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-02: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-03: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-04: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-05: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-06: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-07: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-08: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-09: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-10: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-11: predates earliest stored block (2026-04-03) -- skip
+OSMO 2024-12: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-01: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-02: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-03: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-04: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-05: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-06: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-07: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-08: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-09: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-10: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-11: predates earliest stored block (2026-04-03) -- skip
+OSMO 2025-12: predates earliest stored block (2026-04-03) -- skip
+OSMO 2026-01: predates earliest stored block (2026-04-03) -- skip
+OSMO 2026-02: predates earliest stored block (2026-04-03) -- skip
+OSMO 2026-03: predates earliest stored block (2026-04-03) -- skip
+OSMO 2026-04: height=60630953, staked=212,134,602, ratio=0.2749
+OSMO 2026-05: height=63027468, staked=203,998,284, ratio=0.2630
+
+Wrote 2 rows to C:\AFA_2027_QTM_Crypto\03_data\phase1\channel1_cosmos_osmo.csv
+Cross-check: built_latest=203,998,284 live=200,444,539 drift=1.77% PASS

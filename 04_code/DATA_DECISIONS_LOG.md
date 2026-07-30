@@ -2075,3 +2075,70 @@ approved.
 Output: 03_data/phase1/channel1_cosmos_lcd.csv
 Builders: 04_code/session040_cosmos_lcd.py, 04_code/session040_kava_retry.py
 Report: 03_data/SESSION040_COSMOS_LCD_REPORT.md
+
+### Entry 92 — Session 041: HXRO moot (λ-on-observed); SXP ch2 built; OSMO ch1 (2 mo); gap closures
+**Date:** 2026-07-30
+**Spec section affected:** 3 (λ assembly — counts only); coverage semantics clarification.
+
+**HXRO (3748) ch2 extend — NOT RUN, task moot under existing spec:**
+The session-041 prompt premise ("checkpoint monthly: [] → fresh rebuild extends
+to 2026-05") was a schema misread: streamed checkpoints store `rows`/`mblocks`
+(24 months, 2020-09→2022-09, intact), not `monthly`, and the stream engine skips
+any non-deferred checkpoint. The deeper blocker: HXRO's panel months are
+`carried_forward` from 2022-10 onward (CMC top-1000 visibility lost; supply
+frozen at 4.285e8, subtype presumed_failed per Entry 17) while TVL starts
+2023-02. phase1_assemble_lambda.py computes λ on `status='observed'` rows ONLY
+(core spec rule), so no ch2 rebuild can ever create λ∩TVL overlap for HXRO —
+the observed window (→2022-09) and the TVL window (2023-02→) are disjoint.
+**Decision:** zero Etherscan quota spent; HXRO stays partial as a PERMANENT gap
+under current spec. Reopen only if Phase 3 changes the λ-on-observed rule for
+carried-forward months (would affect 89,535 asset-months, not just HXRO).
+
+**SXP (4279) ch2 — BUILT (chainid 1):**
+Coverage flag `non-EVM/etherscan_reachable:no` was wrong — caused by the
+unprefixed Multi-Chain address in asset_onchain_identity.csv. Probe confirmed
+0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9 live on Ethereum: ABI OK, supply
+285,368,788.7 (18 dec), getLogs clean. Fixed universe_lambda_channel_map.csv
+(chain=Ethereum, etherscan_reachable=yes, ch2_holding=Transfer-log) and
+identity (ethereum: prefix). Build: tf=569,311, getLogs=1,886, contracts
+screened 10/96, 77 λ months (2019-09→2026-02), HODL-6m median 27.0% (B4 pass),
+no B2 contamination warnings. λ∩TVL overlap 60 months (2021-03→2026-02).
+
+**OSMO (12220) ch1 — BUILT, 2 months (archive floor 2026-04-02):**
+Prompt's blocks/day=15,000 (~5.75 s/block) is STALE — Osmosis now produces
+~73,300 blocks/day (~1.2 s/block; epochs-module anchors). All 16 chain-registry
+REST endpoints + publicnode/ecostake/quickapi extras: pruned or fake.
+osmosis.api.pocket.network is a FAKE ARCHIVE (ignores x-cosmos-block-height —
+same landmine family as sei.api.pocket.network, Entry 91). Only real archive:
+https://osmosis-api.noders.services, app-state + block floor ≈ h 58.44M =
+2026-04-02 (apparent chain-wide post-upgrade state-sync point; an initial
+"598-day retention" estimate was an artifact of the stale 15k blocks/day
+constant). Built 2026-04-30 (h=60630953, ratio 0.2749) and 2026-05-31
+(h=63027468, ratio 0.2630) via pool @ month-end blocks, binary-search
+timestamps. Drift vs live 1.77% PASS. Denom uosmo / 10^6.
+Output: 03_data/phase1/channel1_cosmos_osmo.csv (separate file, picked up by
+the assembler's channel1_*.csv glob). coin_staking_type NaN → pos.
+2021-06→2026-03 unreachable keyless; reopen only on a paid indexer (Numia/
+Mintscan) decision.
+
+**Permanent gap closures (no build path):**
+CASINO (1573): Fantom chainid 250 — not in Etherscan V2 coverage, no free alternative.
+RUNE (4157): THORChain — non-EVM, non-Cosmos; custom indexer required.
+SUN (10529): Tron — ch2 engine not adapted for Tron; TronScan API deferred.
+
+**Regression-ready semantics (recorded):** regression-ready = coverage
+'complete' AND lambda_months > 0 (excludes the 11 pow_only coins complete on
+NVT alone); 193 complete − 11 = 182.
+
+**Post-assemble:** λ 13,547 → 13,626 asset-months / 465 → 467 assets.
+Coverage 193 complete / 310 partial / 1,436 not_started.
+Regression-ready 180 → 182 (coins 24 unchanged; tokens/other 156 → 158:
+SXP + OSMO in).
+
+Note: Etherscan Pro subscription lapsed after this session (2026-07-30 last
+day). Remaining Etherscan-dependent work: none identified (HXRO moot, not
+quota-blocked).
+
+Output: 03_data/phase1/channel1_cosmos_osmo.csv; channel2_holding.csv 425 tokens / 13,799 rows
+Builders: 04_code/session041_osmo_ch1.py
+Report: 03_data/SESSION041_HXRO_SXP_OSMO_REPORT.md

@@ -1853,7 +1853,7 @@ cmc_id,symbol,name,asset_class,sector,staking_start,dl_slug,dl_category,token_ad
 5829,SWAP,TrustSwap,token,Bridge;Dexs;Interface;Token Locker,,team-finance,Token Locker,0xCC4304A31d09258b0029eA7FE63d032f52e44EFe,Multi-Chain,Ethereum;Binance;Base;Avalanche;Polygon;Pulse;Arbitrum;Blast;Cronos;Fantom;Odyssey;Kava;Flare;Klaytn;Mantle;LUKSO;Berachain,,trustswap,True,1,True,False
 2341,SWFTC,SwftCoin,token,NFT;Interoperability;Payments,,,,,,,,,False,0,False,False
 2620,SWTH,Carbon Protocol,token,DEX;Derivatives,,,,,,,,,False,0,False,False
-4279,SXP,Solar,token,Dexs;Payments,,swipe,Dexs,0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9,Multi-Chain,Binance;Ethereum,,swipe,True,1,True,False
+4279,SXP,Solar,token,Dexs;Payments,,swipe,Dexs,ethereum:0x8ce9137d39326ad0cd6491fb5cc0cba0e089b6a9,Ethereum,Binance;Ethereum,,swipe,True,1,True,False
 12147,SYN,Synapse,token,Cross Chain Bridge;Synthetics;Yield Aggregator;Interoperability,,synapse,Cross Chain Bridge,0x0f2d719407fdbeff09d87557abb7232601fd9f29,Multi-Chain,Ethereum;Canto;Avalanche;Blast;Arbitrum;Binance;Polygon;Optimism;Aurora;Boba;Base;Fantom;Klaytn;Metis;Moonriver;Terra;Cronos;Harmony;Moonbeam,synapseprotocol.eth,synapse-2,True,1,True,True
 329,SYNC,Sync,token,NFT Lending;Reserve Currency,,,,,,,,,False,0,False,False
 33824,SYRUP,Maple Finance,token,Lending;RWA,,maple,Lending,,,,,,False,0,False,False

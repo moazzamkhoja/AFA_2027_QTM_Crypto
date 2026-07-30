@@ -1,0 +1,13 @@
+STREAM build: 1 tokens | WORKERS=8 BLOCK_WINDOW=100000 RATE=8.0/s DAILY_CAP=185000
+  --- SXP cmc=4279 chain=1 START (gl_so_far=0) ---
+    SXP batch 1/31 block<=799,999 tf=0 gl=8 lots=0 2s
+    SXP batch 6/31 block<=4,799,999 tf=0 gl=48 lots=0 7s
+    SXP batch 11/31 block<=8,799,999 tf=41362 gl=296 lots=15385 38s
+    SXP batch 16/31 block<=12,799,999 tf=457048 gl=1534 lots=78118 200s
+    SXP batch 21/31 block<=16,799,999 tf=542884 gl=1772 lots=93465 233s
+    SXP batch 26/31 block<=20,799,999 tf=560464 gl=1848 lots=96581 244s
+    SXP batch 31/31 block<=24,560,658 tf=569311 gl=1886 lots=98008 250s
+  SXP      cmc=4279 DONE tf=569311 gl=1886 code=10/96 scrMo=77 HODLmed=27.0% last=34.0%
+aggregate: 425 completed tokens (0 recomputed), 1 deferred -> C:\AFA_2027_QTM_Crypto\03_data\phase1\channel2_holding.csv (13799 rows)
+
+STREAM done: 1 built, 0 skipped, 1886 getLogs; aggregate -> 425 tokens / 13799 rows

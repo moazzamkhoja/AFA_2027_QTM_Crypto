@@ -1,0 +1,5 @@
+STREAM build: 1 tokens | WORKERS=8 BLOCK_WINDOW=100000 RATE=8.0/s DAILY_CAP=185000
+  HXRO cmc=3748 already complete -> skip
+aggregate: 424 completed tokens (0 recomputed), 1 deferred -> C:\AFA_2027_QTM_Crypto\03_data\phase1\channel2_holding.csv (13722 rows)
+
+STREAM done: 0 built, 1 skipped, 0 getLogs; aggregate -> 424 tokens / 13722 rows
