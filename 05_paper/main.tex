@@ -43,7 +43,7 @@ token holder fundamental conviction in platform growth. We show that the convict
 signal alone positively predicts future cross-sectional returns, and that this
 predictability is substantially stronger when the asset is cheap relative to its
 fundamental economic activity---measured by our Growth-Levelized NVT ratio for coins and
-the NV/TVL ratio for tokens---supporting the interpretation that valuation identifies
+the Growth-Levelized NV/TVL ratio for tokens---supporting the interpretation that valuation identifies
 when the conviction signal is not yet priced in. A long Stars/short Avoid portfolio
 generates positive factor-adjusted alpha after controlling for market, size, and momentum
 factors.
@@ -168,7 +168,9 @@ NVT ratio} normalizes market capitalization by the present value of the network'
 expected transaction stream $PQ$ (constructed analogously to a PMT-based discounted cash
 flow, as detailed in Section~\ref{sec:measures}). For tokens, protocol throughput is
 measured by Total Value Locked rather than transaction volume, so the corresponding
-metric is the \textit{NV/TVL ratio}: market capitalization over TVL. Crucially, neither
+metric is the \textit{Growth-Levelized NV/TVL ratio}: market capitalization over the
+growth-adjusted present value of TVL, built with the same discounting machinery as the
+coin metric. Crucially, neither
 valuation ratio carries its own independent theoretical prediction for returns. Rather,
 each serves as a conditioning variable: the conviction signal is most valuable as a
 return predictor when the market has not yet priced it in---that is, when the valuation
@@ -218,7 +220,7 @@ The remainder of the paper is organized as follows. Section~\ref{sec:theory} dev
 the theoretical frameworks for coins (SoV/MoE) and tokens (governance moat) and derives
 the testable propositions. Section~\ref{sec:measures} defines and constructs the three
 key variables: the conviction index $\lambda$, the Growth-Levelized NVT ratio for coins,
-and the NV/TVL ratio for tokens. Section~\ref{sec:data} describes the data sources,
+and the Growth-Levelized NV/TVL ratio for tokens. Section~\ref{sec:data} describes the data sources,
 sample construction, and summary statistics. Section~\ref{sec:results} presents the
 cross-sectional return predictability and portfolio results. Section~\ref{sec:robust}
 reports robustness tests. Section~\ref{sec:conclusion} concludes.
@@ -359,8 +361,10 @@ current market capitalization relative to fundamental activity.
 For coins, the relevant fundamental is discounted expected on-chain volume: $\delta_t$
 is increasing in $\text{NVT\_GL}_t = \text{MC}_t / PQ_t^*$, where $PQ^*_t$ is the
 growth-adjusted present value of expected transaction activity (formally defined in
-Section~\ref{sec:measures_nvt}). For tokens, the relevant fundamental is Total Value
-Locked: $\delta_t$ is increasing in $\text{NV/TVL}_t = \text{MC}_t / \text{TVL}_t$.
+Section~\ref{sec:measures_nvt}). For tokens, the relevant fundamental is the
+growth-adjusted present value of Total Value Locked: $\delta_t$ is increasing in
+$\text{NV/TVL\_GL}_t = \text{MC}_t / \text{TVL}^*_t$, where $\text{TVL}^*_t$ is
+constructed with the same discounting machinery (Section~\ref{sec:measures_tvl}).
 In both cases, a high ratio indicates that current market capitalization already embeds
 the conviction signal, and the incremental return predictability of $\lambda_t$ is low;
 a low ratio indicates the signal remains unabsorbed.
@@ -371,13 +375,13 @@ is concentrated among low-valuation-ratio assets.}
 
 \textbf{Hypothesis 2.} \textit{The return predictability documented in H1a and H1b is
 significantly stronger among assets with below-median valuation ratios (NVT\_GL for coins,
-NV/TVL for tokens). The marginal return to a unit increase in $\lambda$ is higher when
+NV/TVL\_GL for tokens). The marginal return to a unit increase in $\lambda$ is higher when
 the asset is cheap relative to its fundamental economic activity.}
 
 The valuation ratio carries no independent return prediction in this framework. A low
 NVT\_GL alone---without a high $\lambda$---merely describes a coin with limited
 current throughput relative to market cap, not necessarily a mispricing; similarly for
-NV/TVL. The conditioning role is asymmetric: valuation identifies the \textit{timing}
+NV/TVL\_GL. The conditioning role is asymmetric: valuation identifies the \textit{timing}
 of conviction signal absorption, not a separate source of alpha.
 
 \subsection{Hypotheses and the Quadrant Portfolio}
@@ -394,7 +398,7 @@ are predicted to have the lowest returns.
 (below-median $\lambda$, above-median valuation ratio), rebalanced monthly, generates
 positive and statistically significant factor-adjusted alpha after controlling for market,
 size, and momentum. The result holds separately within the coin sample (using NVT\_GL)
-and within the token sample (using NV/TVL), and in the combined panel. The Stars-minus-Avoid
+and within the token sample (using NV/TVL\_GL), and in the combined panel. The Stars-minus-Avoid
 Sharpe ratio exceeds that of equal-weighted benchmark portfolios.}
 
 H3 is the integrating test: it asks whether the joint two-dimensional signal has
@@ -410,7 +414,7 @@ underreaction to governance conviction signals.
 
 The theoretical framework in Section~\ref{sec:theory} requires three empirical proxies:
 the conviction index $\lambda$, common to both asset tracks; the Growth-Levelized NVT
-ratio for the coin track; and the NV/TVL ratio for the token track. This section defines
+ratio for the coin track; and the Growth-Levelized NV/TVL ratio for the token track. This section defines
 each variable and describes its construction. Data sources and sample formation are
 covered in Section~\ref{sec:data}.
 
@@ -515,26 +519,40 @@ current market capitalization already embeds forward growth not yet visible in t
 The growth adjustment corrects a systematic bias in raw NVT: fast-growing assets may
 appear expensive on a raw NVT basis but inexpensive once expected growth is discounted.
 
-\subsection{NV/TVL Ratio}
+\subsection{Growth-Levelized NV/TVL}
 \label{sec:measures_tvl}
 
-For the token regression track, the valuation anchor is the Network Value to Total Value
-Locked ratio:
-\[
-\text{NV/TVL}_{j,t} = \frac{\text{MC}_{j,t}}{\text{TVL}_{j,t}},
-\]
-where $\text{TVL}_{j,t}$ is the market value of assets deposited in protocol $j$'s smart
-contracts at month-end $t$. TVL proxies for the scale of economic activity a protocol
-intermediates---the token analog of on-chain transaction volume in the QTM framework---and
-is the natural denominator for a price-to-fundamentals ratio in DeFi. Where a protocol is
-deployed across multiple chains, we use the sum of all-chain TVL.
+For the token regression track, the valuation anchor is the Growth-Levelized Network
+Value to Total Value Locked ratio, constructed with the same discounted-present-value
+machinery as NVT\_GL. Total Value Locked---the market value of assets deposited in a
+protocol's smart contracts---proxies for the scale of economic activity the protocol
+intermediates, and is the token analog of on-chain transaction volume in the QTM
+framework. Because TVL is a stock rather than a flow, the base is a trailing average
+level rather than a trailing sum:
+\begin{align}
+    \text{NV/TVL\_GL}_{j,t} &= \frac{\text{MC}_{j,t}}{\text{TVL}^*_{j,t}}, \label{eq:nv_tvl_gl} \\[6pt]
+    \text{TVL}^*_{j,t} &= \frac{\displaystyle
+        \sum_{s=1}^{n} \frac{\text{TVL}_{0,j,t}(1+g_{j,t})^{\!s}}{(1+r_{e,j,t})^{\!s}}
+        + \frac{\text{TVL}_{0,j,t}(1+g_{j,t})^{\!n}(1+g_\infty)}{(r_{e,j,t}-g_\infty)(1+r_{e,j,t})^{\!n}}
+    }{\displaystyle
+        \frac{1-(1+r_{e,j,t})^{-n}}{r_{e,j,t}}
+    }, \label{eq:tvl_star}
+\end{align}
+where $\text{TVL}_{0,j,t}$ is the trailing twelve-month average of month-end TVL for
+protocol $j$ (requiring at least six monthly observations); $g_{j,t}$ is the trailing
+three-year compound annual growth rate of $\text{TVL}_0$, with two- and one-year
+fallbacks and the same $[-50\%,\,200\%]$ cap; and all remaining
+parameters---$n$, $g_\infty$, $r_f$, MRP, and the beta construction---are identical to
+those in \eqref{eq:pq_star}, so the coin and token tracks share a single set of
+valuation assumptions. Where a protocol is deployed across multiple chains, TVL is the
+sum of all-chain TVL.
 
-A low NV/TVL indicates that market capitalization is modest relative to the economic
-activity under the protocol's control. A high NV/TVL indicates that market capitalization
-substantially exceeds the protocol's current economic footprint. Unlike NVT\_GL, NV/TVL
-is not growth-adjusted: TVL is itself a current-period flow variable that captures
-realized protocol adoption, and a separate growth correction would risk double-counting
-the forward information already embedded in TVL levels.
+The growth adjustment serves the same purpose as in the coin track: a protocol whose TVL
+is expanding rapidly may appear expensive on a raw NV/TVL basis but inexpensive once
+expected growth is priced in, and conversely a protocol with collapsing TVL may appear
+deceptively cheap on the raw ratio. A low NV/TVL\_GL indicates that market capitalization
+is modest relative to the growth-adjusted present value of the protocol's economic
+footprint; a high NV/TVL\_GL indicates the reverse.
 
 %=============================================================
 \section{Data}
@@ -575,8 +593,11 @@ to lie within 5\% of the chain total. The resulting NVT\_GL panel covers 67 asse
 2,526 valid asset-months from August 2016 through May 2026.
 
 Total Value Locked is sourced from DeFiLlama at daily granularity, snapped to month-end;
-multi-chain protocols use the sum of all-chain TVL. The TVL panel covers 162 assets and
-8,066 asset-months from September 2017 through May 2026.
+multi-chain protocols use the sum of all-chain TVL. The raw TVL panel covers 162 assets
+and 8,066 asset-months from September 2017 through May 2026. Applying the
+growth-levelization of \eqref{eq:tvl_star}---which requires a trailing twelve-month TVL
+average and at least one year of prior history for the growth estimate---yields an
+NV/TVL\_GL panel of 111 assets and 3,125 asset-months from January 2021 through May 2026.
 
 \subsection{Sample Construction}
 \label{sec:data_sample}
@@ -603,9 +624,13 @@ $\lambda_z$; and (iv) at least one month of positive NVT\_GL. This yields 24 ass
 718 asset-months spanning December 2020 through May 2026. The median NVT\_GL in this
 sample is 0.017 and median market capitalization is \$820 million. The \textit{token
 regression sample} requires: (i) token classification; (ii) non-missing $\lambda_z$; and
-(iii) positive TVL. This yields 136 assets and 4,627 asset-months spanning March 2020
-through May 2026. Median TVL is \$55.8 million (IQR: \$6.2M--\$511.6M) and median
-market capitalization is \$120 million.
+(iii) positive NV/TVL\_GL. This yields 101 assets and 2,771 asset-months spanning
+January 2021 through May 2026. Median NV/TVL\_GL is 2.29 (IQR: 0.20--16.10), median TVL
+is \$42.2 million, and median market capitalization is \$98 million.\footnote{The
+growth-levelization requirement shortens the token sample relative to a raw NV/TVL
+alternative (136 assets, 4,627 asset-months from March 2020): assets without at least one
+year of prior TVL history have no growth estimate and drop out. The raw NV/TVL sample is
+retained for robustness comparisons.}
 
 Several populations are excluded from one or both samples by data structure. Proof-of-work
 coins have no staking mechanism and are therefore outside the scope of Hypothesis~1a,
@@ -620,9 +645,9 @@ but not to the regression sample intersection. Channel 2 (holding) applies only 
 EVM-compatible assets; PoW coins with UTXO-based ledger accounting require a different
 pipeline based on UTXO age analysis and are left to future work.
 
-The combined regression panel spans 160 unique assets and 5,345 asset-months. At the end
-of the sample in May 2026, the panel accounts for \$465 billion in market
-capitalization---19.5\% of the \$2.38 trillion CoinMarketCap universe---consistent with
+The combined regression panel spans 125 unique assets and 3,489 asset-months. At the end
+of the sample in May 2026, the panel accounts for \$451 billion in market
+capitalization---19.0\% of the \$2.38 trillion CoinMarketCap universe---consistent with
 the concentration of on-chain governance and staking infrastructure among the larger
 assets in the market.
 
@@ -648,11 +673,12 @@ Conviction panel ($\lambda_z$) & 467   & 13,626  & 2016-12 to 2026-05 & --- \\
 \quad ch3 delegation       & 26    & 627     & 2020-05 to 2026-05 & --- \\
 \quad ch3 voting           & 53    & 1,202   & 2020-08 to 2026-05 & --- \\
 NVT\_GL panel              & 67    & 2,526   & 2016-08 to 2026-05 & --- \\
-TVL panel                  & 162   & 8,066   & 2017-09 to 2026-05 & --- \\
+TVL panel (raw)            & 162   & 8,066   & 2017-09 to 2026-05 & --- \\
+NV/TVL\_GL panel           & 111   & 3,125   & 2021-01 to 2026-05 & --- \\
 \midrule
-Coin regression (NV/PQ*)   & 24    & 718     & 2020-12 to 2026-05 & \$820M \\
-Token regression (NV/TVL)  & 136   & 4,627   & 2020-03 to 2026-05 & \$120M \\
-Combined                   & 160   & 5,345   & 2020-03 to 2026-05 & \$147M \\
+Coin regression (NVT\_GL)  & 24    & 718     & 2020-12 to 2026-05 & \$820M \\
+Token regression (NV/TVL\_GL) & 101 & 2,771  & 2021-01 to 2026-05 & \$98M \\
+Combined                   & 125   & 3,489   & 2020-12 to 2026-05 & \$138M \\
 \bottomrule
 \end{tabular}
 \smallskip
@@ -663,8 +689,9 @@ asset-months with a positive price observation. Conviction panel sub-channel cou
 to more than the panel total because 1,725 asset-months appear in two or more channels.
 Coin regression requires simultaneous non-missing $\lambda_z$ and positive NVT\_GL for
 proof-of-stake coins. Token regression requires simultaneous non-missing $\lambda_z$ and
-positive TVL. Median NVT\_GL in the coin regression sample is 0.017. Median TVL in the
-token regression sample is \$55.8M (IQR: \$6.2M--\$511.6M).
+positive NV/TVL\_GL. Median NVT\_GL in the coin regression sample is 0.017. Median
+NV/TVL\_GL in the token regression sample is 2.29 (IQR: 0.20--16.10); median TVL is
+\$42.2M.
 }
 \end{table}
 
