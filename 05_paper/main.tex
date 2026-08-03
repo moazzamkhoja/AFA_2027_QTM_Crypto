@@ -607,49 +607,94 @@ database, observed at end-of-calendar-month from August 2015 through May 2026, y
 156,838 asset-month observations.\footnote{All assets with at least one non-zero price
 observation in CoinMarketCap are included. Market capitalization is computed as reported
 price times circulating supply. Continuous coverage is not required; assets may enter and
-exit the panel as they gain or lose listing.}
+exit the panel as they gain or lose listing.} Table~\ref{tab:funnel} traces the path
+from this universe to the two regression samples; we walk through each step in turn.
 
-Assets are classified into three mutually exclusive types: \textit{coins} (native
-settlement assets of a public blockchain, e.g., BTC, ETH, SOL), \textit{tokens}
-(smart-contract-issued assets deployed on a host chain, e.g., ERC-20 governance and DeFi
-tokens), and \textit{other} (stablecoins, wrapped tokens, and infrastructure assets whose
-value is structurally indexed to an external reference or operating entity).
-Other-class assets are excluded from both regression samples because neither the SoV/MoE
-framework nor the governance moat framework applies to their valuation.
+The first cut is by asset class. Each of the 1,939 assets is classified as a
+\textit{coin} (native settlement asset of a public blockchain, e.g., BTC, ETH, SOL), a
+\textit{token} (smart-contract-issued asset deployed on a host chain, e.g., ERC-20
+governance and DeFi tokens), or \textit{other}. The other class---858 assets comprising
+stablecoins, wrapped and bridged representations, and exchange or infrastructure assets
+whose value is structurally indexed to an external reference---is excluded outright:
+neither the SoV/MoE framework nor the governance moat framework applies to an asset whose
+price is pegged or mechanically derived. This leaves 1,081 candidates: 633 coins and 448
+tokens.
 
-The two regression samples are defined by simultaneous availability of $\lambda_z$ and
-a positive valuation denominator. The \textit{coin regression sample} requires: (i) coin
-classification; (ii) proof-of-stake architecture; (iii) at least one month of non-missing
-$\lambda_z$; and (iv) at least one month of positive NVT\_GL. This yields 24 assets and
-718 asset-months spanning December 2020 through May 2026. The median NVT\_GL in this
-sample is 0.017 and median market capitalization is \$820 million. The \textit{token
-regression sample} requires: (i) token classification; (ii) non-missing $\lambda_z$; and
-(iii) positive NV/TVL\_GL. This yields 101 assets and 2,771 asset-months spanning
-January 2021 through May 2026. Median NV/TVL\_GL is 2.29 (IQR: 0.20--16.10), median TVL
-is \$42.2 million, and median market capitalization is \$98 million.\footnote{The
+The coin track requires a staking channel through which conviction is expressed and
+seigniorage earned (Section~\ref{sec:theory_coins}). Of the 633 coins, 323 are
+proof-of-work only and have no staking mechanism; they are outside the scope of
+Hypothesis~1a, though they contribute to NVT\_GL baseline tests. A further 24 could not
+be verified as proof-of-stake from chain documentation. Of the remaining 286
+proof-of-stake candidates, historical staking ratios could be reconstructed for
+30;\footnote{The binding constraint is archive depth: most chains' public endpoints
+serve only recent state, either because nodes prune aggressively or because historical
+queries are routed through commercial indexers. Chains with recoverable history are
+documented in Section~\ref{sec:data_sources}.} of these, 24 also have the on-chain
+volume history required for NVT\_GL. The \textit{coin regression sample} is therefore
+24 assets and 718 asset-months spanning December 2020 through May 2026, with median
+NVT\_GL of 0.017 and median market capitalization of \$820 million.
+
+The token track requires TVL as the fundamental denominator. Of the 448 tokens, 299 have
+no DeFiLlama TVL coverage---predominantly utility, memetic, and infrastructure tokens for
+which protocol TVL is not defined---leaving 149. Three of these lack any conviction
+channel observation, leaving 146 with both $\lambda_z$ and TVL. Of these, 45 drop out of
+the growth-levelized sample because their TVL history is too short to estimate a growth
+rate or does not overlap with their conviction observations.\footnote{The
 growth-levelization requirement shortens the token sample relative to a raw NV/TVL
 alternative (136 assets, 4,627 asset-months from March 2020): assets without at least one
 year of prior TVL history have no growth estimate and drop out. The raw NV/TVL sample is
-retained for robustness comparisons.}
+retained for robustness comparisons.} The \textit{token regression sample} is therefore
+101 assets and 2,771 asset-months spanning January 2021 through May 2026, with median
+NV/TVL\_GL of 2.29 (IQR: 0.20--16.10), median TVL of \$42.2 million, and median market
+capitalization of \$98 million.
 
-Several populations are excluded from one or both samples by data structure. Proof-of-work
-coins have no staking mechanism and are therefore outside the scope of Hypothesis~1a,
-though they contribute to NVT\_GL baseline tests. Among PoS coins, historical staking
-data is unavailable for chains whose archive nodes do not retain historical state, either
-due to aggressive pruning or reliance on third-party indexers for pre-recent-block queries.
-Among tokens, approximately 1,100 assets have no DeFiLlama TVL entry because they serve as
-utility, memetic, or infrastructure tokens for which protocol TVL is not defined. The
-remaining coverage gap arises from temporal non-overlap: tokens for which conviction data
-is available only after the period of active TVL reporting contribute to individual panels
-but not to the regression sample intersection. Channel 2 (holding) applies only to
-EVM-compatible assets; PoW coins with UTXO-based ledger accounting require a different
-pipeline based on UTXO age analysis and are left to future work.
+\begin{table}[ht]
+\centering
+\caption{Sample Construction}
+\label{tab:funnel}
+\small
+\begin{tabular}{lrr}
+\toprule
+ & Excluded & Remaining \\
+\midrule
+CoinMarketCap universe, 2015-08 to 2026-05 & & 1,939 \\
+Less: other class (stablecoins, wrapped, infrastructure) & 858 & 1,081 \\
+\midrule
+\multicolumn{3}{l}{\textit{Coin track}} \\
+Coins & & 633 \\
+Less: proof-of-work only (no staking channel) & 323 & 310 \\
+Less: consensus type unverifiable & 24 & 286 \\
+Less: historical staking data unrecoverable & 256 & 30 \\
+Less: no on-chain volume overlap (NVT\_GL) & 6 & \textbf{24} \\
+\midrule
+\multicolumn{3}{l}{\textit{Token track}} \\
+Tokens & & 448 \\
+Less: no DeFiLlama TVL coverage & 299 & 149 \\
+Less: no conviction channel observed & 3 & 146 \\
+Less: TVL history insufficient for growth estimate & 45 & \textbf{101} \\
+\midrule
+Combined regression panel & & \textbf{125} \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\parbox{0.85\linewidth}{\footnotesize
+\textit{Notes:} Each row removes assets failing the stated requirement, conditional on
+surviving all prior rows. The coin regression sample requires proof-of-stake
+architecture, at least one month of reconstructed staking-based $\lambda_z$, and
+overlapping positive NVT\_GL. The token regression sample requires DeFiLlama TVL
+coverage, at least one conviction channel, and sufficient TVL history for the
+growth-levelized denominator TVL$^*$ (at least one year).
+}
+\end{table}
 
 The combined regression panel spans 125 unique assets and 3,489 asset-months. At the end
 of the sample in May 2026, the panel accounts for \$451 billion in market
 capitalization---19.0\% of the \$2.38 trillion CoinMarketCap universe---consistent with
 the concentration of on-chain governance and staking infrastructure among the larger
-assets in the market.
+assets in the market. Channel 2 (holding) applies only to EVM-compatible assets; PoW
+coins with UTXO-based ledger accounting require a separate pipeline based on UTXO age
+analysis and are left to future work.
 
 \subsection{Summary Statistics}
 \label{sec:data_stats}
