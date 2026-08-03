@@ -28,23 +28,26 @@ Store of Value, Medium of Exchange, and the Economic Moat Signal}}
 \maketitle
 
 \begin{abstract}
-We apply the Quantity Theory of Money (QTM) to the cross-sectional valuation of
-cryptocurrencies and protocol tokens. Treating each digital asset as the currency of a
-self-contained economy, we decompose market capitalization into a Medium of Exchange
-(MoE) component, priced by the free-circulating velocity of supply, and a Store of Value
-(SoV) residual. The key innovation is $\lambda$---the fraction of total supply that is
-locked or staked---which partitions the circulating supply into economically active and
-inert components. A central result is that the SoV/MoE ratio simplifies to
-$\lambda/(1-\lambda)$, directly observable from on-chain data without velocity estimation.
-For native blockchain coins, high $\lambda$ reflects a convenience yield and seigniorage
-signal grounded in monetary search theory. For governance and utility tokens, high
-$\lambda$ is an economic moat signal, capturing token holder fundamental conviction in
-platform growth. We show that $\lambda/(1-\lambda)$ alone positively predicts future
-cross-sectional returns, and that this predictability is substantially stronger when the
-asset is cheap relative to its fundamental economic activity---measured by our
-Growth-Levelized NVT ratio---supporting the interpretation that NVT identifies when the
-conviction signal is not yet priced in. A long Stars/short Avoid portfolio generates
-positive factor-adjusted alpha after controlling for market, size, and momentum factors.
+We apply the Quantity Theory of Money (QTM) to the cross-sectional valuation of digital
+assets, with an explicit distinction between two fundamentally different asset types.
+For native proof-of-stake coins---monetary instruments of decentralized blockchain
+networks---locking supply into validation contracts creates a Store of Value (SoV)
+premium distinct from the Medium of Exchange (MoE) component. The SoV/MoE ratio
+simplifies to $\lambda/(1-\lambda)$, the ratio of locked to freely circulating supply,
+observable on-chain without any velocity estimation. For governance and DeFi protocol
+tokens, no SoV/MoE decomposition applies because these assets lack a
+medium-of-exchange function. Instead, $\lambda$---the fraction of supply voluntarily
+committed to governance or protocol staking---is an economic moat signal: holders who
+forgo liquidity to govern a protocol reveal fundamental conviction in its growth through a
+costly, credible action. In both cases $\lambda$ positively predicts cross-sectional
+returns; the predictive power is concentrated among assets that are simultaneously cheap
+relative to their fundamental economic activity. We condition on the Growth-Levelized NVT
+ratio (market capitalization relative to discounted expected on-chain volume, NVT\_GL) for
+coins, and on the NV/TVL ratio (market capitalization relative to Total Value Locked) for
+tokens. Across a panel of 160 assets from March 2020 through May 2026, a long-Stars
+(high $\lambda$, low valuation ratio) / short-Avoid (low $\lambda$, high valuation ratio)
+portfolio generates significant factor-adjusted alpha after controlling for market, size,
+and momentum.
 \end{abstract}
 
 \newpage
@@ -54,120 +57,89 @@ positive factor-adjusted alpha after controlling for market, size, and momentum 
 \label{sec:intro}
 %=============================================================
 
-What determines the value of a cryptocurrency? The dominant approach in the literature
-has been to adapt discounted cash flow (DCF) models, searching for a dividend-like
-flow---transaction fees, staking rewards, governance rights---that can be capitalized
-into a present value \citep{liu2021risks, pagnotta2022equilibrium, biais2019blockchain}.
-This approach, however, mischaracterizes the fundamental nature of digital assets.
-Cryptocurrencies and protocol tokens exhibit currency-like behavior: each coin or token
-is the monetary instrument of a self-contained digital economy, and its value is governed
-by the same forces that determine the value of any currency---the scale of economic
-activity it enables and the efficiency with which it circulates. The correct framework,
-we argue, is the Quantity Theory of Money \citep{fisher1911}.
+The cryptocurrency and DeFi ecosystem contains two economically distinct types of digital
+asset that require different valuation frameworks. \textit{Native blockchain coins}---ETH,
+SOL, ADA, TRX, and their peers---are the monetary instruments of decentralized computing
+networks. Their value is governed, to a first approximation, by the same forces that
+determine the value of any currency: the scale of economic activity conducted on the
+network and the efficiency with which the coin circulates. The correct framework is the
+Quantity Theory of Money \citep{fisher1911}. \textit{Governance and DeFi protocol
+tokens}---UNI, AAVE, CRV, LDO, and hundreds of smart-contract-issued assets---are the
+governance and incentive instruments of decentralized financial protocols. Their value
+reflects the productive capacity of the protocol, not coin velocity. The correct framework
+for these assets is a governance moat model. This paper develops both frameworks, derives
+a common conviction signal $\lambda$ applicable across both asset types, and shows that
+$\lambda$ positively predicts cross-sectional returns in each. The mechanics of how
+$\lambda$ generates that predictability, and how it should be measured and conditioned
+upon, differ across the two tracks.
 
-The Fisher equation, $MV = PQ$, relates the stock of money ($M$) and its velocity ($V$)
-to the nominal value of economic output ($PQ$) \citep{fisher1911}. Applied to digital
-assets, a cryptocurrency's market capitalization proxies its money supply, and the
-economic output it supports---on-chain transaction volume for native coins, protocol
-throughput for tokens---is its $PQ$. This is not merely an analogy.
-\citet{cong2021tokenomics} develop a formal dynamic model in which token prices aggregate
-heterogeneous users' transactional demand, with equilibrium prices governed by platform
-adoption---a formulation directly consistent with the QTM framework we develop here.
-\citet{sockin2020model} similarly model tokens as platform membership instruments,
-showing that the token price reflects the present value of the convenience yield accruing
-to participants: the non-pecuniary benefit of network membership, including access to
-platform services, network liquidity, and future transactional capability.
+For native coins, the starting point is the Fisher equation, $MV = PQ$: market
+capitalization ($M$, the money supply proxy) times velocity ($V$) equals nominal on-chain
+output ($PQ$), the annualized value of economic transactions conducted on the network.
+Not all circulating supply is economically active, however. A growing fraction is locked
+in proof-of-stake validation contracts, pledged as governance collateral, or held dormant
+with near-zero velocity. These holdings perform no current transactional function: they
+contribute to money supply but not to exchange. Separating economically active from inert
+supply, we show that market capitalization decomposes into a Medium of Exchange (MoE)
+component, priced by the velocity of unlocked supply, and a Store of Value (SoV) premium,
+reflecting holder conviction about future network growth \citep{sockin2020model,
+krishnamurthy2012aggregate}. The formal derivation in Appendix~\ref{app:derivations}
+establishes that this SoV/MoE ratio simplifies to
+\begin{equation}
+\frac{\text{MC}_{\text{SoV}}}{\text{MC}_{\text{MoE}}} = \frac{\lambda}{1-\lambda},
+\label{eq:sov_moe}
+\end{equation}
+where $\lambda$ is the fraction of total supply locked or staked. This ratio is directly
+observable from on-chain data without any velocity estimation. For PoS coins, locking is
+grounded in rational optimization: seigniorage distributed to stakers constitutes newly
+issued monetary income \citep{cong2024staking}, and the staking decision reveals that
+this income plus anticipated price appreciation exceeds the opportunity cost of forgoing
+liquidity. The SoV premium is thus the present value of expected future convenience
+yields anticipated by committed holders \citep{krishnamurthy2012aggregate, nagel2016liquidity}.
+Monetary search theory \citep{kiyotaki1993search, lagos2005unified} further implies that
+high $\lambda$ is self-reinforcing: the same coordination dynamics that make money valuable
+make a high-$\lambda$ holder base a credible signal of network adoption. For PoW coins
+(BTC, LTC, and others without a validator staking mechanism), the SoV/MoE decomposition
+applies in principle, but $\lambda$ can only be approximated through supply dormancy---the
+HODL-wave approach---rather than staking. We discuss this separately in
+Section~\ref{sec:measures}.
 
-Before proceeding, we define the two components of value our framework decomposes. The
-\textit{Medium of Exchange} (MoE) value of a digital asset is the value attributable to
-its current transactional function: the economic activity it enables today, priced by the
-velocity with which it circulates. The \textit{Store of Value} (SoV) value is the premium
-agents are willing to pay today by forgoing current exchange utility---the transactions,
-goods, services, or alternative investments they could obtain by spending the asset
-now---in anticipation of future value appreciation. This appreciation is expected to arise
-from network growth, expanding user adoption, increasing utility, and innovation. An agent
-holding Ethereum rather than spending it is implicitly paying an intertemporal price: she
-sacrifices today's exchange utility for her conviction that the network's future worth
-exceeds today's use value. The SoV component is the aggregate market valuation of this
-forward-looking conviction.
+For governance tokens, the SoV/MoE decomposition does not apply. A governance token such
+as UNI does not need to change hands to facilitate Uniswap trades; it confers governance
+rights, not transactional capacity. There is no MoE component to separate from an SoV
+premium: the QTM velocity framework is not the right model. What $\lambda$ signals for
+tokens is instead \textit{governance conviction}. When a holder locks tokens into a DAO
+contract or delegates voting power, they incur a real cost---illiquidity, monitoring
+effort, foregone trading flexibility---and by doing so they reveal, through a costly and
+observable action, a fundamental belief in the protocol's future that passive holders do
+not share. Drawing on \citet{spence1973job}, the costliness of the action is what makes
+it credible. Drawing on \citet{hirschman1970exit} and \citet{edmans2011governance},
+exercising voice (governance participation) rather than exit (selling) is the behavioral
+marker of committed, informed principals. The fraction of supply committed to governance
+is therefore an economic moat indicator: protocols with high $\lambda$ have cultivated a
+holder base sufficiently convinced of their growth trajectory to pay the participation
+cost.
 
-The QTM framework requires a critical extension to operationalize this decomposition. Not
-all of a cryptocurrency's circulating supply is economically active. A substantial and
-growing fraction is locked in staking contracts, pledged as governance collateral, or held
-in long-term custody with near-zero velocity. These holdings are economically inert from
-a transactional standpoint: they contribute to the money supply but perform no current
-exchange function. Conflating active and inactive supply distorts velocity estimates and,
-consequently, misprices the economic content of market capitalization. We address this by
-introducing $\lambda$, defined as the proportion of the total supply that is locked or
-staked---including tokens committed to network validation, governance contracts, and other
-long-term holding functions. The formal derivations are provided in
-Appendix~\ref{app:derivations}. The key result is that the SoV/MoE ratio simplifies to
-$\lambda/(1-\lambda)$: a monotone, directly observable function of $\lambda$ alone,
-requiring no velocity estimation.
-
-Why does $\lambda$ matter beyond its role in the decomposition? For native blockchain
-coins---Ethereum, Solana, and their peers---high $\lambda$ is grounded in three
-complementary theoretical traditions. First, \textit{monetary search theory}
-\citep{kiyotaki1993search, lagos2005unified} establishes that money emerges as a
-coordination equilibrium: an asset becomes valuable because rational agents expect others
-to hold and accept it. High $\lambda$ is the blockchain-observable, publicly verifiable
-signal of this coordination commitment. Second, the \textit{convenience yield}
-\citep{sockin2020model, krishnamurthy2012aggregate} is the non-pecuniary benefit agents
-derive from holding a monetary asset: access to network security, platform liquidity, and
-future transactional capability. Just as holders of U.S. Treasury securities accept lower
-yields in exchange for liquidity services \citep{nagel2016liquidity}, holders of dominant
-blockchain coins accept lower required returns because network membership has value beyond
-current transactions. Crucially, the SoV premium is the present value of expected
-\textit{future} convenience yields: agents who lock coins today are paying for anticipated
-growth in the network's membership value. Third, the \textit{seigniorage} channel
-\citep{cong2024staking} anchors this signal in rational optimization: in proof-of-stake
-networks, newly minted tokens distributed to stakers constitute monetary seigniorage, and
-the staking decision reveals belief that this income plus anticipated price appreciation
-exceeds the opportunity cost of locking capital. These three channels are complementary:
-coordination theory explains why high $\lambda$ is self-reinforcing, convenience yield
-provides the holding motive, and seigniorage grounds the rational optimization.
-
-Governance and utility tokens present a related but distinct case. A governance token
-such as UNI is the monetary instrument of the Uniswap protocol economy. Its economic
-output is the total throughput of the Uniswap protocol---decentralized exchange volume,
-liquidity deployed, fees generated. Whether protocol revenue currently accrues to token
-holders is immaterial, just as it is immaterial whether U.S. GDP flows to dollar holders.
-This framing aligns with \citet{cong2021tokenomics}, who price tokens on the present
-value of future platform utility and adoption, and \citet{schilling2019bitcoin}, who
-model the value of digital currencies as functions of the economic activity they support.
-For governance tokens, $\lambda$ carries a different signal. Staking a governance token
-into a DAO contract renders it illiquid: staked tokens cannot be sold while locked. An
-agent who voluntarily incurs this illiquidity cost reveals a preference for future
-appreciation over present liquidity---a choice grounded in assessments of network effects,
-utility expansion, competitive positioning, and innovation trajectory. Drawing on
-\citet{hirschman1970exit}, holders who exercise \textit{voice} (governance participation)
-rather than \textit{exit} (selling) reveal a preference for the protocol's future that
-passive buyers do not. \citet{edmans2011governance} formalize this in a corporate
-setting: blockholders who engage rather than exit create governance value precisely because
-engagement is costly and therefore credible. Applied to tokens, active governance
-participation is a costly signal \citep{spence1973job} of fundamental conviction in
-platform growth, making high participation rates an economic moat indicator.
-
-We operationalize these ideas in two metrics. The \textit{SoV/MoE ratio}---equal to
-$\lambda/(1-\lambda)$---measures the balance between forward-looking conviction and
-current transactional utility, and is our primary return predictor. The
-\textit{Growth-Levelized NVT ratio} normalizes market capitalization by the present value of
-the network's expected transaction stream (constructed analogously to a PMT-based
-discounted cash flow, as detailed in Section~\ref{sec:data}), yielding a measure of
-whether the asset is cheap or expensive relative to its fundamental economic activity.
-Crucially, Growth-Levelized NVT does not carry its own independent theoretical prediction for
-returns. Rather, it serves as a conditioning variable: high $\lambda/(1-\lambda)$ is most
-valuable as a return predictor when the market has not yet priced in the underlying
-conviction signal---that is, when Growth-Levelized NVT is low. Assets that combine high
-conviction with cheap valuation (Stars) offer the best expected returns; assets that
-combine low conviction with expensive valuation (Avoid) offer the worst. We find that
-$\lambda/(1-\lambda)$ alone positively predicts future returns cross-sectionally for both
-coins and governance tokens. The predictive power is substantially stronger for assets
-with below-median Growth-Levelized NVT, consistent with the view that NVT identifies when the
-conviction signal remains unpriced. A long Stars/short Avoid calendar-time portfolio
-generates an annualized alpha of [X]\% with a Sharpe ratio of [Y] after controlling for
-market, size, and momentum factors, with the results holding separately for coins and
-governance tokens.
+Despite the different economic mechanisms, the empirical structure of the conviction signal
+is common to both asset types. In both cases, aggregate locking behavior reveals
+information about the asset's future trajectory that price does not yet fully reflect:
+for coins because extracting the signal from $\lambda$ requires knowing the distribution
+of private costs and signal noise---not common knowledge---and for tokens because
+governance participation data are read by few market participants. Both tracks motivate a
+partial-revelation story in the spirit of \citet{grossman1980impossibility}: the
+conviction signal is not costlessly impounded into price, so high-$\lambda$ assets
+systematically outperform as the signal is gradually validated. The conditioning variable
+measures how much of the signal the market has already absorbed. For coins, this is the
+Growth-Levelized NVT ratio, $\text{NVT\_GL} = \text{MC}/PQ^*$, where $PQ^*$ is the
+discounted present value of expected on-chain transaction volume, growth-adjusted
+analogously to a DCF model. For tokens, this is the NV/TVL ratio, market capitalization
+divided by Total Value Locked. Low NVT\_GL for a coin, or low NV/TVL for a token,
+indicates that the market has not yet priced in the conviction signal embedded in
+$\lambda$. Assets combining high $\lambda$ with low valuation ratio---\textit{Stars} in
+our quadrant---offer the best expected returns; those combining low $\lambda$ with high
+valuation ratio---\textit{Avoid}---offer the worst. Our main empirical result is that
+this quadrant framework delivers positive and significant factor-adjusted alpha across
+both the coin and token subsamples.
 
 \paragraph{Related Literature.}
 A growing body of work attempts to value digital assets, and our paper connects to
@@ -194,240 +166,466 @@ literature \citep{krishnamurthy2012aggregate, nagel2016liquidity} motivates the 
 premium in $\text{MC}_{\text{SoV}}$. On token issuance and governance,
 \citet{howell2020initial} study the determinants of ICO success;
 \citet{chod2021theory} model ICO design under information asymmetry; and
-\citet{edmans2011governance}, \citet{hirschman1970exit}, and \citet{dao2024governance}
-provide the governance theory and evidence linking participation to token value. Our
+\citet{edmans2011governance} and \citet{hirschman1970exit} provide the governance
+theory linking holder participation to firm and protocol value. Our
 paper is the first, to our knowledge, to derive a directly observable valuation
 decomposition from QTM, to distinguish the signal content of $\lambda$ for coins versus
 governance tokens, and to demonstrate that the interaction of conviction and valuation
 predicts cross-sectional cryptocurrency returns.
 
 The remainder of the paper is organized as follows. Section~\ref{sec:theory} develops
-the theoretical framework and states the paper's testable hypotheses.
-Section~\ref{sec:data} describes the data and variable measurement.
-Section~\ref{sec:results} presents the main results. Section~\ref{sec:robust} reports
-robustness tests. Section~\ref{sec:conclusion} concludes.
+the theoretical frameworks for coins (SoV/MoE) and tokens (governance moat) and derives
+the testable propositions. Section~\ref{sec:measures} defines and constructs the three
+key variables: the conviction index $\lambda$, the Growth-Levelized NVT ratio for coins,
+and the NV/TVL ratio for tokens. Section~\ref{sec:data} describes the data sources,
+sample construction, and summary statistics. Section~\ref{sec:results} presents the
+cross-sectional return predictability and portfolio results. Section~\ref{sec:robust}
+reports robustness tests. Section~\ref{sec:conclusion} concludes.
 
 %=============================================================
-\section{Theoretical Framework and Hypothesis Development}
+\section{Theoretical Framework}
 \label{sec:theory}
 %=============================================================
 
-The QTM decomposition in Appendix~\ref{app:derivations} is an accounting identity: given
-$\lambda$, the SoV/MoE ratio follows mechanically. It is not, by itself, a behavioral
-prediction. This section asks why $\lambda$, and its interaction with valuation, should
-predict future returns. We develop two stylized one-period models---one for the locking
-decision common to coins and governance tokens, and one for the price-discovery role of
-Growth-Levelized NVT---each built directly on the theoretical traditions introduced in
-Section~\ref{sec:intro}. Each model yields a proposition, stated formally as a hypothesis,
-that we take to the data in Section~\ref{sec:results}.
+This section develops the theoretical argument in three steps. Section~\ref{sec:theory_coins}
+establishes the coin framework: QTM applied to native blockchain coins yields a SoV/MoE
+decomposition in which the locking ratio $\lambda$ is the sufficient statistic.
+Section~\ref{sec:theory_tokens} develops the token framework: governance tokens lack a
+medium-of-exchange function, so $\lambda$ is reinterpreted as a governance moat signal
+grounded in costly signaling theory. Section~\ref{sec:theory_valuation} introduces the
+common valuation-conditioning mechanism that applies across both tracks. Each subsection
+closes with the empirical propositions we test.
 
-\subsection{The Locking Decision}
-\label{sec:theory_locking}
+\subsection{The Coin Framework: SoV/MoE and the Staking Ratio}
+\label{sec:theory_coins}
 
-Consider a continuum of agents, indexed by $i \in [0,1]$, who hold the native asset of a
-self-contained digital economy at date $t$---the native coin of a blockchain network, or
-the governance token of a protocol built on it---and choose whether to lock it for one
-period (stake, or commit it to a governance contract) or hold it freely circulating. The
-derivation below is for a single, fixed asset; we suppress an explicit asset index
-throughout, since the agent-level mechanism below is identical for any asset held fixed,
-with all asset-level heterogeneity entering only through $\theta_{t+1}$ and $b_t$. The
-empirical content of the model is fundamentally a cross-sectional claim across assets,
-which we make explicit when restating it as Proposition 1 below.
-
-Locking pays a current, publicly observed benefit $b_t \geq 0$: for proof-of-stake coins,
-newly issued seigniorage distributed to validators \citep{cong2024staking}; for governance
-tokens, a direct fee or yield share distributed to stakers where the protocol has one, and
-$b_t = 0$ for protocols with no revenue-sharing mechanism. Locking also carries a
-convenience yield realized at $t+1$, the non-pecuniary benefit of network or protocol
-membership emphasized by \citet{sockin2020model}: validation or governance rights,
-platform liquidity, and anticipated future transactional capability. We decompose agent
-$i$'s convenience yield into a common component $\theta_{t+1}$---the asset's true future
-growth trajectory, unobserved at $t$---and an idiosyncratic, mean-zero noise term
-$\varepsilon_i$ reflecting agent $i$'s imperfect private read on that trajectory:
-$c_{i,t+1} = \theta_{t+1} + \varepsilon_i$, with $\varepsilon_i$ i.i.d.\ across agents and
-independent of $\theta_{t+1}$.
-
-Locking also imposes a private cost $\varphi_i$, i.i.d.\ across agents and independent of
-$(\theta_{t+1}, \varepsilon_i)$. For coins, $\varphi_i$ is purely a liquidity cost,
-reflecting each agent's individual demand for transactional flexibility. For governance
-tokens, $\varphi_i = \ell + \kappa_i$ decomposes into a common lock-induced illiquidity
-cost $\ell \geq 0$---positive for vote-escrow protocols that require an explicit time lock
-(e.g., Curve's veCRV, Balancer's veBAL), zero for protocols whose governance requires no
-lock (e.g., Uniswap, Compound)---and an idiosyncratic engagement cost $\kappa_i \geq 0$,
-the time and attention cost of participating in governance, i.e., exercising
-\textit{voice} rather than \textit{exit} \citep{hirschman1970exit, edmans2011governance}.
-Agent $i$ locks if and only if
+The QTM identity applied to a native blockchain coin treats market capitalization as
+money supply: $\text{MC} \cdot V = PQ$, where $V$ is the velocity of supply in
+transactional use and $PQ$ is nominal on-chain output. The critical observation is that
+supply is heterogeneous in velocity. A fraction $\lambda$ of total circulating supply is
+locked in proof-of-stake validation contracts, staked to earn seigniorage, or otherwise
+immobilized with near-zero velocity. The complementary fraction $(1-\lambda)$ is freely
+circulating and economically active. Only the active fraction supports transactions;
+the locked fraction is held as a store of value and does not circulate. Partitioning
+supply accordingly, the appendix shows that market capitalization decomposes as
 \[
-b_t + \theta_{t+1} + \varepsilon_i \geq \varphi_i \quad\Longleftrightarrow\quad
+\text{MC} = \underbrace{\frac{PQ}{V_{\text{active}}}}_{\text{MC}_{\text{MoE}}} + \underbrace{\frac{PQ}{V_{\text{active}}} \cdot \frac{\lambda}{1-\lambda}}_{\text{MC}_{\text{SoV}}},
+\]
+and therefore the SoV/MoE ratio satisfies
+\[
+\frac{\text{MC}_{\text{SoV}}}{\text{MC}_{\text{MoE}}} = \frac{\lambda}{1-\lambda}.
+\]
+This is an accounting identity given $\lambda$, not yet a behavioral prediction.
+
+The behavioral prediction follows from modeling the individual staking decision. Consider
+a continuum of agents indexed by $i \in [0,1]$, each choosing at date $t$ whether to
+stake one unit of the native coin or hold it freely circulating. Staking yields a publicly
+observed current reward $b_t > 0$---seigniorage paid to validators in a PoS network
+\citep{cong2024staking}---plus a private convenience yield $c_{i,t+1} = \theta_{t+1} +
+\varepsilon_i$, where $\theta_{t+1}$ is the network's true future growth trajectory
+(unobserved at $t$) and $\varepsilon_i$ is mean-zero idiosyncratic signal noise.
+Staking also imposes a private liquidity cost $\varphi_i$ (i.i.d., independent of
+$\theta_{t+1}$ and $\varepsilon_i$). Agent $i$ stakes if and only if
+\[
+b_t + \theta_{t+1} + \varepsilon_i \geq \varphi_i \quad \Longleftrightarrow \quad
 \eta_i \leq b_t + \theta_{t+1}, \qquad \eta_i \equiv \varphi_i - \varepsilon_i.
 \]
-Because $\eta_i$ is i.i.d.\ across the continuum of agents with fixed CDF $H$ (the
-convolution of the cost distribution and the private-signal noise distribution), the
-strong law of large numbers implies that the realized cross-sectional locking ratio
-converges almost surely to
+By the law of large numbers, the aggregate staking ratio converges almost surely to
 \[
 \lambda_t = H(b_t + \theta_{t+1}),
 \]
-a deterministic, strictly increasing function of the asset's true future growth
-trajectory $\theta_{t+1}$, given the publicly observed current benefit $b_t$.
-Idiosyncratic noise in individual costs and private signals washes out in the aggregate;
-what survives is exactly the cross-sectional average of private information about
-$\theta_{t+1}$. This is the precise sense in which $\lambda_t$ is a publicly verifiable
-signal of the holder base's aggregate conviction about the asset's future---consistent
-with the monetary search-theoretic view of $\lambda$ as a coordination signal
-\citep{kiyotaki1993search, lagos2005unified} for coins, and with the costly-signaling logic
-of \citet{spence1973job} for governance tokens---and it is a derived property of the model
-above, not an assumption asserted on $\lambda_t$ directly. The coin/token distinction
-enters only through the composition of $b_t$ (seigniorage versus fee-share-or-zero) and of
-$\varphi_i$ (pure liquidity cost versus lock cost plus engagement cost); the
-threshold-crossing logic, and the resulting formula for $\lambda_t$, is identical across
-both.
+where $H$ is the CDF of $\eta_i$. Idiosyncratic cost and signal noise wash out in the
+cross-section; what survives is a deterministic, strictly increasing function of
+$\theta_{t+1}$. Because $b_t$ is publicly observed, $\lambda_t$ is a publicly verifiable
+signal of the holder base's aggregate private conviction about the network's future growth.
+Extracting $\theta_{t+1}$ from $\lambda_t$, however, requires knowing $H$ and $b_t$ with
+precision---not common knowledge for most market participants. As in
+\citet{grossman1980impossibility}, the signal is not fully impounded into price at $t$.
+As $\theta_{t+1}$ materializes and becomes public over $t+1$, price converges toward the
+value anticipated by high-$\lambda$ stakers, generating positive return predictability.
 
-That $\lambda_t$ aggregates private information about $\theta_{t+1}$ does not imply that
-$\theta_{t+1}$ is already priced at $t$. Recovering $\theta_{t+1}$ from $\lambda_t$
-requires netting out the observed benefit $b_t$ and inverting $H$, which in turn requires
-knowing the population distribution of locking costs and signal noise---itself not common
-knowledge, and, for governance tokens, requires that private beliefs be revealed only
-through the costly action of locking rather than through costless disclosure. Only a
-fraction of market participants perform this extraction, so, as in
-\citet{grossman1980impossibility}, costly information acquisition prevents $\lambda_t$
-from being fully impounded into price at $t$. As $\theta_{t+1}$ materializes and becomes
-public over $t+1$, price converges toward the fundamental value already anticipated by the
-high-$\lambda$ holder base, so realized returns are higher for assets with higher
-$\lambda_t$. This partial-revelation step is the one substantive assumption in the
-model---common to both asset classes---and we test its return implication directly as
-Proposition 1.
+\textbf{Proposition 1a (Coins).} $\mathrm{Cov}_j(r_{j,t+1},\,\lambda_{j,t}/(1-\lambda_{j,t})) > 0$
+in the cross-section: coins with higher SoV/MoE ratios earn higher subsequent returns,
+after controlling for size, momentum, and market beta.
 
-\textbf{Proposition 1.} \textit{$\text{Cov}_j(r_{j,t+1}, \lambda_{j,t}) > 0$, where $j$
-indexes assets and the covariance is taken in the cross-section at a given date: assets
-with a higher locking ratio, and hence higher SoV/MoE ratio $\lambda_t/(1-\lambda_t)$,
-earn higher subsequent returns, for both coins and governance tokens.}
+\textbf{Hypothesis 1a.} \textit{For native proof-of-stake coins, assets with higher
+$\lambda/(1-\lambda)$ in month $t$ earn statistically and economically significant
+higher returns over month $t+1$, after controlling for coin-level size, momentum, and
+market exposure. The result holds regardless of whether the coin is an L1 or L2, provided
+the staking mechanism confers a positive seigniorage benefit $b_t > 0$.}
 
-This is Hypothesis 1, restated formally as an empirical proposition, separately for the
-two compositions of $b_t$ and $\varphi_i$:
+\subsection{The Token Framework: Governance Conviction as Economic Moat}
+\label{sec:theory_tokens}
 
-\textbf{Hypothesis 1a (Coins).} \textit{For native coins with a seigniorage- or
-security-staking-eligible design, assets with higher $\lambda/(1-\lambda)$ in month $t$
-earn higher returns over months $t+1$ through $t+h$, after controlling for size,
-momentum, and market beta. This mechanism is architecture-agnostic: it applies to any
-native coin with a staking-for-security role, whether issued on an L1 or an L2.}
+For governance and DeFi protocol tokens, the SoV/MoE framework is inapplicable: these
+tokens are not media of exchange. A holder of UNI does not need to spend UNI to use
+Uniswap; holding governance tokens does not reduce the protocol's transactional capacity.
+The token has no meaningful velocity in the QTM sense, and the SoV/MoE decomposition
+carries no economic content. What $\lambda$ signals for tokens is something different:
+\textit{governance conviction}---the fraction of supply whose holders have voluntarily
+incurred a cost to demonstrate fundamental belief in the protocol's future.
 
-\textbf{Hypothesis 1b (Governance Tokens).} \textit{For DeFi governance tokens, assets
-with higher governance staking $\lambda/(1-\lambda)$ in month $t$ earn higher returns
-over months $t+1$ through $t+h$, after controlling for protocol category, size, and
-momentum. Voting-weighted $\lambda$ has incremental predictive power beyond passive
-staking $\lambda$ alone.}
+The formal model is a straightforward extension of the coin model. The same continuum of
+agents now hold a governance token at date $t$ and choose whether to lock it into a
+governance contract (vote-escrow, delegation, or protocol staking) or hold it freely.
+Locking carries a private cost $\varphi_i = \ell + \kappa_i$, decomposed into a
+common illiquidity cost $\ell \geq 0$ (positive for vote-escrow protocols such as
+Curve's veCRV or Balancer's veBAL, zero for simple delegation under ERC20Votes) and an
+idiosyncratic engagement cost $\kappa_i \geq 0$, the monitoring and time cost of
+exercising governance voice rather than exit \citep{hirschman1970exit, edmans2011governance}.
+The current locking benefit $b_t \geq 0$ may include a fee or revenue share for protocols
+with on-chain distribution; for most governance tokens $b_t = 0$ and the incentive to
+lock is purely forward-looking. The threshold condition is identical to the coin case:
+$\eta_i = \varphi_i - \varepsilon_i \leq b_t + \theta_{t+1}$, yielding
+$\lambda_t = H(b_t + \theta_{t+1})$.
 
-The seigniorage channel \citep{cong2024staking} reinforces Hypothesis 1a: because $b_t$
-enters the locking threshold directly for coins, staking is a revealed preference that
-seigniorage income plus anticipated price appreciation exceeds the opportunity cost of
-locking capital---a rational decision rule rather than a behavioral artifact. Whether a
-coin's native asset is issued on an L1 or an L2 is immaterial to this mechanism; what
-matters is only whether locking the asset earns $b_t > 0$. We classify individual assets
-into Hypothesis 1a (coin-like, $b_t>0$ from a staking-for-security design) versus
-Hypothesis 1b (token-like, governance-only) by this functional criterion in
-Section~\ref{sec:data}, rather than by network layer.
+The key difference is interpretation. For coins, $b_t > 0$ is paid in newly minted
+seigniorage, so staking is partly a rational income decision. For tokens with $b_t = 0$,
+locking is a purely conviction-revealing action: the holder incurs $\ell + \kappa_i$ with
+no current compensation, revealing that their private belief about $\theta_{t+1}$ is strong
+enough to make the commitment worthwhile. This is a Spence \citeyearpar{spence1973job}
+costly-signaling equilibrium: only holders with sufficiently high conviction rationally pay
+the cost. The resulting aggregate $\lambda_t$ is therefore a cleaner signal of fundamental
+conviction for governance tokens than for coins, because the seigniorage confound is
+absent. The partial-revelation logic applies identically: the signal in $\lambda_t$ is not
+freely extractable from public data, so it is not instantly priced, generating the same
+return predictability.
 
-The voting-weighted extension in H1b follows directly from the same model. Suppose active
-voting requires an additional monitoring cost $\psi_i > 0$ beyond the cost of locking
-alone (passive staking, or auto-compounding, requires no ongoing engagement). The
-threshold for voting, $\eta_i + \psi_i \leq b_t + \theta_{t+1}$, is strictly tighter than
-the threshold for locking alone, so voters are a more selected, higher-conviction subset
-of lockers. Voting-weighted $\lambda$ therefore carries incremental information about the
-holder base's average conviction beyond passive locking $\lambda$ alone---the empirical
-test of the Spence costly-signaling logic embedded in the second sentence of H1b.
+\textbf{Proposition 1b (Tokens).} $\mathrm{Cov}_j(r_{j,t+1},\,\lambda_{j,t}) > 0$
+in the cross-section of governance tokens: assets with higher governance conviction ratios
+earn higher subsequent returns, after controlling for size, momentum, and protocol category.
 
-The cost structure $\varphi_i = \ell + \kappa_i$ nests both institutional forms locking
-takes for governance tokens in practice. For vote-escrow protocols that require an
-explicit lock, $\ell>0$ is a real, continuously variable illiquidity cost that scales with
-chosen lock duration, and locked supply is the natural empirical proxy for $\lambda_t$.
-For protocols whose governance is decided by simple token-balance voting with no lock,
-$\ell=0$: liquidity is never forfeited, and $\kappa_i$, the cost of monitoring the
-protocol and casting an informed vote, is the only force sustaining the
-threshold-crossing equilibrium. The threshold logic is identical in both cases, but the
-observable action revealing $\eta_i \leq b_t+\theta_{t+1}$ differs: locked supply where a
-lock mechanism exists, and otherwise the joint behavior of holding without
-selling---forgoing the option to exit, in the spirit of \citet{hirschman1970exit}---and
-active voting participation. We therefore treat $\lambda_t$ as an empirical index over
-whichever conviction-revealing channels are observable for a given asset---staking/locking,
-holding duration, and voting engagement---with the specific construction and channel
-weighting determined by data availability and detailed in Section~\ref{sec:data}.
+\textbf{Hypothesis 1b.} \textit{For DeFi governance tokens, assets with higher $\lambda$
+in month $t$ earn statistically and economically significant higher returns over month
+$t+1$, after controlling for token-level size, momentum, and protocol category. The
+predictive power of voting-participation-weighted $\lambda$ exceeds that of passive
+locking alone, consistent with the costly-signaling logic: the harder the action, the
+purer the signal.}
 
-\subsection{Price Discovery and the Conditioning Role of Growth-Levelized NVT}
-\label{sec:theory_nvt}
+\subsection{The Valuation Conditioning Signal}
+\label{sec:theory_valuation}
 
-Section~\ref{sec:theory_locking} establishes that $\lambda_t$
-carries private information not yet fully reflected in price. The remaining question is
-what determines \textit{how much} of that information remains unpriced at a given date.
-Let $\delta_t \in [0,1]$ denote the fraction of the conviction signal embedded in
-$\lambda_t$ that has already been absorbed into the current price $p_t$, so that
-$p_t = p_t^{\text{fund}}(1+\delta_t)$ for some notion of fundamental value
-$p_t^{\text{fund}}$ consistent with current economic activity. Holding fundamentals
-fixed, a higher current price relative to current transaction-based fundamental value
-corresponds to a higher $\delta_t$; this is exactly what our Growth-Levelized NVT ratio
-measures, since $\text{NVT}_{GL,t} = \text{MC}_t / PQ_t^*$ is increasing in price for fixed
-$PQ_t^*$. The expected return earned from $t$ to $t+1$ as the conviction signal is
-gradually validated and absorbed into price is proportional to the \textit{unabsorbed}
-portion of the signal, $\lambda_t(1-\delta_t)$, rather than to $\lambda_t$ alone. It
-follows that the marginal predictive power of $\lambda_t$ on returns is decreasing in
-$\delta_t$, and therefore decreasing in $\text{NVT}_{GL,t}$.
+Propositions 1a and 1b establish that $\lambda$ carries information not yet fully in price.
+What they do not characterize is how much of the signal remains unpriced at a given date.
+Let $\delta_t \in [0,1]$ denote the fraction of the conviction signal in $\lambda_t$
+already absorbed into the current price, so that $p_t = p_t^{\text{fund}}(1+\delta_t)$
+where $p_t^{\text{fund}}$ reflects current economic activity. The expected return as the
+signal is validated over $t+1$ is proportional to the unabsorbed portion
+$\lambda_t(1 - \delta_t)$, not to $\lambda_t$ alone. The marginal predictive power of
+$\lambda_t$ is therefore decreasing in $\delta_t$, and $\delta_t$ is increasing in the
+current market capitalization relative to fundamental activity.
 
-\textbf{Proposition 2.} \textit{The cross-partial effect of $\lambda_t$ and
-$\text{NVT}_{GL,t}$ on expected returns is negative: the return predictability of
-$\lambda_t/(1-\lambda_t)$ is concentrated among assets with low $\text{NVT}_{GL,t}$.}
+For coins, the relevant fundamental is discounted expected on-chain volume: $\delta_t$
+is increasing in $\text{NVT\_GL}_t = \text{MC}_t / PQ_t^*$, where $PQ^*_t$ is the
+growth-adjusted present value of expected transaction activity (formally defined in
+Section~\ref{sec:measures_nvt}). For tokens, the relevant fundamental is Total Value
+Locked: $\delta_t$ is increasing in $\text{NV/TVL}_t = \text{MC}_t / \text{TVL}_t$.
+In both cases, a high ratio indicates that current market capitalization already embeds
+the conviction signal, and the incremental return predictability of $\lambda_t$ is low;
+a low ratio indicates the signal remains unabsorbed.
 
-\textbf{Hypothesis 2.} \textit{The return predictability of $\lambda/(1-\lambda)$
-documented in H1 is significantly stronger among assets with below-median
-Growth-Levelized NVT ratios. Equivalently, the marginal return to a unit increase in
-$\lambda/(1-\lambda)$ is higher when the asset is cheap relative to its fundamental
-economic activity.}
+\textbf{Proposition 2.} \textit{The cross-partial effect of $\lambda_t$ and the
+valuation ratio on expected returns is negative: the return predictability of $\lambda_t$
+is concentrated among low-valuation-ratio assets.}
 
-This is the central insight motivating the two-dimensional quadrant framework:
-$\lambda/(1-\lambda)$ supplies the conviction signal, while Growth-Levelized NVT indicates how
-much of that signal the market has already absorbed. Unlike $\lambda/(1-\lambda)$,
-Growth-Levelized NVT carries no independent theoretical prediction for returns in our
-framework---a low Growth-Levelized NVT ratio alone, without a high conviction signal, simply
-describes an asset with limited current economic activity, not necessarily one that is
-mispriced. Empirically, H2 implies a statistically significant interaction between
-$\lambda/(1-\lambda)$ and Growth-Levelized NVT in cross-sectional return regressions, with the
-coefficient on $\lambda/(1-\lambda)$ larger in absolute value for below-median
-Growth-Levelized NVT assets.
+\textbf{Hypothesis 2.} \textit{The return predictability documented in H1a and H1b is
+significantly stronger among assets with below-median valuation ratios (NVT\_GL for coins,
+NV/TVL for tokens). The marginal return to a unit increase in $\lambda$ is higher when
+the asset is cheap relative to its fundamental economic activity.}
 
-\subsection{The Quadrant Portfolio}
+The valuation ratio carries no independent return prediction in this framework. A low
+NVT\_GL alone---without a high $\lambda$---merely describes a coin with limited
+current throughput relative to market cap, not necessarily a mispricing; similarly for
+NV/TVL. The conditioning role is asymmetric: valuation identifies the \textit{timing}
+of conviction signal absorption, not a separate source of alpha.
+
+\subsection{Hypotheses and the Quadrant Portfolio}
 \label{sec:theory_portfolio}
 
-Propositions 1 and 2 jointly imply that the assets with the highest expected
-unrealized returns are those combining a strong, on-chain-verified conviction signal with
-valuation that has not yet absorbed it: high $\lambda/(1-\lambda)$ and low
-Growth-Levelized NVT. We label this combination \textit{Star}. The mirror-image
-combination---low $\lambda/(1-\lambda)$ and high Growth-Levelized NVT, signaling both weak
-conviction and a valuation already stretched beyond current fundamentals---we label
-\textit{Avoid}.
+Propositions 1 and 2 jointly define a two-dimensional framework. \textit{Stars} combine
+high $\lambda$ with low valuation ratio---strong conviction, signal not yet priced---and
+are predicted to have the highest future returns. \textit{Avoid} assets combine low
+$\lambda$ with high valuation ratio---weak conviction, valuation already stretched---and
+are predicted to have the lowest returns.
 
 \textbf{Hypothesis 3.} \textit{A long-short portfolio that goes long Star assets
-(above-median $\lambda/(1-\lambda)$, below-median Growth-Levelized NVT) and short Avoid
-assets (below-median $\lambda/(1-\lambda)$, above-median Growth-Levelized NVT), rebalanced
-monthly, generates positive and statistically significant alpha after controlling for
-market, size, and momentum factors. The Stars-minus-Avoid Sharpe ratio significantly
-exceeds that of equal-weighted benchmark portfolios.}
+(above-median $\lambda$, below-median valuation ratio) and short Avoid assets
+(below-median $\lambda$, above-median valuation ratio), rebalanced monthly, generates
+positive and statistically significant factor-adjusted alpha after controlling for market,
+size, and momentum. The result holds separately within the coin sample (using NVT\_GL)
+and within the token sample (using NV/TVL), and in the combined panel. The Stars-minus-Avoid
+Sharpe ratio exceeds that of equal-weighted benchmark portfolios.}
 
-H3 is the integrating test of the framework: it asks whether the joint signal has
-incremental predictive power beyond either dimension of Propositions 1--2 alone. The
-alpha estimate quantifies the economic magnitude of the mispricing the quadrant framework
-identifies, net of compensation for systematic risk exposures. We report portfolio
-results separately for coins and governance tokens to preserve the distinction between
-the seigniorage-driven locking mechanism for coins and the engagement-cost-driven locking
-mechanism for governance tokens, both nested within Proposition 1, and test whether the
-alpha is larger for governance tokens, where the illiquidity and engagement costs
-$\ell+\kappa_i$ create a higher signaling barrier than the seigniorage-driven locking
-decision for coins.
+H3 is the integrating test: it asks whether the joint two-dimensional signal has
+incremental predictive power beyond either dimension alone. We report results separately
+for coins and tokens to preserve the track distinction: for coins, alpha reflects the
+return to SoV/MoE mispricing correcting over time; for tokens, alpha reflects the market's
+underreaction to governance conviction signals.
 
 %=============================================================
-\section{Data and Variable Construction}
+\section{Variable Construction}
+\label{sec:measures}
+%=============================================================
+
+The theoretical framework in Section~\ref{sec:theory} requires three empirical proxies:
+the conviction index $\lambda$, common to both asset tracks; the Growth-Levelized NVT
+ratio for the coin track; and the NV/TVL ratio for the token track. This section defines
+each variable and describes its construction. Data sources and sample formation are
+covered in Section~\ref{sec:data}.
+
+\subsection{The Conviction Index \texorpdfstring{$\lambda$}{λ}}
+\label{sec:measures_lambda}
+
+The theoretical $\lambda_t$ is the aggregate locking or commitment ratio of an asset's
+holder base at date $t$. Empirically, the conviction-revealing actions observable on-chain
+vary by asset type and protocol design. We therefore construct $\lambda$ as a composite
+index over three conceptually motivated channels, and aggregate across available channels
+using cross-sectional z-scores.
+
+\paragraph{Channel 1: Staking.}
+For proof-of-stake layer-one coins, the staking channel is the fraction of circulating
+supply bonded as validator or delegator stake at month-end. This is the direct empirical
+counterpart of the locking action in Section~\ref{sec:theory_coins}: it simultaneously
+earns seigniorage ($b_t > 0$) and constitutes a costly, publicly visible commitment to
+the network's future. Staking rates are sourced from chain-native archive data for each
+coin.\footnote{For Polkadot (DOT) and Kusama (KSM), bonded supply is retrieved from the
+Subscan archive API. For Cosmos-ecosystem chains (CRO, KAVA, OSMO), we query the Cosmos
+SDK Staking module endpoint at block heights corresponding to month-end timestamps, with
+timestamps identified via binary search on the CometBFT RPC interface. For EVM-based
+staking contracts (BNB, MATIC, TRX, and others), staked supply is derived from on-chain
+staking event logs via the Etherscan multi-chain archive API. Each data source is
+validated by confirming that reported values vary across block heights, ensuring the
+archive reflects historical rather than current-only state.} The staking channel covers
+48 assets and 2,222 asset-months.
+
+\paragraph{Channel 2: Holding.}
+The holding channel measures the fraction of circulating supply that has not transacted
+on-chain in the preceding six months (HODL-6m). This proxy extends conviction measurement
+to any EVM-compatible asset without a formal staking mechanism, mapping to the inert
+supply fraction $\lambda_t$ in the model: a holder who has not transacted for six months
+has revealed a preference for holding over liquidity. HODL-6m is computed by replaying
+on-chain Transfer event logs in chronological order under a FIFO attribution rule,
+assigning each unit of supply to its most recent transfer date.\footnote{Transfer events
+are retrieved from the Etherscan Pro V2 multi-chain archive, covering Ethereum mainnet and
+twelve additional EVM chains. Two data quality filters are applied: (i) monthly on-chain
+flow exceeding 100$\times$ reported circulating supply is classified as a minting,
+bridging, or aggregator artifact and excluded; (ii) asset-months in which HODL-6m exceeds
+80\% persistently are flagged for robustness checks, consistent with possible custodial
+cold-wallet concentration rather than individual holder conviction. Self-transfers (sender
+equals recipient) are excluded from the event replay.} This channel spans 408 assets and
+11,654 asset-months, providing the broadest coverage in the conviction panel.
+
+\paragraph{Channel 3: Governance.}
+Two governance sub-channels capture active participation in protocol decision-making.
+The delegation sub-channel records the fraction of circulating supply delegated to a
+voting representative under an ERC20Votes contract, observable from on-chain Delegate
+event logs.\footnote{Data sourced from \texttt{DelegateVotesChanged} event logs via the
+Etherscan Pro V2 API, aggregated to month-end totals.} The voting sub-channel records
+proposal participation rates from Snapshot off-chain governance records, cross-referenced
+with on-chain ERC20Votes logs where available. Both sub-channels identify holders who
+have incurred the engagement costs $\kappa_i$ of Section~\ref{sec:theory_tokens}---the
+costlier the action, the more selected and informative the resulting signal. The
+delegation and voting sub-channels cover 26 and 53 assets, respectively, concentrated in
+the DeFi governance token sample.
+
+\paragraph{Composite Index.}
+For each asset-month, each available channel is standardized to a z-score over all
+asset-months with non-missing observations for that channel. The composite $\lambda_z$ is
+the equal-weight average of standardized channel scores available for that asset-month.
+The result has approximately zero cross-sectional mean and is defined whenever at least
+one channel is observed. Equal weighting imposes no prior on the relative information
+content of the channels; channel-specific predictive power is examined in robustness
+tests. The full conviction panel covers 467 assets and 13,626 asset-months, of which
+11,901 are single-channel, 1,371 two-channel, and 354 three-or-more-channel observations.
+
+\subsection{Growth-Levelized NVT}
+\label{sec:measures_nvt}
+
+For the coin regression track, the valuation anchor is the Growth-Levelized Network Value
+to Transactions ratio (NVT\_GL), which scales market capitalization by the
+growth-adjusted, risk-discounted present value of expected on-chain throughput:
+\begin{align}
+    \text{NVT\_GL}_{j,t} &= \frac{\text{MC}_{j,t}}{PQ^*_{j,t}}, \label{eq:nvt_gl} \\[6pt]
+    PQ^*_{j,t} &= \frac{\displaystyle
+        \sum_{s=1}^{n} \frac{PQ_{0,j,t}(1+g_{j,t})^{\!s}}{(1+r_{e,j,t})^{\!s}}
+        + \frac{PQ_{0,j,t}(1+g_{j,t})^{\!n}(1+g_\infty)}{(r_{e,j,t}-g_\infty)(1+r_{e,j,t})^{\!n}}
+    }{\displaystyle
+        \frac{1-(1+r_{e,j,t})^{-n}}{r_{e,j,t}}
+    }, \label{eq:pq_star}
+\end{align}
+where $PQ_{0,j,t}$ is the trailing twelve-month annualized on-chain transfer volume for
+asset $j$ at month $t$; $g_{j,t}$ is the trailing three-year compound annual growth rate
+of $PQ_0$, capped in $[-50\%,\,200\%]$; $n = 10$ years is the explicit-growth projection
+horizon; $g_\infty = 3\%$ is the terminal perpetuity growth rate; and
+$r_{e,j,t} = r_f + \hat{\beta}_{j,t} \cdot \text{MRP}$ is the asset-specific discount
+rate, with $r_f = 4\%$, $\text{MRP} = 30\%$, and $\hat{\beta}_{j,t}$ the trailing
+36-month beta against the BTC price index, floored so that $r_{e,j,t} \geq g_\infty + 2\%$
+to ensure well-defined terminal values.\footnote{The denominator of \eqref{eq:pq_star}
+is the standard annuity factor normalizing the finite-horizon present value of future $PQ$
+to an equivalent annualized flow, making NVT\_GL interpretable as a
+price-to-normalized-activity ratio analogous to a price-to-normalized-earnings multiple
+in equity analysis. The MRP of 30\% reflects the elevated required return on
+cryptocurrency risk; $\hat\beta_{j,t}$ is retained in the panel so alternative discount
+rate assumptions can be applied directly in robustness tests.}
+
+NVT\_GL below one signals that market capitalization is below the growth-adjusted present
+value of expected on-chain activity. NVT\_GL substantially above one indicates that
+current market capitalization already embeds forward growth not yet visible in throughput.
+The growth adjustment corrects a systematic bias in raw NVT: fast-growing assets may
+appear expensive on a raw NVT basis but inexpensive once expected growth is discounted.
+
+\subsection{NV/TVL Ratio}
+\label{sec:measures_tvl}
+
+For the token regression track, the valuation anchor is the Network Value to Total Value
+Locked ratio:
+\[
+\text{NV/TVL}_{j,t} = \frac{\text{MC}_{j,t}}{\text{TVL}_{j,t}},
+\]
+where $\text{TVL}_{j,t}$ is the market value of assets deposited in protocol $j$'s smart
+contracts at month-end $t$. TVL proxies for the scale of economic activity a protocol
+intermediates---the token analog of on-chain transaction volume in the QTM framework---and
+is the natural denominator for a price-to-fundamentals ratio in DeFi. Where a protocol is
+deployed across multiple chains, we use the sum of all-chain TVL.
+
+A low NV/TVL indicates that market capitalization is modest relative to the economic
+activity under the protocol's control. A high NV/TVL indicates that market capitalization
+substantially exceeds the protocol's current economic footprint. Unlike NVT\_GL, NV/TVL
+is not growth-adjusted: TVL is itself a current-period flow variable that captures
+realized protocol adoption, and a separate growth correction would risk double-counting
+the forward information already embedded in TVL levels.
+
+%=============================================================
+\section{Data}
 \label{sec:data}
 %=============================================================
 
-\textit{[To be written.]}
+\subsection{Data Sources}
+\label{sec:data_sources}
+
+Price, market capitalization, and circulating supply are drawn from CoinMarketCap at
+daily granularity, snapped to end-of-calendar-month observations. CoinMarketCap provides
+the broadest historical coverage of digital asset market data and is the standard
+reference for universe construction in the cryptocurrency finance literature
+\citep{liu2022common,makarov2020trading}.
+
+On-chain Transfer event logs, staking event logs, and ERC20Votes Delegate event logs
+are retrieved from the Etherscan Pro V2 multi-chain API, which provides archive access
+to EVM-compatible chains including Ethereum mainnet, BNB Chain, Polygon, Avalanche,
+Arbitrum, Optimism, and nine additional networks. Non-EVM staking data follows
+chain-native sources: Subscan archive API for Polkadot and Kusama; Cosmos SDK Staking
+module endpoints for Cosmos-ecosystem chains. Off-chain governance participation is
+sourced from the Snapshot API, cross-referenced with on-chain ERC20Votes logs.
+
+On-chain transaction volume for the NVT\_GL construction is assembled from three sources
+in priority order. DeFiLlama chain-level DEX
+volume\footnote{\url{https://defillama.com}, accessed through May 2026.}
+serves as the primary source for chains with active decentralized exchange infrastructure
+(1,340 asset-months). BitInfoCharts sent-in-USD settlement
+value\footnote{\url{https://bitinfocharts.com}, accessed through May 2026.}
+is used for PoW coins and pre-DEX periods, capturing all on-chain transfers rather than
+DEX activity alone (705 asset-months). Blockchain.com estimated transaction
+value\footnote{\url{https://blockchain.com}, accessed through May 2026.}
+supplements Bitcoin and legacy chain observations with pre-DEX-era coverage (118
+asset-months). The remaining 363 asset-months use DeFiLlama protocol-level volume for
+assets whose primary activity flows through specific protocols. Each series is validated
+against the chain's own reported aggregate, with the reconstructed monthly level required
+to lie within 5\% of the chain total. The resulting NVT\_GL panel covers 67 assets and
+2,526 valid asset-months from August 2016 through May 2026.
+
+Total Value Locked is sourced from DeFiLlama at daily granularity, snapped to month-end;
+multi-chain protocols use the sum of all-chain TVL. The TVL panel covers 162 assets and
+8,066 asset-months from September 2017 through May 2026.
+
+\subsection{Sample Construction}
+\label{sec:data_sample}
+
+The starting universe is 1,939 digital assets drawn from the CoinMarketCap historical
+database, observed at end-of-calendar-month from August 2015 through May 2026, yielding
+156,838 asset-month observations.\footnote{All assets with at least one non-zero price
+observation in CoinMarketCap are included. Market capitalization is computed as reported
+price times circulating supply. Continuous coverage is not required; assets may enter and
+exit the panel as they gain or lose listing.}
+
+Assets are classified into three mutually exclusive types: \textit{coins} (native
+settlement assets of a public blockchain, e.g., BTC, ETH, SOL), \textit{tokens}
+(smart-contract-issued assets deployed on a host chain, e.g., ERC-20 governance and DeFi
+tokens), and \textit{other} (stablecoins, wrapped tokens, and infrastructure assets whose
+value is structurally indexed to an external reference or operating entity).
+Other-class assets are excluded from both regression samples because neither the SoV/MoE
+framework nor the governance moat framework applies to their valuation.
+
+The two regression samples are defined by simultaneous availability of $\lambda_z$ and
+a positive valuation denominator. The \textit{coin regression sample} requires: (i) coin
+classification; (ii) proof-of-stake architecture; (iii) at least one month of non-missing
+$\lambda_z$; and (iv) at least one month of positive NVT\_GL. This yields 24 assets and
+718 asset-months spanning December 2020 through May 2026. The median NVT\_GL in this
+sample is 0.017 and median market capitalization is \$820 million. The \textit{token
+regression sample} requires: (i) token classification; (ii) non-missing $\lambda_z$; and
+(iii) positive TVL. This yields 136 assets and 4,627 asset-months spanning March 2020
+through May 2026. Median TVL is \$55.8 million (IQR: \$6.2M--\$511.6M) and median
+market capitalization is \$120 million.
+
+Several populations are excluded from one or both samples by data structure. Proof-of-work
+coins have no staking mechanism and are therefore outside the scope of Hypothesis~1a,
+though they contribute to NVT\_GL baseline tests. Among PoS coins, historical staking
+data is unavailable for chains whose archive nodes do not retain historical state, either
+due to aggressive pruning or reliance on third-party indexers for pre-recent-block queries.
+Among tokens, approximately 1,100 assets have no DeFiLlama TVL entry because they serve as
+utility, memetic, or infrastructure tokens for which protocol TVL is not defined. The
+remaining coverage gap arises from temporal non-overlap: tokens for which conviction data
+is available only after the period of active TVL reporting contribute to individual panels
+but not to the regression sample intersection. Channel 2 (holding) applies only to
+EVM-compatible assets; PoW coins with UTXO-based ledger accounting require a different
+pipeline based on UTXO age analysis and are left to future work.
+
+The combined regression panel spans 160 unique assets and 5,345 asset-months. At the end
+of the sample in May 2026, the panel accounts for \$465 billion in market
+capitalization---19.5\% of the \$2.38 trillion CoinMarketCap universe---consistent with
+the concentration of on-chain governance and staking infrastructure among the larger
+assets in the market.
+
+\subsection{Summary Statistics}
+\label{sec:data_stats}
+
+Table~\ref{tab:summary} reports coverage across data panels and key statistics for the
+regression samples.
+
+\begin{table}[ht]
+\centering
+\caption{Summary Statistics}
+\label{tab:summary}
+\small
+\begin{tabular}{lrrcc}
+\toprule
+Panel / Sample & Assets & Asset-months & Date range & Median MC \\
+\midrule
+Full universe              & 1,939 & 156,838 & 2015-08 to 2026-05 & \$6.5M \\
+Conviction panel ($\lambda_z$) & 467   & 13,626  & 2016-12 to 2026-05 & --- \\
+\quad ch1 staking          & 48    & 2,222   & 2017-07 to 2026-05 & --- \\
+\quad ch2 holding          & 408   & 11,654  & 2015-08 to 2026-05 & --- \\
+\quad ch3 delegation       & 26    & 627     & 2020-05 to 2026-05 & --- \\
+\quad ch3 voting           & 53    & 1,202   & 2020-08 to 2026-05 & --- \\
+NVT\_GL panel              & 67    & 2,526   & 2016-08 to 2026-05 & --- \\
+TVL panel                  & 162   & 8,066   & 2017-09 to 2026-05 & --- \\
+\midrule
+Coin regression (NV/PQ*)   & 24    & 718     & 2020-12 to 2026-05 & \$820M \\
+Token regression (NV/TVL)  & 136   & 4,627   & 2020-03 to 2026-05 & \$120M \\
+Combined                   & 160   & 5,345   & 2020-03 to 2026-05 & \$147M \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\parbox{0.9\linewidth}{\footnotesize
+\textit{Notes:} Median MC is the cross-sectional median market capitalization across all
+asset-months with a positive price observation. Conviction panel sub-channel counts sum
+to more than the panel total because 1,725 asset-months appear in two or more channels.
+Coin regression requires simultaneous non-missing $\lambda_z$ and positive NVT\_GL for
+proof-of-stake coins. Token regression requires simultaneous non-missing $\lambda_z$ and
+positive TVL. Median NVT\_GL in the coin regression sample is 0.017. Median TVL in the
+token regression sample is \$55.8M (IQR: \$6.2M--\$511.6M).
+}
+\end{table}
 
 %=============================================================
 \section{Results}
@@ -520,9 +718,21 @@ details are in Section~\ref{sec:data}.
 
 \begin{thebibliography}{99}
 
+\bibitem[BitInfoCharts(2026)]{bitinfocharts2026}
+BitInfoCharts, 2026, Blockchain statistics and sent-value data,
+\url{https://bitinfocharts.com}, accessed May 2026.
+
+\bibitem[Blockchain.com(2026)]{blockchain2026}
+Blockchain.com, 2026, Bitcoin blockchain explorer and transaction statistics,
+\url{https://blockchain.com}, accessed May 2026.
+
 \bibitem[Biais, Bisière, Bouvard, and Casamatta(2019)]{biais2019blockchain}
 Biais, B., C.~Bisière, M.~Bouvard, and C.~Casamatta, 2019, The blockchain folk theorem,
 \textit{Review of Economic Studies} 86, 1341--1371.
+
+\bibitem[CoinMarketCap(2026)]{cmc2026}
+CoinMarketCap, 2026, Historical cryptocurrency market data,
+\url{https://coinmarketcap.com}, accessed May 2026.
 
 \bibitem[Chod and Lyandres(2021)]{chod2021theory}
 Chod, J., and E.~Lyandres, 2021, A theory of ICOs: Diversification, agency, and
@@ -536,13 +746,9 @@ Cong, L.~W., Y.~Li, and N.~Wang, 2021, Tokenomics: Dynamic adoption and valuatio
 Cong, L.~W., and Z.~He, 2024, The tokenomics of staking,
 \textit{NBER Working Paper} 33640.
 
-\bibitem[DAO Governance(2024)]{dao2024governance}
-DAO Governance: Voting power, participation, and controversy, 2024,
-\textit{Distributed Ledger Technologies: Research and Practice}.
-
-\bibitem[DAO Review(2025)]{daoreview2025}
-A review of DAO governance: Recent literature and emerging trends, 2025,
-\textit{Journal of Corporate Finance}.
+\bibitem[DeFiLlama(2026)]{defillama2026}
+DeFiLlama, 2026, Protocol TVL and decentralized exchange volume data,
+\url{https://defillama.com}, accessed May 2026.
 
 \bibitem[Easley, O'Hara, and Basu(2019)]{easley2019mining}
 Easley, D., M.~O'Hara, and S.~Basu, 2019, From mining to markets: The evolution of
