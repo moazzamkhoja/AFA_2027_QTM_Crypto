@@ -2528,3 +2528,14 @@ valuation denominator (which, unlike TVL, is not mechanically price-linked)? Thi
 the sixth and final measurement candidate for the token conditioning null; Entry 108's
 five prior conditioners all failed. Coverage-matched baselines required so denominator
 and sample effects are separable. CLAUDE_CODE_PHASE3C_KICKOFF_PROMPT.md.
+
+### Entry 110 — Cowork 2026-08-04: Technical battery completed (spec §8.8, 3c Task D)
+
+Five signals added to the horse race: ma_dist (continuous MA-distance, SUPERSEDES
+binary MA-cross — fixes the 28-31-month underpowered spanning cells of session 044),
+vol12, ivol (36m vs CMKT), amihud (|r|/volume_24h snapshot proxy — caveat logged),
+skew36 (lottery proxy). Rationale: vol/skew are the last plausible spanners of the
+token conviction quintile; amihud completes the limits-to-arbitrage race; monthly
+RSI/MACD/Bollinger excluded as transformations of the included set; daily-native
+signals (MAX, true RSI) excluded for data-depth reasons — both exclusions get one
+justifying sentence in the paper. Runs inside session 045 (Phase 3c).

@@ -295,3 +295,21 @@ MC/REV* (revenue DCF via the PQ* machinery; revenue preferred over fees as the D
 base — discount what holders could claim, not what users pay). Kickoff:
 CLAUDE_CODE_PHASE3C_KICKOFF_PROMPT.md. Priority test: H2-in-tokens with fee-anchored
 valuation (sixth and final measurement candidate after Entry 108).
+
+### 8.8 Technical battery completion (Phase 3c Task D; Cowork 2026-08-04)
+
+Five additions to the comparator set, all derivable from universe_panel (no new data):
+ma_dist = price/MA10 − 1 (continuous; supersedes the binary MA-cross, whose long-shorts
+had only 28–31 overlapping months in session 044 spanning); vol12 (trailing 12m return
+SD, >=8 obs); ivol (residual SD, 36m regression on CMKT, >=12 obs); amihud (trailing
+12m mean |r|/volume_24h, ln; CAVEAT: volume_24h is a month-end snapshot not a monthly
+aggregate — log as noisy proxy); skew36 (trailing 36m return skewness, >=18 obs).
+Standardized within class-month; horse-race singles + joint; quintile long-shorts;
+added to the conviction-quintile spanning battery (key question: does the token
+conviction quintile survive the COMPLETED battery — vol and skew are the remaining
+candidates that could span it).
+
+Exclusions, justified for the paper: monthly RSI/MACD/Bollinger are transformations of
+the momentum/MA-distance/volatility set (one sentence in Section 5); daily-native
+signals (MAX effect, true RSI) require daily price histories unavailable at free-tier
+depth — noted as a limitation, not built.

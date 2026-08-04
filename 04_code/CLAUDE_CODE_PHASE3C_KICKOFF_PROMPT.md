@@ -67,9 +67,30 @@ C3. Portfolios: quintile long-shorts on P/F and prev_gl (cheap minus expensive, 
     quintile (does the DCF comparator span conviction, or vice versa).
 C4. Sub-periods (post-2023) for anything significant.
 
+## Task D — Technical battery completion (both tracks; all from universe_panel, no new data)
+Add five signals to the horse-race panel and portfolio machinery (spec §8.8):
+1. ma_dist = price/MA10 − 1 (continuous; REPLACES the binary MA-cross in spanning —
+   the binary version's long-shorts had only 28–31 overlapping months in session 044;
+   re-run the two affected spanning cells with ma_dist quintile long-shorts and note
+   the supersession).
+2. vol12 = trailing 12m monthly-return SD (>=8 obs).
+3. ivol = residual SD from trailing 36m regression of asset return on CMKT (>=12 obs).
+4. amihud = trailing 12m mean of |r_month| / (month-end volume_24h), ln-transformed.
+   FLAG in output and report: volume_24h is a month-end snapshot, not a monthly
+   aggregate — noisy proxy, log as a caveat (Entry).
+5. skew36 = trailing 36m monthly return skewness (>=18 obs).
+All standardized within class-month. Run: (a) horse-race singles + joint columns per
+track; (b) quintile long-shorts per signal; (c) ADD vol12, ivol, amihud, skew36,
+ma_dist long-shorts to the conviction-quintile spanning battery (the key question:
+does the token conviction quintile survive the completed battery); (d) one paper
+sentence justifying exclusions: monthly RSI/MACD/Bollinger are transformations of the
+momentum/MA-distance/volatility set; daily-native signals (MAX, true RSI) infeasible
+without daily price histories (free-tier depth limits) — note as limitation.
+
 ## Deliverables
 03_data/PHASE3C_RESULTS_REPORT.md — lead with the C1 verdict (H2-in-tokens under
-fee-anchored valuation: revived or still dead), coverage table, all tables with
+fee-anchored valuation: revived or still dead), then the completed-battery spanning
+verdict for the conviction quintile (Task D), coverage table, all tables with
 one-paragraph readings, negative results at equal prominence. Decisions log entries;
 session log (session_045_...); time_log row; commit and push at session end.
 ```
