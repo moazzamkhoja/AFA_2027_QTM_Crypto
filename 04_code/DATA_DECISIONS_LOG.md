@@ -2291,3 +2291,17 @@ have >=3 tokens; only 7 tokens ever qualify). Requires coarse sector remap
 queued for Phase 3b: pre-specified quintile conviction sort (EW primary), spanning vs
 momentum/reversal/52wk-high competitor portfolios, coarse-sector-neutralized version,
 cost-adjusted, sub-periods. Script: 04_code/phase3_explore_conv_quintile.py.
+
+### Entry 98 — Cowork 2026-08-04: Phase 3b design fixed (spec §8)
+
+**Decisions (user-directed):** (1) Confirmatory conviction-only token sorts: quintile EW
+primary, decile/tercile/VW secondary, factor alphas vs monthly LTW; exploratory origin
+(Entry 97) must be disclosed in the paper. (2) Coarse sector remap {DEX, Lending, Yield,
+Derivatives, Staking/LSD, Other} replaces raw DeFiLlama strings for token sector FE AND
+enables sector-level tests. (3) Single-dimension by-sector alpha tests are powered
+precisely BECAUSE the dead valuation dimension is dropped (double sort needs 4 joint
+cells and fails when conv/val correlate; single sort needs 2) — sector-neutralized
+full-breadth quintile primary, per-sector terciles for largest 2-3 groups as power
+check. (4) Spanning against reversal/momentum/52wk-high/size long-shorts is the make-or-
+break test given the strong token reversal (FM t=-3.4). Spec §8; kickoff
+CLAUDE_CODE_PHASE3B_KICKOFF_PROMPT.md.

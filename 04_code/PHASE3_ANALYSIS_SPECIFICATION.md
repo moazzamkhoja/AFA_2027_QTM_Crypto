@@ -177,3 +177,67 @@ comparators are paid-data — excluded, note in paper.)
 - Drop B4-flagged (HODL-6m > 80%) asset-months.
 - Tercile instead of median splits for H3.
 - Exclude top-3 MC assets per class (mega-cap dominance).
+
+---
+
+## 8. Phase 3b — confirmatory sorts, coarse sectors, horse race, heterogeneity
+
+Added Cowork 2026-08-04 after review of session-043 results (Entries 95–97).
+Kickoff: `CLAUDE_CODE_PHASE3B_KICKOFF_PROMPT.md`.
+
+### 8.1 Coarse sector remap (prerequisite for everything sector-related)
+Map the raw DeFiLlama compound category strings (median 1 token/sector-month — unusable)
+to coarse groups by deterministic keyword rules, priority-ordered:
+`DEX` (Dexs, DEX Aggregator), `Lending` (Lending, CDP), `Yield` (Yield, Yield
+Aggregator, Farm), `Derivatives` (Derivatives, Options, Perps), `Staking/LSD` (Liquid
+Staking, Staking), `Other` (all else). One group per token (modal/priority rule for
+compound strings); output `03_data/phase3/sector_coarse_map.csv` (cmc_id, sector_raw,
+sector_coarse) and log the rule. Re-run token regression ladder with coarse-sector FE
+(replaces raw-sector FE columns).
+
+### 8.2 Confirmatory conviction-only token sorts (upgraded from Entry 97 exploratory)
+Pre-specified here; the paper will disclose the exploratory origin (Entry 97).
+- Primary: conviction quintile long-short (top − bottom), EW, monthly, min 3/leg.
+- Secondary: decile (min 3/leg — expect ~5/leg, flag thin months), VW variants,
+  tercile (for continuity with 043).
+- Sector-neutralized primary: demean conv within coarse sector-month (groups with ≥3
+  names; else demean within class-month), then quintile-sort the full token
+  cross-section.
+- By-category power check: per-coarse-sector tercile long-shorts for the two or three
+  largest groups (single sort only — no valuation dimension; that is what restores
+  breadth within sector).
+- Evaluation identical to §4.3: NW-3 alpha vs monthly LTW factors, Sharpe, sub-periods
+  (pre/post-2023), 25/50 bps haircuts, turnover.
+- Spanning (critical given the strong token reversal): regress the quintile SMA on LTW
+  factors PLUS long-shorts built identically on r_1m (reversal), mom_3m, 52-wk-high,
+  and size. The claim "conviction is a distinct signal" lives or dies here.
+- Coins: quintiles infeasible (11–20/month); run tercile min-3 EW as the coin analog,
+  descriptive only.
+
+### 8.3 Horse race (§5 as specified, amended)
+- MVRV: DROPPED as cross-sectional comparator (Entry 96: 12 recoverable tokens);
+  optional 12-token descriptive appendix only.
+- Metcalfe: ETH + PoW baselines descriptive panel only (Entry 95: BitInfoCharts has no
+  AA for TRX/ADA/SOL); not in the cross-sectional race.
+- Panel race and spanning tests otherwise as §5.2; add the conviction quintile
+  portfolio (8.2) to the spanning set.
+
+### 8.4 Pre-specified heterogeneity batch (run all, report all — no selective reporting)
+1. Δλ: 1m and 3m changes in conviction as regressors (levels + changes jointly) and as
+   a token quintile sort.
+2. Vote-escrow vs plain governance: classify each of the 101 tokens by lock mechanism
+   (ve/locked-staking vs non-lock voting) from protocol documentation; H: premium
+   concentrated in lock-type tokens. Log per-token classification with source.
+3. Fee-share (b_t > 0) vs no-fee tokens: same classification pass; H: cleaner signal
+   where b_t = 0.
+4. Size terciles and turnover (volume_24h/MC) terciles: limits-to-arbitrage prediction —
+   premium larger in small/low-turnover tokens.
+5. Regime: bull vs bear months (sign of CMKT), and pre/post-2023, for the token
+   conviction slope and the coin interaction.
+6. Measurement robustness: raw NV/TVL in place of NV/TVL_GL; exclude g-cap-binding
+   months; exclude B4-flagged months; exclude the 47 coin conv_source-fallback months;
+   MRP 20%/40% re-derivations.
+
+### 8.5 Outputs
+`03_data/phase3/tables/` extended; `03_data/PHASE3B_RESULTS_REPORT.md` in the same
+honest-results format; Entry 98+ for every decision; builders `04_code/phase3b_*.py`.
