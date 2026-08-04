@@ -2182,3 +2182,88 @@ designs. Full spec: 04_code/PHASE3_ANALYSIS_SPECIFICATION.md. Kickoff:
 **Conviction variable resolution:** coins use ln-odds of raw ch1 staking share
 (SoV/MoE = lambda/(1-lambda) requires a raw share, not the z-score index), lambda_z
 fallback flagged; tokens use lambda_z. Standardization within class-month.
+
+### Entry 95 — Session 043: Phase 3 core build decisions (Tasks A–D)
+
+**Date:** 2026-08-04
+**Spec section affected:** PHASE3_ANALYSIS_SPECIFICATION.md sections 1–4 (operationalizations
+where the spec was silent). All decisions below were fixed BEFORE any regression output
+was produced (honest-results clause).
+
+**Sample membership (funnel gate):** coin sample = universe_coverage_status
+coverage_status=='complete' AND lambda_months>0 AND asset_class=='coin' (the 24
+regression-ready coins, incl. pos_possible + POL), month has non-missing lambda_z
+AND positive NVT_GL. A naive coin_staking_type=='pos' filter yields 11/396 and does
+NOT reproduce the paper funnel. Token sample = token rows of nv_tvl_gl_panel with
+finite positive NV/TVL_GL and non-missing lambda_z. Gate verified EXACTLY (24/718,
+101/2,771, medians match paper Table 2) before proceeding; assert() in phase3_panel.py.
+
+**Return machinery:** monthly simple returns from universe_panel observed prices only,
+consecutive calendar month-ends (a gap in observed status = NaN link; no backfill).
+Cumulative t+1..t+3 / t+1..t+6 require ALL monthly links present. Regression dep
+winsorized 1/99 at the monthly cross-section of the COMBINED panel (both tracks);
+portfolios use raw returns (spec sec. 1).
+
+**Variable operationalizations:** mom_3m = P_{t-1}/P_{t-4}-1 (months t-3..t-1);
+mom_12_2 = P_{t-2}/P_{t-13}-1; r_1m = month-t return. Valuation ln-ratios winsorized
+1/99 POOLED WITHIN TRACK before class-month standardization. conv_vw = equal-weight
+mean of ch3 sub-channel z-scores (voting, delegation; each z-scored over all
+asset-months with that channel, mirroring the composite lambda_z construction).
+Sector FE: first ';'-tag of classification_table sector consolidated to 7 groups
+(DEX, LendingCDP, Derivatives, Bridge, YieldStaking, Stables, Other) — 30 raw tags
+over 101 tokens is too granular (many singletons).
+
+**Median splits (H2 s5, H3 quadrants):** hi_conv = conv > class-month median;
+lo_val = val <= class-month median (median asset goes to the cheap side). Split-sample
+difference test = pooled spec-2 + high_val dummy + conv x high_val (controls NOT
+interacted; conservative simple form).
+
+**Portfolio evaluation:** turnover = 0.5*sum|w_t+ - w_t-| one-way per leg;
+net-of-cost return = gross - (TO_star + TO_avoid)*cost_per_side. Sub-period rows
+require >=12 months (coin pre-2023 rows absent: only 20 guard-surviving months, all
+2023-05 onward). Sharpe = annualized mean/sd of (r - rf_m), rf_m = 4%/12.
+
+**Small-cluster caveat (recorded):** coin track has 24 entity clusters; the split-sample
+above-median t=-10.9 is not quotable — use the interacted difference test (t=-3.99).
+
+**RESULTS (pre-registered ladder, no tuning):** H1a REJECTED at t+1 (coin conv t<=0.7
+unconditional); H2 SUPPORTED for coins (conv x val = -0.0169, t=-3.54; split diff
+-0.042, t=-3.99; +0.7%/SD in cheap coin-months vs -3.0%/SD in expensive); H1b weak
+support (~+0.7%/mo per SD, t=1.5-2.3, strongest with sector FE / FM); H2 REJECTED for
+tokens (interaction +0.003, t=0.8, wrong sign); voting-weighted lambda NOT better than
+passive (710-month subsample, all t<0.6); H3 REJECTED (no SMA variant significant;
+coin quadrant only 20 months after breadth guard excludes 45/65 class-months).
+Monthly CMOM factor premium is NEGATIVE (-4.6%/mo, t=-1.6) — monthly analog deviation
+from weekly LTW documented. Full readings: 03_data/PHASE3_RESULTS_REPORT.md.
+
+Outputs: 03_data/phase3/{regression_panel,ltw_factors_monthly,portfolio_returns}.csv,
+03_data/phase3/tables/{h1h2_coefficients,h1h2_fm_tokens,h3_alphas,h3_stats}.csv
+Builders: 04_code/phase3_{panel,factors,regressions,portfolios}.py
+
+### Entry 96 — Session 043: Phase 3b probes (E1 BitInfoCharts AA; E2 realized-cap)
+
+**Date:** 2026-08-04
+**Spec section affected:** PHASE3_ANALYSIS_SPECIFICATION.md section 5 (horse-race data builds).
+
+**E1 — BitInfoCharts active addresses: FEASIBLE but ETH-only within the coin sample.**
+Test coin ETH end-to-end: /comparison/activeaddresses-eth.html parsed with the existing
+sentinusd Dygraph regex — 4,003 daily obs 2015-08-07..2026-08-04, monthly averaging
+clean (raw HTML cached at 03_data/raw/bitinfocharts/activeaddresses_eth.html).
+TRX/ADA/SOL return HTTP 200 STUB pages with zero data rows (checked explicitly —
+page-exists is not series-exists). Of the 24 sample coins only ETH has a real series;
+coverage is otherwise legacy PoW (BTC/LTC/DOGE/...). DECISION: Metcalfe cannot enter
+the cross-sectional horse race; keep only as an ETH+PoW time-series baseline if
+Phase 3b wants it (~10 pages, minutes of work).
+
+**E2 — ch2 checkpoint realized-cap probe: NO for the coin track (MVRV dropped).**
+Schema survey of all 428 files in 03_data/raw/phase1_onchain/holding/: 211 events-schema
+checkpoints retain the FULL raw transfer list ([block, logidx, timestamp, from, to,
+value]) — last-move attribution IS replayable locally with zero new API calls; 215
+streamed-schema checkpoints store only monthly aggregate rows (hodl_6m/hodl_12m) +
+mblocks — per-unit age state destroyed at stream time, unrecoverable (Etherscan lapsed,
+no rebuild path). BUT the 24 regression coins have ZERO ch2 checkpoints of either kind
+(ch2 covered EVM tokens; coin conviction is ch1 staking) — MVRV was specced as a COIN
+comparator (spec 5.1) and is therefore infeasible regardless of schema. Token-side
+overlap: 12 of 101 sample tokens events-schema, 80 streamed, 9 none. DECISION: MVRV
+dropped from the horse race; a 12-token MVRV side-panel remains possible but too thin
+as a comparator. No realized_cap.csv built.
