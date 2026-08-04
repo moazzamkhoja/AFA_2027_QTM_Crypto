@@ -2481,3 +2481,17 @@ between-sector reframe offered as interpretation-not-tested-mechanism; heterogen
 nulls incl. ve-prediction rejection. Abstract + intro findings rewritten to
 conditional-for-coins / extremes-for-tokens. Conclusion drafted. 37 pp. Moazzam to
 review and prune tests for the final table set.
+
+### Entry 107 — Cowork 2026-08-04: DCF misattribution fixed; P/F comparator added (spec §8.7)
+
+Moazzam challenged the intro's claim that DCF dominates the academic literature. He is
+right: pagnotta2022/biais2019 are equilibrium models, liu2021risks is factor lit. Intro
+para 1 recast as equilibrium (academic) vs DCF/fee-multiple capitalization (applied).
+Consequence: the horse race must include the implementable DCF version. §5.1's
+"fee multiples are paid-data" was WRONG — DeFiLlama fees endpoints are free/keyless.
+Spec §8.7 adds P/F and P/F_GL (same F* machinery) for tokens and coins, coverage-
+matched re-estimates, spanning vs conviction quintile, and the P/F-as-valuation
+interaction spec (cleanest remaining M2 test: fee denominator is not mechanically
+price-linked the way TVL is). To run as a short Phase 3c session. NOTE: does not
+conflict with Entry 30 (fees rejected as OUR PQ measure); fees here are the
+competitor's fundamental.

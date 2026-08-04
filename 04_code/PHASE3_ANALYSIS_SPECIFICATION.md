@@ -257,3 +257,32 @@ H2. Each maps to a test; several overlap with §8.4 (noted). Run all four; repor
 Interpretation guide for the paper: M1 supported + M2/M3 rejected = the "single theory,
 two absorption regimes" narrative (tokens are the unpriced corner of the same model).
 M4 is a threat to the COIN result and must be reported regardless of outcome.
+
+### 8.7 Phase 3c addendum — the DCF comparator (price-to-fees)
+
+Correction to §5.1: fee-multiple comparators were marked "paid-data — excluded." That
+is wrong for DeFiLlama: `api.llama.fi` fees/revenue endpoints are free and keyless
+(same API family as the TVL and DEX-volume builds). Since the paper's introduction
+names cash-flow capitalization as the foil, the horse race must include its
+implementable version.
+
+Build (verify endpoints live in-session, per house style):
+- Tokens: protocol daily fees from DeFiLlama fees summary endpoints, monthly sum,
+  matched via the existing dl_slug identity map (join on cmc_id). P/F = MC / trailing-
+  12m fees. Also P/F_GL = MC / F* with F* from the same PQ*-machinery and PARAMS
+  (making the "does growth-levelization help the competitor too?" comparison clean).
+- Coins: chain-level fees from the DeFiLlama chain fees overview; same construction.
+- Coverage will be partial (fee histories mostly 2021+; not all protocols report);
+  report coverage explicitly; signals enter the race only where observed, with a
+  coverage-matched conviction re-estimate on the same subsample (avoid composition
+  confounds).
+- Tests: (a) singles + joint panel race columns for ln P/F and ln P/F_GL, both tracks;
+  (b) spanning: quintile P/F long-short vs the conviction quintile, both directions;
+  (c) the token interaction spec with P/F replacing NV/TVL_GL as the valuation ratio —
+  a fee-anchored denominator is exogenous to token price in a way TVL is not, so this
+  doubles as the cleanest remaining test of M2-style denominator endogeneity.
+
+Paper edits already made (Cowork 2026-08-04): intro paragraph 1 recast — equilibrium
+models (academic) vs DCF/fee-multiple capitalization (applied) — replacing the
+misattributed claim that DCF dominates the academic literature; liu2021risks removed
+from that sentence (kept in the factor-literature paragraph).
