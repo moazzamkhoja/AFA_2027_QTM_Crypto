@@ -248,7 +248,8 @@ key variables: the conviction index $\lambda$, the Growth-Levelized NVT ratio fo
 and the Growth-Levelized NV/TVL ratio for tokens. Section~\ref{sec:data} describes the data sources,
 sample construction, and summary statistics. Section~\ref{sec:results} presents the
 cross-sectional return predictability and portfolio results. Section~\ref{sec:robust}
-reports robustness tests. Section~\ref{sec:conclusion} concludes.
+reports robustness and mechanism tests. Section~\ref{sec:summary} collects all
+findings in a single summary. Section~\ref{sec:conclusion} concludes.
 
 %=============================================================
 \section{Theoretical Framework}
@@ -1463,6 +1464,60 @@ and mildly stronger in bull months ($-2.41\%$, $t=-1.83$) than bear months
 ($-0.88\%$, $t=-0.98$); the token conviction slope is stable across regimes.
 
 %=============================================================
+\FloatBarrier
+%=============================================================
+\section{Summary of Findings}
+\label{sec:summary}
+%=============================================================
+
+Because the empirical analysis spans three hypotheses, an extension, and an extensive
+horse race, Table~\ref{tab:scorecard} collects every verdict in one place before the
+concluding discussion.
+
+\begin{table}[ht]
+\centering
+\caption{Summary of Findings}
+\label{tab:scorecard}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{p{4.1cm}p{5.1cm}p{5.6cm}}
+\toprule
+Test & Verdict & Key evidence \\
+\midrule
+\multicolumn{3}{l}{\textit{Hypotheses}} \\
+H1a: coin conviction level & Rejected at $t{+}1$ & $t=0.69$ alone; marginally positive at $t{+}6$ ($t=1.90$) \\
+H1b: token conviction level & Qualified support & $+0.6$--$0.8\%$/mo per SD, $t=1.5$--$2.3$; attenuates under sector FE and in the joint race \\
+H1b refinement: voting-weighted $\lambda$ & Not supported & $t=-0.48$ on a low-power subsample \\
+H2: coins & Strongly supported & interaction $t=-3.54$; $+0.7\%$/mo (cheap) vs.\ $-3.0\%$/mo (expensive); survives 12-comparator battery ($t=-2.68$), yield controls ($t=-4.39$), MRP variants; caveats: raw-NVT attenuation, g-cap subsample \\
+H2: tokens & Rejected & interaction $\approx 0$ across six conditioning variables, ending with fee/revenue anchoring; a fact about tokens, not measurement \\
+H3: quadrant portfolio & Null (power-limited) & no variant significant; breadth guard binds; equally null under P/F and revenue-DCF valuation axes \\
+\midrule
+\multicolumn{3}{l}{\textit{One-dimensional extension (tokens)}} \\
+Conviction quintile long-short & Supported (disclosed as exploratory-then-confirmed) & $+1.71\%$/mo $\alpha$ ($t=2.18$); net of 50 bps $+1.53\%$ ($t=1.95$); post-2023 $+1.48\%$ ($t=1.79$) \\
+Spanning vs.\ completed battery & Survives & $+1.74\%$ ($t=2.45$) vs.\ twelve long-shorts; $+2.53\%$ ($t=3.18$) controlling reversal alone \\
+Structure of the premium & Between sectors, in the extremes & sector-neutral and decile sorts die; per-sector sorts null; no absorption proxy conditions it \\
+\midrule
+\multicolumn{3}{l}{\textit{Horse race}} \\
+Coin comparators & None displace the interaction & Amihud strongest single ($t=-2.65$); 52-wk high strongest post-2024 \\
+Token comparators & Reversal dominant; P/F the one working valuation ratio & reversal $t=-2.4$ to $-2.6$; P/F $t=-2.50$ singles, $-2.32$ joint; its DCF transform and portfolio versions are dead \\
+Scarcity and technical narratives & Largely unsupported & S2F null everywhere; MA/vol/skew long-shorts all null for tokens \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three sentences organize the table. On the hypotheses: the two-dimensional framework
+survives for coins in its conditional form --- conviction matters where valuation has
+not absorbed it, and visibly rich conviction is punished --- while for tokens only the
+signal's level survives, and no conditioning variable modulates it. On the extension:
+the token premium is real but lives in the extremes of the conviction distribution and
+between protocol categories, robust to every technical and fee-based competitor we can
+construct, with its exploratory origin disclosed. On the horse race: no established
+valuation or technical signal displaces either result, and the one competitor with
+genuine token-level power --- the practitioner fee multiple --- is itself a level
+effect that dies under its own DCF refinement, reinforcing the paper's broader point
+that discounting machinery helps only where the fundamental is a throughput flow
+rather than a cash flow.
+
 \FloatBarrier
 \section{Conclusion}
 \label{sec:conclusion}
