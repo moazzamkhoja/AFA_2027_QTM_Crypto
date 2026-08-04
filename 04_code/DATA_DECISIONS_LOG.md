@@ -2142,3 +2142,43 @@ quota-blocked).
 Output: 03_data/phase1/channel1_cosmos_osmo.csv; channel2_holding.csv 425 tokens / 13,799 rows
 Builders: 04_code/session041_osmo_ch1.py
 Report: 03_data/SESSION041_HXRO_SXP_OSMO_REPORT.md
+
+---
+
+### Entry 93 — Cowork 2026-08-04: Growth-Levelized NV/TVL adopted for token track
+
+**Decision:** The token-track valuation anchor is NV/TVL_GL = MC / TVL*, replacing plain
+NV/TVL, so both tracks carry a growth adjustment (user: "otherwise we miss the growth
+metric completely"). TVL* uses the identical DCF machinery and PARAMS as PQ* (rf 4%,
+MRP 30%, g_inf 3%, n=10, g cap [-50%,+200%], re_floor, beta36 vs BTC). Because TVL is a
+stock (not a flow like PQ), TVL0 = trailing-12m AVERAGE month-end TVL (>=6 obs), g =
+trailing 3y CAGR of TVL0 with 2y/1y fallback.
+
+**Consequences:** NV/TVL_GL panel 111 assets / 3,125 mo (2021-01..2026-05). Token
+regression sample 136/4,627 -> 101/2,771 (growth history requirement); combined panel
+125 assets / 3,489 mo / $451B (19.0% of universe) at 2026-05. Raw NV/TVL retained in the
+panel as robustness column. CAVEAT for Phase 3 robustness: 44.6% of regression
+asset-months hit the g cap (mostly the -50% floor; median token TVL g = -33%/yr,
+post-2021 DeFi contraction) — cap sensitivity must be checked.
+
+Builder: 04_code/phase2_tvl_gl.py
+Output: 03_data/phase2/nv_tvl_gl_panel.csv
+Paper: Section 3.3 (TVL* equation), Table 1 funnel + Table 2 updated (commits 2b9ac26, 9308322).
+
+### Entry 94 — Cowork 2026-08-04: Phase 3 empirical design fixed
+
+**Decision:** Three-element test plan (user-specified): (1) H1/H2 via pooled panel
+regressions with month + category FE, two-way clustered SEs, interaction + split-sample
+for H2; FM secondary for tokens only (coin cross-section too thin at 11-20/month).
+(2) H3 via Stars-minus-Avoid quadrant portfolio evaluated against self-built MONTHLY
+analogs of the Liu-Tsyvinski-Wu (2022 JF) three-factor model (CMKT/CSMB/CMOM from our
+own 1,939-asset universe; LTW original is weekly — deviation documented). (3) Horse race
+vs raw NVT, Metcalfe (needs BitInfoCharts active-addresses build), MVRV (needs realized-
+cap probe of ch2 checkpoints — NO new getLogs, Etherscan lapsed Entry 92), S2F, and
+technical signals (momentum family, 52wk high, MA cross); panel + spanning + sub-period
+designs. Full spec: 04_code/PHASE3_ANALYSIS_SPECIFICATION.md. Kickoff:
+04_code/CLAUDE_CODE_PHASE3_KICKOFF_PROMPT.md (core = Tasks A-D; horse race = Phase 3b).
+
+**Conviction variable resolution:** coins use ln-odds of raw ch1 staking share
+(SoV/MoE = lambda/(1-lambda) requires a raw share, not the z-score index), lambda_z
+fallback flagged; tokens use lambda_z. Standardization within class-month.
