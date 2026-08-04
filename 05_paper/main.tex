@@ -9,6 +9,7 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{placeins}
 
 \doublespacing
 
@@ -994,6 +995,7 @@ $t=-1.57$), a documented consequence of monthly aggregation; factor construction
 details in Section~\ref{sec:data}.}
 \end{table}
 
+\FloatBarrier
 \subsection{Conviction Extremes: The Token Quintile Portfolio}
 \label{sec:results_quintile}
 
@@ -1102,6 +1104,7 @@ spanning. In the reverse direction, no competitor long-short earns positive alph
 the LTW factors plus the conviction quintile.}
 \end{table}
 
+\FloatBarrier
 \subsection{Horse Race Against Alternative Signals}
 \label{sec:results_horserace}
 
@@ -1136,7 +1139,9 @@ post-2024.
 \centering
 \caption{Horse Race: Alternative Signals and One-Month-Ahead Returns}
 \label{tab:horserace}
-\small
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{0.92}
 \begin{tabular}{lcccc}
 \toprule
  & \multicolumn{2}{c}{Coins} & \multicolumn{2}{c}{Tokens} \\
@@ -1250,6 +1255,7 @@ majors only) confirms the well-known Bitcoin price-to-Metcalfe mean reversion
 ($t=-3.69$ in-sample) but cannot enter the cross-sectional race for coverage reasons.
 
 %=============================================================
+\FloatBarrier
 \section{Robustness and Mechanisms}
 \label{sec:robust}
 %=============================================================
@@ -1392,6 +1398,7 @@ equally insignificant ($t=0.70$ and $-0.80$), so the sign flip is not attributab
 the fee denominator.}
 \end{table}
 
+\FloatBarrier
 \subsection{Mechanism Discrimination (M1--M4)}
 \label{sec:robust_mech}
 
@@ -1435,6 +1442,7 @@ consistent with the evidence rather than a tested mechanism, and note that
 distinguishing category-level learning from unmodeled sector risk premia is a task
 for longer samples.
 
+\FloatBarrier
 \subsection{Heterogeneity}
 \label{sec:robust_het}
 
@@ -1455,6 +1463,7 @@ and mildly stronger in bull months ($-2.41\%$, $t=-1.83$) than bear months
 ($-0.88\%$, $t=-0.98$); the token conviction slope is stable across regimes.
 
 %=============================================================
+\FloatBarrier
 \section{Conclusion}
 \label{sec:conclusion}
 %=============================================================
