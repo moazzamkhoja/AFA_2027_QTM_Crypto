@@ -47,3 +47,26 @@ files verified tracked at HEAD.
 
 ## Commits
 687d724 (intro restore), 2b9ac26 (TVL*), 9308322 (funnel), + record-keeping commit.
+
+## Addendum — same Cowork conversation, continued through the full Phase 3/3b/3c cycle
+
+After the Phase 3 design was committed, this conversation continued through: results
+review of sessions 043/044/045 (findings review docx + paper-style tables docx);
+exploratory token quintile sorts (Entry 97) and size-as-delta test (Entry 108, run
+inline); Phase 3b design + kickoff (Entries 98-99, M1-M4 mechanism framework into
+paper Section 2.3); DCF misattribution fix + P/F comparator (Entry 107); Phase 3c
+kickoff incl. technical battery completion (Entries 109-110); full results written
+into the paper after each results report (Entries 106, 115, 116); H3 re-run under
+alternative valuation axes (inline, phase3_explore_h3_altval.py — null everywhere);
+float-placement fix (placeins); Section 7 Summary of Findings with scorecard table.
+Paper stands at 45 pp with 13 tables, all hypotheses + extension + horse race +
+mechanisms written up, awaiting Moazzam's pruning review.
+
+## State at close (2026-08-04 evening)
+- Paper: complete draft, all results in. NEXT: Moazzam reads and decides table
+  pruning (candidates: pooled specs, delta-lambda nulls, Metcalfe + per-sector nulls
+  to appendix); intro rework deferred until after pruning.
+- Open tasks: bibliography final pass (old task 22, largely done via entry removals);
+  push to GitHub (many local commits pending — commit_and_push.bat).
+- Data/infra: Etherscan lapsed; delete permission enabled for the folder; git works
+  normally from Cowork now.
