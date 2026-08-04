@@ -2516,3 +2516,15 @@ interpretation — small chains advertise extreme staking APRs), independent of 
 valuation-conditioning effect. Coin H2 keeps 10% significance in the toughest spec yet.
 
 Script: 04_code/phase3_explore_size_delta.py. Paper: added to Section 6.1.
+
+### Entry 109 — Cowork 2026-08-04: Phase 3c scoped tokens-only; kickoff written
+
+Moazzam directed the fee/revenue DCF comparators to TOKENS ONLY (coins dropped from
+§8.7: chain fees are a toll, not a holder claim — Entry 30 logic). Two measures:
+P/F = MC/trailing-12m fees (practitioner multiple) and prev_gl = MC/REV* (revenue DCF,
+same PARAMS as PQ*/TVL*; revenue preferred over fees as DCF base). Core question,
+stated as C1 in the kickoff: does the token H2 interaction revive with a fee-anchored
+valuation denominator (which, unlike TVL, is not mechanically price-linked)? This is
+the sixth and final measurement candidate for the token conditioning null; Entry 108's
+five prior conditioners all failed. Coverage-matched baselines required so denominator
+and sample effects are separable. CLAUDE_CODE_PHASE3C_KICKOFF_PROMPT.md.

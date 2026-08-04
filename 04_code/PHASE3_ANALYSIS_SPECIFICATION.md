@@ -286,3 +286,12 @@ Paper edits already made (Cowork 2026-08-04): intro paragraph 1 recast — equil
 models (academic) vs DCF/fee-multiple capitalization (applied) — replacing the
 misattributed claim that DCF dominates the academic literature; liu2021risks removed
 from that sentence (kept in the factor-literature paragraph).
+
+**§8.7 amendment (Cowork 2026-08-04, Moazzam):** TOKENS ONLY. The coin chain-fee build
+is dropped — fee-DCF is not conceptually valid for coins (chain fees are the validator
+toll rejected as a coin fundamental in Entry 30, and coin value under QTM is not a
+claim on fee flows). Two measures: P/F (trailing-12m fees multiple) and prev_gl =
+MC/REV* (revenue DCF via the PQ* machinery; revenue preferred over fees as the DCF
+base — discount what holders could claim, not what users pay). Kickoff:
+CLAUDE_CODE_PHASE3C_KICKOFF_PROMPT.md. Priority test: H2-in-tokens with fee-anchored
+valuation (sixth and final measurement candidate after Entry 108).
