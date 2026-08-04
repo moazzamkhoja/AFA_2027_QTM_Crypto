@@ -2647,3 +2647,19 @@ Joint-race construction note: ma_cross REPLACED by ma_dist in the completed join
 set (supersession, not addition). Exclusions sentence for the paper (monthly
 RSI/MACD/Bollinger redundant; daily-native MAX/RSI infeasible at free-tier depth)
 drafted in PHASE3C_RESULTS_REPORT.md section 6.
+
+### Entry 115 — Cowork 2026-08-04: Phase 3c results written into paper
+
+Per PHASE3C_RESULTS_REPORT §7: (1) Section 6.1 — fee-anchored rows added to
+measurement table; six-conditioner definitive statement ("the conditioning failure is
+a fact about tokens, not about measurement"); sign-flip-but-null reported honestly;
+revenue-subsample conviction sign flip (-2.01) as external-validity note. (2) Section
+5.5 — completed 12-comparator battery (coin interaction -2.68/-3.17); P/F as the one
+working token valuation comparator (panel level -2.32 joint, no portfolio translation,
+DCF transform kills it); "growth-levelization helps throughput flows, hurts cash
+flows" framing; exclusions footnote (RSI/MACD/Bollinger redundant; daily-native
+infeasible; amihud snapshot caveat; fee coverage 55/101). (3) Spanning table upgraded
+to completed battery incl. supersession note for 044's underpowered MA-cross cells
+(now +1.66%/t=2.73 and +1.83%/t=2.46 with continuous ma_dist); completed battery
++1.74% (t=2.45); +fees +2.17% (t=2.82). (4) Intro: one sentence on P/F beating its
+own DCF refinement. 39 pp, clean compile. Ready for Moazzam's table-pruning review.

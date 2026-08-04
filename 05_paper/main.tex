@@ -202,7 +202,11 @@ sub-period splits. The coarse two-dimensional quadrant portfolio itself does not
 significant alpha at our universe breadth, a power-limited null we report in full.
 Mechanism tests attribute the cross-track asymmetry to differences in how the market
 absorbs the conviction signal, with the token premium residing largely between protocol
-categories rather than within them.
+categories rather than within them. The horse race also disciplines the cash-flow
+approach on its own terms: the practitioner price-to-fees multiple is the one
+alternative valuation ratio with cross-sectional predictive power for tokens, yet its
+own DCF refinement destroys that power --- discounting adds value where the fundamental
+is a throughput flow, and subtracts it where the fundamental is already a cash flow.
 
 \paragraph{Related Literature.}
 A growing body of work attempts to value digital assets, and our paper connects to
@@ -1049,13 +1053,17 @@ the spanning tests in Table~\ref{tab:spanning} show the premium is emphatically 
 repackaged technical signal. Against the strong token reversal (a winner-minus-loser
 quintile portfolio loses $-4.7\%$ per month in this sample, $t=-3.02$), controlling for
 reversal exposure \textit{raises} the conviction alpha to $+2.53\%$ ($t=3.18$), because
-the high-conviction leg tilts toward recent winners; against the full four-competitor
-battery the alpha is $+2.34\%$ ($t=2.60$). No competitor portfolio earns positive alpha
-on the conviction quintile in the reverse direction.
+the high-conviction leg tilts toward recent winners; against the momentum-family-plus-
+size battery the alpha is $+2.34\%$ ($t=2.60$); and against the completed
+twelve-competitor battery --- adding moving-average distance, volatility,
+idiosyncratic volatility, Amihud illiquidity, and skewness, the last plausible
+spanners --- it is $+1.74\%$ ($t=2.45$), rising to $+2.17\%$ ($t=2.82$) when the two
+fee-based comparators join. No competitor portfolio earns positive alpha on the
+conviction quintile in the reverse direction.
 
 \begin{table}[ht]
 \centering
-\caption{Spanning Tests: Token Conviction Quintile vs.\ Technical Long-Shorts}
+\caption{Spanning Tests: Token Conviction Quintile vs.\ the Completed Battery}
 \label{tab:spanning}
 \small
 \begin{tabular}{lccc}
@@ -1067,39 +1075,83 @@ Reversal long-short & 0.0253*** & (3.18) & 50 \\
 Momentum (3m) long-short & 0.0153* & (1.85) & 50 \\
 52-week-high long-short & 0.0203*** & (2.70) & 50 \\
 Size long-short & 0.0170** & (2.15) & 50 \\
-All four & 0.0234** & (2.60) & 50 \\
+MA-distance long-short & 0.0183** & (2.46) & 50 \\
+Volatility long-short & 0.0169** & (2.10) & 50 \\
+Idiosyncratic-volatility long-short & 0.0169** & (2.15) & 50 \\
+Amihud illiquidity long-short & 0.0174** & (2.14) & 50 \\
+Skewness long-short & 0.0166** & (2.11) & 49 \\
+P/F long-short & 0.0122 & (1.67) & 41 \\
+Revenue-DCF long-short & 0.0154* & (1.84) & 38 \\
+\midrule
+Momentum family + size (four) & 0.0234** & (2.60) & 50 \\
+Completed battery (twelve long-shorts) & 0.0174** & (2.45) & 43 \\
+Completed battery + fee comparators (fourteen) & 0.0217*** & (2.82) & 35 \\
 \bottomrule
 \end{tabular}
 \smallskip
 
-\parbox{0.85\linewidth}{\footnotesize
+\parbox{0.9\linewidth}{\footnotesize
 \textit{Notes:} Competitor long-shorts are built identically (quintile, EW, within
-token class-month) on each signal. A specification adding an MA-crossover long-short is
-available on only 28--31 overlapping months and is reported in the appendix; it reduces
-the alpha to $+0.99\%$--$+1.09\%$ ($t \approx 1.0$--$1.2$) but is underpowered rather
-than contradictory.}
+token class-month) on each signal. The continuous MA-distance signal supersedes a
+binary MA-crossover specification from an earlier draft of the battery, whose long-short
+legs were populated in only 28--31 months and rendered two cells underpowered; with
+full month overlap restored, those cells are significant. The P/F and revenue-DCF rows
+run on the fee-covered subsamples (41 and 38 months); their lower alphas reflect
+sample composition, with small and insignificant competitor loadings, rather than
+spanning. In the reverse direction, no competitor long-short earns positive alpha on
+the LTW factors plus the conviction quintile.}
 \end{table}
 
 \subsection{Horse Race Against Alternative Signals}
 \label{sec:results_horserace}
 
-We race the conviction signals against raw NVT and NV/TVL, stock-to-flow, supply
-growth, 52-week high, moving-average crossover, and the momentum family, both signal-by-
-signal and jointly. Three results matter. First, the coin interaction survives the
-entire battery: with all eight comparators in the regression, conviction $\times$
-valuation remains $-1.76\%$ ($t=-2.83$). No alternative coin signal is significant over
-the full sample; post-2024, the 52-week-high ratio is the strongest single coin signal
-($+2.36\%$ per SD, $t=2.06$). Second, the token conviction \textit{slope} does not
-survive the joint race: it attenuates to $+0.32\%$ ($t=1.10$), while short-horizon
-reversal remains the dominant token signal ($-1.66\%$, $t=-2.46$). Combined with
+We race the conviction signals against a completed comparator battery: raw NVT and
+NV/TVL, stock-to-flow, supply growth, 52-week high, moving-average distance,
+volatility, idiosyncratic volatility, Amihud illiquidity, return skewness, the momentum
+family, and --- for tokens --- the two implementable versions of the cash-flow approach
+named in the introduction: the practitioner price-to-fees multiple (P/F, market
+capitalization over trailing twelve-month protocol fees) and a revenue DCF ratio
+(market capitalization over the growth-levelized present value of protocol revenue,
+built with the machinery of Section~\ref{sec:measures_nvt}).\footnote{Protocol fees and
+revenue are from DeFiLlama, covering 55 and 51 of the 101 sample tokens respectively,
+with histories mostly beginning in 2021; fee-based tests speak for the covered half of
+the sample. Revenue --- the share of fees accruing to the protocol or its holders ---
+is scarcer and later than fees in every dimension of coverage, itself a fact about
+disclosure practice in DeFi. Monthly RSI, MACD, and Bollinger-band signals are
+deterministic transformations of the momentum, moving-average-distance, and volatility
+measures already in the battery, and daily-native signals (the MAX effect, true 14-day
+RSI) require daily price histories unavailable at free-tier depth; we omit the former
+as redundant and note the latter as a data limitation. The Amihud measure uses
+month-end snapshot volume rather than aggregated monthly volume and is accordingly a
+noisy illiquidity proxy.}
+
+Four results matter. First, the coin interaction survives the entire completed
+battery: with all twelve comparators in the regression, conviction $\times$ valuation
+remains $-2.35\%$ ($t=-2.68$) over the full sample and $-1.88\%$ ($t=-3.17$)
+post-2024. Amihud illiquidity is the strongest new coin-level single (illiquid coins
+underperform, $-2.23\%$ per SD, $t=-2.65$), but it does not dent the interaction.
+Second, the token conviction \textit{slope} does not survive the joint race: it
+attenuates to $+0.3\%$ ($t \approx 1.1$), while short-horizon reversal remains the
+dominant token signal ($-1.66\%$, $t=-2.46$). Combined with
 Section~\ref{sec:results_quintile}, the accurate claim is that token conviction is a
 portfolio-extremes phenomenon robust to technical spanning, not a uniform
-cross-sectional slope. Third, the scarcity narratives popular in practitioner work find
-little support: stock-to-flow is insignificant everywhere, and supply growth matters
-only for coins post-2024 ($-1.43\%$ per SD, $t=-2.79$). A descriptive Metcalfe panel
-(available for seven majors only) confirms the well-known Bitcoin price-to-Metcalfe
-mean reversion ($t=-3.69$ in-sample) but cannot enter the cross-sectional race for
-coverage reasons.
+cross-sectional slope. Third --- a result of independent interest --- the practitioner
+fee multiple is the one valuation comparator that works in the token panel: ln P/F
+predicts returns at $-1.03\%$ per SD ($t=-2.50$; $-1.48\%$, $t=-2.70$ post-2024) and
+survives the completed joint battery ($-0.90\%$, $t=-2.32$), where raw NV/TVL never
+did. Yet its own DCF refinement destroys it (the growth-levelized revenue and fee
+versions are dead, $t=-0.42$ and $-0.68$), and it earns nothing as a quintile
+portfolio ($t=-0.10$ at five to six names per leg): a panel-slope phenomenon without
+portfolio translation --- the mirror image of conviction. Growth-levelization, in
+other words, adds value where the fundamental is a throughput flow (coins) and
+subtracts it where the fundamental is already a cash flow (fees). The fee multiple
+neither spans nor revives conviction: the conviction slope on the fee-covered
+subsample is unchanged by the P/F column ($+0.24 \to +0.19$). Fourth, the scarcity
+narratives popular in practitioner work find little support: stock-to-flow is
+insignificant everywhere, and supply growth matters only for coins post-2024
+($-1.43\%$ per SD, $t=-2.79$). A descriptive Metcalfe panel (available for seven
+majors only) confirms the well-known Bitcoin price-to-Metcalfe mean reversion
+($t=-3.69$ in-sample) but cannot enter the cross-sectional race for coverage reasons.
 
 %=============================================================
 \section{Robustness and Mechanisms}
@@ -1128,10 +1180,24 @@ conviction signal is priced into visible assets first, the premium should concen
 among small tokens regardless of how fundamentals are measured. It does not. The
 conviction $\times$ size interaction is $+0.0003$ ($t=0.07$), and the size-median split
 runs in the wrong direction: the conviction slope is $+0.14\%$ per month among small
-tokens ($t=0.32$) and $+1.01\%$ among large tokens ($t=1.67$). The token H2 null thus
-survives five distinct conditioning variables --- the growth-levelized ratio, the raw
-ratio, sector-demeaned valuation, turnover, and market capitalization --- and cannot be
-attributed to the choice of denominator. For coins, the same exercise yields a new
+tokens ($t=0.32$) and $+1.01\%$ among large tokens ($t=1.67$).
+
+The final and cleanest measurement candidate is a fee-anchored denominator: protocol
+fees and revenue are earned in external assets and are not mechanically linked to the
+token's own price the way TVL is, so if the conditioning null were a denominator
+artifact, it should revive here. It does not. Under both the practitioner fee multiple
+and the revenue-DCF ratio, the interaction carries the predicted sign for the first
+time --- and the split-sample slopes order correctly (cheap above expensive) --- but at
+$t=-0.45$ and $t=-0.31$ it is a null, and the coverage-matched baselines show no
+denominator effect to credit. The token H2 null thus survives six distinct
+conditioning variables --- the growth-levelized ratio, the raw ratio, sector-demeaned
+valuation, turnover, market capitalization, and fee/revenue anchoring --- and cannot
+be attributed to the choice of denominator: the conditioning failure is a fact about
+tokens, not about measurement. One external-validity note attaches: on the
+revenue-covered subsample (33 larger, revenue-reporting protocols, effectively
+2023 onward), the token conviction slope itself turns negative ($-1.24\%$, $t=-2.01$),
+a composition fact echoing the fragility of the linear slope --- in contrast to the
+sort extremes --- documented in Section~\ref{sec:results_horserace}. For coins, the same exercise yields a new
 fact: conviction $\times$ size is \textit{positive} ($+0.0329$, $t=2.21$), with the
 conviction premium negative among small coins ($-3.2\%$ per month, $t=-1.89$) ---
 consistent with high advertised staking ratios on small chains marking yield traps
@@ -1156,6 +1222,8 @@ Exclude custodial-flagged (B4) months & --- & 0.0023 (0.55) \\
 Exclude conviction-fallback coin-months & $-$0.0181*** ($-$4.67) & --- \\
 MRP 20\% & $-$0.0175*** ($-$3.55) & 0.0033 (0.78) \\
 MRP 40\% & $-$0.0163*** ($-$3.54) & 0.0035 (0.80) \\
+Fee-anchored valuation (ln P/F) & --- & $-$0.0024 ($-$0.45) \\
+Revenue-DCF valuation (ln MC/REV$^*$) & --- & $-$0.0035 ($-$0.31) \\
 \bottomrule
 \end{tabular}
 \smallskip
@@ -1164,7 +1232,10 @@ MRP 40\% & $-$0.0163*** ($-$3.54) & 0.0035 (0.80) \\
 \textit{Notes:} Each row re-estimates the column-(4) specification of
 Tables~\ref{tab:coin_ladder}--\ref{tab:token_ladder} under the stated variant. B4 flags
 apply only to the holding channel and hence only to tokens; the conviction fallback
-applies only to coins.}
+applies only to coins. The fee-anchored rows run on the fee-covered subsamples (49 and
+33 tokens); coverage-matched NV/TVL\_GL baselines on the identical subsamples are
+equally insignificant ($t=0.70$ and $-0.80$), so the sign flip is not attributable to
+the fee denominator.}
 \end{table}
 
 \subsection{Mechanism Discrimination (M1--M4)}
