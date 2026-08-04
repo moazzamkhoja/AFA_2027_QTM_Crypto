@@ -2467,3 +2467,17 @@ intended "M1 supported + M2/M3 rejected" narrative loses its M1 leg; Section 2.3
 reframe (evidence pattern = between-sector, high-turnover, extremes-only -> sector-
 level repricing of governance value rather than individual-token attention neglect).
 M4 is the session's best defensive result. Outputs tables/mechanisms.csv.
+
+### Entry 106 — Cowork 2026-08-04: Full results written into paper (Sections 5, 6, abstract, intro, conclusion)
+
+Results (5.1-5.5): coin ladder + token ladder tables; H2 asymmetry as central result;
+H3 power-limited null; token quintile battery with Entry-97 disclosure paragraph and
+full median->decile progression; spanning table (reversal-distinct); horse race
+summary (coin interaction survives battery at t=-2.83; token slope attenuates to
+t=1.10; token conviction = portfolio-extremes claim). Robustness (6.1-6.3):
+measurement table with BOTH coin caveats (raw-NVT attenuation t=-1.90; g-cap subsample
+t=-0.97) at equal prominence; M1-M4 verdict table with M1 wrong-sign reported and the
+between-sector reframe offered as interpretation-not-tested-mechanism; heterogeneity
+nulls incl. ve-prediction rejection. Abstract + intro findings rewritten to
+conditional-for-coins / extremes-for-tokens. Conclusion drafted. 37 pp. Moazzam to
+review and prune tests for the final table set.
