@@ -1125,10 +1125,106 @@ as redundant and note the latter as a data limitation. The Amihud measure uses
 month-end snapshot volume rather than aggregated monthly volume and is accordingly a
 noisy illiquidity proxy.}
 
+Table~\ref{tab:horserace} reports the signal-by-signal race;
+Table~\ref{tab:altport} reports each alternative signal as a long-short portfolio.
 Four results matter. First, the coin interaction survives the entire completed
 battery: with all twelve comparators in the regression, conviction $\times$ valuation
 remains $-2.35\%$ ($t=-2.68$) over the full sample and $-1.88\%$ ($t=-3.17$)
-post-2024. Amihud illiquidity is the strongest new coin-level single (illiquid coins
+post-2024.
+
+\begin{table}[ht]
+\centering
+\caption{Horse Race: Alternative Signals and One-Month-Ahead Returns}
+\label{tab:horserace}
+\small
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Coins} & \multicolumn{2}{c}{Tokens} \\
+Signal (own coefficient, singles) & Full & 2024+ & Full & 2024+ \\
+\midrule
+Conviction & 0.0055 & 0.0090 & 0.0064** & 0.0064* \\
+ & (0.69) & (1.22) & (1.97) & (1.88) \\
+Raw NVT / raw NV/TVL & 0.0080 & 0.0162* & $-$0.0061 & $-$0.0051 \\
+ & (0.94) & (1.68) & ($-$1.53) & ($-$1.05) \\
+Price-to-fees (ln P/F) & --- & --- & $-$0.0103** & $-$0.0148*** \\
+ & & & ($-$2.50) & ($-$2.70) \\
+Revenue DCF (ln MC/REV$^*$) & --- & --- & $-$0.0019 & 0.0011 \\
+ & & & ($-$0.42) & (0.17) \\
+Stock-to-flow & 0.0023 & 0.0090* & 0.0045 & 0.0012 \\
+ & (0.28) & (1.86) & (1.03) & (0.28) \\
+Supply growth (12m) & $-$0.0075 & $-$0.0143*** & 0.0005 & 0.0008 \\
+ & ($-$0.94) & ($-$2.79) & (0.14) & (0.14) \\
+52-week high & 0.0156 & 0.0236** & $-$0.0134** & $-$0.0047 \\
+ & (1.52) & (2.06) & ($-$2.04) & ($-$0.67) \\
+MA-distance & 0.0119 & 0.0149 & $-$0.0120** & $-$0.0115 \\
+ & (1.32) & (1.36) & ($-$2.21) & ($-$1.61) \\
+Volatility (12m) & $-$0.0120 & $-$0.0193** & 0.0000 & $-$0.0039 \\
+ & ($-$1.44) & ($-$2.29) & (0.00) & ($-$0.79) \\
+Idiosyncratic volatility & $-$0.0146* & $-$0.0209** & $-$0.0046 & $-$0.0098*** \\
+ & ($-$1.67) & ($-$2.10) & ($-$1.39) & ($-$2.62) \\
+Amihud illiquidity & $-$0.0223*** & $-$0.0286*** & 0.0043 & 0.0036 \\
+ & ($-$2.65) & ($-$3.23) & (0.85) & (0.71) \\
+Return skewness (36m) & $-$0.0099 & $-$0.0125 & $-$0.0040 & $-$0.0076 \\
+ & ($-$1.15) & ($-$1.13) & ($-$1.04) & ($-$1.49) \\
+Reversal (return $t$) & 0.0019 & $-$0.0026 & $-$0.0142** & $-$0.0195*** \\
+ & (0.21) & ($-$0.25) & ($-$2.39) & ($-$2.62) \\
+Momentum (3m) & 0.0081 & 0.0082 & $-$0.0019 & $-$0.0017 \\
+ & (1.00) & (0.87) & ($-$0.38) & ($-$0.28) \\
+Momentum (12--2) & 0.0093 & 0.0190** & $-$0.0021 & 0.0069 \\
+ & (0.87) & (2.10) & ($-$0.46) & (1.47) \\
+\midrule
+\multicolumn{5}{l}{\textit{Joint (all comparators simultaneously):}} \\
+Conviction $\times$ Valuation (coins) & $-$0.0235*** & $-$0.0188*** & & \\
+ & ($-$2.68) & ($-$3.17) & & \\
+Conviction (tokens) & & & 0.0011 & \\
+ & & & (0.19) & \\
+ln P/F (tokens) & & & $-$0.0090** & \\
+ & & & ($-$2.32) & \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\parbox{0.92\linewidth}{\footnotesize
+\textit{Notes:} Each ``singles'' cell is the own coefficient from a regression of the
+winsorized one-month-ahead return on the standardized signal with month fixed effects,
+SEs two-way clustered. Fee-based rows run on the fee-covered subsamples (49--55 of 101
+tokens, histories mostly 2021+). The joint token specification is estimated on the
+fee-covered subsample; the token conviction slope on that subsample is $+0.0014$
+($t=0.24$) before the P/F column enters --- the fee multiple neither spans nor revives
+it.}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Alternative Signals as Long-Short Portfolios (Tokens)}
+\label{tab:altport}
+\small
+\begin{tabular}{lccccc}
+\toprule
+Quintile long-short & Mean/mo & $\alpha$/mo & $t$ & Sharpe & Months \\
+\midrule
+P/F, cheap $-$ expensive & 0.0079 & $-$0.0018 & ($-$0.10) & 0.15 & 41 \\
+Revenue DCF, cheap $-$ expensive & $-$0.0060 & 0.0098 & (0.55) & $-$0.23 & 38 \\
+MA-distance, high $-$ low & $-$0.0232 & $-$0.0217 & ($-$1.57) & $-$0.86 & 50 \\
+Volatility, high $-$ low & $-$0.0125 & $-$0.0106 & ($-$0.73) & $-$0.48 & 50 \\
+Idiosyncratic vol, high $-$ low & $-$0.0124 & $-$0.0056 & ($-$0.43) & $-$0.52 & 50 \\
+Amihud, illiquid $-$ liquid & $-$0.0065 & $-$0.0147 & ($-$0.82) & $-$0.25 & 50 \\
+Skewness, high $-$ low & $-$0.0054 & 0.0031 & (0.16) & $-$0.22 & 49 \\
+\midrule
+Conviction quintile (reference) & 0.0228 & 0.0171** & (2.18) & 0.86 & 50 \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\parbox{0.9\linewidth}{\footnotesize
+\textit{Notes:} Construction identical to the conviction quintile
+(Table~\ref{tab:quintile}): EW, minimum 3 names per leg, monthly rebalancing, NW-3
+alphas vs.\ the monthly LTW factors. No alternative signal --- including the two
+fee-based valuation ratios --- earns a significant long-short alpha in either
+direction; P/F's panel-level significance does not translate into a portfolio at
+$\sim$5--6 names per leg on the half-covered sample. No cell that is null in the full
+sample revives post-2023.}
+\end{table} Amihud illiquidity is the strongest new coin-level single (illiquid coins
 underperform, $-2.23\%$ per SD, $t=-2.65$), but it does not dent the interaction.
 Second, the token conviction \textit{slope} does not survive the joint race: it
 attenuates to $+0.3\%$ ($t \approx 1.1$), while short-horizon reversal remains the
@@ -1185,11 +1281,69 @@ tokens ($t=0.32$) and $+1.01\%$ among large tokens ($t=1.67$).
 The final and cleanest measurement candidate is a fee-anchored denominator: protocol
 fees and revenue are earned in external assets and are not mechanically linked to the
 token's own price the way TVL is, so if the conditioning null were a denominator
-artifact, it should revive here. It does not. Under both the practitioner fee multiple
-and the revenue-DCF ratio, the interaction carries the predicted sign for the first
-time --- and the split-sample slopes order correctly (cheap above expensive) --- but at
-$t=-0.45$ and $t=-0.31$ it is a null, and the coverage-matched baselines show no
-denominator effect to credit. The token H2 null thus survives six distinct
+artifact, it should revive here. Table~\ref{tab:h2altval} reports the full interaction
+specification under each alternative valuation ratio. It does not revive. Under both
+the practitioner fee multiple and the revenue-DCF ratio, the interaction carries the
+predicted sign for the first time --- and the split-sample slopes order correctly
+(cheap above expensive) --- but at $t=-0.45$ and $t=-0.31$ it is a null, and the
+coverage-matched baselines show no denominator effect to credit.
+
+\begin{table}[ht]
+\centering
+\caption{Hypothesis 2 for Tokens under Alternative Valuation Ratios}
+\label{tab:h2altval}
+\small
+\begin{tabular}{lccc}
+\toprule
+Valuation ratio used & NV/TVL\_GL & ln P/F & ln MC/REV$^*$ \\
+ & (baseline) & (fee multiple) & (revenue DCF) \\
+\midrule
+Conviction & 0.0061 & 0.0066 & $-$0.0009 \\
+ & (1.47) & (1.15) & ($-$0.11) \\
+Valuation (level) & 0.0042 & $-$0.0119*** & $-$0.0014 \\
+ & (0.79) & ($-$3.21) & ($-$0.25) \\
+Conviction $\times$ Valuation & 0.0034 & $-$0.0024 & $-$0.0035 \\
+ & (0.79) & ($-$0.45) & ($-$0.31) \\
+\midrule
+Conviction, cheap half & 0.0017 & 0.0085 & 0.0050 \\
+ & (0.28) & (0.94) & (0.37) \\
+Conviction, expensive half & 0.0041 & 0.0023 & $-$0.0096 \\
+ & (1.13) & (0.37) & ($-$0.65) \\
+Split difference (conv $\times$ high) & 0.0048 & $-$0.0068 & $-$0.0184 \\
+ & (0.65) & ($-$0.89) & ($-$0.87) \\
+\midrule
+Coverage-matched baseline interaction & --- & 0.0046 & $-$0.0102 \\
+ & & (0.70) & ($-$0.80) \\
+Observations / tokens & 2,592 / 97 & 1,282 / 49 & 915 / 33 \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\parbox{0.92\linewidth}{\footnotesize
+\textit{Notes:} Each column estimates the full interaction specification (conviction,
+controls, valuation, conviction $\times$ valuation; month FE; two-way clustered SEs)
+with the stated valuation ratio. The coverage-matched baseline row re-estimates the
+NV/TVL\_GL interaction on the identical fee- or revenue-covered subsample: it is
+equally insignificant, so the sign change under fee anchoring is a sample-composition
+effect, not a denominator effect. H2 predicts a negative interaction; under the fee
+measures the signs finally comply but no statistic approaches significance. The
+significant P/F \textit{level} coefficient is the horse-race finding of
+Table~\ref{tab:horserace}, not an H2 result.}
+\end{table}
+
+The quadrant portfolio (H3) was also re-formed under the alternative valuation
+measures, with construction identical to Table~\ref{tab:quadrant}. It remains null.
+With ln P/F as the valuation axis, the token Stars-minus-Avoid portfolio earns
+$+1.67\%$ per month in factor-adjusted alpha --- the best quadrant point estimate in
+the paper, with an annualized Sharpe of 0.82 --- but at $t=1.35$ over 46 months it is
+insignificant, and it vanishes post-2023 ($+0.09\%$, $t=0.07$). With the revenue-DCF
+ratio, the quadrant is negative ($-1.89\%$, $t=-1.24$) on only 31 months, with 33
+months lost to the breadth guard on the revenue-covered subsample. The coverage-matched
+NV/TVL\_GL quadrant on the same fee-covered subsample is equally null ($t=0.68$).
+Across all three valuation measures, the two-dimensional portfolio adds nothing over
+the one-dimensional conviction quintile of Table~\ref{tab:quintile} --- fully
+consistent with the regression evidence that the second dimension carries no
+conditioning information for tokens. The token H2 null thus survives six distinct
 conditioning variables --- the growth-levelized ratio, the raw ratio, sector-demeaned
 valuation, turnover, market capitalization, and fee/revenue anchoring --- and cannot
 be attributed to the choice of denominator: the conditioning failure is a fact about

@@ -2663,3 +2663,17 @@ to completed battery incl. supersession note for 044's underpowered MA-cross cel
 (now +1.66%/t=2.73 and +1.83%/t=2.46 with continuous ma_dist); completed battery
 +1.74% (t=2.45); +fees +2.17% (t=2.82). (4) Intro: one sentence on P/F beating its
 own DCF refinement. 39 pp, clean compile. Ready for Moazzam's table-pruning review.
+
+### Entry 116 — Cowork 2026-08-04: Alternative-valuation results made visible; H3 re-run under P/F and REV* (user-directed)
+
+Moazzam flagged that the 3c results were prose-only. Added to the paper: (1) Table
+horserace — full signal-by-signal race, both tracks, singles + joint rows; (2) Table
+altport — every alternative signal as a token quintile long-short (all null) vs the
+conviction quintile reference; (3) Table h2altval — the H2 interaction spec under
+NV/TVL_GL / ln P/F / ln MC/REV* side by side with split-samples and coverage-matched
+baselines. (4) NEW RUN (inline, phase3_explore_h3_altval.py): H3 quadrant re-formed
+with fee-anchored valuation axes. Verdict: still null under all three measures —
+P/F quadrant +1.67%/mo alpha, Sharpe 0.82, but t=1.35 (46 mo) and DEAD post-2023
+(t=0.07); REV* quadrant negative (-1.89%, t=-1.24, 31 mo, 33 excluded by breadth
+guard); coverage-matched NV/TVL_GL baseline t=0.68. Two-dimensional portfolio adds
+nothing over the conviction quintile under ANY valuation measure. Paper 42 pp.
