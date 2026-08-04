@@ -2267,3 +2267,27 @@ comparator (spec 5.1) and is therefore infeasible regardless of schema. Token-si
 overlap: 12 of 101 sample tokens events-schema, 80 streamed, 9 none. DECISION: MVRV
 dropped from the horse race; a 12-token MVRV side-panel remains possible but too thin
 as a comparator. No realized_cap.csv built.
+
+### Entry 97 — Cowork 2026-08-04: EXPLORATORY token conviction-only sorts (user-directed, post-hoc)
+
+**Context:** Moazzam observed that the token conviction signal is one-dimensional (H2
+interaction dead) and asked for a pure high-conviction-minus-low-conviction token sort.
+The session-043 comparator (median split EW) exists and fails (alpha +0.33%/mo, t=0.38).
+
+**Finding (EXPLORATORY — run after seeing session-043 results, not pre-registered):**
+sharpening the sort strengthens the signal monotonically, as a genuine linear signal
+should: median EW t=0.38 -> tercile EW t=0.44 -> QUINTILE EW alpha +1.71%/mo t=2.18
+Sharpe 1.01 (50 mo); quintile VW +3.11%/mo t=1.83. Post-2023: quintile EW +1.48%/mo
+t=1.79 Sharpe 1.28 — the only portfolio variant so far that survives the sub-period.
+Leg breadth ~9.4 tokens; leg turnover 0.18/mo -> 50bps/side cost drag ~36bps/mo (net
+~+1.35%/mo EW). Median split dilutes the signal because information is in the extremes.
+
+**Sector-neutral variant INFEASIBLE at current labels:** DeFiLlama compound category
+strings are hyper-granular (median 1 token per sector-month; only 1.1% of sector-months
+have >=3 tokens; only 7 tokens ever qualify). Requires coarse sector remap
+(DEX/Lending/Yield/Derivatives/Other) before a within-sector signal can be built.
+
+**Status:** exploratory, to be treated as hypothesis-generating. Confirmatory treatment
+queued for Phase 3b: pre-specified quintile conviction sort (EW primary), spanning vs
+momentum/reversal/52wk-high competitor portfolios, coarse-sector-neutralized version,
+cost-adjusted, sub-periods. Script: 04_code/phase3_explore_conv_quintile.py.
