@@ -241,3 +241,19 @@ Pre-specified here; the paper will disclose the exploratory origin (Entry 97).
 ### 8.5 Outputs
 `03_data/phase3/tables/` extended; `03_data/PHASE3B_RESULTS_REPORT.md` in the same
 honest-results format; Entry 98+ for every decision; builders `04_code/phase3b_*.py`.
+
+### 8.6 Mechanism discrimination — M1–M4 (paper Section 2.3, "When does conditioning bite?")
+
+The paper now states four auxiliary mechanisms explaining the coin/token asymmetry in
+H2. Each maps to a test; several overlap with §8.4 (noted). Run all four; report all.
+
+| Mechanism | Test | Overlaps | Prediction if mechanism true |
+|---|---|---|---|
+| M1 attention-dependent absorption | Token spec: conv_std × turnover_std interaction (turnover = volume_24h/MC, class-month std); plus size/turnover tercile splits | §8.4(4) | interaction conv×turnover < 0 and significant; premium concentrated in small/low-turnover tokens |
+| M2 denominator endogeneity | Token spec s4 with val demeaned within COARSE sector-month before standardizing; portfolio version: sector-neutralized valuation in the quadrant sort | new | conv×val interaction revives (turns negative) under sector-demeaned val |
+| M3 growth-adjustment measurement | Token spec s4 with raw NV/TVL; and excluding g_capped months | §8.4(6) | interaction stays ~0 in both → NOT a measurement artifact; revives → artifact |
+| M4 seigniorage confound (coins) | Coin spec s4 + staking_yield_std + conv_std × staking_yield_std, where staking_yield ≈ annualized issuance rate × (1/λ_ch1) from universe_panel supply growth (approximation; log the construction) | new | coin conv×val interaction survives yield controls → δ story; dies → b_t story |
+
+Interpretation guide for the paper: M1 supported + M2/M3 rejected = the "single theory,
+two absorption regimes" narrative (tokens are the unpriced corner of the same model).
+M4 is a threat to the COIN result and must be reported regardless of outcome.

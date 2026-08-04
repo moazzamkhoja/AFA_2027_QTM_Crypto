@@ -2305,3 +2305,17 @@ full-breadth quintile primary, per-sector terciles for largest 2-3 groups as pow
 check. (4) Spanning against reversal/momentum/52wk-high/size long-shorts is the make-or-
 break test given the strong token reversal (FM t=-3.4). Spec §8; kickoff
 CLAUDE_CODE_PHASE3B_KICKOFF_PROMPT.md.
+
+### Entry 99 — Cowork 2026-08-04: M1–M4 mechanism framework added to paper + spec §8.6
+
+**Decision:** The coin/token H2 asymmetry (interaction strong for coins, dead for
+tokens) is elevated from anomaly to mechanism section. Paper Section 2.3 gains "When
+does conditioning bite?" — formalizes that Prop 2 requires cross-sectional variation in
+delta and states four discriminating mechanisms: M1 attention-dependent absorption
+(token premium should concentrate in small/low-turnover; conv x turnover < 0), M2 TVL
+denominator endogeneity (interaction should revive under sector-demeaned valuation),
+M3 growth-adjustment measurement (raw NV/TVL + cap-excluded), M4 seigniorage confound
+(coin interaction must survive staking-yield controls — a THREAT to the coin result,
+reported regardless of outcome). Spec §8.6 maps each to its test; 3b kickoff Task E
+added. Preferred narrative if M1 holds and M2/M3 fail: single theory, two absorption
+regimes — coins are the partially-priced corner, tokens the unpriced corner.

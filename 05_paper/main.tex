@@ -384,6 +384,52 @@ current throughput relative to market cap, not necessarily a mispricing; similar
 NV/TVL\_GL. The conditioning role is asymmetric: valuation identifies the \textit{timing}
 of conviction signal absorption, not a separate source of alpha.
 
+\paragraph{When does conditioning bite? Discriminating predictions.}
+Proposition 2 has empirical content only where the absorption fraction $\delta_t$
+\textit{varies} in the cross-section: if $\delta_{j,t}$ is approximately uniform across
+assets within a class, expected returns are proportional to $\lambda_{j,t}$ alone and
+the interaction is degenerate---the conviction signal becomes one-dimensional. Whether
+$\delta_t$ varies, and whether the chosen valuation ratio measures that variation, are
+distinct questions, and both may differ across the two asset tracks. We therefore state
+four auxiliary mechanisms, each with a testable implication, that discriminate between
+economic and measurement explanations for any observed cross-track asymmetry in
+Proposition 2.
+
+\textbf{M1 (Attention-dependent absorption).} Absorption requires that some investors
+incur the cost of extracting the signal \citep{grossman1980impossibility}. Coin staking
+ratios are widely published (exchange interfaces, staking dashboards), so $\delta$
+plausibly varies with the attention an asset receives; token governance locks are
+observed by few market participants, so $\delta$ may be uniformly low across tokens.
+\textit{Implication:} for tokens, conditioning should operate on attention proxies
+rather than valuation---the conviction premium should be concentrated among small,
+low-turnover tokens, and a conviction $\times$ turnover interaction should be negative
+where the conviction $\times$ valuation interaction is not.
+
+\textbf{M2 (Denominator endogeneity).} TVL is denominated in crypto assets that are
+correlated with---and sometimes include---the token itself, so NV/TVL co-moves with
+price mechanically and its cross-sectional variation may reflect business-model
+differences across protocol types rather than differential mispricing.
+\textit{Implication:} the conviction $\times$ valuation interaction for tokens should
+strengthen when valuation is demeaned within protocol category, which removes the
+business-model component.
+
+\textbf{M3 (Growth-adjustment measurement).} The growth-levelization of TVL is
+estimated over a period dominated by the post-2021 TVL contraction, and the growth cap
+binds for a large fraction of token-months, compressing the variation the interaction
+requires. \textit{Implication:} the interaction should behave similarly under the raw
+NV/TVL ratio and in the subsample where the growth cap does not bind; if it revives
+there, the asymmetry is a measurement artifact.
+
+\textbf{M4 (Seigniorage confound in coins).} For coins, locking is compensated
+($b_t > 0$), so high $\lambda$ in a richly valued coin may reflect yield-chasing
+crowding rather than informed conviction, and a negative conviction premium among
+expensive coins may reflect the unwinding of crowded staking positions rather than
+$\delta$-driven absorption. \textit{Implication:} the coin interaction should survive
+controlling for the staking yield and its interaction with $\lambda$; if it does not,
+the coin-track conditioning result is a $b_t$ phenomenon, not a $\delta$ phenomenon.
+
+These four mechanisms are examined in Section~\ref{sec:robust}.
+
 \subsection{Hypotheses and the Quadrant Portfolio}
 \label{sec:theory_portfolio}
 

@@ -60,6 +60,17 @@ tercile splits; (5) bull/bear (CMKT sign) and pre/post-2023 regime splits; (6)
 measurement robustness: raw NV/TVL, g-cap-excluded, B4-excluded, conv_source-excluded,
 MRP 20/40 re-derivations.
 
+## Task E — Mechanism discrimination M1–M4 (spec §8.6) [feeds paper Section 2.3 + Robustness]
+The paper now states four mechanisms for the coin/token H2 asymmetry with discriminating
+predictions. Run the §8.6 table exactly: M1 conv × turnover interaction for tokens
+(turnover = volume_24h/MC); M2 token interaction with valuation demeaned within coarse
+sector-month; M3 raw NV/TVL + g-cap-excluded interaction (reuse Task D(6)); M4 coin
+spec s4 plus staking-yield level and conv × staking-yield interaction (yield
+approximated from issuance; log the construction as an Entry). Report the M1–M4 verdict
+table explicitly in the results report — this section is what the paper's mechanism
+narrative depends on, and a negative verdict on M4 (coin result is a b_t artifact) must
+be reported with the same prominence as a positive one.
+
 ## Deliverables
 03_data/PHASE3B_RESULTS_REPORT.md (every table + one-paragraph reading; negative results
 at equal prominence; the paper will disclose Entry 97's exploratory origin — do not
