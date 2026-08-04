@@ -2539,3 +2539,111 @@ token conviction quintile; amihud completes the limits-to-arbitrage race; monthl
 RSI/MACD/Bollinger excluded as transformations of the included set; daily-native
 signals (MAX, true RSI) excluded for data-depth reasons — both exclusions get one
 justifying sentence in the paper. Runs inside session 045 (Phase 3c).
+
+### Entry 111 — Session 045: DeFiLlama fees/revenue panel built (Phase 3c Task A)
+
+**Date:** 2026-08-04
+**Endpoints verified live:** `api.llama.fi/summary/fees/{slug}?dataType=dailyFees|
+dailyRevenue` (daily [ts, usd] chart; HTTP 400 = no adapter exists) and
+`/overview/fees` (2,288 protocol + 237 chain adapters). Parent slugs accepted by
+/summary even when the overview lists only version children (uniswap, curve-finance,
+compound-finance etc. all resolve) — the overview listing is NOT authoritative for
+what /summary accepts; live probe per slug is.
+
+**Identity rule:** cmc_id -> dl_slug from tvl_panel.csv (the map actually used in the
+NV/TVL build), 1:1 on all 101 sample tokens. The 4 chain-level TVL tokens (ARB,
+METIS, APE, BLAST) get the DL CHAIN fee adapters (arbitrum/metis/apechain/blast,
+verified live), flagged `chain_level_sequencer_fees` — L2 sequencer fees accrue to
+the DAO (a holder claim), unlike the L1 validator toll rejected in Entry 30/109;
+consistent with their chain-level TVL precedent (Entries 68/84). METIS and APE have
+no chain revenue adapter (400) — fees only.
+
+**Coverage:** 55/101 tokens with fees, 51/101 with revenue; median 44 months per
+covered token; starts 10 pre-2021 / 13 in 2021 / 32 in 2022+. Fees-without-revenue:
+METIS, APE, RBN, MAV (no revenue adapter), 10 more tokens with shorter revenue than
+fee windows. Monthly sum by calendar month (universe month_end convention);
+incomplete trailing month dropped; n_days kept as diagnostic.
+
+**Probed-and-REJECTED slug resolutions** (house conservatism — fees slug must equal
+the TVL identity slug or its chain mapping): `metronome` (MET, real parent match but
+fees start 2023-01 vs MET regression window ending 2023-06 -> zero usable DCF months);
+`rari` (= Rarible RARI, NOT Rari Capital RGT — collision); `nerve` (2024-09 start,
+wrong-protocol risk vs nerve-staking); `aurora` (chain adapter; AURORA's TVL identity
+is protocol-level aurora-plus; chain-toll logic applies); `bounce.tech` (2026-01
+start, 0 usable regression months); `thundercore` (1 day of data). All other misses
+are genuine 400s (augur, loopring, hashflow, biconomy, aevo-perps, flexa, ...).
+**Known limitation:** DL `dydx-v3` fees cover only 2023-11..2024-10 (the wind-down),
+missing the 2021-22 v3 fee peak — ETHDYDX under-covered.
+
+Raw cache 03_data/raw/phase3c/fees/ (202 files); builder phase3c_fees_panel.py;
+outputs fees_revenue_panel.csv (2,437 rows) + tables/fees_coverage.csv.
+
+### Entry 112 — Session 045: P/F and prev_gl comparator construction (Task B)
+
+pf = MC / trailing-365D fee sum (>=6 monthly obs — PQ0 house convention). prev_gl =
+MC / REV* and pf_gl = MC / F* via the EXACT phase2_nvt_gl.py pq_star machinery and
+PARAMS (rf 4%, MRP 30%, g_inf 3%, n 10, g cap [-50%,+200%] flagged, beta36 from the
+regression panel, r_e floor 5%); base = trailing-12m revenue (fees); g = trailing 3y
+CAGR of the base, 2y/1y fallback, window recorded. ln, winsorized 1/99 pooled within
+track, standardized within token-month (mirrors the val treatment).
+
+Coverage on the 2,771 token asset-months: pf 1,367 (51 tokens), pf_gl 1,178 (44),
+prev_gl 976 (35); 202 pf_gl-only rows (13 tokens) where fees exist but revenue does
+not — the flagged variant of the kickoff. prev_gl needs >=1y of prior base history
+for g, so its months are effectively 2023+. Sanity: median P/F 12.1, median prev_gl
+23.0; corr(ln P/F, raw ln NV/TVL) = 0.48, vs GL 0.32, vs size -0.06 — distinct axis.
+Builder phase3c_comparators.py; output fee_comparators.csv.
+
+### Entry 113 — Session 045: C1 VERDICT — token H2 null survives the sixth (fee-anchored) measurement candidate; P/F is a real token panel signal
+
+**C1 (the session's core question):** token s4 with val = ln P/F: conv x val =
+-0.0024 (t = -0.45), n = 1,282/49 tokens. With val = ln prev_gl (primary DCF):
+-0.0035 (t = -0.31), n = 915/33. pf_gl variant: +0.0060 (t = +0.73). First time in
+six conditioners the SIGN goes the H2 way and splits order correctly (P/F cheap
++0.0085 vs expensive +0.0023; prev_gl +0.0050 vs -0.0096) — but s5_diff t = -0.89 /
+-0.87: a null. Coverage-matched NV/TVL_GL baselines on the SAME subsamples equally
+dead (+0.70 / -0.80) -> no denominator effect; the prev_gl-subsample TVL interaction
+going negative is sample composition, not measurement. **PAPER CLAIM NOW AVAILABLE:
+the token conditioning null survives TVL-raw, ex-g-cap, sector-demeaning, size,
+turnover, AND fee/revenue anchoring — it is a fact about tokens, not measurement.**
+
+**New horse-race fact:** ln P/F is the first valuation signal to work in the token
+panel — singles -0.0103 (t = -2.50) full / -0.0148 (t = -2.70) sub-2024; level term
+in s4 -0.0119 (t = -3.21); survives the completed joint battery (-0.0090, t = -2.32)
+where raw NV/TVL never did. The DCF transform DESTROYS it (prev_gl t = -0.42, pf_gl
+t = -0.68) and the quintile portfolio earns nothing (-0.18%/mo, t = -0.10 at ~5-6
+names/leg; post-2023 +1.15%, t = 0.85) — a panel-level, not extremes, phenomenon
+(mirror image of conviction). Conviction's joint slope is unchanged by the fee
+column on the P/F subsample (+0.24 -> +0.19 t). CAVEAT logged: on the revenue-covered
+subsample (33 tokens, ~2023+) the conviction slope flips negative (-0.0124,
+t = -2.01) BEFORE any fee variable enters — composition, reported in the report
+headline. Neither fee comparator spans the conviction quintile (q5 alpha +1.22%
+t = 1.67 on pf months, +1.54% t = 1.84 on prev_gl months; direction 2 alphas null).
+
+### Entry 114 — Session 045: technical battery results (Task D) — conviction quintile SURVIVES the completed battery; 044 MA-cross cells superseded and resolved
+
+Signals built from universe_panel only (phase3c_technicals.py): ma_dist (px/MA10-1),
+vol12 (>=8 obs), ivol (36m resid SD vs CMKT, >=12), amihud (ln trailing-12m mean
+|r|/volume_24h, >=6 obs — **CAVEAT: volume_24h is a month-end SNAPSHOT, not a monthly
+aggregate; noisy proxy**), skew36 (>=18 obs). Returns clipped (-90%, +300%) before
+moments (phase2 beta-build convention). Coverage 90-100% per track.
+
+**Token spanning verdict (the key question):** q5_ew conviction alpha vs LTW + the
+COMPLETED 12-long-short battery = **+1.74%/mo (t = 2.45, n = 43)**; + both fee LS =
++2.17% (t = 2.82, n = 35). The two underpowered session-044 MA-cross cells are
+SUPERSEDED by continuous ma_dist and RESOLVED in conviction's favor: +all cell
++0.99% (t = 0.99, n = 28) -> +1.66% (t = 2.73, n = 43); single-MA cell +1.09%
+(t = 1.16, n = 31) -> +1.83% (t = 2.46, n = 50). Vol/skew (the Entry-110 candidate
+spanners) do not span. Direction 2: no competitor earns alpha on LTW + q5. None of
+the five technicals earns a significant token long-short on its own; ma_dist singles
+are the only significant token panel cell (-0.0120, t = -2.21 — momentum-adjacent
+negative, like the 044 reversal family).
+
+**Coin track:** conv x val survives the completed battery: -0.0235 (t = -2.68) full,
+-0.0188 (t = -3.17) sub-2024 (044 eight-comparator figure was -2.83). Amihud is the
+strongest new coin single (-0.0223, t = -2.65; sub-2024 -3.23; illiquid-coin
+discount), vol12/ivol also significant sub-2024; none touches the interaction.
+Joint-race construction note: ma_cross REPLACED by ma_dist in the completed joint
+set (supersession, not addition). Exclusions sentence for the paper (monthly
+RSI/MACD/Bollinger redundant; daily-native MAX/RSI infeasible at free-tier depth)
+drafted in PHASE3C_RESULTS_REPORT.md section 6.
