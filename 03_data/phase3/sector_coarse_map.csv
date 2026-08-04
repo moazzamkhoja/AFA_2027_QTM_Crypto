@@ -1,0 +1,102 @@
+cmc_id,symbol,sector_raw,sector_coarse
+8104,1INCH,DEX Aggregator;DEX,DEX
+29270,AERO,Dexs;Launchpad,DEX
+29676,AEVO,Derivatives;Options;DEX;Layer-2;Perpetuals,DEX
+7064,BAKE,Dexs;NFT;DEX;Gaming,DEX
+5728,BAL,Dexs;DEX;Yield,DEX
+1727,BNT,Dexs;DEX;Payments,DEX
+11865,BONE,Dexs;Farm;Layer-2;Meme,DEX
+5810,BZRX,DEX;Smart Contract Platform,DEX
+7186,CAKE,Derivatives;Dexs;Luck Games;Options;Prediction Market;Reserve Currency;NFT;DEX;Perpetuals;Privacy;Smart Contract Platform;Yield,DEX
+6538,CRV,CDP;Dexs;Lending;DEX;Yield,DEX
+7228,DDX,Derivatives;DEX,DEX
+7224,DODO,DEX Aggregator;Dexs;DEX,DEX
+8938,EPS,Dexs;DEX,DEX
+6953,FRAX,Algo-Stables;Dexs;Lending;Liquid Staking;RWA;Services,DEX
+11857,GMX,Derivatives;Dexs;DEX;Perpetuals,DEX
+6929,HEGIC,Options;DEX;Derivatives,DEX
+22461,HFT,DEX Aggregator;NFT;DEX;Gaming;Interoperability,DEX
+3928,IDEX,Derivatives;Dexs;DEX,DEX
+9444,KNC,DEX Aggregator;Dexs;Yield Aggregator;DEX,DEX
+7102,LINA,Derivatives;DEX;Yield,DEX
+8083,LON,DEX Aggregator;Dexs;DEX,DEX
+1934,LRC,Dexs;DEX;Layer-2;Modular Blockchain;Privacy;Smart Contract Platform;Zero Knowledge,DEX
+18037,MAV,Dexs;Privacy,DEX
+8335,MDX,Dexs;DEX;Yield,DEX
+2873,MET,Dexs;Launchpad;Synthetics;Yield;Yield Aggregator;Payments,DEX
+1552,MLN,Indexes,DEX
+5906,NVT,Dexs;DEX,DEX
+5631,ORN,DEX Aggregator;Dexs;DEX,DEX
+12220,OSMO,Dexs;Modular Blockchain,DEX
+6950,PERP,Derivatives;DEX,DEX
+33038,SKY,CDP;Dexs;RWA;Risk Curators,DEX
+2586,SNX,Derivatives;Synthetics;DEX;Perpetuals;RWA;Yield,DEX
+6758,SUSHI,DEX Aggregator;Dexs;Interface;Lending;Yield;NFT;DEX;Gaming;Meme;Metaverse,DEX
+5829,SWAP,Bridge;Dexs;Interface;Token Locker,DEX
+4279,SXP,Dexs;Payments,DEX
+3930,TT,Dexs;Staking Pool,DEX
+7083,UNI,Dexs;Launchpad;DEX;Layer-1;Yield,DEX
+14519,VVS,Dexs;DEX,DEX
+7501,WOO,CEX;Dexs;Yield;Exchange Token;Derivatives;Perpetuals,DEX
+5864,YFI,Indexes;Risk Curators;Yield Aggregator;Yield,DEX
+8202,ZKB,Dexs;Launchpad;DEX;Layer-2;Zero Knowledge,DEX
+11156,ETHDYDX,Derivatives;Privacy;Zero Knowledge,Derivatives
+13663,GNS,Derivatives,Derivatives
+7535,KP3R,Derivatives,Derivatives
+7857,MIR,Derivatives,Derivatives
+1732,NMR,Derivatives;AI/Big Data;Payments,Derivatives
+21159,ONDO,Derivatives;RWA,Derivatives
+7278,AAVE,Lending;RWA Lending;Yield,Lending
+7232,ALPHA,Lending;Leveraged Farming;Liquid Staking;Prediction Market;Yield Aggregator;Yield,Lending
+8857,ANC,Lending,Lending
+5692,COMP,Lending;Yield,Lending
+12573,CPOOL,RWA;Uncollateralized Lending,Lending
+7429,LQTY,CDP,Lending
+34104,MORPHO,Lending,Lending
+12387,RBN,Options;Options Vault;Uncollateralized Lending;Derivatives;RWA,Lending
+11289,SPELL,CDP,Lending
+8911,STRK,Canonical Bridge;Lending,Lending
+33824,SYRUP,Lending;RWA,Lending
+17751,T,CDP;Decentralized BTC,Lending
+1556,TIME,Lending;Yield,Lending
+7725,TRU,Uncollateralized Lending;RWA;Yield,Lending
+4090,WXT,CEX;Lending;Exchange Token;Payments,Lending
+7288,XVS,Lending;Privacy;RWA;Yield,Lending
+6945,AMP,Algo-Stables;Payments,Other
+11841,ARB,Canonical Bridge;Layer-2;Modular Blockchain,Other
+8602,AUCTION,Launchpad,Other
+17799,AXL,Bridge;Launchpad;Interoperability;RWA,Other
+9543,BICO,Bridge;Interoperability,Other
+3814,CELR,Bridge;DePIN;Interoperability;Privacy;Zero Knowledge,Other
+30171,ENA,Basis Trading;RWA,Other
+8615,EPIC,NFT;Gaming;Layer-2;Metaverse;RWA,Other
+10804,FLOKI,Token Locker;Gaming;Meme;Metaverse,Other
+8719,ILV,Gaming;NFT;Metaverse,Other
+5566,KEEP,Cross Chain Bridge;Privacy,Other
+9640,METIS,Canonical Bridge;Layer-2;Modular Blockchain;Privacy;Zero Knowledge,Other
+8191,NFTX,NFT Marketplace;NFT,Other
+5794,PNT,Bridge;NFT,Other
+2539,REN,Bridge,Other
+1104,REP,Prediction Market;DePIN;Storage,Other
+5601,STAKE,Canonical Bridge,Other
+18934,STG,Cross Chain Bridge,Other
+8290,SUPER,Services;NFT;Gaming,Other
+9119,TLM,Gaming;NFT;Metaverse,Other
+29587,W,Bridge;NFT;Interoperability,Other
+30494,EIGEN,Restaking,Staking/LSD
+8000,LDO,Liquid Staking,Staking/LSD
+8613,ALCX,Synthetics;Yield,Yield
+18876,APE,Yield;NFT;Gaming;Meme;Metaverse,Yield
+14803,AURORA,Farm,Yield
+7859,BADGER,Yield Aggregator;Yield,Yield
+28480,BLAST,Canonical Bridge;Farm;Layer-2;Modular Blockchain,Yield
+8891,BTCST,Yield,Yield
+7242,CORE,Canonical Bridge;Derivatives;Yield,Yield
+9903,CVX,Yield,Yield
+6859,FARM,Yield Aggregator;Yield,Yield
+7726,ICHI,Liquidity Manager;Yield,Yield
+5354,PEAK,Algo-Stables;Yield,Yield
+9481,PENDLE,Yield;RWA;Restaking,Yield
+7486,RGT,Yield Aggregator;Yield,Yield
+12147,SYN,Cross Chain Bridge;Synthetics;Yield Aggregator;Interoperability,Yield
+5957,YFII,Yield Aggregator;Yield,Yield

@@ -2319,3 +2319,151 @@ M3 growth-adjustment measurement (raw NV/TVL + cap-excluded), M4 seigniorage con
 reported regardless of outcome). Spec §8.6 maps each to its test; 3b kickoff Task E
 added. Preferred narrative if M1 holds and M2/M3 fail: single theory, two absorption
 regimes — coins are the partially-priced corner, tokens the unpriced corner.
+
+### Entry 100 — Session 044: Coarse sector remap rule (Task A, spec §8.1)
+
+**Date:** 2026-08-04
+**Rule (fixed before any 3b estimate):** raw DeFiLlama compound category strings split
+on ';'; token assigned to the FIRST coarse group in priority order DEX > Lending >
+Yield > Derivatives > Staking/LSD with >=1 matching tag; no match -> Other. Tag-level
+case-insensitive keyword match: DEX = tag contains 'dex' (Dexs/DEX/DEX Aggregator);
+Lending = contains 'lending' or tag=='CDP'; Yield = contains 'yield' or 'farm';
+Derivatives = contains 'derivatives'/'options'/'perpetuals'; Staking/LSD = contains
+'staking' (Liquid Staking, Staking Pool, Restaking). Literal reading of spec §8.1
+"priority-ordered". Documented consequence: perp/derivative DEXes carrying any DEX tag
+(GMX, PERP, SNX, dYdX-v3-with-DEX-tag) land in DEX; only pure-derivatives strings land
+in Derivatives (6 tokens). Counts over 101 tokens: DEX 41, Other 21, Lending 16,
+Yield 15, Derivatives 6, Staking/LSD 2; median names/group-month DEX 25, Other 9,
+Lending 8, Yield 7, Derivatives 3, Staking/LSD 1. Largest-3 groups for per-sector
+tests: DEX, Other, Lending (Other is the residual grab-bag; noted in report).
+
+**Result (Task A second half):** token ladder with coarse-sector FE ATTENUATES the
+conviction slope vs the 043 raw-7-group FE (s6_1 +0.0071 t=2.30 -> +0.0063 t=1.95;
+s6_2 t=1.93 -> 1.49; s6_3 t=2.01 -> 1.60; s6_4 t=1.93 -> 1.52); interaction dead under
+both. Part of the token conviction premium is between-coarse-sector. raw7 columns
+reproduce session 043 exactly (machinery check). Builders phase3b_sector_map.py +
+phase3b_regressions_coarse.py; outputs sector_coarse_map.csv,
+tables/sector_coarse_sizes.csv, tables/h1h2_sector_fe_comparison.csv.
+
+### Entry 101 — Session 044: horse-race signal operationalizations + race results (Task C, spec §5/§8.3)
+
+**Date:** 2026-08-04
+**Operationalizations (fixed pre-run):** raw_val = ln(raw NVT)=ln(MC/PQ0_annual) coins
+/ ln(nv_tvl_raw) tokens, winsorized 1/99 within track (mirrors GL val treatment). S2F
+dual build: s2f_ln = ln(circ_supply / trailing-12m Dsupply) only where flow>0 (literal
+spec; 83% coin / 75% token coverage), plus supply_g12 = 12m supply growth (defined
+everywhere incl. deflationary months, monotone-inverse of S2F) used in the JOINT race.
+high52 = price / rolling-12m max (>=6 obs, George-Hwang). ma_cross = 1[MA3>MA10]
+monthly closes, full windows. Momentum family from the 043 panel. All standardized
+within class-month. Builder phase3b_signals.py -> horserace_signals.csv.
+
+**Results:** (a) Panel race — COIN: no single comparator significant full-sample; the
+H2 interaction added to the full joint spec survives everything: conv x val = -0.0176
+(t=-2.83); sub-2024 -0.0104 (t=-1.92) with 52wk-high the strongest coin signal
+(+0.044, t=3.12) and supply growth significantly NEGATIVE (scarcity-positive). TOKEN:
+conv single +0.0064 (t=1.97) but attenuates to +0.0032 (t=1.10) in the joint race;
+only reversal survives jointly (r_1m -0.0166 t=-2.46; sub-2024 -0.0267 t=-3.95).
+Claim boundary recorded: token conviction is a portfolio-extremes phenomenon, not a
+robust linear panel slope. (b) Spanning both directions: q5_ew alpha survives every
+single-competitor control (+1.53% to +2.53%/mo, t 1.85-3.18); the ltw+all (n=28) and
+ltw+macross (n=31) cells are underpowered (macross_ls needs 10m MAs + min-3 binary
+legs) — reported, not treated as refutations. No competitor LS earns positive alpha on
+LTW+q5. (c) sub-2024 rows all reported. Metcalfe DESCRIPTIVE only: 7 real BitInfoCharts
+AA series (BTC/ETH/LTC/DOGE/BCH/DASH/ETC); ZEC = stub (0 rows); NEW LANDMINE: unknown
+tickers ('btg') redirect HTTP-200 to the DEFAULT btc-ltc-eth comparison chart — the
+Dygraph regex happily parses the BTC series; page-title guard added to
+phase3b_metcalfe.py. BTC Metcalfe mean-reversion t=-3.69 (own-asset, full-sample z,
+look-ahead acknowledged). Outputs tables/horserace_{panel,spanning}.csv,
+metcalfe_panel.csv, tables/metcalfe_summary.csv.
+
+### Entry 102 — Session 044: confirmatory conviction-only token sorts (Task B, spec §8.2)
+
+**Date:** 2026-08-04
+**Design as pre-specified** (quintile EW min-3 primary; decile/tercile/VW secondary;
+sector-neutral quintile via coarse-sector demeaning n>=3 else class-month; per-sector
+terciles for DEX/Other/Lending; coin tercile analog; NW-3 alphas vs monthly LTW;
+pre/post-2023; 25/50bps; turnover; spanning vs identically-built r_1m / mom_3m /
+52wk-high / size quintile long-shorts). Builder phase3b_sorts.py.
+
+**RESULTS (Entry 97 exploratory quintile now confirmed within battery — paper must
+disclose origin):** q5_ew alpha +1.71%/mo t=2.18 (exact match to Entry 97), net-50bps
++1.53% t=1.95, post-2023 +1.48% t=1.79, Sharpe 0.86, ~10.6 names/leg, turnover
+0.19/0.16 per leg. SPANNING (make-or-break): alpha STRENGTHENS with reversal control
+(+2.53%, t=3.18; rev_ls loading +0.18 — high-conviction leg tilts to recent winners,
+and winner-minus-loser has alpha -4.68% t=-3.02) and stays +2.34% (t=2.60) vs all four
+competitors. Conviction is NOT repackaged reversal. HONEST LIMITS, equal prominence:
+(1) decile DIES (t=0.02, ~5.8/leg) — the "sharper sorts monotonically strengthen"
+narrative does NOT extend past quintiles (progression: median 0.38, tercile 0.37,
+quintile 2.18, decile 0.02); (2) sector-neutral quintile DIES (t=0.39, post-2023
+negative) — premium is between coarse sectors; (3) per-sector terciles all null
+(DEX t=0.89, Other t=-0.77, Lending t=-0.16) — the by-category power test fails;
+(4) coin tercile analog flat (t=0.16); (5) q5_vw bigger but noisier (+3.11%, t=1.83).
+Outputs conv_sort_returns.csv, tables/convsort_{alphas,stats,spanning}.csv.
+
+### Entry 103 — Session 044: ve/plain + fee/nofee classification of the 101 tokens (Task D 2-3)
+
+**Date:** 2026-08-04
+**Rules:** ve_lock='ve' iff governance power or the primary staking/value-accrual
+mechanism requires time-locking/escrow/bonding (veToken, fixed-term locked staking,
+bonded node/validator stakes); cooldown-only modules (stkAAVE) and unstake-anytime
+staking = 'plain'. fee_share='fee' iff protocol fees/revenue accrue to holders/stakers
+via distribution, revenue-funded rewards, or systematic buyback/burn. DOMINANT-REGIME
+rule for mid-sample changes (BAL -> veBAL 2022-03 = ve; UNI = nofee, UNIfication burn
+only from ~2025-11; AAVE = nofee, buybacks only 2025-04+; CAKE = ve via 2022-04 locked
+staking + 2023-04 veCAKE; 1INCH = ve via 2022-12 st1INCH Fusion locks; PENDLE = ve from
+2022-11). Classified from official protocol documentation (docs domain recorded per
+token in the CSV); 32/101 flagged low-confidence and the split regressions re-run
+excluding them. Identity note: cmc 8615 EPIC = Ethernity Chain (ERN rebrand), NOT an
+'Epic' protocol. Counts: ve 31 / plain 70; fee 66 / nofee 35. Output
+token_gov_classification.csv (cmc_id, ve_lock, fee_share, confidence, source, note);
+builder phase3b_gov_classification.py.
+
+### Entry 104 — Session 044: heterogeneity batch results (Task D, spec §8.4 — run all, report all)
+
+**Date:** 2026-08-04
+**(1) Delta-lambda (conv_lz diffs, consecutive-month guard):** nothing. Token
+levels+changes: d1m +0.0033 t=0.88, d3m +0.0060 t=1.31 (conv level attenuates
+alongside); coin negative insig. Quintile sorts on changes: d1m alpha +1.33%/mo
+t=1.11, d3m +0.53% t=0.34.
+**(2) ve split REJECTED — wrong direction:** ve conv slope +0.0016 (t=0.21) vs plain
++0.0047 (t=1.21); pooled conv x ve = -0.0023 (t=-0.27); excluding low-confidence
+-0.0120 (t=-0.94). The costly-lock prediction fails; premium sits in plain tokens if
+anywhere. **(3) fee split: no difference** (fee +0.0052 t=0.94 vs nofee +0.0056 t=0.87;
+interaction -0.0005 t=-0.05). Caveat recorded: between-token test, weak vs the model's
+within-token b_t comparative static. **(4) size terciles flat (t 0.32-0.51); turnover
+terciles TILT WRONG WAY** (lo t=0.36, mid 0.55, hi 1.41) — limits-to-arb prediction not
+supported. **(5) regimes:** token slope symmetric bull/bear (t=1.44/0.96); coin
+interaction concentrated POST-2023 (-0.0205, t=-4.32; pre-2023 flips sign on 74 obs —
+uninterpretable) and mildly bull-tilted (-0.0241 t=-1.83 vs -0.0088 t=-0.98).
+**(6) measurement:** coin interaction robust to MRP 20/40 (-0.0175/-0.0163, t=-3.55/
+-3.54; PQ*/TVL* re-derived from emitted pq0/tvl0+g+beta, re_floor 5%) and STRONGER
+ex-conv-fallback (-0.0181, t=-4.67); but RAW NVT shrinks it to -0.0060 (t=-1.90) and
+dropping g-capped months (40% of the coin panel!) keeps magnitude (-0.0163) but kills
+significance (t=-0.97, n=406). Growth-levelization is load-bearing — caveat goes next
+to the headline t=-3.5 in the paper. Token interaction dead in every variant; token
+conv slope stable (+0.005..0.008), significant only ex-B4 (+0.0078, t=2.08; B4 =
+screened HODL-6m>80% from channel2_holding, tokens only — coins have no ch2). Builder
+phase3b_heterogeneity.py; outputs tables/heterogeneity.csv, tables/het_portfolios.csv.
+
+### Entry 105 — Session 044: mechanism discrimination M1–M4 verdicts (Task E, spec §8.6)
+
+**Date:** 2026-08-04
+**M4 staking-yield construction (new):** yield ~= trailing-12m issuance rate / staked
+share = supply_g12 / logistic(conv), coin ch1_lnodds months only (logistic(conv)
+recovers raw lambda_ch1 exactly on those rows), winsorized 1/99 within track,
+class-month standardized. Approximation logged: 12m TRAILING supply growth proxies
+current issuance; no forward-looking or protocol-schedule data used.
+
+**VERDICTS (report table section 5):** M1 attention NOT SUPPORTED — conv x turnover
+POSITIVE (+0.0069, t=+1.21) and D4 gradient larger in HIGH-turnover tokens (wrong sign
+for the prediction). M2 REJECTED — token interaction with coarse-sector-demeaned
+valuation stays positive (+0.0056, t=+1.27); sector-neutral-val quadrant portfolio
+alpha +1.50% t=1.18 n.s. M3 REJECTED (= good news for the theory reading) — token
+interaction ~0 under raw NV/TVL (+0.0002, t=0.05) and ex-g-cap (-0.0024, t=-0.54): the
+token-H2 null is NOT a measurement artifact. M4: COIN RESULT SURVIVES — conv x val =
+-0.0188 (t=-4.39) with staking-yield level and interaction included (conv x sy
+-0.0163, t=-1.58 n.s.): not a seigniorage/b_t artifact. CONSEQUENCE FOR THE PAPER: the
+intended "M1 supported + M2/M3 rejected" narrative loses its M1 leg; Section 2.3 must
+reframe (evidence pattern = between-sector, high-turnover, extremes-only -> sector-
+level repricing of governance value rather than individual-token attention neglect).
+M4 is the session's best defensive result. Outputs tables/mechanisms.csv.

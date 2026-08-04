@@ -1,0 +1,155 @@
+"""
+phase3b_gov_classification.py -- Phase 3b Task D(2)/(3) (spec section 8.4): vote-escrow
+vs plain governance AND fee-share vs no-fee classification of the 101 sample tokens.
+
+Rules (Entry 102):
+  ve_lock = 've' if governance voting power or the token's primary staking / value-
+    accrual mechanism requires TIME-LOCKING, ESCROW or BONDING (veToken locks,
+    fixed-term locked staking, bonded validator/node stakes with unbonding periods);
+    'plain' if voting/staking is liquid (snapshot voting, unstake-anytime staking,
+    cooldown-only modules like stkAAVE).
+  fee_share = 'fee' if protocol fees / revenue accrue to token holders or stakers via
+    distribution, revenue-funded rewards, or systematic buyback/burn; 'nofee' otherwise.
+  DOMINANT-REGIME rule: tokens whose mechanism changed mid-sample are classified by the
+  regime covering the MAJORITY of their sample months (transition noted). Confidence
+  'low' rows are flagged; the split regressions re-run excluding them as robustness.
+  Source: official protocol documentation (docs domain recorded per token); classified
+  from documented tokenomics, not third-party aggregators.
+
+Output: 03_data/phase3/token_gov_classification.csv
+"""
+import pandas as pd
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[1]
+OUT = REPO / "03_data" / "phase3"
+
+# cmc_id: (symbol, ve_lock, fee_share, confidence, source, note)
+C = {
+    1104: ("REP", "plain", "fee", "med", "docs.augur.net", "reporting fees to REP staked in disputes; no formal token governance"),
+    1552: ("MLN", "plain", "fee", "high", "docs.enzyme.finance", "amgu fees paid in MLN and burned (value accrual via burn); council governance"),
+    1556: ("TIME", "plain", "fee", "low", "chrono.tech docs", "TimeWarp staking distributes platform fee revenue"),
+    1727: ("BNT", "plain", "fee", "high", "docs.bancor.network", "vBNT governance staking without time-escrow; stakers earn swap fees"),
+    1732: ("NMR", "plain", "nofee", "high", "docs.numer.ai", "tournament prediction staking (burn on error); no protocol fee share"),
+    1934: ("LRC", "plain", "fee", "high", "loopring.org docs", "protocol fee share to LRC stakers (~70% in v2/v3 era)"),
+    2539: ("REN", "ve", "fee", "high", "renproject docs", "100k REN darknode bond earns network fees (bonding = lock)"),
+    2586: ("SNX", "ve", "fee", "high", "docs.synthetix.io", "collateral staking with 12m reward escrow; weekly fee claims"),
+    2873: ("MET", "plain", "nofee", "high", "metronome docs (v1)", "autonomous converter contracts; no staking, no governance"),
+    3814: ("CELR", "ve", "fee", "med", "celer.network docs", "SGN bonded delegation with unbonding; stakers earn service fees"),
+    3928: ("IDEX", "plain", "fee", "med", "docs.idex.io", "staking for replicator/validator nodes earns trade fee share; no long lock"),
+    3930: ("TT", "ve", "nofee", "low", "thundercore docs", "validator bonded staking; rewards predominantly inflationary"),
+    4090: ("WXT", "plain", "nofee", "med", "wirexapp.com docs", "CEX benefits token (cashback tiers); no protocol fee share"),
+    4279: ("SXP", "plain", "fee", "low", "swipe docs", "transaction fee burn program (Swipe network era)"),
+    5354: ("PEAK", "plain", "fee", "low", "peakdefi docs", "staking rewards funded by fund performance fees"),
+    5566: ("KEEP", "ve", "fee", "med", "keep.network docs", "bonded node staking (tBTC v1) earning node fees"),
+    5601: ("STAKE", "ve", "nofee", "med", "gnosis STAKE docs", "POSDAO bonded validator staking; emissions-funded"),
+    5631: ("ORN", "plain", "fee", "med", "orionprotocol docs", "ORN staking to brokers earns fee revenue share"),
+    5692: ("COMP", "plain", "nofee", "high", "compound.finance docs", "liquid COMP voting/delegation; reserves not distributed in sample"),
+    5728: ("BAL", "ve", "fee", "high", "docs.balancer.fi", "veBAL 80/20 lock from 2022-03 (dominant regime); protocol fee share"),
+    5794: ("PNT", "ve", "fee", "low", "pnetwork docs", "daoPNT staking (locked) earns DAO rewards incl. node fees"),
+    5810: ("BZRX", "plain", "fee", "med", "bzx docs", "BZRX staking earned protocol fee share"),
+    5829: ("SWAP", "plain", "fee", "med", "trustswap docs", "staking earns platform (launchpad/lock) fee share"),
+    5864: ("YFI", "ve", "fee", "med", "docs.yearn.fi", "veYFI locks from early 2022 (dominant); gov-vault fee share before"),
+    5906: ("NVT", "ve", "nofee", "low", "nerve.network docs", "node bonded staking; emissions-funded"),
+    5957: ("YFII", "plain", "fee", "low", "dfi.money docs", "vault profit share to stakers"),
+    6538: ("CRV", "ve", "fee", "high", "curve docs", "veCRV archetype; 50% of trading fees to lockers"),
+    6758: ("SUSHI", "plain", "fee", "high", "sushi docs", "xSUSHI 0.05% fee share; unstake anytime"),
+    6859: ("FARM", "plain", "fee", "high", "harvest.finance docs", "30% profit share buys FARM for stakers"),
+    6929: ("HEGIC", "plain", "fee", "med", "hegic docs", "staking lots earn option premiums (fee share)"),
+    6945: ("AMP", "plain", "fee", "low", "flexa/amp docs", "AMP collateral staking rewards funded by Flexa network fees"),
+    6950: ("PERP", "ve", "fee", "low", "perp.com docs", "sPERP cooldown staking, vePERP later; partial fee share"),
+    6953: ("FRAX", "plain", "fee", "low", "frax docs", "FRAX is the stablecoin; sFRAX savings yield from protocol revenue 2023-10+"),
+    7064: ("BAKE", "plain", "fee", "low", "bakeryswap docs", "BAKE staking earns platform fee share"),
+    7083: ("UNI", "plain", "nofee", "high", "uniswap gov docs", "no fee share in dominant regime; UNIfication fee burn only from ~2025-11"),
+    7102: ("LINA", "ve", "fee", "low", "linear.finance docs", "buildr collateral staking (SNX-style) with fee share"),
+    7186: ("CAKE", "ve", "fee", "med", "pancakeswap docs", "fixed-term locked staking 2022-04+, veCAKE 2023-04+ (dominant); fee burn"),
+    7224: ("DODO", "plain", "fee", "med", "dodo docs", "vDODO membership (exit fee, no time lock) with fee dividends"),
+    7228: ("DDX", "plain", "nofee", "low", "derivadex docs", "insurance mining emissions; fee share not established"),
+    7232: ("ALPHA", "ve", "fee", "low", "alphaventuredao docs", "tiered staking with unbonding; protocol fee share"),
+    7242: ("CORE", "plain", "fee", "low", "cvault.finance docs", "fee-on-transfer redistribution to LPs/stakers"),
+    7278: ("AAVE", "plain", "nofee", "high", "docs.aave.com", "stkAAVE cooldown module + liquid voting; no fee share in dominant regime (buybacks 2025-04+)"),
+    7288: ("XVS", "plain", "fee", "low", "docs.venus.io", "XVS vault staking; revenue-funded rewards/buybacks (Prime 2023+)"),
+    7429: ("LQTY", "plain", "fee", "high", "docs.liquity.org", "LQTY staking earns borrowing+redemption fees; governance-free protocol"),
+    7486: ("RGT", "plain", "nofee", "med", "rari capital docs", "liquid voting; no fee share before Tribe merge"),
+    7501: ("WOO", "plain", "fee", "med", "woofi docs", "WOO staking earns protocol fee share"),
+    7535: ("KP3R", "ve", "fee", "low", "keep3r docs", "vKP3R/oLM locks (Fixed Forex era) earn fees; keeper bonding"),
+    7725: ("TRU", "plain", "fee", "med", "docs.truefi.io", "stkTRU (cooldown) votes and earns loan fee share"),
+    7726: ("ICHI", "plain", "fee", "low", "ichi docs", "xICHI staking fee share"),
+    7857: ("MIR", "plain", "fee", "high", "mirror protocol docs", "MIR gov staking earns CDP withdrawal fees"),
+    7859: ("BADGER", "plain", "nofee", "low", "badger docs", "emissions staking; no durable protocol fee share"),
+    8000: ("LDO", "plain", "nofee", "high", "docs.lido.fi", "liquid LDO voting; no fee share to LDO in sample"),
+    8083: ("LON", "plain", "fee", "med", "tokenlon docs", "xLON staking; fee-funded buyback"),
+    8104: ("1INCH", "ve", "fee", "med", "1inch docs", "st1INCH up-to-2y lock (Fusion, 2022-12+ dominant); resolver rewards"),
+    8191: ("NFTX", "plain", "fee", "med", "nftx docs", "xNFTX staking earns vault fees"),
+    8202: ("ZKB", "plain", "fee", "low", "zkswap/zkbase docs", "ZKS staking dividends from protocol fees (ZKSwap era)"),
+    8290: ("SUPER", "plain", "nofee", "low", "superverse docs", "farming/emissions in dominant regime; SuperVerse staking late-sample"),
+    8335: ("MDX", "plain", "fee", "med", "mdex docs", "fee-funded buyback-burn and staking rewards"),
+    8602: ("AUCTION", "plain", "fee", "low", "bounce.finance docs", "staking earns auction fee share"),
+    8613: ("ALCX", "plain", "nofee", "med", "alchemix docs", "gALCX emissions; veALCX only from 2024 (minority of sample)"),
+    8615: ("EPIC", "plain", "nofee", "low", "ethernity docs", "Ethernity Chain (ERN->EPIC rebrand 2024); NFT-platform staking emissions"),
+    8719: ("ILV", "ve", "fee", "med", "illuvium docs", "staking with 12-month vesting locks; revenue distributions"),
+    8857: ("ANC", "plain", "fee", "high", "anchor protocol docs", "ANC gov staking earns protocol fees"),
+    8891: ("BTCST", "plain", "fee", "low", "btcst docs", "staking earns BTC hashrate yield (asset-backed product)"),
+    8911: ("STRK", "plain", "nofee", "low", "strike.org docs", "Compound fork; no fee share"),
+    8938: ("EPS", "ve", "fee", "med", "ellipsis docs", "locked EPS earns 50% of protocol fees (Curve-fork lock)"),
+    9119: ("TLM", "ve", "nofee", "low", "alienworlds docs", "TLM staked (locked) to planets for voting; emissions-funded"),
+    9444: ("KNC", "ve", "fee", "med", "kyber docs", "KyberDAO epoch-locked staking earns ETH fee rewards"),
+    9481: ("PENDLE", "ve", "fee", "high", "pendle docs", "vePENDLE locks from 2022-11 (dominant); fee share to lockers"),
+    9543: ("BICO", "plain", "nofee", "low", "biconomy docs", "no fee share in sample; staking late and emissions-funded"),
+    9640: ("METIS", "plain", "nofee", "low", "metis docs", "sequencer staking only 2024+ (minority); dominant regime liquid"),
+    9903: ("CVX", "ve", "fee", "high", "convex docs", "vlCVX 16-week vote-lock; platform fee share"),
+    10804: ("FLOKI", "plain", "nofee", "med", "floki docs", "meme token; staking (2023+) emissions-funded"),
+    11156: ("ETHDYDX", "plain", "nofee", "high", "dydx docs", "Ethereum-era DYDX: liquid voting, safety staking emissions, no fee share"),
+    11289: ("SPELL", "plain", "fee", "high", "abracadabra docs", "sSPELL staking earns protocol fees"),
+    11841: ("ARB", "plain", "nofee", "high", "docs.arbitrum.foundation", "liquid voting; no fee share"),
+    11857: ("GMX", "plain", "fee", "high", "gmx docs", "staked GMX earns 30% of fees; no mandatory lock (esGMX/MP exit costs noted)"),
+    11865: ("BONE", "plain", "fee", "low", "shibaswap docs", "tBONE staking earns fee share"),
+    12147: ("SYN", "plain", "nofee", "med", "synapse docs", "no staking fee share in sample"),
+    12220: ("OSMO", "ve", "fee", "med", "docs.osmosis.zone", "bonded staking (14d unbond) governance; taker fees to stakers 2023+"),
+    12387: ("RBN", "ve", "fee", "med", "ribbon docs", "veRBN locks (2022-07+, dominant); fee share"),
+    12573: ("CPOOL", "plain", "fee", "low", "clearpool docs", "CPOOL staking earns protocol fee share"),
+    13663: ("GNS", "plain", "fee", "high", "gains network docs", "GNS staking earns trading fees; no lock"),
+    14519: ("VVS", "plain", "fee", "med", "vvs.finance docs", "xVVS staking earns fee share"),
+    14803: ("AURORA", "plain", "nofee", "med", "aurora.dev docs", "staking emissions-funded"),
+    17751: ("T", "ve", "fee", "med", "docs.threshold.network", "bonded node staking (tBTC v2) earning fees"),
+    17799: ("AXL", "ve", "fee", "med", "axelar docs", "bonded validator/delegation staking; gas fees to stakers"),
+    18037: ("MAV", "ve", "nofee", "low", "mav.xyz docs", "veMAV lock live in sample; fee share to veMAV not activated"),
+    18876: ("APE", "plain", "nofee", "high", "apecoin docs", "liquid voting; ApeStake emissions-funded"),
+    18934: ("STG", "ve", "fee", "med", "stargate docs", "veSTG lock; protocol fee share to lockers"),
+    21159: ("ONDO", "plain", "nofee", "high", "docs.ondo.finance", "liquid voting; no fee share"),
+    22461: ("HFT", "ve", "nofee", "low", "hashflow docs", "Hashverse staked/locked governance; fee share not established"),
+    28480: ("BLAST", "plain", "nofee", "high", "blast docs", "no fee share; liquid governance"),
+    29270: ("AERO", "ve", "fee", "high", "aerodrome docs", "veAERO; 100% of fees to voters"),
+    29587: ("W", "plain", "nofee", "med", "wormhole docs", "MultiGov staking without time lock; no fee share"),
+    29676: ("AEVO", "plain", "nofee", "med", "aevo docs", "no fee share in sample"),
+    30171: ("ENA", "plain", "nofee", "med", "ethena docs", "sENA emissions/points; fee switch not active in dominant regime"),
+    30494: ("EIGEN", "plain", "nofee", "med", "eigenlayer docs", "EIGEN security staking; no fee share in sample"),
+    33038: ("SKY", "plain", "fee", "high", "sky.money docs", "Sky Staking Rewards pay USDS funded by protocol surplus; liquid chief voting"),
+    33824: ("SYRUP", "plain", "fee", "high", "maple.finance docs", "stSYRUP revenue-funded distributions/buybacks"),
+    34104: ("MORPHO", "plain", "nofee", "high", "docs.morpho.org", "fee switch off throughout sample"),
+}
+
+
+def main():
+    df = pd.DataFrame(
+        [(k,) + v for k, v in C.items()],
+        columns=["cmc_id", "symbol", "ve_lock", "fee_share", "confidence", "source", "note"])
+    # integrity: exactly the 101 panel tokens, no extras
+    p = pd.read_csv(OUT / "regression_panel.csv")
+    tok = p[p.track == "token"].drop_duplicates("cmc_id")[["cmc_id", "symbol"]]
+    merged = tok.merge(df, on="cmc_id", how="outer", suffixes=("_panel", ""))
+    missing = merged[merged.ve_lock.isna()]
+    extra = merged[merged.symbol_panel.isna()]
+    assert len(missing) == 0, f"unclassified: {missing.symbol_panel.tolist()}"
+    assert len(extra) == 0, f"not in panel: {extra.symbol.tolist()}"
+    mism = merged[merged.symbol_panel != merged.symbol]
+    assert len(mism) == 0, f"symbol mismatch: {mism[['cmc_id','symbol_panel','symbol']].values}"
+    df.to_csv(OUT / "token_gov_classification.csv", index=False)
+    print(f"wrote {OUT/'token_gov_classification.csv'}: {len(df)} tokens")
+    print("\nve_lock x fee_share:")
+    print(pd.crosstab(df.ve_lock, df.fee_share))
+    print("\nconfidence:", df.confidence.value_counts().to_dict())
+
+
+if __name__ == "__main__":
+    main()
