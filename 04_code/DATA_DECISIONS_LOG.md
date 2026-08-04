@@ -2495,3 +2495,24 @@ interaction spec (cleanest remaining M2 test: fee denominator is not mechanicall
 price-linked the way TVL is). To run as a short Phase 3c session. NOTE: does not
 conflict with Entry 30 (fees rejected as OUR PQ measure); fees here are the
 competitor's fundamental.
+
+### Entry 108 — Cowork 2026-08-04: Size (normalized MC) as model-free delta proxy (user-requested robustness)
+
+**Question (Moazzam):** is the token H2 failure a NV/TVL measurement issue? Test with
+simple normalized market cap as the delta measure (big = more visible = more priced).
+
+**Tokens:** conv x size = +0.0003 (t = 0.07) — nothing. Size-median split: small
++0.0014 (0.32), LARGE +0.0101 (1.67) — direction WRONG for a delta story (premium sits
+in large tokens, echoing the M1 wrong-sign turnover result). Verdict: the token H2
+null is NOT about the TVL denominator; even the model-free delta proxy shows no
+conditioning. Remaining measurement candidate: fee-anchored P/F denominator (spec 8.7).
+
+**Coins (new fact):** conv x size = +0.0329 (t = 2.21). Conviction premium is NEGATIVE
+in small coins (-0.0323, t = -1.89), mildly positive in large. With BOTH interactions,
+conv x val survives attenuated (-0.0134, t = -1.96) alongside conv x size (+0.0314,
+t = 2.17); corr(val,size) = -0.10 so they are near-orthogonal conditioners. Reading:
+high staking in SMALL coins is a negative signal (yield-trap/dead-float candidate
+interpretation — small chains advertise extreme staking APRs), independent of the
+valuation-conditioning effect. Coin H2 keeps 10% significance in the toughest spec yet.
+
+Script: 04_code/phase3_explore_size_delta.py. Paper: added to Section 6.1.

@@ -1122,6 +1122,24 @@ token interaction is dead in every variant --- raw NV/TVL ($t=0.05$), cap-exclud
 ($t=-0.54$), custodial-flag-excluded ($t=0.55$) --- establishing that the token-track
 H2 null is not an artifact of the growth-levelization machinery.
 
+As a final, model-free check on the token conditioning null, we replace the valuation
+ratio with normalized market capitalization itself as the absorption proxy: if the
+conviction signal is priced into visible assets first, the premium should concentrate
+among small tokens regardless of how fundamentals are measured. It does not. The
+conviction $\times$ size interaction is $+0.0003$ ($t=0.07$), and the size-median split
+runs in the wrong direction: the conviction slope is $+0.14\%$ per month among small
+tokens ($t=0.32$) and $+1.01\%$ among large tokens ($t=1.67$). The token H2 null thus
+survives five distinct conditioning variables --- the growth-levelized ratio, the raw
+ratio, sector-demeaned valuation, turnover, and market capitalization --- and cannot be
+attributed to the choice of denominator. For coins, the same exercise yields a new
+fact: conviction $\times$ size is \textit{positive} ($+0.0329$, $t=2.21$), with the
+conviction premium negative among small coins ($-3.2\%$ per month, $t=-1.89$) ---
+consistent with high advertised staking ratios on small chains marking yield traps
+rather than informed conviction --- and the valuation interaction survives alongside
+the size interaction, attenuated ($-0.0134$, $t=-1.96$; the two conditioners are
+nearly orthogonal, $\rho=-0.10$). Valuation and size condition the coin conviction
+signal through separate channels.
+
 \begin{table}[ht]
 \centering
 \caption{Measurement Robustness of the Conviction--Valuation Interaction}
