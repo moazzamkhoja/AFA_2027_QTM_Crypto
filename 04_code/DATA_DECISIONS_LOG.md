@@ -2691,3 +2691,16 @@ present WITHIN the deepest sector at fine granularity; other sectors untestable 
 quintile granularity. The "between-sector repricing" mechanism framing (Entry 105 /
 paper 6.2) must be qualified accordingly. EXPLORATORY (user-prompted, post-hoc) —
 disclose like Entry 97. Script: 04_code/phase3_explore_dex_quintile.py.
+
+### Entry 118 — Cowork 2026-08-05: VW spanning + P/F quadrant VW (user questions)
+
+(1) Why EW primary: pre-registered in spec 8.2 before results; better precision
+(t 2.18 vs 1.83); VW 10-name legs concentrate in 1-2 large tokens. NEW: VW quintile
+does NOT survive the 12-battery spanning — inline identical-construction comparison:
+EW +1.36%/t=1.67 vs VW +0.97%/t=0.86 (inline battery replicates 045's EW cell at 1.67
+vs official 2.45 — construction detail differences; the EW-vs-VW comparison under
+identical construction is the informative one). VW's role in the paper = microcap-
+robustness sentence only. (2) H3 quadrant with P/F valuation, VW variant: +2.05%/mo,
+t=1.05, Sharpe 0.64 (EW was +1.67%/t=1.35, Entry 116) — best quadrant point estimates
+in the paper, never significant; two-dimensional construction fails under fee-anchored
+valuation in both weightings. Script: 04_code/phase3_explore_vw_checks.py.
