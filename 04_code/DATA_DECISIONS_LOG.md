@@ -2677,3 +2677,17 @@ P/F quadrant +1.67%/mo alpha, Sharpe 0.82, but t=1.35 (46 mo) and DEAD post-2023
 (t=0.07); REV* quadrant negative (-1.89%, t=-1.24, 31 mo, 33 excluded by breadth
 guard); coverage-matched NV/TVL_GL baseline t=0.68. Two-dimensional portfolio adds
 nothing over the conviction quintile under ANY valuation measure. Paper 42 pp.
+
+### Entry 117 — Cowork 2026-08-05: DEX-only conviction quintile (user-prompted exploratory)
+
+Moazzam asked whether the within-sector null was a power issue and whether per-sector
+QUINTILES were ever tested. They were not (only terciles; Entry 100/session 044).
+DEX is the only coarse sector deep enough (39 tokens, median 25/month). Result:
+DEX-only conviction quintile EW = +3.48%/mo raw, +3.37%/mo LTW alpha, t = 2.04,
+46 months, ~4.6 names/leg. DEX tercile confirms 044 (t = 0.62). VERDICT: the
+within-sector "null" was tercile dilution + thin-sector noise in the pooled
+sector-neutral construction, NOT absence of within-sector signal. The premium is
+present WITHIN the deepest sector at fine granularity; other sectors untestable at
+quintile granularity. The "between-sector repricing" mechanism framing (Entry 105 /
+paper 6.2) must be qualified accordingly. EXPLORATORY (user-prompted, post-hoc) —
+disclose like Entry 97. Script: 04_code/phase3_explore_dex_quintile.py.
