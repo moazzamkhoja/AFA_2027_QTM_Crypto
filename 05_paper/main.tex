@@ -705,7 +705,42 @@ analysis and are left to future work.
 \label{sec:data_stats}
 
 Table~\ref{tab:summary} reports the distributions of the main variables in the two
-regression samples; data-panel coverage counts are in Appendix Table~\ref{tab:coverage_appendix}.
+regression samples; data-panel coverage counts are in Appendix
+Table~\ref{tab:coverage_appendix}. Three features of the data deserve comment before
+the results.
+
+First, the conviction measures display wide, economically meaningful variation. The
+median proof-of-stake coin has 38.6\% of its circulating supply staked, but the
+interquartile range runs from 21.8\% to 57.0\%: locking behavior differs enormously
+across networks, which is precisely the cross-sectional variation the tests exploit.
+In SoV/MoE terms, the median coin-month ratio of 0.63 says that store-of-value demand
+is worth roughly two-thirds of transactional demand for the typical coin, while at the
+90th percentile (ratio 2.5) the monetary premium is two and a half times the
+transactional component --- the decomposition is not a theoretical curiosity but a
+first-order feature of observed valuations. The token conviction index, a cross-sectional
+z-score by construction, is close to centered (median $-0.18$) with fat enough tails
+(p10 to p90 spanning $-0.86$ to $+1.03$) to make quintile extremes meaningfully
+different populations.
+
+Second, the valuation ratios are extremely dispersed and right-skewed, in an
+instructive way. Median NVT\_GL of 0.02 against a 90th percentile of 2.65 says the
+typical PoS coin trades far below the discounted value of its throughput while a
+minority trade well above it; median NV/TVL\_GL of 2.29 against a 90th percentile of
+281 makes the same point for tokens. By contrast, the price-to-fees multiple is
+comparatively well-behaved (median 12.1, interquartile range 4.3--33.8) --- fee-anchored
+valuation produces multiples in a recognizable equity-like range, one reason it
+functions as a level signal where the TVL-based ratio does not. These tails motivate
+the log transforms and 1\%/99\% winsorization applied throughout; no test in the paper
+relies on the raw ratio scale.
+
+Third, the two samples are more alike in risk than in size. Coins are an order of
+magnitude larger (median market capitalization \$823 million versus \$98 million), but
+both classes carry monthly return volatility near 30\% and near-identical market betas
+(median 1.12 and 1.16 against BTC) --- the return-generating environment is common,
+the scale is not. Median forward returns are negative in both panels ($-4.4\%$ and
+$-7.6\%$ per month), reflecting a sample window dominated by the post-2021
+contraction; within-month cross-sectional tests are immune to this level, but it
+disciplines any reading of long-only portfolio legs.
 
 \begin{table}[ht]
 \centering
