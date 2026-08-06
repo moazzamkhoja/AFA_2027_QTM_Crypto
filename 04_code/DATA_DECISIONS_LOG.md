@@ -2724,3 +2724,13 @@ exactly); Table 10 (h2altval) -> Appendix B; quadrant pooled rows dropped.
 Entry-117 DEX-quintile finding (between-sector framing qualified) and Entry-118 VW
 microcap sentence. 5.5 rewritten around three learnings (incrementality; coin
 cross-section info-free at level; P/F partial vindication with DCF twist).
+
+### Entry 120 — Cowork 2026-08-05: Proper summary statistics table (Moazzam's request)
+
+Old Table 2 was a coverage table, not summary stats. New Table 2: distributions
+(N/mean/SD/p10/p25/median/p75/p90) of main variables by track. Coins: staking share
+(median 38.6%), SoV/MoE (median 0.63), NVT_GL, MC, forward return, beta. Tokens:
+lambda_z, NV/TVL_GL, TVL, P/F (median 12.1), MC, forward return, beta. Unwinsorized;
+heavy-tail note motivates the log/winsorization choices; negative median returns
+flagged. Old coverage table -> Appendix (tab:coverage_appendix). Builder:
+04_code/phase3_sumstats_table.py.

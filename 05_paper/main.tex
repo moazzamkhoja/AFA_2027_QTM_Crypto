@@ -704,45 +704,49 @@ analysis and are left to future work.
 \subsection{Summary Statistics}
 \label{sec:data_stats}
 
-Table~\ref{tab:summary} reports coverage across data panels and key statistics for the
-regression samples.
+Table~\ref{tab:summary} reports the distributions of the main variables in the two
+regression samples; data-panel coverage counts are in Appendix Table~\ref{tab:coverage_appendix}.
 
 \begin{table}[ht]
 \centering
-\caption{Summary Statistics}
+\caption{Summary Statistics of Main Variables}
 \label{tab:summary}
 \small
-\begin{tabular}{lrrcc}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccccc}
 \toprule
-Panel / Sample & Assets & Asset-months & Date range & Median MC \\
+ & N & Mean & SD & p10 & p25 & Median & p75 & p90 \\
 \midrule
-Full universe              & 1,939 & 156,838 & 2015-08 to 2026-05 & \$6.5M \\
-Conviction panel ($\lambda_z$) & 467   & 13,626  & 2016-12 to 2026-05 & --- \\
-\quad ch1 staking          & 48    & 2,222   & 2017-07 to 2026-05 & --- \\
-\quad ch2 holding          & 408   & 11,654  & 2015-08 to 2026-05 & --- \\
-\quad ch3 delegation       & 26    & 627     & 2020-05 to 2026-05 & --- \\
-\quad ch3 voting           & 53    & 1,202   & 2020-08 to 2026-05 & --- \\
-NVT\_GL panel              & 67    & 2,526   & 2016-08 to 2026-05 & --- \\
-TVL panel (raw)            & 162   & 8,066   & 2017-09 to 2026-05 & --- \\
-NV/TVL\_GL panel           & 111   & 3,125   & 2021-01 to 2026-05 & --- \\
+\multicolumn{9}{l}{\textit{Panel A: Coin regression sample (24 assets, 2020-12--2026-05)}} \\
+Staking share $\lambda$ (\%) & 671 & 40.8 & 22.2 & 13.3 & 21.8 & 38.6 & 57.0 & 71.4 \\
+SoV/MoE ratio $\lambda/(1-\lambda)$ & 671 & 5.98 & 66.8 & 0.15 & 0.28 & 0.63 & 1.32 & 2.50 \\
+NVT\_GL & 718 & 1.60 & 6.23 & 0.00 & 0.00 & 0.02 & 0.50 & 2.65 \\
+Market cap (\$M) & 718 & 36,994 & 92,232 & 74.6 & 295.1 & 823.4 & 12,950 & 112,831 \\
+Monthly return $t{+}1$ (\%) & 694 & $-$1.02 & 28.9 & $-$27.8 & $-$17.4 & $-$4.42 & 7.64 & 28.2 \\
+Beta (36m, vs.\ BTC) & 718 & 1.18 & 0.42 & 0.68 & 0.96 & 1.12 & 1.37 & 1.71 \\
 \midrule
-Coin regression (NVT\_GL)  & 24    & 718     & 2020-12 to 2026-05 & \$820M \\
-Token regression (NV/TVL\_GL) & 101 & 2,771  & 2021-01 to 2026-05 & \$98M \\
-Combined                   & 125   & 3,489   & 2020-12 to 2026-05 & \$138M \\
+\multicolumn{9}{l}{\textit{Panel B: Token regression sample (101 assets, 2021-01--2026-05)}} \\
+Conviction index $\lambda_z$ & 2,771 & $-$0.05 & 0.73 & $-$0.86 & $-$0.60 & $-$0.18 & 0.38 & 1.03 \\
+NV/TVL\_GL & 2,771 & 411.4 & 2,503 & 0.00 & 0.20 & 2.29 & 16.1 & 281.2 \\
+TVL (\$M) & 2,771 & 1,017 & 3,433 & 0.63 & 5.48 & 42.2 & 425.2 & 2,351 \\
+Price-to-fees (P/F) & 1,367 & 190.9 & 1,506 & 1.97 & 4.32 & 12.1 & 33.8 & 127.1 \\
+Market cap (\$M) & 2,771 & 370.0 & 908.7 & 20.1 & 40.4 & 97.7 & 303.2 & 783.7 \\
+Monthly return $t{+}1$ (\%) & 2,658 & $-$1.49 & 31.5 & $-$29.7 & $-$19.3 & $-$7.57 & 8.49 & 32.4 \\
+Beta (36m, vs.\ BTC) & 2,771 & 1.19 & 0.50 & 0.61 & 0.91 & 1.16 & 1.45 & 1.80 \\
 \bottomrule
 \end{tabular}
 \smallskip
 
-\parbox{0.9\linewidth}{\footnotesize
-\textit{Notes:} Median MC is the cross-sectional median market capitalization across all
-asset-months with a positive price observation. Conviction panel sub-channel counts sum
-to more than the panel total because 1,725 asset-months appear in two or more channels.
-Coin regression requires simultaneous non-missing $\lambda_z$ and positive NVT\_GL for
-proof-of-stake coins. Token regression requires simultaneous non-missing $\lambda_z$ and
-positive NV/TVL\_GL. Median NVT\_GL in the coin regression sample is 0.017. Median
-NV/TVL\_GL in the token regression sample is 2.29 (IQR: 0.20--16.10); median TVL is
-\$42.2M.
-}
+\parbox{0.95\linewidth}{\footnotesize
+\textit{Notes:} Unwinsorized distributions over the regression samples. The staking
+share and SoV/MoE rows cover the 671 coin-months with a direct staking observation
+(the remaining 47 use the composite-index fallback and have no ratio representation).
+P/F covers the 1,367 fee-covered token-months. Heavy right tails in NVT\_GL, NV/TVL\_GL,
+TVL, P/F, and market capitalization motivate the log transforms and 1\%/99\%
+winsorization applied before estimation. Median forward returns are negative in both
+panels: the sample is dominated by the post-2021 contraction, which cross-sectional
+(within-month) tests are immune to but portfolio long legs are not. Coverage counts for
+the underlying data panels appear in Appendix Table~\ref{tab:coverage_appendix}.}
 \end{table}
 
 %=============================================================
@@ -1512,7 +1516,45 @@ details are in Section~\ref{sec:data}.
 \section{Additional Tables}
 \label{app:tables}
 
-This appendix collects the signal-by-signal horse-race results and the full interaction specifications under alternative valuation ratios.
+This appendix collects the data-panel coverage table, the signal-by-signal horse-race results, and the full interaction specifications under alternative valuation ratios.
+
+\begin{table}[ht]
+\centering
+\caption{Data Panel Coverage}
+\label{tab:coverage_appendix}
+\small
+\begin{tabular}{lrrcc}
+\toprule
+Panel / Sample & Assets & Asset-months & Date range & Median MC \\
+\midrule
+Full universe              & 1,939 & 156,838 & 2015-08 to 2026-05 & \$6.5M \\
+Conviction panel ($\lambda_z$) & 467   & 13,626  & 2016-12 to 2026-05 & --- \\
+\quad ch1 staking          & 48    & 2,222   & 2017-07 to 2026-05 & --- \\
+\quad ch2 holding          & 408   & 11,654  & 2015-08 to 2026-05 & --- \\
+\quad ch3 delegation       & 26    & 627     & 2020-05 to 2026-05 & --- \\
+\quad ch3 voting           & 53    & 1,202   & 2020-08 to 2026-05 & --- \\
+NVT\_GL panel              & 67    & 2,526   & 2016-08 to 2026-05 & --- \\
+TVL panel (raw)            & 162   & 8,066   & 2017-09 to 2026-05 & --- \\
+NV/TVL\_GL panel           & 111   & 3,125   & 2021-01 to 2026-05 & --- \\
+\midrule
+Coin regression (NVT\_GL)  & 24    & 718     & 2020-12 to 2026-05 & \$820M \\
+Token regression (NV/TVL\_GL) & 101 & 2,771  & 2021-01 to 2026-05 & \$98M \\
+Combined                   & 125   & 3,489   & 2020-12 to 2026-05 & \$138M \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\parbox{0.9\linewidth}{\footnotesize
+\textit{Notes:} Median MC is the cross-sectional median market capitalization across all
+asset-months with a positive price observation. Conviction panel sub-channel counts sum
+to more than the panel total because 1,725 asset-months appear in two or more channels.
+Coin regression requires simultaneous non-missing $\lambda_z$ and positive NVT\_GL for
+proof-of-stake coins. Token regression requires simultaneous non-missing $\lambda_z$ and
+positive NV/TVL\_GL. Median NVT\_GL in the coin regression sample is 0.017. Median
+NV/TVL\_GL in the token regression sample is 2.29 (IQR: 0.20--16.10); median TVL is
+\$42.2M.
+}
+\end{table}
 
 \begin{table}[ht]
 \centering
