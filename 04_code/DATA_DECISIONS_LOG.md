@@ -2704,3 +2704,23 @@ robustness sentence only. (2) H3 quadrant with P/F valuation, VW variant: +2.05%
 t=1.05, Sharpe 0.64 (EW was +1.67%/t=1.35, Entry 116) — best quadrant point estimates
 in the paper, never significant; two-dimensional construction fails under fee-anchored
 valuation in both weightings. Script: 04_code/phase3_explore_vw_checks.py.
+
+### Entry 119 — Cowork 2026-08-05: Pruning batch 1 executed (Moazzam's directives)
+
+(1) Hypotheses UNIFIED: H1/H2/H3 stated once for both classes in new 2.4 "Testable
+Hypotheses"; per-class Prop 1a/1b/H1a/H1b/Prop 2 removed; 2.1/2.2 end with
+measurement-mapping sentences. (2) Voting-weighted refinement removed from hypotheses,
+results, and scorecard. (3) Token significance prose CORRECTED everywhere: significant
+only alone (t=1.97) and in FM (1.77/2.19); t~1.5 with controls (prior "1.9-2.0 with
+sector FE" was stale raw7-FE numbers). (4) M1-M4 moved from theory 2.3 to 6.2 with
+postulate-then-test framing (mechanisms arose from results — honest learning-process
+narrative); 2.3 keeps only the delta-variation qualification. (5) Disclosure reworded
+(no "author-directed"). (6) Table restructure: horse race = joint multivariate table
+(all coefficients, N, assets, R2-within 0.032/0.023); singles grid -> Appendix B;
+Tables 7+9 MERGED (own-alpha column + q5-survival column; own alphas for
+rev/mom/high52/size computed inline, reversal replicates official -4.68/-3.02
+exactly); Table 10 (h2altval) -> Appendix B; quadrant pooled rows dropped.
+(7) 4.2 funnel prose condensed (~1.4k chars). (8) 5.4/6.2/scorecard updated with
+Entry-117 DEX-quintile finding (between-sector framing qualified) and Entry-118 VW
+microcap sentence. 5.5 rewritten around three learnings (incrementality; coin
+cross-section info-free at level; P/F partial vindication with DCF twist).
