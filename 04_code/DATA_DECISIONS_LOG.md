@@ -2770,3 +2770,23 @@ Document order restructured via endfloat[tablesfirst] + processdelayedfloats aft
 Conclusion: text (1-34) -> Tables 1-12 (36-47) -> Figures 1-2 (48-49) -> References
 (50-51) -> Appendices A-C with their tables (52-60). 60 pp. NEXT: introduction +
 abstract rewrite (Moazzam: agree the one-sentence headline claim first).
+
+### Entry 123 — Cowork 2026-08-05: Introduction rewrite, iteration 1 (Moazzam's directives)
+
+(1) lambda front-loaded as THE contribution: new paragraph 2 bridges QTM with
+Cong-Li-Wang (2021) and Sockin-Xiong (2020) via the conviction measure — "the models
+supply the valuation object; lambda supplies the measurement those models have lacked."
+Dual role stated upfront: velocity channel for coins (MoE present), direct
+network-value/membership signal for tokens (MoE absent). (2) SoV/MoE equation REMOVED
+from intro (stated in words, appendix ref). (3) Flow reordered: motivation -> bridge/
+lambda -> QTM mechanics + MoE/SoV definitions (compressed, lambda already introduced)
+-> why lambda informative (three traditions + token costly-signal, merged and
+trimmed) -> operationalization -> findings -> Contributions. (4) "Related Literature"
+replaced by "Contributions" paragraph: three contributions (measurement: first
+supply-side monetary aggregate — claim MOVED from conclusion; empirical asset pricing:
+first on-chain supply-side characteristic vs LTW return-based factors, conditional
+pricing + revealed-patience channel result; valuation practice: growth-levelized NVT
+formalization + horse race discipline of practitioner tools), literature comparisons
+woven per strand. (5) Conclusion de-duplicated: novelty claim replaced with
+beliefs-revealed-by-costly-actions framing; "patience not governance activity" added.
+59 pp. Iteration 2 awaits Moazzam's read.
