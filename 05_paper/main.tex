@@ -77,42 +77,49 @@ is governed by the same forces that determine the value of any currency---the sc
 economic activity it enables and the efficiency with which it circulates. The correct
 framework, we argue, is the Quantity Theory of Money \citep{fisher1911}.
 
-This paper bridges the quantity-theoretic view of money with the token-valuation
-models of \citet{cong2021tokenomics} and \citet{sockin2020model} through a novel,
-directly observable measure of holder \textit{conviction}: $\lambda$, the fraction of
-an asset's circulating supply that holders have voluntarily locked---staked for
-network validation, committed to governance contracts, or held without moving.
-Locking is a costly, publicly verifiable action: a holder who forgoes liquidity today
-reveals a belief that the network's future value and the advantages of membership
-exceed the asset's current use value. $\lambda$ therefore aggregates the private
-beliefs of the holder base into a single on-chain observable. Its economic role
-depends on the asset's monetary function. For native coins, which serve as media of
-exchange, $\lambda$ operates through velocity: locked supply does not circulate, so
-the locking ratio partitions market capitalization into a transactional component and
-a monetary premium. For governance tokens, which have no medium-of-exchange function,
-$\lambda$ conveys network value and the gains from membership directly---a costly
-signal of conviction in the platform's trajectory. In both cases the models of
-\citet{cong2021tokenomics} and \citet{sockin2020model}, in which token prices
-capitalize future platform adoption and membership benefits, supply the valuation
-object; $\lambda$ supplies the measurement those models have lacked.
+The Fisher equation, $MV = PQ$, relates the stock of money ($M$) and its velocity ($V$)
+to the nominal value of economic output ($PQ$) \citep{fisher1911}. Applied to digital
+assets, a cryptocurrency's market capitalization proxies its money supply, and the
+economic output it supports---on-chain transaction volume for native coins, protocol
+throughput for tokens---is its $PQ$. This is not merely an analogy.
+\citet{cong2021tokenomics} develop a formal dynamic model in which token prices aggregate
+heterogeneous users' transactional demand, with equilibrium prices governed by platform
+adoption---a formulation directly consistent with the QTM framework we develop here.
+\citet{sockin2020model} similarly model tokens as platform membership instruments,
+showing that the token price reflects the present value of the convenience yield accruing
+to participants: the non-pecuniary benefit of network membership, including access to
+platform services, network liquidity, and future transactional capability.
 
-The quantity-theoretic mechanics follow from the Fisher equation, $MV = PQ$: market
-capitalization proxies the money supply, and the economic output the asset
-supports---on-chain transaction volume for coins, protocol throughput for tokens---is
-its $PQ$. We decompose value into two components. The \textit{Medium of Exchange}
-(MoE) component is the value attributable to the asset's current transactional
-function, priced by the velocity with which unlocked supply circulates. The
-\textit{Store of Value} (SoV) component is the premium agents pay by forgoing current
-exchange utility in anticipation of future appreciation---appreciation expected from
-network growth, expanding adoption, and innovation. An agent holding Ethereum rather
-than spending it is implicitly paying an intertemporal price: she sacrifices today's
-exchange utility for her conviction that the network's future worth exceeds today's
-use value. Because locked supply is economically inert, conflating it with active
-supply distorts velocity and misprices the economic content of market capitalization;
-separating the two by $\lambda$ yields the paper's central accounting result, derived
-in Appendix~\ref{app:derivations}: the ratio of the SoV to the MoE component is a
-monotone increasing function of $\lambda$ alone, directly observable from on-chain
-data with no velocity estimation.
+We bridge these two views---the quantity theory and the tokenized models of network
+value---with a novel, directly observable measure of holder \textit{conviction}:
+$\lambda$, the fraction of an asset's circulating supply that holders have voluntarily
+locked, whether staked for network validation, committed to governance contracts, or
+held without moving. Locking is a costly, publicly recorded action: a holder who
+forgoes liquidity today reveals a belief that the network's future value and the
+advantages of membership exceed the asset's current use value, so $\lambda$ aggregates
+the private beliefs of the holder base into a single on-chain observable. Its role
+transforms both models. Under the quantity theory, $\lambda$ operates through velocity:
+locked supply does not circulate, so the locking ratio partitions market capitalization
+into a transactional component and a monetary premium. For governance tokens, where a
+medium-of-exchange function is absent, $\lambda$ conveys network value and the gains
+from membership directly---a costly signal of conviction in the platform's trajectory.
+The models of \citet{cong2021tokenomics} and \citet{sockin2020model} supply the
+valuation object; $\lambda$ supplies the measurement those models have lacked.
+
+To make the velocity channel precise, we decompose value into two components. The
+\textit{Medium of Exchange} (MoE) component is the value attributable to the asset's
+current transactional function, priced by the velocity with which unlocked supply
+circulates. The \textit{Store of Value} (SoV) component is the premium agents pay by
+forgoing current exchange utility in anticipation of future appreciation---appreciation
+expected from network growth, expanding adoption, and innovation. An agent holding
+Ethereum rather than spending it is implicitly paying an intertemporal price: she
+sacrifices today's exchange utility for her conviction that the network's future worth
+exceeds today's use value. Because locked supply is economically inert, conflating it
+with active supply distorts velocity and misprices the economic content of market
+capitalization. Separating the two by $\lambda$ yields the paper's central accounting
+result, derived in Appendix~\ref{app:derivations}: the ratio of the SoV to the MoE
+component is a monotone increasing function of $\lambda$ alone, directly observable
+from on-chain data with no velocity estimation.
 
 Why should $\lambda$ be informative? For native coins, three complementary traditions
 ground the signal. Monetary search theory \citep{kiyotaki1993search, lagos2005unified}
@@ -146,58 +153,52 @@ in---where valuation is cheap. Assets combining high conviction with cheap valua
 (Stars) should earn the highest returns; low conviction at expensive valuation (Avoid)
 the lowest.
 
-Our results support the framework in a sharper, conditional form. For coins, the
-conditioning mechanism is the result: conviction alone does not predict returns, but
-its interaction with valuation is strongly negative ($t=-3.5$) --- a one-standard-
-deviation-higher staking share earns $+0.7\%$ per month among cheap coins and $-3.0\%$
-among expensive ones, a result that survives a horse race against raw NVT, stock-to-flow,
-and technical signals, and is robust to seigniorage-yield controls. For governance
-tokens, the signal proves one-dimensional: conviction carries a premium of roughly
-$0.7\%$ per month per standard deviation regardless of valuation, concentrated in the
-sort extremes --- a long--short portfolio of top-minus-bottom conviction quintiles earns
-$1.7\%$ per month in factor-adjusted alpha ($t=2.2$), rises to $2.5\%$ ($t=3.2$) when
-controlling for the strong token reversal effect, and survives transaction costs and
-sub-period splits. The coarse two-dimensional quadrant portfolio itself does not earn
-significant alpha at our universe breadth, a power-limited null we report in full.
-Mechanism tests attribute the cross-track asymmetry to differences in how the market
-absorbs the conviction signal. The horse race also disciplines the cash-flow
-approach on its own terms: the practitioner price-to-fees multiple is the one
-alternative valuation ratio with cross-sectional predictive power for tokens, yet its
-own DCF refinement destroys that power --- discounting adds value where the fundamental
-is a throughput flow, and subtracts it where the fundamental is already a cash flow.
+Our central finding is that the conviction signal prices the cryptocurrency
+cross-section and that no measurable alternative spans it. For coins, the signal is
+conditional: conviction alone does not predict returns, but its interaction with
+valuation is strongly negative --- a one-standard-deviation-higher staking share earns
+$+0.7\%$ per month among cheap coins and $-3.0\%$ among expensive ones ($t=-3.5$). In
+a horse race that places every measurable valuation model and technical signal in the
+same regression --- raw NVT, stock-to-flow, supply growth, the 52-week-high ratio,
+moving-average distance, volatility, idiosyncratic volatility, Amihud illiquidity,
+skewness, and the momentum family --- no alternative signal predicts coin returns over
+the full sample, while the conviction--valuation interaction survives them all
+($t=-2.7$), and it is likewise robust to seigniorage-yield controls and discount-rate
+assumptions. For governance tokens, the signal is one-dimensional and lives in the
+extremes: a long--short portfolio of top-minus-bottom conviction quintiles earns
+$1.7\%$ per month in factor-adjusted alpha ($t=2.2$), and spanning tests against
+long--short portfolios built identically on each of the twelve competitor signals
+leave that alpha intact ($1.7\%$, $t=2.5$ against the full battery) --- controlling
+for the strong token reversal effect \textit{raises} it to $2.5\%$ ($t=3.2$), and no
+competitor portfolio earns alpha on the conviction quintile in the reverse direction.
+The coarse two-dimensional quadrant portfolio does not earn significant alpha at our
+universe breadth, a power-limited null we report in full, and mechanism tests
+attribute the coin--token asymmetry to differences in how the market absorbs the
+conviction signal.
 
-\paragraph{Contributions.}
-The paper makes three contributions. The first is theoretical and, above all, one of
-measurement. The token-valuation models of \citet{cong2021tokenomics} and
-\citet{sockin2020model} price platform adoption and membership benefits but offer no
-implementable cross-sectional measure of the beliefs they capitalize; the equilibrium
-models of \citet{pagnotta2022equilibrium}, \citet{biais2019blockchain}, and
-\citet{schilling2019bitcoin} share this gap, and empirical work has proxied
-fundamentals with prices or activity alone. The conviction ratio $\lambda$ closes the
-gap: it is, to our knowledge, the first supply-side monetary aggregate measurable at
-the asset level at monthly frequency without survey or estimation error, and the
-SoV/MoE decomposition it delivers requires no velocity estimation. The second
-contribution is to empirical asset pricing. Relative to the return-based factor
-literature \citep{liu2021risks, liu2022common, makarov2020trading}, $\lambda$ is the
-first on-chain \textit{supply-side} characteristic grounded in monetary theory, and
-its pricing is conditional in an economically informative way: conviction predicts
-returns where a fundamental anchor disciplines valuation (coins), and through the
-extremes of the conviction distribution where it does not (tokens) --- a distinction
-that survives a twelve-signal horse race and spanning battery, and that decomposes, at
-the channel level, into revealed patience rather than observable governance
-participation, sharpening the governance-signaling predictions of
-\citet{hirschman1970exit}, \citet{edmans2011governance}, and \citet{spence1973job} and
-complementing evidence on token issuance and design \citep{howell2020initial,
-chod2021theory}. The third contribution is to valuation practice. We formalize the
-practitioner NVT ratio into a growth-levelized, DCF-consistent form and race the
-resulting toolkit against fee multiples, scarcity models, Metcalfe-type rules, and
-technical signals: growth-levelization is load-bearing where the fundamental is a
-throughput flow, destroys predictive power where the fundamental is already a cash
-flow, and the popular scarcity narratives find no support. To our knowledge this paper
-is the first to derive a directly observable valuation decomposition from the quantity
-theory, to distinguish the signal content of $\lambda$ across monetary and
-non-monetary crypto assets, and to document that the interaction of conviction and
-valuation prices the cryptocurrency cross-section.
+These results make three contributions. To the theory of digital asset valuation, the
+conviction ratio provides what the models of \citet{cong2021tokenomics} and
+\citet{sockin2020model}---and the equilibrium analyses of
+\citet{pagnotta2022equilibrium}, \citet{biais2019blockchain}, and
+\citet{schilling2019bitcoin}---have lacked: an implementable, cross-sectional measure
+of the beliefs those models capitalize. $\lambda$ is, to our knowledge, the first
+supply-side monetary aggregate measurable at the asset level at monthly frequency
+without survey or estimation error, and the SoV/MoE decomposition it delivers requires
+no velocity estimation. To empirical asset pricing, where the existing crypto factor
+literature builds on returns and market data \citep{liu2021risks, liu2022common,
+makarov2020trading}, $\lambda$ is the first on-chain supply-side characteristic
+grounded in monetary theory, and its pricing is conditional in an economically
+informative way: conviction is priced where a fundamental anchor disciplines valuation
+(coins), and through the extremes of the conviction distribution where it does not
+(tokens) --- with the channel decomposition showing that what is priced is revealed
+patience rather than observable governance participation, sharpening the
+governance-signaling logic of \citet{hirschman1970exit}, \citet{edmans2011governance},
+and \citet{spence1973job} and complementing evidence on token issuance and design
+\citep{howell2020initial, chod2021theory}. And to valuation methodology, we formalize
+the practitioner NVT ratio into a growth-levelized, DCF-consistent form and subject
+the full toolkit of crypto valuation---fee multiples, scarcity models, Metcalfe-type
+rules, technical signals---to a common cross-sectional test, providing what is, to our
+knowledge, the first systematic horse race among these approaches.
 
 The remainder of the paper is organized as follows. Section~\ref{sec:theory} develops
 the theoretical frameworks for coins (SoV/MoE) and tokens (governance moat) and states

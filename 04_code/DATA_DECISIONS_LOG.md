@@ -2790,3 +2790,21 @@ formalization + horse race discipline of practitioner tools), literature compari
 woven per strand. (5) Conclusion de-duplicated: novelty claim replaced with
 beliefs-revealed-by-costly-actions framing; "patience not governance activity" added.
 59 pp. Iteration 2 awaits Moazzam's read.
+
+### Entry 124 — Cowork 2026-08-05: Introduction iteration 2 (Moazzam's three directives)
+
+(1) Order restored with lambda as the bridge paragraph DIRECTLY after the QTM +
+tokenized-models framing: P1 motivation -> P2 Fisher/QTM + Cong-Li-Wang/Sockin-Xiong
+-> P3 lambda bridge ("its role transforms both models"; velocity channel for coins,
+direct network-value signal for tokens; "the models supply the valuation object;
+lambda supplies the measurement") -> P4 MoE/SoV definitions + monotone result in words
+-> P5 why lambda informative -> P6 operationalization -> P7 findings -> P8
+contributions -> roadmap. (2) Findings paragraph rebuilt around THE key finding:
+conditional conviction survives every measurable valuation model and technical signal
+jointly for coins (12-comparator regression, t=-2.7, nothing else predicts); token
+quintile alpha survives the full spanning battery (+1.7%/t=2.5; reversal control
+RAISES it to 2.5%/t=3.2; no reverse-direction alpha). DCF-refinement/P-F throughput-
+vs-cashflow material REMOVED from findings (Moazzam: minor issues) — retained only as
+one clause in the methodology contribution. (3) \paragraph{Contributions} header
+removed; contributions now flow as a normal paragraph ("These results make three
+contributions...").
