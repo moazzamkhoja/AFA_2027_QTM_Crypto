@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{placeins}
+\usepackage[nolists]{endfloat}
 
 \doublespacing
 
@@ -392,18 +393,12 @@ current throughput relative to market cap, not necessarily a mispricing; similar
 NV/TVL\_GL. The conditioning role is asymmetric: valuation identifies the \textit{timing}
 of conviction signal absorption, not a separate source of alpha. One theoretical
 qualification matters for interpreting the tests: the conditioning prediction has
-empirical content only where the absorption fraction $\delta_t$ \textit{varies} across
-the cross-section over which the test is estimated. Because the tests are run within
-asset class, variation in $\delta$ \textit{between} classes cannot appear in the
-interaction --- it surfaces instead as different average conviction premiums across
-classes. Variation between sectors within a class is inside the estimation
-cross-section and is in principle detectable, but only to the extent that the
-asset-level valuation ratio measures sector-level absorption. Only if $\delta_{j,t}$ is
-approximately uniform across all assets in the estimation cross-section does the
-interaction degenerate fully, leaving expected returns proportional to
-$\lambda_{j,t}$ alone --- a one-dimensional signal. Whether $\delta_t$ varies, at which
-level, and whether the chosen valuation ratio measures that variation, are empirical
-questions to which we return in Section~\ref{sec:robust_mech}.
+empirical content only where the absorption fraction $\delta_t$ \textit{varies} in the
+cross-section. If $\delta_{j,t}$ is approximately uniform within a class, expected
+returns are proportional to $\lambda_{j,t}$ alone and the interaction is degenerate---the
+conviction signal becomes one-dimensional. Whether $\delta_t$ varies, and whether the
+chosen valuation ratio measures that variation, are empirical questions to which we
+return in Section~\ref{sec:robust_mech}.
 
 \subsection{Testable Hypotheses}
 \label{sec:theory_portfolio}
