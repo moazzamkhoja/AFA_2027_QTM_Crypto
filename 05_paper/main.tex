@@ -392,12 +392,18 @@ current throughput relative to market cap, not necessarily a mispricing; similar
 NV/TVL\_GL. The conditioning role is asymmetric: valuation identifies the \textit{timing}
 of conviction signal absorption, not a separate source of alpha. One theoretical
 qualification matters for interpreting the tests: the conditioning prediction has
-empirical content only where the absorption fraction $\delta_t$ \textit{varies} in the
-cross-section. If $\delta_{j,t}$ is approximately uniform within a class, expected
-returns are proportional to $\lambda_{j,t}$ alone and the interaction is degenerate---the
-conviction signal becomes one-dimensional. Whether $\delta_t$ varies, and whether the
-chosen valuation ratio measures that variation, are empirical questions to which we
-return in Section~\ref{sec:robust_mech}.
+empirical content only where the absorption fraction $\delta_t$ \textit{varies} across
+the cross-section over which the test is estimated. Because the tests are run within
+asset class, variation in $\delta$ \textit{between} classes cannot appear in the
+interaction --- it surfaces instead as different average conviction premiums across
+classes. Variation between sectors within a class is inside the estimation
+cross-section and is in principle detectable, but only to the extent that the
+asset-level valuation ratio measures sector-level absorption. Only if $\delta_{j,t}$ is
+approximately uniform across all assets in the estimation cross-section does the
+interaction degenerate fully, leaving expected returns proportional to
+$\lambda_{j,t}$ alone --- a one-dimensional signal. Whether $\delta_t$ varies, at which
+level, and whether the chosen valuation ratio measures that variation, are empirical
+questions to which we return in Section~\ref{sec:robust_mech}.
 
 \subsection{Testable Hypotheses}
 \label{sec:theory_portfolio}
@@ -651,7 +657,23 @@ and 2,771 asset-months (January 2021 through May 2026; median NV/TVL\_GL 2.29, m
 TVL \$42.2 million, median market capitalization \$98 million).\footnote{The
 growth-levelization requirement shortens the token sample relative to a raw NV/TVL
 alternative (136 assets, 4,627 asset-months from March 2020); the raw sample is
-retained for robustness comparisons.}
+retained for robustness comparisons.} The full membership
+of both samples is listed in Appendix Tables~\ref{tab:coins_list} and
+\ref{tab:tokens_list}.
+
+Survivorship deserves explicit comment. The universe itself is constructed from
+point-in-time monthly snapshots and therefore includes assets that were subsequently
+delisted or became inactive; no continuous-coverage requirement is imposed, an asset's
+final observed month contributes its last available return, and returns are never
+computed across carried-forward observations. In this respect the universe is free of
+classic survivorship bias. The regression samples, however, condition on data
+coverage --- recoverable staking archives for coins, DeFiLlama TVL reporting for
+tokens --- and coverage correlates with scale and longevity. The samples therefore
+speak to the covered population of larger, more established assets, a selection that is
+visible in the median market capitalizations of Table~\ref{tab:summary}; it is a
+coverage tilt rather than a conditioning-on-survival bias, since coverage providers
+retain the histories of failed protocols and dead assets remain in the panel through
+their final months.
 
 \begin{table}[ht]
 \centering
@@ -848,7 +870,19 @@ The token track differs. Table~\ref{tab:token_ladder} shows a positive governanc
 conviction premium of $+0.5\%$ to $+0.8\%$ per month per SD, but its significance is
 confined to two specifications: the single-regressor column ($t=1.97$) and the
 Fama--MacBeth cross-sections ($t=1.77$ and $2.19$). Once controls enter, with or
-without coarse protocol-sector fixed effects, the panel slope sits at $t \approx 1.5$.
+without coarse protocol-sector fixed effects, the panel slope sits at $t \approx 1.5$. The
+divergence between the two estimators is itself informative. The Fama--MacBeth
+specifications include the same controls and are estimated on the full token
+cross-section each month; they differ from the pooled panel in weighting every month
+equally rather than by observation count, and in computing standard errors from the
+time series of monthly coefficients rather than by two-way clustering. Because the
+token conviction premium is substantially larger in the early, thin-cross-section
+months (the pre-2023 slope is $+2.9\%$ per SD), equal month-weighting raises the
+Fama--MacBeth estimate, while clustering by asset --- which absorbs the strong
+within-asset persistence of $\lambda$ --- widens the pooled standard errors. The
+linear slope's significance is thus sensitive to estimator weighting because the
+premium is not uniform over time; the portfolio-extremes result below does not share
+this sensitivity.
 H1 in the token sample thus receives qualified support at best as a linear slope ---
 a limitation that the portfolio analysis of Section~\ref{sec:results_quintile}
 resolves in an informative direction: the conviction information is real but
@@ -926,10 +960,15 @@ Hypothesis~3 is not supported. Table~\ref{tab:quadrant} reports Stars-minus-Avoi
 portfolios: no variant earns significant factor-adjusted alpha against the monthly
 LTW-analog factors, point estimates flip sign between equal- and value-weighting for
 coins, and the token estimates are carried by pre-2023 months (post-2023 EW alpha
-$-0.79\%$/month, $t=-0.73$). The failure is largely mechanical. The coin quadrant
-requires four adequately populated cells from a median cross-section of eleven names:
-45 of 65 coin months fail a four-per-leg breadth guard, leaving twenty non-contiguous
-months. And the median split discards the continuous variation that the regressions
+$-0.79\%$/month, $t=-0.73$). The failure is robust to the breadth guard but
+poorly powered at every feasible setting. The pre-registered construction requires four
+names per leg from a median cross-section of eleven: 45 of 65 coin months fail the
+guard, leaving twenty non-contiguous months.\footnote{Relaxing the guard trades
+diversification for span and does not change the verdict: at a minimum of three names
+per leg the coin Stars-minus-Avoid alpha is $-2.7\%$ per month ($t=-1.36$, 33 months);
+at two names per leg, $-1.5\%$ ($t=-0.79$, 46 months). The point estimate is negative
+at every threshold; two-name legs are effectively pair trades dominated by
+idiosyncratic volatility, which is why the four-name guard was pre-registered.} And the median split discards the continuous variation that the regressions
 exploit: a signal of $+0.7\%$ per month per SD, present in half the sample, cannot
 surface as significant alpha in 20--49 months at this breadth. Transaction costs are
 not the binding problem (turnover is 0.10--0.28 per leg-month; a 50 bps haircut
@@ -1011,19 +1050,18 @@ demeaned within coarse sector-month before sorting. Leg turnover for the quintil
 \end{table}
 
 Two structural facts sharpen the interpretation. First, the location of the premium
-within the token universe requires care. The sector-neutralized quintile dies
-($t=0.39$), coarse-sector fixed effects attenuate the regression slope
-(Table~\ref{tab:token_ladder}), and per-sector \textit{tercile} long-shorts are
-uniformly insignificant (DEX $t=0.89$; Lending $t=-0.16$; Other $t=-0.77$) ---
-evidence that at first suggested a purely between-category effect. But the tercile is
-the wrong instrument: it dilutes a signal that lives in the tails, exactly as it does
-in the full cross-section. In the one category deep enough to support a within-sector
-\textit{quintile} --- DEX, with 39 tokens and a median of 25 per month --- the
-conviction long-short earns $+3.4\%$ per month ($t=2.04$) on legs of fewer than five
-names. The correct statement is therefore that the premium is present within the
-deepest category at fine granularity; the remaining categories are too thin to test at
-that granularity, and the pooled sector-neutralized construction fails because
-demeaning within thin categories injects noise. The value-weighted variant adds a
+within the token universe requires care. Coarse-sector fixed effects attenuate the
+regression slope (Table~\ref{tab:token_ladder}), and the pooled sector-neutralized
+quintile is insignificant ($t=0.39$) --- but the latter construction demeans
+conviction within categories that hold a median of one to eight tokens per month,
+injecting noise rather than removing sector tilts. The informative test is the one
+category deep enough to support a within-sector quintile: DEX, with 39 tokens and a
+median of 25 per month, where the conviction long-short earns $+3.4\%$ per month
+($t=2.04$) on legs of fewer than five names. The premium is therefore present within
+the deepest category at the granularity where the signal lives; the remaining
+categories are too thin to test at that granularity, and how much of the aggregate
+premium is between rather than within categories cannot be settled at current
+breadth. The value-weighted variant adds a
 complementary fact: its point estimate exceeds the equal-weighted one ($+3.1\%$,
 $t=1.83$), so the premium is not a microcap artifact, though the VW series is noisier
 (ten-name legs concentrate in one or two large tokens) and does not survive the
@@ -1390,6 +1428,49 @@ Regime splits show the coin interaction is concentrated post-2023 ($-2.05\%$,
 $t=-4.32$; the pre-2023 coin panel has only 74 observations and is uninformative)
 and mildly stronger in bull months ($-2.41\%$, $t=-1.83$) than bear months
 ($-0.88\%$, $t=-0.98$); the token conviction slope is stable across regimes.
+
+Finally, decomposing the token conviction index into its constituent channels
+identifies where the information resides. Table~\ref{tab:channels} re-estimates the
+baseline specification and the quintile long-short using each raw channel in place of
+the composite. The holding-duration channel --- the fraction of supply that has not
+moved in six months --- carries essentially all of the signal: its panel slope
+($+0.55\%$ per SD, $t=1.50$ across 88 tokens) and quintile alpha ($+1.48\%$ per month,
+$t=1.71$) approach the composite's, while the staking, delegation, and voting channels
+are individually uninformative on their sparse coverage (9--32 tokens each) and too
+thin to sort. The composite's modest edge over holding alone ($+1.71\%$ versus
+$+1.48\%$ alpha) is the increment the governance channels contribute where observed.
+The economic reading is pointed: what predicts token returns is \textit{revealed
+patience} --- supply that demonstrably does not move --- rather than observable
+governance participation, consistent with the earlier finding that
+voting-participation weighting adds nothing and with the vote-escrow null above.
+
+\begin{table}[ht]
+\centering
+\caption{Token Conviction by Channel}
+\label{tab:channels}
+\small
+\begin{tabular}{lccccc}
+\toprule
+Channel & Tokens & Obs. & Panel slope ($t$) & Quintile $\alpha$/mo ($t$) & Months \\
+\midrule
+Holding duration (HODL-6m) & 88 & 2,468 & 0.0055 (1.50) & 0.0148* (1.71) & 50 \\
+Protocol staking & 13 & 459 & 0.0008 (0.09) & \multicolumn{2}{c}{too thin to sort} \\
+Governance delegation & 9 & 131 & $-$0.0113 ($-$0.94) & \multicolumn{2}{c}{too thin to sort} \\
+Governance voting & 32 & 580 & 0.0006 (0.09) & \multicolumn{2}{c}{too thin to sort} \\
+\midrule
+Composite $\lambda_z$ (reference) & 97 & 2,592 & 0.0056 (1.57) & 0.0171** (2.18) & 50 \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\parbox{0.9\linewidth}{\footnotesize
+\textit{Notes:} Each row standardizes the raw channel within token-month and
+re-estimates the baseline panel specification (controls, month FE, two-way clustered
+SEs) and, where breadth permits, the EW quintile long-short against the LTW factors
+(NW-3). Channel coverage is determined by protocol design and data availability
+(Section~\ref{sec:measures_lambda}). This decomposition was run at the review stage
+rather than pre-specified.}
+\end{table}
 
 %=============================================================
 \FloatBarrier

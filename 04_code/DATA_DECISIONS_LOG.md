@@ -2734,3 +2734,26 @@ lambda_z, NV/TVL_GL, TVL, P/F (median 12.1), MC, forward return, beta. Unwinsori
 heavy-tail note motivates the log/winsorization choices; negative median returns
 flagged. Old coverage table -> Appendix (tab:coverage_appendix). Builder:
 04_code/phase3_sumstats_table.py.
+
+### Entry 121 — Cowork 2026-08-05: Review-round edits (Moazzam's six points)
+
+(1) Delta-uniformity statement rewritten to distinguish levels: between-class variation
+absorbed by class-separate estimation (surfaces as different avg premiums); between-
+sector-within-class detectable in principle; full degeneracy only if uniform across the
+estimation cross-section. (2) 4.2: appendix list references + survivorship paragraph
+(universe snapshot-based/survivorship-free; regression samples have a coverage tilt
+toward scale/longevity, not conditioning-on-survival). (3) 5.1: FM-vs-panel divergence
+explained (FM includes same controls, full cross-section monthly; equal month-weighting
+upweights the strong pre-2023 premium; asset clustering absorbs lambda persistence) —
+slope significance is estimator-sensitive because the premium is time-varying.
+(4) NEW RUN: coin quadrant guard relaxation — min3: -2.7%/mo (t=-1.36, 33 mo); min2:
+-1.5% (t=-0.79, 46 mo); negative at every threshold; footnote added, "mechanical"
+framing softened to "robust to guard, poorly powered at every setting". (5) Tercile-
+dilution sentence removed from DEX passage per Moazzam (quintile already established
+as the instrument); passage now leads with thin-category-demeaning noise + DEX
+within-sector quintile; between-vs-within left explicitly unsettled. (6) NEW RUN +
+Table (tab:channels): token conviction by channel — HODL-6m carries essentially all
+signal (slope t=1.50, 88 tokens; q5 alpha +1.48%/t=1.71) vs staking/delegation/voting
+individually uninformative on 9-32 tokens; composite edge = governance increment;
+"revealed patience, not governance participation" reading; disclosed as review-stage.
+Script: 04_code/phase3_explore_channels_guard.py. Paper 51 pp.
