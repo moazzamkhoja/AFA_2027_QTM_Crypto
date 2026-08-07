@@ -2819,3 +2819,16 @@ READING: the long-short alpha is earned predominantly on the SHORT side — conv
 is a loser-avoidance screen more than a winner-picker; implementable long-only version
 is exclusionary (drop bottom quintile). Added to 6.3 as prose. Also: intro quadrant
 sentence now names "Stars-minus-Avoid". Script: 04_code/phase3_explore_longonly.py.
+
+### Entry 126 — Cowork 2026-08-05: Title, abstract finalized (pending weekend fresh-eyes review)
+
+Title changed to "Skin in the Chain: Locked Supply and the Cross-Section of
+Cryptocurrency Returns" (Moazzam's pick from fresh-read candidates). Abstract
+finalized per Moazzam's own edit (lambda-first opening, theory-conditional-pricing,
+coin finding + joint-race survival, token conditioning failure + extremes alpha +
+spanning, measurement-contribution close; single-spaced). Paper state: complete
+58-pp submission-shaped draft — title, abstract, intro (2 iterations), unified
+hypotheses, results with learnings framing, robustness + mechanisms, summary
+scorecard, conclusion, 12 main tables + 5 appendix tables + 2 figures in
+working-paper order. NEXT: Moazzam's fresh-eyes review after the weekend
+(title/abstract/intro possibly revisited); then remaining polish and submission prep.
