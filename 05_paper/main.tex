@@ -57,19 +57,21 @@ lacked: a measurable, cross-sectional counterpart to the beliefs they capitalize
 \label{sec:intro}
 %=============================================================
 
-What determines the value of a cryptocurrency? Existing approaches divide into two
-strands. Academic work prices digital assets in equilibrium models of the transactional
-and security services a network provides \citep{pagnotta2022equilibrium,
-biais2019blockchain, schilling2019bitcoin}. Applied and practitioner valuation, by
-contrast, adapts discounted cash flow (DCF) logic, searching for a dividend-like
-flow---transaction fees, staking rewards, protocol revenue---that can be capitalized
-into a present value, typically implemented as fee- or revenue-multiple comparisons.
-The cash-flow approach, however, mischaracterizes the fundamental nature of digital
-assets. Cryptocurrencies and protocol tokens exhibit currency-like behavior: each coin
-or token is the monetary instrument of a self-contained digital economy, and its value
-is governed by the same forces that determine the value of any currency---the scale of
-economic activity it enables and the efficiency with which it circulates. The correct
-framework, we argue, is the Quantity Theory of Money \citep{fisher1911}.
+What determines the value of a cryptocurrency? For an asset class measured in
+trillions of dollars, the question still lacks an accepted answer. Practice leans on
+technical analysis, sentiment, and rough valuation multiples---tools that summarize
+price dynamics rather than fundamentals---while academic equilibrium models, developed
+largely for Bitcoin and other native coins \citep{pagnotta2022equilibrium,
+biais2019blockchain, schilling2019bitcoin}, price a network's transactional and
+security services without yielding implementable cross-sectional measures. Both
+approaches overlook what we regard as the defining feature of the asset class: each
+coin or token is the monetary instrument of a self-contained digital economy. Its
+value should therefore be governed by the forces that govern any money---the scale of
+the economic activity it supports and the efficiency with which it circulates, the
+domain of the Quantity Theory of Money \citep{fisher1911}---and by a force the
+quantity theory alone does not capture: the willingness of holders to hold rather
+than spend, their conviction in that economy's future. No existing framework models
+this conviction, and none measures it. Doing both is the subject of this paper.
 
 The Fisher equation, $MV = PQ$, relates the stock of money ($M$) and its velocity ($V$)
 to the nominal value of economic output ($PQ$) \citep{fisher1911}. Applied to digital
@@ -1099,8 +1101,8 @@ positive alpha on the LTW factors plus the conviction quintile.}
 We race the conviction signals against a completed comparator battery: raw NVT and
 NV/TVL, stock-to-flow, supply growth, 52-week high, moving-average distance,
 volatility, idiosyncratic volatility, Amihud illiquidity, return skewness, the momentum
-family, and --- for tokens --- the two implementable versions of the cash-flow approach
-named in the introduction: the practitioner price-to-fees multiple (P/F, market
+family, and --- for tokens --- the two implementable versions of the fee-based valuation
+multiples used in practice: the price-to-fees multiple (P/F, market
 capitalization over trailing twelve-month protocol fees) and a revenue DCF ratio
 (market capitalization over the growth-levelized present value of protocol revenue,
 built with the machinery of Section~\ref{sec:measures_nvt}).\footnote{Protocol fees and
