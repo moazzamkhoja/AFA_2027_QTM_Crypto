@@ -1698,6 +1698,106 @@ significant P/F \textit{level} coefficient is the horse-race finding of
 Table~\ref{tab:horserace}, not an H2 result.}
 \end{table}
 
+
+\FloatBarrier
+\section{Sample Composition}
+\label{app:sample}
+
+Tables~\ref{tab:coins_list} and \ref{tab:tokens_list} list the assets in the two
+regression samples. Months counts the asset-months each contributes to its sample;
+membership requires simultaneous observation of the conviction and valuation measures,
+so an asset's window reflects its data coverage, not its listing history.
+
+\begin{table}[ht]
+\centering
+\caption{Coin Regression Sample (24 assets)}
+\label{tab:coins_list}
+\footnotesize
+\begin{tabular}{llrr}
+\toprule
+Symbol & Name & Months & Median MC (\$M) \\
+\midrule
+ETH & Ethereum & 66 & 284,715 \\
+BNB & BNB & 23 & 92,775 \\
+SOL & Solana & 40 & 63,535 \\
+ADA & Cardano & 43 & 13,896 \\
+TRX & TRON & 58 & 9,651 \\
+AVAX & Avalanche & 51 & 7,763 \\
+CRO & Cronos & 11 & 3,496 \\
+FLR & Flare & 14 & 1,148 \\
+POL & Polygon (prev. MATIC) & 9 & 1,096 \\
+XDC & XDC Network & 36 & 736 \\
+EGLD & MultiversX & 32 & 625 \\
+KLAY & Klaytn & 20 & 604 \\
+CORE & Core & 27 & 519 \\
+STRK & Starknet & 16 & 426 \\
+RON & Ronin & 28 & 412 \\
+KAVA & Kava & 26 & 410 \\
+CHZ & Chiliz & 9 & 404 \\
+GNO & Gnosis & 47 & 387 \\
+CELO & Celo & 51 & 289 \\
+GLMR & Moonbeam & 40 & 160 \\
+S & Sonic & 5 & 118 \\
+PEAQ & peaq & 1 & 67 \\
+MOVR & Moonriver & 45 & 57 \\
+XRD & Radix & 20 & 53 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Token Regression Sample (101 assets)}
+\label{tab:tokens_list}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lll}
+\toprule
+\multicolumn{3}{l}{Symbol (coarse sector, months), ordered by median market capitalization} \\
+\midrule
+UNI (DEX, 56) & ONDO (Derivatives, 17) & ARB (Other, 27) \\
+ENA (Other, 13) & SKY (DEX, 1) & AAVE (Lending, 49) \\
+LDO (LSD, 39) & FLOKI (Other, 22) & MORPHO (Lending, 6) \\
+CRV (DEX, 57) & SNX (DEX, 65) & CAKE (DEX, 39) \\
+PENDLE (Yield, 24) & AERO (DEX, 14) & COMP (Lending, 59) \\
+AXL (Other, 27) & 1INCH (DEX, 47) & ETHDYDX (Derivatives, 37) \\
+SUPER (Other, 37) & CVX (Yield, 44) & W (Other, 14) \\
+LRC (DEX, 53) & FRAX (DEX, 42) & WOO (DEX, 32) \\
+SYRUP (Lending, 2) & YFI (DEX, 58) & AMP (Other, 50) \\
+T (Lending, 38) & GMX (DEX, 32) & SUSHI (DEX, 52) \\
+BAL (DEX, 53) & BICO (Other, 31) & EIGEN (LSD, 8) \\
+SXP (DEX, 43) & ILV (Other, 5) & APE (Yield, 3) \\
+VVS (DEX, 38) & KEEP (Other, 46) & METIS (Other, 37) \\
+XVS (Lending, 29) & KNC (DEX, 47) & CELR (Other, 37) \\
+NMR (Derivatives, 46) & REP (Other, 31) & STG (Other, 28) \\
+BONE (DEX, 30) & SPELL (Lending, 42) & LQTY (Lending, 28) \\
+BNT (DEX, 50) & REN (Other, 31) & HFT (DEX, 27) \\
+RBN (Lending, 18) & LON (DEX, 42) & SYN (Yield, 27) \\
+MDX (DEX, 29) & AURORA (Yield, 28) & CORE (Yield, 13) \\
+BADGER (Yield, 42) & AEVO (DEX, 15) & TRU (Lending, 38) \\
+AUCTION (Other, 17) & GNS (Derivatives, 26) & LINA (DEX, 22) \\
+DODO (DEX, 49) & STRK (Lending, 30) & BAKE (DEX, 33) \\
+ORN (DEX, 3) & PERP (DEX, 34) & MLN (DEX, 41) \\
+MAV (DEX, 19) & IDEX (DEX, 52) & ALPHA (Lending, 8) \\
+BLAST (Yield, 11) & WXT (Lending, 35) & TT (DEX, 19) \\
+OSMO (DEX, 2) & BZRX (DEX, 3) & YFII (Yield, 26) \\
+EPIC (Other, 14) & ALCX (Yield, 37) & FARM (Yield, 44) \\
+KP3R (Derivatives, 17) & CPOOL (Lending, 6) & SWAP (DEX, 10) \\
+EPS (DEX, 37) & ANC (Lending, 6) & STAKE (Other, 12) \\
+MET (DEX, 11) & TIME (Lending, 19) & PNT (Other, 7) \\
+HEGIC (DEX, 43) & ICHI (Yield, 18) & ZKB (DEX, 2) \\
+MIR (Derivatives, 4) & NFTX (Other, 21) & TLM (Other, 1) \\
+PEAK (Yield, 6) & DDX (DEX, 13) & RGT (Yield, 13) \\
+BTCST (Yield, 4) & NVT (DEX, 1) \\
+\bottomrule
+\end{tabular}
+\smallskip
+
+\parbox{0.92\linewidth}{\footnotesize
+\textit{Notes:} Coarse sectors follow the mapping of Section~\ref{sec:robust}: DEX,
+Lending, Yield, Derivatives, LSD (liquid staking), and Other.}
+\end{table}
+
 \begin{thebibliography}{99}
 
 \bibitem[BitInfoCharts(2026)]{bitinfocharts2026}
