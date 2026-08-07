@@ -2808,3 +2808,14 @@ vs-cashflow material REMOVED from findings (Moazzam: minor issues) — retained 
 one clause in the methodology contribution. (3) \paragraph{Contributions} header
 removed; contributions now flow as a normal paragraph ("These results make three
 contributions...").
+
+### Entry 125 — Cowork 2026-08-05: Long-only token quintile analysis (Moazzam's ask)
+
+Method (best practice, both layers reported): factor alpha (LTW, NW-3) + benchmark-
+relative active return / tracking error / information ratio vs EW token universe.
+Results (50 formation months): Q5 long-only active +0.68%/mo, IR 0.41, t=0.83 (ns);
+Q1 long-only active -1.60%/mo, t=-2.25, IR -1.10 (significant underperformance).
+READING: the long-short alpha is earned predominantly on the SHORT side — conviction
+is a loser-avoidance screen more than a winner-picker; implementable long-only version
+is exclusionary (drop bottom quintile). Added to 6.3 as prose. Also: intro quadrant
+sentence now names "Stars-minus-Avoid". Script: 04_code/phase3_explore_longonly.py.
