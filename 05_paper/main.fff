@@ -1,0 +1,23 @@
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig1_conviction_returns.pdf}
+\caption{Conviction and next-month returns. Panel A shows mean next-month returns for
+coins in each conviction--valuation cell (median splits within class-month; error bars
+are $\pm$1 standard error of the monthly cell means): the conviction premium is
+positive only where valuation is cheap, and high-conviction expensive coins earn the
+lowest returns. Panel B shows mean next-month returns by conviction quintile for
+tokens: the premium is concentrated in the extremes rather than monotone through the
+middle quintiles.}
+\label{fig:conviction}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig2_cumulative.pdf}
+\caption{Cumulative log return of the token conviction quintile long-short (EW, top
+minus bottom quintile, monthly rebalanced) against the equal-weighted token universe,
+over the 50 formation months of the portfolio sample. The long-short accumulates
+steadily through a period in which the token universe itself loses value.}
+\label{fig:cumulative}
+\end{figure}
