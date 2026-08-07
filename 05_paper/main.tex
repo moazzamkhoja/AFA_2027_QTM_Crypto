@@ -10,7 +10,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{placeins}
-\usepackage[nolists]{endfloat}
+\usepackage[nolists,tablesfirst]{endfloat}
 
 \doublespacing
 
@@ -928,7 +928,8 @@ The central conditional prediction receives sharply asymmetric support. For coin
 conviction--valuation interaction in Table~\ref{tab:coin_ladder} column (4) is
 $-1.69\%$ per SD$\times$SD ($t=-3.54$); the split-sample difference test (column 7) is
 $-4.20\%$ ($t=-3.99$). A one-SD-higher staking share earns $+0.70\%$ per month among
-cheap (below-median NVT\_GL) coins and $-3.0\%$ among expensive coins. The pattern
+cheap (below-median NVT\_GL) coins and $-3.0\%$ among expensive coins;
+Figure~\ref{fig:conviction} (Panel A) shows the cell-level pattern. The pattern
 strengthens with horizon: at six months the interaction reaches $-9.0\%$ ($t=-2.99$)
 and the unconditional conviction slope turns marginally positive ($+6.1\%$, $t=1.90$),
 consistent with slow price discovery. Notably, the negative slope among expensive coins
@@ -938,6 +939,20 @@ the market overshoots on observable staking commitment. The economically support
 statement is thus stronger than H2 as written: for coins, valuation does not merely
 time the conviction premium; the high-conviction--high-valuation corner is actively
 avoided.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{figures/fig1_conviction_returns.pdf}
+\caption{Conviction and next-month returns. Panel A shows mean next-month returns for
+coins in each conviction--valuation cell (median splits within class-month; error bars
+are $\pm$1 standard error of the monthly cell means): the conviction premium is
+positive only where valuation is cheap, and high-conviction expensive coins earn the
+lowest returns. Panel B shows mean next-month returns by conviction quintile for
+tokens: the premium is concentrated in the extremes rather than monotone through the
+middle quintiles.}
+\label{fig:conviction}
+\end{figure}
+
 
 For tokens, H2 is rejected: the interaction is near zero with the wrong sign in every
 specification ($+0.34\%$, $t=0.79$ baseline; split difference $t=0.65$), and
@@ -1009,11 +1024,22 @@ details in Section~\ref{sec:data}.}
 Table~\ref{tab:quintile} reports conviction-only token long-shorts across sort
 granularities. The quintile EW portfolio earns $+2.28\%$ per month raw and $+1.71\%$
 factor-adjusted ($t=2.18$, annualized Sharpe 0.86), survives 50 bps per-side costs
-($+1.53\%$, $t=1.95$) and the post-2023 sub-period ($+1.48\%$, $t=1.79$). The
+($+1.53\%$, $t=1.95$) and the post-2023 sub-period ($+1.48\%$, $t=1.79$). Figure~\ref{fig:cumulative} plots the cumulative performance. The
 progression across granularities is non-monotonic and must be read as such: median and
 tercile splits are dead ($t=0.38$, $0.37$), the quintile works, and the decile dies
 ($t=0.02$ at $\sim$5.8 names per leg). The quintile sits where signal purity and leg
 breadth ($\sim$10.6 names) balance; we do not claim a monotone sharpening result.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig2_cumulative.pdf}
+\caption{Cumulative log return of the token conviction quintile long-short (EW, top
+minus bottom quintile, monthly rebalanced) against the equal-weighted token universe,
+over the 50 formation months of the portfolio sample. The long-short accumulates
+steadily through a period in which the token universe itself loses value.}
+\label{fig:cumulative}
+\end{figure}
+
 
 \begin{table}[ht]
 \centering
@@ -1555,6 +1581,120 @@ currently constrained by data infrastructure rather than concept---are the natur
 extensions.
 
 %=============================================================
+
+\clearpage
+\processdelayedfloats
+\clearpage
+
+\begin{thebibliography}{99}
+
+\bibitem[BitInfoCharts(2026)]{bitinfocharts2026}
+BitInfoCharts, 2026, Blockchain statistics and sent-value data,
+\url{https://bitinfocharts.com}, accessed May 2026.
+
+\bibitem[Blockchain.com(2026)]{blockchain2026}
+Blockchain.com, 2026, Bitcoin blockchain explorer and transaction statistics,
+\url{https://blockchain.com}, accessed May 2026.
+
+\bibitem[Biais, Bisière, Bouvard, and Casamatta(2019)]{biais2019blockchain}
+Biais, B., C.~Bisière, M.~Bouvard, and C.~Casamatta, 2019, The blockchain folk theorem,
+\textit{Review of Economic Studies} 86, 1341--1371.
+
+\bibitem[CoinMarketCap(2026)]{cmc2026}
+CoinMarketCap, 2026, Historical cryptocurrency market data,
+\url{https://coinmarketcap.com}, accessed May 2026.
+
+\bibitem[Chod and Lyandres(2021)]{chod2021theory}
+Chod, J., and E.~Lyandres, 2021, A theory of ICOs: Diversification, agency, and
+information asymmetry, \textit{Management Science} 67, 5969--5989.
+
+\bibitem[Cong, Li, and Wang(2021)]{cong2021tokenomics}
+Cong, L.~W., Y.~Li, and N.~Wang, 2021, Tokenomics: Dynamic adoption and valuation,
+\textit{Review of Financial Studies} 34, 1105--1155.
+
+\bibitem[Cong and He(2024)]{cong2024staking}
+Cong, L.~W., and Z.~He, 2024, The tokenomics of staking,
+\textit{NBER Working Paper} 33640.
+
+\bibitem[DeFiLlama(2026)]{defillama2026}
+DeFiLlama, 2026, Protocol TVL and decentralized exchange volume data,
+\url{https://defillama.com}, accessed May 2026.
+
+\bibitem[Easley, O'Hara, and Basu(2019)]{easley2019mining}
+Easley, D., M.~O'Hara, and S.~Basu, 2019, From mining to markets: The evolution of
+Bitcoin transaction fees, \textit{Journal of Financial Economics} 134, 91--109.
+
+\bibitem[Edmans and Manso(2011)]{edmans2011governance}
+Edmans, A., and G.~Manso, 2011, Governance through exit and voice: A theory of
+multiple blockholders, \textit{Review of Financial Studies} 24, 2395--2428.
+
+\bibitem[Fisher(1911)]{fisher1911}
+Fisher, I., 1911, \textit{The Purchasing Power of Money},
+Macmillan, New York.
+
+\bibitem[Grossman and Stiglitz(1980)]{grossman1980impossibility}
+Grossman, S.~J., and J.~E.~Stiglitz, 1980, On the impossibility of informationally
+efficient markets, \textit{American Economic Review} 70, 393--408.
+
+\bibitem[Hirschman(1970)]{hirschman1970exit}
+Hirschman, A.~O., 1970, \textit{Exit, Voice, and Loyalty},
+Harvard University Press, Cambridge, MA.
+
+\bibitem[Howell, Niessner, and Yermack(2020)]{howell2020initial}
+Howell, S.~T., M.~Niessner, and D.~Yermack, 2020, Initial coin offerings: Financing
+growth with cryptocurrency token sales, \textit{Review of Financial Studies} 33,
+3925--3974.
+
+\bibitem[Jiang, Krishnamurthy, and Lustig(2024)]{jiang2024exorbitant}
+Jiang, Z., A.~Krishnamurthy, and H.~Lustig, 2024, Exorbitant privilege: A safe-asset
+view, \textit{NBER Working Paper} 32454.
+
+\bibitem[Kiyotaki and Wright(1993)]{kiyotaki1993search}
+Kiyotaki, N., and R.~Wright, 1993, A search-theoretic approach to monetary economics,
+\textit{American Economic Review} 83, 63--77.
+
+\bibitem[Krishnamurthy and Vissing-Jorgensen(2012)]{krishnamurthy2012aggregate}
+Krishnamurthy, A., and A.~Vissing-Jorgensen, 2012, The aggregate demand for Treasury
+debt, \textit{Journal of Political Economy} 120, 233--267.
+
+\bibitem[Lagos and Wright(2005)]{lagos2005unified}
+Lagos, R., and R.~Wright, 2005, A unified framework for monetary theory and policy
+analysis, \textit{Journal of Political Economy} 113, 463--484.
+
+\bibitem[Liu and Tsyvinski(2021)]{liu2021risks}
+Liu, Y., and A.~Tsyvinski, 2021, Risks and returns of cryptocurrency,
+\textit{Review of Financial Studies} 34, 2689--2727.
+
+\bibitem[Liu, Tsyvinski, and Wu(2022)]{liu2022common}
+Liu, Y., A.~Tsyvinski, and X.~Wu, 2022, Common risk factors in cryptocurrency,
+\textit{Journal of Finance} 77, 1133--1177.
+
+\bibitem[Makarov and Schoar(2020)]{makarov2020trading}
+Makarov, I., and A.~Schoar, 2020, Trading and arbitrage in cryptocurrency markets,
+\textit{Journal of Financial Economics} 135, 293--319.
+
+\bibitem[Nagel(2016)]{nagel2016liquidity}
+Nagel, S., 2016, The liquidity premium of near-money assets,
+\textit{Quarterly Journal of Economics} 131, 1927--1971.
+
+\bibitem[Pagnotta and Buraschi(2022)]{pagnotta2022equilibrium}
+Pagnotta, E., and A.~Buraschi, 2022, An equilibrium valuation of Bitcoin and
+decentralized network assets, \textit{Journal of Finance} 77, 887--943.
+
+\bibitem[Schilling and Uhlig(2019)]{schilling2019bitcoin}
+Schilling, L., and H.~Uhlig, 2019, Some simple Bitcoin economics,
+\textit{Journal of Monetary Economics} 106, 16--26.
+
+\bibitem[Sockin and Xiong(2020)]{sockin2020model}
+Sockin, M., and W.~Xiong, 2020, A model of cryptocurrencies,
+\textit{NBER Working Paper} 26816.
+
+\bibitem[Spence(1973)]{spence1973job}
+Spence, M., 1973, Job market signaling,
+\textit{Quarterly Journal of Economics} 87, 355--374.
+
+\end{thebibliography}
+
 \appendix
 \section{Derivation of the SoV/MoE Decomposition}
 \label{app:derivations}
@@ -1874,113 +2014,6 @@ BTCST (Yield, 4) & NVT (DEX, 1) \\
 Lending, Yield, Derivatives, LSD (liquid staking), and Other.}
 \end{table}
 
-\begin{thebibliography}{99}
 
-\bibitem[BitInfoCharts(2026)]{bitinfocharts2026}
-BitInfoCharts, 2026, Blockchain statistics and sent-value data,
-\url{https://bitinfocharts.com}, accessed May 2026.
-
-\bibitem[Blockchain.com(2026)]{blockchain2026}
-Blockchain.com, 2026, Bitcoin blockchain explorer and transaction statistics,
-\url{https://blockchain.com}, accessed May 2026.
-
-\bibitem[Biais, Bisière, Bouvard, and Casamatta(2019)]{biais2019blockchain}
-Biais, B., C.~Bisière, M.~Bouvard, and C.~Casamatta, 2019, The blockchain folk theorem,
-\textit{Review of Economic Studies} 86, 1341--1371.
-
-\bibitem[CoinMarketCap(2026)]{cmc2026}
-CoinMarketCap, 2026, Historical cryptocurrency market data,
-\url{https://coinmarketcap.com}, accessed May 2026.
-
-\bibitem[Chod and Lyandres(2021)]{chod2021theory}
-Chod, J., and E.~Lyandres, 2021, A theory of ICOs: Diversification, agency, and
-information asymmetry, \textit{Management Science} 67, 5969--5989.
-
-\bibitem[Cong, Li, and Wang(2021)]{cong2021tokenomics}
-Cong, L.~W., Y.~Li, and N.~Wang, 2021, Tokenomics: Dynamic adoption and valuation,
-\textit{Review of Financial Studies} 34, 1105--1155.
-
-\bibitem[Cong and He(2024)]{cong2024staking}
-Cong, L.~W., and Z.~He, 2024, The tokenomics of staking,
-\textit{NBER Working Paper} 33640.
-
-\bibitem[DeFiLlama(2026)]{defillama2026}
-DeFiLlama, 2026, Protocol TVL and decentralized exchange volume data,
-\url{https://defillama.com}, accessed May 2026.
-
-\bibitem[Easley, O'Hara, and Basu(2019)]{easley2019mining}
-Easley, D., M.~O'Hara, and S.~Basu, 2019, From mining to markets: The evolution of
-Bitcoin transaction fees, \textit{Journal of Financial Economics} 134, 91--109.
-
-\bibitem[Edmans and Manso(2011)]{edmans2011governance}
-Edmans, A., and G.~Manso, 2011, Governance through exit and voice: A theory of
-multiple blockholders, \textit{Review of Financial Studies} 24, 2395--2428.
-
-\bibitem[Fisher(1911)]{fisher1911}
-Fisher, I., 1911, \textit{The Purchasing Power of Money},
-Macmillan, New York.
-
-\bibitem[Grossman and Stiglitz(1980)]{grossman1980impossibility}
-Grossman, S.~J., and J.~E.~Stiglitz, 1980, On the impossibility of informationally
-efficient markets, \textit{American Economic Review} 70, 393--408.
-
-\bibitem[Hirschman(1970)]{hirschman1970exit}
-Hirschman, A.~O., 1970, \textit{Exit, Voice, and Loyalty},
-Harvard University Press, Cambridge, MA.
-
-\bibitem[Howell, Niessner, and Yermack(2020)]{howell2020initial}
-Howell, S.~T., M.~Niessner, and D.~Yermack, 2020, Initial coin offerings: Financing
-growth with cryptocurrency token sales, \textit{Review of Financial Studies} 33,
-3925--3974.
-
-\bibitem[Jiang, Krishnamurthy, and Lustig(2024)]{jiang2024exorbitant}
-Jiang, Z., A.~Krishnamurthy, and H.~Lustig, 2024, Exorbitant privilege: A safe-asset
-view, \textit{NBER Working Paper} 32454.
-
-\bibitem[Kiyotaki and Wright(1993)]{kiyotaki1993search}
-Kiyotaki, N., and R.~Wright, 1993, A search-theoretic approach to monetary economics,
-\textit{American Economic Review} 83, 63--77.
-
-\bibitem[Krishnamurthy and Vissing-Jorgensen(2012)]{krishnamurthy2012aggregate}
-Krishnamurthy, A., and A.~Vissing-Jorgensen, 2012, The aggregate demand for Treasury
-debt, \textit{Journal of Political Economy} 120, 233--267.
-
-\bibitem[Lagos and Wright(2005)]{lagos2005unified}
-Lagos, R., and R.~Wright, 2005, A unified framework for monetary theory and policy
-analysis, \textit{Journal of Political Economy} 113, 463--484.
-
-\bibitem[Liu and Tsyvinski(2021)]{liu2021risks}
-Liu, Y., and A.~Tsyvinski, 2021, Risks and returns of cryptocurrency,
-\textit{Review of Financial Studies} 34, 2689--2727.
-
-\bibitem[Liu, Tsyvinski, and Wu(2022)]{liu2022common}
-Liu, Y., A.~Tsyvinski, and X.~Wu, 2022, Common risk factors in cryptocurrency,
-\textit{Journal of Finance} 77, 1133--1177.
-
-\bibitem[Makarov and Schoar(2020)]{makarov2020trading}
-Makarov, I., and A.~Schoar, 2020, Trading and arbitrage in cryptocurrency markets,
-\textit{Journal of Financial Economics} 135, 293--319.
-
-\bibitem[Nagel(2016)]{nagel2016liquidity}
-Nagel, S., 2016, The liquidity premium of near-money assets,
-\textit{Quarterly Journal of Economics} 131, 1927--1971.
-
-\bibitem[Pagnotta and Buraschi(2022)]{pagnotta2022equilibrium}
-Pagnotta, E., and A.~Buraschi, 2022, An equilibrium valuation of Bitcoin and
-decentralized network assets, \textit{Journal of Finance} 77, 887--943.
-
-\bibitem[Schilling and Uhlig(2019)]{schilling2019bitcoin}
-Schilling, L., and H.~Uhlig, 2019, Some simple Bitcoin economics,
-\textit{Journal of Monetary Economics} 106, 16--26.
-
-\bibitem[Sockin and Xiong(2020)]{sockin2020model}
-Sockin, M., and W.~Xiong, 2020, A model of cryptocurrencies,
-\textit{NBER Working Paper} 26816.
-
-\bibitem[Spence(1973)]{spence1973job}
-Spence, M., 1973, Job market signaling,
-\textit{Quarterly Journal of Economics} 87, 355--374.
-
-\end{thebibliography}
 
 \end{document}

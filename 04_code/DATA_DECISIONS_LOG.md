@@ -2757,3 +2757,16 @@ signal (slope t=1.50, 88 tokens; q5 alpha +1.48%/t=1.71) vs staking/delegation/v
 individually uninformative on 9-32 tokens; composite edge = governance increment;
 "revealed patience, not governance participation" reading; disclosed as review-stage.
 Script: 04_code/phase3_explore_channels_guard.py. Paper 51 pp.
+
+### Entry 122 — Cowork 2026-08-05: Figures added; working-paper ordering finalized
+
+Two figures created (04_code/phase3_figures.py -> 05_paper/figures/):
+Fig 1 two-panel — (A) coin mean next-month returns by conviction-valuation cell (the
+H2 asymmetry visually: Star cell positive, high-conv/expensive lowest); (B) token mean
+returns by conviction quintile (extremes concentration). Fig 2 — cumulative log return
+of the token conviction quintile LS vs EW token universe (LS accumulates while
+universe loses value; LS series replicates official mean +2.28%/50mo exactly).
+Document order restructured via endfloat[tablesfirst] + processdelayedfloats after
+Conclusion: text (1-34) -> Tables 1-12 (36-47) -> Figures 1-2 (48-49) -> References
+(50-51) -> Appendices A-C with their tables (52-60). 60 pp. NEXT: introduction +
+abstract rewrite (Moazzam: agree the one-sentence headline claim first).
