@@ -1,13 +1,10 @@
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth]{figures/fig1_conviction_returns.pdf}
-\caption{Conviction and next-month returns. Panel A shows mean next-month returns for
-coins in each conviction--valuation cell (median splits within class-month; error bars
-are $\pm$1 standard error of the monthly cell means): the conviction premium is
-positive only where valuation is cheap, and high-conviction expensive coins earn the
-lowest returns. Panel B shows mean next-month returns by conviction quintile for
-tokens: the premium is concentrated in the extremes rather than monotone through the
-middle quintiles.}
+\includegraphics[width=0.75\textwidth]{figures/fig1_conviction_returns.pdf}
+\caption{Coins: mean next-month returns by conviction--valuation cell (median splits
+within class-month; error bars are $\pm$1 standard error of the monthly cell means).
+The conviction premium is positive only where valuation is cheap, and high-conviction
+expensive coins earn the lowest returns.}
 \label{fig:conviction}
 \end{figure}
 \efloatseparator
