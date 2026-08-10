@@ -2832,3 +2832,18 @@ hypotheses, results with learnings framing, robustness + mechanisms, summary
 scorecard, conclusion, 12 main tables + 5 appendix tables + 2 figures in
 working-paper order. NEXT: Moazzam's fresh-eyes review after the weekend
 (title/abstract/intro possibly revisited); then remaining polish and submission prep.
+
+### Entry 127 — Cowork 2026-08-10: AFA submission package — AI workflow documentation
+
+Per the AFA 2027 CfP requirement ("documentation of the AI workflow, including AI
+conversations and human contributions, as appendices"): (1) In-paper Appendix D "AI
+Workflow Documentation" — two-tier workflow description (Cowork interactive /
+Claude Code autonomous), division of labor, record inventory, repo pointer. (2)
+Supplementary PDF 05_paper/AI_WORKFLOW_DOCUMENTATION.pdf (builder:
+04_code/build_ai_workflow_doc.py) consolidating: human time log (66 entries),
+this decisions log (127 entries), all 33 verbatim kickoff prompts, all 47 session
+logs; TOC'd, ~1.6MB. (3) Transcript exporter 04_code/export_ai_transcripts.py —
+converts Claude .jsonl transcripts (Claude Code: ~/.claude/projects/
+C--AFA-2027-QTM-Crypto/; Cowork: AppData/Roaming/Claude/local-agent-mode-sessions/
+**/.claude/projects/) to per-session markdown in 06_documentation/ai_transcripts/;
+run locally by author, then rebuild the supplementary doc.
