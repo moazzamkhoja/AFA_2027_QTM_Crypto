@@ -56,7 +56,16 @@ def convert(path):
             lines_out.append(f"\n---\n\n**{role.upper()}** {ts}\n\n{body}\n")
             n += 1
     if n == 0: return None
-    dest = OUT / (Path(path).stem + '.md')
+    # date-prefix for chronological ordering
+    first_ts = ''
+    with open(path, encoding='utf-8', errors='replace') as f:
+        for line in f:
+            try: rec = json.loads(line)
+            except Exception: continue
+            ts = rec.get('timestamp')
+            if ts: first_ts = str(ts)[:10]; break
+    prefix = (first_ts + '_') if first_ts else ''
+    dest = OUT / (prefix + Path(path).stem + '.md')
     dest.write_text('\n'.join(lines_out), encoding='utf-8')
     return dest, n
 
