@@ -21,3 +21,4 @@ __pycache__/
 
 # personal data exports — never commit
 *.zip
+06_documentation/ai_transcripts_raw/

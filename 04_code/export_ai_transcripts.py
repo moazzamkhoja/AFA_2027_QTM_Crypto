@@ -73,8 +73,16 @@ if __name__ == '__main__':
     args = sys.argv[1:] or [str(REPO)]
     files = []
     for a in args:
-        p = Path(a)
+        # Windows long-path support: Cowork session transcripts sit behind paths
+        # longer than MAX_PATH (260); the \\?\ prefix lets us traverse them.
+        if os.name == 'nt' and not a.startswith('\\\\?\\'):
+            try: a_ext = '\\\\?\\' + str(Path(a).resolve())
+            except OSError: a_ext = a
+        else:
+            a_ext = a
+        p = Path(a_ext)
         files += [str(x) for x in p.rglob('*.jsonl')] if p.is_dir() else glob.glob(a)
+    files = [f for f in files if 'audit.jsonl' not in f.lower()]  # audit logs handled separately
     print(f"found {len(files)} .jsonl files")
     for fp in sorted(files):
         r = convert(fp)
