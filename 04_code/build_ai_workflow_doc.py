@@ -17,30 +17,44 @@ to produce the paper, per the AFA 2027 Call for Papers. The project began on Jun
 a two-tier workflow: interactive strategy-and-writing sessions (Claude in Cowork) in
 which the human author set direction, reviewed output, and made all substantive
 decisions, and autonomous build sessions (Claude Code) launched with written kickoff
-prompts and reviewed after completion. Contents: (1) the human time log; (2) the
-data-decisions log (126 numbered entries recording every methodological decision and
-its rationale); (3) all {n_prompts} verbatim kickoff prompts -- the literal initial
-prompts given to AI sessions; (4) all {n_logs} session logs written contemporaneously.
-Complete machine-readable session transcripts are archived in the project repository
+prompts and reviewed after completion. The project proceeded in four phases. Phase A, theory and literature
+formulation (June 10--19, 2026; sessions 001--005): the theoretical framework --
+convenience yield, monetary search, seigniorage, the coin/token distinction, and the
+conviction measure lambda -- was developed in interactive conversation, alongside the
+literature review and first drafts of the introduction, theory, and hypotheses.
+Phase B, data construction (June 22 -- July 30; sessions 006--041): on-chain panels
+built in autonomous Claude Code sessions launched from written kickoff prompts.
+Phase C, empirical testing (August; sessions 042--045): pre-specified analysis,
+results review, and mechanism testing. Phase D, writing and revision (August):
+results written up, pruned, and iterated under author direction.
+
+Contents, ordered so the record reads chronologically: Part 1, all {n_logs}
+contemporaneous session logs, beginning with the theory-formulation sessions; Part 2,
+the human time log; Part 3, all {n_prompts} verbatim kickoff prompts -- the literal
+initial prompts given to autonomous AI sessions (these begin at the data phase; the
+theory phase was interactive and is documented in the session logs); Part 4, the
+data-decisions log (127 numbered entries covering the empirical phases; theory-phase
+decisions are recorded in the session logs and time log). Complete machine-readable
+session transcripts are archived in the project repository
 (06_documentation/ai_transcripts/).
 
 \\newpage
 
-# Part 1: Human Time Log
+# Part 1: Session Logs (contemporaneous, chronological)
 
 """]
 klist = sorted(glob.glob(str(REPO/'04_code'/'CLAUDE_CODE_*PROMPT*.md')))
 slist = sorted(glob.glob(str(REPO/'06_documentation'/'ai_conversations'/'*.md')))
 parts[0] = parts[0].replace('{n_prompts}', str(len(klist))).replace('{n_logs}', str(len(slist)))
-parts.append(open(REPO/'06_documentation'/'time_log.md').read())
-parts.append('\n\\newpage\n\n# Part 2: Data Decisions Log\n\n')
-parts.append(open(REPO/'04_code'/'DATA_DECISIONS_LOG.md').read())
-parts.append('\n\\newpage\n\n# Part 3: Kickoff Prompts (verbatim initial prompts to AI sessions)\n\n')
-for k in klist:
-    parts.append(f"\n\\newpage\n\n## {Path(k).name}\n\n" + open(k, encoding='utf-8', errors='replace').read())
-parts.append('\n\\newpage\n\n# Part 4: Session Logs (contemporaneous)\n\n')
 for s in slist:
-    parts.append(f"\n\\newpage\n\n## {Path(s).name}\n\n" + open(s, encoding='utf-8', errors='replace').read())
+    parts.append("\n\\newpage\n\n## " + Path(s).name + "\n\n" + open(s, encoding='utf-8', errors='replace').read())
+parts.append('\n\\newpage\n\n# Part 2: Human Time Log\n\n')
+parts.append(open(REPO/'06_documentation'/'time_log.md').read())
+parts.append('\n\\newpage\n\n# Part 3: Kickoff Prompts (verbatim initial prompts to autonomous AI sessions)\n\n')
+for k in klist:
+    parts.append("\n\\newpage\n\n## " + Path(k).name + "\n\n" + open(k, encoding='utf-8', errors='replace').read())
+parts.append('\n\\newpage\n\n# Part 4: Data Decisions Log\n\n')
+parts.append(open(REPO/'04_code'/'DATA_DECISIONS_LOG.md').read())
 md = '\n'.join(parts)
 # sanitize characters that break latex engines
 for a, b in [('\u03bb','lambda'),('\u2192','->'),('\u00d7','x'),('\u2265','>='),('\u2264','<='),
