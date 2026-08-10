@@ -31,13 +31,13 @@ decisions are recorded in the session logs and time log). Complete machine-reada
 session transcripts are archived in the project repository
 (06_documentation/ai_transcripts/).
 
-\newpage
+\\newpage
 
 # Part 1: Session Logs (contemporaneous, chronological)
 
 
 
-/newpage
+\\newpage
 
 ## session_001_2026-06-10.md
 
@@ -74,7 +74,7 @@ Initial project scoping session. Human shared the AFA 2027 call for submissions 
 *Full conversation transcript to be appended here or exported from Claude Cowork and saved as a separate file in this folder.*
 
 
-/newpage
+\\newpage
 
 ## session_002_2026-06-10_theory.md
 
@@ -174,7 +174,7 @@ Literature embedded in introduction (JF/RFS convention), with "Related Literatur
 Activity type: Decision + Review
 
 
-/newpage
+\\newpage
 
 ## session_003_2026-06-12.md
 
@@ -375,7 +375,7 @@ Long Stars (high lambda/(1-lambda), low NVT/f) / Short Avoid (low lambda/(1-lamb
 Activity type: Review + Decision
 
 
-/newpage
+\\newpage
 
 ## session_004_2026-06-19.md
 
@@ -689,7 +689,7 @@ restriction, identified the asset-index ambiguity in Proposition 1, and identifi
 resolved the "NVT/fundamental" naming problem (renamed to "Growth-Levelized NVT").
 
 
-/newpage
+\\newpage
 
 ## session_005_2026-06-22.md
 
@@ -809,7 +809,7 @@ factor model, and lambda-index construction, approved the resulting data specifi
 document.
 
 
-/newpage
+\\newpage
 
 ## session_006_2026-06-22_phase0_pipeline.md
 
@@ -927,7 +927,7 @@ gitignored (regenerable). Committed and pushed to origin/main.
 **Phase 0 complete.** Stopped for review before Phase 1, per the kickoff instruction.
 
 
-/newpage
+\\newpage
 
 ## session_007_2026-06-22_phase0_review.md
 
@@ -1071,7 +1071,7 @@ carry-forward split and classification-confirmation deliverables (1-2) are uncha
 are included in the same not-yet-committed working tree as Sections 1-8.
 
 
-/newpage
+\\newpage
 
 ## session_008_2026-06-22_phase0b_followup.md
 
@@ -1196,7 +1196,7 @@ kickoff instruction. Items still needing a human decision are listed in
 gray-zone 16; sector DeFiLlama symbol-collision de-noising).
 
 
-/newpage
+\\newpage
 
 ## session_009_2026-06-23_phase1_lambda.md
 
@@ -1308,7 +1308,7 @@ session log, and updated `time_log.md`. Committed + pushed at session end.
 **Activity Types:** Prompt ? Direct ? Review ? Decision (per prior sessions' legend).
 
 
-/newpage
+\\newpage
 
 ## session_010_2026-06-24_phase1_closeout_phase2_pq.md
 
@@ -1431,7 +1431,7 @@ decisions. No Phase 3 work was started.
 | DeFiLlama `/overview/fees/{chain}` | coin PQ | ? free/keyless/historical (339 chains) |
 
 
-/newpage
+\\newpage
 
 ## session_011_2026-06-24_pq_theory.md
 
@@ -1524,7 +1524,7 @@ quantify the noise multiplier --- see `04_code/CLAUDE_CODE_PHASE2_PQ_PILOT_PROMP
 - `06_documentation/time_log.md` --- new row
 
 
-/newpage
+\\newpage
 
 ## session_012_2026-06-24_pq_pilot.md
 
@@ -1612,7 +1612,7 @@ native transfers) was not in this pilot and faces the harder archive-state wall 
   sector-routed, with TVL/fees side columns.
 
 
-/newpage
+\\newpage
 
 ## session_013_2026-06-24_phase2_build.md
 
@@ -1713,7 +1713,7 @@ turnover 1.15x --- a protocol/chain restatement of M?V=PQ with TVL ~ M.
 - **Do not start Phase 3 without review.**
 
 
-/newpage
+\\newpage
 
 ## session_014_2026-06-25_phase2b_coins.md
 
@@ -1805,7 +1805,7 @@ iteration forbidden (Entry 31/32).
 - **Do not start Phase 3 without review.**
 
 
-/newpage
+\\newpage
 
 ## session_015_2026-06-25_dune_pilot.md
 
@@ -1888,7 +1888,7 @@ dry-run and human review.**
 - Unchanged: `pq_tokens.csv` and all Phase 2/2b panel outputs (diagnostic pilot only --- no panel writes).
 
 
-/newpage
+\\newpage
 
 ## session_016_2026-06-25_dune_dryrun.md
 
@@ -1965,7 +1965,7 @@ No Phase-2c build; no write to `pq_tokens.csv` or any Phase 2/2b output; no Dune
 this report pending review.
 
 
-/newpage
+\\newpage
 
 ## session_017_2026-06-25_phase2c_diagnostic.md
 
@@ -2068,7 +2068,7 @@ bridges-API tier) flagged for Moazzam's decision, **not acted on**.
 **No panel outputs written. Do not start the Phase 2c build before this report is reviewed.**
 
 
-/newpage
+\\newpage
 
 ## session_018_2026-06-26_repo_sync_and_lambda_tvl_scope.md
 
@@ -2169,7 +2169,7 @@ appending) so the next session doesn't build on a stale local log.
   x-axis edit (not yet authorized/made).
 
 
-/newpage
+\\newpage
 
 ## session_019_2026-06-26_lambda_scale_and_tvl_panel.md
 
@@ -2245,7 +2245,7 @@ appending) so the next session doesn't build on a stale local log.
 - **Stop after the report** (per the prompt): no coin-PQ work started, Channel 2 untouched.
 
 
-/newpage
+\\newpage
 
 ## session_020_2026-06-26_bucket2_bucket3_recovery.md
 
@@ -2330,7 +2330,7 @@ Bucket 2 + Bucket 3 done. **Do not start Bucket 1 or Phase 3 without review.** O
 free Subscan key (DOT/KSM), the VELO v1/v2 identity call, and the Tier-5 access gates (no purchase made).
 
 
-/newpage
+\\newpage
 
 ## session_021_2026-06-29_token_bucket1_exhaustive_reaudit.md
 
@@ -2404,7 +2404,7 @@ reconfirmed unchanged.
 - Do not start coin-side Bucket 1 or Phase 3 without review.
 
 
-/newpage
+\\newpage
 
 ## session_022_2026-06-29_etherscan_nonEVM_lambda_channel_audit.md
 
@@ -2469,7 +2469,7 @@ build the 6 Ch1 series, decide the Etherscan-Pro purchase for the 16 paid-chain 
 no purchase this session.
 
 
-/newpage
+\\newpage
 
 ## session_023_2026-06-29_hex_akro_reconciliation_survivorship.md
 
@@ -2541,7 +2541,7 @@ prototype.
   `06_documentation/time_log.md`.
 
 
-/newpage
+\\newpage
 
 ## session_024_2026-06-30_lambda_free_build.md
 
@@ -2587,7 +2587,7 @@ written before commit.
 Transition + Phase-2 worklist: `06_documentation/SESSION024_STATUS_AND_NEXT_SESSION.md`.
 
 
-/newpage
+\\newpage
 
 ## session_025_2026-07-01_etherscan_pro_channel2_build.md
 
@@ -2654,7 +2654,7 @@ Pro key only, no other paid tier. Decisions Log 61--64 (append-only).
    `--aggregate --recompute` re-derives with no re-fetch.
 
 
-/newpage
+\\newpage
 
 ## session_026_2026-07-01_cowork_session025_review_and_plan.md
 
@@ -2742,7 +2742,7 @@ Session 025 results were in the working tree but not committed (only the partial
 `68d1b79` existed). This commit captures all session 025 outputs plus the session 026 prompt.
 
 
-/newpage
+\\newpage
 
 ## session_026_channel2_tail_and_op.md
 
@@ -2877,7 +2877,7 @@ lambda); no additional paid subscriptions. getLogs budget well under 200k/day (w
 not the daily quota, is the binding constraint --- the session-025 finding, reconfirmed).
 
 
-/newpage
+\\newpage
 
 ## session_027_tvl_expansion_and_ch2_tail.md
 
@@ -2954,7 +2954,7 @@ memory updated; commit + push.
 - 43 new per-token checkpoints under `03_data/raw/phase1_onchain/holding/`
 
 
-/newpage
+\\newpage
 
 ## session_028_2026-07-04_coin_staking_and_aave_fix.md
 
@@ -3043,7 +3043,7 @@ forno.celo.org, metrics.avax.network, api.avax.network (P-Chain), rpc.soniclabs.
 Commit+push at session end.
 
 
-/newpage
+\\newpage
 
 ## session_028_2026-07-04_cowork_coverage_csv_and_session028_plan.md
 
@@ -3146,7 +3146,7 @@ All standing rules in force:
 - Etherscan Pro Standard active ($199/mo, activated 2026-06-30)
 
 
-/newpage
+\\newpage
 
 ## session_029_breadth_build_and_coin_probes.md
 
@@ -3236,7 +3236,7 @@ Quota anomaly logged in Entry 76 (no daily-limit rejection at ~292k calls/day).
   TVL never tracked) --- an empty-series REJECT is not an API failure.
 
 
-/newpage
+\\newpage
 
 ## session_030_2026-07-05_task_a_resume_cut_short.md
 
@@ -3302,7 +3302,7 @@ Quota anomaly logged in Entry 76 (no daily-limit rejection at ~292k calls/day).
 ~149k getLogs (SFUND 28,553 + MYX ~120,440 aborted), single process, no API rejection.
 
 
-/newpage
+\\newpage
 
 ## session_031_2026-07-24_task_a_day1_complete.md
 
@@ -3385,7 +3385,7 @@ sleep=never confirmed. Reuse the Day-2 section of the session-031 prompt. Then E
 open items (b)--(g).
 
 
-/newpage
+\\newpage
 
 ## session_032_2026-07-24_myx_build_task_a_closed.md
 
@@ -3464,7 +3464,7 @@ WARP identity review, non-TVL breadth ch2 (~500 tokens), MATIC NVT_GL probe.
 primary record per the AFA record-keeping rules.*
 
 
-/newpage
+\\newpage
 
 ## session_033_2026-07-25_xtz_matic_nvt_probes_negative.md
 
@@ -3540,7 +3540,7 @@ Open items for session 034: Entry-79 (b)--(e) --- DOT/KSM Subscan key, CHZ manua
 CORE key, WARP identity review, non-TVL breadth ch2.
 
 
-/newpage
+\\newpage
 
 ## session_034_2026-07-25_chz_blockchair_defi_batch1.md
 
@@ -3611,7 +3611,7 @@ decisions requested or given mid-session.
   authority.
 
 
-/newpage
+\\newpage
 
 ## session_035_2026-07-25_defi_batch2.md
 
@@ -3667,7 +3667,7 @@ One "status?" check-in mid-build; no decisions requested.
   from /protocols; `maker` parent is NOT (400) --- Maker history lives under Sky children.
 
 
-/newpage
+\\newpage
 
 ## session_036_2026-07-26_steth_meme_batch3a.md
 
@@ -3722,7 +3722,7 @@ No mid-session check-ins or decisions requested.
   Cosmos key. WARP review and non-TVL breadth (~500 tokens) still open.
 
 
-/newpage
+\\newpage
 
 ## session_037_2026-07-27_dot_ksm_core_ch1.md
 
@@ -3793,7 +3793,7 @@ No mid-session check-ins or decisions requested.
   sleep already Never.
 
 
-/newpage
+\\newpage
 
 ## session_038_2026-07-27_shib_ch2_batch3b.md
 
@@ -3855,7 +3855,7 @@ PQ source probe; TRX coin_staking_type fix (pow_only->DPoS); WARP identity
 review.
 
 
-/newpage
+\\newpage
 
 ## session_039_2026-07-28_dotksm_pq_trx_warp.md
 
@@ -3934,7 +3934,7 @@ No mid-session check-ins or decisions requested.
 - `03_data/SESSION039_DOTKSM_PQ_FIXES_REPORT.md` (new)
 
 
-/newpage
+\\newpage
 
 ## session_040_2026-07-28_cosmos_lcd_ch1.md
 
@@ -4000,7 +4000,7 @@ connection error from a different project, user then said to ignore it).
 **Commit:** 9587d0d (pushed to origin/main at session end)
 
 
-/newpage
+\\newpage
 
 ## session_041_2026-07-30_hxro_sxp_osmo.md
 
@@ -4071,7 +4071,7 @@ Etherscan Pro subscription. OSMO keyless.
 - PYTHONUTF8=1 used on all builder/assemble runs.
 
 
-/newpage
+\\newpage
 
 ## session_042_2026-08-04_paper_restructure_tvlgl_phase3_design.md
 
@@ -4149,7 +4149,7 @@ mechanisms written up, awaiting Moazzam's pruning review.
   normally from Cowork now.
 
 
-/newpage
+\\newpage
 
 ## session_043_2026-08-04_phase3_core_tests.md
 
@@ -4213,7 +4213,7 @@ zero Etherscan calls; 6 BitInfoCharts fetches (free, keyless).
   thin coin cross-section would be a DEVIATION requiring pre-logging.
 
 
-/newpage
+\\newpage
 
 ## session_044_2026-08-04_phase3b_confirmatory_sorts.md
 
@@ -4295,7 +4295,7 @@ mid-session by user note; picked up and run). Fully autonomous otherwise. Spec:
   classifications; per-sector tests once breadth grows.
 
 
-/newpage
+\\newpage
 
 ## session_045_2026-08-04_phase3c_fees_dcf_technicals.md
 
@@ -4376,7 +4376,7 @@ Full readings: `03_data/PHASE3C_RESULTS_REPORT.md`.
   decomposition).
 
 
-/newpage
+\\newpage
 
 ## session_046_2026-08-05_to_10_writing_revision_submission.md
 
@@ -4427,7 +4427,7 @@ long-only ask; title selection; final abstract text; final read-throughs.
 main.pdf (59 pp), AI_WORKFLOW_DOCUMENTATION.pdf, Entries 106--127, commits through this date.
 
 
-/newpage
+\\newpage
 
 # Part 2: Human Time Log
 
@@ -4519,13 +4519,13 @@ main.pdf (59 pp), AI_WORKFLOW_DOCUMENTATION.pdf, Entries 106--127, commits throu
 | 2026-08-05 | ~4 (est., confirm) | Cowork | Sessions 042 continuation: full pruning + review + front-matter cycle. Review-round edits (Entry 121: delta levels, survivorship, FM explanation, guard relaxation, tercile removal, channel decomposition table incl. NEW finding HODL carries the token signal); figures created + WP ordering (Entry 122); DEX-quintile within-sector finding (Entry 117); VW spanning + P/F quadrant checks (Entry 118); long-only analysis --- conviction is an exclusionary screen (Entry 125); proper summary stats table + narrative (Entry 120); sample-composition appendix; intro rewritten in 2 iterations (Entries 123-124: lambda bridge after QTM/tokenized framing, findings led by joint-race + spanning survival, contributions as prose); abstract finalized per Moazzam's edit; title -> "Skin in the Chain: Locked Supply and the Cross-Section of Cryptocurrency Returns" (Entry 126). Complete 58-pp draft awaiting fresh-eyes review. |
 
 
-/newpage
+\\newpage
 
 # Part 3: Kickoff Prompts (verbatim initial prompts to autonomous AI sessions)
 
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_DUNE_DRYRUN_PROMPT.md
 
@@ -4635,7 +4635,7 @@ Stop after the report --- do not start a Phase 2c build until this is reviewed.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_DUNE_PILOT_PROMPT.md
 
@@ -4728,7 +4728,7 @@ after the report --- do not start a Phase 2c build until this is reviewed.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_HEX_AKRO_RECONCILIATION_AND_SURVIVORSHIP_PROMPT.md
 
@@ -4867,7 +4867,7 @@ any of session 022's other open items without review.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_KICKOFF_PROMPT.md
 
@@ -4924,7 +4924,7 @@ Do not proceed past Phase 0 without that review.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_KICKOFF_PROMPT_PHASE0_FOLLOWUP.md
 
@@ -5031,7 +5031,7 @@ a human decision. Do not proceed to Phase 1 without that review.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_LAMBDA_BUCKET2_BUCKET3_RECOVERY_PROMPT.md
 
@@ -5175,7 +5175,7 @@ Stop when Bucket 2 and Bucket 3 are done. Do not start Bucket 1 work or Phase 3 
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE1_KICKOFF_PROMPT.md
 
@@ -5250,7 +5250,7 @@ Phase 1 without review.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE1_SCALE_LAMBDA_AND_TVL_PANEL_PROMPT.md
 
@@ -5471,7 +5471,7 @@ Then:
 this is reviewed.
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE2C_DIAGNOSTIC_PROMPT.md
 
@@ -5635,7 +5635,7 @@ Then:
 before this diagnostic is reviewed.
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE2_KICKOFF_PROMPT.md
 
@@ -5752,7 +5752,7 @@ without review.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE2_PQ_BUILD_PROMPT.md
 
@@ -5871,7 +5871,7 @@ without review.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE2_PQ_PILOT_PROMPT.md
 
@@ -5978,7 +5978,7 @@ do not resume the Phase 2 build until this is reviewed.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE3B_KICKOFF_PROMPT.md
 
@@ -6063,7 +6063,7 @@ launder it into a pre-registered result). Decisions log entries; session log
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE3C_KICKOFF_PROMPT.md
 
@@ -6165,7 +6165,7 @@ session log (session_045_...); time_log row; commit and push at session end.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_PHASE3_KICKOFF_PROMPT.md
 
@@ -6252,7 +6252,7 @@ produced, not after.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION024_LAMBDA_FREE_BUILD_PROMPT.md
 
@@ -6430,7 +6430,7 @@ committed. Either way, end with the lambda panel re-assembled and the asset-mont
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION025_ETHERSCAN_PRO_BUILD_PROMPT.md
 
@@ -6568,7 +6568,7 @@ Phase-2 items (NMR, KAIA, non-EVM) without review.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION026_CHANNEL2_TAIL_AND_OP_PROMPT.md
 
@@ -6717,7 +6717,7 @@ other Phase-2 items (NMR, KAIA, non-EVM, Phase 2c NVT_GL) without review.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION027_TVL_EXPANSION_AND_CH2_TAIL_PROMPT.md
 
@@ -6941,7 +6941,7 @@ checkpoint and report how far down the priority list you reached.
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION028_COIN_STAKING_AND_AAVE_FIX_PROMPT.md
 
@@ -7287,7 +7287,7 @@ register with enough detail that Moazzam can action the open items (Subscan sign
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION029_BREADTH_BUILD_AND_COIN_PROBES_PROMPT.md
 
@@ -7743,7 +7743,7 @@ per-token checkpoints. Resume with the next uncompleted token in the priority li
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION030_TASK_A_RESUME_PROMPT.md
 
@@ -7876,7 +7876,7 @@ At session end, commit and push all new/modified files:
 Commit message: `session 030: ch2 Task-A resume --- 7 tokens built (SFUND/MYX/ADF/AVNT/KAITO/VVV/RAIN)`
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION031_TASK_A_RESUME_PROMPT.md
 
@@ -7956,7 +7956,7 @@ Entry-79 open items (b)--(g) --- DOT/KSM key, CHZ anchor, CORE key, WARP review,
 breadth, MATIC NVT probe --- are then the queue.
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION032_MYX_PROMPT.md
 
@@ -8055,7 +8055,7 @@ git push
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION033_XTZ_MATIC_NVT_PROMPT.md
 
@@ -8345,7 +8345,7 @@ git push
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION034_COMBINED_PROMPT.md
 
@@ -8754,7 +8754,7 @@ WORKLIST=5994 PYTHONUTF8=1 python 04_code/phase1_channel2_stream.py
 SHIB (Shiba Inu, 128k gl) --- largest meme/DeFi-hybrid build; no protocol TVL expected
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION036_STETH_MEME_PROMPT.md
 
@@ -8869,7 +8869,7 @@ git push
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION037_DOT_KSM_CORE_PROMPT.md
 
@@ -9253,7 +9253,7 @@ Join `circulating_supply` from `03_data/universe_panel.csv` on `(cmc_id, month_e
 - Task #22: bibliography sanity-check
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION038_SHIB_PROMPT.md
 
@@ -9362,7 +9362,7 @@ git push
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION039_DOTKSM_PQ_FIXES_PROMPT.md
 
@@ -9577,7 +9577,7 @@ git push
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION040_COSMOS_LCD_PROMPT.md
 
@@ -10069,7 +10069,7 @@ git push
 | SEI binary search timeout (216k blocks/day) | Large height range | Narrow lo/hi bracket by estimating from known timestamps before searching |
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_SESSION041_HXRO_SXP_OSMO_PROMPT.md
 
@@ -10410,7 +10410,7 @@ git push
 ```
 
 
-/newpage
+\\newpage
 
 ## CLAUDE_CODE_TOKEN_BUCKET1_EXHAUSTIVE_REAUDIT_PROMPT.md
 
@@ -10568,7 +10568,7 @@ Bucket 1 or Phase 3 without review.
 ```
 
 
-/newpage
+\\newpage
 
 # Part 4: Data Decisions Log
 

@@ -38,7 +38,7 @@ decisions are recorded in the session logs and time log). Complete machine-reada
 session transcripts are archived in the project repository
 (06_documentation/ai_transcripts/).
 
-\\newpage
+<<<PB>>>
 
 # Part 1: Session Logs (contemporaneous, chronological)
 
@@ -47,15 +47,16 @@ klist = sorted(glob.glob(str(REPO/'04_code'/'CLAUDE_CODE_*PROMPT*.md')))
 slist = sorted(glob.glob(str(REPO/'06_documentation'/'ai_conversations'/'*.md')))
 parts[0] = parts[0].replace('{n_prompts}', str(len(klist))).replace('{n_logs}', str(len(slist)))
 for s in slist:
-    parts.append("\n\\newpage\n\n## " + Path(s).name + "\n\n" + open(s, encoding='utf-8', errors='replace').read())
-parts.append('\n\\newpage\n\n# Part 2: Human Time Log\n\n')
+    parts.append("\n<<<PB>>>\n\n## " + Path(s).name + "\n\n" + open(s, encoding='utf-8', errors='replace').read())
+parts.append('\n<<<PB>>>\n\n# Part 2: Human Time Log\n\n')
 parts.append(open(REPO/'06_documentation'/'time_log.md').read())
-parts.append('\n\\newpage\n\n# Part 3: Kickoff Prompts (verbatim initial prompts to autonomous AI sessions)\n\n')
+parts.append('\n<<<PB>>>\n\n# Part 3: Kickoff Prompts (verbatim initial prompts to autonomous AI sessions)\n\n')
 for k in klist:
-    parts.append("\n\\newpage\n\n## " + Path(k).name + "\n\n" + open(k, encoding='utf-8', errors='replace').read())
-parts.append('\n\\newpage\n\n# Part 4: Data Decisions Log\n\n')
+    parts.append("\n<<<PB>>>\n\n## " + Path(k).name + "\n\n" + open(k, encoding='utf-8', errors='replace').read())
+parts.append('\n<<<PB>>>\n\n# Part 4: Data Decisions Log\n\n')
 parts.append(open(REPO/'04_code'/'DATA_DECISIONS_LOG.md').read())
 md = '\n'.join(parts)
+md = md.replace(chr(92)+chr(92)+'newpage', '<<<PB>>>').replace(chr(92)+'newpage', '<<<PB>>>')
 # sanitize characters that break latex engines
 for a, b in [('\u03bb','lambda'),('\u2192','->'),('\u00d7','x'),('\u2265','>='),('\u2264','<='),
              ('\u2248','~'),('\u2260','!='),('\u03b8','theta'),('\u03b4','delta'),('\u2013','--'),('\u2014','---'),
@@ -70,6 +71,7 @@ cover_end = md.index('# Part 1')
 head, body = md[:cover_end], md[cover_end:]
 body = body.replace('\\', '/')
 md = head + body
+md = md.replace('<<<PB>>>', chr(92)+chr(92)+'newpage')
 src = REPO/'06_documentation'/'AI_WORKFLOW_DOCUMENTATION.md'
 src.write_text(md)
 out = REPO/'05_paper'/'AI_WORKFLOW_DOCUMENTATION.pdf'
