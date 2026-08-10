@@ -71,6 +71,20 @@ AI contributed drafting, literature synthesis, all data engineering and estimati
 code, execution of pre-specified analyses, and revision mechanics. Every
 substantive claim in the paper traces to a decision recorded in the logs.
 
+**Line attribution (human vs.\ AI).** Counted from the repository at submission:
+17,502 lines of code (Python builders, analysis scripts, utilities), 2,019 lines of
+paper source (LaTeX), and 28,262 lines of documentation (session logs, decisions
+log, kickoff prompts, specifications, literature review) --- 47,783 committed lines
+in total. Measured by who typed the committed line, the AI contributed over 99.9
+percent: the author's directly typed contributions are the final abstract text
+(drafted verbatim by the author) and scattered sentence-level wordings dictated in
+conversation. The author's contribution is instead concentrated in the layer the
+line counts do not capture: the initial prompt and all subsequent direction, the
+theoretical judgments, every methodological decision (127 logged entries), quality
+control that caught and reversed AI errors, and approval of all final language ---
+approximately 53 hours of logged human time against roughly two person-months of
+AI-executed construction, estimation, and writing.
+
 \newpage
 
 # Time Log by Conversation
@@ -85,36 +99,36 @@ autonomous sessions ran unattended.
 | 002 | 2026-06-10 | theory | 0 |
 | 003 | 2026-06-12 | general | 105 |
 | 004 | 2026-06-19 | general | 90 |
-| 005 | 2026-06-22 | general | 1600 |
+| 005 | 2026-06-22 | general | 125 |
 | 006 | 2026-06-22 | phase0 pipeline | 0 |
 | 007 | 2026-06-22 | phase0 review | 0 |
 | 008 | 2026-06-22 | phase0b followup | 0 |
-| 009 | 2026-06-23 | phase1 lambda | 920 |
-| 010 | 2026-06-24 | phase1 closeout phase2 pq | 3000* |
+| 009 | 2026-06-23 | phase1 lambda | 35 |
+| 010 | 2026-06-24 | phase1 closeout phase2 pq | 50* |
 | 011 | 2026-06-24 | pq theory | 0 |
-| 012 | 2026-06-24 | pq pilot | 2700* |
-| 013 | 2026-06-24 | phase2 build | 2700* |
-| 014 | 2026-06-25 | phase2b coins | 3300* |
-| 015 | 2026-06-25 | dune pilot | 600* |
-| 016 | 2026-06-25 | dune dryrun | 600* |
-| 017 | 2026-06-25 | phase2c diagnostic | 600* |
-| 018 | 2026-06-26 | repo sync and lambda tvl scope | 1800 |
-| 019 | 2026-06-26 | lambda scale and tvl panel | 600* |
-| 020 | 2026-06-26 | bucket2 bucket3 recovery | 1800* |
-| 021 | 2026-06-29 | token bucket1 exhaustive reaudit | 600* |
-| 022 | 2026-06-29 | etherscan nonEVM lambda channel audit | 8100* |
-| 023 | 2026-06-29 | hex akro reconciliation survivorship | 3300* |
-| 024 | 2026-06-30 | lambda free build | 4500* |
-| 025 | 2026-07-01 | etherscan pro channel2 build | 8100* |
-| 026 | 2026-07-01 | channel2 tail and op | 1845* |
-| 027 |  | tvl expansion and ch2 tail | 1200* |
-| 028 | 2026-07-04 | cowork coverage csv and session028 plan | 2700* |
-| 029 |  | breadth build and coin probes | 540* |
-| 030 | 2026-07-05 | task a resume cut short | 900* |
-| 031 | 2026-07-24 | task a day1 complete | 1200* |
+| 012 | 2026-06-24 | pq pilot | 45* |
+| 013 | 2026-06-24 | phase2 build | 45* |
+| 014 | 2026-06-25 | phase2b coins | 55* |
+| 015 | 2026-06-25 | dune pilot | 10* |
+| 016 | 2026-06-25 | dune dryrun | 10* |
+| 017 | 2026-06-25 | phase2c diagnostic | 10* |
+| 018 | 2026-06-26 | repo sync and lambda tvl scope | 30 |
+| 019 | 2026-06-26 | lambda scale and tvl panel | 10* |
+| 020 | 2026-06-26 | bucket2 bucket3 recovery | 30* |
+| 021 | 2026-06-29 | token bucket1 exhaustive reaudit | 10* |
+| 022 | 2026-06-29 | etherscan nonEVM lambda channel audit | 135* |
+| 023 | 2026-06-29 | hex akro reconciliation survivorship | 55* |
+| 024 | 2026-06-30 | lambda free build | 75* |
+| 025 | 2026-07-01 | etherscan pro channel2 build | 135* |
+| 026 | 2026-07-01 | channel2 tail and op | 75* |
+| 027 |  | tvl expansion and ch2 tail | 20* |
+| 028 | 2026-07-04 | cowork coverage csv and session028 plan | 45* |
+| 029 |  | breadth build and coin probes | 9* |
+| 030 | 2026-07-05 | task a resume cut short | 15* |
+| 031 | 2026-07-24 | task a day1 complete | 20* |
 | 032 | 2026-07-24 | myx build task a closed | 300* |
 | 033 | 2026-07-25 | xtz matic nvt probes negative | 0 |
-| 034 | 2026-07-25 | chz blockchair defi batch1 | 600* |
+| 034 | 2026-07-25 | chz blockchair defi batch1 | 10* |
 | 035 | 2026-07-25 | defi batch2 | 180* |
 | 036 | 2026-07-26 | steth meme batch3a | 60* |
 | 037 | 2026-07-27 | dot ksm core ch1 | 60* |
@@ -127,6 +141,6 @@ autonomous sessions ran unattended.
 | 044 | 2026-08-04 | phase3b confirmatory sorts | 60* |
 | 045 | 2026-08-04 | phase3c fees dcf technicals | 60* |
 | 046 | 2026-08-05 | to 10 writing revision submission | 0 |
-| | | **Total human time** | **55900 min (~932 h)** |
+| | | **Total human time** | **3154 min (~53 h)** |
 
 AI compute: 36 autonomous Claude Code build sessions (typically 1--3 h wall-clock each where logged) plus interactive Cowork sessions concurrent with the human time above. Autonomous sessions required no human attention between launch and review.

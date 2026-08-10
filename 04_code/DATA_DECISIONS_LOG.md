@@ -2847,3 +2847,9 @@ converts Claude .jsonl transcripts (Claude Code: ~/.claude/projects/
 C--AFA-2027-QTM-Crypto/; Cowork: AppData/Roaming/Claude/local-agent-mode-sessions/
 **/.claude/projects/) to per-session markdown in 06_documentation/ai_transcripts/;
 run locally by author, then rebuild the supplementary doc.
+
+---
+
+## Entry 128 — 2026-08-10 — Time-log unit normalization + line-attribution report (AFA item 3)
+**Decision:** (1) Normalized `time_log.md` duration column to uniform minutes: 15 recent entries logged in hours ("~1"–"~4 (est., confirm)") converted to minutes (x60); all remain flagged (est., confirm) pending author confirmation. The compact workflow doc previously multiplied ALL estimate entries by 60 (treating minute-entries as hours), producing an incorrect ~932 h total; corrected total ≈ 53 h. (2) Added the human-vs-AI line attribution report required by the AFA call (item 3 of ideal documentation): 47,783 committed lines (17,502 code / 2,019 LaTeX / 28,262 documentation), >99.9% AI-typed, author contribution concentrated in prompts, decisions, and review (~53 h logged).
+**Context:** June 10–29 verbatim transcripts confirmed unrecoverable locally (widened sweep of all Claude storage folders found nothing; app sidebar empty). claude.ai account data export requested (90-day window covers June 10); Anthropic support email drafted as fallback. Volume II cover note documents coverage honestly.

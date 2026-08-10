@@ -77,6 +77,20 @@ AI contributed drafting, literature synthesis, all data engineering and estimati
 code, execution of pre-specified analyses, and revision mechanics. Every
 substantive claim in the paper traces to a decision recorded in the logs.
 
+**Line attribution (human vs.\ AI).** Counted from the repository at submission:
+17,502 lines of code (Python builders, analysis scripts, utilities), 2,019 lines of
+paper source (LaTeX), and 28,262 lines of documentation (session logs, decisions
+log, kickoff prompts, specifications, literature review) --- 47,783 committed lines
+in total. Measured by who typed the committed line, the AI contributed over 99.9
+percent: the author's directly typed contributions are the final abstract text
+(drafted verbatim by the author) and scattered sentence-level wordings dictated in
+conversation. The author's contribution is instead concentrated in the layer the
+line counts do not capture: the initial prompt and all subsequent direction, the
+theoretical judgments, every methodological decision (127 logged entries), quality
+control that caught and reversed AI errors, and approval of all final language ---
+approximately 53 hours of logged human time against roughly two person-months of
+AI-executed construction, estimation, and writing.
+
 \newpage
 
 # Time Log by Conversation
@@ -101,9 +115,10 @@ unmatched = collections.defaultdict(int)
 for r in rows:
     parts = [p.strip() for p in r.split('|')[1:-1]]
     date, dur, desc = parts[0], parts[1], parts[3]
+    # duration column is uniformly MINUTES (hour-denominated estimates were
+    # normalized to minutes on 2026-08-10; see decisions log Entry 128)
     m = re.search(r'(\d+)', dur); v = int(m.group(1)) if m else 0
     est = 'est' in dur
-    if est: v *= 60
     sm = re.search(r'[Ss]ession[s]?\s0*(\d+)', desc)
     if sm:
         k = int(sm.group(1)); sess_min[k] += v; sess_est[k] |= est
