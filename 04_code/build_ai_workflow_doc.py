@@ -74,6 +74,6 @@ src = REPO/'06_documentation'/'AI_WORKFLOW_DOCUMENTATION.md'
 src.write_text(md)
 out = REPO/'05_paper'/'AI_WORKFLOW_DOCUMENTATION.pdf'
 r = subprocess.run(['pandoc', str(src), '-o', str(out), '--from', 'markdown',
-                    '-V', 'geometry:margin=1in', '-V', 'fontsize=10pt', '--toc'],
+                    '-V', 'geometry:margin=1in', '-V', 'fontsize=10pt', '--toc', '--toc-depth=2'],
                    capture_output=True, text=True)
 print(r.stderr[-2000:] if r.returncode else f'OK -> {out}')
