@@ -19,11 +19,11 @@ the machine-readable session records and ordered chronologically. User and assis
 turns are reproduced in full; tool invocations are indicated by name and tool outputs
 are truncated (the analytical outputs are committed in the project repository).
 Volume I contains the contemporaneous session logs, time log, kickoff prompts, and
-decisions log. Coverage note: machine transcripts survive on the author's system from
-June 30, 2026 onward; the June 10--19 theory-formulation conversations (sessions
-001--005) predate the earliest retained transcript files, and their contemporaneous
-session logs in Volume I are the record for that phase. Conversations unrelated to
-this project were excluded from the export."""
+decisions log. Coverage is complete: the first transcript is the project's master
+Cowork conversation, which opens with the initial prompt of June 10, 2026 (the AFA
+call and the author's framework write-up) and runs continuously through submission;
+the remaining transcripts are the autonomous Claude Code build sessions. Conversations
+unrelated to this project were excluded from the export."""
 
 def sanitize(md):
     for a, b in [('\u03bb','lambda'),('\u2192','->'),('\u00d7','x'),('\u2013','--'),('\u2014','---'),
@@ -47,10 +47,14 @@ for i, f in enumerate(files):
     # -f commonmark: pandoc's default markdown reader has pathological (memory-
     # exhausting) behavior on emphasis-heavy transcript text; commonmark is linear.
     r = subprocess.run(['pandoc', str(src), '-f', 'commonmark', '-t', 'latex',
-                        '-o', str(tex), '--shift-heading-level-by=1'],
+                        '-o', str(tex), '--shift-heading-level-by=1', '--no-highlight'],
                        capture_output=True, text=True)
     if r.returncode:
         raise SystemExit(f'pandoc failed on {name}:\n{r.stderr[-1000:]}')
+    # hard scrub: pdflatex must only ever see printable ASCII + newline/tab
+    t = tex.read_text(encoding='utf-8', errors='replace')
+    t = ''.join(ch if (32 <= ord(ch) < 127 or ch in '\n\t') else '?' for ch in t)
+    tex.write_text(t, encoding='utf-8')
     frags.append((name, tex))
 
 esc = lambda s: s.replace('_', r'\_')
